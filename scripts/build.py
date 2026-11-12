@@ -16,7 +16,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DIST = os.path.join(ROOT, "dist")
 BASE = (os.getenv("BASE_PATH") or "").rstrip("/")
 SITE_URL = (os.getenv("SITE_URL") or "").rstrip("/")
-SITE = "404软件库"
+SITE = "404绿色软件库"
 SLOGAN = "只收录官方下载入口，每个文件都附 SHA-256 校验。"
 PLATFORMS = ["Windows", "macOS", "Linux", "Android"]
 
@@ -110,7 +110,7 @@ def layout(title, body, desc=SLOGAN, active=""):
 <body>
 <header class="topbar">
   <div class="container bar">
-    <a class="logo" href="{url('/')}"><span class="logo-mark">404</span>软件库</a>
+    <a class="logo" href="{url('/')}"><span class="logo-mark">404</span>绿色软件库</a>
     <nav class="nav">{nav}</nav>
     <div class="bar-actions">
       <a class="icon-btn" href="{url('/')}#search" aria-label="搜索">⌕</a>
@@ -242,12 +242,15 @@ def page_detail(item, rel, items, releases, cats):
         sha = d.get("sha256", "")
         shabox = f'<button class="sha" data-sha="{sha}" title="点击复制 SHA-256">SHA-256 <code>{sha[:12]}…{sha[-6:]}</code></button>' if sha else ""
         rows.append(f"""<li class="dl">
-  <div class="dl-info"><strong>{e(d['label'])}{' <span class="plat green">绿色免安装</span>' if d.get('portable') else ''}</strong><span>{e(d['file'])} · {human_size(d['size'])}</span>{shabox}</div>
+  <div class="dl-info"><strong>{e(d['label'])}{' <span class="plat green">绿色免安装</span>' if d.get('portable') else ''}</strong><span>{e(d['file'])}{' · ' + human_size(d['size']) if d.get('size') else ''}</span>{shabox}</div>
   <div class="dl-btns"><a class="btn" href="{e(d['official'])}" target="_blank" rel="noopener">官方下载</a>{mbtn}</div>
 </li>""")
-    downloads = "".join(rows) or '<li class="dl"><div class="dl-info">暂无可用文件，请前往官网下载。</div></li>'
+    dl_page = e(item.get("download_page") or item.get("homepage", ""))
+    downloads = "".join(rows) or f'<li class="dl"><div class="dl-info"><strong>官方下载</strong><span>本站只提供官网入口，请到官方网站下载最新版。</span></div><div class="dl-btns"><a class="btn" href="{dl_page}" target="_blank" rel="noopener">前往官网</a></div></li>'
 
     links = [("官方网站", item.get("homepage"))]
+    if item.get("source", {}).get("type") == "winget":
+        links += [("winget 清单", rel.get("release_url"))]
     if item.get("source", {}).get("repo"):
         repo = item["source"]["repo"]
         links += [("发布页", rel.get("release_url")), ("源代码", f"https://github.com/{repo}")]
@@ -280,7 +283,7 @@ def page_detail(item, rel, items, releases, cats):
     {ad("detail-mid")}
     <section class="panel" id="download">
       <h2>下载地址</h2>
-      <p class="note">官方下载直接来自项目发布页；网盘镜像为同一文件的转存，下载后可用 SHA-256 核对。</p>
+      <p class="note">官方下载直接指向软件作者的发布地址；网盘镜像为同一文件的转存，下载后可用 SHA-256 核对。</p>
       <ul class="dl-list">{downloads}</ul>
     </section>
     {f'<section class="panel prose"><h2>使用提示</h2><ul>{tips}</ul></section>' if tips else ''}

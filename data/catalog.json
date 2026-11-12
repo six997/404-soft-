@@ -935,5 +935,3417 @@
         }
       ]
     }
+  },
+  {
+    "slug": "wechat",
+    "name": "微信",
+    "abbr": "微",
+    "category": "chat",
+    "tags": [
+      "聊天",
+      "腾讯"
+    ],
+    "summary": "微信电脑版，消息、文件与朋友圈同步。",
+    "intro": "微信 Windows 官方客户端，支持聊天、文件传输、视频通话和小程序。这里提供腾讯官方 4.x 安装包。",
+    "features": [
+      "与手机消息同步",
+      "文件传输助手",
+      "视频与语音通话",
+      "小程序与公众号"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://pc.weixin.qq.com/",
+    "source": {
+      "type": "winget",
+      "id": "Tencent.WeChat.Universal",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows x64 · 官方安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "qq",
+    "name": "QQ",
+    "abbr": "QQ",
+    "category": "chat",
+    "tags": [
+      "聊天",
+      "腾讯"
+    ],
+    "summary": "全新 QQNT 架构的 QQ 电脑版。",
+    "intro": "QQ 电脑版基于 QQNT 架构重写，界面更清爽，支持聊天、群文件、频道与远程协助。",
+    "features": [
+      "聊天与群文件",
+      "QQ 空间与频道",
+      "屏幕分享",
+      "多端同步"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://im.qq.com/pcqq/",
+    "source": {
+      "type": "winget",
+      "id": "Tencent.QQ.NT",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows x64 · 官方安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "telegram",
+    "name": "Telegram",
+    "abbr": "TG",
+    "category": "chat",
+    "tags": [
+      "聊天",
+      "加密",
+      "绿色版"
+    ],
+    "summary": "快速、跨平台的即时通讯工具，官方提供便携版。",
+    "intro": "Telegram Desktop 是开源的官方客户端，支持超大群组、频道、云端文件和端到端加密的私密聊天。",
+    "features": [
+      "云端同步消息",
+      "大文件传输",
+      "频道与机器人",
+      "便携版免安装"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://desktop.telegram.org/",
+    "source": {
+      "type": "winget",
+      "id": "Telegram.TelegramDesktop",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": "portable.*\\.zip",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "arch": "x64",
+          "url": "setup",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "discord",
+    "name": "Discord",
+    "abbr": "DC",
+    "category": "chat",
+    "tags": [
+      "语音",
+      "社区"
+    ],
+    "summary": "游戏玩家常用的语音与社区聊天软件。",
+    "intro": "Discord 提供服务器、频道、语音房间和屏幕共享，适合游戏开黑与兴趣社区。",
+    "features": [
+      "语音与视频房间",
+      "屏幕直播",
+      "服务器与频道",
+      "机器人生态"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://discord.com/",
+    "source": {
+      "type": "winget",
+      "id": "Discord.Discord",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows x64 · 官方安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "feishu",
+    "name": "飞书",
+    "abbr": "飞",
+    "category": "chat",
+    "tags": [
+      "办公",
+      "协作"
+    ],
+    "summary": "字节跳动的一站式协同办公平台。",
+    "intro": "飞书集成即时通讯、日历、云文档、视频会议和多维表格，适合团队协作。",
+    "features": [
+      "聊天与群组",
+      "云文档与多维表格",
+      "视频会议",
+      "日历与审批"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://www.feishu.cn/",
+    "source": {
+      "type": "winget",
+      "id": "ByteDance.Feishu",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows x64 · 官方安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "tencent-meeting",
+    "name": "腾讯会议",
+    "abbr": "会",
+    "category": "chat",
+    "tags": [
+      "视频会议"
+    ],
+    "summary": "稳定好用的云视频会议。",
+    "intro": "腾讯会议支持多人音视频会议、屏幕共享、会议录制和实时字幕。",
+    "features": [
+      "多人音视频会议",
+      "屏幕共享与白板",
+      "云录制",
+      "AI 会议纪要"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://meeting.tencent.com/",
+    "source": {
+      "type": "winget",
+      "id": "Tencent.TencentMeeting",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows x64 · 官方安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "chrome",
+    "name": "Google Chrome",
+    "abbr": "GC",
+    "category": "browser",
+    "tags": [
+      "浏览器",
+      "离线安装包"
+    ],
+    "summary": "谷歌浏览器官方离线安装包，适合无网络环境部署。",
+    "intro": "这里提供 Chrome 企业版离线 MSI，无需联网下载组件，适合批量部署或离线安装；个人用户也可在官网获取独立安装包。",
+    "features": [
+      "官方离线安装",
+      "自动更新",
+      "扩展商店",
+      "多账号同步"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://www.google.com/chrome/",
+    "source": {
+      "type": "winget",
+      "id": "Google.Chrome",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows x64 · 离线安装包 MSI",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "download_page": "https://www.google.com/intl/zh-CN/chrome/?standalone=1"
+  },
+  {
+    "slug": "firefox",
+    "name": "Firefox",
+    "abbr": "FF",
+    "category": "browser",
+    "tags": [
+      "浏览器",
+      "隐私"
+    ],
+    "summary": "注重隐私的开源浏览器。",
+    "intro": "Firefox 由 Mozilla 开发，默认拦截跟踪器，扩展丰富，支持多账户容器。",
+    "features": [
+      "增强型跟踪保护",
+      "扩展与主题",
+      "同步书签与密码",
+      "阅读模式"
+    ],
+    "tips": [],
+    "license": "MPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://www.firefox.com/",
+    "source": {
+      "type": "winget",
+      "id": "Mozilla.Firefox",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows x64 · 官方安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "edge",
+    "name": "Microsoft Edge",
+    "abbr": "ME",
+    "category": "browser",
+    "tags": [
+      "浏览器"
+    ],
+    "summary": "微软 Edge 浏览器企业版离线安装包。",
+    "intro": "Edge 基于 Chromium，兼容 Chrome 扩展，提供垂直标签页、集锦和 PDF 阅读。这里是企业版离线 MSI。",
+    "features": [
+      "离线 MSI 部署",
+      "垂直标签页",
+      "内置 PDF 阅读",
+      "睡眠标签页省内存"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://www.microsoft.com/edge",
+    "source": {
+      "type": "winget",
+      "id": "Microsoft.Edge",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows x64 · 离线安装包 MSI",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "brave",
+    "name": "Brave",
+    "abbr": "BR",
+    "category": "browser",
+    "tags": [
+      "浏览器",
+      "广告拦截"
+    ],
+    "summary": "自带广告拦截的 Chromium 浏览器。",
+    "intro": "Brave 默认屏蔽广告与跟踪器，兼容 Chrome 扩展，页面加载更快。",
+    "features": [
+      "内置广告拦截",
+      "兼容 Chrome 扩展",
+      "Tor 隐私窗口",
+      "低内存占用"
+    ],
+    "tips": [],
+    "license": "MPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://brave.com/",
+    "source": {
+      "type": "winget",
+      "id": "Brave.Brave",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": "StandaloneSetup\\.exe",
+          "label": "Windows x64 · 离线安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "aria2",
+    "name": "aria2",
+    "abbr": "A2",
+    "category": "download",
+    "tags": [
+      "下载",
+      "命令行",
+      "绿色版"
+    ],
+    "summary": "轻量多协议命令行下载器。",
+    "intro": "aria2 支持 HTTP、FTP、BT 和磁力链接，可多线程分段下载，常配合各种前端使用。",
+    "features": [
+      "多线程分段下载",
+      "BT 与磁力",
+      "RPC 远程控制",
+      "极低资源占用"
+    ],
+    "tips": [],
+    "license": "GPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://aria2.github.io/",
+    "source": {
+      "type": "github",
+      "repo": "aria2/aria2",
+      "assets": [
+        {
+          "match": "win-64bit.*\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "motrix",
+    "name": "Motrix",
+    "abbr": "MX",
+    "category": "download",
+    "tags": [
+      "下载",
+      "BT",
+      "绿色版"
+    ],
+    "summary": "界面漂亮的全能下载工具。",
+    "intro": "Motrix 基于 aria2，支持 HTTP、BT、磁力链接，界面简洁，可接管浏览器下载。",
+    "features": [
+      "多任务并行",
+      "BT 与磁力",
+      "限速与计划",
+      "浏览器扩展"
+    ],
+    "tips": [],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://motrix.app/",
+    "source": {
+      "type": "github",
+      "repo": "agalwood/Motrix",
+      "assets": [
+        {
+          "match": "-x64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "Setup.*\\.exe$",
+          "label": "Windows · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "gopeed",
+    "name": "Gopeed",
+    "abbr": "GP",
+    "category": "download",
+    "tags": [
+      "下载",
+      "BT",
+      "绿色版"
+    ],
+    "summary": "Go 编写的高速下载器，支持插件扩展。",
+    "intro": "Gopeed 支持 HTTP、BT、磁力，界面现代，可通过扩展解析网盘与视频网站。",
+    "features": [
+      "多协议下载",
+      "扩展插件",
+      "Web 远程管理",
+      "跨平台"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://gopeed.com/",
+    "source": {
+      "type": "github",
+      "repo": "GopeedLab/gopeed",
+      "assets": [
+        {
+          "match": "windows-amd64-portable\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "qbittorrent",
+    "name": "qBittorrent",
+    "abbr": "QB",
+    "category": "download",
+    "tags": [
+      "BT",
+      "下载"
+    ],
+    "summary": "开源无广告的 BT 下载客户端。",
+    "intro": "qBittorrent 是 µTorrent 的开源替代，支持搜索插件、RSS 订阅和 Web 远程控制。",
+    "features": [
+      "无广告",
+      "内置种子搜索",
+      "RSS 自动下载",
+      "Web UI"
+    ],
+    "tips": [],
+    "license": "GPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://www.qbittorrent.org/",
+    "source": {
+      "type": "winget",
+      "id": "qBittorrent.qBittorrent",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "fdm",
+    "name": "Free Download Manager",
+    "abbr": "FD",
+    "category": "download",
+    "tags": [
+      "下载"
+    ],
+    "summary": "免费的多线程下载管理器。",
+    "intro": "Free Download Manager 支持多线程加速、BT、视频下载和浏览器接管。",
+    "features": [
+      "多线程加速",
+      "BT 下载",
+      "浏览器扩展",
+      "计划任务"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://www.freedownloadmanager.org/",
+    "source": {
+      "type": "winget",
+      "id": "SoftDeluxe.FreeDownloadManager",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "openlist",
+    "name": "OpenList",
+    "abbr": "OL",
+    "category": "netdisk",
+    "tags": [
+      "网盘",
+      "挂载",
+      "绿色版"
+    ],
+    "summary": "多网盘聚合文件列表程序，支持 WebDAV。",
+    "intro": "OpenList 是社区维护的 AList 分支，可把阿里云盘、夸克、123 云盘等挂载到同一个目录树，并提供 WebDAV。",
+    "features": [
+      "聚合多家网盘",
+      "WebDAV 服务",
+      "在线预览",
+      "离线下载"
+    ],
+    "tips": [],
+    "license": "AGPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://doc.oplist.org/",
+    "source": {
+      "type": "github",
+      "repo": "OpenListTeam/OpenList",
+      "assets": [
+        {
+          "match": "openlist-windows-amd64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "syncthing",
+    "name": "Syncthing",
+    "abbr": "ST",
+    "category": "netdisk",
+    "tags": [
+      "同步",
+      "P2P",
+      "绿色版"
+    ],
+    "summary": "开源点对点文件同步，不经过第三方服务器。",
+    "intro": "Syncthing 在你的设备之间直接同步文件夹，数据加密传输，不依赖云盘。",
+    "features": [
+      "设备间直连同步",
+      "端到端加密",
+      "版本保留",
+      "Web 管理界面"
+    ],
+    "tips": [],
+    "license": "MPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://syncthing.net/",
+    "source": {
+      "type": "github",
+      "repo": "syncthing/syncthing",
+      "assets": [
+        {
+          "match": "windows-amd64-.*\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "baidu-netdisk",
+    "name": "百度网盘",
+    "abbr": "百",
+    "category": "netdisk",
+    "tags": [
+      "网盘"
+    ],
+    "summary": "百度网盘官方电脑版。",
+    "intro": "百度网盘 Windows 客户端，支持文件备份、同步空间与在线播放。",
+    "features": [
+      "文件上传下载",
+      "同步空间",
+      "在线视频播放",
+      "共享链接"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://pan.baidu.com/",
+    "source": {
+      "type": "winget",
+      "id": "Baidu.BaiduNetdisk",
+      "assets": [
+        {
+          "arch": "",
+          "url": ".",
+          "label": "Windows · 官方安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "aliyun-drive",
+    "name": "阿里云盘",
+    "abbr": "阿",
+    "category": "netdisk",
+    "tags": [
+      "网盘"
+    ],
+    "summary": "阿里云盘官方电脑版。",
+    "intro": "阿里云盘 Windows 客户端，支持备份盘与资源库分离、文件同步和在线预览。",
+    "features": [
+      "备份盘与资源库",
+      "文件夹同步",
+      "在线预览",
+      "快传分享"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://www.alipan.com/",
+    "source": {
+      "type": "winget",
+      "id": "Alibaba.aDrive",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows x64 · 官方安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "rustdesk",
+    "name": "RustDesk",
+    "abbr": "RD",
+    "category": "remote",
+    "tags": [
+      "远程桌面",
+      "绿色版"
+    ],
+    "summary": "开源远程桌面，可自建中继服务器。",
+    "intro": "RustDesk 是 TeamViewer 的开源替代，单文件即可运行，支持自建服务器保证数据私有。",
+    "features": [
+      "单文件即开即用",
+      "自建中继服务器",
+      "文件传输",
+      "端到端加密"
+    ],
+    "tips": [],
+    "license": "AGPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://rustdesk.com/",
+    "source": {
+      "type": "github",
+      "repo": "rustdesk/rustdesk",
+      "assets": [
+        {
+          "match": "x86_64\\.exe$",
+          "label": "Windows x64 · 单文件 EXE",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "moonlight",
+    "name": "Moonlight",
+    "abbr": "ML",
+    "category": "remote",
+    "tags": [
+      "串流",
+      "游戏",
+      "绿色版"
+    ],
+    "summary": "把电脑游戏串流到其他设备。",
+    "intro": "Moonlight 是 NVIDIA GameStream / Sunshine 的开源客户端，可在笔记本、电视或手机上低延迟玩电脑游戏。",
+    "features": [
+      "低延迟串流",
+      "4K 120 帧",
+      "手柄支持",
+      "HDR"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://moonlight-stream.org/",
+    "source": {
+      "type": "github",
+      "repo": "moonlight-stream/moonlight-qt",
+      "assets": [
+        {
+          "match": "MoonlightPortable-x64.*\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "mremoteng",
+    "name": "mRemoteNG",
+    "abbr": "MR",
+    "category": "remote",
+    "tags": [
+      "远程",
+      "SSH",
+      "绿色版"
+    ],
+    "summary": "多协议远程连接管理器。",
+    "intro": "mRemoteNG 用标签页统一管理 RDP、VNC、SSH、Telnet 等连接，适合运维人员。",
+    "features": [
+      "RDP / VNC / SSH",
+      "标签页管理",
+      "连接分组",
+      "便携版"
+    ],
+    "tips": [],
+    "license": "GPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://mremoteng.org/",
+    "source": {
+      "type": "github",
+      "repo": "mRemoteNG/mRemoteNG",
+      "assets": [
+        {
+          "match": "^mRemoteNG-Portable-[\\d.]+\\.zip$",
+          "label": "Windows · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "todesk",
+    "name": "ToDesk",
+    "abbr": "TD",
+    "category": "remote",
+    "tags": [
+      "远程桌面"
+    ],
+    "summary": "国内常用的远程控制软件。",
+    "intro": "ToDesk 提供流畅的远程桌面、文件传输和远程开机，个人免费使用。",
+    "features": [
+      "远程控制",
+      "文件传输",
+      "多屏切换",
+      "设备列表"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://www.todesk.com/",
+    "source": {
+      "type": "winget",
+      "id": "Youqu.ToDesk",
+      "assets": [
+        {
+          "arch": "",
+          "url": ".",
+          "label": "Windows · 官方安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "parsec",
+    "name": "Parsec",
+    "abbr": "PS",
+    "category": "remote",
+    "tags": [
+      "串流",
+      "远程"
+    ],
+    "summary": "低延迟远程桌面与游戏串流。",
+    "intro": "Parsec 以低延迟著称，适合远程设计、剪辑和与朋友远程联机玩游戏。",
+    "features": [
+      "60 帧低延迟",
+      "远程联机游戏",
+      "多显示器",
+      "手柄映射"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://parsec.app/",
+    "source": {
+      "type": "winget",
+      "id": "Parsec.Parsec",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows x64 · 官方安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "cpu-z",
+    "name": "CPU-Z",
+    "abbr": "CZ",
+    "category": "hardware",
+    "tags": [
+      "CPU",
+      "检测"
+    ],
+    "summary": "查看 CPU、主板与内存信息的经典工具。",
+    "intro": "CPU-Z 可以查看处理器型号、频率、缓存、主板和内存时序，并提供简单跑分。",
+    "features": [
+      "CPU 详细参数",
+      "主板与内存信息",
+      "内存 SPD",
+      "基准跑分"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://www.cpuid.com/softwares/cpu-z.html",
+    "source": {
+      "type": "winget",
+      "id": "CPUID.CPU-Z",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": "-cn\\.exe",
+          "label": "Windows · 中文安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "gpu-z",
+    "name": "GPU-Z",
+    "abbr": "GZ",
+    "category": "hardware",
+    "tags": [
+      "显卡",
+      "检测",
+      "绿色版"
+    ],
+    "summary": "显卡信息与传感器监控工具。",
+    "intro": "GPU-Z 显示显卡核心、显存、BIOS 版本和实时传感器数据，可免安装运行。",
+    "features": [
+      "显卡详细参数",
+      "实时传感器",
+      "BIOS 导出",
+      "免安装运行"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://www.techpowerup.com/gpuz/",
+    "source": {
+      "type": "winget",
+      "id": "TechPowerUp.GPU-Z",
+      "assets": [
+        {
+          "arch": "",
+          "url": ".",
+          "label": "Windows · 单文件 EXE",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "hwinfo",
+    "name": "HWiNFO",
+    "abbr": "HW",
+    "category": "hardware",
+    "tags": [
+      "硬件",
+      "监控"
+    ],
+    "summary": "全面的硬件信息与传感器监控工具。",
+    "intro": "HWiNFO 能读出几乎所有硬件的信息和传感器数据，常用于超频和散热测试。",
+    "features": [
+      "全硬件信息",
+      "传感器监控与记录",
+      "报告导出",
+      "支持 OSD"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://www.hwinfo.com/",
+    "source": {
+      "type": "winget",
+      "id": "REALiX.HWiNFO",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows x64 · 官方安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "crystaldiskinfo",
+    "name": "CrystalDiskInfo",
+    "abbr": "DI",
+    "category": "hardware",
+    "tags": [
+      "硬盘",
+      "健康"
+    ],
+    "summary": "查看硬盘与 SSD 健康状态。",
+    "intro": "CrystalDiskInfo 读取硬盘 S.M.A.R.T. 信息，显示健康度、温度与通电时间。",
+    "features": [
+      "硬盘健康度",
+      "温度监控",
+      "S.M.A.R.T. 详情",
+      "异常提醒"
+    ],
+    "tips": [],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://crystalmark.info/",
+    "source": {
+      "type": "winget",
+      "id": "CrystalDewWorld.CrystalDiskInfo",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows · 官方安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "crystaldiskmark",
+    "name": "CrystalDiskMark",
+    "abbr": "DM",
+    "category": "hardware",
+    "tags": [
+      "硬盘",
+      "测速"
+    ],
+    "summary": "硬盘与 SSD 读写速度测试。",
+    "intro": "CrystalDiskMark 测试顺序和随机读写速度，是评测 SSD 的常用工具。",
+    "features": [
+      "顺序与随机读写",
+      "多种测试模式",
+      "结果截图",
+      "支持 NVMe"
+    ],
+    "tips": [],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://crystalmark.info/",
+    "source": {
+      "type": "winget",
+      "id": "CrystalDewWorld.CrystalDiskMark",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows · 官方安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "librehardwaremonitor",
+    "name": "LibreHardwareMonitor",
+    "abbr": "LH",
+    "category": "hardware",
+    "tags": [
+      "温度",
+      "监控",
+      "绿色版"
+    ],
+    "summary": "开源硬件温度与风扇监控。",
+    "intro": "LibreHardwareMonitor 监控 CPU、显卡、硬盘温度、风扇转速和功耗，免安装运行。",
+    "features": [
+      "温度与功耗",
+      "风扇转速",
+      "Web 远程查看",
+      "免安装"
+    ],
+    "tips": [],
+    "license": "MPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://github.com/LibreHardwareMonitor/LibreHardwareMonitor",
+    "source": {
+      "type": "github",
+      "repo": "LibreHardwareMonitor/LibreHardwareMonitor",
+      "assets": [
+        {
+          "match": "^LibreHardwareMonitor\\.zip$",
+          "label": "Windows · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "everything",
+    "name": "Everything",
+    "abbr": "EV",
+    "category": "file",
+    "tags": [
+      "搜索",
+      "效率",
+      "绿色版"
+    ],
+    "summary": "文件秒搜工具，输入即出结果。",
+    "intro": "Everything 通过读取 NTFS 索引，几秒内建好全盘索引，输入文件名立即出结果。官方提供便携 ZIP。",
+    "features": [
+      "毫秒级文件搜索",
+      "正则与过滤",
+      "HTTP / ETP 服务",
+      "极低资源占用"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://www.voidtools.com/",
+    "source": {
+      "type": "winget",
+      "id": "voidtools.Everything",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": "x64\\.zip",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "arch": "x64",
+          "url": "Setup\\.exe",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "wiztree",
+    "name": "WizTree",
+    "abbr": "WZ",
+    "category": "file",
+    "tags": [
+      "磁盘分析"
+    ],
+    "summary": "秒速分析磁盘空间占用。",
+    "intro": "WizTree 直接读取 MFT，几秒钟找出占用空间最大的文件和文件夹。",
+    "features": [
+      "极速磁盘扫描",
+      "树状图可视化",
+      "大文件排序",
+      "导出 CSV"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://diskanalyzer.com/",
+    "source": {
+      "type": "winget",
+      "id": "AntibodySoftware.WizTree",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows · 官方安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "doublecmd",
+    "name": "Double Commander",
+    "abbr": "DC",
+    "category": "file",
+    "tags": [
+      "文件管理",
+      "双栏",
+      "绿色版"
+    ],
+    "summary": "开源双栏文件管理器。",
+    "intro": "Double Commander 仿 Total Commander，双栏操作、标签页、批量重命名、内置查看器一应俱全。",
+    "features": [
+      "双栏与标签页",
+      "批量重命名",
+      "内置查看器",
+      "插件支持"
+    ],
+    "tips": [],
+    "license": "GPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://doublecmd.sourceforge.io/",
+    "source": {
+      "type": "github",
+      "repo": "doublecmd/doublecmd",
+      "assets": [
+        {
+          "match": "x86_64-win64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "explorerplusplus",
+    "name": "Explorer++",
+    "abbr": "E+",
+    "category": "file",
+    "tags": [
+      "文件管理",
+      "绿色版"
+    ],
+    "summary": "轻量的标签页资源管理器。",
+    "intro": "Explorer++ 给 Windows 资源管理器加上标签页、书签和双窗格，单文件即可运行。",
+    "features": [
+      "标签页浏览",
+      "书签",
+      "文件合并与拆分",
+      "免安装"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://explorerplusplus.com/",
+    "source": {
+      "type": "github",
+      "repo": "derceg/explorerplusplus",
+      "assets": [
+        {
+          "match": "^explorerpp_x64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "7-zip",
+    "name": "7-Zip",
+    "abbr": "7Z",
+    "category": "tools",
+    "tags": [
+      "解压",
+      "压缩"
+    ],
+    "summary": "开源压缩解压软件，支持主流压缩格式。",
+    "intro": "7-Zip 是经典开源压缩软件，7z 格式压缩率高，也能解压 RAR、ZIP、ISO 等格式。",
+    "features": [
+      "高压缩率 7z 格式",
+      "解压 RAR / ISO 等",
+      "AES-256 加密",
+      "右键菜单集成"
+    ],
+    "tips": [],
+    "license": "LGPL-2.1",
+    "mirror_allowed": true,
+    "homepage": "https://www.7-zip.org/",
+    "source": {
+      "type": "winget",
+      "id": "7zip.7zip",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows x64 · 官方安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "bandizip",
+    "name": "Bandizip",
+    "abbr": "BZ",
+    "category": "tools",
+    "tags": [
+      "解压",
+      "压缩"
+    ],
+    "summary": "界面清爽、速度很快的压缩软件。",
+    "intro": "Bandizip 支持多核压缩、压缩包预览和密码管理，标准版个人免费。",
+    "features": [
+      "多核高速压缩",
+      "压缩包内预览",
+      "密码管理器",
+      "支持 30+ 格式"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://www.bandisoft.com/bandizip/",
+    "source": {
+      "type": "winget",
+      "id": "Bandisoft.Bandizip",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows x64 · 官方安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "nanazip",
+    "name": "NanaZip",
+    "abbr": "NZ",
+    "category": "tools",
+    "tags": [
+      "解压",
+      "压缩",
+      "绿色版"
+    ],
+    "summary": "7-Zip 的现代化分支，适配 Win11 右键菜单。",
+    "intro": "NanaZip 基于 7-Zip，加入 Windows 11 新右键菜单、深色模式和更多格式支持。",
+    "features": [
+      "Win11 右键菜单",
+      "深色模式",
+      "Zstandard 等新格式",
+      "兼容 7-Zip"
+    ],
+    "tips": [],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://github.com/M2Team/NanaZip",
+    "source": {
+      "type": "github",
+      "repo": "M2Team/NanaZip",
+      "assets": [
+        {
+          "match": "^NanaZip_[\\d.]+_Binaries\\.zip$",
+          "label": "Windows · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "geek-uninstaller",
+    "name": "Geek Uninstaller",
+    "abbr": "GU",
+    "category": "system",
+    "tags": [
+      "卸载",
+      "绿色版"
+    ],
+    "summary": "绿色卸载工具，清除注册表和文件残留彻底。",
+    "intro": "Geek Uninstaller 只有一个 exe，卸载后自动扫描残留的文件和注册表项，也能强制删除顽固程序。",
+    "features": [
+      "单文件免安装",
+      "深度清理残留",
+      "强制删除",
+      "商店应用卸载"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://geekuninstaller.com/",
+    "source": {
+      "type": "winget",
+      "id": "GeekUninstaller.GeekUninstaller",
+      "assets": [
+        {
+          "arch": "",
+          "url": ".",
+          "label": "Windows · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "bcuninstaller",
+    "name": "Bulk Crap Uninstaller",
+    "abbr": "BC",
+    "category": "system",
+    "tags": [
+      "卸载",
+      "批量"
+    ],
+    "summary": "开源批量卸载工具。",
+    "intro": "Bulk Crap Uninstaller 能一次性卸载多个程序，并清理残留，还能识别孤立的软件残留。",
+    "features": [
+      "批量静默卸载",
+      "残留清理",
+      "识别流氓软件",
+      "启动项管理"
+    ],
+    "tips": [],
+    "license": "Apache-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://www.bcuninstaller.com/",
+    "source": {
+      "type": "winget",
+      "id": "Klocman.BulkCrapUninstaller",
+      "assets": [
+        {
+          "arch": "",
+          "url": ".",
+          "label": "Windows · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "process-explorer",
+    "name": "Process Explorer",
+    "abbr": "PE",
+    "category": "system",
+    "tags": [
+      "进程",
+      "微软",
+      "绿色版"
+    ],
+    "summary": "微软出品的增强版任务管理器。",
+    "intro": "Process Explorer 来自 Sysinternals，可以看到进程树、句柄、DLL 和 VirusTotal 检测结果。",
+    "features": [
+      "进程树",
+      "句柄与 DLL 查找",
+      "VirusTotal 检测",
+      "替换任务管理器"
+    ],
+    "tips": [],
+    "license": "免费软件（微软）",
+    "mirror_allowed": false,
+    "homepage": "https://learn.microsoft.com/sysinternals/downloads/process-explorer",
+    "source": {
+      "type": "winget",
+      "id": "Microsoft.Sysinternals.ProcessExplorer",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "autoruns",
+    "name": "Autoruns",
+    "abbr": "AR",
+    "category": "system",
+    "tags": [
+      "启动项",
+      "微软",
+      "绿色版"
+    ],
+    "summary": "查看并管理所有开机启动项。",
+    "intro": "Autoruns 列出注册表、计划任务、服务、驱动等所有自启动位置，是排查流氓软件的利器。",
+    "features": [
+      "全面启动项",
+      "计划任务与服务",
+      "VirusTotal 检测",
+      "免安装"
+    ],
+    "tips": [],
+    "license": "免费软件（微软）",
+    "mirror_allowed": false,
+    "homepage": "https://learn.microsoft.com/sysinternals/downloads/autoruns",
+    "source": {
+      "type": "winget",
+      "id": "Microsoft.Sysinternals.Autoruns",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "powertoys",
+    "name": "PowerToys",
+    "abbr": "PT",
+    "category": "system",
+    "tags": [
+      "微软",
+      "效率"
+    ],
+    "summary": "微软官方效率工具合集。",
+    "intro": "PowerToys 包含窗口布局、颜色拾取、批量重命名、快捷键重映射、文字识别等二十多个工具。",
+    "features": [
+      "FancyZones 窗口布局",
+      "PowerToys Run",
+      "批量重命名",
+      "取色与文字识别"
+    ],
+    "tips": [],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://learn.microsoft.com/windows/powertoys/",
+    "source": {
+      "type": "github",
+      "repo": "microsoft/PowerToys",
+      "assets": [
+        {
+          "match": "^PowerToysUserSetup-.*-x64\\.exe$",
+          "label": "Windows x64 · 用户安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "optimizer",
+    "name": "Optimizer",
+    "abbr": "OP",
+    "category": "system",
+    "tags": [
+      "优化",
+      "隐私",
+      "绿色版"
+    ],
+    "summary": "开源 Windows 优化与隐私设置工具。",
+    "intro": "Optimizer 可以一键关闭遥测、禁用无用服务、清理启动项，单文件运行。",
+    "features": [
+      "关闭遥测",
+      "服务与启动项",
+      "清理缓存",
+      "单文件运行"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://github.com/hellzerg/optimizer",
+    "source": {
+      "type": "github",
+      "repo": "hellzerg/optimizer",
+      "assets": [
+        {
+          "match": "^Optimizer-[\\d.]+\\.exe$",
+          "label": "Windows · 单文件 EXE",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "simplewall",
+    "name": "simplewall",
+    "abbr": "SW",
+    "category": "security",
+    "tags": [
+      "防火墙",
+      "绿色版"
+    ],
+    "summary": "轻量的 Windows 防火墙规则工具。",
+    "intro": "simplewall 基于 Windows 过滤平台，按程序控制联网权限，拦截不想联网的软件。",
+    "features": [
+      "按程序放行",
+      "联网通知",
+      "内置屏蔽规则",
+      "绿色便携"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://www.henrypp.org/product/simplewall",
+    "source": {
+      "type": "github",
+      "repo": "henrypp/simplewall",
+      "assets": [
+        {
+          "match": "-bin\\.7z$",
+          "label": "Windows · 绿色版 7z",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "bitwarden",
+    "name": "Bitwarden",
+    "abbr": "BW",
+    "category": "security",
+    "tags": [
+      "密码",
+      "同步",
+      "绿色版"
+    ],
+    "summary": "开源跨平台密码管理器。",
+    "intro": "Bitwarden 把密码加密后同步到云端，支持浏览器自动填充和自建服务器。",
+    "features": [
+      "端到端加密",
+      "浏览器自动填充",
+      "多端同步",
+      "可自建服务"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://bitwarden.com/",
+    "source": {
+      "type": "winget",
+      "id": "Bitwarden.Bitwarden",
+      "assets": [
+        {
+          "arch": "",
+          "url": "Portable",
+          "label": "Windows · 便携版 EXE",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "veracrypt",
+    "name": "VeraCrypt",
+    "abbr": "VC",
+    "category": "security",
+    "tags": [
+      "加密",
+      "磁盘"
+    ],
+    "summary": "开源磁盘与容器加密工具。",
+    "intro": "VeraCrypt 是 TrueCrypt 的继任者，可创建加密容器或加密整个系统盘。",
+    "features": [
+      "加密容器",
+      "全盘加密",
+      "隐藏卷",
+      "多种算法"
+    ],
+    "tips": [],
+    "license": "Apache-2.0 / TrueCrypt",
+    "mirror_allowed": true,
+    "homepage": "https://www.veracrypt.fr/",
+    "source": {
+      "type": "winget",
+      "id": "IDRIX.VeraCrypt",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows x64 · 安装包 MSI",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "cryptomator",
+    "name": "Cryptomator",
+    "abbr": "CM",
+    "category": "security",
+    "tags": [
+      "加密",
+      "网盘"
+    ],
+    "summary": "给网盘文件加一层客户端加密。",
+    "intro": "Cryptomator 在本地加密文件后再同步到网盘，网盘服务商无法查看内容。",
+    "features": [
+      "客户端加密",
+      "适配任意网盘",
+      "虚拟磁盘挂载",
+      "开源审计"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://cryptomator.org/",
+    "source": {
+      "type": "winget",
+      "id": "Cryptomator.Cryptomator",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows x64 · 安装包 MSI",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "potplayer",
+    "name": "PotPlayer",
+    "abbr": "PP",
+    "category": "media",
+    "tags": [
+      "播放器",
+      "视频"
+    ],
+    "summary": "功能强大的万能播放器，注意认准官网防假冒。",
+    "intro": "PotPlayer 内置解码器，几乎能播放所有视频格式，支持硬件加速、字幕和 3D。网上假冒官网较多，这里的地址来自 Daum 官方 CDN。",
+    "features": [
+      "内置全格式解码",
+      "硬件加速",
+      "字幕与音轨切换",
+      "截图与录制"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://potplayer.tv/",
+    "source": {
+      "type": "winget",
+      "id": "Daum.PotPlayer",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows x64 · 官方安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "vlc",
+    "name": "VLC",
+    "abbr": "VL",
+    "category": "media",
+    "tags": [
+      "播放器",
+      "开源",
+      "绿色版"
+    ],
+    "summary": "开源全能播放器，什么格式都能放。",
+    "intro": "VLC 内置解码器，可播放本地文件、光盘和网络串流，跨平台、无广告。",
+    "features": [
+      "全格式播放",
+      "网络串流",
+      "格式转换",
+      "无广告"
+    ],
+    "tips": [],
+    "license": "GPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://www.videolan.org/",
+    "source": {
+      "type": "winget",
+      "id": "VideoLAN.VLC",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": "win64\\.exe",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        },
+        {
+          "arch": "x86",
+          "url": "\\.zip",
+          "label": "Windows 32 位 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "mpv-net",
+    "name": "mpv.net",
+    "abbr": "MN",
+    "category": "media",
+    "tags": [
+      "播放器",
+      "绿色版"
+    ],
+    "summary": "基于 mpv 的简洁播放器，配置灵活。",
+    "intro": "mpv.net 给 mpv 加上了 Windows 风格的右键菜单和设置界面，画质好、占用低。",
+    "features": [
+      "mpv 内核高画质",
+      "右键菜单",
+      "脚本扩展",
+      "便携版"
+    ],
+    "tips": [],
+    "license": "GPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://github.com/mpvnet-player/mpv.net",
+    "source": {
+      "type": "github",
+      "repo": "mpvnet-player/mpv.net",
+      "assets": [
+        {
+          "match": "portable-x64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "mpc-hc",
+    "name": "MPC-HC",
+    "abbr": "MH",
+    "category": "media",
+    "tags": [
+      "播放器",
+      "绿色版"
+    ],
+    "summary": "经典轻量播放器，持续维护的分支。",
+    "intro": "MPC-HC 界面朴素、启动飞快，配合 LAV 解码器几乎通吃所有格式。",
+    "features": [
+      "轻量快速",
+      "内置 LAV 解码",
+      "字幕支持",
+      "免安装版"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://github.com/clsid2/mpc-hc",
+    "source": {
+      "type": "github",
+      "repo": "clsid2/mpc-hc",
+      "assets": [
+        {
+          "match": "x64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "foobar2000",
+    "name": "foobar2000",
+    "abbr": "FB",
+    "category": "media",
+    "tags": [
+      "音乐",
+      "无损"
+    ],
+    "summary": "发烧友常用的无损音乐播放器。",
+    "intro": "foobar2000 支持各种无损格式、ReplayGain、格式转换，可通过组件高度定制。",
+    "features": [
+      "无损格式",
+      "组件扩展",
+      "格式转换",
+      "标签编辑"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://www.foobar2000.org/",
+    "source": {
+      "type": "winget",
+      "id": "PeterPawlowski.foobar2000",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows x64 · 官方安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "netease-music",
+    "name": "网易云音乐",
+    "abbr": "网",
+    "category": "media",
+    "tags": [
+      "音乐"
+    ],
+    "summary": "网易云音乐官方电脑版。",
+    "intro": "网易云音乐 Windows 客户端，提供曲库、歌单、电台和评论区。",
+    "features": [
+      "海量曲库",
+      "个性推荐",
+      "歌词与评论",
+      "云盘上传"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://music.163.com/",
+    "source": {
+      "type": "winget",
+      "id": "NetEase.CloudMusic",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows x64 · 官方安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "qq-music",
+    "name": "QQ音乐",
+    "abbr": "Q音",
+    "category": "media",
+    "tags": [
+      "音乐",
+      "腾讯"
+    ],
+    "summary": "QQ音乐官方电脑版。",
+    "intro": "QQ音乐 Windows 客户端，正版曲库丰富，支持无损音质与歌词海报。",
+    "features": [
+      "正版曲库",
+      "无损音质",
+      "歌单推荐",
+      "桌面歌词"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://y.qq.com/",
+    "source": {
+      "type": "winget",
+      "id": "Tencent.QQMusic",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows · 官方安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "snipaste",
+    "name": "Snipaste",
+    "abbr": "SN",
+    "category": "graphics",
+    "tags": [
+      "截图",
+      "贴图"
+    ],
+    "summary": "截图+贴图，可将截图钉在桌面对照。",
+    "intro": "Snipaste 按 F1 截图，按 F3 把截图贴在桌面上，适合对照资料、做设计稿比对。",
+    "features": [
+      "F1 截图 F3 贴图",
+      "像素级取色",
+      "标注与马赛克",
+      "免安装"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://www.snipaste.com/",
+    "source": {
+      "type": "official"
+    },
+    "download_page": "https://www.snipaste.com/download.html",
+    "platforms": [
+      "Windows"
+    ]
+  },
+  {
+    "slug": "screentogif",
+    "name": "ScreenToGif",
+    "abbr": "SG",
+    "category": "graphics",
+    "tags": [
+      "录屏",
+      "GIF",
+      "绿色版"
+    ],
+    "summary": "录屏并直接编辑成 GIF 动图。",
+    "intro": "ScreenToGif 可以录制屏幕、摄像头或画板，并逐帧编辑后导出 GIF、APNG 或视频。",
+    "features": [
+      "屏幕录制",
+      "逐帧编辑",
+      "导出 GIF / 视频",
+      "绿色便携"
+    ],
+    "tips": [],
+    "license": "MS-PL",
+    "mirror_allowed": true,
+    "homepage": "https://www.screentogif.com/",
+    "source": {
+      "type": "github",
+      "repo": "NickeManarin/ScreenToGif",
+      "assets": [
+        {
+          "match": "^ScreenToGif\\.[\\d.]+\\.Portable\\.x64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "paint-net",
+    "name": "Paint.NET",
+    "abbr": "PN",
+    "category": "graphics",
+    "tags": [
+      "修图",
+      "绿色版"
+    ],
+    "summary": "简单好用的免费修图软件。",
+    "intro": "Paint.NET 介于画图和 Photoshop 之间，支持图层、特效和插件，上手很快。",
+    "features": [
+      "图层与混合",
+      "特效滤镜",
+      "插件扩展",
+      "便携版"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://www.getpaint.net/",
+    "source": {
+      "type": "github",
+      "repo": "paintdotnet/release",
+      "assets": [
+        {
+          "match": "portable\\.x64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "gimp",
+    "name": "GIMP",
+    "abbr": "GP",
+    "category": "graphics",
+    "tags": [
+      "修图",
+      "开源"
+    ],
+    "summary": "开源的 Photoshop 替代品。",
+    "intro": "GIMP 提供图层、蒙版、曲线和丰富的滤镜，适合照片修饰与图像合成。",
+    "features": [
+      "图层与蒙版",
+      "专业调色",
+      "滤镜与插件",
+      "支持 PSD"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://www.gimp.org/",
+    "source": {
+      "type": "winget",
+      "id": "GIMP.GIMP.3",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "inkscape",
+    "name": "Inkscape",
+    "abbr": "IK",
+    "category": "graphics",
+    "tags": [
+      "矢量",
+      "设计"
+    ],
+    "summary": "开源矢量绘图软件。",
+    "intro": "Inkscape 适合绘制图标、插画和 Logo，原生使用 SVG 格式。",
+    "features": [
+      "矢量绘图",
+      "SVG 原生",
+      "路径与文字工具",
+      "导出 PDF / PNG"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://inkscape.org/",
+    "source": {
+      "type": "winget",
+      "id": "Inkscape.Inkscape",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": "\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "krita",
+    "name": "Krita",
+    "abbr": "KR",
+    "category": "graphics",
+    "tags": [
+      "绘画"
+    ],
+    "summary": "开源数字绘画软件。",
+    "intro": "Krita 专为插画和漫画设计，笔刷丰富、支持数位板压感和动画。",
+    "features": [
+      "海量笔刷",
+      "数位板压感",
+      "逐帧动画",
+      "图层与滤镜"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://krita.org/",
+    "source": {
+      "type": "winget",
+      "id": "KDE.Krita",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "blender",
+    "name": "Blender",
+    "abbr": "BL",
+    "category": "graphics",
+    "tags": [
+      "3D",
+      "建模"
+    ],
+    "summary": "开源 3D 建模、动画与渲染套件。",
+    "intro": "Blender 覆盖建模、雕刻、动画、渲染、合成和视频剪辑，完全免费。",
+    "features": [
+      "建模与雕刻",
+      "Cycles / EEVEE 渲染",
+      "动画与绑定",
+      "几何节点"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://www.blender.org/",
+    "source": {
+      "type": "winget",
+      "id": "BlenderFoundation.Blender",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows x64 · 安装包 MSI",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "xnviewmp",
+    "name": "XnView MP",
+    "abbr": "XV",
+    "category": "graphics",
+    "tags": [
+      "看图",
+      "批量",
+      "绿色版"
+    ],
+    "summary": "支持 500 多种格式的看图与批量处理工具。",
+    "intro": "XnView MP 能浏览、整理、批量转换和重命名图片，个人使用免费。",
+    "features": [
+      "500+ 图片格式",
+      "批量转换",
+      "批量重命名",
+      "EXIF 查看"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://www.xnview.com/",
+    "source": {
+      "type": "winget",
+      "id": "XnSoft.XnViewMP",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": "\\.zip",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "upscayl",
+    "name": "Upscayl",
+    "abbr": "UP",
+    "category": "ai",
+    "tags": [
+      "AI",
+      "放大",
+      "绿色版"
+    ],
+    "summary": "用 AI 无损放大图片。",
+    "intro": "Upscayl 在本地用 AI 模型把低清图片放大 2 到 4 倍，无需上传云端。",
+    "features": [
+      "本地 AI 放大",
+      "多种模型",
+      "批量处理",
+      "无需联网"
+    ],
+    "tips": [],
+    "license": "AGPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://upscayl.org/",
+    "source": {
+      "type": "github",
+      "repo": "upscayl/upscayl",
+      "assets": [
+        {
+          "match": "-win\\.zip$",
+          "label": "Windows · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "flashpad",
+    "name": "FlashPad",
+    "abbr": "FP",
+    "category": "office",
+    "tags": [
+      "速记",
+      "便签"
+    ],
+    "summary": "轻便桌面速记本，快捷键 Alt+Z 随时调出。",
+    "intro": "FlashPad（闪电记事本）按 Alt+Z 即可呼出，内容自动保存，还能直接做简单计算。",
+    "features": [
+      "Alt+Z 快速呼出",
+      "自动保存",
+      "内置计算",
+      "轻量免费"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://ediary.haoxg.net",
+    "source": {
+      "type": "official"
+    },
+    "download_page": "https://ediary.haoxg.net",
+    "platforms": [
+      "Windows"
+    ]
+  },
+  {
+    "slug": "wps",
+    "name": "WPS Office",
+    "abbr": "W",
+    "category": "office",
+    "tags": [
+      "办公",
+      "文档"
+    ],
+    "summary": "金山 WPS Office 官方电脑版。",
+    "intro": "WPS Office 包含文字、表格、演示和 PDF，兼容微软 Office 格式，个人版免费。",
+    "features": [
+      "文字 / 表格 / 演示",
+      "PDF 编辑",
+      "云文档",
+      "兼容 Office 格式"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://www.wps.cn/",
+    "source": {
+      "type": "winget",
+      "id": "Kingsoft.WPSOffice.CN",
+      "assets": [
+        {
+          "arch": "",
+          "url": ".",
+          "label": "Windows · 官方安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "libreoffice",
+    "name": "LibreOffice",
+    "abbr": "LO",
+    "category": "office",
+    "tags": [
+      "办公",
+      "开源"
+    ],
+    "summary": "开源免费的办公套件。",
+    "intro": "LibreOffice 包含 Writer、Calc、Impress 等组件，支持 ODF 并兼容 Office 文档。",
+    "features": [
+      "文字 / 表格 / 演示",
+      "兼容 Office",
+      "导出 PDF",
+      "无广告"
+    ],
+    "tips": [],
+    "license": "MPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://www.libreoffice.org/",
+    "source": {
+      "type": "winget",
+      "id": "TheDocumentFoundation.LibreOffice",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows x64 · 安装包 MSI",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "sumatrapdf",
+    "name": "SumatraPDF",
+    "abbr": "SP",
+    "category": "office",
+    "tags": [
+      "PDF",
+      "阅读",
+      "绿色版"
+    ],
+    "summary": "极轻量的 PDF 与电子书阅读器。",
+    "intro": "SumatraPDF 启动飞快，支持 PDF、EPUB、MOBI、CBZ 等格式，有便携版。",
+    "features": [
+      "PDF / EPUB / MOBI",
+      "启动极快",
+      "便携版",
+      "阅读模式"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://www.sumatrapdfreader.org/",
+    "source": {
+      "type": "winget",
+      "id": "SumatraPDF.SumatraPDF",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": "64\\.zip",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "arch": "x86",
+          "url": "\\.zip",
+          "label": "Windows · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "obsidian",
+    "name": "Obsidian",
+    "abbr": "OB",
+    "category": "office",
+    "tags": [
+      "笔记",
+      "Markdown"
+    ],
+    "summary": "本地优先的 Markdown 知识库笔记。",
+    "intro": "Obsidian 把笔记存成本地 Markdown 文件，通过双向链接和关系图构建个人知识库。",
+    "features": [
+      "双向链接",
+      "关系图谱",
+      "插件生态",
+      "本地存储"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://obsidian.md/",
+    "source": {
+      "type": "github",
+      "repo": "obsidianmd/obsidian-releases",
+      "assets": [
+        {
+          "match": "^Obsidian-[\\d.]+\\.exe$",
+          "label": "Windows · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "joplin",
+    "name": "Joplin",
+    "abbr": "JP",
+    "category": "office",
+    "tags": [
+      "笔记",
+      "同步",
+      "绿色版"
+    ],
+    "summary": "开源笔记应用，可用网盘同步。",
+    "intro": "Joplin 支持 Markdown、待办和网页剪藏，可通过 WebDAV、OneDrive 等同步，支持端到端加密。",
+    "features": [
+      "Markdown 笔记",
+      "网页剪藏",
+      "多种同步方式",
+      "端到端加密"
+    ],
+    "tips": [],
+    "license": "AGPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://joplinapp.org/",
+    "source": {
+      "type": "github",
+      "repo": "laurent22/joplin",
+      "assets": [
+        {
+          "match": "^JoplinPortable\\.exe$",
+          "label": "Windows · 便携版 EXE",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "logseq",
+    "name": "Logseq",
+    "abbr": "LS",
+    "category": "office",
+    "tags": [
+      "笔记",
+      "大纲",
+      "绿色版"
+    ],
+    "summary": "开源大纲式知识管理工具。",
+    "intro": "Logseq 以块和大纲为单位记录笔记，支持双向链接、日记和 PDF 批注。",
+    "features": [
+      "大纲笔记",
+      "双向链接",
+      "每日日记",
+      "PDF 批注"
+    ],
+    "tips": [],
+    "license": "AGPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://logseq.com/",
+    "source": {
+      "type": "github",
+      "repo": "logseq/logseq",
+      "assets": [
+        {
+          "match": "win-x64-[\\d.]+\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "zotero",
+    "name": "Zotero",
+    "abbr": "ZT",
+    "category": "office",
+    "tags": [
+      "文献",
+      "学术"
+    ],
+    "summary": "开源文献管理工具。",
+    "intro": "Zotero 一键抓取论文信息，管理 PDF 和引文，在 Word 中自动生成参考文献。",
+    "features": [
+      "一键抓取文献",
+      "PDF 批注",
+      "Word 插件",
+      "云同步"
+    ],
+    "tips": [],
+    "license": "AGPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://www.zotero.org/",
+    "source": {
+      "type": "winget",
+      "id": "DigitalScholar.Zotero",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "calibre",
+    "name": "calibre",
+    "abbr": "CA",
+    "category": "office",
+    "tags": [
+      "电子书"
+    ],
+    "summary": "电子书管理与格式转换工具。",
+    "intro": "calibre 可以管理电子书库、转换格式、编辑电子书并传输到阅读器。",
+    "features": [
+      "书库管理",
+      "格式转换",
+      "电子书编辑",
+      "新闻抓取"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://calibre-ebook.com/",
+    "source": {
+      "type": "winget",
+      "id": "calibre.calibre",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows x64 · 安装包 MSI",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "notepad3",
+    "name": "Notepad3",
+    "abbr": "N3",
+    "category": "office",
+    "tags": [
+      "文本编辑",
+      "绿色版"
+    ],
+    "summary": "轻量文本编辑器，可替换系统记事本。",
+    "intro": "Notepad3 启动快、支持语法高亮和正则，可直接替换 Windows 自带记事本。",
+    "features": [
+      "语法高亮",
+      "正则查找",
+      "替换系统记事本",
+      "便携版"
+    ],
+    "tips": [],
+    "license": "BSD-3-Clause",
+    "mirror_allowed": true,
+    "homepage": "https://www.rizonesoft.com/downloads/notepad3/",
+    "source": {
+      "type": "github",
+      "repo": "rizonesoft/Notepad3",
+      "assets": [
+        {
+          "match": "x64_Portable\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "git",
+    "name": "Git for Windows",
+    "abbr": "GT",
+    "category": "dev",
+    "tags": [
+      "Git",
+      "版本控制",
+      "绿色版"
+    ],
+    "summary": "Windows 版 Git，含 Git Bash。",
+    "intro": "Git for Windows 提供 Git 命令行、Git Bash 和凭据管理器，是开发者必装工具。",
+    "features": [
+      "Git 命令行",
+      "Git Bash",
+      "凭据管理",
+      "便携 MinGit"
+    ],
+    "tips": [],
+    "license": "GPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://gitforwindows.org/",
+    "source": {
+      "type": "github",
+      "repo": "git-for-windows/git",
+      "assets": [
+        {
+          "match": "^Git-[\\d.]+-64-bit\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        },
+        {
+          "match": "^MinGit-[\\d.]+-64-bit\\.zip$",
+          "label": "Windows x64 · MinGit 绿色版",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "vscode",
+    "name": "Visual Studio Code",
+    "abbr": "VS",
+    "category": "dev",
+    "tags": [
+      "编辑器",
+      "IDE"
+    ],
+    "summary": "微软出品的免费代码编辑器。",
+    "intro": "VS Code 轻量而强大，插件生态丰富，内置 Git、调试和终端。",
+    "features": [
+      "智能补全",
+      "调试与终端",
+      "插件市场",
+      "远程开发"
+    ],
+    "tips": [],
+    "license": "免费软件（微软）",
+    "mirror_allowed": false,
+    "homepage": "https://code.visualstudio.com/",
+    "source": {
+      "type": "winget",
+      "id": "Microsoft.VisualStudioCode",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": "UserSetup",
+          "label": "Windows x64 · 用户安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "nodejs",
+    "name": "Node.js LTS",
+    "abbr": "JS",
+    "category": "dev",
+    "tags": [
+      "JavaScript",
+      "运行时"
+    ],
+    "summary": "Node.js 长期支持版。",
+    "intro": "Node.js 是 JavaScript 运行时，用于前端工具链和后端服务开发。",
+    "features": [
+      "LTS 长期支持",
+      "自带 npm",
+      "跨平台",
+      "丰富生态"
+    ],
+    "tips": [],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://nodejs.org/",
+    "source": {
+      "type": "winget",
+      "id": "OpenJS.NodeJS.LTS",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows x64 · 安装包 MSI",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "python",
+    "name": "Python 3.13",
+    "abbr": "PY",
+    "category": "dev",
+    "tags": [
+      "Python",
+      "运行时"
+    ],
+    "summary": "Python 官方 Windows 安装包。",
+    "intro": "Python 是最流行的编程语言之一，适合脚本、数据分析和 AI 开发。",
+    "features": [
+      "官方解释器",
+      "pip 包管理",
+      "IDLE 编辑器",
+      "py 启动器"
+    ],
+    "tips": [],
+    "license": "PSF-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://www.python.org/",
+    "source": {
+      "type": "winget",
+      "id": "Python.Python.3.13",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": "amd64",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "dbeaver",
+    "name": "DBeaver",
+    "abbr": "DB",
+    "category": "dev",
+    "tags": [
+      "数据库",
+      "绿色版"
+    ],
+    "summary": "开源通用数据库管理工具。",
+    "intro": "DBeaver 支持 MySQL、PostgreSQL、SQLite、Oracle 等几十种数据库，提供 SQL 编辑和 ER 图。",
+    "features": [
+      "多数据库支持",
+      "SQL 编辑器",
+      "ER 图",
+      "数据导入导出"
+    ],
+    "tips": [],
+    "license": "Apache-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://dbeaver.io/",
+    "source": {
+      "type": "github",
+      "repo": "dbeaver/dbeaver",
+      "assets": [
+        {
+          "match": "windows-x86_64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "heidisql",
+    "name": "HeidiSQL",
+    "abbr": "HS",
+    "category": "dev",
+    "tags": [
+      "数据库",
+      "MySQL"
+    ],
+    "summary": "轻量的 MySQL / MariaDB / PostgreSQL 客户端。",
+    "intro": "HeidiSQL 小巧快速，适合日常管理 MySQL、MariaDB、PostgreSQL 和 SQL Server。",
+    "features": [
+      "多种数据库",
+      "表结构编辑",
+      "数据导出",
+      "SSH 隧道"
+    ],
+    "tips": [],
+    "license": "GPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://www.heidisql.com/",
+    "source": {
+      "type": "winget",
+      "id": "HeidiSQL.HeidiSQL",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "neovim",
+    "name": "Neovim",
+    "abbr": "NV",
+    "category": "dev",
+    "tags": [
+      "编辑器",
+      "Vim",
+      "绿色版"
+    ],
+    "summary": "现代化的 Vim 编辑器。",
+    "intro": "Neovim 是 Vim 的重构分支，内置 LSP 和 Lua 配置，插件生态活跃。",
+    "features": [
+      "内置 LSP",
+      "Lua 配置",
+      "异步插件",
+      "绿色免安装"
+    ],
+    "tips": [],
+    "license": "Apache-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://neovim.io/",
+    "source": {
+      "type": "github",
+      "repo": "neovim/neovim",
+      "assets": [
+        {
+          "match": "^nvim-win64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "tabby",
+    "name": "Tabby",
+    "abbr": "TB",
+    "category": "dev",
+    "tags": [
+      "终端",
+      "SSH",
+      "绿色版"
+    ],
+    "summary": "现代化的终端与 SSH 客户端。",
+    "intro": "Tabby 集终端、SSH、串口于一体，支持分屏、主题和配置同步。",
+    "features": [
+      "SSH 与串口",
+      "分屏与标签",
+      "主题插件",
+      "便携版"
+    ],
+    "tips": [],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://tabby.sh/",
+    "source": {
+      "type": "github",
+      "repo": "Eugeny/tabby",
+      "assets": [
+        {
+          "match": "portable-x64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "windterm",
+    "name": "WindTerm",
+    "abbr": "WT",
+    "category": "dev",
+    "tags": [
+      "终端",
+      "SSH",
+      "绿色版"
+    ],
+    "summary": "高性能的 SSH / Telnet / 串口终端。",
+    "intro": "WindTerm 性能出色，支持 SSH、SFTP、Telnet 和串口，适合运维与开发。",
+    "features": [
+      "高性能终端",
+      "SFTP 文件管理",
+      "会话管理",
+      "绿色免安装"
+    ],
+    "tips": [],
+    "license": "Apache-2.0（部分）",
+    "mirror_allowed": false,
+    "homepage": "https://github.com/kingToolbox/WindTerm",
+    "source": {
+      "type": "github",
+      "repo": "kingToolbox/WindTerm",
+      "assets": [
+        {
+          "match": "Portable_x86_64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "winscp",
+    "name": "WinSCP",
+    "abbr": "SC",
+    "category": "dev",
+    "tags": [
+      "SFTP",
+      "FTP"
+    ],
+    "summary": "经典 SFTP / FTP 文件传输客户端。",
+    "intro": "WinSCP 支持 SFTP、SCP、FTP 和 WebDAV，双栏界面，支持脚本自动化。",
+    "features": [
+      "SFTP / FTP / S3",
+      "双栏文件管理",
+      "同步目录",
+      "脚本自动化"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://winscp.net/",
+    "source": {
+      "type": "winget",
+      "id": "WinSCP.WinSCP",
+      "assets": [
+        {
+          "arch": "",
+          "url": "Setup",
+          "label": "Windows · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "putty",
+    "name": "PuTTY",
+    "abbr": "PT",
+    "category": "dev",
+    "tags": [
+      "SSH",
+      "终端"
+    ],
+    "summary": "经典轻量 SSH 客户端。",
+    "intro": "PuTTY 是老牌 SSH / Telnet 客户端，小巧稳定，附带 puttygen 等工具。",
+    "features": [
+      "SSH / Telnet / 串口",
+      "密钥生成",
+      "会话保存",
+      "小巧稳定"
+    ],
+    "tips": [],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://www.chiark.greenend.org.uk/~sgtatham/putty/",
+    "source": {
+      "type": "winget",
+      "id": "PuTTY.PuTTY",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": "\\.msi",
+          "label": "Windows x64 · 安装包 MSI",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "lazygit",
+    "name": "lazygit",
+    "abbr": "LG",
+    "category": "dev",
+    "tags": [
+      "Git",
+      "终端",
+      "绿色版"
+    ],
+    "summary": "终端里的 Git 图形界面。",
+    "intro": "lazygit 用键盘在终端里完成暂存、提交、变基和解决冲突，效率极高。",
+    "features": [
+      "交互式暂存",
+      "分支与变基",
+      "冲突处理",
+      "单文件运行"
+    ],
+    "tips": [],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://github.com/jesseduffield/lazygit",
+    "source": {
+      "type": "github",
+      "repo": "jesseduffield/lazygit",
+      "assets": [
+        {
+          "match": "windows_x86_64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "autohotkey",
+    "name": "AutoHotkey",
+    "abbr": "AH",
+    "category": "tools",
+    "tags": [
+      "自动化",
+      "快捷键"
+    ],
+    "summary": "Windows 自动化脚本语言。",
+    "intro": "AutoHotkey 用简单脚本实现快捷键、文本替换和自动操作。",
+    "features": [
+      "自定义快捷键",
+      "文本扩展",
+      "窗口自动化",
+      "编译成 exe"
+    ],
+    "tips": [],
+    "license": "GPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://www.autohotkey.com/",
+    "source": {
+      "type": "winget",
+      "id": "AutoHotkey.AutoHotkey",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "ollama",
+    "name": "Ollama",
+    "abbr": "OL",
+    "category": "ai",
+    "tags": [
+      "AI",
+      "大模型",
+      "绿色版"
+    ],
+    "summary": "在本地运行大语言模型。",
+    "intro": "Ollama 一条命令即可在本地运行 Llama、Qwen、DeepSeek 等开源大模型，并提供 API。",
+    "features": [
+      "本地运行大模型",
+      "一键下载模型",
+      "OpenAI 兼容 API",
+      "GPU 加速"
+    ],
+    "tips": [],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://ollama.com/",
+    "source": {
+      "type": "github",
+      "repo": "ollama/ollama",
+      "assets": [
+        {
+          "match": "^OllamaSetup\\.exe$",
+          "label": "Windows · 安装包",
+          "platform": "Windows",
+          "portable": false
+        },
+        {
+          "match": "^ollama-windows-amd64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "cherry-studio",
+    "name": "Cherry Studio",
+    "abbr": "CS",
+    "category": "ai",
+    "tags": [
+      "AI",
+      "客户端",
+      "绿色版"
+    ],
+    "summary": "多模型 AI 桌面客户端。",
+    "intro": "Cherry Studio 支持接入 OpenAI、Claude、Gemini、DeepSeek 和本地模型，内置知识库与智能体。",
+    "features": [
+      "多模型接入",
+      "本地知识库",
+      "智能体",
+      "便携版"
+    ],
+    "tips": [],
+    "license": "AGPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://cherry-ai.com/",
+    "source": {
+      "type": "github",
+      "repo": "CherryHQ/cherry-studio",
+      "assets": [
+        {
+          "match": "win-x64-portable\\.exe$",
+          "label": "Windows x64 · 便携版 EXE",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "jan",
+    "name": "Jan",
+    "abbr": "JN",
+    "category": "ai",
+    "tags": [
+      "AI",
+      "离线"
+    ],
+    "summary": "完全离线运行的 ChatGPT 替代品。",
+    "intro": "Jan 在本地下载并运行开源模型，聊天数据不离开电脑，也可接入云端 API。",
+    "features": [
+      "离线运行",
+      "模型中心",
+      "本地 API 服务",
+      "隐私优先"
+    ],
+    "tips": [],
+    "license": "Apache-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://jan.ai/",
+    "source": {
+      "type": "github",
+      "repo": "janhq/jan",
+      "assets": [
+        {
+          "match": "x64-setup\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "pot",
+    "name": "Pot",
+    "abbr": "PO",
+    "category": "ai",
+    "tags": [
+      "翻译",
+      "OCR"
+    ],
+    "summary": "划词翻译与截图 OCR 工具。",
+    "intro": "Pot 支持划词翻译、截图识别文字，可接入多家翻译引擎和大模型。",
+    "features": [
+      "划词翻译",
+      "截图 OCR",
+      "多引擎对比",
+      "大模型翻译"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://pot-app.com/",
+    "source": {
+      "type": "github",
+      "repo": "pot-app/pot-desktop",
+      "assets": [
+        {
+          "match": "x64-setup\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "steam",
+    "name": "Steam",
+    "abbr": "ST",
+    "category": "game",
+    "tags": [
+      "游戏平台"
+    ],
+    "summary": "Valve 的游戏平台客户端。",
+    "intro": "Steam 是全球最大的 PC 游戏平台，提供购买、下载、好友和创意工坊。",
+    "features": [
+      "游戏商店",
+      "云存档",
+      "创意工坊",
+      "远程同乐"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://store.steampowered.com/",
+    "source": {
+      "type": "winget",
+      "id": "Valve.Steam",
+      "assets": [
+        {
+          "arch": "",
+          "url": ".",
+          "label": "Windows · 官方安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "playnite",
+    "name": "Playnite",
+    "abbr": "PN",
+    "category": "game",
+    "tags": [
+      "游戏库",
+      "绿色版"
+    ],
+    "summary": "把各平台游戏统一管理的开源启动器。",
+    "intro": "Playnite 把 Steam、Epic、GOG、模拟器等游戏聚合到一个库里，支持主题和插件。",
+    "features": [
+      "多平台游戏聚合",
+      "全屏模式",
+      "主题与插件",
+      "便携版"
+    ],
+    "tips": [],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://playnite.link/",
+    "source": {
+      "type": "github",
+      "repo": "JosefNemec/Playnite",
+      "assets": [
+        {
+          "match": "^[\\d.]+\\.7z$",
+          "label": "Windows · 绿色版 7z",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "pcsx2",
+    "name": "PCSX2",
+    "abbr": "P2",
+    "category": "game",
+    "tags": [
+      "模拟器",
+      "PS2",
+      "绿色版"
+    ],
+    "summary": "开源 PS2 模拟器。",
+    "intro": "PCSX2 可以在电脑上运行 PS2 游戏，支持高清渲染和存档即时保存。",
+    "features": [
+      "高清渲染",
+      "即时存档",
+      "手柄支持",
+      "绿色免安装"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://pcsx2.net/",
+    "source": {
+      "type": "github",
+      "repo": "PCSX2/pcsx2",
+      "assets": [
+        {
+          "match": "windows-x64-Qt\\.7z$",
+          "label": "Windows x64 · 绿色版 7z",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "tencent-video",
+    "name": "腾讯视频",
+    "abbr": "腾",
+    "category": "media",
+    "tags": [
+      "视频",
+      "腾讯"
+    ],
+    "summary": "腾讯视频官方电脑版。",
+    "intro": "腾讯视频 Windows 客户端，观看电视剧、电影、综艺和动漫。",
+    "features": [
+      "热门影视",
+      "离线缓存",
+      "弹幕",
+      "高清画质"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://v.qq.com/",
+    "source": {
+      "type": "winget",
+      "id": "Tencent.TencentVideo",
+      "assets": [
+        {
+          "arch": "",
+          "url": ".",
+          "label": "Windows · 官方安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "iqiyi",
+    "name": "爱奇艺",
+    "abbr": "爱",
+    "category": "media",
+    "tags": [
+      "视频"
+    ],
+    "summary": "爱奇艺官方电脑版。",
+    "intro": "爱奇艺 Windows 客户端，观看剧集、电影和综艺，支持离线下载。",
+    "features": [
+      "热门影视",
+      "离线下载",
+      "弹幕",
+      "杜比音效"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://www.iqiyi.com/",
+    "source": {
+      "type": "winget",
+      "id": "iQIYI.iQIYI",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows x64 · 官方安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "weasel",
+    "name": "小狼毫输入法",
+    "abbr": "狼",
+    "category": "tools",
+    "tags": [
+      "输入法",
+      "Rime"
+    ],
+    "summary": "Rime 中州韵输入法 Windows 版。",
+    "intro": "小狼毫是 Rime 输入法引擎的 Windows 前端，无广告、可深度定制词库和方案。",
+    "features": [
+      "无广告",
+      "自定义方案",
+      "双拼与五笔",
+      "词库同步"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://rime.im/",
+    "source": {
+      "type": "github",
+      "repo": "rime/weasel",
+      "assets": [
+        {
+          "match": "installer\\.exe$",
+          "label": "Windows · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "sogou-input",
+    "name": "搜狗输入法",
+    "abbr": "搜",
+    "category": "tools",
+    "tags": [
+      "输入法"
+    ],
+    "summary": "搜狗拼音输入法官方版。",
+    "intro": "搜狗输入法词库丰富，支持云输入、智能纠错和皮肤。",
+    "features": [
+      "海量词库",
+      "云输入",
+      "智能纠错",
+      "皮肤"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://pinyin.sogou.com/",
+    "source": {
+      "type": "winget",
+      "id": "Sogou.SogouInput",
+      "assets": [
+        {
+          "arch": "",
+          "url": ".",
+          "label": "Windows · 官方安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
   }
 ]

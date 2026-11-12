@@ -32,7 +32,7 @@ code { font: 12.5px/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace
 .topbar { position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--card) 88%, transparent); backdrop-filter: saturate(180%) blur(12px); border-bottom: 1px solid var(--line); }
 .bar { display: flex; align-items: center; gap: 24px; height: 60px; }
 .logo { display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 17px; color: var(--text); white-space: nowrap; }
-.logo-mark { background: var(--brand); color: #fff; font-size: 12px; padding: 3px 7px; border-radius: 8px; letter-spacing: .5px; }
+.logo-mark { background: #16a34a; color: #fff; font-size: 12px; padding: 3px 7px; border-radius: 8px; letter-spacing: .5px; }
 .nav { display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; flex: 1; }
 .nav a { color: var(--muted); padding: 6px 12px; border-radius: 8px; white-space: nowrap; font-size: 14px; }
 .nav a:hover, .nav a.on { color: var(--text); background: var(--soft); }

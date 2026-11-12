@@ -2,7 +2,10 @@
 """同步官方版本信息到 data/releases.json，可选把安装包镜像到网盘。
 
 默认模式（无需任何密钥）：
-  读取 GitHub Releases，写入版本号、发布日期、更新日志、文件大小、SHA-256（上游 digest）。
+  source.type = github：读取 GitHub Releases；
+  source.type = winget：读取微软 winget-pkgs 官方清单（安装包为厂商官方地址，SHA-256 来自清单）；
+  source.type = official：只给官网入口，不同步版本。
+  写入版本号、发布日期、更新日志、文件大小、SHA-256（上游 digest）。
 
 镜像模式（设置了 OPENLIST_URL + OPENLIST_TOKEN 时自动开启）：
   新版本出现时下载文件 -> 校验 SHA-256 -> 通过 OpenList 上传到 DRIVES 里的每个挂载点
@@ -106,8 +109,82 @@ def mirror_file(item, ver, asset, upstream_sha):
     return mirrors
 
 
+def vparts(v):
+    return [int(x) if x.isdigit() else 0 for x in re.split(r"[.\-_]", v)]
+
+
+def winget_release(pid):
+    path = "/".join([pid[0].lower()] + pid.split("."))
+    items = gh_json(f"https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/{path}")
+    vers = [i["name"] for i in items if i["type"] == "dir" and re.match(r"^\d", i["name"])]
+    ver = max(vers, key=vparts)
+    base = f"https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/{path}/{ver}/{pid}"
+    with http(f"{base}.installer.yaml") as r:
+        y = r.read().decode("utf-8", "replace")
+    installers = []
+    for blk in re.split(r"\n-\s", y):
+        u = re.search(r"InstallerUrl:\s*(\S+)", blk)
+        h = re.search(r"InstallerSha256:\s*(\S+)", blk)
+        a = re.search(r"Architecture:\s*(\S+)", blk)
+        if u and h:
+            installers.append({"url": u.group(1), "sha256": h.group(1).lower(), "arch": a.group(1) if a else ""})
+    notes, released = "", ""
+    try:
+        with http(f"{base}.locale.zh-CN.yaml") as r:
+            loc = r.read().decode("utf-8", "replace")
+    except Exception:
+        try:
+            with http(f"{base}.locale.en-US.yaml") as r:
+                loc = r.read().decode("utf-8", "replace")
+        except Exception:
+            loc = ""
+    m = re.search(r"ReleaseNotes:\s*\|-?\n((?:\s{2,}.*\n?)+)", loc)
+    if m:
+        notes = "\n".join(l.strip() for l in m.group(1).splitlines())
+    m = re.search(r"ReleaseDate:\s*(\S+)", y)
+    if m:
+        released = m.group(1)
+    return ver, installers, notes, released, f"https://github.com/microsoft/winget-pkgs/tree/master/manifests/{path}/{ver}"
+
+
+def file_name(u):
+    p = urllib.parse.urlparse(u).path
+    p = re.sub(r"/download$", "", p)
+    return urllib.parse.unquote(p.rsplit("/", 1)[-1]) or u
+
+
+def sync_winget(item, prev, src):
+    ver, installers, notes, released, page = winget_release(src["id"])
+    same = prev and prev.get("version") == ver
+    want_mirror = MIRROR and item.get("mirror_allowed")
+    if same and (not want_mirror or prev.get("mirrored")):
+        return prev, False
+    downloads = []
+    for rule in src["assets"]:
+        ins = next((i for i in installers
+                    if (not rule.get("arch") or i["arch"] == rule["arch"]) and re.search(rule.get("url", "."), i["url"])), None)
+        if not ins:
+            continue
+        name = file_name(ins["url"])
+        asset = {"name": name, "browser_download_url": ins["url"]}
+        mirrors = mirror_file(item, ver, asset, ins["sha256"]) if want_mirror else []
+        downloads.append({
+            "label": rule["label"], "platform": rule.get("platform", "Windows"), "portable": bool(rule.get("portable")),
+            "file": name, "size": None, "sha256": ins["sha256"], "official": ins["url"], "mirrors": mirrors,
+        })
+    today = datetime.date.today().isoformat()
+    if same and prev.get("released"):
+        released = prev["released"]
+    return {
+        "version": ver, "released": released, "verified": today, "release_url": page,
+        "changelog": notes[:6000], "downloads": downloads, "mirrored": bool(want_mirror), "source": "winget",
+    }, not same
+
+
 def sync_item(item, prev):
     src = item.get("source") or {}
+    if src.get("type") == "winget":
+        return sync_winget(item, prev, src)
     if src.get("type") != "github":
         return prev, False
     rel = gh_json(f"https://api.github.com/repos/{src['repo']}/releases/latest")
