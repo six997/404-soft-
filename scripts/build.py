@@ -253,7 +253,7 @@ def page_detail(item, rel, items, releases, cats):
         links += [("发布页", rel.get("release_url")), ("源代码", f"https://github.com/{repo}")]
     link_html = "".join(f'<a href="{e(u)}" target="_blank" rel="noopener">{n} ↗</a>' for n, u in links if u)
 
-    related = [i for i in items if i["slug"] != item["slug"] and (i["category"] == item["category"] or set(i.get("tags", [])) & set(item.get("tags", [])))]
+    related = [i for i in items if i["slug"] != item["slug"] and (i["category"] == item["category"] or (set(i.get("tags", [])) & set(item.get("tags", [])) - {"绿色版"}))]
     related = related or [i for i in items if i["slug"] != item["slug"]]
     rel_html = "".join(card(i, releases.get(i["slug"], {})) for i in related[:4])
 
