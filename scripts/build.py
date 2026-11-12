@@ -135,7 +135,9 @@ def layout(title, body, desc=SLOGAN, active=""):
 
 def card(item, rel):
     plats = "".join(f'<span class="plat">{p}</span>' for p in item["platforms"])
-    return f"""<a class="soft-card" href="{url('/software/' + item['slug'] + '/')}" data-platforms="{' '.join(item['platforms'])}" data-name="{e((item['name'] + ' ' + ' '.join(item.get('tags', []))).lower())}">
+    if item.get("green"):
+        plats = '<span class="plat green">绿色版</span>' + plats
+    return f"""<a class="soft-card" href="{url('/software/' + item['slug'] + '/')}" data-platforms="{' '.join(item['platforms'])}{' 绿色版' if item.get('green') else ''}" data-name="{e((item['name'] + ' ' + ' '.join(item.get('tags', []))).lower())}">
   {icon(item)}
   <div class="soft-main">
     <h3>{e(item['name'])} <span class="ver">{e(rel.get('version', ''))}</span></h3>
@@ -170,14 +172,14 @@ def page_home(items, releases, cats):
     today_n = sum(1 for i in items if releases.get(i["slug"], {}).get("released") == today)
     chips = '<button class="chip on" data-plat="">全部</button>' + "".join(
         f'<button class="chip" data-plat="{p}">{p}</button>' for p in PLATFORMS if any(p in i["platforms"] for i in items)
-    )
+    ) + '<button class="chip" data-plat="绿色版">绿色版</button>'
     ordered = sorted(items, key=lambda i: releases.get(i["slug"], {}).get("released", ""), reverse=True)
     cards = []
     for n, i in enumerate(ordered, 1):
         cards.append(card(i, releases.get(i["slug"], {})))
         if n % 6 == 0:
             cards.append(ad("feed"))
-    hot = " ".join(f'<button class="hot" data-q="{e(i["name"])}">{e(i["name"])}</button>' for i in items[:6])
+    hot = " ".join(f'<button class="hot" data-q="{e(i["name"])}">{e(i["name"])}</button>' for i in [x for x in items if x.get("hot")][:6] or items[:6])
     body = f"""
 <section class="hero" id="search">
   <h1>找对软件，从官方入口开始</h1>
@@ -198,6 +200,7 @@ def page_home(items, releases, cats):
     </div>
     <div class="soft-list" id="list">{''.join(cards)}</div>
     <p class="empty" id="empty" hidden>没有匹配的软件，换个关键词试试。</p>
+    <button class="more" id="more" hidden>加载更多</button>
   </section>
   {sidebar(items, releases, cats)}
 </div>"""
@@ -222,7 +225,7 @@ def page_category(key, name, items, releases, cats):
 
 def page_detail(item, rel, items, releases, cats):
     cat = cats.get(item["category"], item["category"])
-    plats = "".join(f'<span class="plat">{p}</span>' for p in item["platforms"])
+    plats = ('<span class="plat green">绿色版</span>' if item.get("green") else "") + "".join(f'<span class="plat">{p}</span>' for p in item["platforms"])
     intro = "".join(f"<p>{e(p)}</p>" for p in item.get("intro", "").split("\n\n") if p.strip())
     feats = "".join(f"<li>{e(f)}</li>" for f in item.get("features", []))
     tips = "".join(f"<li>{e(t)}</li>" for t in item.get("tips", []))
@@ -239,7 +242,7 @@ def page_detail(item, rel, items, releases, cats):
         sha = d.get("sha256", "")
         shabox = f'<button class="sha" data-sha="{sha}" title="点击复制 SHA-256">SHA-256 <code>{sha[:12]}…{sha[-6:]}</code></button>' if sha else ""
         rows.append(f"""<li class="dl">
-  <div class="dl-info"><strong>{e(d['label'])}</strong><span>{e(d['file'])} · {human_size(d['size'])}</span>{shabox}</div>
+  <div class="dl-info"><strong>{e(d['label'])}{' <span class="plat green">绿色免安装</span>' if d.get('portable') else ''}</strong><span>{e(d['file'])} · {human_size(d['size'])}</span>{shabox}</div>
   <div class="dl-btns"><a class="btn" href="{e(d['official'])}" target="_blank" rel="noopener">官方下载</a>{mbtn}</div>
 </li>""")
     downloads = "".join(rows) or '<li class="dl"><div class="dl-info">暂无可用文件，请前往官网下载。</div></li>'
@@ -330,6 +333,7 @@ def main():
     for i in items:
         r = releases.get(i["slug"], {})
         i["platforms"] = [p for p in PLATFORMS if any(d["platform"] == p for d in r.get("downloads", []))] or i.get("platforms", [])
+        i["green"] = any(d.get("portable") for d in r.get("downloads", []))
         USED_CATS.add(i["category"])
 
     shutil.rmtree(DIST, ignore_errors=True)

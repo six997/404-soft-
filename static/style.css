@@ -1,3 +1,4 @@
+[hidden] { display: none !important; }
 :root {
   --bg: #f6f7f9; --card: #fff; --line: #e8eaee; --soft: #f1f3f6;
   --text: #1f2937; --muted: #6b7280; --brand: #2563eb; --brand-soft: #eef3ff;
@@ -161,3 +162,9 @@ code { font: 12.5px/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace
   .ad-slot.on[data-ad="home-top"] { min-height: 100px; }
   .ad-slot.on[data-ad="footer"] { min-height: 50px; }
 }
+
+/* 绿色版与加载更多 */
+.plat.green { background: color-mix(in srgb, var(--ok) 14%, transparent); color: var(--ok); font-weight: 600; }
+.dl-info strong .plat { margin-left: 6px; vertical-align: 2px; }
+.more { display: block; width: 100%; margin-top: 14px; padding: 12px; border: 1px solid var(--line); border-radius: var(--r); background: var(--card); color: var(--brand); font: inherit; font-weight: 600; cursor: pointer; }
+.more:hover { border-color: var(--brand); }

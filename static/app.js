@@ -19,25 +19,35 @@
   if (list) {
     const q = $("#q"), empty = $("#empty");
     let plat = "";
+    const more = $("#more"), PAGE = 12;
+    let limit = PAGE;
     const apply = () => {
       const kw = (q.value || "").trim().toLowerCase();
-      let shown = 0;
+      let matched = 0;
       $$(".soft-card", list).forEach(c => {
         const ok = (!kw || c.dataset.name.includes(kw)) && (!plat || c.dataset.platforms.split(" ").includes(plat));
-        c.hidden = !ok;
-        if (ok) shown++;
+        if (ok) matched++;
+        c.hidden = !ok || matched > limit;
       });
-      $$('.ad-slot[data-ad="feed"]', list).forEach(a => a.hidden = !!(kw || plat));
-      empty.hidden = shown > 0;
+      $$('.ad-slot[data-ad="feed"]', list).forEach(a => {
+        const prev = a.previousElementSibling;
+        a.hidden = !!(kw || plat) || !prev || prev.hidden;
+      });
+      empty.hidden = matched > 0;
+      more.hidden = matched <= limit;
+      more.textContent = `加载更多（还有 ${Math.max(matched - limit, 0)} 款）`;
     };
-    q.addEventListener("input", apply);
+    more.addEventListener("click", () => { limit += PAGE; apply(); });
+    const reset = () => { limit = PAGE; apply(); };
+    q.addEventListener("input", reset);
     $$(".chip").forEach(ch => ch.addEventListener("click", () => {
       $$(".chip").forEach(x => x.classList.remove("on"));
       ch.classList.add("on");
       plat = ch.dataset.plat;
-      apply();
+      reset();
     }));
-    $$(".hot").forEach(h => h.addEventListener("click", () => { q.value = h.dataset.q; apply(); q.focus(); }));
+    $$(".hot").forEach(h => h.addEventListener("click", () => { q.value = h.dataset.q; reset(); q.focus(); }));
+    apply();
     if (location.hash === "#search") q.focus();
   }
 

@@ -1,67 +1,939 @@
 [
   {
-    "slug": "sharex", "name": "ShareX", "abbr": "SX",
-    "category": "graphics", "tags": ["截图", "录屏", "标注"],
+    "slug": "sharex",
+    "name": "ShareX",
+    "abbr": "SX",
+    "category": "graphics",
+    "tags": [
+      "截图",
+      "录屏",
+      "标注",
+      "绿色版"
+    ],
     "summary": "截图、标注与录屏连成一套工作流，适合写教程和反馈问题。",
     "intro": "ShareX 面向需要频繁截图和解释画面的人。截取区域后可以添加标记、突出关键位置，再保存为文件，适合制作操作说明或提交问题反馈。\n\n自动任务可以减少重复操作，但涉及敏感画面时应先检查保存和上传设置。建议从本地保存开始使用，确认流程后再启用自己需要的共享功能。",
-    "features": ["区域、窗口、滚动截图", "内置标注与马赛克", "录屏为 MP4 / GIF", "OCR 文字识别", "自定义上传目标与自动任务"],
-    "tips": ["分享前检查截图里是否包含账户信息或其他私人内容。", "不需要自动上传时，只启用本地保存与剪贴板任务。"],
-    "license": "GPL-3.0", "mirror_allowed": true,
+    "features": [
+      "区域、窗口、滚动截图",
+      "内置标注与马赛克",
+      "录屏为 MP4 / GIF",
+      "OCR 文字识别",
+      "自定义上传目标与自动任务"
+    ],
+    "tips": [
+      "分享前检查截图里是否包含账户信息或其他私人内容。",
+      "不需要自动上传时，只启用本地保存与剪贴板任务。"
+    ],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
     "homepage": "https://getsharex.com/",
-    "source": {"type": "github", "repo": "ShareX/ShareX", "assets": [
-      {"match": "setup-x64\\.exe$", "label": "Windows x64 · 安装程序", "platform": "Windows"},
-      {"match": "portable-x64\\.zip$", "label": "Windows x64 · 便携 ZIP", "platform": "Windows"}
-    ]},
+    "source": {
+      "type": "github",
+      "repo": "ShareX/ShareX",
+      "assets": [
+        {
+          "match": "setup-x64\\.exe$",
+          "label": "Windows x64 · 安装程序",
+          "platform": "Windows",
+          "portable": false
+        },
+        {
+          "match": "portable-x64\\.zip$",
+          "label": "Windows x64 · 便携 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    },
     "featured": true
   },
   {
-    "slug": "obs-studio", "name": "OBS Studio", "abbr": "OBS",
-    "category": "video", "tags": ["录屏", "直播"],
+    "slug": "obs-studio",
+    "name": "OBS Studio",
+    "abbr": "OBS",
+    "category": "video",
+    "tags": [
+      "录屏",
+      "直播",
+      "绿色版"
+    ],
     "summary": "把屏幕、摄像头与声音组合成场景，用于录课、演示或直播。",
     "intro": "OBS Studio 是免费开源的录制与直播软件。通过「场景 + 来源」的方式自由组合画面，支持多路音频混音、滤镜与转场，几乎所有直播平台都能直接推流。\n\n首次使用建议运行自动配置向导，根据电脑性能选择编码器和分辨率。",
-    "features": ["多场景与多来源自由组合", "硬件编码（NVENC / QSV / AMF）", "音频混音与降噪滤镜", "推流到各大直播平台", "插件与脚本扩展"],
-    "tips": ["录制前先用短片段测试声音和帧率。", "笔记本录屏卡顿时优先改用硬件编码器。"],
-    "license": "GPL-2.0", "mirror_allowed": true,
+    "features": [
+      "多场景与多来源自由组合",
+      "硬件编码（NVENC / QSV / AMF）",
+      "音频混音与降噪滤镜",
+      "推流到各大直播平台",
+      "插件与脚本扩展"
+    ],
+    "tips": [
+      "录制前先用短片段测试声音和帧率。",
+      "笔记本录屏卡顿时优先改用硬件编码器。"
+    ],
+    "license": "GPL-2.0",
+    "mirror_allowed": true,
     "homepage": "https://obsproject.com/",
-    "source": {"type": "github", "repo": "obsproject/obs-studio", "assets": [
-      {"match": "Windows-x64-Installer\\.exe$", "label": "Windows x64 · 安装程序", "platform": "Windows"},
-      {"match": "Windows-x64\\.zip$", "label": "Windows x64 · 便携 ZIP", "platform": "Windows"},
-      {"match": "macOS-Apple\\.dmg$", "label": "macOS · Apple 芯片", "platform": "macOS"},
-      {"match": "macOS-Intel\\.dmg$", "label": "macOS · Intel", "platform": "macOS"},
-      {"match": "Ubuntu-[\\d.]+-x86_64\\.deb$", "label": "Linux · Ubuntu DEB", "platform": "Linux"}
-    ]}
+    "source": {
+      "type": "github",
+      "repo": "obsproject/obs-studio",
+      "assets": [
+        {
+          "match": "Windows-x64-Installer\\.exe$",
+          "label": "Windows x64 · 安装程序",
+          "platform": "Windows",
+          "portable": false
+        },
+        {
+          "match": "Windows-x64\\.zip$",
+          "label": "Windows x64 · 便携 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "macOS-Apple\\.dmg$",
+          "label": "macOS · Apple 芯片",
+          "platform": "macOS",
+          "portable": false
+        },
+        {
+          "match": "macOS-Intel\\.dmg$",
+          "label": "macOS · Intel",
+          "platform": "macOS",
+          "portable": false
+        },
+        {
+          "match": "Ubuntu-[\\d.]+-x86_64\\.deb$",
+          "label": "Linux · Ubuntu DEB",
+          "platform": "Linux",
+          "portable": false
+        }
+      ]
+    },
+    "hot": true
   },
   {
-    "slug": "keepassxc", "name": "KeePassXC", "abbr": "KX",
-    "category": "security", "tags": ["密码管理", "加密"],
+    "slug": "keepassxc",
+    "name": "KeePassXC",
+    "abbr": "KX",
+    "category": "security",
+    "tags": [
+      "密码管理",
+      "加密",
+      "绿色版"
+    ],
     "summary": "以本地加密数据库管理密码，把账户整理与备份留在自己掌控中。",
     "intro": "KeePassXC 是跨平台的离线密码管理器，所有数据保存在一个本地加密的 .kdbx 文件里，不依赖任何云服务。配合浏览器扩展可以自动填充，也支持 TOTP 两步验证码。\n\n数据库文件请定期备份到另一处位置，并牢记主密码，丢失后无法找回。",
-    "features": ["AES / ChaCha20 加密的本地数据库", "浏览器自动填充扩展", "TOTP 两步验证码", "密码生成器与健康检查", "兼容 KeePass 生态"],
-    "tips": ["主密码丢失无法找回，建议额外设置密钥文件并妥善备份。", "同步数据库可放在网盘，但不要和密钥文件放在一起。"],
-    "license": "GPL-3.0", "mirror_allowed": true,
+    "features": [
+      "AES / ChaCha20 加密的本地数据库",
+      "浏览器自动填充扩展",
+      "TOTP 两步验证码",
+      "密码生成器与健康检查",
+      "兼容 KeePass 生态"
+    ],
+    "tips": [
+      "主密码丢失无法找回，建议额外设置密钥文件并妥善备份。",
+      "同步数据库可放在网盘，但不要和密钥文件放在一起。"
+    ],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
     "homepage": "https://keepassxc.org/",
-    "source": {"type": "github", "repo": "keepassxreboot/keepassxc", "assets": [
-      {"match": "^KeePassXC-[\\d.]+-x64\\.msi$", "label": "Windows x64 · 安装程序", "platform": "Windows"},
-      {"match": "^KeePassXC-[\\d.]+-arm64\\.dmg$", "label": "macOS · Apple 芯片", "platform": "macOS"},
-      {"match": "^KeePassXC-[\\d.]+-x86_64\\.dmg$", "label": "macOS · Intel", "platform": "macOS"},
-      {"match": "^KeePassXC-[\\d.]+-x86_64\\.AppImage$", "label": "Linux · AppImage", "platform": "Linux"}
-    ]}
+    "source": {
+      "type": "github",
+      "repo": "keepassxreboot/keepassxc",
+      "assets": [
+        {
+          "match": "^KeePassXC-[\\d.]+-x64\\.msi$",
+          "label": "Windows x64 · 安装程序",
+          "platform": "Windows",
+          "portable": false
+        },
+        {
+          "match": "^KeePassXC-[\\d.]+-x64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "^KeePassXC-[\\d.]+-arm64\\.dmg$",
+          "label": "macOS · Apple 芯片",
+          "platform": "macOS",
+          "portable": false
+        },
+        {
+          "match": "^KeePassXC-[\\d.]+-x86_64\\.dmg$",
+          "label": "macOS · Intel",
+          "platform": "macOS",
+          "portable": false
+        },
+        {
+          "match": "^KeePassXC-[\\d.]+-x86_64\\.AppImage$",
+          "label": "Linux · AppImage",
+          "platform": "Linux",
+          "portable": true
+        }
+      ]
+    }
   },
   {
-    "slug": "localsend", "name": "LocalSend", "abbr": "LS",
-    "category": "network", "tags": ["文件传输", "局域网"],
+    "slug": "localsend",
+    "name": "LocalSend",
+    "abbr": "LS",
+    "category": "network",
+    "tags": [
+      "文件传输",
+      "局域网",
+      "绿色版"
+    ],
     "summary": "在同一个局域网内跨设备传文件，无需先上传到网盘。",
     "intro": "LocalSend 是开源的局域网文件传输工具，类似 AirDrop，但覆盖 Windows、macOS、Linux、Android 和 iOS。设备之间直接加密传输，不经过服务器，也不需要注册账号。\n\n两台设备连在同一个 Wi-Fi 下即可互相发现。",
-    "features": ["全平台互传", "端到端 HTTPS 加密", "无需账号与服务器", "支持文件、文件夹与文本", "速度只受局域网带宽限制"],
-    "tips": ["找不到对方时检查防火墙是否放行 LocalSend。", "公共 Wi-Fi 下建议开启接收前确认。"],
-    "license": "Apache-2.0", "mirror_allowed": true,
+    "features": [
+      "全平台互传",
+      "端到端 HTTPS 加密",
+      "无需账号与服务器",
+      "支持文件、文件夹与文本",
+      "速度只受局域网带宽限制"
+    ],
+    "tips": [
+      "找不到对方时检查防火墙是否放行 LocalSend。",
+      "公共 Wi-Fi 下建议开启接收前确认。"
+    ],
+    "license": "Apache-2.0",
+    "mirror_allowed": true,
     "homepage": "https://localsend.org/",
-    "source": {"type": "github", "repo": "localsend/localsend", "assets": [
-      {"match": "windows-x86-64\\.exe$", "label": "Windows x64 · 安装程序", "platform": "Windows"},
-      {"match": "windows-x86-64\\.zip$", "label": "Windows x64 · 便携 ZIP", "platform": "Windows"},
-      {"match": "^LocalSend-[\\d.]+\\.dmg$", "label": "macOS · 通用", "platform": "macOS"},
-      {"match": "linux-x86-64\\.AppImage$", "label": "Linux · AppImage", "platform": "Linux"},
-      {"match": "android-arm64v8\\.apk$", "label": "Android · arm64 APK", "platform": "Android"}
-    ]}
+    "source": {
+      "type": "github",
+      "repo": "localsend/localsend",
+      "assets": [
+        {
+          "match": "windows-x86-64\\.exe$",
+          "label": "Windows x64 · 安装程序",
+          "platform": "Windows",
+          "portable": false
+        },
+        {
+          "match": "windows-x86-64\\.zip$",
+          "label": "Windows x64 · 便携 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "^LocalSend-[\\d.]+\\.dmg$",
+          "label": "macOS · 通用",
+          "platform": "macOS",
+          "portable": false
+        },
+        {
+          "match": "linux-x86-64\\.AppImage$",
+          "label": "Linux · AppImage",
+          "platform": "Linux",
+          "portable": true
+        },
+        {
+          "match": "android-arm64v8\\.apk$",
+          "label": "Android · arm64 APK",
+          "platform": "Android",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "notepad-plus-plus",
+    "name": "Notepad++",
+    "abbr": "N++",
+    "category": "office",
+    "tags": [
+      "文本编辑",
+      "代码",
+      "绿色版"
+    ],
+    "summary": "轻快的文本与代码编辑器，打开大文件也不卡。",
+    "intro": "Notepad++ 是 Windows 上最常用的免费文本编辑器之一，支持数十种语言的语法高亮、多标签、宏录制和插件。绿色版解压即用，配置保存在程序目录，适合放进 U 盘随身带。",
+    "features": [
+      "语法高亮与代码折叠",
+      "多标签与分屏对比",
+      "正则查找替换",
+      "宏录制",
+      "插件管理器"
+    ],
+    "tips": [
+      "绿色版的设置保存在解压目录，换电脑时整个文件夹一起拷走即可。"
+    ],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://notepad-plus-plus.org/",
+    "source": {
+      "type": "github",
+      "repo": "notepad-plus-plus/notepad-plus-plus",
+      "assets": [
+        {
+          "match": "portable\\.x64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "portable\\.minimalist\\.x64\\.7z$",
+          "label": "Windows x64 · 精简绿色版 7z",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    },
+    "hot": true
+  },
+  {
+    "slug": "rufus",
+    "name": "Rufus",
+    "abbr": "RF",
+    "category": "system",
+    "tags": [
+      "启动盘",
+      "U盘",
+      "绿色版"
+    ],
+    "summary": "几秒钟做好系统启动 U 盘，单文件免安装。",
+    "intro": "Rufus 用来把 Windows、Linux 等系统镜像写入 U 盘制作启动盘。它只有一个 exe，便携版不会写注册表，打开就能用。",
+    "features": [
+      "支持 ISO / IMG / VHD",
+      "可绕过 Windows 11 硬件检测",
+      "GPT / MBR 分区方案",
+      "坏块检测"
+    ],
+    "tips": [
+      "写盘会清空 U 盘全部数据，开始前确认选对了设备。"
+    ],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://rufus.ie/",
+    "source": {
+      "type": "github",
+      "repo": "pbatard/rufus",
+      "assets": [
+        {
+          "match": "^rufus-[\\d.]+p\\.exe$",
+          "label": "Windows · 便携版 EXE",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "ventoy",
+    "name": "Ventoy",
+    "abbr": "VT",
+    "category": "system",
+    "tags": [
+      "启动盘",
+      "多系统",
+      "绿色版"
+    ],
+    "summary": "一个 U 盘放多个系统镜像，拷进去就能启动。",
+    "intro": "Ventoy 只需安装一次到 U 盘，之后直接把 ISO 文件拷进去，开机时从菜单里选择即可启动，不必反复格式化。",
+    "features": [
+      "多 ISO 共存",
+      "直接拷贝即用",
+      "支持 UEFI 与 Legacy",
+      "保留 U 盘普通存储功能"
+    ],
+    "tips": [
+      "首次安装到 U 盘会清空数据，之后升级不会。"
+    ],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://www.ventoy.net/",
+    "source": {
+      "type": "github",
+      "repo": "ventoy/Ventoy",
+      "assets": [
+        {
+          "match": "windows\\.zip$",
+          "label": "Windows · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    },
+    "hot": true
+  },
+  {
+    "slug": "winmerge",
+    "name": "WinMerge",
+    "abbr": "WM",
+    "category": "office",
+    "tags": [
+      "文件对比",
+      "文件夹对比",
+      "绿色版"
+    ],
+    "summary": "并排比较两个文件或文件夹的差异，并合并修改。",
+    "intro": "WinMerge 是开源的差异对比与合并工具，可比较文本、文件夹，甚至图片与表格，适合核对配置或代码改动。",
+    "features": [
+      "文本差异高亮与合并",
+      "文件夹递归对比",
+      "图片与表格对比",
+      "三方合并"
+    ],
+    "tips": [],
+    "license": "GPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://winmerge.org/",
+    "source": {
+      "type": "github",
+      "repo": "WinMerge/winmerge",
+      "assets": [
+        {
+          "match": "x64-exe\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "flow-launcher",
+    "name": "Flow Launcher",
+    "abbr": "FL",
+    "category": "tools",
+    "tags": [
+      "启动器",
+      "效率",
+      "绿色版"
+    ],
+    "summary": "按下快捷键，搜索文件、程序和网页一步到位。",
+    "intro": "Flow Launcher 是 Windows 上的快速启动器，类似 macOS 的 Spotlight / Alfred，可通过插件扩展计算器、翻译、剪贴板等功能。",
+    "features": [
+      "程序与文件秒搜",
+      "插件商店",
+      "网页搜索快捷词",
+      "主题自定义"
+    ],
+    "tips": [
+      "默认快捷键 Alt + 空格，可能与输入法冲突，可在设置中修改。"
+    ],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://www.flowlauncher.com/",
+    "source": {
+      "type": "github",
+      "repo": "Flow-Launcher/Flow.Launcher",
+      "assets": [
+        {
+          "match": "Portable\\.zip$",
+          "label": "Windows · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "imageglass",
+    "name": "ImageGlass",
+    "abbr": "IG",
+    "category": "graphics",
+    "tags": [
+      "看图",
+      "图片",
+      "绿色版"
+    ],
+    "summary": "轻量快速的看图软件，支持 80 多种图片格式。",
+    "intro": "ImageGlass 是简洁的图片查看器，支持 WebP、AVIF、HEIC、SVG 和 RAW 等格式，启动快、界面干净。",
+    "features": [
+      "支持 80+ 图片格式",
+      "幻灯片与缩略图栏",
+      "基础裁剪与旋转",
+      "主题与快捷键自定义"
+    ],
+    "tips": [],
+    "license": "GPL-3.0（源码）",
+    "mirror_allowed": false,
+    "homepage": "https://imageglass.org/",
+    "source": {
+      "type": "github",
+      "repo": "d2phap/ImageGlass",
+      "assets": [
+        {
+          "match": "win-x64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "peazip",
+    "name": "PeaZip",
+    "abbr": "PZ",
+    "category": "tools",
+    "tags": [
+      "解压",
+      "压缩",
+      "绿色版"
+    ],
+    "summary": "免费的压缩解压工具，支持 200 多种格式。",
+    "intro": "PeaZip 可以打开 7z、RAR、ZIP、TAR 等 200 多种压缩格式，支持加密压缩和分卷，界面有中文。",
+    "features": [
+      "支持 200+ 格式",
+      "AES-256 加密",
+      "分卷与自解压",
+      "文件哈希校验"
+    ],
+    "tips": [],
+    "license": "LGPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://peazip.github.io/",
+    "source": {
+      "type": "github",
+      "repo": "peazip/PeaZip",
+      "assets": [
+        {
+          "match": "^peazip_portable-[\\d.]+\\.WIN64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    },
+    "hot": true
+  },
+  {
+    "slug": "handbrake",
+    "name": "HandBrake",
+    "abbr": "HB",
+    "category": "video",
+    "tags": [
+      "视频转码",
+      "压缩",
+      "绿色版"
+    ],
+    "summary": "把视频转成 MP4 / MKV，压缩体积、适配手机。",
+    "intro": "HandBrake 是开源的视频转码工具，内置大量预设，可以批量把视频压缩成更小的 H.264 / H.265 / AV1 文件。",
+    "features": [
+      "丰富预设",
+      "H.264 / H.265 / AV1 编码",
+      "批量队列",
+      "字幕与音轨选择"
+    ],
+    "tips": [
+      "不支持带版权保护的 DVD / 蓝光。"
+    ],
+    "license": "GPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://handbrake.fr/",
+    "source": {
+      "type": "github",
+      "repo": "HandBrake/HandBrake",
+      "assets": [
+        {
+          "match": "x86_64-Win_GUI\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "shotcut",
+    "name": "Shotcut",
+    "abbr": "SC",
+    "category": "video",
+    "tags": [
+      "视频剪辑",
+      "绿色版"
+    ],
+    "summary": "免费开源的视频剪辑软件，时间线剪辑、滤镜、转场都有。",
+    "intro": "Shotcut 是跨平台的非线性视频编辑器，支持 4K、多轨时间线和大量滤镜，适合日常 vlog 与教程剪辑。",
+    "features": [
+      "多轨时间线",
+      "硬件加速编码",
+      "音视频滤镜",
+      "无需导入直接编辑"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://shotcut.org/",
+    "source": {
+      "type": "github",
+      "repo": "mltframework/shotcut",
+      "assets": [
+        {
+          "match": "^shotcut-win64-[\\d.]+\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "audacity",
+    "name": "Audacity",
+    "abbr": "AU",
+    "category": "media",
+    "tags": [
+      "音频编辑",
+      "录音",
+      "绿色版"
+    ],
+    "summary": "录音、剪辑与降噪的老牌免费音频编辑器。",
+    "intro": "Audacity 可以录制电脑或麦克风声音，剪辑多轨音频，并做降噪、均衡、变速等处理。",
+    "features": [
+      "多轨录音与剪辑",
+      "降噪与效果器",
+      "支持 VST 插件",
+      "导出 MP3 / WAV / FLAC"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://www.audacityteam.org/",
+    "source": {
+      "type": "github",
+      "repo": "audacity/audacity",
+      "assets": [
+        {
+          "match": "win-[\\d.]+-x86_64\\.7z$",
+          "label": "Windows x64 · 绿色版 7z",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "trafficmonitor",
+    "name": "TrafficMonitor",
+    "abbr": "TM",
+    "category": "system",
+    "tags": [
+      "网速",
+      "硬件监控",
+      "绿色版"
+    ],
+    "summary": "在任务栏显示网速、CPU 和内存占用的小工具。",
+    "intro": "TrafficMonitor 可以在任务栏或悬浮窗显示实时网速、CPU、内存占用，完整版还能显示温度。国人开发，界面中文。",
+    "features": [
+      "任务栏网速显示",
+      "CPU / 内存 / 温度",
+      "悬浮窗皮肤",
+      "历史流量统计"
+    ],
+    "tips": [
+      "Lite 版不含温度监控，但不需要管理员权限。"
+    ],
+    "license": "Anti-996",
+    "mirror_allowed": false,
+    "homepage": "https://github.com/zhongyang219/TrafficMonitor",
+    "source": {
+      "type": "github",
+      "repo": "zhongyang219/TrafficMonitor",
+      "assets": [
+        {
+          "match": "_x64\\.zip$",
+          "label": "Windows x64 · 绿色版",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "_x64_Lite\\.zip$",
+          "label": "Windows x64 · Lite 版",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    },
+    "hot": true
+  },
+  {
+    "slug": "musicplayer2",
+    "name": "MusicPlayer2",
+    "abbr": "MP",
+    "category": "media",
+    "tags": [
+      "音乐播放",
+      "歌词",
+      "绿色版"
+    ],
+    "summary": "界面清爽的本地音乐播放器，支持歌词与频谱。",
+    "intro": "MusicPlayer2 是国人开发的本地音乐播放器，支持多种音频格式、歌词显示与下载、频谱分析和媒体库管理。",
+    "features": [
+      "主流音频格式",
+      "歌词显示与搜索",
+      "频谱可视化",
+      "媒体库与播放列表"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://github.com/zhongyang219/MusicPlayer2",
+    "source": {
+      "type": "github",
+      "repo": "zhongyang219/MusicPlayer2",
+      "assets": [
+        {
+          "match": "_x64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "quicklook",
+    "name": "QuickLook",
+    "abbr": "QL",
+    "category": "tools",
+    "tags": [
+      "预览",
+      "效率",
+      "绿色版"
+    ],
+    "summary": "选中文件按空格即可预览，像 macOS 一样。",
+    "intro": "QuickLook 把 macOS 的空格预览带到 Windows：在资源管理器里选中图片、视频、PDF、压缩包或代码，按空格立刻预览。",
+    "features": [
+      "空格键快速预览",
+      "图片 / 视频 / PDF / 代码",
+      "压缩包内容预览",
+      "插件扩展格式"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://github.com/QL-Win/QuickLook",
+    "source": {
+      "type": "github",
+      "repo": "QL-Win/QuickLook",
+      "assets": [
+        {
+          "match": "^QuickLook-[\\d.]+\\.zip$",
+          "label": "Windows · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    },
+    "hot": true
+  },
+  {
+    "slug": "losslesscut",
+    "name": "LosslessCut",
+    "abbr": "LC",
+    "category": "video",
+    "tags": [
+      "视频剪切",
+      "无损",
+      "绿色版"
+    ],
+    "summary": "不重新编码，几秒钟剪掉视频片头片尾。",
+    "intro": "LosslessCut 专做无损剪切：直接截取视频片段、合并、提取音轨，不重新编码，所以速度极快且画质无损。",
+    "features": [
+      "无损剪切与合并",
+      "提取 / 替换音轨",
+      "按关键帧精准切割",
+      "批量分段导出"
+    ],
+    "tips": [],
+    "license": "GPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://losslesscut.app/",
+    "source": {
+      "type": "github",
+      "repo": "mifi/lossless-cut",
+      "assets": [
+        {
+          "match": "win-x64\\.7z$",
+          "label": "Windows x64 · 绿色版 7z",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "yt-dlp",
+    "name": "yt-dlp",
+    "abbr": "YT",
+    "category": "network",
+    "tags": [
+      "视频下载",
+      "命令行",
+      "绿色版"
+    ],
+    "summary": "命令行视频下载工具，支持上千个网站。",
+    "intro": "yt-dlp 是 youtube-dl 的活跃分支，可下载各大视频网站的视频与音频，支持选择清晰度、字幕和批量下载。单个 exe 即可运行。",
+    "features": [
+      "支持上千个网站",
+      "选择清晰度与格式",
+      "字幕与封面下载",
+      "播放列表批量下载"
+    ],
+    "tips": [
+      "请只下载你有权保存的内容。"
+    ],
+    "license": "Unlicense",
+    "mirror_allowed": true,
+    "homepage": "https://github.com/yt-dlp/yt-dlp",
+    "source": {
+      "type": "github",
+      "repo": "yt-dlp/yt-dlp",
+      "assets": [
+        {
+          "match": "^yt-dlp\\.exe$",
+          "label": "Windows x64 · 单文件 EXE",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "ditto",
+    "name": "Ditto",
+    "abbr": "DT",
+    "category": "tools",
+    "tags": [
+      "剪贴板",
+      "效率",
+      "绿色版"
+    ],
+    "summary": "剪贴板历史管理，复制过的内容随时找回。",
+    "intro": "Ditto 会记录你复制过的文本、图片和文件，用快捷键调出历史随时粘贴，还能搜索和置顶常用片段。",
+    "features": [
+      "剪贴板历史",
+      "搜索与分组",
+      "置顶常用片段",
+      "多台电脑同步"
+    ],
+    "tips": [
+      "复制的密码也会被记录，可在设置里排除密码管理器。"
+    ],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://ditto-cp.sourceforge.io/",
+    "source": {
+      "type": "github",
+      "repo": "sabrogden/Ditto",
+      "assets": [
+        {
+          "match": "DittoPortable_.*\\.zip$",
+          "label": "Windows · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "windows-terminal",
+    "name": "Windows Terminal",
+    "abbr": "WT",
+    "category": "dev",
+    "tags": [
+      "终端",
+      "命令行",
+      "绿色版"
+    ],
+    "summary": "微软官方的新终端，多标签运行 PowerShell、CMD 和 WSL。",
+    "intro": "Windows Terminal 是微软开源的终端程序，支持多标签、分屏、GPU 加速渲染和主题配置。官方提供免安装 ZIP 版。",
+    "features": [
+      "多标签与分屏",
+      "PowerShell / CMD / WSL",
+      "GPU 加速渲染",
+      "JSON 配置与主题"
+    ],
+    "tips": [],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://github.com/microsoft/terminal",
+    "source": {
+      "type": "github",
+      "repo": "microsoft/terminal",
+      "assets": [
+        {
+          "match": "^Microsoft\\.WindowsTerminal_[\\d.]+_x64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "vscodium",
+    "name": "VSCodium",
+    "abbr": "VC",
+    "category": "dev",
+    "tags": [
+      "代码编辑",
+      "IDE",
+      "绿色版"
+    ],
+    "summary": "去掉微软遥测的 VS Code 开源构建版。",
+    "intro": "VSCodium 由 VS Code 开源代码直接编译，默认关闭遥测，功能与 VS Code 基本一致。插件来自 Open VSX 市场。",
+    "features": [
+      "与 VS Code 一致的编辑体验",
+      "默认无遥测",
+      "Open VSX 插件市场",
+      "内置 Git 与终端"
+    ],
+    "tips": [
+      "在解压目录建一个 data 文件夹即可开启便携模式。"
+    ],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://vscodium.com/",
+    "source": {
+      "type": "github",
+      "repo": "VSCodium/vscodium",
+      "assets": [
+        {
+          "match": "^VSCodium-win32-x64-[\\d.]+\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "rclone",
+    "name": "rclone",
+    "abbr": "RC",
+    "category": "network",
+    "tags": [
+      "网盘同步",
+      "命令行",
+      "绿色版"
+    ],
+    "summary": "命令行同步工具，连接 70 多种网盘与对象存储。",
+    "intro": "rclone 可以在本地与各种云存储之间同步、复制和挂载文件，支持 S3、R2、OneDrive、Google Drive、WebDAV 等。",
+    "features": [
+      "70+ 存储后端",
+      "同步 / 复制 / 挂载",
+      "客户端加密",
+      "断点续传与限速"
+    ],
+    "tips": [],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://rclone.org/",
+    "source": {
+      "type": "github",
+      "repo": "rclone/rclone",
+      "assets": [
+        {
+          "match": "windows-amd64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
   }
 ]

@@ -111,7 +111,7 @@ def sync_item(item, prev):
     if src.get("type") != "github":
         return prev, False
     rel = gh_json(f"https://api.github.com/repos/{src['repo']}/releases/latest")
-    ver = rel["tag_name"].lstrip("vV")
+    ver = re.sub(r"^[^0-9]*", "", rel["tag_name"])
     same = prev and prev.get("version") == ver
     want_mirror = MIRROR and item.get("mirror_allowed")
     if same and (not want_mirror or prev.get("mirrored")):
@@ -125,7 +125,7 @@ def sync_item(item, prev):
         sha = (asset.get("digest") or "").removeprefix("sha256:")
         mirrors = mirror_file(item, ver, asset, sha) if want_mirror else []
         downloads.append({
-            "label": rule["label"], "platform": rule["platform"], "file": asset["name"],
+            "label": rule["label"], "platform": rule["platform"], "portable": bool(rule.get("portable")), "file": asset["name"],
             "size": asset["size"], "sha256": sha, "official": asset["browser_download_url"],
             "mirrors": mirrors,
         })
