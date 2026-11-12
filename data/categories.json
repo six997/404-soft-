@@ -1,0 +1,5 @@
+{
+  "browser":  "网页浏览", "office": "办公软件", "graphics": "截图与图像", "video": "视频与直播",
+  "media": "媒体播放", "network": "网络与传输", "security": "安全与密码", "system": "系统工具",
+  "dev": "编程开发", "tools": "实用工具"
+}

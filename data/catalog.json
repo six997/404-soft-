@@ -1,0 +1,67 @@
+[
+  {
+    "slug": "sharex", "name": "ShareX", "abbr": "SX",
+    "category": "graphics", "tags": ["截图", "录屏", "标注"],
+    "summary": "截图、标注与录屏连成一套工作流，适合写教程和反馈问题。",
+    "intro": "ShareX 面向需要频繁截图和解释画面的人。截取区域后可以添加标记、突出关键位置，再保存为文件，适合制作操作说明或提交问题反馈。\n\n自动任务可以减少重复操作，但涉及敏感画面时应先检查保存和上传设置。建议从本地保存开始使用，确认流程后再启用自己需要的共享功能。",
+    "features": ["区域、窗口、滚动截图", "内置标注与马赛克", "录屏为 MP4 / GIF", "OCR 文字识别", "自定义上传目标与自动任务"],
+    "tips": ["分享前检查截图里是否包含账户信息或其他私人内容。", "不需要自动上传时，只启用本地保存与剪贴板任务。"],
+    "license": "GPL-3.0", "mirror_allowed": true,
+    "homepage": "https://getsharex.com/",
+    "source": {"type": "github", "repo": "ShareX/ShareX", "assets": [
+      {"match": "setup-x64\\.exe$", "label": "Windows x64 · 安装程序", "platform": "Windows"},
+      {"match": "portable-x64\\.zip$", "label": "Windows x64 · 便携 ZIP", "platform": "Windows"}
+    ]},
+    "featured": true
+  },
+  {
+    "slug": "obs-studio", "name": "OBS Studio", "abbr": "OBS",
+    "category": "video", "tags": ["录屏", "直播"],
+    "summary": "把屏幕、摄像头与声音组合成场景，用于录课、演示或直播。",
+    "intro": "OBS Studio 是免费开源的录制与直播软件。通过「场景 + 来源」的方式自由组合画面，支持多路音频混音、滤镜与转场，几乎所有直播平台都能直接推流。\n\n首次使用建议运行自动配置向导，根据电脑性能选择编码器和分辨率。",
+    "features": ["多场景与多来源自由组合", "硬件编码（NVENC / QSV / AMF）", "音频混音与降噪滤镜", "推流到各大直播平台", "插件与脚本扩展"],
+    "tips": ["录制前先用短片段测试声音和帧率。", "笔记本录屏卡顿时优先改用硬件编码器。"],
+    "license": "GPL-2.0", "mirror_allowed": true,
+    "homepage": "https://obsproject.com/",
+    "source": {"type": "github", "repo": "obsproject/obs-studio", "assets": [
+      {"match": "Windows-x64-Installer\\.exe$", "label": "Windows x64 · 安装程序", "platform": "Windows"},
+      {"match": "Windows-x64\\.zip$", "label": "Windows x64 · 便携 ZIP", "platform": "Windows"},
+      {"match": "macOS-Apple\\.dmg$", "label": "macOS · Apple 芯片", "platform": "macOS"},
+      {"match": "macOS-Intel\\.dmg$", "label": "macOS · Intel", "platform": "macOS"},
+      {"match": "Ubuntu-[\\d.]+-x86_64\\.deb$", "label": "Linux · Ubuntu DEB", "platform": "Linux"}
+    ]}
+  },
+  {
+    "slug": "keepassxc", "name": "KeePassXC", "abbr": "KX",
+    "category": "security", "tags": ["密码管理", "加密"],
+    "summary": "以本地加密数据库管理密码，把账户整理与备份留在自己掌控中。",
+    "intro": "KeePassXC 是跨平台的离线密码管理器，所有数据保存在一个本地加密的 .kdbx 文件里，不依赖任何云服务。配合浏览器扩展可以自动填充，也支持 TOTP 两步验证码。\n\n数据库文件请定期备份到另一处位置，并牢记主密码，丢失后无法找回。",
+    "features": ["AES / ChaCha20 加密的本地数据库", "浏览器自动填充扩展", "TOTP 两步验证码", "密码生成器与健康检查", "兼容 KeePass 生态"],
+    "tips": ["主密码丢失无法找回，建议额外设置密钥文件并妥善备份。", "同步数据库可放在网盘，但不要和密钥文件放在一起。"],
+    "license": "GPL-3.0", "mirror_allowed": true,
+    "homepage": "https://keepassxc.org/",
+    "source": {"type": "github", "repo": "keepassxreboot/keepassxc", "assets": [
+      {"match": "^KeePassXC-[\\d.]+-x64\\.msi$", "label": "Windows x64 · 安装程序", "platform": "Windows"},
+      {"match": "^KeePassXC-[\\d.]+-arm64\\.dmg$", "label": "macOS · Apple 芯片", "platform": "macOS"},
+      {"match": "^KeePassXC-[\\d.]+-x86_64\\.dmg$", "label": "macOS · Intel", "platform": "macOS"},
+      {"match": "^KeePassXC-[\\d.]+-x86_64\\.AppImage$", "label": "Linux · AppImage", "platform": "Linux"}
+    ]}
+  },
+  {
+    "slug": "localsend", "name": "LocalSend", "abbr": "LS",
+    "category": "network", "tags": ["文件传输", "局域网"],
+    "summary": "在同一个局域网内跨设备传文件，无需先上传到网盘。",
+    "intro": "LocalSend 是开源的局域网文件传输工具，类似 AirDrop，但覆盖 Windows、macOS、Linux、Android 和 iOS。设备之间直接加密传输，不经过服务器，也不需要注册账号。\n\n两台设备连在同一个 Wi-Fi 下即可互相发现。",
+    "features": ["全平台互传", "端到端 HTTPS 加密", "无需账号与服务器", "支持文件、文件夹与文本", "速度只受局域网带宽限制"],
+    "tips": ["找不到对方时检查防火墙是否放行 LocalSend。", "公共 Wi-Fi 下建议开启接收前确认。"],
+    "license": "Apache-2.0", "mirror_allowed": true,
+    "homepage": "https://localsend.org/",
+    "source": {"type": "github", "repo": "localsend/localsend", "assets": [
+      {"match": "windows-x86-64\\.exe$", "label": "Windows x64 · 安装程序", "platform": "Windows"},
+      {"match": "windows-x86-64\\.zip$", "label": "Windows x64 · 便携 ZIP", "platform": "Windows"},
+      {"match": "^LocalSend-[\\d.]+\\.dmg$", "label": "macOS · 通用", "platform": "macOS"},
+      {"match": "linux-x86-64\\.AppImage$", "label": "Linux · AppImage", "platform": "Linux"},
+      {"match": "android-arm64v8\\.apk$", "label": "Android · arm64 APK", "platform": "Android"}
+    ]}
+  }
+]

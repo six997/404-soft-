@@ -1,0 +1,65 @@
+name: 同步并部署
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "0 */6 * * *"   # 每 6 小时检查一次官方新版本
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 同步官方版本（配置了 OPENLIST_* 时同时镜像到网盘）
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OPENLIST_URL: ${{ secrets.OPENLIST_URL }}
+          OPENLIST_TOKEN: ${{ secrets.OPENLIST_TOKEN }}
+          MIRROR_DRIVES: ${{ vars.MIRROR_DRIVES }}
+        run: python scripts/sync.py
+
+      - name: 提交版本数据
+        run: |
+          if ! git diff --quiet data/releases.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/releases.json
+            git commit -m "chore: 同步官方版本 $(date -u +%F)"
+            git push
+          fi
+
+      - name: 生成静态站
+        env:
+          BASE_PATH: ${{ vars.BASE_PATH }}
+          SITE_URL: ${{ vars.SITE_URL }}
+        run: python scripts/build.py
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
