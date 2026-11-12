@@ -39,5 +39,5 @@ python3 -m http.server -d dist 8000   # 打开 http://localhost:8000/?ads=debug 
 ```
 
 ## 部署
-- GitHub Pages：Settings → Pages → Source 选 GitHub Actions；Variables 设 `BASE_PATH=/404-soft`、`SITE_URL=https://<用户名>.github.io/404-soft`。
+- GitHub Pages：Settings → Pages → Source 选 GitHub Actions；Variables 设 `BASE_PATH=/404-soft-`、`SITE_URL=https://six997.github.io/404-soft-`。
 - Cloudflare Pages（国内更快）：连接本仓库，构建命令 `python3 scripts/build.py`，输出目录 `dist`，`BASE_PATH` 留空。

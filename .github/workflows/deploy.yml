@@ -46,8 +46,8 @@ jobs:
 
       - name: 生成静态站
         env:
-          BASE_PATH: ${{ vars.BASE_PATH }}
-          SITE_URL: ${{ vars.SITE_URL }}
+          BASE_PATH: ${{ vars.BASE_PATH || '/404-soft-' }}
+          SITE_URL: ${{ vars.SITE_URL || 'https://six997.github.io/404-soft-' }}
         run: python scripts/build.py
 
       - uses: actions/upload-pages-artifact@v3
