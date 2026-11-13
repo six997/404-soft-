@@ -652,30 +652,30 @@
     "source": "winget"
   },
   "telegram": {
-    "version": "7.4.2",
-    "released": "2026-11-11",
+    "version": "7.4.3",
+    "released": "2026-11-12",
     "verified": "2026-11-13",
-    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Telegram/TelegramDesktop/7.4.2",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Telegram/TelegramDesktop/7.4.3",
     "changelog": "",
     "downloads": [
       {
         "label": "Windows x64 · 绿色版 ZIP",
         "platform": "Windows",
         "portable": true,
-        "file": "td-portable-win-x64-7.4.2.zip",
+        "file": "td-portable-win-x64-7.4.3.zip",
         "size": null,
-        "sha256": "81b445bce390c8358a95b4a99a8dc2321941764ab9a02b4b4e33f327ff675c0e",
-        "official": "https://github.com/telegramdesktop/tdesktop/releases/download/v7.4.2/td-portable-win-x64-7.4.2.zip",
+        "sha256": "bcd26edaa49024518e45b634ffa66ee863a01ad88c0ac946d7d2d226528276fc",
+        "official": "https://github.com/telegramdesktop/tdesktop/releases/download/v7.4.3/td-portable-win-x64-7.4.3.zip",
         "mirrors": []
       },
       {
         "label": "Windows x64 · 安装包",
         "platform": "Windows",
         "portable": false,
-        "file": "td-setup-win-x64-7.4.2.exe",
+        "file": "td-setup-win-x64-7.4.3.exe",
         "size": null,
-        "sha256": "783497373de0dd5812e83c7f5537458e44018ea6c5703b2ac443036ac4966631",
-        "official": "https://github.com/telegramdesktop/tdesktop/releases/download/v7.4.2/td-setup-win-x64-7.4.2.exe",
+        "sha256": "b4ce3f2770cefb3797f71c021f90f634ffebc20ef9ce714aeba0c82d1829daf8",
+        "official": "https://github.com/telegramdesktop/tdesktop/releases/download/v7.4.3/td-setup-win-x64-7.4.3.exe",
         "mirrors": []
       }
     ],
@@ -746,10 +746,10 @@
     "source": "winget"
   },
   "chrome": {
-    "version": "156.0.8078.80",
-    "released": "2026-10-29",
+    "version": "157.0.8103.79",
+    "released": "2026-11-11",
     "verified": "2026-11-13",
-    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/Chrome/156.0.8078.80",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/Chrome/157.0.8103.79",
     "changelog": "",
     "downloads": [
       {
@@ -758,7 +758,7 @@
         "portable": false,
         "file": "googlechromestandaloneenterprise64.msi",
         "size": null,
-        "sha256": "ecf1b28bf4e8e8b3434a844eb915118935e6525768efe3dbe622c2a20cba9ec9",
+        "sha256": "385a8817ec8513536e57e7177acf226104e7f13910d83ea1bbfe39c3d9ac2d03",
         "official": "https://dl.google.com/dl/chrome/install/googlechromestandaloneenterprise64.msi",
         "mirrors": []
       }
