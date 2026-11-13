@@ -4455,5 +4455,1978 @@
       ]
     },
     "icon": "/static/icons/sogou-input.png"
+  },
+  {
+    "slug": "greenshot",
+    "name": "Greenshot",
+    "abbr": "GS",
+    "category": "graphics",
+    "tags": [
+      "截图",
+      "标注",
+      "绿色版"
+    ],
+    "summary": "轻量开源截图工具，截完直接标注。",
+    "intro": "Greenshot 支持区域、窗口、全屏和滚动截图，自带标注编辑器，可一键导出到文件、剪贴板或打印。",
+    "features": [
+      "区域 / 窗口截图",
+      "内置标注编辑",
+      "快捷键自定义",
+      "便携版免安装"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://getgreenshot.org/",
+    "source": {
+      "type": "github",
+      "repo": "greenshot/greenshot",
+      "assets": [
+        {
+          "match": "PORTABLE.*\\.zip$",
+          "label": "Windows · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "INSTALLER.*\\.exe$",
+          "label": "Windows · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/greenshot.png"
+  },
+  {
+    "slug": "flameshot",
+    "name": "Flameshot",
+    "abbr": "FS",
+    "category": "graphics",
+    "tags": [
+      "截图",
+      "标注",
+      "绿色版"
+    ],
+    "summary": "功能强大的开源截图与标注工具。",
+    "intro": "Flameshot 截图后在原位直接画箭头、打码、加文字，支持上传图床和命令行调用。",
+    "features": [
+      "截图即标注",
+      "马赛克与模糊",
+      "钉在桌面",
+      "命令行调用"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://flameshot.org/",
+    "source": {
+      "type": "github",
+      "repo": "flameshot-org/flameshot",
+      "assets": [
+        {
+          "match": "win64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "win64\\.msi$",
+          "label": "Windows x64 · 安装包 MSI",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/flameshot.png"
+  },
+  {
+    "slug": "qview",
+    "name": "qView",
+    "abbr": "QV",
+    "category": "graphics",
+    "tags": [
+      "看图",
+      "绿色版"
+    ],
+    "summary": "极简看图软件，界面只有图片本身。",
+    "intro": "qView 去掉了所有多余界面，启动快、占用低，支持 GIF 动图和常见图片格式。",
+    "features": [
+      "极简无边框",
+      "启动飞快",
+      "GIF 动图",
+      "便携版"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://interversehq.com/qview/",
+    "source": {
+      "type": "github",
+      "repo": "jurplel/qView",
+      "assets": [
+        {
+          "match": "win64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "win64\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/qview.svg"
+  },
+  {
+    "slug": "libresprite",
+    "name": "LibreSprite",
+    "abbr": "LS",
+    "category": "graphics",
+    "tags": [
+      "像素画",
+      "动画",
+      "绿色版"
+    ],
+    "summary": "开源像素画与帧动画编辑器。",
+    "intro": "LibreSprite 是 Aseprite 的开源分支，适合绘制像素风素材和逐帧动画。",
+    "features": [
+      "像素绘图",
+      "图层与帧动画",
+      "洋葱皮",
+      "导出精灵表"
+    ],
+    "tips": [],
+    "license": "GPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://libresprite.github.io/",
+    "source": {
+      "type": "github",
+      "repo": "LibreSprite/LibreSprite",
+      "assets": [
+        {
+          "match": "windows-x86_64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "installer\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/libresprite.png"
+  },
+  {
+    "slug": "windirstat",
+    "name": "WinDirStat",
+    "abbr": "WD",
+    "category": "file",
+    "tags": [
+      "磁盘分析",
+      "绿色版"
+    ],
+    "summary": "经典开源磁盘空间分析工具。",
+    "intro": "WinDirStat 用彩色方块图直观展示每个文件占用的空间，帮你快速找到大文件。",
+    "features": [
+      "方块图可视化",
+      "按扩展名统计",
+      "直接清理",
+      "便携版"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://windirstat.net/",
+    "source": {
+      "type": "github",
+      "repo": "windirstat/windirstat",
+      "assets": [
+        {
+          "match": "^WinDirStat\\.zip$",
+          "label": "Windows · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "x64\\.msi$",
+          "label": "Windows x64 · 安装包 MSI",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/windirstat.png"
+  },
+  {
+    "slug": "czkawka",
+    "name": "Krokiet / Czkawka",
+    "abbr": "CK",
+    "category": "file",
+    "tags": [
+      "重复文件",
+      "清理",
+      "绿色版"
+    ],
+    "summary": "开源重复文件与相似图片查找工具。",
+    "intro": "Czkawka 及其新界面 Krokiet 可以找出重复文件、相似图片、空文件夹和失效链接，速度很快。",
+    "features": [
+      "重复文件查找",
+      "相似图片 / 视频",
+      "空文件夹清理",
+      "多线程扫描"
+    ],
+    "tips": [],
+    "license": "MIT / GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://github.com/qarmin/czkawka",
+    "source": {
+      "type": "github",
+      "repo": "qarmin/czkawka",
+      "assets": [
+        {
+          "match": "krokiet_on_windows_all_backends\\.zip$",
+          "label": "Windows · Krokiet 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "czkawka_gui.*\\.zip$",
+          "label": "Windows · Czkawka GTK 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/czkawka.png"
+  },
+  {
+    "slug": "dngrep",
+    "name": "dnGrep",
+    "abbr": "DG",
+    "category": "file",
+    "tags": [
+      "搜索",
+      "文本",
+      "绿色版"
+    ],
+    "summary": "在文件内容里搜索文字，支持 Word / PDF。",
+    "intro": "dnGrep 可以在文件夹里按正则搜索文本，支持 Office、PDF 和压缩包内的文件，并批量替换。",
+    "features": [
+      "正则搜索",
+      "Office / PDF 内容",
+      "压缩包内搜索",
+      "批量替换"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://dngrep.github.io/",
+    "source": {
+      "type": "github",
+      "repo": "dnGrep/dnGrep",
+      "assets": [
+        {
+          "match": "x64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "x64\\.msi$",
+          "label": "Windows x64 · 安装包 MSI",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/dngrep.png"
+  },
+  {
+    "slug": "powershell",
+    "name": "PowerShell 7",
+    "abbr": "PS",
+    "category": "dev",
+    "tags": [
+      "命令行",
+      "微软",
+      "绿色版"
+    ],
+    "summary": "微软开源的跨平台 PowerShell 7。",
+    "intro": "PowerShell 7 是新一代 PowerShell，跨平台、速度更快，与 Windows 自带的 5.1 版本并存。",
+    "features": [
+      "跨平台脚本",
+      "管道对象处理",
+      "并行 ForEach",
+      "绿色版 ZIP"
+    ],
+    "tips": [],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://learn.microsoft.com/powershell/",
+    "source": {
+      "type": "github",
+      "repo": "PowerShell/PowerShell",
+      "assets": [
+        {
+          "match": "win-x64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/powershell.png"
+  },
+  {
+    "slug": "helix",
+    "name": "Helix",
+    "abbr": "HX",
+    "category": "dev",
+    "tags": [
+      "编辑器",
+      "终端",
+      "绿色版"
+    ],
+    "summary": "开箱即用的模态终端编辑器。",
+    "intro": "Helix 受 Vim 和 Kakoune 启发，内置 LSP 和语法树，不用配置插件即可写代码。",
+    "features": [
+      "内置 LSP",
+      "多光标",
+      "Tree-sitter 高亮",
+      "零配置"
+    ],
+    "tips": [],
+    "license": "MPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://helix-editor.com/",
+    "source": {
+      "type": "github",
+      "repo": "helix-editor/helix",
+      "assets": [
+        {
+          "match": "windows\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/helix.svg"
+  },
+  {
+    "slug": "lapce",
+    "name": "Lapce",
+    "abbr": "LP",
+    "category": "dev",
+    "tags": [
+      "编辑器",
+      "绿色版"
+    ],
+    "summary": "Rust 编写的快速代码编辑器。",
+    "intro": "Lapce 启动快，支持 LSP、远程开发和插件，界面接近 VS Code。",
+    "features": [
+      "原生性能",
+      "LSP 支持",
+      "远程开发",
+      "插件系统"
+    ],
+    "tips": [],
+    "license": "Apache-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://lap.dev/lapce/",
+    "source": {
+      "type": "github",
+      "repo": "lapce/lapce",
+      "assets": [
+        {
+          "match": "windows-portable\\.zip$",
+          "label": "Windows · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "windows\\.msi$",
+          "label": "Windows · 安装包 MSI",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/lapce.png"
+  },
+  {
+    "slug": "bruno",
+    "name": "Bruno",
+    "abbr": "BN",
+    "category": "dev",
+    "tags": [
+      "API",
+      "调试",
+      "绿色版"
+    ],
+    "summary": "离线优先的开源 API 调试工具。",
+    "intro": "Bruno 是 Postman 的开源替代，接口集合以纯文本保存在本地，可直接用 Git 管理。",
+    "features": [
+      "离线使用",
+      "Git 友好",
+      "脚本与断言",
+      "导入 Postman"
+    ],
+    "tips": [],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://www.usebruno.com/",
+    "source": {
+      "type": "github",
+      "repo": "usebruno/bruno",
+      "assets": [
+        {
+          "match": "x64_win\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "x64_win\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/bruno.png"
+  },
+  {
+    "slug": "alacritty",
+    "name": "Alacritty",
+    "abbr": "AL",
+    "category": "dev",
+    "tags": [
+      "终端",
+      "绿色版"
+    ],
+    "summary": "GPU 加速的极速终端模拟器。",
+    "intro": "Alacritty 用 GPU 渲染文字，追求速度和简洁，通过配置文件定制。",
+    "features": [
+      "GPU 渲染",
+      "极低延迟",
+      "Vi 模式",
+      "单文件便携版"
+    ],
+    "tips": [],
+    "license": "Apache-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://alacritty.org/",
+    "source": {
+      "type": "github",
+      "repo": "alacritty/alacritty",
+      "assets": [
+        {
+          "match": "portable\\.exe$",
+          "label": "Windows · 单文件 EXE",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/alacritty.svg"
+  },
+  {
+    "slug": "wezterm",
+    "name": "WezTerm",
+    "abbr": "WT",
+    "category": "dev",
+    "tags": [
+      "终端",
+      "绿色版"
+    ],
+    "summary": "功能丰富、可用 Lua 配置的终端。",
+    "intro": "WezTerm 支持分屏、标签页、SSH 多路复用和连字字体，配置用 Lua 编写。",
+    "features": [
+      "分屏与标签页",
+      "SSH 多路复用",
+      "Lua 配置",
+      "GPU 渲染"
+    ],
+    "tips": [],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://wezterm.org/",
+    "source": {
+      "type": "github",
+      "repo": "wez/wezterm",
+      "assets": [
+        {
+          "match": "windows-.*\\.zip$",
+          "label": "Windows · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "setup\\.exe$",
+          "label": "Windows · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/wezterm.png"
+  },
+  {
+    "slug": "neovide",
+    "name": "Neovide",
+    "abbr": "NV",
+    "category": "dev",
+    "tags": [
+      "编辑器",
+      "Neovim",
+      "绿色版"
+    ],
+    "summary": "Neovim 的图形界面，带平滑动画。",
+    "intro": "Neovide 给 Neovim 加上流畅的光标动画、平滑滚动和更好的字体渲染。",
+    "features": [
+      "平滑滚动",
+      "光标动画",
+      "连字字体",
+      "兼容 Neovim 配置"
+    ],
+    "tips": [],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://neovide.dev/",
+    "source": {
+      "type": "github",
+      "repo": "neovide/neovide",
+      "assets": [
+        {
+          "match": "windows-x86_64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/neovide.svg"
+  },
+  {
+    "slug": "xpipe",
+    "name": "XPipe",
+    "abbr": "XP",
+    "category": "dev",
+    "tags": [
+      "SSH",
+      "运维",
+      "绿色版"
+    ],
+    "summary": "统一管理服务器和容器连接的工具。",
+    "intro": "XPipe 把 SSH、Docker、Kubernetes 等连接集中管理，一键打开终端或传文件。",
+    "features": [
+      "连接集中管理",
+      "Docker / K8s",
+      "文件浏览",
+      "便携版"
+    ],
+    "tips": [],
+    "license": "Apache-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://xpipe.io/",
+    "source": {
+      "type": "github",
+      "repo": "xpipe-io/xpipe",
+      "assets": [
+        {
+          "match": "portable-windows-x86_64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "installer-windows.*\\.msi$",
+          "label": "Windows x64 · 安装包 MSI",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/xpipe.png"
+  },
+  {
+    "slug": "ripgrep",
+    "name": "ripgrep",
+    "abbr": "RG",
+    "category": "dev",
+    "tags": [
+      "命令行",
+      "搜索",
+      "绿色版"
+    ],
+    "summary": "比 grep 更快的命令行搜索工具。",
+    "intro": "ripgrep（rg）递归搜索目录中的文本，默认忽略 .gitignore 中的文件，速度极快。",
+    "features": [
+      "极速搜索",
+      "尊重 .gitignore",
+      "正则支持",
+      "单文件"
+    ],
+    "tips": [],
+    "license": "MIT / Unlicense",
+    "mirror_allowed": true,
+    "homepage": "https://github.com/BurntSushi/ripgrep",
+    "source": {
+      "type": "github",
+      "repo": "BurntSushi/ripgrep",
+      "assets": [
+        {
+          "match": "x86_64-pc-windows-msvc\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "fzf",
+    "name": "fzf",
+    "abbr": "FZ",
+    "category": "dev",
+    "tags": [
+      "命令行",
+      "绿色版"
+    ],
+    "summary": "命令行模糊查找神器。",
+    "intro": "fzf 可以对文件、历史命令、进程等任何列表进行交互式模糊搜索。",
+    "features": [
+      "交互式模糊搜索",
+      "预览窗口",
+      "Shell 集成",
+      "单文件"
+    ],
+    "tips": [],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://junegunn.github.io/fzf/",
+    "source": {
+      "type": "github",
+      "repo": "junegunn/fzf",
+      "assets": [
+        {
+          "match": "windows_amd64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/fzf.svg"
+  },
+  {
+    "slug": "micro",
+    "name": "micro",
+    "abbr": "MI",
+    "category": "dev",
+    "tags": [
+      "编辑器",
+      "终端",
+      "绿色版"
+    ],
+    "summary": "像记事本一样好上手的终端编辑器。",
+    "intro": "micro 支持 Ctrl+S、Ctrl+C 等常用快捷键和鼠标操作，适合不想学 Vim 的人。",
+    "features": [
+      "常用快捷键",
+      "鼠标支持",
+      "语法高亮",
+      "单文件"
+    ],
+    "tips": [],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://micro-editor.github.io/",
+    "source": {
+      "type": "github",
+      "repo": "zyedidia/micro",
+      "assets": [
+        {
+          "match": "win64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/micro.png"
+  },
+  {
+    "slug": "bat",
+    "name": "bat",
+    "abbr": "BT",
+    "category": "dev",
+    "tags": [
+      "命令行",
+      "绿色版"
+    ],
+    "summary": "带语法高亮的 cat 替代品。",
+    "intro": "bat 在终端里查看文件时自动语法高亮、显示行号和 Git 改动。",
+    "features": [
+      "语法高亮",
+      "行号与 Git 标记",
+      "自动分页",
+      "单文件"
+    ],
+    "tips": [],
+    "license": "MIT / Apache-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://github.com/sharkdp/bat",
+    "source": {
+      "type": "github",
+      "repo": "sharkdp/bat",
+      "assets": [
+        {
+          "match": "x86_64-pc-windows-msvc\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "lazydocker",
+    "name": "lazydocker",
+    "abbr": "LD",
+    "category": "dev",
+    "tags": [
+      "Docker",
+      "终端",
+      "绿色版"
+    ],
+    "summary": "终端里的 Docker 管理界面。",
+    "intro": "lazydocker 在一个终端界面里查看容器、日志、资源占用，并快捷重启或删除。",
+    "features": [
+      "容器总览",
+      "实时日志",
+      "资源监控",
+      "快捷操作"
+    ],
+    "tips": [],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://github.com/jesseduffield/lazydocker",
+    "source": {
+      "type": "github",
+      "repo": "jesseduffield/lazydocker",
+      "assets": [
+        {
+          "match": "Windows_x86_64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "notepadnext",
+    "name": "NotepadNext",
+    "abbr": "NN",
+    "category": "dev",
+    "tags": [
+      "编辑器",
+      "文本",
+      "绿色版"
+    ],
+    "summary": "跨平台的 Notepad++ 重写版。",
+    "intro": "NotepadNext 用 Qt 重新实现 Notepad++，界面和操作习惯一致。",
+    "features": [
+      "Notepad++ 操作习惯",
+      "多标签",
+      "语法高亮",
+      "便携版"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://github.com/dail8859/NotepadNext",
+    "source": {
+      "type": "github",
+      "repo": "dail8859/NotepadNext",
+      "assets": [
+        {
+          "match": "win64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "Installer\\.exe$",
+          "label": "Windows · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/notepadnext.png"
+  },
+  {
+    "slug": "notepad4",
+    "name": "Notepad4",
+    "abbr": "N4",
+    "category": "dev",
+    "tags": [
+      "编辑器",
+      "文本",
+      "绿色版"
+    ],
+    "summary": "轻量快速的记事本替代品。",
+    "intro": "Notepad4（原 Notepad2-zufuliu）体积小、启动快，支持 80 多种语言高亮与代码折叠。",
+    "features": [
+      "秒开大文件",
+      "语法高亮",
+      "代码折叠",
+      "中文版绿色包"
+    ],
+    "tips": [],
+    "license": "BSD-3-Clause",
+    "mirror_allowed": true,
+    "homepage": "https://github.com/zufuliu/notepad4",
+    "source": {
+      "type": "github",
+      "repo": "zufuliu/notepad4",
+      "assets": [
+        {
+          "match": "^Notepad4_zh-Hans_x64_v.*\\.zip$",
+          "label": "Windows x64 · 中文绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "^Notepad4_en_x64_v.*\\.zip$",
+          "label": "Windows x64 · 英文绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/notepad4.png"
+  },
+  {
+    "slug": "ungoogled-chromium",
+    "name": "Ungoogled Chromium",
+    "abbr": "UC",
+    "category": "browser",
+    "tags": [
+      "浏览器",
+      "隐私",
+      "绿色版"
+    ],
+    "summary": "去除谷歌服务的纯净 Chromium。",
+    "intro": "Ungoogled Chromium 移除了谷歌账号、遥测和后台请求，保留 Chromium 的速度与兼容性。",
+    "features": [
+      "无谷歌服务",
+      "无遥测",
+      "兼容 Chrome 扩展",
+      "便携版 ZIP"
+    ],
+    "tips": [],
+    "license": "BSD-3-Clause",
+    "mirror_allowed": true,
+    "homepage": "https://ungoogled-software.github.io/",
+    "source": {
+      "type": "github",
+      "repo": "ungoogled-software/ungoogled-chromium-windows",
+      "assets": [
+        {
+          "match": "windows_x64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "installer_x64\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/ungoogled-chromium.png"
+  },
+  {
+    "slug": "stretchly",
+    "name": "Stretchly",
+    "abbr": "SL",
+    "category": "tools",
+    "tags": [
+      "健康",
+      "提醒",
+      "绿色版"
+    ],
+    "summary": "定时提醒你休息的开源小工具。",
+    "intro": "Stretchly 每隔一段时间提醒你起身、远眺，保护眼睛和颈椎。",
+    "features": [
+      "定时休息提醒",
+      "微休息建议",
+      "勿扰模式",
+      "便携版"
+    ],
+    "tips": [],
+    "license": "BSD-2-Clause",
+    "mirror_allowed": true,
+    "homepage": "https://hovancik.net/stretchly/",
+    "source": {
+      "type": "github",
+      "repo": "hovancik/stretchly",
+      "assets": [
+        {
+          "match": "Portable.*\\.exe$",
+          "label": "Windows · 单文件 EXE",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "Setup.*\\.exe$",
+          "label": "Windows · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/stretchly.png"
+  },
+  {
+    "slug": "espanso",
+    "name": "Espanso",
+    "abbr": "ES",
+    "category": "tools",
+    "tags": [
+      "文本扩展",
+      "效率",
+      "绿色版"
+    ],
+    "summary": "跨平台的文本自动替换工具。",
+    "intro": "Espanso 输入缩写即可自动展开成完整文本，适合常用回复、邮箱和代码片段。",
+    "features": [
+      "缩写自动展开",
+      "日期与变量",
+      "表单输入",
+      "便携版"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://espanso.org/",
+    "source": {
+      "type": "github",
+      "repo": "espanso/espanso",
+      "assets": [
+        {
+          "match": "Win-Portable.*\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "Win-Installer.*\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/espanso.png"
+  },
+  {
+    "slug": "umi-ocr",
+    "name": "Umi-OCR",
+    "abbr": "UO",
+    "category": "tools",
+    "tags": [
+      "OCR",
+      "识字",
+      "绿色版"
+    ],
+    "summary": "免费离线的文字识别工具。",
+    "intro": "Umi-OCR 截图即可识别文字，支持批量识别图片和 PDF、二维码，完全离线运行。",
+    "features": [
+      "截图识字",
+      "批量图片 / PDF",
+      "二维码识别",
+      "离线运行"
+    ],
+    "tips": [],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://github.com/hiroi-sora/Umi-OCR",
+    "source": {
+      "type": "github",
+      "repo": "hiroi-sora/Umi-OCR",
+      "assets": [
+        {
+          "match": "Rapid.*\\.7z\\.exe$",
+          "label": "Windows · Rapid 引擎自解压绿色版",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "Paddle.*\\.7z\\.exe$",
+          "label": "Windows · Paddle 引擎自解压绿色版",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/umi-ocr.png"
+  },
+  {
+    "slug": "etcher",
+    "name": "balenaEtcher",
+    "abbr": "BE",
+    "category": "system",
+    "tags": [
+      "启动盘",
+      "烧录",
+      "绿色版"
+    ],
+    "summary": "把系统镜像写入 U 盘和 SD 卡。",
+    "intro": "balenaEtcher 选镜像、选磁盘、点烧录三步完成，写入后自动校验。",
+    "features": [
+      "三步烧录",
+      "自动校验",
+      "防误选系统盘",
+      "便携版"
+    ],
+    "tips": [],
+    "license": "Apache-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://etcher.balena.io/",
+    "source": {
+      "type": "github",
+      "repo": "balena-io/etcher",
+      "assets": [
+        {
+          "match": "win32-x64-.*\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "Setup\\.exe$",
+          "label": "Windows · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/etcher.png"
+  },
+  {
+    "slug": "wox",
+    "name": "Wox",
+    "abbr": "WX",
+    "category": "tools",
+    "tags": [
+      "启动器",
+      "效率",
+      "绿色版"
+    ],
+    "summary": "开源快速启动器，支持插件。",
+    "intro": "Wox 按快捷键呼出搜索框，快速打开程序、文件、网页搜索和计算器。",
+    "features": [
+      "程序与文件搜索",
+      "插件扩展",
+      "AI 对话",
+      "单文件"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://wox-launcher.github.io/Wox/",
+    "source": {
+      "type": "github",
+      "repo": "Wox-launcher/Wox",
+      "assets": [
+        {
+          "match": "windows-amd64\\.exe$",
+          "label": "Windows x64 · 单文件 EXE",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/wox.png"
+  },
+  {
+    "slug": "copytranslator",
+    "name": "CopyTranslator",
+    "abbr": "CT",
+    "category": "tools",
+    "tags": [
+      "翻译",
+      "绿色版"
+    ],
+    "summary": "复制即翻译的划词翻译工具。",
+    "intro": "CopyTranslator 复制文字后自动翻译，并修正 PDF 复制带来的断行问题。",
+    "features": [
+      "复制即翻译",
+      "去除多余换行",
+      "多翻译引擎",
+      "便携版"
+    ],
+    "tips": [],
+    "license": "GPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://copytranslator.github.io/",
+    "source": {
+      "type": "github",
+      "repo": "CopyTranslator/CopyTranslator",
+      "assets": [
+        {
+          "match": "win\\.zip$",
+          "label": "Windows · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "setup.*\\.exe$",
+          "label": "Windows · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/copytranslator.png"
+  },
+  {
+    "slug": "scrcpy",
+    "name": "scrcpy",
+    "abbr": "SC",
+    "category": "tools",
+    "tags": [
+      "投屏",
+      "安卓",
+      "绿色版"
+    ],
+    "summary": "把安卓手机投屏到电脑并用鼠标操作。",
+    "intro": "scrcpy 通过 USB 或无线连接，低延迟显示并控制安卓手机，无需在手机上装软件。",
+    "features": [
+      "低延迟投屏",
+      "键鼠控制手机",
+      "录屏",
+      "无需 Root"
+    ],
+    "tips": [],
+    "license": "Apache-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://github.com/Genymobile/scrcpy",
+    "source": {
+      "type": "github",
+      "repo": "Genymobile/scrcpy",
+      "assets": [
+        {
+          "match": "win64-.*\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/scrcpy.png"
+  },
+  {
+    "slug": "altsnap",
+    "name": "AltSnap",
+    "abbr": "AS",
+    "category": "system",
+    "tags": [
+      "窗口管理",
+      "绿色版"
+    ],
+    "summary": "按住 Alt 拖动窗口的效率工具。",
+    "intro": "AltSnap 让你按住 Alt 在窗口任意位置拖动和缩放，还支持窗口吸附。",
+    "features": [
+      "Alt 拖动窗口",
+      "Alt 缩放",
+      "窗口吸附",
+      "便携版"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://github.com/RamonUnch/AltSnap",
+    "source": {
+      "type": "github",
+      "repo": "RamonUnch/AltSnap",
+      "assets": [
+        {
+          "match": "bin_x64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "x64-inst\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/altsnap.png"
+  },
+  {
+    "slug": "translucenttb",
+    "name": "TranslucentTB",
+    "abbr": "TB",
+    "category": "system",
+    "tags": [
+      "美化",
+      "任务栏",
+      "绿色版"
+    ],
+    "summary": "让 Windows 任务栏变透明。",
+    "intro": "TranslucentTB 可把任务栏设为透明、模糊或亚克力效果，并按场景自动切换。",
+    "features": [
+      "透明 / 模糊任务栏",
+      "按状态切换",
+      "占用极低",
+      "便携版"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://github.com/TranslucentTB/TranslucentTB",
+    "source": {
+      "type": "github",
+      "repo": "TranslucentTB/TranslucentTB",
+      "assets": [
+        {
+          "match": "portable-x64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/translucenttb.png"
+  },
+  {
+    "slug": "unigetui",
+    "name": "UniGetUI",
+    "abbr": "UG",
+    "category": "system",
+    "tags": [
+      "包管理",
+      "绿色版"
+    ],
+    "summary": "winget、Scoop、Chocolatey 的图形界面。",
+    "intro": "UniGetUI 把多个包管理器放进一个界面，批量安装、更新和卸载软件。",
+    "features": [
+      "统一包管理",
+      "一键更新全部",
+      "备份软件列表",
+      "便携版"
+    ],
+    "tips": [],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://www.marticliment.com/unigetui/",
+    "source": {
+      "type": "github",
+      "repo": "marticliment/UniGetUI",
+      "assets": [
+        {
+          "match": "x64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "Installer\\.x64\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/unigetui.png"
+  },
+  {
+    "slug": "g-helper",
+    "name": "G-Helper",
+    "abbr": "GH",
+    "category": "hardware",
+    "tags": [
+      "华硕",
+      "性能",
+      "绿色版"
+    ],
+    "summary": "华硕笔记本的轻量控制工具。",
+    "intro": "G-Helper 替代臃肿的 Armoury Crate，调节性能模式、风扇、显卡模式和键盘灯。",
+    "features": [
+      "性能模式切换",
+      "风扇曲线",
+      "独显直连切换",
+      "单文件"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://github.com/seerge/g-helper",
+    "source": {
+      "type": "github",
+      "repo": "seerge/g-helper",
+      "assets": [
+        {
+          "match": "^GHelper\\.exe$",
+          "label": "Windows · 单文件 EXE",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/g-helper.png"
+  },
+  {
+    "slug": "subtitleedit",
+    "name": "Subtitle Edit",
+    "abbr": "SE",
+    "category": "video",
+    "tags": [
+      "字幕",
+      "绿色版"
+    ],
+    "summary": "功能全面的开源字幕编辑器。",
+    "intro": "Subtitle Edit 支持 300 多种字幕格式，可调时间轴、语音识别生成字幕和机器翻译。",
+    "features": [
+      "时间轴调整",
+      "语音转字幕",
+      "格式转换",
+      "便携版"
+    ],
+    "tips": [],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://www.nikse.dk/subtitleedit",
+    "source": {
+      "type": "github",
+      "repo": "SubtitleEdit/subtitleedit",
+      "assets": [
+        {
+          "match": "^SubtitleEdit-Windows-x64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "Setup\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/subtitleedit.png"
+  },
+  {
+    "slug": "mpv",
+    "name": "mpv",
+    "abbr": "MV",
+    "category": "media",
+    "tags": [
+      "播放器",
+      "绿色版"
+    ],
+    "summary": "极简而强大的命令行播放器。",
+    "intro": "mpv 画质出色、格式支持全面，通过配置和脚本定制，是很多播放器的内核。",
+    "features": [
+      "高质量渲染",
+      "全格式支持",
+      "Lua 脚本",
+      "便携版"
+    ],
+    "tips": [],
+    "license": "GPL-2.0 / LGPL-2.1",
+    "mirror_allowed": true,
+    "homepage": "https://mpv.io/",
+    "source": {
+      "type": "github",
+      "repo": "mpv-player/mpv",
+      "assets": [
+        {
+          "match": "x86_64-pc-windows-msvc\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/mpv.png"
+  },
+  {
+    "slug": "implay",
+    "name": "ImPlay",
+    "abbr": "IP",
+    "category": "media",
+    "tags": [
+      "播放器",
+      "绿色版"
+    ],
+    "summary": "基于 mpv 的图形界面播放器。",
+    "intro": "ImPlay 给 mpv 加上易用的菜单和播放列表，同时兼容 mpv 配置。",
+    "features": [
+      "mpv 内核",
+      "右键菜单",
+      "播放列表",
+      "便携版"
+    ],
+    "tips": [],
+    "license": "GPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://github.com/tsl0922/ImPlay",
+    "source": {
+      "type": "github",
+      "repo": "tsl0922/ImPlay",
+      "assets": [
+        {
+          "match": "win64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "win64\\.msi$",
+          "label": "Windows x64 · 安装包 MSI",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/implay.png"
+  },
+  {
+    "slug": "naps2",
+    "name": "NAPS2",
+    "abbr": "NP",
+    "category": "office",
+    "tags": [
+      "扫描",
+      "PDF",
+      "绿色版"
+    ],
+    "summary": "开源扫描软件，直接扫描成 PDF。",
+    "intro": "NAPS2 支持 WIA、TWAIN 扫描仪，扫描后可排序、OCR 并保存为 PDF。",
+    "features": [
+      "一键扫描成 PDF",
+      "OCR 文字识别",
+      "页面排序与旋转",
+      "便携版"
+    ],
+    "tips": [],
+    "license": "GPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://www.naps2.com/",
+    "source": {
+      "type": "github",
+      "repo": "cyanfish/naps2",
+      "assets": [
+        {
+          "match": "win-x64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "win-x64\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/naps2.png"
+  },
+  {
+    "slug": "trilium",
+    "name": "Trilium Notes",
+    "abbr": "TN",
+    "category": "office",
+    "tags": [
+      "笔记",
+      "知识库",
+      "绿色版"
+    ],
+    "summary": "层级结构的个人知识库笔记。",
+    "intro": "Trilium 用树状结构组织大量笔记，支持笔记关系图、脚本和自建同步服务器。",
+    "features": [
+      "树状笔记",
+      "关系图",
+      "加密笔记",
+      "便携版"
+    ],
+    "tips": [],
+    "license": "AGPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://triliumnotes.org/",
+    "source": {
+      "type": "github",
+      "repo": "TriliumNext/Trilium",
+      "assets": [
+        {
+          "match": "windows-x64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "windows-x64\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/trilium.png"
+  },
+  {
+    "slug": "xournalpp",
+    "name": "Xournal++",
+    "abbr": "XJ",
+    "category": "office",
+    "tags": [
+      "手写",
+      "PDF",
+      "绿色版"
+    ],
+    "summary": "手写笔记与 PDF 批注软件。",
+    "intro": "Xournal++ 适合数位板和触控笔，可在 PDF 上手写批注、画图和录音。",
+    "features": [
+      "手写笔记",
+      "PDF 批注",
+      "压感支持",
+      "便携版"
+    ],
+    "tips": [],
+    "license": "GPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://xournalpp.github.io/",
+    "source": {
+      "type": "github",
+      "repo": "xournalpp/xournalpp",
+      "assets": [
+        {
+          "match": "windows-portable-AMD64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "windows-setup-AMD64\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/xournalpp.png"
+  },
+  {
+    "slug": "drawio",
+    "name": "draw.io",
+    "abbr": "DW",
+    "category": "office",
+    "tags": [
+      "流程图",
+      "绘图",
+      "绿色版"
+    ],
+    "summary": "免费的流程图与架构图绘制工具。",
+    "intro": "draw.io 桌面版离线绘制流程图、思维导图、UML 和网络拓扑，文件保存在本地。",
+    "features": [
+      "丰富图形库",
+      "离线使用",
+      "导出 PNG / SVG / PDF",
+      "便携版"
+    ],
+    "tips": [],
+    "license": "Apache-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://www.drawio.com/",
+    "source": {
+      "type": "github",
+      "repo": "jgraph/drawio-desktop",
+      "assets": [
+        {
+          "match": "-windows\\.zip$",
+          "label": "Windows · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "windows-installer\\.exe$",
+          "label": "Windows · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/drawio.png"
+  },
+  {
+    "slug": "goldendict-ng",
+    "name": "GoldenDict-ng",
+    "abbr": "GD",
+    "category": "office",
+    "tags": [
+      "词典",
+      "翻译",
+      "绿色版"
+    ],
+    "summary": "支持海量离线词库的词典软件。",
+    "intro": "GoldenDict-ng 可加载 MDict、StarDict 等离线词典，支持屏幕取词和全文搜索。",
+    "features": [
+      "MDict / StarDict 词库",
+      "屏幕取词",
+      "全文搜索",
+      "便携版"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://xiaoyifang.github.io/goldendict-ng/",
+    "source": {
+      "type": "github",
+      "repo": "xiaoyifang/goldendict-ng",
+      "assets": [
+        {
+          "match": "Windows\\.7z$",
+          "label": "Windows x64 · 绿色版 7z",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "Windows-installer\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/goldendict-ng.png"
+  },
+  {
+    "slug": "simplenotepad",
+    "name": "SimpleNotePad",
+    "abbr": "SN",
+    "category": "office",
+    "tags": [
+      "文本",
+      "记事本",
+      "绿色版"
+    ],
+    "summary": "国人开发的轻量记事本，支持多种编码。",
+    "intro": "SimpleNotePad 是 TrafficMonitor 作者的作品，小巧、支持自动识别编码和语法高亮。",
+    "features": [
+      "自动识别编码",
+      "语法高亮",
+      "十六进制查看",
+      "便携版"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://github.com/zhongyang219/SimpleNotePad",
+    "source": {
+      "type": "github",
+      "repo": "zhongyang219/SimpleNotePad",
+      "assets": [
+        {
+          "match": "x64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/simplenotepad.png"
+  },
+  {
+    "slug": "kopia",
+    "name": "KopiaUI",
+    "abbr": "KP",
+    "category": "netdisk",
+    "tags": [
+      "备份",
+      "加密",
+      "绿色版"
+    ],
+    "summary": "开源加密增量备份，可备份到网盘。",
+    "intro": "Kopia 支持加密、去重和压缩，可把数据备份到本地、S3、WebDAV 或 rclone 支持的网盘。",
+    "features": [
+      "加密增量备份",
+      "去重压缩",
+      "多种存储后端",
+      "定时快照"
+    ],
+    "tips": [],
+    "license": "Apache-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://kopia.io/",
+    "source": {
+      "type": "github",
+      "repo": "kopia/kopia",
+      "assets": [
+        {
+          "match": "^KopiaUI-.*-win\\.zip$",
+          "label": "Windows · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "^KopiaUI-Setup.*\\.exe$",
+          "label": "Windows · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/kopia.png"
+  },
+  {
+    "slug": "restic",
+    "name": "restic",
+    "abbr": "RS",
+    "category": "netdisk",
+    "tags": [
+      "备份",
+      "命令行",
+      "绿色版"
+    ],
+    "summary": "快速安全的命令行备份工具。",
+    "intro": "restic 把数据加密去重后备份到本地或云存储，恢复和校验都很简单。",
+    "features": [
+      "加密去重",
+      "多种云存储",
+      "快照管理",
+      "单文件"
+    ],
+    "tips": [],
+    "license": "BSD-2-Clause",
+    "mirror_allowed": true,
+    "homepage": "https://restic.net/",
+    "source": {
+      "type": "github",
+      "repo": "restic/restic",
+      "assets": [
+        {
+          "match": "windows_amd64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/restic.png"
+  },
+  {
+    "slug": "frp",
+    "name": "frp",
+    "abbr": "FR",
+    "category": "network",
+    "tags": [
+      "内网穿透",
+      "绿色版"
+    ],
+    "summary": "高性能的内网穿透工具。",
+    "intro": "frp 通过一台公网服务器把内网服务暴露出去，支持 TCP、UDP、HTTP 和 P2P。",
+    "features": [
+      "TCP / UDP / HTTP 穿透",
+      "P2P 模式",
+      "Web 管理面板",
+      "单文件"
+    ],
+    "tips": [],
+    "license": "Apache-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://gofrp.org/",
+    "source": {
+      "type": "github",
+      "repo": "fatedier/frp",
+      "assets": [
+        {
+          "match": "windows_amd64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/frp.png"
+  },
+  {
+    "slug": "croc",
+    "name": "croc",
+    "abbr": "CR",
+    "category": "network",
+    "tags": [
+      "传文件",
+      "绿色版"
+    ],
+    "summary": "两台电脑之间安全传文件的命令行工具。",
+    "intro": "croc 用一句口令在任意两台设备之间端到端加密传输文件，支持断点续传。",
+    "features": [
+      "口令即传",
+      "端到端加密",
+      "断点续传",
+      "单文件"
+    ],
+    "tips": [],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://github.com/schollz/croc",
+    "source": {
+      "type": "github",
+      "repo": "schollz/croc",
+      "assets": [
+        {
+          "match": "Windows-64bit\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/croc.png"
+  },
+  {
+    "slug": "watt-toolkit",
+    "name": "Watt Toolkit",
+    "abbr": "WT",
+    "category": "game",
+    "tags": [
+      "Steam",
+      "工具箱",
+      "绿色版"
+    ],
+    "summary": "开源 Steam 工具箱（原 Steam++）。",
+    "intro": "Watt Toolkit 提供 Steam 账号切换、库存管理、令牌与网络加速等功能。",
+    "features": [
+      "Steam 账号切换",
+      "网络加速",
+      "本地令牌",
+      "库存管理"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://steampp.net/",
+    "source": {
+      "type": "github",
+      "repo": "BeyondDimension/SteamTools",
+      "assets": [
+        {
+          "match": "win_x64\\.7z$",
+          "label": "Windows x64 · 绿色版 7z",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "win_x64\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/watt-toolkit.png"
+  },
+  {
+    "slug": "heroic",
+    "name": "Heroic Games Launcher",
+    "abbr": "HG",
+    "category": "game",
+    "tags": [
+      "游戏平台",
+      "绿色版"
+    ],
+    "summary": "Epic、GOG、Amazon 游戏的开源启动器。",
+    "intro": "Heroic 用一个轻量界面管理 Epic、GOG 和 Amazon Prime 游戏，支持云存档同步。",
+    "features": [
+      "Epic / GOG / Amazon",
+      "云存档",
+      "游戏库管理",
+      "便携版"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://heroicgameslauncher.com/",
+    "source": {
+      "type": "github",
+      "repo": "Heroic-Games-Launcher/HeroicGamesLauncher",
+      "assets": [
+        {
+          "match": "Portable-x64\\.exe$",
+          "label": "Windows x64 · 单文件 EXE",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "Setup-x64\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/heroic.svg"
+  },
+  {
+    "slug": "antimicrox",
+    "name": "AntiMicroX",
+    "abbr": "AM",
+    "category": "game",
+    "tags": [
+      "手柄",
+      "映射",
+      "绿色版"
+    ],
+    "summary": "把手柄按键映射成键盘鼠标。",
+    "intro": "AntiMicroX 可以让不支持手柄的游戏或程序用手柄操作。",
+    "features": [
+      "手柄映射键鼠",
+      "多套配置",
+      "宏与连发",
+      "便携版"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://github.com/AntiMicroX/antimicrox",
+    "source": {
+      "type": "github",
+      "repo": "AntiMicroX/antimicrox",
+      "assets": [
+        {
+          "match": "PortableWindows-AMD64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "Windows-AMD64\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/antimicrox.png"
   }
 ]
