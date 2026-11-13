@@ -3956,5 +3956,128 @@
       }
     ],
     "mirrored": false
+  },
+  "pdfgear": {
+    "version": "3.0.1",
+    "released": "2026-10-22",
+    "verified": "2026-11-13",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/PDFgear/PDFgear/3.0.1",
+    "changelog": "",
+    "downloads": [
+      {
+        "label": "Windows x64 · 官方安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "pdfgear_setup_v3.0.1.exe",
+        "size": null,
+        "sha256": "e55f80ac7a59c367ed1d18ff77441cd55d22a3b0f9fd3a3cfad42eed2466f684",
+        "official": "https://downloadfiles.pdfgear.com/releases/windows/pdfgear_setup_v3.0.1.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false,
+    "source": "winget"
+  },
+  "pdf24": {
+    "version": "11.34.0",
+    "released": "",
+    "verified": "2026-11-13",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/geeksoftwareGmbH/PDF24Creator/11.34.0",
+    "changelog": "",
+    "downloads": [
+      {
+        "label": "Windows x64 · 官方安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "pdf24-creator-11.34.0-x64.exe",
+        "size": null,
+        "sha256": "7b638931845ce914f42e09cf62525141447c321962238783afb0de55c3965a32",
+        "official": "https://download.pdf24.org/pdf24-creator-11.34.0-x64.exe",
+        "mirrors": []
+      },
+      {
+        "label": "Windows x64 · 企业部署 MSI",
+        "platform": "Windows",
+        "portable": false,
+        "file": "pdf24-creator-11.34.0-x64.msi",
+        "size": null,
+        "sha256": "f4a6a66b52d5929298e82e7134485a0541ee7430c0ddef21e6bf0b9b7a9a00f7",
+        "official": "https://download.pdf24.org/pdf24-creator-11.34.0-x64.msi",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false,
+    "source": "winget"
+  },
+  "honeyview": {
+    "version": "5.53",
+    "released": "2024-06-21",
+    "verified": "2026-11-13",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bandisoft/Honeyview/5.53",
+    "changelog": "",
+    "downloads": [
+      {
+        "label": "Windows · 官方安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "HONEYVIEW-SETUP.EXE",
+        "size": null,
+        "sha256": "831622fcffc89f5ed28a2d796eb0b4157a7d8bd8019d4faf4ef75ddc949933ab",
+        "official": "https://bandisoft.app/honeyview/HONEYVIEW-SETUP.EXE",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false,
+    "source": "winget"
+  },
+  "aria2-next": {
+    "version": "3.1.0",
+    "released": "2026-11-08",
+    "verified": "2026-11-13",
+    "release_url": "https://github.com/AnInsomniacy/aria2-next/releases/tag/v3.1.0",
+    "changelog": "## Summary\n\nAria2 Next 3.1.0 changes how failed downloads survive a restart and how redirected downloads are named. A download that failed before the session was saved comes back as failed instead of being started again on every launch. Windows executables now carry version information and an application manifest. Release assets cover the same seven platforms.\n\n### Changed\n\n- Failed downloads are saved to the session with their error code and message and restored as failed results. Previously every launch retried them, so dead links failed again within seconds and produced a burst of errors. Retrying one is still a user action ([rayburst#802](https://github.com/AnInsomniacy/rayburst/issues/802)).\n- Without a Content-Disposition filename or a caller hint, a download that was redirected is named after the URL it landed on, as browsers do. A link such as `…/download/3.28` that redirects to `…/setup.exe` is now saved as `setup.exe` ([rayburst#801](https://github.com/AnInsomniacy/rayburst/issues/801)).\n\n### Added\n\n- The Windows executable embeds version information and a manifest that declares Windows 10/11 support and long path awareness. Paths beyond `MAX_PATH` work where the system enables long paths ([#86](https://github.com/AnInsomniacy/aria2-next/issues/86)).\n\n### Downloads\n\n| Platform | Download |\n| --- | --- |\n| Linux x86_64 | `aria2-next-3.1.0-linux-x86_64` |\n| Linux ARM64 | `aria2-next-3.1.0-linux-aarch64` |\n| macOS Apple Silicon | `aria2-next-3.1.0-macos-arm64` |\n| macOS Intel | `aria2-next-3.1.0-macos-x86_64` |\n| Windows x86_64 | `aria2-next-3.1.0-windows-x86_64.exe` |\n| Windows ARM64 | `aria2-next-3.1.0-windows-arm64.exe` |\n| Android ARM64 | `aria2-next-3.1.0-android-arm64` |\n| Checksums | `aria2-next-3.1.0-checksums.sha256` |\n",
+    "downloads": [
+      {
+        "label": "Windows x64 · 单文件 EXE",
+        "platform": "Windows",
+        "portable": true,
+        "file": "aria2-next-3.1.0-windows-x86_64.exe",
+        "size": 18322432,
+        "sha256": "12bbd48dfd2c86f55419bf92b196dd3aedd6983116b5ce10c85d27a5a76c2baa",
+        "official": "https://github.com/AnInsomniacy/aria2-next/releases/download/v3.1.0/aria2-next-3.1.0-windows-x86_64.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "onlyoffice": {
+    "version": "10.0.0",
+    "released": "2026-10-13",
+    "verified": "2026-11-13",
+    "release_url": "https://github.com/ONLYOFFICE/DesktopEditors/releases/tag/v10.0.0",
+    "changelog": "See changes at [CHANGELOG.md](https://github.com/ONLYOFFICE/DesktopEditors/blob/master/CHANGELOG.md#1000)",
+    "downloads": [
+      {
+        "label": "Windows x64 · 绿色版 ZIP",
+        "platform": "Windows",
+        "portable": true,
+        "file": "DesktopEditors_x64.zip",
+        "size": 397286158,
+        "sha256": "54979d04f1cdca56deb0c62e0356355a45f392cdb54f04f6b7e436b1f44c3605",
+        "official": "https://github.com/ONLYOFFICE/DesktopEditors/releases/download/v10.0.0/DesktopEditors_x64.zip",
+        "mirrors": []
+      },
+      {
+        "label": "Windows x64 · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "DesktopEditors_x64.exe",
+        "size": 299860896,
+        "sha256": "e9f6df29bb09770cfc14c9ebb9bce881ff7ad9705d76b3faf038831fe248e46b",
+        "official": "https://github.com/ONLYOFFICE/DesktopEditors/releases/download/v10.0.0/DesktopEditors_x64.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
   }
 }

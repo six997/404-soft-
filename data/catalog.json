@@ -6428,5 +6428,230 @@
       ]
     },
     "icon": "/static/icons/antimicrox.png"
+  },
+  {
+    "slug": "pdfgear",
+    "name": "PDFgear",
+    "abbr": "PG",
+    "category": "office",
+    "tags": [
+      "PDF",
+      "编辑",
+      "OCR"
+    ],
+    "summary": "完全免费的全能 PDF 编辑与转换工具。",
+    "intro": "PDFgear 可以像编辑 Word 一样直接修改 PDF 正文，支持批注、签名、表单填写、OCR 识别和格式互转，导出无水印。",
+    "features": [
+      "直接编辑正文",
+      "批注与签名",
+      "PDF 与 Word / Excel 互转",
+      "OCR 文字识别"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://www.pdfgear.com/zh/",
+    "source": {
+      "type": "winget",
+      "id": "PDFgear.PDFgear",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": "pdfgear_setup",
+          "label": "Windows x64 · 官方安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "download_page": "https://www.pdfgear.com/zh/",
+    "icon": "/static/icons/pdfgear.png"
+  },
+  {
+    "slug": "pdf24",
+    "name": "PDF24 Creator",
+    "abbr": "24",
+    "category": "office",
+    "tags": [
+      "PDF",
+      "工具箱"
+    ],
+    "summary": "离线 PDF 瑞士军刀，本地处理不上传。",
+    "intro": "PDF24 Creator 是免费的本地 PDF 工具箱，涵盖合并、拆分、压缩、旋转、加密解密、转图片和虚拟打印机。",
+    "features": [
+      "拖拽合并与拆分",
+      "压缩与加密",
+      "PDF 转图片",
+      "虚拟 PDF 打印机"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://www.pdf24.org/zh/",
+    "source": {
+      "type": "winget",
+      "id": "geeksoftwareGmbH.PDF24Creator",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": "x64\\.exe$",
+          "label": "Windows x64 · 官方安装包",
+          "platform": "Windows",
+          "portable": false
+        },
+        {
+          "arch": "x64",
+          "url": "x64\\.msi$",
+          "label": "Windows x64 · 企业部署 MSI",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "download_page": "https://tools.pdf24.org/zh/creator",
+    "icon": "/static/icons/pdf24.png"
+  },
+  {
+    "slug": "jopdf",
+    "name": "JOPDF",
+    "abbr": "JO",
+    "category": "office",
+    "tags": [
+      "PDF",
+      "编辑"
+    ],
+    "summary": "免费跨平台的桌面 PDF 编辑器。",
+    "intro": "JOPDF 支持直接编辑 PDF 正文和图片、页面管理与提取、格式互转，导出不限次数，适合离线处理。",
+    "features": [
+      "正文与图片编辑",
+      "页面管理与提取",
+      "格式互转",
+      "Windows / Mac / Linux"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://www.jopdf.com/",
+    "source": {
+      "type": "official"
+    },
+    "download_page": "https://www.jopdf.com/download-center/",
+    "platforms": [
+      "Windows"
+    ],
+    "icon": "/static/icons/jopdf.png"
+  },
+  {
+    "slug": "honeyview",
+    "name": "Honeyview",
+    "abbr": "HV",
+    "category": "graphics",
+    "tags": [
+      "看图"
+    ],
+    "summary": "轻量看图软件，压缩包内图片免解压预览。",
+    "intro": "Honeyview 由 Bandizip 开发商出品，启动快，支持 RAW、GIF、WebP 等格式，可直接浏览 ZIP / RAR 中的图片。官网另提供便携版。",
+    "features": [
+      "压缩包内直接看图",
+      "支持 RAW 与动图",
+      "EXIF 与 GPS 信息",
+      "官网提供便携版"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://www.bandisoft.com/honeyview/",
+    "source": {
+      "type": "winget",
+      "id": "Bandisoft.Honeyview",
+      "assets": [
+        {
+          "arch": "",
+          "url": "honeyview/HONEYVIEW-SETUP",
+          "label": "Windows · 官方安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "download_page": "https://www.bandisoft.com/honeyview/",
+    "icon": "/static/icons/honeyview.png"
+  },
+  {
+    "slug": "aria2-next",
+    "name": "aria2-next",
+    "abbr": "AN",
+    "category": "download",
+    "tags": [
+      "下载",
+      "BT",
+      "绿色版"
+    ],
+    "summary": "基于 aria2 的多线程下载工具。",
+    "intro": "aria2-next 给 aria2 配上现代图形界面，支持 HTTP、BT 和磁力链接的多线程下载。",
+    "features": [
+      "多线程下载",
+      "BT 与磁力",
+      "任务管理",
+      "单文件 EXE"
+    ],
+    "tips": [],
+    "license": "GPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://github.com/AnInsomniacy/aria2-next",
+    "source": {
+      "type": "github",
+      "repo": "AnInsomniacy/aria2-next",
+      "assets": [
+        {
+          "match": "windows-x86_64\\.exe$",
+          "label": "Windows x64 · 单文件 EXE",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    }
+  },
+  {
+    "slug": "onlyoffice",
+    "name": "ONLYOFFICE 桌面编辑器",
+    "abbr": "OO",
+    "category": "office",
+    "tags": [
+      "Office",
+      "文档",
+      "绿色版"
+    ],
+    "summary": "开源免费的 Office 套件，与 Word / Excel / PPT 高度兼容。",
+    "intro": "ONLYOFFICE 桌面编辑器把文档、表格、演示和 PDF 编辑集成在一个窗口，对微软 Office 格式兼容性好，官方提供便携 ZIP。",
+    "features": [
+      "高兼容 DOCX / XLSX / PPTX",
+      "PDF 编辑与表单",
+      "标签页多文档",
+      "便携版 ZIP"
+    ],
+    "tips": [],
+    "license": "AGPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://www.onlyoffice.com/zh/desktop.aspx",
+    "source": {
+      "type": "github",
+      "repo": "ONLYOFFICE/DesktopEditors",
+      "assets": [
+        {
+          "match": "^DesktopEditors_x64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "^DesktopEditors_x64\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/onlyoffice.png"
   }
 ]
