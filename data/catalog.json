@@ -2201,7 +2201,8 @@
     "category": "tools",
     "tags": [
       "解压",
-      "压缩"
+      "压缩",
+      "绿色版"
     ],
     "summary": "开源压缩解压软件，支持主流压缩格式。",
     "intro": "7-Zip 是经典开源压缩软件，7z 格式压缩率高，也能解压 RAR、ZIP、ISO 等格式。",
@@ -2216,18 +2217,30 @@
     "mirror_allowed": true,
     "homepage": "https://www.7-zip.org/",
     "source": {
-      "type": "winget",
-      "id": "7zip.7zip",
+      "type": "github",
+      "repo": "ip7z/7zip",
       "assets": [
         {
-          "arch": "x64",
-          "url": ".",
+          "match": "^7z\\d+-x64\\.exe$",
           "label": "Windows x64 · 官方安装包",
           "platform": "Windows",
           "portable": false
+        },
+        {
+          "match": "^7z\\d+-x64\\.msi$",
+          "label": "Windows x64 · 企业部署 MSI",
+          "platform": "Windows",
+          "portable": false
+        },
+        {
+          "match": "^7zr\\.exe$",
+          "label": "7zr.exe · 命令行单文件（仅 7z 格式）",
+          "platform": "Windows",
+          "portable": true
         }
       ]
-    }
+    },
+    "icon": "/static/icons/7-zip.png"
   },
   {
     "slug": "bandizip",
