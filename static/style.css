@@ -78,7 +78,7 @@ code { font: 12.5px/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace
 .plat { font-size: 11.5px; padding: 1px 8px; border-radius: 6px; background: var(--soft); color: var(--muted); }
 .plat.lic { background: var(--brand-soft); color: var(--brand); }
 
-.icon { flex: none; border-radius: 12px; object-fit: cover; }
+.icon { flex: none; border-radius: 12px; object-fit: contain; }
 .icon.md { width: 48px; height: 48px; }
 .icon.lg { width: 72px; height: 72px; border-radius: 18px; font-size: 20px; }
 .icon.letter { display: grid; place-items: center; font-weight: 700; font-size: 15px; color: #fff; background: hsl(var(--h, 220) 70% 55%); }
