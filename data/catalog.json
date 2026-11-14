@@ -11284,7 +11284,7 @@
     "summary": "基于 mihomo 内核的原生 Clash 客户端，iPhone、iPad、Mac、Apple TV 通用，免费开源。",
     "intro": "ProjectClash 团队推出的 Apple 平台原生 Clash 客户端，沿用经典 Clash 的配置与规则写法，内核基于 mihomo。客户端与 Clash Core 均在 GitHub 开源（GPL-3.0）。注意：这是新团队的作品，并非 2023 年删库的原 Clash 作者。",
     "features": [
-      "iPhone / iPad / Mac / Apple TV 一次购买通用",
+      "iPhone / iPad / Mac / Apple TV 全平台通用",
       "兼容 Clash 配置与规则",
       "mihomo 内核",
       "客户端与内核全部开源"
