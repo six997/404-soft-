@@ -9156,7 +9156,8 @@
     "category": "proxy",
     "tags": [
       "代理",
-      "Xray"
+      "Xray",
+      "macOS"
     ],
     "summary": "Windows 上常用的开源代理客户端，支持 Xray / sing-box 内核。",
     "intro": "v2rayN 是开源的 Windows 代理客户端，支持 VMess、VLESS、Trojan、Shadowsocks、Hysteria2 等协议，订阅管理、路由规则和测速一应俱全，官方 ZIP 解压即用。",
@@ -9185,6 +9186,18 @@
           "label": "Windows x64 · 绿色版 ZIP",
           "platform": "Windows",
           "portable": true
+        },
+        {
+          "match": "^v2rayN-macos-arm64\\.dmg$",
+          "label": "macOS Apple 芯片 · DMG",
+          "platform": "macOS",
+          "portable": false
+        },
+        {
+          "match": "^v2rayN-macos-64\\.dmg$",
+          "label": "macOS Intel · DMG",
+          "platform": "macOS",
+          "portable": false
         }
       ]
     },
@@ -9198,7 +9211,8 @@
     "tags": [
       "代理",
       "Clash",
-      "mihomo"
+      "mihomo",
+      "macOS"
     ],
     "summary": "基于 mihomo 内核的现代化 Clash 图形客户端。",
     "intro": "Clash Verge Rev 是 Clash Verge 的社区续作，基于 Tauri 构建，使用 mihomo 内核，支持订阅、规则、TUN 模式和系统代理。",
@@ -9221,6 +9235,18 @@
           "label": "Windows x64 · 安装包",
           "platform": "Windows",
           "portable": false
+        },
+        {
+          "match": "_aarch64\\.dmg$",
+          "label": "macOS Apple 芯片 · DMG",
+          "platform": "macOS",
+          "portable": false
+        },
+        {
+          "match": "_x64\\.dmg$",
+          "label": "macOS Intel · DMG",
+          "platform": "macOS",
+          "portable": false
         }
       ]
     },
@@ -9234,7 +9260,8 @@
     "tags": [
       "代理",
       "Clash",
-      "mihomo"
+      "mihomo",
+      "macOS"
     ],
     "summary": "原 Mihomo Party，易用的 mihomo 图形客户端。",
     "intro": "Clash Party（原 Mihomo Party）是开源的 mihomo 内核图形客户端，界面友好，支持订阅、覆写、TUN 和连接管理，官方提供便携 7z。",
@@ -9263,6 +9290,18 @@
           "label": "Windows x64 · 安装包",
           "platform": "Windows",
           "portable": false
+        },
+        {
+          "match": "^clash-party-macos-[\\d.]+-arm64\\.pkg$",
+          "label": "macOS Apple 芯片 · PKG",
+          "platform": "macOS",
+          "portable": false
+        },
+        {
+          "match": "^clash-party-macos-[\\d.]+-x64\\.pkg$",
+          "label": "macOS Intel · PKG",
+          "platform": "macOS",
+          "portable": false
         }
       ]
     },
@@ -9276,7 +9315,8 @@
     "tags": [
       "代理",
       "Clash",
-      "Android"
+      "Android",
+      "macOS"
     ],
     "summary": "跨平台、无广告的 Clash 多平台客户端。",
     "intro": "FlClash 基于 Flutter 和 mihomo 内核，Windows 与 Android 界面统一，支持订阅、规则和 TUN 模式，简洁无广告。",
@@ -9311,6 +9351,18 @@
           "label": "Android · arm64 APK",
           "platform": "Android",
           "portable": false
+        },
+        {
+          "match": "macos-arm64\\.dmg$",
+          "label": "macOS Apple 芯片 · DMG",
+          "platform": "macOS",
+          "portable": false
+        },
+        {
+          "match": "macos-amd64\\.dmg$",
+          "label": "macOS Intel · DMG",
+          "platform": "macOS",
+          "portable": false
         }
       ]
     },
@@ -9324,7 +9376,8 @@
     "tags": [
       "代理",
       "sing-box",
-      "Android"
+      "Android",
+      "macOS"
     ],
     "summary": "基于 sing-box 的多平台代理客户端。",
     "intro": "Hiddify 基于 sing-box 内核，支持多种协议与订阅格式，一键连接，适合新手，Windows 有官方便携版。",
@@ -9359,6 +9412,12 @@
           "label": "Android · 通用 APK",
           "platform": "Android",
           "portable": false
+        },
+        {
+          "match": "^Hiddify-MacOS\\.dmg$",
+          "label": "macOS · 通用 DMG",
+          "platform": "macOS",
+          "portable": false
         }
       ]
     },
@@ -9372,7 +9431,8 @@
     "tags": [
       "代理",
       "内核",
-      "Android"
+      "Android",
+      "macOS"
     ],
     "summary": "通用代理平台，含官方图形客户端 SFW / SFA。",
     "intro": "sing-box 是开源的通用代理平台，也是众多客户端使用的内核，官方提供 Windows 图形客户端 SFW 和 Android 客户端 SFA。",
@@ -9407,6 +9467,12 @@
           "label": "Android · SFA 通用 APK",
           "platform": "Android",
           "portable": false
+        },
+        {
+          "match": "^SFM-[\\d.]+-Universal\\.pkg$",
+          "label": "macOS · 图形客户端 SFM（通用 PKG）",
+          "platform": "macOS",
+          "portable": false
         }
       ]
     },
@@ -9419,7 +9485,8 @@
     "category": "proxy",
     "tags": [
       "代理",
-      "sing-box"
+      "sing-box",
+      "macOS"
     ],
     "summary": "原 NekoRay，基于 sing-box 的桌面代理客户端。",
     "intro": "Throne 是 NekoRay 的后续项目，基于 Qt 与 sing-box 内核，支持多协议、分组测速和路由规则，官方 ZIP 解压即用。",
@@ -9447,6 +9514,18 @@
           "match": "windows-universal-installer\\.exe$",
           "label": "Windows · 安装包",
           "platform": "Windows",
+          "portable": false
+        },
+        {
+          "match": "macos-arm64\\.zip$",
+          "label": "macOS Apple 芯片 · ZIP",
+          "platform": "macOS",
+          "portable": false
+        },
+        {
+          "match": "macos-amd64\\.zip$",
+          "label": "macOS Intel · ZIP",
+          "platform": "macOS",
           "portable": false
         }
       ]
@@ -9991,7 +10070,8 @@
     "tags": [
       "代理",
       "sing-box",
-      "Android"
+      "Android",
+      "macOS"
     ],
     "summary": "兼容 Clash / V2Ray / sing-box 订阅的多平台客户端。",
     "intro": "Karing 基于 sing-box 内核，可直接导入 Clash、V2Ray、sing-box 等多种订阅，Windows 与 Android 通用，带便携版。",
@@ -10026,6 +10106,12 @@
           "label": "Android · arm64 APK",
           "platform": "Android",
           "portable": false
+        },
+        {
+          "match": "_macos_universal\\.dmg$",
+          "label": "macOS · 通用 DMG",
+          "platform": "macOS",
+          "portable": false
         }
       ]
     },
@@ -10040,7 +10126,8 @@
       "代理",
       "Clash",
       "mihomo",
-      "Android"
+      "Android",
+      "macOS"
     ],
     "summary": "Karing 团队出品的 mihomo 多平台客户端。",
     "intro": "Clash Mi 基于 mihomo 内核，界面简洁，兼容 Clash 配置，Windows 与 Android 均有官方构建。",
@@ -10069,6 +10156,12 @@
           "label": "Android · arm64 APK",
           "platform": "Android",
           "portable": false
+        },
+        {
+          "match": "_macos_universal\\.dmg$",
+          "label": "macOS · 通用 DMG",
+          "platform": "macOS",
+          "portable": false
         }
       ]
     },
@@ -10081,7 +10174,8 @@
     "category": "proxy",
     "tags": [
       "代理",
-      "sing-box"
+      "sing-box",
+      "macOS"
     ],
     "summary": "轻量的 sing-box 图形界面。",
     "intro": "GUI.for.SingBox 用 Wails 构建，为 sing-box 内核提供配置编辑、订阅、规则集和插件系统，解压即用。",
@@ -10104,6 +10198,18 @@
           "label": "Windows x64 · 绿色版 ZIP",
           "platform": "Windows",
           "portable": true
+        },
+        {
+          "match": "darwin-arm64\\.zip$",
+          "label": "macOS Apple 芯片 · ZIP",
+          "platform": "macOS",
+          "portable": false
+        },
+        {
+          "match": "darwin-amd64\\.zip$",
+          "label": "macOS Intel · ZIP",
+          "platform": "macOS",
+          "portable": false
         }
       ]
     },
@@ -10117,7 +10223,8 @@
     "tags": [
       "代理",
       "Clash",
-      "mihomo"
+      "mihomo",
+      "macOS"
     ],
     "summary": "轻量的 mihomo / Clash 图形界面。",
     "intro": "GUI.for.Clash 与 GUI.for.SingBox 同门，为 mihomo 内核提供可视化配置、订阅和插件，解压即用。",
@@ -10140,6 +10247,18 @@
           "label": "Windows x64 · 绿色版 ZIP",
           "platform": "Windows",
           "portable": true
+        },
+        {
+          "match": "darwin-arm64\\.zip$",
+          "label": "macOS Apple 芯片 · ZIP",
+          "platform": "macOS",
+          "portable": false
+        },
+        {
+          "match": "darwin-amd64\\.zip$",
+          "label": "macOS Intel · ZIP",
+          "platform": "macOS",
+          "portable": false
         }
       ]
     },
@@ -10152,7 +10271,8 @@
     "category": "proxy",
     "tags": [
       "代理",
-      "mihomo"
+      "mihomo",
+      "macOS"
     ],
     "summary": "Mihomo Party 原作者维护的 mihomo 客户端。",
     "intro": "Sparkle 由 Mihomo Party 原作者继续开发，基于 mihomo 内核，支持订阅、覆写、TUN 和连接管理，提供便携版。",
@@ -10181,6 +10301,18 @@
           "label": "Windows x64 · 安装包",
           "platform": "Windows",
           "portable": false
+        },
+        {
+          "match": "^sparkle-macos-[\\d.]+-arm64\\.pkg$",
+          "label": "macOS Apple 芯片 · PKG",
+          "platform": "macOS",
+          "portable": false
+        },
+        {
+          "match": "^sparkle-macos-[\\d.]+-x64\\.pkg$",
+          "label": "macOS Intel · PKG",
+          "platform": "macOS",
+          "portable": false
         }
       ]
     },
@@ -10194,7 +10326,8 @@
     "tags": [
       "代理",
       "Clash",
-      "mihomo"
+      "mihomo",
+      "macOS"
     ],
     "summary": "界面精致的 Clash / mihomo 图形客户端。",
     "intro": "Clash Nyanpasu 基于 Tauri，支持 mihomo 等内核，提供订阅管理、规则、TUN 模式和 Material 风格界面。",
@@ -10216,6 +10349,18 @@
           "match": "_x64-setup\\.exe$",
           "label": "Windows x64 · 安装包",
           "platform": "Windows",
+          "portable": false
+        },
+        {
+          "match": "_aarch64\\.dmg$",
+          "label": "macOS Apple 芯片 · DMG",
+          "platform": "macOS",
+          "portable": false
+        },
+        {
+          "match": "_x64\\.dmg$",
+          "label": "macOS Intel · DMG",
+          "platform": "macOS",
           "portable": false
         }
       ]
@@ -10978,5 +11123,150 @@
       "iOS"
     ],
     "icon": "/static/icons/ios-vproxy.png"
+  },
+  {
+    "slug": "clashx-meta",
+    "name": "ClashX Meta",
+    "abbr": "CXM",
+    "category": "proxy",
+    "tags": [
+      "代理",
+      "Clash",
+      "mihomo",
+      "macOS"
+    ],
+    "summary": "MetaCubeX 维护的 macOS 菜单栏 Clash 客户端。",
+    "intro": "ClashX Meta 是 ClashX 的 mihomo 内核版本，常驻菜单栏，兼容 Clash 配置与订阅，轻量好用。",
+    "features": [
+      "mihomo 内核",
+      "菜单栏常驻",
+      "兼容 Clash 配置",
+      "增强模式"
+    ],
+    "tips": [],
+    "license": "AGPL-3.0",
+    "mirror_allowed": false,
+    "homepage": "https://github.com/MetaCubeX/ClashX.Meta",
+    "source": {
+      "type": "github",
+      "repo": "MetaCubeX/ClashX.Meta",
+      "assets": [
+        {
+          "match": "^ClashX\\.Meta\\.zip$",
+          "label": "macOS · ZIP",
+          "platform": "macOS",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/clashx-meta.png"
+  },
+  {
+    "slug": "v2rayu",
+    "name": "V2rayU",
+    "abbr": "V2U",
+    "category": "proxy",
+    "tags": [
+      "代理",
+      "Xray",
+      "macOS"
+    ],
+    "summary": "macOS 上的开源 V2Ray / Xray 客户端。",
+    "intro": "V2rayU 是常驻菜单栏的 macOS 代理客户端，支持 VMess、VLESS、Trojan、Shadowsocks 和订阅导入。",
+    "features": [
+      "Xray 内核",
+      "菜单栏常驻",
+      "订阅导入",
+      "PAC 与全局模式"
+    ],
+    "tips": [],
+    "license": "开源（未声明许可证）",
+    "mirror_allowed": false,
+    "homepage": "https://github.com/yanue/V2rayU",
+    "source": {
+      "type": "github",
+      "repo": "yanue/V2rayU",
+      "assets": [
+        {
+          "match": "^V2rayU-arm64\\.dmg$",
+          "label": "macOS Apple 芯片 · DMG",
+          "platform": "macOS",
+          "portable": false
+        },
+        {
+          "match": "^V2rayU-64\\.dmg$",
+          "label": "macOS Intel · DMG",
+          "platform": "macOS",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "clashmac",
+    "name": "ClashMac",
+    "abbr": "CMac",
+    "category": "proxy",
+    "tags": [
+      "代理",
+      "Clash",
+      "macOS"
+    ],
+    "summary": "原生 SwiftUI 的 macOS Clash 客户端。",
+    "intro": "ClashMac 是为 macOS 打造的原生 Clash / mihomo 客户端，界面简洁，支持订阅和规则。",
+    "features": [
+      "原生 macOS 界面",
+      "mihomo 内核",
+      "订阅与规则",
+      "菜单栏控制"
+    ],
+    "tips": [],
+    "license": "开源",
+    "mirror_allowed": false,
+    "homepage": "https://github.com/666OS/ClashMac",
+    "source": {
+      "type": "github",
+      "repo": "666OS/ClashMac",
+      "assets": [
+        {
+          "match": "^ClashMac-[\\d.]+\\.dmg$",
+          "label": "macOS · DMG",
+          "platform": "macOS",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "singbox-mt",
+    "name": "sing-box MT（iOS）",
+    "abbr": "SB",
+    "category": "ios",
+    "tags": [
+      "代理",
+      "sing-box",
+      "iOS"
+    ],
+    "summary": "sing-box 官方 iOS / tvOS 客户端（原 sing-box VT）。",
+    "intro": "sing-box 官方客户端迁移到新的开发者账号后，以 sing-box MT 的名字重新上架 App Store，免费开源。旧版 sing-box VT 用户需要安装这个新应用。",
+    "features": [
+      "官方 sing-box 内核",
+      "免费开源",
+      "支持 iOS 与 tvOS",
+      "规则集与 DNS 分流"
+    ],
+    "tips": [],
+    "license": "GPL-3.0（免费）",
+    "mirror_allowed": false,
+    "homepage": "https://sing-box.sagernet.org/",
+    "source": {
+      "type": "appstore",
+      "app_id": 6785326793
+    },
+    "download_page": "https://apps.apple.com/app/id6785326793",
+    "platforms": [
+      "iOS"
+    ],
+    "icon": "/static/icons/singbox-mt.png"
   }
 ]

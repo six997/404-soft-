@@ -5632,236 +5632,6 @@
     "mirrored": false,
     "source": "winget"
   },
-  "v2rayn": {
-    "version": "7.25.6",
-    "released": "2026-10-11",
-    "verified": "2026-11-14",
-    "release_url": "https://github.com/2dust/v2rayN/releases/tag/7.25.6",
-    "changelog": "### [关于 跳过证书验证 allowInsecure 参数被移除的说明 ](https://github.com/2dust/v2rayN/discussions/9460)\r\n \r\n### 本次更新\r\n \r\n* 支持 sing-box v1.14，更新的用户注意内核版本 #9736\r\n* 锁定最大 sing-box 版本 v1.14  #10091\r\n* 添加通过代理更新检查更新的选项 - #10090\r\n* 在核心设置界面中添加 Mux 设置 - #10055\r\n* 日志和临时文件自动清理时间默认为 7 天\r\n* 调整 Clash API - #10088\r\n* xray core 配置文件格式改为最新版本 #10132\r\n* 为订阅更新添加自定义 HTTP 标头 - #10118\r\n* 添加阿塞拜疆语 (az) UI 本地化 - #10141\r\n* 添加 MASQUE 支持 - #10233\r\n* https://github.com/XTLS/Xray-core/releases/tag/v26.10.10\r\n\r\n\r\n### [发布文件介绍，不知道下载哪个文件的请看](https://github.com/2dust/v2rayN/wiki/Release-files-introduction)\r\n ",
-    "downloads": [
-      {
-        "label": "Windows x64 · 绿色版 ZIP（含内核）",
-        "platform": "Windows",
-        "portable": true,
-        "file": "v2rayN-windows-64-desktop.zip",
-        "size": 144735873,
-        "sha256": "defb18a16dac1d44659c30d0b8934f8b085cf540133574b892919ea29b083b00",
-        "official": "https://github.com/2dust/v2rayN/releases/download/7.25.6/v2rayN-windows-64-desktop.zip",
-        "mirrors": []
-      },
-      {
-        "label": "Windows x64 · 绿色版 ZIP",
-        "platform": "Windows",
-        "portable": true,
-        "file": "v2rayN-windows-64.zip",
-        "size": 168730000,
-        "sha256": "9b94718c2a214a246b04dec84b9a27f1f0ced8489c2dd25eb80a0fbb806bd13f",
-        "official": "https://github.com/2dust/v2rayN/releases/download/7.25.6/v2rayN-windows-64.zip",
-        "mirrors": []
-      }
-    ],
-    "mirrored": false
-  },
-  "clash-verge-rev": {
-    "version": "2.5.10",
-    "released": "2026-11-03",
-    "verified": "2026-11-14",
-    "release_url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/tag/v2.5.10",
-    "changelog": "## v2.5.10\n\n<details>\n<summary><strong> 🐞 修复问题 </strong></summary>\n\n- 修复全局模式缺少 `GLOBAL` 策略组，无法单独选择全局出口\n- 修复服务模式下，SSH 节点的 `private-key` 使用私钥文件时内核无法启动\n- 修复服务模式下，内核更新的 GEO 数据库不会同步回应用目录，导致使用新分类的规则无法通过校验\n- 修复订阅的 DNS 配置变化后，「DNS 覆写」实际已关闭但开关仍显示开启且没有提示\n\n**🖥️ Windows**\n\n- Windows：修复安装程序重新安装或覆盖时未提示退出运行中应用，导致卸载报错或覆盖失败\n\n</details>\n\n<details>\n<summary><strong> ✨ 新增功能 </strong></summary>\n\n\n</details>\n\n<details>\n<summary><strong> 🚀 优化改进 </strong></summary>\n\n\n</details>\n\n## 下载地址\n\n### Windows (不再支持Win7)\n#### 正常版本(推荐)\n- [64位(常用)](https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.10/Clash.Verge_2.5.10_x64-setup.exe) | [ARM64(不常用)](https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.10/Clash.Verge_2.5.10_arm64-setup.exe)\n\n#### 内置Webview2版(体积较大，仅在企业版系统或无法安装webview2时使用)\n- [64位](https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.10/Clash.Verge_2.5.10_x64_fixed_webview2-setup.exe) | [ARM64](https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.10/Clash.Verge_2.5.10_arm64_fixed_webview2-setup.exe)\n\n### macOS\n- [Apple M芯片](https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.10/Clash.Verge_2.5.10_aarch64.dmg) | [Intel芯片](https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.10/Clash.Verge_2.5.10_x64.dmg)\n\n### Linux\n#### DEB包(Debian系) 使用 apt ./路径 安装\n- [64位](https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.10/Clash.Verge_2.5.10_amd64.deb) | [ARM64](https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.10/Clash.Verge_2.5.10_arm64.deb) | [ARMv7](https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.10/Clash.Verge_2.5.10_armhf.deb)\n\n#### RPM包(Redhat系) 使用 dnf ./路径 安装\n- [64位](https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.10/Clash.Verge-2.5.10-1.x86_64.rpm) | [ARM64](https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.10/Clash.Verge-2.5.10-1.aarch64.rpm) | [ARMv7](https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.10/Clash.Verge-2.5.10-1.armhfp.rpm)\n\n### FAQ\n- [常见问题](https://clash-verge-rev.github.io/faq/windows.html)\n\n### 稳定机场VPN推荐\n- [狗狗加速](https://cvr.dginv.click/#/register?code=oaxsAGo6)\n\nCreated at Tue Nov  3 18:04:20 CST 2026.\n",
-    "downloads": [
-      {
-        "label": "Windows x64 · 安装包",
-        "platform": "Windows",
-        "portable": false,
-        "file": "Clash.Verge_2.5.10_x64-setup.exe",
-        "size": 60045702,
-        "sha256": "929da9303b643b80ce309ab29f618e37a5562f515d1fa55ebf5b86c822504450",
-        "official": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.10/Clash.Verge_2.5.10_x64-setup.exe",
-        "mirrors": []
-      }
-    ],
-    "mirrored": false
-  },
-  "clash-party": {
-    "version": "2.0.4",
-    "released": "2026-10-18",
-    "verified": "2026-11-14",
-    "release_url": "https://github.com/mihomo-party-org/clash-party/releases/tag/v2.0.4",
-    "changelog": "# 2.0.4\n\n## 新功能\n\n- 新增简易模式，可视化编辑订阅、代理组、规则、规则集、DNS 及域名嗅探配置\n- 简易模式支持本地节点管理、节点链接导入及订阅代理集合高级设置\n- 支持从连接详情快速添加简易模式规则，内联规则集支持列表编辑\n- 新增切换节点时仅关闭当前代理组连接的选项\n- 新增 DNS 覆写保护开关、日志等级筛选及 macOS 流量文字颜色设置\n- 侧边栏折叠后支持悬停展开\n\n## 性能优化\n\n- 优化历史流量统计迁移，减少磁盘写入并增加迁移提示\n- 优化跨平台连接应用识别及图标处理，改进 Linux 应用图标匹配\n\n## 修复\n\n- 修复系统唤醒后 TUN 重建时配置不完整，以及修改 TUN 设置后未重启内核的问题\n- 修复启动时未等待初始代理集合就绪及代理组选择状态未刷新的问题\n- 修复不含节点的远程订阅模板无法使用，以及订阅自动更新间隔字段不一致的问题\n- 修复配置模式切换同步、代理组编辑模式及首次使用引导的本地化问题\n- 修复 Windows 7 窗口初始化兼容问题，切换系统标题栏时增加重启确认\n- 修复拓扑图平移与卡片排序冲突、DNS 卡片切换时尺寸变化的问题\n- 修复 YAML 编辑器最大化后尺寸未更新、窄页面标题换行及内核版本名称过长的问题\n- 修复代理显示设置菜单选择后自动关闭、Smart 内核设置分隔线及内核认证提示问题\n\n## 其他\n\n- 更新依赖\n\n### 下载地址：\n\n#### Windows10/11：\n\n- 安装版：[64位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-windows-2.0.4-x64-setup.exe) | [32位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-windows-2.0.4-ia32-setup.exe) | [ARM64](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-windows-2.0.4-arm64-setup.exe)\n\n- 便携版：[64位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-windows-2.0.4-x64-portable.7z) | [32位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-windows-2.0.4-ia32-portable.7z) | [ARM64](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-windows-2.0.4-arm64-portable.7z)\n\n\n#### Windows7/8：\n\n- 安装版：[64位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-win7-2.0.4-x64-setup.exe) | [32位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-win7-2.0.4-ia32-setup.exe)\n\n- 便携版：[64位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-win7-2.0.4-x64-portable.7z) | [32位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-win7-2.0.4-ia32-portable.7z)\n\n\n#### macOS 11+：\n\n- PKG：[Intel](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-macos-2.0.4-x64.pkg) | [Apple Silicon](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-macos-2.0.4-arm64.pkg)\n\n\n#### macOS 10.15+：\n\n- PKG：[Intel](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-catalina-2.0.4-x64.pkg) | [Apple Silicon](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-catalina-2.0.4-arm64.pkg)\n\n\n#### Linux：\n\n- DEB：[64位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-linux-2.0.4-amd64.deb) | [ARM64](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-linux-2.0.4-arm64.deb)\n\n- RPM：[64位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-linux-2.0.4-x86_64.rpm) | [ARM64](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-linux-2.0.4-aarch64.rpm)\n\n- PACMAN：[64位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-linux-2.0.4-x64.pkg.tar.zst) | [ARM64](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-linux-2.0.4-aarch64.pkg.tar.zst)\n\n### 机场推荐：\n- 高性能海外机场，稳定首选：[https://狗狗加速.com](https://party.dginv.click/#/register?code=ARdo0mXx)",
-    "downloads": [
-      {
-        "label": "Windows x64 · 绿色版 7z",
-        "platform": "Windows",
-        "portable": true,
-        "file": "clash-party-windows-2.0.4-x64-portable.7z",
-        "size": 175672213,
-        "sha256": "182063a60b9a06535d176742d627f8b8c95a99aae85fc8752c880efee7da5157",
-        "official": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-windows-2.0.4-x64-portable.7z",
-        "mirrors": []
-      },
-      {
-        "label": "Windows x64 · 安装包",
-        "platform": "Windows",
-        "portable": false,
-        "file": "clash-party-windows-2.0.4-x64-setup.exe",
-        "size": 208304471,
-        "sha256": "f7cac1e588851197833c456a827cb611b6145e76be53dfd0f4df56e214c764d3",
-        "official": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-windows-2.0.4-x64-setup.exe",
-        "mirrors": []
-      }
-    ],
-    "mirrored": false
-  },
-  "flclash": {
-    "version": "0.9.3",
-    "released": "2026-11-04",
-    "verified": "2026-11-14",
-    "release_url": "https://github.com/chen08209/FlClash/releases/tag/v0.9.3",
-    "changelog": "<!-- flclash:changelog:begin -->\n### Features\n- **connections** Merged requests and connections; quick edit lists\n- **ui** iOS 27 transitions, press and text selection; smoother pages\n- **update** Download and install updates in the app\n- **core** One delay test timeout; VPN crash and startup fixes\n\n### Bug Fixes\n- **core** Auto-select leaves an unusable first node at once\n- **access** Keep selections a filter hides\n\n<!-- flclash:changelog:end -->\n\n<!-- flclash:changelog:json\n{\"schemaVersion\":2,\"versions\":[{\"version\":\"0.9.3\",\"tag\":\"v0.9.3\",\"date\":\"2026-11-04\",\"prerelease\":false,\"groups\":[{\"type\":\"feat\",\"entries\":[{\"id\":\"52b975f\",\"scope\":\"connections\",\"text\":\"Merged requests and connections; quick edit lists\"},{\"id\":\"bb47f2c\",\"scope\":\"ui\",\"text\":\"iOS 27 transitions, press and text selection; smoother pages\"},{\"id\":\"b8f84b3\",\"scope\":\"update\",\"text\":\"Download and install updates in the app\"},{\"id\":\"2a5a42c\",\"scope\":\"core\",\"text\":\"One delay test timeout; VPN crash and startup fixes\"}]},{\"type\":\"fix\",\"entries\":[{\"id\":\"7d5db7e\",\"scope\":\"core\",\"text\":\"Auto-select leaves an unusable first node at once\"},{\"id\":\"63aaf6d\",\"scope\":\"access\",\"text\":\"Keep selections a filter hides\"}]}]}]}\n-->\n<div align=center>\n\n[![Release Downloads](https://img.shields.io/github/downloads/chen08209/FlClash/v0.9.3/total?style=flat-square&logo=github)](https://img.shields.io/github/downloads/chen08209/FlClash/v0.9.3/)\n\n</div>\n\n**Download based on your OS:**\n\n<div align=left>\n<table>\n    <thead align=left>\n        <tr>\n            <th>OS</th>\n            <th>Download</th>\n        </tr>\n    </thead>\n    <tbody align=left>\n        <tr>\n        <td>Android</td>\n            <td>\n                <a href=\"https://github.com/chen08209/FlClash/releases/download/v0.9.3/FlClash-0.9.3-android-arm64-v8a.apk\"><img src=\"https://img.shields.io/badge/APK-ARMv8-168039.svg?logo=android\"></a><br>\n                <a href=\"https://github.com/chen08209/FlClash/releases/download/v0.9.3/FlClash-0.9.3-android-armeabi-v7a.apk\"><img src=\"https://img.shields.io/badge/APK-ARMv7-45bf55.svg?logo=android\"></a><br>\n                <a href=\"https://github.com/chen08209/FlClash/releases/download/v0.9.3/FlClash-0.9.3-android-x86_64.apk\"><img src=\"https://img.shields.io/badge/APK-x64-96ed89.svg?logo=android\"></a>\n            </td>\n        </tr>\n        <tr>\n            <td>Windows</td>\n            <td>\n                <a href=\"https://github.com/chen08209/FlClash/releases/download/v0.9.3/FlClash-0.9.3-windows-amd64-setup.exe\"><img src=\"https://img.shields.io/badge/Setup-x64-2d7d9a.svg?logo=windows\"></a><br>\n                <a href=\"https://github.com/chen08209/FlClash/releases/download/v0.9.3/FlClash-0.9.3-windows-amd64.zip\"><img src=\"https://img.shields.io/badge/Portable-x64-67b7d1.svg?logo=windows\"></a>\n            </td>\n        </tr>\n        <tr>\n            <td>macOS</td>\n            <td>\n                <a href=\"https://github.com/chen08209/FlClash/releases/download/v0.9.3/FlClash-0.9.3-macos-arm64.dmg\"><img src=\"https://img.shields.io/badge/DMG-Apple%20Silicon-%23000000.svg?logo=apple\"></a><br>\n                <a href=\"https://github.com/chen08209/FlClash/releases/download/v0.9.3/FlClash-0.9.3-macos-amd64.dmg\"><img src=\"https://img.shields.io/badge/DMG-Intel%20X64-%2300A9E0.svg?logo=apple\"></a><br>\n            </td>\n        </tr>\n        <tr>\n            <td>Linux</td>\n            <td>\n                <a href=\"https://github.com/chen08209/FlClash/releases/download/v0.9.3/FlClash-0.9.3-linux-amd64.AppImage\"><img src=\"https://img.shields.io/badge/AppImage-x64-f84e29.svg?logo=linux\"> </a><br>\n                <a href=\"https://github.com/chen08209/FlClash/releases/download/v0.9.3/FlClash-0.9.3-linux-amd64.deb\"><img src=\"https://img.shields.io/badge/DebPackage-x64-FF9966.svg?logo=debian\"> </a><br>\n                <a href=\"https://github.com/chen08209/FlClash/releases/download/v0.9.3/FlClash-0.9.3-linux-amd64.rpm\"><img src=\"https://img.shields.io/badge/RpmPackage-x64-F1B42F.svg?logo=redhat\"> </a>\n            </td>\n        </tr>\n    </tbody>\n</table>\n\n\n</div>\n\n<div dir=\"ltr\">\n\n**List of all changes:** [ChangeLog](https://github.com/chen08209/FlClash/blob/main/CHANGELOG.md)\n\n</div>",
-    "downloads": [
-      {
-        "label": "Windows x64 · 绿色版 ZIP",
-        "platform": "Windows",
-        "portable": true,
-        "file": "FlClash-0.9.3-windows-amd64.zip",
-        "size": 68728187,
-        "sha256": "e3c3c839784c50bbe406f2946f4f52147d418b3c28842ae8eb40404929490216",
-        "official": "https://github.com/chen08209/FlClash/releases/download/v0.9.3/FlClash-0.9.3-windows-amd64.zip",
-        "mirrors": []
-      },
-      {
-        "label": "Windows x64 · 安装包",
-        "platform": "Windows",
-        "portable": false,
-        "file": "FlClash-0.9.3-windows-amd64-setup.exe",
-        "size": 43277284,
-        "sha256": "5754a11b5177fdddf9eee06b5059ed2bcbc467c7058d4ca25541d64b778bdc86",
-        "official": "https://github.com/chen08209/FlClash/releases/download/v0.9.3/FlClash-0.9.3-windows-amd64-setup.exe",
-        "mirrors": []
-      },
-      {
-        "label": "Android · arm64 APK",
-        "platform": "Android",
-        "portable": false,
-        "file": "FlClash-0.9.3-android-arm64-v8a.apk",
-        "size": 61020873,
-        "sha256": "700570428bde3a1b316ae7f7e8f10d77f9e23ee8bf8b3f45557362a061fbefb3",
-        "official": "https://github.com/chen08209/FlClash/releases/download/v0.9.3/FlClash-0.9.3-android-arm64-v8a.apk",
-        "mirrors": []
-      }
-    ],
-    "mirrored": false
-  },
-  "hiddify": {
-    "version": "5.5.5",
-    "released": "2026-11-04",
-    "verified": "2026-11-14",
-    "release_url": "https://github.com/hiddify/hiddify-app/releases/tag/v5.5.5",
-    "changelog": "**Download based on your OS:**\r\n\r\n**بر اساس سیستم عامل خود دانلود کنید:**\r\n\r\n## Downloads\r\n\r\n<!-- ASSETS:BEGIN -->\r\n<table>\r\n<thead><tr><th>OS</th><th>Download</th><th>Downloads</th><th>VirusTotal</th></tr></thead>\r\n<tbody>\r\n<tr>\r\n  <td rowspan=\"4\">Android</td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Android-universal.apk\">APK Universal</a></td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Android-universal.apk\"><img src=\"https://img.shields.io/github/downloads/hiddify/hiddify-app/v5.5.5/Hiddify-Android-universal.apk?displayAssetName=false&label=%20&color=green&v=17938308871725\" alt=\"downloads\"></a></td>\r\n  <td><a href=\"https://www.virustotal.com/gui/file/d22cea2205863248c813d3a620dd1211d98ae2cb6e448f86deb5c191e9c6a992/detection\"><img src=\"https://img.shields.io/badge/0%2F67-brightgreen\" alt=\"VirusTotal\"></a></td>\r\n</tr>\r\n<tr>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Android-arm64.apk\">APK ARMv8</a></td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Android-arm64.apk\"><img src=\"https://img.shields.io/github/downloads/hiddify/hiddify-app/v5.5.5/Hiddify-Android-arm64.apk?displayAssetName=false&label=%20&color=green&v=17938308871725\" alt=\"downloads\"></a></td>\r\n  <td><a href=\"https://www.virustotal.com/gui/file/d607fcbbb3566bc79dd8070979e74e5afed25f59c0643da950aae430a4260c0d/detection\"><img src=\"https://img.shields.io/badge/0%2F67-brightgreen\" alt=\"VirusTotal\"></a></td>\r\n</tr>\r\n<tr>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Android-arm7.apk\">APK ARMv7</a></td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Android-arm7.apk\"><img src=\"https://img.shields.io/github/downloads/hiddify/hiddify-app/v5.5.5/Hiddify-Android-arm7.apk?displayAssetName=false&label=%20&color=green&v=17938308871725\" alt=\"downloads\"></a></td>\r\n  <td><a href=\"https://www.virustotal.com/gui/file/6106f9a83b87bc39b17e01702d2f46cc17fd551109ef73793f08447527f481e2/detection\"><img src=\"https://img.shields.io/badge/0%2F67-brightgreen\" alt=\"VirusTotal\"></a></td>\r\n</tr>\r\n<tr>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Android-x86_64.apk\">APK x64</a></td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Android-x86_64.apk\"><img src=\"https://img.shields.io/github/downloads/hiddify/hiddify-app/v5.5.5/Hiddify-Android-x86_64.apk?displayAssetName=false&label=%20&color=green&v=17938308871725\" alt=\"downloads\"></a></td>\r\n  <td><a href=\"https://www.virustotal.com/gui/file/7145da5aac6387db9c9a7c626f7ef362b19191985d942b43b928f7876a4466fb/detection\"><img src=\"https://img.shields.io/badge/0%2F67-brightgreen\" alt=\"VirusTotal\"></a></td>\r\n</tr>\r\n<tr>\r\n  <td rowspan=\"3\">Windows</td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Windows-Setup-x64.Msix\">MSIX x64</a></td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Windows-Setup-x64.Msix\"><img src=\"https://img.shields.io/github/downloads/hiddify/hiddify-app/v5.5.5/Hiddify-Windows-Setup-x64.Msix?displayAssetName=false&label=%20&color=green&v=17938308871725\" alt=\"downloads\"></a></td>\r\n  <td><a href=\"https://www.virustotal.com/gui/file/0823ded85d1039b6f808c5238a3507c5c7dc9382623e2bcc7b5f6f598c04bb98/detection\"><img src=\"https://img.shields.io/badge/0%2F66-brightgreen\" alt=\"VirusTotal\"></a></td>\r\n</tr>\r\n<tr>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Windows-Setup-x64.exe\">Setup x64</a></td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Windows-Setup-x64.exe\"><img src=\"https://img.shields.io/github/downloads/hiddify/hiddify-app/v5.5.5/Hiddify-Windows-Setup-x64.exe?displayAssetName=false&label=%20&color=green&v=17938308871725\" alt=\"downloads\"></a></td>\r\n  <td><a href=\"https://www.virustotal.com/gui/file/7c71bca78a8307b5961ed2f1121d23fa94db6fed2c866af9eb5be375c0b43873/detection\"><img src=\"https://img.shields.io/badge/0%2F69-brightgreen\" alt=\"VirusTotal\"></a></td>\r\n</tr>\r\n<tr>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Windows-Portable-x64.zip\">Portable x64</a></td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Windows-Portable-x64.zip\"><img src=\"https://img.shields.io/github/downloads/hiddify/hiddify-app/v5.5.5/Hiddify-Windows-Portable-x64.zip?displayAssetName=false&label=%20&color=green&v=17938308871725\" alt=\"downloads\"></a></td>\r\n  <td><a href=\"https://www.virustotal.com/gui/file/b4579d6a9a7b0bb0dedfd2e462ab4cfefc53ec25b56f287cca5edb435f01f627/detection\"><img src=\"https://img.shields.io/badge/0%2F66-brightgreen\" alt=\"VirusTotal\"></a></td>\r\n</tr>\r\n<tr>\r\n  <td rowspan=\"2\">macOS (v10.15+)</td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-MacOS.dmg\">DMG Universal</a></td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-MacOS.dmg\"><img src=\"https://img.shields.io/github/downloads/hiddify/hiddify-app/v5.5.5/Hiddify-MacOS.dmg?displayAssetName=false&label=%20&color=green&v=17938308871725\" alt=\"downloads\"></a></td>\r\n  <td><a href=\"https://www.virustotal.com/gui/file/3e8c1d1448f861e5594910e168f11dc39e52ecfb68c03d445f9fb1721032992e/detection\"><img src=\"https://img.shields.io/badge/0%2F61-brightgreen\" alt=\"VirusTotal\"></a></td>\r\n</tr>\r\n<tr>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-MacOS-Installer.pkg\">PKG Universal</a></td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-MacOS-Installer.pkg\"><img src=\"https://img.shields.io/github/downloads/hiddify/hiddify-app/v5.5.5/Hiddify-MacOS-Installer.pkg?displayAssetName=false&label=%20&color=green&v=1793830887172",
-    "downloads": [
-      {
-        "label": "Windows x64 · 绿色版 ZIP",
-        "platform": "Windows",
-        "portable": true,
-        "file": "Hiddify-Windows-Portable-x64.zip",
-        "size": 66721622,
-        "sha256": "b4579d6a9a7b0bb0dedfd2e462ab4cfefc53ec25b56f287cca5edb435f01f627",
-        "official": "https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Windows-Portable-x64.zip",
-        "mirrors": []
-      },
-      {
-        "label": "Windows x64 · 安装包",
-        "platform": "Windows",
-        "portable": false,
-        "file": "Hiddify-Windows-Setup-x64.exe",
-        "size": 48917072,
-        "sha256": "7c71bca78a8307b5961ed2f1121d23fa94db6fed2c866af9eb5be375c0b43873",
-        "official": "https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Windows-Setup-x64.exe",
-        "mirrors": []
-      },
-      {
-        "label": "Android · 通用 APK",
-        "platform": "Android",
-        "portable": false,
-        "file": "Hiddify-Android-universal.apk",
-        "size": 178026791,
-        "sha256": "d22cea2205863248c813d3a620dd1211d98ae2cb6e448f86deb5c191e9c6a992",
-        "official": "https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Android-universal.apk",
-        "mirrors": []
-      }
-    ],
-    "mirrored": false
-  },
-  "sing-box": {
-    "version": "1.14.4",
-    "released": "2026-10-24",
-    "verified": "2026-11-14",
-    "release_url": "https://github.com/SagerNet/sing-box/releases/tag/v1.14.4",
-    "changelog": "## :memo: Release Notes\n\n* Fixes and improvements",
-    "downloads": [
-      {
-        "label": "Windows x64 · 图形客户端 SFW",
-        "platform": "Windows",
-        "portable": false,
-        "file": "SFW-1.14.4-x64.exe",
-        "size": 115346760,
-        "sha256": "9720433083bb00cacbc439cad79b89d337814fe8af31a8ff6f8dc5b807782446",
-        "official": "https://github.com/SagerNet/sing-box/releases/download/v1.14.4/SFW-1.14.4-x64.exe",
-        "mirrors": []
-      },
-      {
-        "label": "Windows x64 · 命令行 ZIP",
-        "platform": "Windows",
-        "portable": true,
-        "file": "sing-box-1.14.4-windows-amd64.zip",
-        "size": 32891280,
-        "sha256": "99185d75d314a07dbba4a130c8ad986cbeb629a07927975636b341ca61f991df",
-        "official": "https://github.com/SagerNet/sing-box/releases/download/v1.14.4/sing-box-1.14.4-windows-amd64.zip",
-        "mirrors": []
-      },
-      {
-        "label": "Android · SFA 通用 APK",
-        "platform": "Android",
-        "portable": false,
-        "file": "SFA-1.14.4-universal.apk",
-        "size": 127298612,
-        "sha256": "382cd451a135b4da7dbdfb031dcc34046b2feb0cb32d3eb69655b20bd376d3f9",
-        "official": "https://github.com/SagerNet/sing-box/releases/download/v1.14.4/SFA-1.14.4-universal.apk",
-        "mirrors": []
-      }
-    ],
-    "mirrored": false
-  },
-  "throne": {
-    "version": "1.4.1",
-    "released": "2026-11-06",
-    "verified": "2026-11-14",
-    "release_url": "https://github.com/throneproj/Throne/releases/tag/1.4.1",
-    "changelog": "### Join [Throne's Telegram channel](https://t.me/ThroneProj) for announcements and community support\n\n* Fix macOS Tun mode\n* Fix invalid giometry of the main window\n* Fix XHTTP Extra field parsing\n\n\n**Download based on your OS:**\n\n<table>\n    <thead align=left>\n        <tr>\n            <th>OS</th>\n            <th>Download</th>\n        </tr>\n    </thead>\n    <tbody align=left>\n        <tr>\n            <td>Windows</td>\n            <td>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-windows-universal-installer.exe\"><img src=\"https://img.shields.io/badge/Setup-Universal-0078D4.svg?logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTAgMGgxMS40djExLjRIMHptMTIuNiAwSDI0djExLjRIMTIuNnpNMCAxMi42aDExLjRWMjRIMHptMTIuNiAwSDI0VjI0SDEyLjZ6Ii8%2BPC9zdmc%2B\"></a><br>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-windows64.zip\"><img src=\"https://img.shields.io/badge/Portable-x64-2B88D8.svg?logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTAgMGgxMS40djExLjRIMHptMTIuNiAwSDI0djExLjRIMTIuNnpNMCAxMi42aDExLjRWMjRIMHptMTIuNiAwSDI0VjI0SDEyLjZ6Ii8%2BPC9zdmc%2B\"></a><br>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-windows-arm64.zip\"><img src=\"https://img.shields.io/badge/Portable-ARM64-5AA9E6.svg?logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTAgMGgxMS40djExLjRIMHptMTIuNiAwSDI0djExLjRIMTIuNnpNMCAxMi42aDExLjRWMjRIMHptMTIuNiAwSDI0VjI0SDEyLjZ6Ii8%2BPC9zdmc%2B\"></a><br>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-windowslegacy64.zip\"><img src=\"https://img.shields.io/badge/Portable-x64%20legacy-6B7F95.svg?logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTAgMGgxMS40djExLjRIMHptMTIuNiAwSDI0djExLjRIMTIuNnpNMCAxMi42aDExLjRWMjRIMHptMTIuNiAwSDI0VjI0SDEyLjZ6Ii8%2BPC9zdmc%2B\"></a><br>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-windows32.zip\"><img src=\"https://img.shields.io/badge/Portable-x86-94A3B8.svg?logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTAgMGgxMS40djExLjRIMHptMTIuNiAwSDI0djExLjRIMTIuNnpNMCAxMi42aDExLjRWMjRIMHptMTIuNiAwSDI0VjI0SDEyLjZ6Ii8%2BPC9zdmc%2B\"></a>\n            </td>\n        </tr>\n        <tr>\n            <td>macOS</td>\n            <td>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-macos-arm64.zip\"><img src=\"https://img.shields.io/badge/ZIP-Apple%20Silicon-000000.svg?logo=apple\"></a><br>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-macos-amd64.zip\"><img src=\"https://img.shields.io/badge/ZIP-Intel%20x64-00A9E0.svg?logo=apple\"></a><br>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-macoslegacy-amd64.zip\"><img src=\"https://img.shields.io/badge/ZIP-Intel%20x64%20(legacy)-7FCDEB.svg?logo=apple\"></a>\n            </td>\n        </tr>\n        <tr>\n            <td>Debian / Ubuntu</td>\n            <td>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-debian-amd64.deb\"><img src=\"https://img.shields.io/badge/DEB-x64-A81D33.svg?logo=debian\"></a>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-debian-amd64-system-qt.deb\"><img src=\"https://img.shields.io/badge/DEB-x64%20system%20Qt-C94F65.svg?logo=debian\"></a><br>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-debian-arm64.deb\"><img src=\"https://img.shields.io/badge/DEB-ARM64-A81D33.svg?logo=debian\"></a>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-debian-arm64-system-qt.deb\"><img src=\"https://img.shields.io/badge/DEB-ARM64%20system%20Qt-C94F65.svg?logo=debian\"></a>\n            </td>\n        </tr>\n        <tr>\n            <td>Fedora / openSUSE</td>\n            <td>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-fedora-amd64.rpm\"><img src=\"https://img.shields.io/badge/RPM-x64-294172.svg?logo=fedora\"></a>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-fedora-amd64-system-qt.rpm\"><img src=\"https://img.shields.io/badge/RPM-x64%20system%20Qt-51A2DA.svg?logo=fedora\"></a><br>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-fedora-arm64.rpm\"><img src=\"https://img.shields.io/badge/RPM-ARM64-294172.svg?logo=fedora\"></a>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-fedora-arm64-system-qt.rpm\"><img src=\"https://img.shields.io/badge/RPM-ARM64%20system%20Qt-51A2DA.svg?logo=fedora\"></a>\n            </td>\n        </tr>\n        <tr>\n            <td>Linux (portable)</td>\n            <td>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-linux-amd64.zip\"><img src=\"https://img.shields.io/badge/ZIP-x64-F84E29.svg?logo=linux\"></a><br>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-linux-arm64.zip\"><img src=\"https://img.shields.io/badge/ZIP-ARM64-F89A29.svg?logo=linux\"></a>\n            </td>\n        </tr>\n    </tbody>\n</table>\n\n> **Setup** picks the right build for your Windows version and CPU; **legacy** builds are for Windows 7 / 8. **system Qt** packages use the Qt libraries installed on your system and ar",
-    "downloads": [
-      {
-        "label": "Windows x64 · 绿色版 ZIP",
-        "platform": "Windows",
-        "portable": true,
-        "file": "Throne-1.4.1-windows64.zip",
-        "size": 57680457,
-        "sha256": "c0fb62af75fd6a100a216c019b167a3bd924ebdc059b2bbbe68a684702293890",
-        "official": "https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-windows64.zip",
-        "mirrors": []
-      },
-      {
-        "label": "Windows · 安装包",
-        "platform": "Windows",
-        "portable": false,
-        "file": "Throne-1.4.1-windows-universal-installer.exe",
-        "size": 154532497,
-        "sha256": "1f0d27b38abcb0dbe89408fa194cf96279ef259c8008be311db94bd66fc9c26a",
-        "official": "https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-windows-universal-installer.exe",
-        "mirrors": []
-      }
-    ],
-    "mirrored": false
-  },
   "v2rayng": {
     "version": "2.3.15",
     "released": "2026-11-01",
@@ -6181,6 +5951,356 @@
     ],
     "mirrored": false
   },
+  "v2rayn": {
+    "version": "7.25.6",
+    "released": "2026-10-11",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/2dust/v2rayN/releases/tag/7.25.6",
+    "changelog": "### [关于 跳过证书验证 allowInsecure 参数被移除的说明 ](https://github.com/2dust/v2rayN/discussions/9460)\r\n \r\n### 本次更新\r\n \r\n* 支持 sing-box v1.14，更新的用户注意内核版本 #9736\r\n* 锁定最大 sing-box 版本 v1.14  #10091\r\n* 添加通过代理更新检查更新的选项 - #10090\r\n* 在核心设置界面中添加 Mux 设置 - #10055\r\n* 日志和临时文件自动清理时间默认为 7 天\r\n* 调整 Clash API - #10088\r\n* xray core 配置文件格式改为最新版本 #10132\r\n* 为订阅更新添加自定义 HTTP 标头 - #10118\r\n* 添加阿塞拜疆语 (az) UI 本地化 - #10141\r\n* 添加 MASQUE 支持 - #10233\r\n* https://github.com/XTLS/Xray-core/releases/tag/v26.10.10\r\n\r\n\r\n### [发布文件介绍，不知道下载哪个文件的请看](https://github.com/2dust/v2rayN/wiki/Release-files-introduction)\r\n ",
+    "downloads": [
+      {
+        "label": "Windows x64 · 绿色版 ZIP（含内核）",
+        "platform": "Windows",
+        "portable": true,
+        "file": "v2rayN-windows-64-desktop.zip",
+        "size": 144735873,
+        "sha256": "defb18a16dac1d44659c30d0b8934f8b085cf540133574b892919ea29b083b00",
+        "official": "https://github.com/2dust/v2rayN/releases/download/7.25.6/v2rayN-windows-64-desktop.zip",
+        "mirrors": []
+      },
+      {
+        "label": "Windows x64 · 绿色版 ZIP",
+        "platform": "Windows",
+        "portable": true,
+        "file": "v2rayN-windows-64.zip",
+        "size": 168730000,
+        "sha256": "9b94718c2a214a246b04dec84b9a27f1f0ced8489c2dd25eb80a0fbb806bd13f",
+        "official": "https://github.com/2dust/v2rayN/releases/download/7.25.6/v2rayN-windows-64.zip",
+        "mirrors": []
+      },
+      {
+        "label": "macOS Apple 芯片 · DMG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "v2rayN-macos-arm64.dmg",
+        "size": 135534635,
+        "sha256": "81c979a7fa480a24a7e9f9629992c2641f78d7b75a8ca8ce588ba36bfcbbbf91",
+        "official": "https://github.com/2dust/v2rayN/releases/download/7.25.6/v2rayN-macos-arm64.dmg",
+        "mirrors": []
+      },
+      {
+        "label": "macOS Intel · DMG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "v2rayN-macos-64.dmg",
+        "size": 142743437,
+        "sha256": "92b15c6bf634b7fe94d4a82b25ff1a1738cf80f6c6886f66d2dff52efd84f13f",
+        "official": "https://github.com/2dust/v2rayN/releases/download/7.25.6/v2rayN-macos-64.dmg",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "clash-verge-rev": {
+    "version": "2.5.10",
+    "released": "2026-11-03",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/tag/v2.5.10",
+    "changelog": "## v2.5.10\n\n<details>\n<summary><strong> 🐞 修复问题 </strong></summary>\n\n- 修复全局模式缺少 `GLOBAL` 策略组，无法单独选择全局出口\n- 修复服务模式下，SSH 节点的 `private-key` 使用私钥文件时内核无法启动\n- 修复服务模式下，内核更新的 GEO 数据库不会同步回应用目录，导致使用新分类的规则无法通过校验\n- 修复订阅的 DNS 配置变化后，「DNS 覆写」实际已关闭但开关仍显示开启且没有提示\n\n**🖥️ Windows**\n\n- Windows：修复安装程序重新安装或覆盖时未提示退出运行中应用，导致卸载报错或覆盖失败\n\n</details>\n\n<details>\n<summary><strong> ✨ 新增功能 </strong></summary>\n\n\n</details>\n\n<details>\n<summary><strong> 🚀 优化改进 </strong></summary>\n\n\n</details>\n\n## 下载地址\n\n### Windows (不再支持Win7)\n#### 正常版本(推荐)\n- [64位(常用)](https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.10/Clash.Verge_2.5.10_x64-setup.exe) | [ARM64(不常用)](https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.10/Clash.Verge_2.5.10_arm64-setup.exe)\n\n#### 内置Webview2版(体积较大，仅在企业版系统或无法安装webview2时使用)\n- [64位](https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.10/Clash.Verge_2.5.10_x64_fixed_webview2-setup.exe) | [ARM64](https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.10/Clash.Verge_2.5.10_arm64_fixed_webview2-setup.exe)\n\n### macOS\n- [Apple M芯片](https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.10/Clash.Verge_2.5.10_aarch64.dmg) | [Intel芯片](https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.10/Clash.Verge_2.5.10_x64.dmg)\n\n### Linux\n#### DEB包(Debian系) 使用 apt ./路径 安装\n- [64位](https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.10/Clash.Verge_2.5.10_amd64.deb) | [ARM64](https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.10/Clash.Verge_2.5.10_arm64.deb) | [ARMv7](https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.10/Clash.Verge_2.5.10_armhf.deb)\n\n#### RPM包(Redhat系) 使用 dnf ./路径 安装\n- [64位](https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.10/Clash.Verge-2.5.10-1.x86_64.rpm) | [ARM64](https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.10/Clash.Verge-2.5.10-1.aarch64.rpm) | [ARMv7](https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.10/Clash.Verge-2.5.10-1.armhfp.rpm)\n\n### FAQ\n- [常见问题](https://clash-verge-rev.github.io/faq/windows.html)\n\n### 稳定机场VPN推荐\n- [狗狗加速](https://cvr.dginv.click/#/register?code=oaxsAGo6)\n\nCreated at Tue Nov  3 18:04:20 CST 2026.\n",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "Clash.Verge_2.5.10_x64-setup.exe",
+        "size": 60045702,
+        "sha256": "929da9303b643b80ce309ab29f618e37a5562f515d1fa55ebf5b86c822504450",
+        "official": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.10/Clash.Verge_2.5.10_x64-setup.exe",
+        "mirrors": []
+      },
+      {
+        "label": "macOS Apple 芯片 · DMG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "Clash.Verge_2.5.10_aarch64.dmg",
+        "size": 80769307,
+        "sha256": "40d4a7da4543d75f573a5cfcc31543b0b4bf7e02caa122a9ca50654859585839",
+        "official": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.10/Clash.Verge_2.5.10_aarch64.dmg",
+        "mirrors": []
+      },
+      {
+        "label": "macOS Intel · DMG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "Clash.Verge_2.5.10_x64.dmg",
+        "size": 86532364,
+        "sha256": "b1d6938680f3e411b5961e56591faaa92c95e9676f54ebfdfa98b7eab374023e",
+        "official": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.10/Clash.Verge_2.5.10_x64.dmg",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "clash-party": {
+    "version": "2.0.4",
+    "released": "2026-10-18",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/mihomo-party-org/clash-party/releases/tag/v2.0.4",
+    "changelog": "# 2.0.4\n\n## 新功能\n\n- 新增简易模式，可视化编辑订阅、代理组、规则、规则集、DNS 及域名嗅探配置\n- 简易模式支持本地节点管理、节点链接导入及订阅代理集合高级设置\n- 支持从连接详情快速添加简易模式规则，内联规则集支持列表编辑\n- 新增切换节点时仅关闭当前代理组连接的选项\n- 新增 DNS 覆写保护开关、日志等级筛选及 macOS 流量文字颜色设置\n- 侧边栏折叠后支持悬停展开\n\n## 性能优化\n\n- 优化历史流量统计迁移，减少磁盘写入并增加迁移提示\n- 优化跨平台连接应用识别及图标处理，改进 Linux 应用图标匹配\n\n## 修复\n\n- 修复系统唤醒后 TUN 重建时配置不完整，以及修改 TUN 设置后未重启内核的问题\n- 修复启动时未等待初始代理集合就绪及代理组选择状态未刷新的问题\n- 修复不含节点的远程订阅模板无法使用，以及订阅自动更新间隔字段不一致的问题\n- 修复配置模式切换同步、代理组编辑模式及首次使用引导的本地化问题\n- 修复 Windows 7 窗口初始化兼容问题，切换系统标题栏时增加重启确认\n- 修复拓扑图平移与卡片排序冲突、DNS 卡片切换时尺寸变化的问题\n- 修复 YAML 编辑器最大化后尺寸未更新、窄页面标题换行及内核版本名称过长的问题\n- 修复代理显示设置菜单选择后自动关闭、Smart 内核设置分隔线及内核认证提示问题\n\n## 其他\n\n- 更新依赖\n\n### 下载地址：\n\n#### Windows10/11：\n\n- 安装版：[64位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-windows-2.0.4-x64-setup.exe) | [32位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-windows-2.0.4-ia32-setup.exe) | [ARM64](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-windows-2.0.4-arm64-setup.exe)\n\n- 便携版：[64位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-windows-2.0.4-x64-portable.7z) | [32位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-windows-2.0.4-ia32-portable.7z) | [ARM64](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-windows-2.0.4-arm64-portable.7z)\n\n\n#### Windows7/8：\n\n- 安装版：[64位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-win7-2.0.4-x64-setup.exe) | [32位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-win7-2.0.4-ia32-setup.exe)\n\n- 便携版：[64位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-win7-2.0.4-x64-portable.7z) | [32位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-win7-2.0.4-ia32-portable.7z)\n\n\n#### macOS 11+：\n\n- PKG：[Intel](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-macos-2.0.4-x64.pkg) | [Apple Silicon](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-macos-2.0.4-arm64.pkg)\n\n\n#### macOS 10.15+：\n\n- PKG：[Intel](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-catalina-2.0.4-x64.pkg) | [Apple Silicon](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-catalina-2.0.4-arm64.pkg)\n\n\n#### Linux：\n\n- DEB：[64位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-linux-2.0.4-amd64.deb) | [ARM64](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-linux-2.0.4-arm64.deb)\n\n- RPM：[64位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-linux-2.0.4-x86_64.rpm) | [ARM64](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-linux-2.0.4-aarch64.rpm)\n\n- PACMAN：[64位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-linux-2.0.4-x64.pkg.tar.zst) | [ARM64](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-linux-2.0.4-aarch64.pkg.tar.zst)\n\n### 机场推荐：\n- 高性能海外机场，稳定首选：[https://狗狗加速.com](https://party.dginv.click/#/register?code=ARdo0mXx)",
+    "downloads": [
+      {
+        "label": "Windows x64 · 绿色版 7z",
+        "platform": "Windows",
+        "portable": true,
+        "file": "clash-party-windows-2.0.4-x64-portable.7z",
+        "size": 175672213,
+        "sha256": "182063a60b9a06535d176742d627f8b8c95a99aae85fc8752c880efee7da5157",
+        "official": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-windows-2.0.4-x64-portable.7z",
+        "mirrors": []
+      },
+      {
+        "label": "Windows x64 · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "clash-party-windows-2.0.4-x64-setup.exe",
+        "size": 208304471,
+        "sha256": "f7cac1e588851197833c456a827cb611b6145e76be53dfd0f4df56e214c764d3",
+        "official": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-windows-2.0.4-x64-setup.exe",
+        "mirrors": []
+      },
+      {
+        "label": "macOS Apple 芯片 · PKG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "clash-party-macos-2.0.4-arm64.pkg",
+        "size": 243393267,
+        "sha256": "174b4b19b02151b2ef84517da0b192e834e43fb4c0ca7fe8700363162cabf7e1",
+        "official": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-macos-2.0.4-arm64.pkg",
+        "mirrors": []
+      },
+      {
+        "label": "macOS Intel · PKG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "clash-party-macos-2.0.4-x64.pkg",
+        "size": 261748060,
+        "sha256": "b93a845ecc0eb95da80184e8d3ebb2b94f5d2b9024df7065f9cdf1f23c868432",
+        "official": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-macos-2.0.4-x64.pkg",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "flclash": {
+    "version": "0.9.3",
+    "released": "2026-11-04",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/chen08209/FlClash/releases/tag/v0.9.3",
+    "changelog": "<!-- flclash:changelog:begin -->\n### Features\n- **connections** Merged requests and connections; quick edit lists\n- **ui** iOS 27 transitions, press and text selection; smoother pages\n- **update** Download and install updates in the app\n- **core** One delay test timeout; VPN crash and startup fixes\n\n### Bug Fixes\n- **core** Auto-select leaves an unusable first node at once\n- **access** Keep selections a filter hides\n\n<!-- flclash:changelog:end -->\n\n<!-- flclash:changelog:json\n{\"schemaVersion\":2,\"versions\":[{\"version\":\"0.9.3\",\"tag\":\"v0.9.3\",\"date\":\"2026-11-04\",\"prerelease\":false,\"groups\":[{\"type\":\"feat\",\"entries\":[{\"id\":\"52b975f\",\"scope\":\"connections\",\"text\":\"Merged requests and connections; quick edit lists\"},{\"id\":\"bb47f2c\",\"scope\":\"ui\",\"text\":\"iOS 27 transitions, press and text selection; smoother pages\"},{\"id\":\"b8f84b3\",\"scope\":\"update\",\"text\":\"Download and install updates in the app\"},{\"id\":\"2a5a42c\",\"scope\":\"core\",\"text\":\"One delay test timeout; VPN crash and startup fixes\"}]},{\"type\":\"fix\",\"entries\":[{\"id\":\"7d5db7e\",\"scope\":\"core\",\"text\":\"Auto-select leaves an unusable first node at once\"},{\"id\":\"63aaf6d\",\"scope\":\"access\",\"text\":\"Keep selections a filter hides\"}]}]}]}\n-->\n<div align=center>\n\n[![Release Downloads](https://img.shields.io/github/downloads/chen08209/FlClash/v0.9.3/total?style=flat-square&logo=github)](https://img.shields.io/github/downloads/chen08209/FlClash/v0.9.3/)\n\n</div>\n\n**Download based on your OS:**\n\n<div align=left>\n<table>\n    <thead align=left>\n        <tr>\n            <th>OS</th>\n            <th>Download</th>\n        </tr>\n    </thead>\n    <tbody align=left>\n        <tr>\n        <td>Android</td>\n            <td>\n                <a href=\"https://github.com/chen08209/FlClash/releases/download/v0.9.3/FlClash-0.9.3-android-arm64-v8a.apk\"><img src=\"https://img.shields.io/badge/APK-ARMv8-168039.svg?logo=android\"></a><br>\n                <a href=\"https://github.com/chen08209/FlClash/releases/download/v0.9.3/FlClash-0.9.3-android-armeabi-v7a.apk\"><img src=\"https://img.shields.io/badge/APK-ARMv7-45bf55.svg?logo=android\"></a><br>\n                <a href=\"https://github.com/chen08209/FlClash/releases/download/v0.9.3/FlClash-0.9.3-android-x86_64.apk\"><img src=\"https://img.shields.io/badge/APK-x64-96ed89.svg?logo=android\"></a>\n            </td>\n        </tr>\n        <tr>\n            <td>Windows</td>\n            <td>\n                <a href=\"https://github.com/chen08209/FlClash/releases/download/v0.9.3/FlClash-0.9.3-windows-amd64-setup.exe\"><img src=\"https://img.shields.io/badge/Setup-x64-2d7d9a.svg?logo=windows\"></a><br>\n                <a href=\"https://github.com/chen08209/FlClash/releases/download/v0.9.3/FlClash-0.9.3-windows-amd64.zip\"><img src=\"https://img.shields.io/badge/Portable-x64-67b7d1.svg?logo=windows\"></a>\n            </td>\n        </tr>\n        <tr>\n            <td>macOS</td>\n            <td>\n                <a href=\"https://github.com/chen08209/FlClash/releases/download/v0.9.3/FlClash-0.9.3-macos-arm64.dmg\"><img src=\"https://img.shields.io/badge/DMG-Apple%20Silicon-%23000000.svg?logo=apple\"></a><br>\n                <a href=\"https://github.com/chen08209/FlClash/releases/download/v0.9.3/FlClash-0.9.3-macos-amd64.dmg\"><img src=\"https://img.shields.io/badge/DMG-Intel%20X64-%2300A9E0.svg?logo=apple\"></a><br>\n            </td>\n        </tr>\n        <tr>\n            <td>Linux</td>\n            <td>\n                <a href=\"https://github.com/chen08209/FlClash/releases/download/v0.9.3/FlClash-0.9.3-linux-amd64.AppImage\"><img src=\"https://img.shields.io/badge/AppImage-x64-f84e29.svg?logo=linux\"> </a><br>\n                <a href=\"https://github.com/chen08209/FlClash/releases/download/v0.9.3/FlClash-0.9.3-linux-amd64.deb\"><img src=\"https://img.shields.io/badge/DebPackage-x64-FF9966.svg?logo=debian\"> </a><br>\n                <a href=\"https://github.com/chen08209/FlClash/releases/download/v0.9.3/FlClash-0.9.3-linux-amd64.rpm\"><img src=\"https://img.shields.io/badge/RpmPackage-x64-F1B42F.svg?logo=redhat\"> </a>\n            </td>\n        </tr>\n    </tbody>\n</table>\n\n\n</div>\n\n<div dir=\"ltr\">\n\n**List of all changes:** [ChangeLog](https://github.com/chen08209/FlClash/blob/main/CHANGELOG.md)\n\n</div>",
+    "downloads": [
+      {
+        "label": "Windows x64 · 绿色版 ZIP",
+        "platform": "Windows",
+        "portable": true,
+        "file": "FlClash-0.9.3-windows-amd64.zip",
+        "size": 68728187,
+        "sha256": "e3c3c839784c50bbe406f2946f4f52147d418b3c28842ae8eb40404929490216",
+        "official": "https://github.com/chen08209/FlClash/releases/download/v0.9.3/FlClash-0.9.3-windows-amd64.zip",
+        "mirrors": []
+      },
+      {
+        "label": "Windows x64 · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "FlClash-0.9.3-windows-amd64-setup.exe",
+        "size": 43277284,
+        "sha256": "5754a11b5177fdddf9eee06b5059ed2bcbc467c7058d4ca25541d64b778bdc86",
+        "official": "https://github.com/chen08209/FlClash/releases/download/v0.9.3/FlClash-0.9.3-windows-amd64-setup.exe",
+        "mirrors": []
+      },
+      {
+        "label": "Android · arm64 APK",
+        "platform": "Android",
+        "portable": false,
+        "file": "FlClash-0.9.3-android-arm64-v8a.apk",
+        "size": 61020873,
+        "sha256": "700570428bde3a1b316ae7f7e8f10d77f9e23ee8bf8b3f45557362a061fbefb3",
+        "official": "https://github.com/chen08209/FlClash/releases/download/v0.9.3/FlClash-0.9.3-android-arm64-v8a.apk",
+        "mirrors": []
+      },
+      {
+        "label": "macOS Apple 芯片 · DMG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "FlClash-0.9.3-macos-arm64.dmg",
+        "size": 59154614,
+        "sha256": "980e9cc3bd47d2090876e5e3c06f774e32a89330d83aa66ac3f8490e39924d9b",
+        "official": "https://github.com/chen08209/FlClash/releases/download/v0.9.3/FlClash-0.9.3-macos-arm64.dmg",
+        "mirrors": []
+      },
+      {
+        "label": "macOS Intel · DMG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "FlClash-0.9.3-macos-amd64.dmg",
+        "size": 63032970,
+        "sha256": "9738eebec4c8dd017bebb608f2d1e8c209cf5aa97cc4f181783036b66dd3c944",
+        "official": "https://github.com/chen08209/FlClash/releases/download/v0.9.3/FlClash-0.9.3-macos-amd64.dmg",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "hiddify": {
+    "version": "5.5.5",
+    "released": "2026-11-04",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/hiddify/hiddify-app/releases/tag/v5.5.5",
+    "changelog": "**Download based on your OS:**\r\n\r\n**بر اساس سیستم عامل خود دانلود کنید:**\r\n\r\n## Downloads\r\n\r\n<!-- ASSETS:BEGIN -->\r\n<table>\r\n<thead><tr><th>OS</th><th>Download</th><th>Downloads</th><th>VirusTotal</th></tr></thead>\r\n<tbody>\r\n<tr>\r\n  <td rowspan=\"4\">Android</td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Android-universal.apk\">APK Universal</a></td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Android-universal.apk\"><img src=\"https://img.shields.io/github/downloads/hiddify/hiddify-app/v5.5.5/Hiddify-Android-universal.apk?displayAssetName=false&label=%20&color=green&v=17938308871725\" alt=\"downloads\"></a></td>\r\n  <td><a href=\"https://www.virustotal.com/gui/file/d22cea2205863248c813d3a620dd1211d98ae2cb6e448f86deb5c191e9c6a992/detection\"><img src=\"https://img.shields.io/badge/0%2F67-brightgreen\" alt=\"VirusTotal\"></a></td>\r\n</tr>\r\n<tr>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Android-arm64.apk\">APK ARMv8</a></td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Android-arm64.apk\"><img src=\"https://img.shields.io/github/downloads/hiddify/hiddify-app/v5.5.5/Hiddify-Android-arm64.apk?displayAssetName=false&label=%20&color=green&v=17938308871725\" alt=\"downloads\"></a></td>\r\n  <td><a href=\"https://www.virustotal.com/gui/file/d607fcbbb3566bc79dd8070979e74e5afed25f59c0643da950aae430a4260c0d/detection\"><img src=\"https://img.shields.io/badge/0%2F67-brightgreen\" alt=\"VirusTotal\"></a></td>\r\n</tr>\r\n<tr>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Android-arm7.apk\">APK ARMv7</a></td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Android-arm7.apk\"><img src=\"https://img.shields.io/github/downloads/hiddify/hiddify-app/v5.5.5/Hiddify-Android-arm7.apk?displayAssetName=false&label=%20&color=green&v=17938308871725\" alt=\"downloads\"></a></td>\r\n  <td><a href=\"https://www.virustotal.com/gui/file/6106f9a83b87bc39b17e01702d2f46cc17fd551109ef73793f08447527f481e2/detection\"><img src=\"https://img.shields.io/badge/0%2F67-brightgreen\" alt=\"VirusTotal\"></a></td>\r\n</tr>\r\n<tr>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Android-x86_64.apk\">APK x64</a></td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Android-x86_64.apk\"><img src=\"https://img.shields.io/github/downloads/hiddify/hiddify-app/v5.5.5/Hiddify-Android-x86_64.apk?displayAssetName=false&label=%20&color=green&v=17938308871725\" alt=\"downloads\"></a></td>\r\n  <td><a href=\"https://www.virustotal.com/gui/file/7145da5aac6387db9c9a7c626f7ef362b19191985d942b43b928f7876a4466fb/detection\"><img src=\"https://img.shields.io/badge/0%2F67-brightgreen\" alt=\"VirusTotal\"></a></td>\r\n</tr>\r\n<tr>\r\n  <td rowspan=\"3\">Windows</td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Windows-Setup-x64.Msix\">MSIX x64</a></td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Windows-Setup-x64.Msix\"><img src=\"https://img.shields.io/github/downloads/hiddify/hiddify-app/v5.5.5/Hiddify-Windows-Setup-x64.Msix?displayAssetName=false&label=%20&color=green&v=17938308871725\" alt=\"downloads\"></a></td>\r\n  <td><a href=\"https://www.virustotal.com/gui/file/0823ded85d1039b6f808c5238a3507c5c7dc9382623e2bcc7b5f6f598c04bb98/detection\"><img src=\"https://img.shields.io/badge/0%2F66-brightgreen\" alt=\"VirusTotal\"></a></td>\r\n</tr>\r\n<tr>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Windows-Setup-x64.exe\">Setup x64</a></td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Windows-Setup-x64.exe\"><img src=\"https://img.shields.io/github/downloads/hiddify/hiddify-app/v5.5.5/Hiddify-Windows-Setup-x64.exe?displayAssetName=false&label=%20&color=green&v=17938308871725\" alt=\"downloads\"></a></td>\r\n  <td><a href=\"https://www.virustotal.com/gui/file/7c71bca78a8307b5961ed2f1121d23fa94db6fed2c866af9eb5be375c0b43873/detection\"><img src=\"https://img.shields.io/badge/0%2F69-brightgreen\" alt=\"VirusTotal\"></a></td>\r\n</tr>\r\n<tr>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Windows-Portable-x64.zip\">Portable x64</a></td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Windows-Portable-x64.zip\"><img src=\"https://img.shields.io/github/downloads/hiddify/hiddify-app/v5.5.5/Hiddify-Windows-Portable-x64.zip?displayAssetName=false&label=%20&color=green&v=17938308871725\" alt=\"downloads\"></a></td>\r\n  <td><a href=\"https://www.virustotal.com/gui/file/b4579d6a9a7b0bb0dedfd2e462ab4cfefc53ec25b56f287cca5edb435f01f627/detection\"><img src=\"https://img.shields.io/badge/0%2F66-brightgreen\" alt=\"VirusTotal\"></a></td>\r\n</tr>\r\n<tr>\r\n  <td rowspan=\"2\">macOS (v10.15+)</td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-MacOS.dmg\">DMG Universal</a></td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-MacOS.dmg\"><img src=\"https://img.shields.io/github/downloads/hiddify/hiddify-app/v5.5.5/Hiddify-MacOS.dmg?displayAssetName=false&label=%20&color=green&v=17938308871725\" alt=\"downloads\"></a></td>\r\n  <td><a href=\"https://www.virustotal.com/gui/file/3e8c1d1448f861e5594910e168f11dc39e52ecfb68c03d445f9fb1721032992e/detection\"><img src=\"https://img.shields.io/badge/0%2F61-brightgreen\" alt=\"VirusTotal\"></a></td>\r\n</tr>\r\n<tr>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-MacOS-Installer.pkg\">PKG Universal</a></td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-MacOS-Installer.pkg\"><img src=\"https://img.shields.io/github/downloads/hiddify/hiddify-app/v5.5.5/Hiddify-MacOS-Installer.pkg?displayAssetName=false&label=%20&color=green&v=1793830887172",
+    "downloads": [
+      {
+        "label": "Windows x64 · 绿色版 ZIP",
+        "platform": "Windows",
+        "portable": true,
+        "file": "Hiddify-Windows-Portable-x64.zip",
+        "size": 66721622,
+        "sha256": "b4579d6a9a7b0bb0dedfd2e462ab4cfefc53ec25b56f287cca5edb435f01f627",
+        "official": "https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Windows-Portable-x64.zip",
+        "mirrors": []
+      },
+      {
+        "label": "Windows x64 · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "Hiddify-Windows-Setup-x64.exe",
+        "size": 48917072,
+        "sha256": "7c71bca78a8307b5961ed2f1121d23fa94db6fed2c866af9eb5be375c0b43873",
+        "official": "https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Windows-Setup-x64.exe",
+        "mirrors": []
+      },
+      {
+        "label": "Android · 通用 APK",
+        "platform": "Android",
+        "portable": false,
+        "file": "Hiddify-Android-universal.apk",
+        "size": 178026791,
+        "sha256": "d22cea2205863248c813d3a620dd1211d98ae2cb6e448f86deb5c191e9c6a992",
+        "official": "https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Android-universal.apk",
+        "mirrors": []
+      },
+      {
+        "label": "macOS · 通用 DMG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "Hiddify-MacOS.dmg",
+        "size": 116685795,
+        "sha256": "3e8c1d1448f861e5594910e168f11dc39e52ecfb68c03d445f9fb1721032992e",
+        "official": "https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-MacOS.dmg",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "sing-box": {
+    "version": "1.14.4",
+    "released": "2026-10-24",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/SagerNet/sing-box/releases/tag/v1.14.4",
+    "changelog": "## :memo: Release Notes\n\n* Fixes and improvements",
+    "downloads": [
+      {
+        "label": "Windows x64 · 图形客户端 SFW",
+        "platform": "Windows",
+        "portable": false,
+        "file": "SFW-1.14.4-x64.exe",
+        "size": 115346760,
+        "sha256": "9720433083bb00cacbc439cad79b89d337814fe8af31a8ff6f8dc5b807782446",
+        "official": "https://github.com/SagerNet/sing-box/releases/download/v1.14.4/SFW-1.14.4-x64.exe",
+        "mirrors": []
+      },
+      {
+        "label": "Windows x64 · 命令行 ZIP",
+        "platform": "Windows",
+        "portable": true,
+        "file": "sing-box-1.14.4-windows-amd64.zip",
+        "size": 32891280,
+        "sha256": "99185d75d314a07dbba4a130c8ad986cbeb629a07927975636b341ca61f991df",
+        "official": "https://github.com/SagerNet/sing-box/releases/download/v1.14.4/sing-box-1.14.4-windows-amd64.zip",
+        "mirrors": []
+      },
+      {
+        "label": "Android · SFA 通用 APK",
+        "platform": "Android",
+        "portable": false,
+        "file": "SFA-1.14.4-universal.apk",
+        "size": 127298612,
+        "sha256": "382cd451a135b4da7dbdfb031dcc34046b2feb0cb32d3eb69655b20bd376d3f9",
+        "official": "https://github.com/SagerNet/sing-box/releases/download/v1.14.4/SFA-1.14.4-universal.apk",
+        "mirrors": []
+      },
+      {
+        "label": "macOS · 图形客户端 SFM（通用 PKG）",
+        "platform": "macOS",
+        "portable": false,
+        "file": "SFM-1.14.4-Universal.pkg",
+        "size": 103541311,
+        "sha256": "51b9ab52e5bc7ef6058ff35fba1309fbc2c4a3241762eca1ad7e490cd7678294",
+        "official": "https://github.com/SagerNet/sing-box/releases/download/v1.14.4/SFM-1.14.4-Universal.pkg",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "throne": {
+    "version": "1.4.1",
+    "released": "2026-11-06",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/throneproj/Throne/releases/tag/1.4.1",
+    "changelog": "### Join [Throne's Telegram channel](https://t.me/ThroneProj) for announcements and community support\n\n* Fix macOS Tun mode\n* Fix invalid giometry of the main window\n* Fix XHTTP Extra field parsing\n\n\n**Download based on your OS:**\n\n<table>\n    <thead align=left>\n        <tr>\n            <th>OS</th>\n            <th>Download</th>\n        </tr>\n    </thead>\n    <tbody align=left>\n        <tr>\n            <td>Windows</td>\n            <td>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-windows-universal-installer.exe\"><img src=\"https://img.shields.io/badge/Setup-Universal-0078D4.svg?logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTAgMGgxMS40djExLjRIMHptMTIuNiAwSDI0djExLjRIMTIuNnpNMCAxMi42aDExLjRWMjRIMHptMTIuNiAwSDI0VjI0SDEyLjZ6Ii8%2BPC9zdmc%2B\"></a><br>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-windows64.zip\"><img src=\"https://img.shields.io/badge/Portable-x64-2B88D8.svg?logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTAgMGgxMS40djExLjRIMHptMTIuNiAwSDI0djExLjRIMTIuNnpNMCAxMi42aDExLjRWMjRIMHptMTIuNiAwSDI0VjI0SDEyLjZ6Ii8%2BPC9zdmc%2B\"></a><br>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-windows-arm64.zip\"><img src=\"https://img.shields.io/badge/Portable-ARM64-5AA9E6.svg?logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTAgMGgxMS40djExLjRIMHptMTIuNiAwSDI0djExLjRIMTIuNnpNMCAxMi42aDExLjRWMjRIMHptMTIuNiAwSDI0VjI0SDEyLjZ6Ii8%2BPC9zdmc%2B\"></a><br>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-windowslegacy64.zip\"><img src=\"https://img.shields.io/badge/Portable-x64%20legacy-6B7F95.svg?logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTAgMGgxMS40djExLjRIMHptMTIuNiAwSDI0djExLjRIMTIuNnpNMCAxMi42aDExLjRWMjRIMHptMTIuNiAwSDI0VjI0SDEyLjZ6Ii8%2BPC9zdmc%2B\"></a><br>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-windows32.zip\"><img src=\"https://img.shields.io/badge/Portable-x86-94A3B8.svg?logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTAgMGgxMS40djExLjRIMHptMTIuNiAwSDI0djExLjRIMTIuNnpNMCAxMi42aDExLjRWMjRIMHptMTIuNiAwSDI0VjI0SDEyLjZ6Ii8%2BPC9zdmc%2B\"></a>\n            </td>\n        </tr>\n        <tr>\n            <td>macOS</td>\n            <td>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-macos-arm64.zip\"><img src=\"https://img.shields.io/badge/ZIP-Apple%20Silicon-000000.svg?logo=apple\"></a><br>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-macos-amd64.zip\"><img src=\"https://img.shields.io/badge/ZIP-Intel%20x64-00A9E0.svg?logo=apple\"></a><br>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-macoslegacy-amd64.zip\"><img src=\"https://img.shields.io/badge/ZIP-Intel%20x64%20(legacy)-7FCDEB.svg?logo=apple\"></a>\n            </td>\n        </tr>\n        <tr>\n            <td>Debian / Ubuntu</td>\n            <td>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-debian-amd64.deb\"><img src=\"https://img.shields.io/badge/DEB-x64-A81D33.svg?logo=debian\"></a>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-debian-amd64-system-qt.deb\"><img src=\"https://img.shields.io/badge/DEB-x64%20system%20Qt-C94F65.svg?logo=debian\"></a><br>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-debian-arm64.deb\"><img src=\"https://img.shields.io/badge/DEB-ARM64-A81D33.svg?logo=debian\"></a>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-debian-arm64-system-qt.deb\"><img src=\"https://img.shields.io/badge/DEB-ARM64%20system%20Qt-C94F65.svg?logo=debian\"></a>\n            </td>\n        </tr>\n        <tr>\n            <td>Fedora / openSUSE</td>\n            <td>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-fedora-amd64.rpm\"><img src=\"https://img.shields.io/badge/RPM-x64-294172.svg?logo=fedora\"></a>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-fedora-amd64-system-qt.rpm\"><img src=\"https://img.shields.io/badge/RPM-x64%20system%20Qt-51A2DA.svg?logo=fedora\"></a><br>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-fedora-arm64.rpm\"><img src=\"https://img.shields.io/badge/RPM-ARM64-294172.svg?logo=fedora\"></a>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-fedora-arm64-system-qt.rpm\"><img src=\"https://img.shields.io/badge/RPM-ARM64%20system%20Qt-51A2DA.svg?logo=fedora\"></a>\n            </td>\n        </tr>\n        <tr>\n            <td>Linux (portable)</td>\n            <td>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-linux-amd64.zip\"><img src=\"https://img.shields.io/badge/ZIP-x64-F84E29.svg?logo=linux\"></a><br>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-linux-arm64.zip\"><img src=\"https://img.shields.io/badge/ZIP-ARM64-F89A29.svg?logo=linux\"></a>\n            </td>\n        </tr>\n    </tbody>\n</table>\n\n> **Setup** picks the right build for your Windows version and CPU; **legacy** builds are for Windows 7 / 8. **system Qt** packages use the Qt libraries installed on your system and ar",
+    "downloads": [
+      {
+        "label": "Windows x64 · 绿色版 ZIP",
+        "platform": "Windows",
+        "portable": true,
+        "file": "Throne-1.4.1-windows64.zip",
+        "size": 57680457,
+        "sha256": "c0fb62af75fd6a100a216c019b167a3bd924ebdc059b2bbbe68a684702293890",
+        "official": "https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-windows64.zip",
+        "mirrors": []
+      },
+      {
+        "label": "Windows · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "Throne-1.4.1-windows-universal-installer.exe",
+        "size": 154532497,
+        "sha256": "1f0d27b38abcb0dbe89408fa194cf96279ef259c8008be311db94bd66fc9c26a",
+        "official": "https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-windows-universal-installer.exe",
+        "mirrors": []
+      },
+      {
+        "label": "macOS Apple 芯片 · ZIP",
+        "platform": "macOS",
+        "portable": false,
+        "file": "Throne-1.4.1-macos-arm64.zip",
+        "size": 67630267,
+        "sha256": "50766e6563878810c8a43f1e42ae9a79c94c9e2e57122e48a57427d745bcc755",
+        "official": "https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-macos-arm64.zip",
+        "mirrors": []
+      },
+      {
+        "label": "macOS Intel · ZIP",
+        "platform": "macOS",
+        "portable": false,
+        "file": "Throne-1.4.1-macos-amd64.zip",
+        "size": 72103696,
+        "sha256": "9980a1b8b27e39c184f0e49ca3e51392f39fc1f90a1c93411c90c673748366ac",
+        "official": "https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-macos-amd64.zip",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
   "karing": {
     "version": "1.2.26.2931",
     "released": "2026-11-13",
@@ -6217,6 +6337,16 @@
         "sha256": "dc1d5a24856598ec5507562c31cbe80adbab3ec8c7ac4517e8fbac8e953eccd5",
         "official": "https://github.com/KaringX/karing/releases/download/v1.2.26.2931/karing_1.2.26.2931_android_arm64-v8a.apk",
         "mirrors": []
+      },
+      {
+        "label": "macOS · 通用 DMG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "karing_1.2.26.2931_macos_universal.dmg",
+        "size": 119253885,
+        "sha256": "da04d4184e11cd22437d598f1deaa5e5925515d0b7ad42dc1cf9ef761da521ff",
+        "official": "https://github.com/KaringX/karing/releases/download/v1.2.26.2931/karing_1.2.26.2931_macos_universal.dmg",
+        "mirrors": []
       }
     ],
     "mirrored": false
@@ -6247,6 +6377,16 @@
         "sha256": "6cedd17107d0b95774430a4a63a73cffeb115e1a62b1a37d8811aba9ec03510d",
         "official": "https://github.com/KaringX/clashmi/releases/download/v1.0.32.1803/clashmi_1.0.32.1803_android_arm64-v8a.apk",
         "mirrors": []
+      },
+      {
+        "label": "macOS · 通用 DMG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "clashmi_1.0.32.1803_macos_universal.dmg",
+        "size": 97071257,
+        "sha256": "fd0382f8d996f97ed65eadf634967e9c1eed4909ec181cd2a53d81b6280e5c17",
+        "official": "https://github.com/KaringX/clashmi/releases/download/v1.0.32.1803/clashmi_1.0.32.1803_macos_universal.dmg",
+        "mirrors": []
       }
     ],
     "mirrored": false
@@ -6267,6 +6407,26 @@
         "sha256": "8af71af43e25ddfe5e4f60e264efa46e94968d84ff9fbf81e477e746e03d2a95",
         "official": "https://github.com/GUI-for-Cores/GUI.for.SingBox/releases/download/v1.29.0/GUI.for.SingBox-windows-amd64.zip",
         "mirrors": []
+      },
+      {
+        "label": "macOS Apple 芯片 · ZIP",
+        "platform": "macOS",
+        "portable": false,
+        "file": "GUI.for.SingBox-darwin-arm64.zip",
+        "size": 5568133,
+        "sha256": "c1656182b1ea8014946305ceab3c91f729ee6ca288bef686c97e4e0c558be4c2",
+        "official": "https://github.com/GUI-for-Cores/GUI.for.SingBox/releases/download/v1.29.0/GUI.for.SingBox-darwin-arm64.zip",
+        "mirrors": []
+      },
+      {
+        "label": "macOS Intel · ZIP",
+        "platform": "macOS",
+        "portable": false,
+        "file": "GUI.for.SingBox-darwin-amd64.zip",
+        "size": 6131948,
+        "sha256": "614dc6b8a809c1c2ad387d1eabbe00ade9bce70440a138e8b75c8159e5c49add",
+        "official": "https://github.com/GUI-for-Cores/GUI.for.SingBox/releases/download/v1.29.0/GUI.for.SingBox-darwin-amd64.zip",
+        "mirrors": []
       }
     ],
     "mirrored": false
@@ -6286,6 +6446,26 @@
         "size": 6627370,
         "sha256": "9a2db3efa2a3761d4126dce8bf4b54b806044a23fd655f9bb87605c5c58fb93e",
         "official": "https://github.com/GUI-for-Cores/GUI.for.Clash/releases/download/v1.29.0/GUI.for.Clash-windows-amd64.zip",
+        "mirrors": []
+      },
+      {
+        "label": "macOS Apple 芯片 · ZIP",
+        "platform": "macOS",
+        "portable": false,
+        "file": "GUI.for.Clash-darwin-arm64.zip",
+        "size": 5594047,
+        "sha256": "f7544ca07f2abd61cd812687d5f33ab544bbf105f6cd1ddd6b6c1edd91c750ab",
+        "official": "https://github.com/GUI-for-Cores/GUI.for.Clash/releases/download/v1.29.0/GUI.for.Clash-darwin-arm64.zip",
+        "mirrors": []
+      },
+      {
+        "label": "macOS Intel · ZIP",
+        "platform": "macOS",
+        "portable": false,
+        "file": "GUI.for.Clash-darwin-amd64.zip",
+        "size": 6156037,
+        "sha256": "3e0f96011386cd4abfd0faba27a39ee682583790d6df1fc614888f15088e7d60",
+        "official": "https://github.com/GUI-for-Cores/GUI.for.Clash/releases/download/v1.29.0/GUI.for.Clash-darwin-amd64.zip",
         "mirrors": []
       }
     ],
@@ -6317,6 +6497,26 @@
         "sha256": "bc619ebdb33fef2dc9610ef55811f6dfad7105590125d9b2f9fca177d7c537f4",
         "official": "https://github.com/xishang0128/sparkle/releases/download/1.26.10/sparkle-windows-1.26.10-x64-setup.exe",
         "mirrors": []
+      },
+      {
+        "label": "macOS Apple 芯片 · PKG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "sparkle-macos-1.26.10-arm64.pkg",
+        "size": 207887748,
+        "sha256": "4fce4ea073f2ee0320847512460f325f7d345e42009abb156f21986b7d7755ba",
+        "official": "https://github.com/xishang0128/sparkle/releases/download/1.26.10/sparkle-macos-1.26.10-arm64.pkg",
+        "mirrors": []
+      },
+      {
+        "label": "macOS Intel · PKG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "sparkle-macos-1.26.10-x64.pkg",
+        "size": 215480530,
+        "sha256": "80a5f2e95f407d08193978f4e636b9281f1a2c695fddcd786a4ca7e60dd54311",
+        "official": "https://github.com/xishang0128/sparkle/releases/download/1.26.10/sparkle-macos-1.26.10-x64.pkg",
+        "mirrors": []
       }
     ],
     "mirrored": false
@@ -6336,6 +6536,96 @@
         "size": 98575666,
         "sha256": "c0614aa0df4749068bf8fc9a9d3fcd3e8632843af454a8b649c47f2b38797a41",
         "official": "https://github.com/libnyanpasu/clash-nyanpasu/releases/download/v2.0.1/Clash.Nyanpasu_2.0.1_x64-setup.exe",
+        "mirrors": []
+      },
+      {
+        "label": "macOS Apple 芯片 · DMG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "Clash.Nyanpasu_2.0.1_aarch64.dmg",
+        "size": 122471621,
+        "sha256": "545b3d7dd16620d74c7ea18a86440b552a7157feafb7553126f2b1b18abc1da9",
+        "official": "https://github.com/libnyanpasu/clash-nyanpasu/releases/download/v2.0.1/Clash.Nyanpasu_2.0.1_aarch64.dmg",
+        "mirrors": []
+      },
+      {
+        "label": "macOS Intel · DMG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "Clash.Nyanpasu_2.0.1_x64.dmg",
+        "size": 130160773,
+        "sha256": "1b02d5a35c0f6b926c9c0702803fd1148cfac4313c2131eb821fadac6bbfb537",
+        "official": "https://github.com/libnyanpasu/clash-nyanpasu/releases/download/v2.0.1/Clash.Nyanpasu_2.0.1_x64.dmg",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "clashx-meta": {
+    "version": "1.4.48",
+    "released": "2026-11-13",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/MetaCubeX/ClashX.Meta/releases/tag/v1.4.48",
+    "changelog": "**Full Changelog**: https://github.com/MetaCubeX/ClashX.Meta/compare/v1.4.47...v1.4.48",
+    "downloads": [
+      {
+        "label": "macOS · ZIP",
+        "platform": "macOS",
+        "portable": true,
+        "file": "ClashX.Meta.zip",
+        "size": 90450023,
+        "sha256": "53b8384423507aa305d9411dc2643c0e5ef02da442ff97d307602341301eca12",
+        "official": "https://github.com/MetaCubeX/ClashX.Meta/releases/download/v1.4.48/ClashX.Meta.zip",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "v2rayu": {
+    "version": "5.4.1",
+    "released": "2026-11-08",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/yanue/V2rayU/releases/tag/v5.4.1",
+    "changelog": "- 新增 TUIC v5 协议（走 sing-box），支持 tuic:// 链接、Clash 订阅导入和手动编辑 (#1709)\n- 新增 WireGuard 协议，支持 wireguard:// / wg:// 链接、Clash 订阅和 Xray / sing-box 配置导入，默认走 Xray\n- TUN 模式写入系统 DNS 的占位地址可在设置中修改，默认仍为 114.114.114.114 (#1710)\n- 修复路由选「全局」或「仅绕过局域网」时 sing-box 启动即崩溃 (#1708)\n- Clash 订阅里个别节点格式错误时只跳过该节点，不再整份订阅导入失败\n- 修复切换列表页时表格边距跳动，TUN 设置页下拉框对齐\n\n**Full Changelog**: https://github.com/yanue/V2rayU/compare/v5.4.0...v5.4.1\n",
+    "downloads": [
+      {
+        "label": "macOS Apple 芯片 · DMG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "V2rayU-arm64.dmg",
+        "size": 82753629,
+        "sha256": "efe035f6f585140ca75c89debe07d5802d08e4495a0664a4b9eb0b1990f82001",
+        "official": "https://github.com/yanue/V2rayU/releases/download/v5.4.1/V2rayU-arm64.dmg",
+        "mirrors": []
+      },
+      {
+        "label": "macOS Intel · DMG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "V2rayU-64.dmg",
+        "size": 82753635,
+        "sha256": "44134a088b01e2ecb5eec9dcbb26e70883dd30a6b5d7a98842d06493378759b2",
+        "official": "https://github.com/yanue/V2rayU/releases/download/v5.4.1/V2rayU-64.dmg",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "clashmac": {
+    "version": "27.1.8",
+    "released": "2026-09-29",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/666OS/ClashMac/releases/tag/27.1.8",
+    "changelog": "### 新增特性\n- 配置页面新增内置 YAML 编辑器，带行号、语法高亮等功能，可以对配置文件进行编辑、保存。\n- 修正了一些错误、提升了性能、喝了太多的咖啡。\n\n### 体验与性能优化\n- 修复菜单开关按钮即时刷新显示问题\n\n#### 反馈\n\n* **功能手册**：查阅 [正式版发布日志](https://github.com/666OS/ClashMac/releases/latest) 或 [用户手册](https://clashmac.app/guide/) 了解核心功能\n* **问题反馈**：如遇运行异常，请提交至 [GitHub Issues](https://github.com/666OS/ClashMac/issues) 或关注 [Telegram 频道](https://t.me/Pinched666)",
+    "downloads": [
+      {
+        "label": "macOS · DMG",
+        "platform": "macOS",
+        "portable": false,
+        "file": "ClashMac-27.1.8.dmg",
+        "size": 8482344,
+        "sha256": "d48a0bcac1fe97e2cb06bf99541fba71e0f6e0060d954fbee8898ad268c508f9",
+        "official": "https://github.com/666OS/ClashMac/releases/download/27.1.8/ClashMac-27.1.8.dmg",
         "mirrors": []
       }
     ],
