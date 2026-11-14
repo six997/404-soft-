@@ -166,7 +166,9 @@ def sidebar(items, releases, cats):
 
 
 def page_home(items, releases, cats):
-    featured = next((i for i in items if i.get("featured")), items[0])
+    rel = lambda i: releases.get(i["slug"], {}).get("released") or ""
+    pinned = [i for i in items if i.get("featured")]
+    featured = pinned[0] if pinned else max((i for i in items if i.get("icon") and rel(i)), key=rel, default=items[0])
     fr = releases.get(featured["slug"], {})
     today = datetime.date.today().isoformat()
     today_n = sum(1 for i in items if releases.get(i["slug"], {}).get("released") == today)
@@ -190,7 +192,7 @@ def page_home(items, releases, cats):
 {ad("home-top")}
 <a class="featured" href="{url('/software/' + featured['slug'] + '/')}">
   {icon(featured, 'lg')}
-  <div><span class="badge">最新推荐</span><h2>{e(featured['name'])} {e(fr.get('version', ''))}</h2><p>{e(featured['summary'])}</p></div>
+  <div><span class="badge">{"站长推荐" if featured.get("featured") else "最新更新"}</span><h2>{e(featured['name'])} {e(fr.get('version', ''))}</h2><p>{e(featured['summary'])}</p></div>
 </a>
 <div class="layout">
   <section>
