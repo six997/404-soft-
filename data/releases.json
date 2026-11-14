@@ -5413,5 +5413,152 @@
     ],
     "mirrored": false,
     "source": "winget"
+  },
+  "palminput": {
+    "version": "3.3.0.1030",
+    "released": "2026-08-24",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/3/360/PalmInput/3.3.0.1030",
+    "changelog": "1. 双拼支持全拼显示，适配 9 种方案\n2. 修复自定义短语导入、隐藏失效问题\n3. 修复手动升级重复触发，提升稳定性",
+    "downloads": [
+      {
+        "label": "Windows · 官方安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "PalmInputSetup.exe",
+        "size": null,
+        "sha256": "7ac5dc3003b3df169e9ccbc557488c29f4559c517a5a14ee7798da75e0d82d7a",
+        "official": "https://dl.360safe.com/installer/web/PalmInputSetup.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false,
+    "source": "winget"
+  },
+  "baidu-pinyin": {
+    "version": "6.1.13.13",
+    "released": "2026-07-01",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Baidu/BaiduPinyin/6.1.13.13",
+    "changelog": "",
+    "downloads": [
+      {
+        "label": "Windows · 官方安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "BaiduPinyinSetup_6.1.13.13.exe",
+        "size": null,
+        "sha256": "b0f41e399dc7d339c9a320ef362dd29ac4f52a7a2a449325facaf8bad93bb649",
+        "official": "https://imeres.baidu.com/imeres/imeres/ime-res/guanwang/dl/online/BaiduPinyinSetup_6.1.13.13.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false,
+    "source": "winget"
+  },
+  "qq-pinyin": {
+    "version": "6.7",
+    "released": "2026-11-13",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/QQPinyin/6.7",
+    "changelog": "更新日志：\n修复若干安全问题",
+    "downloads": [
+      {
+        "label": "Windows · 官方安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "QQPinyin_Setup_6.7.6600.400.exe",
+        "size": null,
+        "sha256": "5dd68ab4747cf51139b713d63e909f33e665c2a44db1cbbf5233b7373d9fae90",
+        "official": "https://ime.sogoucdn.com/QQPinyin_Setup_6.7.6600.400.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false,
+    "source": "winget"
+  },
+  "qq-wubi": {
+    "version": "2.4",
+    "released": "2021-09-28",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/QQWubi/2.4",
+    "changelog": "1. 修复设置修改不生效的问题\n2. 修复个人设置内容丢失的问题\n3. 适配“高分屏”，优化状态栏、写作窗口等显示效果\n4. 修复中文状态下无法使用英文标点的问题\n5. 修复大写锁定状态下无法使用 shift 切换中英文的问题",
+    "downloads": [
+      {
+        "label": "Windows · 官方安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "QQWubi_Setup_2.4.629.400.exe",
+        "size": null,
+        "sha256": "2e900e402da26b8fc4e83843fc59996d91fa4976e0a3a60c3ea745773f401411",
+        "official": "https://ime.sogoucdn.com/QQWubi_Setup_2.4.629.400.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false,
+    "source": "winget"
+  },
+  "iflyime": {
+    "version": "3.0.1750",
+    "released": "",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/iFlytek/iFlyIME/3.0.1750",
+    "changelog": "",
+    "downloads": [
+      {
+        "label": "Windows · 官方安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "iFlyIME_Setup_3.0.1750.exe",
+        "size": null,
+        "sha256": "6365802f3272c3c4a5733f99a6430558b4fe70347a6fc3b72cb8835674a3b334",
+        "official": "https://download.voicecloud.cn/200ime/iFlyIME_Setup_3.0.1750.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false,
+    "source": "winget"
+  },
+  "sogou-wubi": {
+    "version": "5.5.0.2585",
+    "released": "2024-08-13",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sogou/SogouWBInput/5.5.0.2585",
+    "changelog": "",
+    "downloads": [
+      {
+        "label": "Windows · 官方安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "sogou_wubi_5.5.0.2585.exe",
+        "size": null,
+        "sha256": "445413a74dc8059285b3f0fc988656caf35bd06bc1b9c32944d1fbd6bb256b16",
+        "official": "https://ime.sogoucdn.com/sogou_wubi_5.5.0.2585.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false,
+    "source": "winget"
+  },
+  "doubao-ime": {
+    "version": "1.0.0.23",
+    "released": "2026-11-02",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/DoubaoInputMethod/1.0.0.23",
+    "changelog": "",
+    "downloads": [
+      {
+        "label": "Windows x64 · 官方安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "DoubaoIME_Installer_1.0.0.23_release.exe",
+        "size": null,
+        "sha256": "16cc266ca5818af98c3c8320478aa9e188ff93e36b5beefbbfa88405586c7e72",
+        "official": "https://lf-wave.doubaocdn.com/obj/doubao-ime/app/windows/DoubaoIME_Installer_1.0.0.23_release.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false,
+    "source": "winget"
   }
 }

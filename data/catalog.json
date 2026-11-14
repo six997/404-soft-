@@ -4402,7 +4402,7 @@
     "slug": "weasel",
     "name": "小狼毫输入法",
     "abbr": "狼",
-    "category": "tools",
+    "category": "ime",
     "tags": [
       "输入法",
       "Rime"
@@ -4437,7 +4437,7 @@
     "slug": "sogou-input",
     "name": "搜狗输入法",
     "abbr": "搜",
-    "category": "tools",
+    "category": "ime",
     "tags": [
       "输入法"
     ],
@@ -7470,7 +7470,7 @@
     "slug": "wetype",
     "name": "微信输入法",
     "abbr": "微输",
-    "category": "tools",
+    "category": "ime",
     "tags": [
       "输入法",
       "腾讯"
@@ -8781,5 +8781,256 @@
       ]
     },
     "icon": "/static/icons/aimp.png"
+  },
+  {
+    "slug": "palminput",
+    "name": "手心输入法",
+    "abbr": "手",
+    "category": "ime",
+    "tags": [
+      "拼音",
+      "无广告"
+    ],
+    "summary": "无广告、不骚扰的纯净拼音输入法。",
+    "intro": "手心输入法主打干净无广告，支持云候选、中英混输、按键纠错、拆字输入和双拼，词库丰富，体积小巧。",
+    "features": [
+      "无广告无弹窗",
+      "云候选与智能纠错",
+      "拆字输入生僻字",
+      "全拼与双拼"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://www.xinshuru.com/",
+    "source": {
+      "type": "winget",
+      "id": "360.PalmInput",
+      "assets": [
+        {
+          "arch": "",
+          "url": ".",
+          "label": "Windows · 官方安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/palminput.png"
+  },
+  {
+    "slug": "baidu-pinyin",
+    "name": "百度输入法",
+    "abbr": "百",
+    "category": "ime",
+    "tags": [
+      "拼音",
+      "百度"
+    ],
+    "summary": "百度官方电脑版拼音输入法。",
+    "intro": "百度输入法提供智能联想、语音输入、手写输入和丰富皮肤，词库支持云同步。",
+    "features": [
+      "智能联想",
+      "语音与手写输入",
+      "云端词库同步",
+      "海量皮肤"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://shurufa.baidu.com/",
+    "source": {
+      "type": "winget",
+      "id": "Baidu.BaiduPinyin",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows · 官方安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "qq-pinyin",
+    "name": "QQ拼音输入法",
+    "abbr": "Q拼",
+    "category": "ime",
+    "tags": [
+      "拼音",
+      "腾讯"
+    ],
+    "summary": "腾讯 QQ 拼音输入法电脑版。",
+    "intro": "QQ 拼音输入法界面简洁，支持云输入、词库同步和多种皮肤，长期保持轻量。",
+    "features": [
+      "云输入",
+      "词库同步",
+      "轻量简洁",
+      "个性皮肤"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://qq.pinyin.cn/",
+    "source": {
+      "type": "winget",
+      "id": "Tencent.QQPinyin",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows · 官方安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/qq-pinyin.png"
+  },
+  {
+    "slug": "qq-wubi",
+    "name": "QQ五笔输入法",
+    "abbr": "Q五",
+    "category": "ime",
+    "tags": [
+      "五笔",
+      "腾讯"
+    ],
+    "summary": "腾讯 QQ 五笔输入法电脑版。",
+    "intro": "QQ 五笔支持五笔拼音混输、86/98 版五笔和词库同步，适合五笔用户。",
+    "features": [
+      "五笔拼音混输",
+      "86 / 98 编码",
+      "词库同步",
+      "简洁无打扰"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://qq.pinyin.cn/",
+    "source": {
+      "type": "winget",
+      "id": "Tencent.QQWubi",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows · 官方安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/qq-wubi.png"
+  },
+  {
+    "slug": "iflyime",
+    "name": "讯飞输入法",
+    "abbr": "讯",
+    "category": "ime",
+    "tags": [
+      "语音输入",
+      "拼音"
+    ],
+    "summary": "语音识别准确的讯飞输入法电脑版。",
+    "intro": "讯飞输入法以语音输入见长，支持普通话、方言和中英混说，也有拼音、手写和 AI 写作助手。",
+    "features": [
+      "高精度语音输入",
+      "方言识别",
+      "手写输入",
+      "AI 写作助手"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://srf.xunfei.cn/",
+    "source": {
+      "type": "winget",
+      "id": "iFlytek.iFlyIME",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows · 官方安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/iflyime.png"
+  },
+  {
+    "slug": "sogou-wubi",
+    "name": "搜狗五笔输入法",
+    "abbr": "搜五",
+    "category": "ime",
+    "tags": [
+      "五笔",
+      "搜狗"
+    ],
+    "summary": "搜狗官方五笔输入法。",
+    "intro": "搜狗五笔支持五笔拼音混输、多种五笔版本和词库云同步，皮肤与搜狗拼音通用。",
+    "features": [
+      "五笔拼音混输",
+      "多种五笔方案",
+      "云同步词库",
+      "丰富皮肤"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://wubi.sogou.com/",
+    "source": {
+      "type": "winget",
+      "id": "Sogou.SogouWBInput",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows · 官方安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/sogou-wubi.png"
+  },
+  {
+    "slug": "doubao-ime",
+    "name": "豆包输入法",
+    "abbr": "豆",
+    "category": "ime",
+    "tags": [
+      "拼音",
+      "AI"
+    ],
+    "summary": "字节跳动出品的豆包输入法电脑版。",
+    "intro": "豆包输入法提供精准的拼音与语音输入，并集成豆包 AI，可帮写、润色和翻译。",
+    "features": [
+      "拼音与语音输入",
+      "AI 帮写与润色",
+      "划词翻译",
+      "简洁无广告"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://shurufa.doubao.com/",
+    "source": {
+      "type": "winget",
+      "id": "ByteDance.DoubaoInputMethod",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows x64 · 官方安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/doubao-ime.png"
   }
 ]
