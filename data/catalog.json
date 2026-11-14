@@ -11268,5 +11268,43 @@
       "iOS"
     ],
     "icon": "/static/icons/singbox-mt.png"
+  },
+  {
+    "slug": "clash-apple",
+    "name": "Clash（iOS / Mac）",
+    "abbr": "CL",
+    "category": "ios",
+    "tags": [
+      "代理",
+      "Clash",
+      "mihomo",
+      "iOS",
+      "macOS"
+    ],
+    "summary": "基于 mihomo 内核的原生 Clash 客户端，iPhone、iPad、Mac、Apple TV 通用，免费开源。",
+    "intro": "ProjectClash 团队推出的 Apple 平台原生 Clash 客户端，沿用经典 Clash 的配置与规则写法，内核基于 mihomo。客户端与 Clash Core 均在 GitHub 开源（GPL-3.0）。注意：这是新团队的作品，并非 2023 年删库的原 Clash 作者。",
+    "features": [
+      "iPhone / iPad / Mac / Apple TV 一次购买通用",
+      "兼容 Clash 配置与规则",
+      "mihomo 内核",
+      "客户端与内核全部开源"
+    ],
+    "tips": [
+      "国区和俄区 Apple ID 搜不到，需要切换到其他地区账号",
+      "也可以在官方 Telegram 群申请 TestFlight 测试版"
+    ],
+    "license": "GPL-3.0（免费）",
+    "mirror_allowed": false,
+    "homepage": "https://clash.md/",
+    "source": {
+      "type": "appstore",
+      "app_id": 6794257189
+    },
+    "download_page": "https://apps.apple.com/app/id6794257189",
+    "platforms": [
+      "iOS",
+      "macOS"
+    ],
+    "icon": "/static/icons/clash-apple.png"
   }
 ]
