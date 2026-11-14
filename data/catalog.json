@@ -10220,5 +10220,416 @@
         }
       ]
     }
+  },
+  {
+    "slug": "ios-karing",
+    "name": "Karing（iOS）",
+    "abbr": "Kr",
+    "category": "ios",
+    "tags": [
+      "代理",
+      "iOS"
+    ],
+    "summary": "兼容 Clash / V2Ray / sing-box 订阅的 iOS 代理客户端。",
+    "intro": "Karing 的 iOS 版，基于 sing-box 内核，可直接导入多种订阅格式，免费无内购门槛。",
+    "features": [
+      "兼容多种订阅",
+      "sing-box 内核",
+      "规则分流",
+      "免费"
+    ],
+    "tips": [],
+    "license": "免费（App Store）",
+    "mirror_allowed": false,
+    "homepage": "https://karing.app/",
+    "source": {
+      "type": "appstore",
+      "app_id": 6472431552
+    },
+    "download_page": "https://apps.apple.com/app/id6472431552",
+    "platforms": [
+      "iOS"
+    ],
+    "icon": "/static/icons/ios-karing.png"
+  },
+  {
+    "slug": "ios-clash-mi",
+    "name": "Clash Mi（iOS）",
+    "abbr": "CM",
+    "category": "ios",
+    "tags": [
+      "代理",
+      "Clash",
+      "iOS"
+    ],
+    "summary": "基于 mihomo 内核的 iOS Clash 客户端。",
+    "intro": "Clash Mi 的 iOS 版，兼容 Clash 配置与订阅，界面简洁。",
+    "features": [
+      "mihomo 内核",
+      "兼容 Clash 配置",
+      "策略组",
+      "免费"
+    ],
+    "tips": [],
+    "license": "免费（App Store）",
+    "mirror_allowed": false,
+    "homepage": "https://github.com/KaringX/clashmi",
+    "source": {
+      "type": "appstore",
+      "app_id": 6744321968
+    },
+    "download_page": "https://apps.apple.com/app/id6744321968",
+    "platforms": [
+      "iOS"
+    ],
+    "icon": "/static/icons/ios-clash-mi.png"
+  },
+  {
+    "slug": "ios-hiddify",
+    "name": "Hiddify（iOS）",
+    "abbr": "Hd",
+    "category": "ios",
+    "tags": [
+      "代理",
+      "sing-box",
+      "iOS"
+    ],
+    "summary": "基于 sing-box 的 iOS 代理客户端。",
+    "intro": "Hiddify 的 iOS 版，一键连接，兼容多种订阅格式，适合新手。",
+    "features": [
+      "sing-box 内核",
+      "兼容多种订阅",
+      "一键连接",
+      "免费"
+    ],
+    "tips": [],
+    "license": "免费（App Store）",
+    "mirror_allowed": false,
+    "homepage": "https://hiddify.com/",
+    "source": {
+      "type": "appstore",
+      "app_id": 6596777532
+    },
+    "download_page": "https://apps.apple.com/app/id6596777532",
+    "platforms": [
+      "iOS"
+    ],
+    "icon": "/static/icons/ios-hiddify.png"
+  },
+  {
+    "slug": "streisand",
+    "name": "Streisand",
+    "abbr": "St",
+    "category": "ios",
+    "tags": [
+      "代理",
+      "Xray",
+      "iOS"
+    ],
+    "summary": "免费的 iOS 多协议代理客户端。",
+    "intro": "Streisand 支持 VLESS、VMess、Trojan、Shadowsocks、Hysteria2 等协议，免费使用。",
+    "features": [
+      "多协议支持",
+      "订阅导入",
+      "按需连接",
+      "免费"
+    ],
+    "tips": [],
+    "license": "免费（App Store）",
+    "mirror_allowed": false,
+    "homepage": "https://apps.apple.com/app/id6450534064",
+    "source": {
+      "type": "appstore",
+      "app_id": 6450534064
+    },
+    "download_page": "https://apps.apple.com/app/id6450534064",
+    "platforms": [
+      "iOS"
+    ],
+    "icon": "/static/icons/streisand.png"
+  },
+  {
+    "slug": "ios-onexray",
+    "name": "OneXray（iOS）",
+    "abbr": "OX",
+    "category": "ios",
+    "tags": [
+      "代理",
+      "Xray",
+      "iOS"
+    ],
+    "summary": "基于 Xray 内核的跨平台代理客户端 iOS 版。",
+    "intro": "OneXray 基于 Xray 内核，iOS、Android、桌面端界面一致。",
+    "features": [
+      "Xray 内核",
+      "多协议",
+      "订阅管理",
+      "免费"
+    ],
+    "tips": [],
+    "license": "免费（App Store）",
+    "mirror_allowed": false,
+    "homepage": "https://github.com/OneXray/OneXray",
+    "source": {
+      "type": "appstore",
+      "app_id": 6745748773
+    },
+    "download_page": "https://apps.apple.com/app/id6745748773",
+    "platforms": [
+      "iOS"
+    ],
+    "icon": "/static/icons/ios-onexray.png"
+  },
+  {
+    "slug": "ios-localsend",
+    "name": "LocalSend（iOS）",
+    "abbr": "LS",
+    "category": "ios",
+    "tags": [
+      "传输",
+      "局域网",
+      "iOS"
+    ],
+    "summary": "开源的局域网互传工具 iOS 版。",
+    "intro": "LocalSend 无需网络和账号，在同一局域网内与 Windows、Android、Mac 互传文件。",
+    "features": [
+      "局域网直传",
+      "跨平台",
+      "无需账号",
+      "开源免费"
+    ],
+    "tips": [],
+    "license": "免费（App Store）",
+    "mirror_allowed": false,
+    "homepage": "https://localsend.org/",
+    "source": {
+      "type": "appstore",
+      "app_id": 1661733229
+    },
+    "download_page": "https://apps.apple.com/app/id1661733229",
+    "platforms": [
+      "iOS"
+    ],
+    "icon": "/static/icons/ios-localsend.png"
+  },
+  {
+    "slug": "ios-bitwarden",
+    "name": "Bitwarden（iOS）",
+    "abbr": "BW",
+    "category": "ios",
+    "tags": [
+      "密码",
+      "iOS"
+    ],
+    "summary": "开源密码管理器 Bitwarden 的 iOS 版。",
+    "intro": "Bitwarden 在 iPhone 上支持自动填充、Face ID 解锁和跨设备同步。",
+    "features": [
+      "自动填充",
+      "Face ID 解锁",
+      "跨设备同步",
+      "开源"
+    ],
+    "tips": [],
+    "license": "免费（App Store）",
+    "mirror_allowed": false,
+    "homepage": "https://bitwarden.com/",
+    "source": {
+      "type": "appstore",
+      "app_id": 1137397744
+    },
+    "download_page": "https://apps.apple.com/app/id1137397744",
+    "platforms": [
+      "iOS"
+    ],
+    "icon": "/static/icons/ios-bitwarden.png"
+  },
+  {
+    "slug": "ios-keepassium",
+    "name": "KeePassium",
+    "abbr": "KPm",
+    "category": "ios",
+    "tags": [
+      "密码",
+      "KeePass",
+      "iOS"
+    ],
+    "summary": "iOS 上的 KeePass 密码管理器。",
+    "intro": "KeePassium 读写 KeePass .kdbx 数据库，与电脑端 KeePass / KeePassXC 通用，基础功能免费。",
+    "features": [
+      "兼容 KeePass 数据库",
+      "自动填充",
+      "离线使用",
+      "基础功能免费"
+    ],
+    "tips": [],
+    "license": "免费（App Store）",
+    "mirror_allowed": false,
+    "homepage": "https://keepassium.com/",
+    "source": {
+      "type": "appstore",
+      "app_id": 1435127111
+    },
+    "download_page": "https://apps.apple.com/app/id1435127111",
+    "platforms": [
+      "iOS"
+    ],
+    "icon": "/static/icons/ios-keepassium.png"
+  },
+  {
+    "slug": "ios-vlc",
+    "name": "VLC（iOS）",
+    "abbr": "VLC",
+    "category": "ios",
+    "tags": [
+      "播放器",
+      "iOS"
+    ],
+    "summary": "开源全能播放器 VLC 的 iOS 版。",
+    "intro": "VLC 在 iPhone / iPad 上播放几乎所有格式，支持局域网共享、SMB 和字幕。",
+    "features": [
+      "全格式播放",
+      "SMB / 局域网",
+      "字幕支持",
+      "开源免费"
+    ],
+    "tips": [],
+    "license": "免费（App Store）",
+    "mirror_allowed": false,
+    "homepage": "https://www.videolan.org/vlc/download-ios.html",
+    "source": {
+      "type": "appstore",
+      "app_id": 650377962
+    },
+    "download_page": "https://apps.apple.com/app/id650377962",
+    "platforms": [
+      "iOS"
+    ],
+    "icon": "/static/icons/ios-vlc.png"
+  },
+  {
+    "slug": "ios-firefox",
+    "name": "Firefox（iOS）",
+    "abbr": "FF",
+    "category": "ios",
+    "tags": [
+      "浏览器",
+      "iOS"
+    ],
+    "summary": "Mozilla Firefox 浏览器 iOS 版。",
+    "intro": "Firefox iOS 版支持与电脑端同步书签和密码，内置追踪保护。",
+    "features": [
+      "跨设备同步",
+      "追踪保护",
+      "隐私浏览",
+      "免费"
+    ],
+    "tips": [],
+    "license": "免费（App Store）",
+    "mirror_allowed": false,
+    "homepage": "https://www.mozilla.org/firefox/ios/",
+    "source": {
+      "type": "appstore",
+      "app_id": 989804926
+    },
+    "download_page": "https://apps.apple.com/app/id989804926",
+    "platforms": [
+      "iOS"
+    ],
+    "icon": "/static/icons/ios-firefox.png"
+  },
+  {
+    "slug": "ios-brave",
+    "name": "Brave（iOS）",
+    "abbr": "Br",
+    "category": "ios",
+    "tags": [
+      "浏览器",
+      "去广告",
+      "iOS"
+    ],
+    "summary": "自带广告拦截的 Brave 浏览器 iOS 版。",
+    "intro": "Brave 默认拦截广告和追踪器，支持 YouTube 后台播放。",
+    "features": [
+      "内置广告拦截",
+      "后台播放",
+      "隐私保护",
+      "免费"
+    ],
+    "tips": [],
+    "license": "免费（App Store）",
+    "mirror_allowed": false,
+    "homepage": "https://brave.com/ios/",
+    "source": {
+      "type": "appstore",
+      "app_id": 1052879175
+    },
+    "download_page": "https://apps.apple.com/app/id1052879175",
+    "platforms": [
+      "iOS"
+    ],
+    "icon": "/static/icons/ios-brave.png"
+  },
+  {
+    "slug": "ios-moonlight",
+    "name": "Moonlight（iOS）",
+    "abbr": "ML",
+    "category": "ios",
+    "tags": [
+      "串流",
+      "游戏",
+      "iOS"
+    ],
+    "summary": "开源游戏串流客户端 iOS 版。",
+    "intro": "Moonlight 把电脑上的游戏串流到 iPhone / iPad，配合 Sunshine 或 NVIDIA GameStream 使用。",
+    "features": [
+      "低延迟串流",
+      "手柄支持",
+      "HDR",
+      "开源免费"
+    ],
+    "tips": [],
+    "license": "免费（App Store）",
+    "mirror_allowed": false,
+    "homepage": "https://moonlight-stream.org/",
+    "source": {
+      "type": "appstore",
+      "app_id": 1000551566
+    },
+    "download_page": "https://apps.apple.com/app/id1000551566",
+    "platforms": [
+      "iOS"
+    ],
+    "icon": "/static/icons/ios-moonlight.png"
+  },
+  {
+    "slug": "ios-telegram",
+    "name": "Telegram（iOS）",
+    "abbr": "TG",
+    "category": "ios",
+    "tags": [
+      "聊天",
+      "iOS"
+    ],
+    "summary": "Telegram 官方 iOS 客户端。",
+    "intro": "Telegram iOS 版支持云端同步聊天、频道、超大群组和大文件传输。",
+    "features": [
+      "云端同步",
+      "频道与群组",
+      "大文件传输",
+      "免费"
+    ],
+    "tips": [],
+    "license": "免费（App Store）",
+    "mirror_allowed": false,
+    "homepage": "https://telegram.org/",
+    "source": {
+      "type": "appstore",
+      "app_id": 686449807
+    },
+    "download_page": "https://apps.apple.com/app/id686449807",
+    "platforms": [
+      "iOS"
+    ],
+    "icon": "/static/icons/ios-telegram.png"
   }
 ]

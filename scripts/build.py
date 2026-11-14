@@ -18,7 +18,7 @@ BASE = (os.getenv("BASE_PATH") or "").rstrip("/")
 SITE_URL = (os.getenv("SITE_URL") or "").rstrip("/")
 SITE = "404绿色软件库"
 SLOGAN = "只收录官方下载入口，每个文件都附 SHA-256 校验。"
-PLATFORMS = ["Windows", "macOS", "Linux", "Android"]
+PLATFORMS = ["Windows", "macOS", "Linux", "Android", "iOS"]
 
 e = html.escape
 
@@ -254,6 +254,8 @@ def page_detail(item, rel, items, releases, cats):
   <div class="dl-btns"><a class="btn" href="{e(d['official'])}" target="_blank" rel="noopener">官方下载</a>{mbtn}</div>
 </li>""")
     dl_page = e(item.get("download_page") or item.get("homepage", ""))
+    if not rows and (item.get("source") or {}).get("type") == "appstore":
+        rows.append(f'<li class="dl"><div class="dl-info"><strong>App Store</strong><span>iPhone / iPad 应用，请在 App Store 安装。部分应用在中国大陆区商店不可见，需要使用其他地区的 Apple ID。</span></div><div class="dl-btns"><a class="btn" href="{dl_page}" target="_blank" rel="noopener">前往 App Store</a></div></li>')
     downloads = "".join(rows) or f'<li class="dl"><div class="dl-info"><strong>官方下载</strong><span>本站只提供官网入口，请到官方网站下载最新版。</span></div><div class="dl-btns"><a class="btn" href="{dl_page}" target="_blank" rel="noopener">前往官网</a></div></li>'
 
     links = [("官方网站", item.get("homepage"))]
