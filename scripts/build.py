@@ -89,6 +89,11 @@ def icon(item, size="md"):
     return f'<span class="icon {size} letter" data-hue="{sum(map(ord, item["slug"])) % 360}">{e(item.get("abbr") or item["name"][:2])}</span>'
 
 
+def in_cat(i, k):
+    """mac 为虚拟分类：凡提供 macOS 下载的软件都归入，不影响原分类。"""
+    return i["category"] == k or (k == "mac" and "macOS" in i.get("platforms", []))
+
+
 def layout(title, body, desc=SLOGAN, active=""):
     cats = load("categories.json", {})
     nav = "".join(
@@ -158,7 +163,7 @@ def card(item, rel):
 
 def sidebar(items, releases, cats):
     cat_links = "".join(
-        f'<li><a href="{url("/category/" + k + "/")}">{e(v)}<span>{sum(1 for i in items if i["category"] == k)}</span></a></li>'
+        f'<li><a href="{url("/category/" + k + "/")}">{e(v)}<span>{sum(1 for i in items if in_cat(i, k))}</span></a></li>'
         for k, v in cats.items() if k in USED_CATS
     )
     recent = sorted(items, key=lambda i: releases.get(i["slug"], {}).get("released", ""), reverse=True)[:8]
@@ -224,7 +229,7 @@ def page_home(items, releases, cats):
 
 
 def page_category(key, name, items, releases, cats):
-    sub = [i for i in items if i["category"] == key]
+    sub = [i for i in items if in_cat(i, key)]
     sub.sort(key=lambda i: releases.get(i["slug"], {}).get("released", ""), reverse=True)
     cards = "".join(card(i, releases.get(i["slug"], {})) for i in sub)
     body = f"""
@@ -356,6 +361,8 @@ def main():
         i["platforms"] = [p for p in PLATFORMS if any(d["platform"] == p for d in r.get("downloads", []))] or i.get("platforms", [])
         i["green"] = any(d.get("portable") for d in r.get("downloads", []))
         USED_CATS.add(i["category"])
+        if "macOS" in i["platforms"]:
+            USED_CATS.add("mac")
 
     shutil.rmtree(DIST, ignore_errors=True)
     shutil.copytree(os.path.join(ROOT, "static"), os.path.join(DIST, "static"))
