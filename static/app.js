@@ -95,3 +95,29 @@
     slots.forEach(s => io.observe(s));
   });
 })();
+
+(() => {
+  const box = document.getElementById("featured");
+  if (!box) return;
+  const slides = [...box.querySelectorAll(".slide")], dots = [...box.querySelectorAll(".dot")];
+  if (slides.length < 2) return;
+  let i = 0, timer;
+  const go = n => {
+    slides[i].classList.remove("on"); dots[i] && dots[i].classList.remove("on");
+    i = (n + slides.length) % slides.length;
+    slides[i].classList.add("on"); dots[i] && dots[i].classList.add("on");
+  };
+  const start = () => { stop(); timer = setInterval(() => go(i + 1), 5000); };
+  const stop = () => clearInterval(timer);
+  dots.forEach((d, n) => d.addEventListener("click", () => { go(n); start(); }));
+  box.addEventListener("mouseenter", stop);
+  box.addEventListener("mouseleave", start);
+  let x0 = null;
+  box.addEventListener("touchstart", ev => { x0 = ev.touches[0].clientX; stop(); }, { passive: true });
+  box.addEventListener("touchend", ev => {
+    if (x0 !== null) { const dx = ev.changedTouches[0].clientX - x0; if (Math.abs(dx) > 40) go(i + (dx < 0 ? 1 : -1)); }
+    x0 = null; start();
+  });
+  document.addEventListener("visibilitychange", () => document.hidden ? stop() : start());
+  start();
+})();

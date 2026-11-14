@@ -168,8 +168,14 @@ def sidebar(items, releases, cats):
 def page_home(items, releases, cats):
     rel = lambda i: releases.get(i["slug"], {}).get("released") or ""
     pinned = [i for i in items if i.get("featured")]
-    featured = pinned[0] if pinned else max((i for i in items if i.get("icon") and rel(i)), key=rel, default=items[0])
-    fr = releases.get(featured["slug"], {})
+    recent = sorted((i for i in items if i.get("icon") and rel(i) and not i.get("featured")), key=rel, reverse=True)
+    slides = (pinned + recent)[:6] or items[:1]
+    slide_html = "".join(
+        f'''<a class="slide{' on' if n == 0 else ''}" href="{url('/software/' + s['slug'] + '/')}">
+    {icon(s, 'lg')}
+    <div><span class="badge">{"站长推荐" if s.get("featured") else "最新更新"}</span><h2>{e(s['name'])} {e(releases.get(s['slug'], {}).get('version', ''))}</h2><p>{e(s['summary'])}</p></div>
+  </a>''' for n, s in enumerate(slides))
+    dots = "".join(f'<button class="dot{" on" if n == 0 else ""}" aria-label="第 {n + 1} 项"></button>' for n in range(len(slides))) if len(slides) > 1 else ""
     today = datetime.date.today().isoformat()
     today_n = sum(1 for i in items if releases.get(i["slug"], {}).get("released") == today)
     chips = '<button class="chip on" data-plat="">全部</button>' + "".join(
@@ -190,10 +196,10 @@ def page_home(items, releases, cats):
   <div class="hots">热门：{hot}</div>
 </section>
 {ad("home-top")}
-<a class="featured" href="{url('/software/' + featured['slug'] + '/')}">
-  {icon(featured, 'lg')}
-  <div><span class="badge">{"站长推荐" if featured.get("featured") else "最新更新"}</span><h2>{e(featured['name'])} {e(fr.get('version', ''))}</h2><p>{e(featured['summary'])}</p></div>
-</a>
+<div class="featured" id="featured">
+  {slide_html}
+  <div class="dots">{dots}</div>
+</div>
 <div class="layout">
   <section>
     <div class="list-head">
