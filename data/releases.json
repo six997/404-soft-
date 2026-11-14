@@ -5560,5 +5560,785 @@
     ],
     "mirrored": false,
     "source": "winget"
+  },
+  "rime-ice": {
+    "version": "2026.06.30",
+    "released": "2026-06-30",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/iDvel/rime-ice/releases/tag/2026.06.30",
+    "changelog": "## 重要更新\r\n\r\n- 🐞 修正了此前一个版本的打包产物 full.zip 中，含有无关文件的问题\r\n- 🐞 修正了部分文件非 utf8 编码的问题\r\n- 🐞 修正了 vhelp 提示不正确的问题\r\n- ⚠️ 为避免和简拼冲突，四个字母以下的单词不再能通过全小写输入其大写版本，请按原样大小写输入。e.g. `hk --✗--> HK`；`HK --✓--> HK`\r\n- 📚 中文、英文词库更新\r\n- 🆕 添加了 full_compiled.zip 作为可下载项目（librime 1.17.0 编译），此产物经过预编译，可大幅度减少初次部署时间\r\n\r\n## 说明\r\n\r\n- `full.zip` : 包含所有词典和方案文件\r\n- `cn_dicts.zip`：中文词库\r\n- `en_dicts.zip`：英文词库\r\n- `opencc.zip`：opencc 词库（emoji 等）\r\n- `all_dicts.zip`：以上三个词库的整合\r\n- `fcitx5_rime_js-rime_ice.zip`：适用于 fcitx5-rime.js 的预构建包\r\n- `full_compiled.zip`：所有词典和方案的预构建包\r\n\r\n## What's Changed\r\n* dict: 增改词汇 by @Lithium-7 in https://github.com/iDvel/rime-ice/pull/1560\r\n* dict: 增改词汇 by @Lithium-7 in https://github.com/iDvel/rime-ice/pull/1563\r\n* fix(symbol): update vhelp by @ramonmi in https://github.com/iDvel/rime-ice/pull/1561\r\n* dict: 更新 Apple 相关英文词汇 by @Loyalsoldier in https://github.com/iDvel/rime-ice/pull/1569\r\n* config(en): 全小写派生添加 5 个字母以上的条件. fix #1574 by @mirtlecn in https://github.com/iDvel/rime-ice/pull/1575\r\n* Update: 更新模型参数 by @chengnan049 in https://github.com/iDvel/rime-ice/pull/1572\r\n* dict: 增改词汇 by @Lithium-7 in https://github.com/iDvel/rime-ice/pull/1580\r\n* dict: 更新英文词库 by @zjjxwhh in https://github.com/iDvel/rime-ice/pull/1581\r\n\r\n## New Contributors\r\n* @chengnan049 made their first contribution in https://github.com/iDvel/rime-ice/pull/1572\r\n* @zjjxwhh made their first contribution in https://github.com/iDvel/rime-ice/pull/1581\r\n\r\n**Full Changelog**: https://github.com/iDvel/rime-ice/compare/2026.06.03...2026.06.30",
+    "downloads": [
+      {
+        "label": "完整配置包 ZIP",
+        "platform": "Windows",
+        "portable": true,
+        "file": "full.zip",
+        "size": 16050491,
+        "sha256": "675d23b070be00e1b800f9a6db033ef98f4493cd5b568ed8aa3b3541769c46ac",
+        "official": "https://github.com/iDvel/rime-ice/releases/download/2026.06.30/full.zip",
+        "mirrors": []
+      },
+      {
+        "label": "仅中文词库 ZIP",
+        "platform": "Windows",
+        "portable": true,
+        "file": "cn_dicts.zip",
+        "size": 14715121,
+        "sha256": "4e19619920f901cf900a33142ac0d10586787cdaf577a5b106da2cc078a84720",
+        "official": "https://github.com/iDvel/rime-ice/releases/download/2026.06.30/cn_dicts.zip",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "rime-frost": {
+    "version": "1.0.4",
+    "released": "2026-05-08",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/gaboolic/rime-frost/releases/tag/1.0.4",
+    "changelog": "支持墨奇输入法安卓版\r\n修复一些bug",
+    "downloads": [
+      {
+        "label": "配置方案 ZIP",
+        "platform": "Windows",
+        "portable": true,
+        "file": "rime-frost-schemas.zip",
+        "size": 44008360,
+        "sha256": "4f4998ae83f63d757c0a4ace192f69d48265bddfabe231642b73e3739ed0f2f5",
+        "official": "https://github.com/gaboolic/rime-frost/releases/download/1.0.4/rime-frost-schemas.zip",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "google-japanese-input": {
+    "version": "3.35.6350.0",
+    "released": "2026-11-02",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/JapaneseIME/3.35.6350.0",
+    "changelog": "",
+    "downloads": [
+      {
+        "label": "Windows x64 · 官方安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "GoogleJapaneseInput64-3.35.6350.0.msi",
+        "size": null,
+        "sha256": "7ccfa2691dd57c3b63c76815f3a95b9706ab3acad574c0124faf198e4cab619d",
+        "official": "https://dl.google.com/release2/misc/njkgqollpaugzbfmdwdhbz7vqu_3.35.6350.0/GoogleJapaneseInput64-3.35.6350.0.msi",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false,
+    "source": "winget"
+  },
+  "v2rayn": {
+    "version": "7.25.6",
+    "released": "2026-10-11",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/2dust/v2rayN/releases/tag/7.25.6",
+    "changelog": "### [关于 跳过证书验证 allowInsecure 参数被移除的说明 ](https://github.com/2dust/v2rayN/discussions/9460)\r\n \r\n### 本次更新\r\n \r\n* 支持 sing-box v1.14，更新的用户注意内核版本 #9736\r\n* 锁定最大 sing-box 版本 v1.14  #10091\r\n* 添加通过代理更新检查更新的选项 - #10090\r\n* 在核心设置界面中添加 Mux 设置 - #10055\r\n* 日志和临时文件自动清理时间默认为 7 天\r\n* 调整 Clash API - #10088\r\n* xray core 配置文件格式改为最新版本 #10132\r\n* 为订阅更新添加自定义 HTTP 标头 - #10118\r\n* 添加阿塞拜疆语 (az) UI 本地化 - #10141\r\n* 添加 MASQUE 支持 - #10233\r\n* https://github.com/XTLS/Xray-core/releases/tag/v26.10.10\r\n\r\n\r\n### [发布文件介绍，不知道下载哪个文件的请看](https://github.com/2dust/v2rayN/wiki/Release-files-introduction)\r\n ",
+    "downloads": [
+      {
+        "label": "Windows x64 · 绿色版 ZIP（含内核）",
+        "platform": "Windows",
+        "portable": true,
+        "file": "v2rayN-windows-64-desktop.zip",
+        "size": 144735873,
+        "sha256": "defb18a16dac1d44659c30d0b8934f8b085cf540133574b892919ea29b083b00",
+        "official": "https://github.com/2dust/v2rayN/releases/download/7.25.6/v2rayN-windows-64-desktop.zip",
+        "mirrors": []
+      },
+      {
+        "label": "Windows x64 · 绿色版 ZIP",
+        "platform": "Windows",
+        "portable": true,
+        "file": "v2rayN-windows-64.zip",
+        "size": 168730000,
+        "sha256": "9b94718c2a214a246b04dec84b9a27f1f0ced8489c2dd25eb80a0fbb806bd13f",
+        "official": "https://github.com/2dust/v2rayN/releases/download/7.25.6/v2rayN-windows-64.zip",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "clash-verge-rev": {
+    "version": "2.5.10",
+    "released": "2026-11-03",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/tag/v2.5.10",
+    "changelog": "## v2.5.10\n\n<details>\n<summary><strong> 🐞 修复问题 </strong></summary>\n\n- 修复全局模式缺少 `GLOBAL` 策略组，无法单独选择全局出口\n- 修复服务模式下，SSH 节点的 `private-key` 使用私钥文件时内核无法启动\n- 修复服务模式下，内核更新的 GEO 数据库不会同步回应用目录，导致使用新分类的规则无法通过校验\n- 修复订阅的 DNS 配置变化后，「DNS 覆写」实际已关闭但开关仍显示开启且没有提示\n\n**🖥️ Windows**\n\n- Windows：修复安装程序重新安装或覆盖时未提示退出运行中应用，导致卸载报错或覆盖失败\n\n</details>\n\n<details>\n<summary><strong> ✨ 新增功能 </strong></summary>\n\n\n</details>\n\n<details>\n<summary><strong> 🚀 优化改进 </strong></summary>\n\n\n</details>\n\n## 下载地址\n\n### Windows (不再支持Win7)\n#### 正常版本(推荐)\n- [64位(常用)](https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.10/Clash.Verge_2.5.10_x64-setup.exe) | [ARM64(不常用)](https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.10/Clash.Verge_2.5.10_arm64-setup.exe)\n\n#### 内置Webview2版(体积较大，仅在企业版系统或无法安装webview2时使用)\n- [64位](https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.10/Clash.Verge_2.5.10_x64_fixed_webview2-setup.exe) | [ARM64](https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.10/Clash.Verge_2.5.10_arm64_fixed_webview2-setup.exe)\n\n### macOS\n- [Apple M芯片](https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.10/Clash.Verge_2.5.10_aarch64.dmg) | [Intel芯片](https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.10/Clash.Verge_2.5.10_x64.dmg)\n\n### Linux\n#### DEB包(Debian系) 使用 apt ./路径 安装\n- [64位](https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.10/Clash.Verge_2.5.10_amd64.deb) | [ARM64](https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.10/Clash.Verge_2.5.10_arm64.deb) | [ARMv7](https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.10/Clash.Verge_2.5.10_armhf.deb)\n\n#### RPM包(Redhat系) 使用 dnf ./路径 安装\n- [64位](https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.10/Clash.Verge-2.5.10-1.x86_64.rpm) | [ARM64](https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.10/Clash.Verge-2.5.10-1.aarch64.rpm) | [ARMv7](https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.10/Clash.Verge-2.5.10-1.armhfp.rpm)\n\n### FAQ\n- [常见问题](https://clash-verge-rev.github.io/faq/windows.html)\n\n### 稳定机场VPN推荐\n- [狗狗加速](https://cvr.dginv.click/#/register?code=oaxsAGo6)\n\nCreated at Tue Nov  3 18:04:20 CST 2026.\n",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "Clash.Verge_2.5.10_x64-setup.exe",
+        "size": 60045702,
+        "sha256": "929da9303b643b80ce309ab29f618e37a5562f515d1fa55ebf5b86c822504450",
+        "official": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.10/Clash.Verge_2.5.10_x64-setup.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "clash-party": {
+    "version": "2.0.4",
+    "released": "2026-10-18",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/mihomo-party-org/clash-party/releases/tag/v2.0.4",
+    "changelog": "# 2.0.4\n\n## 新功能\n\n- 新增简易模式，可视化编辑订阅、代理组、规则、规则集、DNS 及域名嗅探配置\n- 简易模式支持本地节点管理、节点链接导入及订阅代理集合高级设置\n- 支持从连接详情快速添加简易模式规则，内联规则集支持列表编辑\n- 新增切换节点时仅关闭当前代理组连接的选项\n- 新增 DNS 覆写保护开关、日志等级筛选及 macOS 流量文字颜色设置\n- 侧边栏折叠后支持悬停展开\n\n## 性能优化\n\n- 优化历史流量统计迁移，减少磁盘写入并增加迁移提示\n- 优化跨平台连接应用识别及图标处理，改进 Linux 应用图标匹配\n\n## 修复\n\n- 修复系统唤醒后 TUN 重建时配置不完整，以及修改 TUN 设置后未重启内核的问题\n- 修复启动时未等待初始代理集合就绪及代理组选择状态未刷新的问题\n- 修复不含节点的远程订阅模板无法使用，以及订阅自动更新间隔字段不一致的问题\n- 修复配置模式切换同步、代理组编辑模式及首次使用引导的本地化问题\n- 修复 Windows 7 窗口初始化兼容问题，切换系统标题栏时增加重启确认\n- 修复拓扑图平移与卡片排序冲突、DNS 卡片切换时尺寸变化的问题\n- 修复 YAML 编辑器最大化后尺寸未更新、窄页面标题换行及内核版本名称过长的问题\n- 修复代理显示设置菜单选择后自动关闭、Smart 内核设置分隔线及内核认证提示问题\n\n## 其他\n\n- 更新依赖\n\n### 下载地址：\n\n#### Windows10/11：\n\n- 安装版：[64位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-windows-2.0.4-x64-setup.exe) | [32位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-windows-2.0.4-ia32-setup.exe) | [ARM64](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-windows-2.0.4-arm64-setup.exe)\n\n- 便携版：[64位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-windows-2.0.4-x64-portable.7z) | [32位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-windows-2.0.4-ia32-portable.7z) | [ARM64](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-windows-2.0.4-arm64-portable.7z)\n\n\n#### Windows7/8：\n\n- 安装版：[64位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-win7-2.0.4-x64-setup.exe) | [32位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-win7-2.0.4-ia32-setup.exe)\n\n- 便携版：[64位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-win7-2.0.4-x64-portable.7z) | [32位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-win7-2.0.4-ia32-portable.7z)\n\n\n#### macOS 11+：\n\n- PKG：[Intel](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-macos-2.0.4-x64.pkg) | [Apple Silicon](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-macos-2.0.4-arm64.pkg)\n\n\n#### macOS 10.15+：\n\n- PKG：[Intel](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-catalina-2.0.4-x64.pkg) | [Apple Silicon](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-catalina-2.0.4-arm64.pkg)\n\n\n#### Linux：\n\n- DEB：[64位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-linux-2.0.4-amd64.deb) | [ARM64](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-linux-2.0.4-arm64.deb)\n\n- RPM：[64位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-linux-2.0.4-x86_64.rpm) | [ARM64](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-linux-2.0.4-aarch64.rpm)\n\n- PACMAN：[64位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-linux-2.0.4-x64.pkg.tar.zst) | [ARM64](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-linux-2.0.4-aarch64.pkg.tar.zst)\n\n### 机场推荐：\n- 高性能海外机场，稳定首选：[https://狗狗加速.com](https://party.dginv.click/#/register?code=ARdo0mXx)",
+    "downloads": [
+      {
+        "label": "Windows x64 · 绿色版 7z",
+        "platform": "Windows",
+        "portable": true,
+        "file": "clash-party-windows-2.0.4-x64-portable.7z",
+        "size": 175672213,
+        "sha256": "182063a60b9a06535d176742d627f8b8c95a99aae85fc8752c880efee7da5157",
+        "official": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-windows-2.0.4-x64-portable.7z",
+        "mirrors": []
+      },
+      {
+        "label": "Windows x64 · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "clash-party-windows-2.0.4-x64-setup.exe",
+        "size": 208304471,
+        "sha256": "f7cac1e588851197833c456a827cb611b6145e76be53dfd0f4df56e214c764d3",
+        "official": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-windows-2.0.4-x64-setup.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "flclash": {
+    "version": "0.9.3",
+    "released": "2026-11-04",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/chen08209/FlClash/releases/tag/v0.9.3",
+    "changelog": "<!-- flclash:changelog:begin -->\n### Features\n- **connections** Merged requests and connections; quick edit lists\n- **ui** iOS 27 transitions, press and text selection; smoother pages\n- **update** Download and install updates in the app\n- **core** One delay test timeout; VPN crash and startup fixes\n\n### Bug Fixes\n- **core** Auto-select leaves an unusable first node at once\n- **access** Keep selections a filter hides\n\n<!-- flclash:changelog:end -->\n\n<!-- flclash:changelog:json\n{\"schemaVersion\":2,\"versions\":[{\"version\":\"0.9.3\",\"tag\":\"v0.9.3\",\"date\":\"2026-11-04\",\"prerelease\":false,\"groups\":[{\"type\":\"feat\",\"entries\":[{\"id\":\"52b975f\",\"scope\":\"connections\",\"text\":\"Merged requests and connections; quick edit lists\"},{\"id\":\"bb47f2c\",\"scope\":\"ui\",\"text\":\"iOS 27 transitions, press and text selection; smoother pages\"},{\"id\":\"b8f84b3\",\"scope\":\"update\",\"text\":\"Download and install updates in the app\"},{\"id\":\"2a5a42c\",\"scope\":\"core\",\"text\":\"One delay test timeout; VPN crash and startup fixes\"}]},{\"type\":\"fix\",\"entries\":[{\"id\":\"7d5db7e\",\"scope\":\"core\",\"text\":\"Auto-select leaves an unusable first node at once\"},{\"id\":\"63aaf6d\",\"scope\":\"access\",\"text\":\"Keep selections a filter hides\"}]}]}]}\n-->\n<div align=center>\n\n[![Release Downloads](https://img.shields.io/github/downloads/chen08209/FlClash/v0.9.3/total?style=flat-square&logo=github)](https://img.shields.io/github/downloads/chen08209/FlClash/v0.9.3/)\n\n</div>\n\n**Download based on your OS:**\n\n<div align=left>\n<table>\n    <thead align=left>\n        <tr>\n            <th>OS</th>\n            <th>Download</th>\n        </tr>\n    </thead>\n    <tbody align=left>\n        <tr>\n        <td>Android</td>\n            <td>\n                <a href=\"https://github.com/chen08209/FlClash/releases/download/v0.9.3/FlClash-0.9.3-android-arm64-v8a.apk\"><img src=\"https://img.shields.io/badge/APK-ARMv8-168039.svg?logo=android\"></a><br>\n                <a href=\"https://github.com/chen08209/FlClash/releases/download/v0.9.3/FlClash-0.9.3-android-armeabi-v7a.apk\"><img src=\"https://img.shields.io/badge/APK-ARMv7-45bf55.svg?logo=android\"></a><br>\n                <a href=\"https://github.com/chen08209/FlClash/releases/download/v0.9.3/FlClash-0.9.3-android-x86_64.apk\"><img src=\"https://img.shields.io/badge/APK-x64-96ed89.svg?logo=android\"></a>\n            </td>\n        </tr>\n        <tr>\n            <td>Windows</td>\n            <td>\n                <a href=\"https://github.com/chen08209/FlClash/releases/download/v0.9.3/FlClash-0.9.3-windows-amd64-setup.exe\"><img src=\"https://img.shields.io/badge/Setup-x64-2d7d9a.svg?logo=windows\"></a><br>\n                <a href=\"https://github.com/chen08209/FlClash/releases/download/v0.9.3/FlClash-0.9.3-windows-amd64.zip\"><img src=\"https://img.shields.io/badge/Portable-x64-67b7d1.svg?logo=windows\"></a>\n            </td>\n        </tr>\n        <tr>\n            <td>macOS</td>\n            <td>\n                <a href=\"https://github.com/chen08209/FlClash/releases/download/v0.9.3/FlClash-0.9.3-macos-arm64.dmg\"><img src=\"https://img.shields.io/badge/DMG-Apple%20Silicon-%23000000.svg?logo=apple\"></a><br>\n                <a href=\"https://github.com/chen08209/FlClash/releases/download/v0.9.3/FlClash-0.9.3-macos-amd64.dmg\"><img src=\"https://img.shields.io/badge/DMG-Intel%20X64-%2300A9E0.svg?logo=apple\"></a><br>\n            </td>\n        </tr>\n        <tr>\n            <td>Linux</td>\n            <td>\n                <a href=\"https://github.com/chen08209/FlClash/releases/download/v0.9.3/FlClash-0.9.3-linux-amd64.AppImage\"><img src=\"https://img.shields.io/badge/AppImage-x64-f84e29.svg?logo=linux\"> </a><br>\n                <a href=\"https://github.com/chen08209/FlClash/releases/download/v0.9.3/FlClash-0.9.3-linux-amd64.deb\"><img src=\"https://img.shields.io/badge/DebPackage-x64-FF9966.svg?logo=debian\"> </a><br>\n                <a href=\"https://github.com/chen08209/FlClash/releases/download/v0.9.3/FlClash-0.9.3-linux-amd64.rpm\"><img src=\"https://img.shields.io/badge/RpmPackage-x64-F1B42F.svg?logo=redhat\"> </a>\n            </td>\n        </tr>\n    </tbody>\n</table>\n\n\n</div>\n\n<div dir=\"ltr\">\n\n**List of all changes:** [ChangeLog](https://github.com/chen08209/FlClash/blob/main/CHANGELOG.md)\n\n</div>",
+    "downloads": [
+      {
+        "label": "Windows x64 · 绿色版 ZIP",
+        "platform": "Windows",
+        "portable": true,
+        "file": "FlClash-0.9.3-windows-amd64.zip",
+        "size": 68728187,
+        "sha256": "e3c3c839784c50bbe406f2946f4f52147d418b3c28842ae8eb40404929490216",
+        "official": "https://github.com/chen08209/FlClash/releases/download/v0.9.3/FlClash-0.9.3-windows-amd64.zip",
+        "mirrors": []
+      },
+      {
+        "label": "Windows x64 · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "FlClash-0.9.3-windows-amd64-setup.exe",
+        "size": 43277284,
+        "sha256": "5754a11b5177fdddf9eee06b5059ed2bcbc467c7058d4ca25541d64b778bdc86",
+        "official": "https://github.com/chen08209/FlClash/releases/download/v0.9.3/FlClash-0.9.3-windows-amd64-setup.exe",
+        "mirrors": []
+      },
+      {
+        "label": "Android · arm64 APK",
+        "platform": "Android",
+        "portable": false,
+        "file": "FlClash-0.9.3-android-arm64-v8a.apk",
+        "size": 61020873,
+        "sha256": "700570428bde3a1b316ae7f7e8f10d77f9e23ee8bf8b3f45557362a061fbefb3",
+        "official": "https://github.com/chen08209/FlClash/releases/download/v0.9.3/FlClash-0.9.3-android-arm64-v8a.apk",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "hiddify": {
+    "version": "5.5.5",
+    "released": "2026-11-04",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/hiddify/hiddify-app/releases/tag/v5.5.5",
+    "changelog": "**Download based on your OS:**\r\n\r\n**بر اساس سیستم عامل خود دانلود کنید:**\r\n\r\n## Downloads\r\n\r\n<!-- ASSETS:BEGIN -->\r\n<table>\r\n<thead><tr><th>OS</th><th>Download</th><th>Downloads</th><th>VirusTotal</th></tr></thead>\r\n<tbody>\r\n<tr>\r\n  <td rowspan=\"4\">Android</td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Android-universal.apk\">APK Universal</a></td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Android-universal.apk\"><img src=\"https://img.shields.io/github/downloads/hiddify/hiddify-app/v5.5.5/Hiddify-Android-universal.apk?displayAssetName=false&label=%20&color=green&v=17938308871725\" alt=\"downloads\"></a></td>\r\n  <td><a href=\"https://www.virustotal.com/gui/file/d22cea2205863248c813d3a620dd1211d98ae2cb6e448f86deb5c191e9c6a992/detection\"><img src=\"https://img.shields.io/badge/0%2F67-brightgreen\" alt=\"VirusTotal\"></a></td>\r\n</tr>\r\n<tr>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Android-arm64.apk\">APK ARMv8</a></td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Android-arm64.apk\"><img src=\"https://img.shields.io/github/downloads/hiddify/hiddify-app/v5.5.5/Hiddify-Android-arm64.apk?displayAssetName=false&label=%20&color=green&v=17938308871725\" alt=\"downloads\"></a></td>\r\n  <td><a href=\"https://www.virustotal.com/gui/file/d607fcbbb3566bc79dd8070979e74e5afed25f59c0643da950aae430a4260c0d/detection\"><img src=\"https://img.shields.io/badge/0%2F67-brightgreen\" alt=\"VirusTotal\"></a></td>\r\n</tr>\r\n<tr>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Android-arm7.apk\">APK ARMv7</a></td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Android-arm7.apk\"><img src=\"https://img.shields.io/github/downloads/hiddify/hiddify-app/v5.5.5/Hiddify-Android-arm7.apk?displayAssetName=false&label=%20&color=green&v=17938308871725\" alt=\"downloads\"></a></td>\r\n  <td><a href=\"https://www.virustotal.com/gui/file/6106f9a83b87bc39b17e01702d2f46cc17fd551109ef73793f08447527f481e2/detection\"><img src=\"https://img.shields.io/badge/0%2F67-brightgreen\" alt=\"VirusTotal\"></a></td>\r\n</tr>\r\n<tr>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Android-x86_64.apk\">APK x64</a></td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Android-x86_64.apk\"><img src=\"https://img.shields.io/github/downloads/hiddify/hiddify-app/v5.5.5/Hiddify-Android-x86_64.apk?displayAssetName=false&label=%20&color=green&v=17938308871725\" alt=\"downloads\"></a></td>\r\n  <td><a href=\"https://www.virustotal.com/gui/file/7145da5aac6387db9c9a7c626f7ef362b19191985d942b43b928f7876a4466fb/detection\"><img src=\"https://img.shields.io/badge/0%2F67-brightgreen\" alt=\"VirusTotal\"></a></td>\r\n</tr>\r\n<tr>\r\n  <td rowspan=\"3\">Windows</td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Windows-Setup-x64.Msix\">MSIX x64</a></td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Windows-Setup-x64.Msix\"><img src=\"https://img.shields.io/github/downloads/hiddify/hiddify-app/v5.5.5/Hiddify-Windows-Setup-x64.Msix?displayAssetName=false&label=%20&color=green&v=17938308871725\" alt=\"downloads\"></a></td>\r\n  <td><a href=\"https://www.virustotal.com/gui/file/0823ded85d1039b6f808c5238a3507c5c7dc9382623e2bcc7b5f6f598c04bb98/detection\"><img src=\"https://img.shields.io/badge/0%2F66-brightgreen\" alt=\"VirusTotal\"></a></td>\r\n</tr>\r\n<tr>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Windows-Setup-x64.exe\">Setup x64</a></td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Windows-Setup-x64.exe\"><img src=\"https://img.shields.io/github/downloads/hiddify/hiddify-app/v5.5.5/Hiddify-Windows-Setup-x64.exe?displayAssetName=false&label=%20&color=green&v=17938308871725\" alt=\"downloads\"></a></td>\r\n  <td><a href=\"https://www.virustotal.com/gui/file/7c71bca78a8307b5961ed2f1121d23fa94db6fed2c866af9eb5be375c0b43873/detection\"><img src=\"https://img.shields.io/badge/0%2F69-brightgreen\" alt=\"VirusTotal\"></a></td>\r\n</tr>\r\n<tr>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Windows-Portable-x64.zip\">Portable x64</a></td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Windows-Portable-x64.zip\"><img src=\"https://img.shields.io/github/downloads/hiddify/hiddify-app/v5.5.5/Hiddify-Windows-Portable-x64.zip?displayAssetName=false&label=%20&color=green&v=17938308871725\" alt=\"downloads\"></a></td>\r\n  <td><a href=\"https://www.virustotal.com/gui/file/b4579d6a9a7b0bb0dedfd2e462ab4cfefc53ec25b56f287cca5edb435f01f627/detection\"><img src=\"https://img.shields.io/badge/0%2F66-brightgreen\" alt=\"VirusTotal\"></a></td>\r\n</tr>\r\n<tr>\r\n  <td rowspan=\"2\">macOS (v10.15+)</td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-MacOS.dmg\">DMG Universal</a></td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-MacOS.dmg\"><img src=\"https://img.shields.io/github/downloads/hiddify/hiddify-app/v5.5.5/Hiddify-MacOS.dmg?displayAssetName=false&label=%20&color=green&v=17938308871725\" alt=\"downloads\"></a></td>\r\n  <td><a href=\"https://www.virustotal.com/gui/file/3e8c1d1448f861e5594910e168f11dc39e52ecfb68c03d445f9fb1721032992e/detection\"><img src=\"https://img.shields.io/badge/0%2F61-brightgreen\" alt=\"VirusTotal\"></a></td>\r\n</tr>\r\n<tr>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-MacOS-Installer.pkg\">PKG Universal</a></td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-MacOS-Installer.pkg\"><img src=\"https://img.shields.io/github/downloads/hiddify/hiddify-app/v5.5.5/Hiddify-MacOS-Installer.pkg?displayAssetName=false&label=%20&color=green&v=1793830887172",
+    "downloads": [
+      {
+        "label": "Windows x64 · 绿色版 ZIP",
+        "platform": "Windows",
+        "portable": true,
+        "file": "Hiddify-Windows-Portable-x64.zip",
+        "size": 66721622,
+        "sha256": "b4579d6a9a7b0bb0dedfd2e462ab4cfefc53ec25b56f287cca5edb435f01f627",
+        "official": "https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Windows-Portable-x64.zip",
+        "mirrors": []
+      },
+      {
+        "label": "Windows x64 · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "Hiddify-Windows-Setup-x64.exe",
+        "size": 48917072,
+        "sha256": "7c71bca78a8307b5961ed2f1121d23fa94db6fed2c866af9eb5be375c0b43873",
+        "official": "https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Windows-Setup-x64.exe",
+        "mirrors": []
+      },
+      {
+        "label": "Android · 通用 APK",
+        "platform": "Android",
+        "portable": false,
+        "file": "Hiddify-Android-universal.apk",
+        "size": 178026791,
+        "sha256": "d22cea2205863248c813d3a620dd1211d98ae2cb6e448f86deb5c191e9c6a992",
+        "official": "https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Android-universal.apk",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "sing-box": {
+    "version": "1.14.4",
+    "released": "2026-10-24",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/SagerNet/sing-box/releases/tag/v1.14.4",
+    "changelog": "## :memo: Release Notes\n\n* Fixes and improvements",
+    "downloads": [
+      {
+        "label": "Windows x64 · 图形客户端 SFW",
+        "platform": "Windows",
+        "portable": false,
+        "file": "SFW-1.14.4-x64.exe",
+        "size": 115346760,
+        "sha256": "9720433083bb00cacbc439cad79b89d337814fe8af31a8ff6f8dc5b807782446",
+        "official": "https://github.com/SagerNet/sing-box/releases/download/v1.14.4/SFW-1.14.4-x64.exe",
+        "mirrors": []
+      },
+      {
+        "label": "Windows x64 · 命令行 ZIP",
+        "platform": "Windows",
+        "portable": true,
+        "file": "sing-box-1.14.4-windows-amd64.zip",
+        "size": 32891280,
+        "sha256": "99185d75d314a07dbba4a130c8ad986cbeb629a07927975636b341ca61f991df",
+        "official": "https://github.com/SagerNet/sing-box/releases/download/v1.14.4/sing-box-1.14.4-windows-amd64.zip",
+        "mirrors": []
+      },
+      {
+        "label": "Android · SFA 通用 APK",
+        "platform": "Android",
+        "portable": false,
+        "file": "SFA-1.14.4-universal.apk",
+        "size": 127298612,
+        "sha256": "382cd451a135b4da7dbdfb031dcc34046b2feb0cb32d3eb69655b20bd376d3f9",
+        "official": "https://github.com/SagerNet/sing-box/releases/download/v1.14.4/SFA-1.14.4-universal.apk",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "throne": {
+    "version": "1.4.1",
+    "released": "2026-11-06",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/throneproj/Throne/releases/tag/1.4.1",
+    "changelog": "### Join [Throne's Telegram channel](https://t.me/ThroneProj) for announcements and community support\n\n* Fix macOS Tun mode\n* Fix invalid giometry of the main window\n* Fix XHTTP Extra field parsing\n\n\n**Download based on your OS:**\n\n<table>\n    <thead align=left>\n        <tr>\n            <th>OS</th>\n            <th>Download</th>\n        </tr>\n    </thead>\n    <tbody align=left>\n        <tr>\n            <td>Windows</td>\n            <td>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-windows-universal-installer.exe\"><img src=\"https://img.shields.io/badge/Setup-Universal-0078D4.svg?logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTAgMGgxMS40djExLjRIMHptMTIuNiAwSDI0djExLjRIMTIuNnpNMCAxMi42aDExLjRWMjRIMHptMTIuNiAwSDI0VjI0SDEyLjZ6Ii8%2BPC9zdmc%2B\"></a><br>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-windows64.zip\"><img src=\"https://img.shields.io/badge/Portable-x64-2B88D8.svg?logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTAgMGgxMS40djExLjRIMHptMTIuNiAwSDI0djExLjRIMTIuNnpNMCAxMi42aDExLjRWMjRIMHptMTIuNiAwSDI0VjI0SDEyLjZ6Ii8%2BPC9zdmc%2B\"></a><br>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-windows-arm64.zip\"><img src=\"https://img.shields.io/badge/Portable-ARM64-5AA9E6.svg?logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTAgMGgxMS40djExLjRIMHptMTIuNiAwSDI0djExLjRIMTIuNnpNMCAxMi42aDExLjRWMjRIMHptMTIuNiAwSDI0VjI0SDEyLjZ6Ii8%2BPC9zdmc%2B\"></a><br>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-windowslegacy64.zip\"><img src=\"https://img.shields.io/badge/Portable-x64%20legacy-6B7F95.svg?logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTAgMGgxMS40djExLjRIMHptMTIuNiAwSDI0djExLjRIMTIuNnpNMCAxMi42aDExLjRWMjRIMHptMTIuNiAwSDI0VjI0SDEyLjZ6Ii8%2BPC9zdmc%2B\"></a><br>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-windows32.zip\"><img src=\"https://img.shields.io/badge/Portable-x86-94A3B8.svg?logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTAgMGgxMS40djExLjRIMHptMTIuNiAwSDI0djExLjRIMTIuNnpNMCAxMi42aDExLjRWMjRIMHptMTIuNiAwSDI0VjI0SDEyLjZ6Ii8%2BPC9zdmc%2B\"></a>\n            </td>\n        </tr>\n        <tr>\n            <td>macOS</td>\n            <td>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-macos-arm64.zip\"><img src=\"https://img.shields.io/badge/ZIP-Apple%20Silicon-000000.svg?logo=apple\"></a><br>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-macos-amd64.zip\"><img src=\"https://img.shields.io/badge/ZIP-Intel%20x64-00A9E0.svg?logo=apple\"></a><br>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-macoslegacy-amd64.zip\"><img src=\"https://img.shields.io/badge/ZIP-Intel%20x64%20(legacy)-7FCDEB.svg?logo=apple\"></a>\n            </td>\n        </tr>\n        <tr>\n            <td>Debian / Ubuntu</td>\n            <td>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-debian-amd64.deb\"><img src=\"https://img.shields.io/badge/DEB-x64-A81D33.svg?logo=debian\"></a>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-debian-amd64-system-qt.deb\"><img src=\"https://img.shields.io/badge/DEB-x64%20system%20Qt-C94F65.svg?logo=debian\"></a><br>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-debian-arm64.deb\"><img src=\"https://img.shields.io/badge/DEB-ARM64-A81D33.svg?logo=debian\"></a>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-debian-arm64-system-qt.deb\"><img src=\"https://img.shields.io/badge/DEB-ARM64%20system%20Qt-C94F65.svg?logo=debian\"></a>\n            </td>\n        </tr>\n        <tr>\n            <td>Fedora / openSUSE</td>\n            <td>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-fedora-amd64.rpm\"><img src=\"https://img.shields.io/badge/RPM-x64-294172.svg?logo=fedora\"></a>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-fedora-amd64-system-qt.rpm\"><img src=\"https://img.shields.io/badge/RPM-x64%20system%20Qt-51A2DA.svg?logo=fedora\"></a><br>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-fedora-arm64.rpm\"><img src=\"https://img.shields.io/badge/RPM-ARM64-294172.svg?logo=fedora\"></a>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-fedora-arm64-system-qt.rpm\"><img src=\"https://img.shields.io/badge/RPM-ARM64%20system%20Qt-51A2DA.svg?logo=fedora\"></a>\n            </td>\n        </tr>\n        <tr>\n            <td>Linux (portable)</td>\n            <td>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-linux-amd64.zip\"><img src=\"https://img.shields.io/badge/ZIP-x64-F84E29.svg?logo=linux\"></a><br>\n                <a href=\"https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-linux-arm64.zip\"><img src=\"https://img.shields.io/badge/ZIP-ARM64-F89A29.svg?logo=linux\"></a>\n            </td>\n        </tr>\n    </tbody>\n</table>\n\n> **Setup** picks the right build for your Windows version and CPU; **legacy** builds are for Windows 7 / 8. **system Qt** packages use the Qt libraries installed on your system and ar",
+    "downloads": [
+      {
+        "label": "Windows x64 · 绿色版 ZIP",
+        "platform": "Windows",
+        "portable": true,
+        "file": "Throne-1.4.1-windows64.zip",
+        "size": 57680457,
+        "sha256": "c0fb62af75fd6a100a216c019b167a3bd924ebdc059b2bbbe68a684702293890",
+        "official": "https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-windows64.zip",
+        "mirrors": []
+      },
+      {
+        "label": "Windows · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "Throne-1.4.1-windows-universal-installer.exe",
+        "size": 154532497,
+        "sha256": "1f0d27b38abcb0dbe89408fa194cf96279ef259c8008be311db94bd66fc9c26a",
+        "official": "https://github.com/throneproj/Throne/releases/download/1.4.1/Throne-1.4.1-windows-universal-installer.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "v2rayng": {
+    "version": "2.3.15",
+    "released": "2026-11-01",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/2dust/v2rayNG/releases/tag/2.3.15",
+    "changelog": "### 本次更新\r\n\r\n- 迁移到 Jetpack Compose UI , 感谢 @fuilloi  - #5866\r\n- 订阅分组设置中，更新订阅时可以组合多个选项进行后台任务，如果只更新订阅，则会在当前页面进行 。\r\n\r\n    1. 更新订阅\r\n    2. 更新订阅后自动测试\r\n    3. 测试后自动删除无效\r\n    4. 测试后自动排序\r\n\r\n- 添加 TCP ping 测试，有最大并发控制\r\n- 支持导入v2rayN 内部分享 `v2rayn://`\r\n- 为订阅更新添加自定义 HTTP headers ， JSON 格式内容随意，例子如下 \r\n```\r\n{\r\n  \"X-hwid\": \"my_test_device\",\r\n  \"Authorization\": \"Bearer test\"\r\n}\r\n```\r\n- 修复了一些迁移 UI 导致的问题\r\n- 一些界面和功能的优化和修复，感谢 @eliotcougar \r\n- 支持莫奈动态色彩 - #6067\r\n- 添加手动配置文件存储修复 - #6094\r\n- 添加翻译贡献者页面 #6114\r\n- 改进启动自动连接 VPN 设置 - #6179\r\n- WireGuard 添加 remoteDNS 字段 - #6230\r\n- 一些优化和修复\r\n- 在订阅组中显示订阅使用情况信息框（流量、到期时间、支持链接）- #6333\r\n- 将订阅组标签重新设计为带有计数徽章的浮动药丸条- #6336\r\n\r\n- [紧急安全更新 Xray-core v26.10.31](https://github.com/XTLS/Xray-core/releases/tag/v26.10.31)\r\n\r\n### [发布文件介绍，不知道下载哪个文件的请看](https://github.com/2dust/v2rayNG/wiki/Release-files-introduction-for-Android)\r\n\r\n### [关于 跳过证书验证 allowInsecure 参数被移除的说明 ](https://github.com/2dust/v2rayN/discussions/9460)\r\n",
+    "downloads": [
+      {
+        "label": "Android · 通用 APK",
+        "platform": "Android",
+        "portable": false,
+        "file": "v2rayNG_2.3.15_universal.apk",
+        "size": 71869497,
+        "sha256": "561df11add49967981e4393db30344fea6ee76b72fca052db9a8114fb0ba9d7d",
+        "official": "https://github.com/2dust/v2rayNG/releases/download/2.3.15/v2rayNG_2.3.15_universal.apk",
+        "mirrors": []
+      },
+      {
+        "label": "Android · arm64 APK",
+        "platform": "Android",
+        "portable": false,
+        "file": "v2rayNG_2.3.15_arm64-v8a.apk",
+        "size": 32462468,
+        "sha256": "ec53590f042ebb3998169506164ca72eeb84de938d6ed8e888d3b10031f548e3",
+        "official": "https://github.com/2dust/v2rayNG/releases/download/2.3.15/v2rayNG_2.3.15_arm64-v8a.apk",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "nekobox": {
+    "version": "1.4.2",
+    "released": "2026-02-09",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/MatsuriDayo/NekoBoxForAndroid/releases/tag/1.4.2",
+    "changelog": "## 1.4.2 更新内容\r\n\r\n- 升级核心 sing-box 1.12.19-neko-1\r\n- 合并 PR #1109\r\n- 处理 issue #1115 #1093 #1090 #1077 \r\n- 重构优化 更新订阅时的配置覆写（保留本地的自定义json配置，其他项目遵循订阅）\r\n- 重构优化 直连订阅请求\r\n\r\n## 针对小白用户的提示\r\n\r\n- 本软件为 Android 端节点调试工具，适合有一定基础和学习能力的用户使用。如果不会用，建议换成其他软件(下方有推荐)。\r\n- 您须了解本项目使用并且在GPLv3许可下再发行 `世界` 维护的sing-box翻墙核心，并且不受sing-box社区的支持。\r\n- 您须了解本项目较少维护，**不接受功能请求**。如有BUG请通过issue反馈，非重大BUG则可能不会修复。\r\n\r\n## 本软件不一定满足你的需求，推荐其他 Android 客户端\r\n\r\n- 机场订阅用户（Clash Meta 核心）-> `Clash Meta For Android` `FlClash`\r\n- Xray 核心用户 -> `v2rayNG`\r\n- sing-box 核心用户 -> `sing-box for Android`\r\n\r\n[友情推荐其他平台的客户端](https://matsuridayo.github.io/download/#_3)\r\n",
+    "downloads": [
+      {
+        "label": "Android · arm64 APK",
+        "platform": "Android",
+        "portable": false,
+        "file": "NekoBox-1.4.2-arm64-v8a.apk",
+        "size": 15252519,
+        "sha256": "d01e76feeb05e4701f3ae382cb71c0a3ebb77039005e5893f8817e1051f8ac28",
+        "official": "https://github.com/MatsuriDayo/NekoBoxForAndroid/releases/download/1.4.2/NekoBox-1.4.2-arm64-v8a.apk",
+        "mirrors": []
+      },
+      {
+        "label": "Android · armv7 APK",
+        "platform": "Android",
+        "portable": false,
+        "file": "NekoBox-1.4.2-armeabi-v7a.apk",
+        "size": 15509280,
+        "sha256": "e21f4b1c09696e0fd8ff594db42fcec41d1ad1254b356e08c2fa6e9c5bfed10b",
+        "official": "https://github.com/MatsuriDayo/NekoBoxForAndroid/releases/download/1.4.2/NekoBox-1.4.2-armeabi-v7a.apk",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "newpipe": {
+    "version": "0.29.3",
+    "released": "2026-11-10",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/TeamNewPipe/NewPipe/releases/tag/v0.29.3",
+    "changelog": "This is a hotfix update which resolves recent problems with Bandcamp and SoundCloud.\r\n\r\n[SoundCloud] Fixed not being able to extract streams by adding support for aac_96k audio streams\r\n[Bandcamp] Bypass client verification\r\n[Bandcamp] Fixed search when using a non-English content language\r\n",
+    "downloads": [
+      {
+        "label": "Android · APK",
+        "platform": "Android",
+        "portable": false,
+        "file": "NewPipe_v0.29.3.apk",
+        "size": 16980865,
+        "sha256": "0ab2b9b5103bd3173cb4540f9a2fe660d93a44ac17254e7d13b26d1d8f012192",
+        "official": "https://github.com/TeamNewPipe/NewPipe/releases/download/v0.29.3/NewPipe_v0.29.3.apk",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "seal": {
+    "version": "1.13.1",
+    "released": "2024-10-16",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/JunkFood02/Seal/releases/tag/v1.13.1",
+    "changelog": "### Fixes\r\n- Update python to 3.11\r\n\r\n\r\n**Full Changelog**: https://github.com/JunkFood02/Seal/compare/v1.13.0...v1.13.1",
+    "downloads": [
+      {
+        "label": "Android · 通用 APK",
+        "platform": "Android",
+        "portable": false,
+        "file": "Seal-1.13.1-universal-release.apk",
+        "size": 144991600,
+        "sha256": "",
+        "official": "https://github.com/JunkFood02/Seal/releases/download/v1.13.1/Seal-1.13.1-universal-release.apk",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "termux": {
+    "version": "0.118.3",
+    "released": "2025-05-22",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/termux/termux-app/releases/tag/v0.118.3",
+    "changelog": "## v0.118.3 - 2025-05-22 10:47\r\n\r\n**Commit history:** [`v0.118.2...v0.118.3`](https://github.com/termux/termux-app/compare/21c0d51f...v0.118.3)\r\n\r\n<details>\r\n<summary>Changelog</summary>\r\n\r\n### Changed\r\n\r\n- **!** Remove `TERMUX_APP__BUILD_DATA_DIR` as a different naming scheme will be used for build variables and rename `TERMUX__ROOTFS` to `TERMUX__ROOTFS_DIR`. ([`849e6b10`](https://github.com/termux/termux-app/commit/849e6b10))\r\n\r\n## &nbsp;\r\n\r\n&nbsp;\r\n\r\n\r\n\r\n### Fixed\r\n\r\n- Bump `org.lsposed.hiddenapibypass:hiddenapibypass` to `6.1` to fix crash on Android 16 QPR1. Related commit https://github.com/LSPosed/AndroidHiddenApiBypass/commit/9efadf06. Related commit https://android-review.googlesource.com/c/platform/libcore/+/3380841. Related commit https://cs.android.com/android/_/android/platform/libcore/+/0dc31afe. Closes [#4556](https://github.com/termux/termux-app/issues/4556). ([`fda17afa`](https://github.com/termux/termux-app/commit/fda17afa))  \r\n\r\n- Declare `MANAGE_EXTERNAL_STORAGE` as it being added in Termux:API version `0.51.0` is revoking the storage permission of Termux app after updates and sometimes later. Related issue [#4486](https://github.com/termux/termux-app/issues/4486). ([`23756528`](https://github.com/termux/termux-app/commit/23756528))  \r\n\r\n- Add explicit `serialVersionUID` to `Serializable` classes like `ReportInfo` and `TextIOInfo`. Reading `ReportInfo` with `Bundle.getSerializable()` by `ReportActivity` is triggering exception when default algorithm is used for `serialVersionUID` in Termux:API plugin app when error notification created in `ResultReturner.returnData()` by `TermuxPluginUtils.sendPluginCommandErrorNotification()` is clicked. Related issue https://github.com/termux/termux-api/issues/762. ([`4f033b34`](https://github.com/termux/termux-app/commit/4f033b34))  \r\n\r\n---\r\n\r\n&nbsp;\r\n\r\n</details>\r\n",
+    "downloads": [
+      {
+        "label": "Android · 通用 APK",
+        "platform": "Android",
+        "portable": false,
+        "file": "termux-app_v0.118.3+github-debug_universal.apk",
+        "size": 117775723,
+        "sha256": "",
+        "official": "https://github.com/termux/termux-app/releases/download/v0.118.3/termux-app_v0.118.3%2Bgithub-debug_universal.apk",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "keepassdx": {
+    "version": "4.5.8",
+    "released": "2026-10-31",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/Kunzisoft/KeePassDX/releases/tag/4.5.8",
+    "changelog": " * Fix KeePro for Play Store #2769\r\n * Revert Play Store obfuscation #2770 #2776\r\n * Fix Autofill menu presentation #2772 #2767 (@SaeedDev94)\r\n * Fix extension when saving new file #1889 \r\n\r\nBuild Free\r\nMD5 : 10f7ddd8e2620618ca336a7fdb721d65\r\nSHA1 : 502dfe47e1c95bc3c1082847641937f5a5bd80bc\r\nSHA256 : 621718e55af8fd2aad6884df180bf7889c5de008fadc5dd26c726ebcb575bebb\r\nCRC32 : ecc2cfb4\r\n\r\nBuild Libre\r\nMD5 : 5061bafa6ce85584b94244c4d20b2ecf\r\nSHA1 : 92762ff3ed454ccd41f8fe0840b3ce0f8d500717\r\nSHA256 : 8aaac6a0c55a9de760147990856726e197efbbcdc5ce2f6bfb4d4ab2a3d65f74\r\nCRC32 : 86d534b5",
+    "downloads": [
+      {
+        "label": "Android · Libre 版 APK",
+        "platform": "Android",
+        "portable": false,
+        "file": "KeePassDX-4.5.8-libre.apk",
+        "size": 16786874,
+        "sha256": "8aaac6a0c55a9de760147990856726e197efbbcdc5ce2f6bfb4d4ab2a3d65f74",
+        "official": "https://github.com/Kunzisoft/KeePassDX/releases/download/4.5.8/KeePassDX-4.5.8-libre.apk",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "material-files": {
+    "version": "1.7.5",
+    "released": "2026-09-20",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/zhanghai/MaterialFiles/releases/tag/v1.7.5",
+    "changelog": "- Added support for Shizuku.\r\n- Added Danish and Galician translation.\r\n- Changed encryption when creating ZIP archive from ZipCrypto to AES-256.\r\n- Material Design 2 theme may be removed in the upcoming version 1.8.0.\r\n- Other bug fixes and improvements.",
+    "downloads": [
+      {
+        "label": "Android · APK",
+        "platform": "Android",
+        "portable": false,
+        "file": "app-release-universal.apk",
+        "size": 13747821,
+        "sha256": "f2e7f028fbddf51d7ee90ace27a1ae4b247511e12514d1def6c9e52435feac40",
+        "official": "https://github.com/zhanghai/MaterialFiles/releases/download/v1.7.5/app-release-universal.apk",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "obtainium": {
+    "version": "1.7.4",
+    "released": "2026-11-01",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/ImranR98/Obtainium/releases/tag/v1.7.4",
+    "changelog": "## What's Changed\r\n* Fix URL parsing for self-hosted instances. by @rauaap in https://github.com/ImranR98/Obtainium/pull/3472\r\n* fix: correct changelog links and preserve line breaks by @nyxiereal in https://github.com/ImranR98/Obtainium/pull/3471\r\n* Translation: Update ru.json by @solokot in https://github.com/ImranR98/Obtainium/pull/3463\r\n* Translation: Update hu.json by @summoner001 in https://github.com/ImranR98/Obtainium/pull/3462\r\n* Complete Simplified Chinese translations and clarify certificate prompts by @HotKids in https://github.com/ImranR98/Obtainium/pull/3460\r\n* Add a per-app install method setting by @bercedev in https://github.com/ImranR98/Obtainium/pull/3457\r\n* By @ImranR98 in https://github.com/ImranR98/Obtainium/pull/3479\r\n    * Fall back to dart:io when Android memory DCL is restricted (#3442)\r\n    * Fix signing certificate checks on Android 9 and 10 (#3475)\r\n    * Prefer the ABI-specific APK when the saved choice is universal (#3473)\r\n    * Remove the defunct APKCombo source (#3468)\r\n\r\n## New Contributors\r\n* @rauaap made their first contribution in https://github.com/ImranR98/Obtainium/pull/3472\r\n* @nyxiereal made their first contribution in https://github.com/ImranR98/Obtainium/pull/3471\r\n\r\n**Full Changelog**: https://github.com/ImranR98/Obtainium/compare/v1.7.3...v1.7.4",
+    "downloads": [
+      {
+        "label": "Android · arm64 APK",
+        "platform": "Android",
+        "portable": false,
+        "file": "app-arm64-v8a-release.apk",
+        "size": 34609838,
+        "sha256": "f9216f721a7713b75929e0806bc18586f8fcf7328fbbff99b6aef1debb9eef80",
+        "official": "https://github.com/ImranR98/Obtainium/releases/download/v1.7.4/app-arm64-v8a-release.apk",
+        "mirrors": []
+      },
+      {
+        "label": "Android · 通用 APK",
+        "platform": "Android",
+        "portable": false,
+        "file": "app-release.apk",
+        "size": 94182837,
+        "sha256": "7f6b01c55a9ae140c336200be4a8941e7c654d77f68cae5ff6937d49e1ec83a2",
+        "official": "https://github.com/ImranR98/Obtainium/releases/download/v1.7.4/app-release.apk",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "shizuku": {
+    "version": "13.6.0",
+    "released": "2025-05-25",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/RikkaApps/Shizuku/releases/tag/v13.6.0",
+    "changelog": "## What's Changed\r\n- Support Android16 QPR1\r\n- Support auto start without root on Android13+ when connected to a trusted WiFi\r\n- Update the start command\r\n```sh\r\npm_path=$(pm path moe.shizuku.privileged.api) && apk_path=${pm_path#package:} && $(dirname $apk_path)/lib/*/libshizuku.so\r\n```\r\nYou can copy `libshizuku.so` file to any executable location, such as /data/local/tmp/shizuku\r\n\r\n**Full Changelog**: https://github.com/RikkaApps/Shizuku/compare/v13.5.4...v13.6.0",
+    "downloads": [
+      {
+        "label": "Android · APK",
+        "platform": "Android",
+        "portable": false,
+        "file": "shizuku-v13.6.0.r1086.2650830c-release.apk",
+        "size": 2571773,
+        "sha256": "",
+        "official": "https://github.com/RikkaApps/Shizuku/releases/download/v13.6.0/shizuku-v13.6.0.r1086.2650830c-release.apk",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "fossify-gallery": {
+    "version": "1.14.2",
+    "released": "2026-11-07",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/FossifyOrg/Gallery/releases/tag/1.14.2",
+    "changelog": "### Changed\n\n- Updated translations\n\n**Full Changelog:** https://github.com/FossifyOrg/Gallery/compare/1.14.1...1.14.2\n\n",
+    "downloads": [
+      {
+        "label": "Android · APK",
+        "platform": "Android",
+        "portable": false,
+        "file": "gallery-40-foss-release.apk",
+        "size": 38538751,
+        "sha256": "ff3e6122ccf1873620e9e8e374b9c9dec4d7eb3a8f42559135bd82562c65f41f",
+        "official": "https://github.com/FossifyOrg/Gallery/releases/download/1.14.2/gallery-40-foss-release.apk",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "ankidroid": {
+    "version": "2.25.3",
+    "released": "2026-10-17",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/ankidroid/Anki-Android/releases/tag/v2.25.3",
+    "changelog": "> [!IMPORTANT]\n> GitHub does not auto-update apps\n\n\n## For regular users\n\nInstall `arm64-v8a` from the **Assets** section below. If it fails to install, use `Parallel.A`.\n\n`Parallel` builds install side-by-side with the main APK, allowing you to use different settings and profiles (via the `AnkiDroid directory` advanced setting and a different AnkiWeb login).\n\n\n## For testers\n\nThe builds with `full`, `play` and `amazon` are useful for testing our builds for different app stores:\n\n- **`full`**: F-Droid & GitHub `Parallel` apks\n- **`play`**: Google Play - does not have `MANAGE_EXTERNAL_STORAGE` permission as it is forbidden by Google, on uninstall the user is invited to delete data.\n- **`amazon`**: Amazon - currently same as full, historically removed `CAMERA` permission\n\n\n## ABI variants\n\nWe perform ABI splits to reduce APK size. In rare cases, a phone may not be using the `arm64-v8a` ABI. You can find your phone's ABI using [kamgurgul/cpu-info](https://github.com/kamgurgul/cpu-info). If disk space isn't an issue, use the `full` apk.",
+    "downloads": [
+      {
+        "label": "Android · 通用 APK",
+        "platform": "Android",
+        "portable": false,
+        "file": "AnkiDroid-2.25.3-full-universal.apk",
+        "size": 111759228,
+        "sha256": "cccf84acc2187eb710614538b80d12d8692f5411dc1b8bfaf0ac08005a84f665",
+        "official": "https://github.com/ankidroid/Anki-Android/releases/download/v2.25.3/AnkiDroid-2.25.3-full-universal.apk",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "bitwarden-android": {
+    "version": "2026.11.0-bwpm",
+    "released": "2026-11-05",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/bitwarden/android/releases/tag/v2026.11.0-bwpm",
+    "changelog": "# Overview\r\nThis F-Droid-only release was created to address an issue with publishing. It contains everything in 2026.10.1 plus the required fix.\r\n\r\n<!-- Release notes generated using configuration in .github/release.yml at release/2026.10-rc65 -->\r\n\r\n## What's Changed\r\n### 🐛 Bug fixes\r\n* 🍒 [PM-46265] fix: Install AGP's default NDK in CI so native libraries are stripped by @mpbw2 in https://github.com/bitwarden/android/pull/7568\r\n\r\n\r\n**Full Changelog**: https://github.com/bitwarden/android/compare/v2026.10.1-bwpm...v2026.11.0-bwpm\r\n**Builds Source:** https://github.com/bitwarden/android/actions/runs/42044993988",
+    "downloads": [],
+    "mirrored": false
+  },
+  "exclave": {
+    "version": "0.17.68",
+    "released": "2026-11-10",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/ExclaveNetwork/Exclave/releases/tag/0.17.68",
+    "changelog": "- Update Go to 1.27.4 and ML-DSA is no longer advertised in `signature_algorithm_cert` in TLS Client Hello. Exclave's non-uTLS REALITY implementation also no longer advertises ML-DSA in `signature_algorithm_cert` to match the behavior of Go TLS.\r\n- Update uTLS to latest commit and fingerprint \"Chrome\" now matches Chrome 155. uTLS latest commit requires Go 1.27, so Go 1.26 support is dropped and compiling Exclave now requires at least Go 1.27.\r\n- For Snell protocol, domain address is no longer resolved to IP when sending UDP packets.\r\n- Update Mozilla CA certificate store and 6 CA certificates are removed.\r\n- The memory usage of rule matcher is reduced (maybe).",
+    "downloads": [
+      {
+        "label": "Android · arm64 APK",
+        "platform": "Android",
+        "portable": false,
+        "file": "Exclave-0.17.68-arm64-v8a.apk",
+        "size": 25392052,
+        "sha256": "1703ff23debd436223e3f1502d294b52705b451f323dd0ec500e223aa0248c1e",
+        "official": "https://github.com/ExclaveNetwork/Exclave/releases/download/0.17.68/Exclave-0.17.68-arm64-v8a.apk",
+        "mirrors": []
+      },
+      {
+        "label": "Android · armv7 APK",
+        "platform": "Android",
+        "portable": false,
+        "file": "Exclave-0.17.68-armeabi-v7a.apk",
+        "size": 26055702,
+        "sha256": "442c17453d70a4eff600f8729c0e981b174c828fb9c76aad9aed1e4a9e61ae9f",
+        "official": "https://github.com/ExclaveNetwork/Exclave/releases/download/0.17.68/Exclave-0.17.68-armeabi-v7a.apk",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "clash-meta-android": {
+    "version": "2.11.37",
+    "released": "2026-11-11",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/MetaCubeX/ClashMetaForAndroid/releases/tag/v2.11.37",
+    "changelog": "## What's Changed\n* Update Dependencies by @clash-meta-maintainer[bot] in https://github.com/MetaCubeX/ClashMetaForAndroid/pull/856\n\n\n**Full Changelog**: https://github.com/MetaCubeX/ClashMetaForAndroid/compare/v2.11.36...v2.11.37",
+    "downloads": [
+      {
+        "label": "Android · 通用 APK",
+        "platform": "Android",
+        "portable": false,
+        "file": "cmfa-2.11.37-meta-universal-release.apk",
+        "size": 122896343,
+        "sha256": "2c76a5c88a150294f1dfcb79b2b54ce3c79c75a705b055087571c47a6907f76a",
+        "official": "https://github.com/MetaCubeX/ClashMetaForAndroid/releases/download/v2.11.37/cmfa-2.11.37-meta-universal-release.apk",
+        "mirrors": []
+      },
+      {
+        "label": "Android · arm64 APK",
+        "platform": "Android",
+        "portable": false,
+        "file": "cmfa-2.11.37-meta-arm64-v8a-release.apk",
+        "size": 47672833,
+        "sha256": "84be4f17a166a966828f1674a5e9a063211e855c6d066d660c72fc7489b053a4",
+        "official": "https://github.com/MetaCubeX/ClashMetaForAndroid/releases/download/v2.11.37/cmfa-2.11.37-meta-arm64-v8a-release.apk",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "karing": {
+    "version": "1.2.26.2931",
+    "released": "2026-11-13",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/KaringX/karing/releases/tag/v1.2.26.2931",
+    "changelog": "1. Fixed an issue where performing an profile \"auto-update\" or \"update all\" profile could cause certain profile settings to be reset #2098\r\n2. Core: Improved resource usage for WireGuard\r\n3. Core: Improved certain log entries\r\n4. Fixed an issue where DNS rules appeared empty under \"Network Check\"\r\n5. Fixed an issue where domains for certain types of nodes were not being added to `dns_outbound_out`\r\n\r\niOS/tvOS AppStore: (Search Keywords: karing vpn) https://apps.apple.com/us/app/karing/id6472431552",
+    "downloads": [
+      {
+        "label": "Windows x64 · 绿色版 ZIP",
+        "platform": "Windows",
+        "portable": true,
+        "file": "karing_1.2.26.2931_windows_x64.zip",
+        "size": 74999841,
+        "sha256": "fcd7bcdefd23f43da0b85c294168b86d620f11b7d46e06533bfc4fb49b4587c6",
+        "official": "https://github.com/KaringX/karing/releases/download/v1.2.26.2931/karing_1.2.26.2931_windows_x64.zip",
+        "mirrors": []
+      },
+      {
+        "label": "Windows x64 · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "karing_1.2.26.2931_windows_x64.exe",
+        "size": 52038253,
+        "sha256": "f0df38ad48bbc281bb1cd2ca6e2d99613384d9fcf2334ceff39c6a2e517998f5",
+        "official": "https://github.com/KaringX/karing/releases/download/v1.2.26.2931/karing_1.2.26.2931_windows_x64.exe",
+        "mirrors": []
+      },
+      {
+        "label": "Android · arm64 APK",
+        "platform": "Android",
+        "portable": false,
+        "file": "karing_1.2.26.2931_android_arm64-v8a.apk",
+        "size": 60188096,
+        "sha256": "dc1d5a24856598ec5507562c31cbe80adbab3ec8c7ac4517e8fbac8e953eccd5",
+        "official": "https://github.com/KaringX/karing/releases/download/v1.2.26.2931/karing_1.2.26.2931_android_arm64-v8a.apk",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "clash-mi": {
+    "version": "1.0.32.1803",
+    "released": "2026-11-03",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/KaringX/clashmi/releases/tag/v1.0.32.1803",
+    "changelog": "1. Windows: Added UWP tools under 'Help' #613\r\n2. PC: Window position persistence\r\n3. Profiles now support individual configuration of latency test URLs and timeout durations\r\n4. Linux: Reverted tray_manager. The package has been re-uploaded. If you have already installed version 2928, please download the package again and reinstall it.\r\n\r\nios appstore: https://apps.apple.com/us/app/clash-mi/id6744321968",
+    "downloads": [
+      {
+        "label": "Windows x64 · 绿色版 ZIP",
+        "platform": "Windows",
+        "portable": true,
+        "file": "clashmi_1.0.32.1803_windows_x64.zip",
+        "size": 66998010,
+        "sha256": "2e2ab2ce0b90ef627ecf7232cf7b71fb482a716ac8378f91d6d22fa926d73351",
+        "official": "https://github.com/KaringX/clashmi/releases/download/v1.0.32.1803/clashmi_1.0.32.1803_windows_x64.zip",
+        "mirrors": []
+      },
+      {
+        "label": "Android · arm64 APK",
+        "platform": "Android",
+        "portable": false,
+        "file": "clashmi_1.0.32.1803_android_arm64-v8a.apk",
+        "size": 52610081,
+        "sha256": "6cedd17107d0b95774430a4a63a73cffeb115e1a62b1a37d8811aba9ec03510d",
+        "official": "https://github.com/KaringX/clashmi/releases/download/v1.0.32.1803/clashmi_1.0.32.1803_android_arm64-v8a.apk",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "gui-for-singbox": {
+    "version": "1.29.0",
+    "released": "2026-11-10",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/GUI-for-Cores/GUI.for.SingBox/releases/tag/v1.29.0",
+    "changelog": "Auto-generated release from GitHub Actions.\n",
+    "downloads": [
+      {
+        "label": "Windows x64 · 绿色版 ZIP",
+        "platform": "Windows",
+        "portable": true,
+        "file": "GUI.for.SingBox-windows-amd64.zip",
+        "size": 6499416,
+        "sha256": "8af71af43e25ddfe5e4f60e264efa46e94968d84ff9fbf81e477e746e03d2a95",
+        "official": "https://github.com/GUI-for-Cores/GUI.for.SingBox/releases/download/v1.29.0/GUI.for.SingBox-windows-amd64.zip",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "gui-for-clash": {
+    "version": "1.29.0",
+    "released": "2026-11-10",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/GUI-for-Cores/GUI.for.Clash/releases/tag/v1.29.0",
+    "changelog": "Auto-generated release from GitHub Actions.\n",
+    "downloads": [
+      {
+        "label": "Windows x64 · 绿色版 ZIP",
+        "platform": "Windows",
+        "portable": true,
+        "file": "GUI.for.Clash-windows-amd64.zip",
+        "size": 6627370,
+        "sha256": "9a2db3efa2a3761d4126dce8bf4b54b806044a23fd655f9bb87605c5c58fb93e",
+        "official": "https://github.com/GUI-for-Cores/GUI.for.Clash/releases/download/v1.29.0/GUI.for.Clash-windows-amd64.zip",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "sparkle": {
+    "version": "1.26.10",
+    "released": "2026-10-31",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/xishang0128/sparkle/releases/tag/1.26.10",
+    "changelog": "# 更新日志\r\n\r\n- 新增 macOS 和 Linux 网关模式，以及网关侧边栏设置。\r\n- 新增 Webhook 操作通知。\r\n- 优化网关卡片布局和设备数量展示；去重网关状态消息，并在禁用网关警告时隐藏相关警告。\r\n- 重启服务后会重新启动核心；自定义核心和系统核心不再执行服务加固。\r\n- 修复文件读取失败时误保存，以及订阅更新间隔异常导致反复刷新的问题。\r\n- 修复 Monaco 在模态框中的上下文菜单交互和查找框样式冲突。\r\n- 修复开关滑块位置，以及拖动配置档案卡片时布局偏移的问题。\r\n- 优化服务模态框状态布局；侧边栏展开时应用主题效果，并支持悬停展开图标侧边栏。\r\n- 保留自动网关选择。\r\n\r\n### 下载地址：\r\n\r\n#### Windows10/11：\r\n\r\n- 安装版：[64 位](https://github.com/xishang0128/sparkle/releases/download/1.26.10/sparkle-windows-1.26.10-x64-setup.exe) | [ARM64](https://github.com/xishang0128/sparkle/releases/download/1.26.10/sparkle-windows-1.26.10-arm64-setup.exe)\r\n\r\n\r\n#### macOS 13+:\r\n\r\n- PKG：[Intel](https://github.com/xishang0128/sparkle/releases/download/1.26.10/sparkle-macos-1.26.10-x64.pkg) | [Apple Silicon](https://github.com/xishang0128/sparkle/releases/download/1.26.10/sparkle-macos-1.26.10-arm64.pkg)\r\n\r\n\r\n#### Linux:\r\n\r\n- DEB：[64 位](https://github.com/xishang0128/sparkle/releases/download/1.26.10/sparkle-linux-1.26.10-amd64.deb) | [ARM64](https://github.com/xishang0128/sparkle/releases/download/1.26.10/sparkle-linux-1.26.10-arm64.deb) | [loong64](https://github.com/xishang0128/sparkle/releases/download/1.26.10/sparkle-linux-1.26.10-loong64.deb)\r\n\r\n- RPM：[64 位](https://github.com/xishang0128/sparkle/releases/download/1.26.10/sparkle-linux-1.26.10-x86_64.rpm) | [ARM64](https://github.com/xishang0128/sparkle/releases/download/1.26.10/sparkle-linux-1.26.10-aarch64.rpm) | [loong64](https://github.com/xishang0128/sparkle/releases/download/1.26.10/sparkle-linux-1.26.10-loongarch64.rpm)\r\n\r\n- PACMAN：[64 位](https://github.com/xishang0128/sparkle/releases/download/1.26.10/sparkle-linux-1.26.10-x64.pkg.tar.zst) | [ARM64](https://github.com/xishang0128/sparkle/releases/download/1.26.10/sparkle-linux-1.26.10-aarch64.pkg.tar.zst) | [loong64](https://github.com/xishang0128/sparkle/releases/download/1.26.10/sparkle-linux-1.26.10-loong64.pkg.tar.zst)",
+    "downloads": [
+      {
+        "label": "Windows x64 · 绿色版 7z",
+        "platform": "Windows",
+        "portable": true,
+        "file": "sparkle-windows-1.26.10-x64-portable.7z",
+        "size": 151685072,
+        "sha256": "2181a3c0fd119ee373351b449aa7edf623b9c8041fae54f6c5b5051e298d033f",
+        "official": "https://github.com/xishang0128/sparkle/releases/download/1.26.10/sparkle-windows-1.26.10-x64-portable.7z",
+        "mirrors": []
+      },
+      {
+        "label": "Windows x64 · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "sparkle-windows-1.26.10-x64-setup.exe",
+        "size": 190949252,
+        "sha256": "bc619ebdb33fef2dc9610ef55811f6dfad7105590125d9b2f9fca177d7c537f4",
+        "official": "https://github.com/xishang0128/sparkle/releases/download/1.26.10/sparkle-windows-1.26.10-x64-setup.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "clash-nyanpasu": {
+    "version": "2.0.1",
+    "released": "2026-10-31",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/libnyanpasu/clash-nyanpasu/releases/tag/v2.0.1",
+    "changelog": "> 简体中文版本请展开页面底部的「简体中文」。\n\n## Read Before Upgrading\n\n- **With TUN on, the TUN stack chosen in Clash settings now takes precedence over a Profile's `tun.stack`.** Previously a stack written by the subscription won. If you relied on it, choose the stack in settings instead (the default is gVisor).\n- **A Profile that sets a TUN stack the selected core rejects now fails to apply, with an error naming the value and the supported ones.** For example, `tun.stack: mixed` or `mips` under Clash Premium, which would otherwise make the core reject the whole config. This is checked even while TUN is off, because the core parses the key on load. Values Nyanpasu does not know are still passed to the core.\n- **The stack selector only lists the stacks the current core reads**, and is hidden for clash-rs and Meow, which ignore the key. If the saved stack is not supported by the core you switch to, gVisor is used and a warning is written to the log; the saved setting is kept.\n- **Service mode now requires nyanpasu-service 2.0.2.** An installed 2.0.1 service is upgraded once at startup. 2.0.2 fixes a stale pid record that made the service and the app fail on every start (#6033).\n\n## Highlights\n\n- **Mips (Mihomo IP Stack)**, mihomo's new user-space TUN stack, can be selected under mihomo and mihomo-alpha, together with its TCP congestion controller (CUBIC, Reno, BBR, BBRv3, or the core default). The controller is remembered when you switch to another stack and back (#6091).\n- **Startup failures no longer crash the app.** A dialog names the file, the cause and the recovery steps, and can open the containing, backup or log folder. Corrupt local data and an unusable jobs journal are rebuilt instead of blocking startup.\n\n## [2.0.1] - 2026-10-31\n\n\n### ✨ Features\n\n- **config:** Add the mips TUN stack and its congestion controller (#6098) by @greenhat616  in [#6098](https://github.com/libnyanpasu/clash-nyanpasu/pull/6098)\n\n- **config:** Decide the TUN stack from each core's config features (#6097) by @greenhat616  in [#6097](https://github.com/libnyanpasu/clash-nyanpasu/pull/6097)\n\n- **settings:** Offer the TUN stacks and mips options the core reads (#6099) by @greenhat616  in [#6099](https://github.com/libnyanpasu/clash-nyanpasu/pull/6099)\n\n- **startup:** Report failures in a dialog instead of panicking (#6063) by @greenhat616  in [#6063](https://github.com/libnyanpasu/clash-nyanpasu/pull/6063)\n\n- **windows:** Bundle the Windows App SDK bootstrapper with enableLoopback (#6043) by @greenhat616  in [#6043](https://github.com/libnyanpasu/clash-nyanpasu/pull/6043)\n\n\n### 🐛 Bug Fixes\n\n- **jobs:** Rebuild an unusable jobs journal instead of failing to start (#6069) by @greenhat616  in [#6069](https://github.com/libnyanpasu/clash-nyanpasu/pull/6069)\n\n- **service:** Require service 2.0.2 (#6045) by @greenhat616  in [#6045](https://github.com/libnyanpasu/clash-nyanpasu/pull/6045)\n\n- **startup:** Handle environment failures before and around setup (#6064) by @greenhat616  in [#6064](https://github.com/libnyanpasu/clash-nyanpasu/pull/6064)\n\n- **startup:** Rebuild corrupt local data instead of failing to start (#6062) by @greenhat616  in [#6062](https://github.com/libnyanpasu/clash-nyanpasu/pull/6062)\n\n- Align update link with header menu (#6109) by @keiko233  in [#6109](https://github.com/libnyanpasu/clash-nyanpasu/pull/6109)\n\n- Prevent logo animation edge artifacts (#6041) by @keiko233  in [#6041](https://github.com/libnyanpasu/clash-nyanpasu/pull/6041)\n\n- Prevent page title artifacts while scrolling (#6040) by @keiko233  in [#6040](https://github.com/libnyanpasu/clash-nyanpasu/pull/6040)\n\n- Prevent sparkline stretching on new peaks (#6039) by @keiko233  in [#6039](https://github.com/libnyanpasu/clash-nyanpasu/pull/6039)\n\n\n### 📚 Documentation\n\n- **config:** Design core feature queries and the TUN mips stack (#6096) by @greenhat616  in [#6096](https://github.com/libnyanpasu/clash-nyanpasu/pull/6096)\n\n- **design:** Add domain error design notes (#6083) by @greenhat616  in [#6083](https://github.com/libnyanpasu/clash-nyanpasu/pull/6083)\n\n- Plan startup failure handling without setup panics (#6060) by @greenhat616  in [#6060](https://github.com/libnyanpasu/clash-nyanpasu/pull/6060)\n\n\n### 🔨 Refactor\n\n- **setup:** Report startup failures as domain errors (#6061) by @greenhat616  in [#6061](https://github.com/libnyanpasu/clash-nyanpasu/pull/6061)\n\n-----------------\n\n\n\n**Full Changelog**: https://github.com/libnyanpasu/clash-nyanpasu/compare/v2.0.0...v2.0.1\n\n<details>\n<summary><b>简体中文</b></summary>\n\n## 升级前须知\n\n- **开启 TUN 时，Clash 设置中选择的 TUN 堆栈现在优先于 Profile 中的 `tun.stack`。** 以前订阅写入的堆栈会覆盖设置。如果你依赖订阅指定堆栈，请改在设置中选择（默认为 gVisor）。\n- **Profile 设置了当前内核不支持的 TUN 堆栈时，配置现在会生成失败，错误信息会列出该值与内核支持的值。** 例如在 Clash Premium 下写 `tun.stack: mixed` 或 `mips`，否则内核会拒绝加载整份配置。由于内核加载配置时就会解析这个键，TUN 关闭时也会检查。Nyanpasu 不认识的值仍会原样交给内核。\n- **堆栈选择器只列出当前内核会读取的堆栈**，clash-rs 与 Meow 不读取该键，因此不再显示选择器。如果保存的堆栈不被切换后的内核支持，运行时改用 gVisor 并在日志中记录警告，保存的设置不变。\n- **服务模式现在需要 nyanpasu-service 2.0.2。** 已安装的 2.0.1 服务会在启动时自动升级一次。2.0.2 修复了残留的 pid 记录导致服务与应用每次启动都失败的问题（#6033）。\n\n## 主要变更\n\n- **Mips（Mihomo IP Stack）**：mihomo 新增的用户态 TUN 堆栈，可在 mihomo 与 mihomo-alpha 下选择，并可设置 TCP 拥塞控制算法（CUBIC、Reno、BBR、BBRv3 或内核默认）。切换到其他堆栈再切回时，该设置会保留（#6091）。\n- **启动失败不再导致应用崩溃。** 对话框会说明出错的文件、原因与恢复步骤，并可打开所在目录、备份目录或日志目录。损坏的本地数据与不可用的任务日志会被重建，不再阻止启动。\n- 修复了 Logo 动画边缘、滚动时页面标题与流量迷你图拉伸的显示问题；更新链接与顶部菜单对齐。\n- Windows 安装包随 enableLoopback 附带 Windows App SDK 引导程序。\n\n完整的变更列表见上方英文部分。\n\n</details>\n",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "Clash.Nyanpasu_2.0.1_x64-setup.exe",
+        "size": 98575666,
+        "sha256": "c0614aa0df4749068bf8fc9a9d3fcd3e8632843af454a8b649c47f2b38797a41",
+        "official": "https://github.com/libnyanpasu/clash-nyanpasu/releases/download/v2.0.1/Clash.Nyanpasu_2.0.1_x64-setup.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
   }
 }

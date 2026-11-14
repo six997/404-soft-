@@ -187,7 +187,12 @@ def sync_item(item, prev):
         return sync_winget(item, prev, src)
     if src.get("type") != "github":
         return prev, False
-    rel = gh_json(f"https://api.github.com/repos/{src['repo']}/releases/latest")
+    if src.get("tag_regex"):
+        rels = gh_json(f"https://api.github.com/repos/{src['repo']}/releases?per_page=20")
+        rel = next(r for r in rels if not r.get("draft") and not r.get("prerelease")
+                   and re.search(src["tag_regex"], r["tag_name"]))
+    else:
+        rel = gh_json(f"https://api.github.com/repos/{src['repo']}/releases/latest")
     ver = re.sub(r"^[^0-9]*", "", rel["tag_name"])
     same = prev and prev.get("version") == ver
     want_mirror = MIRROR and item.get("mirror_allowed")

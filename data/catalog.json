@@ -1026,7 +1026,8 @@
           "portable": false
         }
       ]
-    }
+    },
+    "icon": "/static/icons/qq.png"
   },
   {
     "slug": "telegram",
@@ -9032,5 +9033,1192 @@
       ]
     },
     "icon": "/static/icons/doubao-ime.png"
+  },
+  {
+    "slug": "rime-ice",
+    "name": "雾凇拼音",
+    "abbr": "雾",
+    "category": "ime",
+    "tags": [
+      "Rime",
+      "词库",
+      "绿色版"
+    ],
+    "summary": "开箱即用的 Rime 拼音词库与配置方案。",
+    "intro": "雾凇拼音是给 Rime（小狼毫）准备的完整配置：长期维护的简体词库、全拼与多种双拼、Emoji、英文混输和农历日期等扩展。下载后解压到小狼毫用户文件夹并重新部署即可。",
+    "features": [
+      "长期维护的简体词库",
+      "全拼与多种双拼",
+      "中英混输与 Emoji",
+      "需配合小狼毫使用"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://dvel.me/posts/rime-ice/",
+    "source": {
+      "type": "github",
+      "repo": "iDvel/rime-ice",
+      "assets": [
+        {
+          "match": "^full\\.zip$",
+          "label": "完整配置包 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "^cn_dicts\\.zip$",
+          "label": "仅中文词库 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ],
+      "tag_regex": "^\\d{4}\\.\\d"
+    },
+    "icon": "/static/icons/rime-ice.png"
+  },
+  {
+    "slug": "rime-frost",
+    "name": "白霜拼音",
+    "abbr": "霜",
+    "category": "ime",
+    "tags": [
+      "Rime",
+      "词库",
+      "绿色版"
+    ],
+    "summary": "基于雾凇拼音、词频更准的 Rime 配置方案。",
+    "intro": "白霜拼音在雾凇拼音基础上用大规模语料重算词频，候选排序更符合日常用语，同样适用于小狼毫。",
+    "features": [
+      "优化词频排序",
+      "全拼与双拼方案",
+      "兼容雾凇配置",
+      "需配合小狼毫使用"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://github.com/gaboolic/rime-frost",
+    "source": {
+      "type": "github",
+      "repo": "gaboolic/rime-frost",
+      "assets": [
+        {
+          "match": "^rime-frost-schemas\\.zip$",
+          "label": "配置方案 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ],
+      "tag_regex": "^\\d+\\.\\d"
+    }
+  },
+  {
+    "slug": "google-japanese-input",
+    "name": "Google 日语输入法",
+    "abbr": "G日",
+    "category": "ime",
+    "tags": [
+      "日语",
+      "Google"
+    ],
+    "summary": "Google 官方日语输入法。",
+    "intro": "Google 日语输入法基于海量网络语料，转换准确，词库包含大量新词和专有名词，适合需要输入日文的用户。",
+    "features": [
+      "准确的假名汉字转换",
+      "新词与专有名词丰富",
+      "联想输入",
+      "Google 官方出品"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://www.google.co.jp/ime/",
+    "source": {
+      "type": "winget",
+      "id": "Google.JapaneseIME",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows x64 · 官方安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/google-japanese-input.png"
+  },
+  {
+    "slug": "v2rayn",
+    "name": "v2rayN",
+    "abbr": "v2N",
+    "category": "proxy",
+    "tags": [
+      "代理",
+      "Xray"
+    ],
+    "summary": "Windows 上常用的开源代理客户端，支持 Xray / sing-box 内核。",
+    "intro": "v2rayN 是开源的 Windows 代理客户端，支持 VMess、VLESS、Trojan、Shadowsocks、Hysteria2 等协议，订阅管理、路由规则和测速一应俱全，官方 ZIP 解压即用。",
+    "features": [
+      "多协议与多内核",
+      "订阅与分组管理",
+      "路由分流规则",
+      "解压即用"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": false,
+    "homepage": "https://github.com/2dust/v2rayN",
+    "source": {
+      "type": "github",
+      "repo": "2dust/v2rayN",
+      "assets": [
+        {
+          "match": "^v2rayN-windows-64-desktop\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP（含内核）",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "^v2rayN-windows-64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/v2rayn.png"
+  },
+  {
+    "slug": "clash-verge-rev",
+    "name": "Clash Verge Rev",
+    "abbr": "CV",
+    "category": "proxy",
+    "tags": [
+      "代理",
+      "Clash",
+      "mihomo"
+    ],
+    "summary": "基于 mihomo 内核的现代化 Clash 图形客户端。",
+    "intro": "Clash Verge Rev 是 Clash Verge 的社区续作，基于 Tauri 构建，使用 mihomo 内核，支持订阅、规则、TUN 模式和系统代理。",
+    "features": [
+      "mihomo 内核",
+      "TUN 虚拟网卡模式",
+      "订阅与规则管理",
+      "轻量 Tauri 界面"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": false,
+    "homepage": "https://www.clashverge.dev/",
+    "source": {
+      "type": "github",
+      "repo": "clash-verge-rev/clash-verge-rev",
+      "assets": [
+        {
+          "match": "_x64-setup\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/clash-verge-rev.png"
+  },
+  {
+    "slug": "clash-party",
+    "name": "Clash Party",
+    "abbr": "CP",
+    "category": "proxy",
+    "tags": [
+      "代理",
+      "Clash",
+      "mihomo"
+    ],
+    "summary": "原 Mihomo Party，易用的 mihomo 图形客户端。",
+    "intro": "Clash Party（原 Mihomo Party）是开源的 mihomo 内核图形客户端，界面友好，支持订阅、覆写、TUN 和连接管理，官方提供便携 7z。",
+    "features": [
+      "mihomo 内核",
+      "配置覆写",
+      "TUN 模式",
+      "官方便携版"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": false,
+    "homepage": "https://clashparty.org/",
+    "source": {
+      "type": "github",
+      "repo": "mihomo-party-org/clash-party",
+      "assets": [
+        {
+          "match": "^clash-party-windows-[\\d.]+-x64-portable\\.7z$",
+          "label": "Windows x64 · 绿色版 7z",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "^clash-party-windows-[\\d.]+-x64-setup\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/clash-party.png"
+  },
+  {
+    "slug": "flclash",
+    "name": "FlClash",
+    "abbr": "FC",
+    "category": "proxy",
+    "tags": [
+      "代理",
+      "Clash",
+      "Android"
+    ],
+    "summary": "跨平台、无广告的 Clash 多平台客户端。",
+    "intro": "FlClash 基于 Flutter 和 mihomo 内核，Windows 与 Android 界面统一，支持订阅、规则和 TUN 模式，简洁无广告。",
+    "features": [
+      "Windows 与 Android 通用",
+      "mihomo 内核",
+      "Material You 界面",
+      "无广告"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": false,
+    "homepage": "https://github.com/chen08209/FlClash",
+    "source": {
+      "type": "github",
+      "repo": "chen08209/FlClash",
+      "assets": [
+        {
+          "match": "windows-amd64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "windows-amd64-setup\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        },
+        {
+          "match": "android-arm64-v8a\\.apk$",
+          "label": "Android · arm64 APK",
+          "platform": "Android",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/flclash.png"
+  },
+  {
+    "slug": "hiddify",
+    "name": "Hiddify",
+    "abbr": "Hd",
+    "category": "proxy",
+    "tags": [
+      "代理",
+      "sing-box",
+      "Android"
+    ],
+    "summary": "基于 sing-box 的多平台代理客户端。",
+    "intro": "Hiddify 基于 sing-box 内核，支持多种协议与订阅格式，一键连接，适合新手，Windows 有官方便携版。",
+    "features": [
+      "sing-box 内核",
+      "兼容多种订阅",
+      "一键连接",
+      "Windows 与 Android"
+    ],
+    "tips": [],
+    "license": "Hiddify 许可（开源）",
+    "mirror_allowed": false,
+    "homepage": "https://hiddify.com/",
+    "source": {
+      "type": "github",
+      "repo": "hiddify/hiddify-app",
+      "assets": [
+        {
+          "match": "^Hiddify-Windows-Portable-x64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "^Hiddify-Windows-Setup-x64\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        },
+        {
+          "match": "^Hiddify-Android-universal\\.apk$",
+          "label": "Android · 通用 APK",
+          "platform": "Android",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/hiddify.png"
+  },
+  {
+    "slug": "sing-box",
+    "name": "sing-box",
+    "abbr": "SB",
+    "category": "proxy",
+    "tags": [
+      "代理",
+      "内核",
+      "Android"
+    ],
+    "summary": "通用代理平台，含官方图形客户端 SFW / SFA。",
+    "intro": "sing-box 是开源的通用代理平台，也是众多客户端使用的内核，官方提供 Windows 图形客户端 SFW 和 Android 客户端 SFA。",
+    "features": [
+      "通用代理内核",
+      "官方图形客户端",
+      "规则集与 DNS 分流",
+      "命令行版本"
+    ],
+    "tips": [],
+    "license": "GPL-3.0-or-later",
+    "mirror_allowed": false,
+    "homepage": "https://sing-box.sagernet.org/",
+    "source": {
+      "type": "github",
+      "repo": "SagerNet/sing-box",
+      "assets": [
+        {
+          "match": "^SFW-[\\d.]+-x64\\.exe$",
+          "label": "Windows x64 · 图形客户端 SFW",
+          "platform": "Windows",
+          "portable": false
+        },
+        {
+          "match": "^sing-box-[\\d.]+-windows-amd64\\.zip$",
+          "label": "Windows x64 · 命令行 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "^SFA-[\\d.]+-universal\\.apk$",
+          "label": "Android · SFA 通用 APK",
+          "platform": "Android",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/sing-box.svg"
+  },
+  {
+    "slug": "throne",
+    "name": "Throne",
+    "abbr": "Th",
+    "category": "proxy",
+    "tags": [
+      "代理",
+      "sing-box"
+    ],
+    "summary": "原 NekoRay，基于 sing-box 的桌面代理客户端。",
+    "intro": "Throne 是 NekoRay 的后续项目，基于 Qt 与 sing-box 内核，支持多协议、分组测速和路由规则，官方 ZIP 解压即用。",
+    "features": [
+      "sing-box 内核",
+      "分组与测速",
+      "路由规则",
+      "解压即用"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": false,
+    "homepage": "https://github.com/throneproj/Throne",
+    "source": {
+      "type": "github",
+      "repo": "throneproj/Throne",
+      "assets": [
+        {
+          "match": "windows64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "windows-universal-installer\\.exe$",
+          "label": "Windows · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/throne.png"
+  },
+  {
+    "slug": "v2rayng",
+    "name": "v2rayNG",
+    "abbr": "vNG",
+    "category": "proxy",
+    "tags": [
+      "代理",
+      "Xray",
+      "Android"
+    ],
+    "summary": "Android 上常用的开源 Xray 代理客户端。",
+    "intro": "v2rayNG 是 v2rayN 作者开发的 Android 客户端，基于 Xray 内核，支持多协议、订阅和分应用代理。",
+    "features": [
+      "Xray 内核",
+      "多协议支持",
+      "订阅管理",
+      "分应用代理"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": false,
+    "homepage": "https://github.com/2dust/v2rayNG",
+    "source": {
+      "type": "github",
+      "repo": "2dust/v2rayNG",
+      "assets": [
+        {
+          "match": "^v2rayNG_[\\d.]+_universal\\.apk$",
+          "label": "Android · 通用 APK",
+          "platform": "Android",
+          "portable": false
+        },
+        {
+          "match": "^v2rayNG_[\\d.]+_arm64-v8a\\.apk$",
+          "label": "Android · arm64 APK",
+          "platform": "Android",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/v2rayng.png"
+  },
+  {
+    "slug": "nekobox",
+    "name": "NekoBox for Android",
+    "abbr": "NB",
+    "category": "proxy",
+    "tags": [
+      "代理",
+      "sing-box",
+      "Android"
+    ],
+    "summary": "基于 sing-box 的 Android 代理客户端。",
+    "intro": "NekoBox for Android 使用 sing-box 内核，支持多种协议、插件和订阅，界面简洁。",
+    "features": [
+      "sing-box 内核",
+      "多协议与插件",
+      "订阅与分组",
+      "分应用代理"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": false,
+    "homepage": "https://github.com/MatsuriDayo/NekoBoxForAndroid",
+    "source": {
+      "type": "github",
+      "repo": "MatsuriDayo/NekoBoxForAndroid",
+      "assets": [
+        {
+          "match": "arm64-v8a\\.apk$",
+          "label": "Android · arm64 APK",
+          "platform": "Android",
+          "portable": false
+        },
+        {
+          "match": "armeabi-v7a\\.apk$",
+          "label": "Android · armv7 APK",
+          "platform": "Android",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "newpipe",
+    "name": "NewPipe",
+    "abbr": "NP",
+    "category": "android",
+    "tags": [
+      "视频",
+      "YouTube",
+      "Android"
+    ],
+    "summary": "轻量、无广告的开源 YouTube 客户端。",
+    "intro": "NewPipe 无需 Google 服务即可观看和下载 YouTube 视频，支持后台播放、悬浮窗和订阅，不追踪用户。",
+    "features": [
+      "无广告",
+      "后台与悬浮播放",
+      "视频音频下载",
+      "无需 Google 服务"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://newpipe.net/",
+    "source": {
+      "type": "github",
+      "repo": "TeamNewPipe/NewPipe",
+      "assets": [
+        {
+          "match": "\\.apk$",
+          "label": "Android · APK",
+          "platform": "Android",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/newpipe.png"
+  },
+  {
+    "slug": "seal",
+    "name": "Seal",
+    "abbr": "Se",
+    "category": "android",
+    "tags": [
+      "下载",
+      "yt-dlp",
+      "Android"
+    ],
+    "summary": "基于 yt-dlp 的 Android 视频音频下载器。",
+    "intro": "Seal 把 yt-dlp 装进手机，支持上千个网站的视频与音频下载，可选格式、字幕和播放列表。",
+    "features": [
+      "支持上千网站",
+      "格式与画质可选",
+      "字幕与播放列表",
+      "Material You 设计"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://github.com/JunkFood02/Seal",
+    "source": {
+      "type": "github",
+      "repo": "JunkFood02/Seal",
+      "assets": [
+        {
+          "match": "universal-release\\.apk$",
+          "label": "Android · 通用 APK",
+          "platform": "Android",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/seal.png"
+  },
+  {
+    "slug": "termux",
+    "name": "Termux",
+    "abbr": "Tx",
+    "category": "android",
+    "tags": [
+      "终端",
+      "Linux",
+      "Android"
+    ],
+    "summary": "Android 上的 Linux 终端环境。",
+    "intro": "Termux 在 Android 上提供完整的 Linux 终端与包管理器，可安装 Python、Node.js、git、ssh 等工具。",
+    "features": [
+      "完整 Linux 终端",
+      "pkg 包管理",
+      "无需 root",
+      "丰富插件"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://termux.dev/",
+    "source": {
+      "type": "github",
+      "repo": "termux/termux-app",
+      "assets": [
+        {
+          "match": "universal\\.apk$",
+          "label": "Android · 通用 APK",
+          "platform": "Android",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/termux.png"
+  },
+  {
+    "slug": "keepassdx",
+    "name": "KeePassDX",
+    "abbr": "KDX",
+    "category": "android",
+    "tags": [
+      "密码",
+      "KeePass",
+      "Android"
+    ],
+    "summary": "Android 上的开源 KeePass 密码管理器。",
+    "intro": "KeePassDX 读写 KeePass .kdbx 数据库，支持自动填充、生物识别解锁和离线使用，与电脑端 KeePass / KeePassXC 通用。",
+    "features": [
+      "兼容 KeePass 数据库",
+      "自动填充",
+      "指纹解锁",
+      "完全离线"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://www.keepassdx.com/",
+    "source": {
+      "type": "github",
+      "repo": "Kunzisoft/KeePassDX",
+      "assets": [
+        {
+          "match": "-libre\\.apk$",
+          "label": "Android · Libre 版 APK",
+          "platform": "Android",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "material-files",
+    "name": "Material Files",
+    "abbr": "MF",
+    "category": "android",
+    "tags": [
+      "文件管理",
+      "Android"
+    ],
+    "summary": "开源、Material Design 风格的文件管理器。",
+    "intro": "Material Files 是简洁的开源文件管理器，支持压缩包浏览、FTP/SMB/SFTP、root 和主题。",
+    "features": [
+      "Material Design",
+      "压缩包浏览",
+      "SMB / FTP / SFTP",
+      "无广告"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://github.com/zhanghai/MaterialFiles",
+    "source": {
+      "type": "github",
+      "repo": "zhanghai/MaterialFiles",
+      "assets": [
+        {
+          "match": "^app-release-universal\\.apk$",
+          "label": "Android · APK",
+          "platform": "Android",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/material-files.svg"
+  },
+  {
+    "slug": "obtainium",
+    "name": "Obtainium",
+    "abbr": "Ob",
+    "category": "android",
+    "tags": [
+      "应用更新",
+      "Android"
+    ],
+    "summary": "直接从 GitHub 等源头获取和更新 Android 应用。",
+    "intro": "Obtainium 从 GitHub、GitLab、F-Droid 等发布页追踪应用更新，免去应用商店中转。",
+    "features": [
+      "直接从源头更新",
+      "支持多种来源",
+      "更新通知",
+      "开源无追踪"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://obtainium.imranr.dev/",
+    "source": {
+      "type": "github",
+      "repo": "ImranR98/Obtainium",
+      "assets": [
+        {
+          "match": "^app-arm64-v8a-release\\.apk$",
+          "label": "Android · arm64 APK",
+          "platform": "Android",
+          "portable": false
+        },
+        {
+          "match": "^app-release\\.apk$",
+          "label": "Android · 通用 APK",
+          "platform": "Android",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/obtainium.png"
+  },
+  {
+    "slug": "shizuku",
+    "name": "Shizuku",
+    "abbr": "Sz",
+    "category": "android",
+    "tags": [
+      "系统",
+      "ADB",
+      "Android"
+    ],
+    "summary": "让应用无需 root 即可使用系统 API。",
+    "intro": "Shizuku 通过 ADB 或无线调试启动，让支持它的应用获得系统级权限，常用于冻结应用、权限管理等工具。",
+    "features": [
+      "免 root 系统权限",
+      "无线调试启动",
+      "众多应用支持",
+      "开源"
+    ],
+    "tips": [],
+    "license": "Apache-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://shizuku.rikka.app/",
+    "source": {
+      "type": "github",
+      "repo": "RikkaApps/Shizuku",
+      "assets": [
+        {
+          "match": "\\.apk$",
+          "label": "Android · APK",
+          "platform": "Android",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/shizuku.png"
+  },
+  {
+    "slug": "fossify-gallery",
+    "name": "Fossify Gallery",
+    "abbr": "FG",
+    "category": "android",
+    "tags": [
+      "相册",
+      "图片",
+      "Android"
+    ],
+    "summary": "无广告、离线的开源相册。",
+    "intro": "Fossify Gallery 是 Simple Gallery 的开源延续，离线工作，支持图片编辑、隐藏文件夹和多种格式。",
+    "features": [
+      "无广告无联网",
+      "基础图片编辑",
+      "隐藏与回收站",
+      "RAW / SVG 支持"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://www.fossify.org/",
+    "source": {
+      "type": "github",
+      "repo": "FossifyOrg/Gallery",
+      "assets": [
+        {
+          "match": "-foss-release\\.apk$",
+          "label": "Android · APK",
+          "platform": "Android",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/fossify-gallery.png"
+  },
+  {
+    "slug": "ankidroid",
+    "name": "AnkiDroid",
+    "abbr": "AD",
+    "category": "android",
+    "tags": [
+      "学习",
+      "记忆卡片",
+      "Android"
+    ],
+    "summary": "Anki 记忆卡片的 Android 客户端。",
+    "intro": "AnkiDroid 是 Anki 的官方配套 Android 应用，可离线复习卡组，并与 AnkiWeb 及电脑端 Anki 同步。",
+    "features": [
+      "间隔重复复习",
+      "与 AnkiWeb 同步",
+      "离线使用",
+      "共享卡组"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://ankidroid.org/",
+    "source": {
+      "type": "github",
+      "repo": "ankidroid/Anki-Android",
+      "assets": [
+        {
+          "match": "^AnkiDroid-[\\d.]+-full-universal\\.apk$",
+          "label": "Android · 通用 APK",
+          "platform": "Android",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/ankidroid.svg"
+  },
+  {
+    "slug": "bitwarden-android",
+    "name": "Bitwarden（Android）",
+    "abbr": "BW",
+    "category": "android",
+    "tags": [
+      "密码",
+      "Android"
+    ],
+    "summary": "开源密码管理器 Bitwarden 的 Android 版。",
+    "intro": "Bitwarden 在 Android 上提供自动填充、生物识别解锁和跨设备同步，与电脑端和浏览器扩展通用。",
+    "features": [
+      "自动填充",
+      "跨设备同步",
+      "生物识别解锁",
+      "开源审计"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://bitwarden.com/",
+    "source": {
+      "type": "github",
+      "repo": "bitwarden/android",
+      "assets": [
+        {
+          "match": "^com\\.x8bit\\.bitwarden\\.apk$",
+          "label": "Android · APK",
+          "platform": "Android",
+          "portable": false
+        }
+      ],
+      "tag_regex": "-bwpm$"
+    },
+    "icon": "/static/icons/bitwarden-android.png"
+  },
+  {
+    "slug": "exclave",
+    "name": "Exclave",
+    "abbr": "Ex",
+    "category": "proxy",
+    "tags": [
+      "代理",
+      "Xray",
+      "Android"
+    ],
+    "summary": "支持多内核的 Android 开源代理客户端。",
+    "intro": "Exclave 源自 SagerNet，集成 v2ray / Xray / sing-box 等多种协议实现，功能全面，适合进阶用户。",
+    "features": [
+      "多协议与多内核",
+      "路由与 DNS 分流",
+      "订阅与分组",
+      "分应用代理"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": false,
+    "homepage": "https://github.com/dyhkwong/Exclave",
+    "source": {
+      "type": "github",
+      "repo": "dyhkwong/Exclave",
+      "assets": [
+        {
+          "match": "^Exclave-[\\d.]+-arm64-v8a\\.apk$",
+          "label": "Android · arm64 APK",
+          "platform": "Android",
+          "portable": false
+        },
+        {
+          "match": "^Exclave-[\\d.]+-armeabi-v7a\\.apk$",
+          "label": "Android · armv7 APK",
+          "platform": "Android",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/exclave.png"
+  },
+  {
+    "slug": "clash-meta-android",
+    "name": "Clash Meta for Android",
+    "abbr": "CMFA",
+    "category": "proxy",
+    "tags": [
+      "代理",
+      "Clash",
+      "mihomo",
+      "Android"
+    ],
+    "summary": "MetaCubeX 官方的 mihomo Android 客户端。",
+    "intro": "Clash Meta for Android（CMFA）由 mihomo 内核团队维护，兼容 Clash 配置与订阅，界面简洁稳定。",
+    "features": [
+      "mihomo 内核",
+      "兼容 Clash 配置",
+      "规则与策略组",
+      "分应用代理"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": false,
+    "homepage": "https://github.com/MetaCubeX/ClashMetaForAndroid",
+    "source": {
+      "type": "github",
+      "repo": "MetaCubeX/ClashMetaForAndroid",
+      "assets": [
+        {
+          "match": "-meta-universal-release\\.apk$",
+          "label": "Android · 通用 APK",
+          "platform": "Android",
+          "portable": false
+        },
+        {
+          "match": "-meta-arm64-v8a-release\\.apk$",
+          "label": "Android · arm64 APK",
+          "platform": "Android",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "karing",
+    "name": "Karing",
+    "abbr": "Kr",
+    "category": "proxy",
+    "tags": [
+      "代理",
+      "sing-box",
+      "Android"
+    ],
+    "summary": "兼容 Clash / V2Ray / sing-box 订阅的多平台客户端。",
+    "intro": "Karing 基于 sing-box 内核，可直接导入 Clash、V2Ray、sing-box 等多种订阅，Windows 与 Android 通用，带便携版。",
+    "features": [
+      "兼容多种订阅格式",
+      "sing-box 内核",
+      "规则分流",
+      "Windows 与 Android"
+    ],
+    "tips": [],
+    "license": "Karing 许可（开源）",
+    "mirror_allowed": false,
+    "homepage": "https://karing.app/",
+    "source": {
+      "type": "github",
+      "repo": "KaringX/karing",
+      "assets": [
+        {
+          "match": "_windows_x64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "_windows_x64\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        },
+        {
+          "match": "_android_arm64-v8a\\.apk$",
+          "label": "Android · arm64 APK",
+          "platform": "Android",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/karing.png"
+  },
+  {
+    "slug": "clash-mi",
+    "name": "Clash Mi",
+    "abbr": "CM",
+    "category": "proxy",
+    "tags": [
+      "代理",
+      "Clash",
+      "mihomo",
+      "Android"
+    ],
+    "summary": "Karing 团队出品的 mihomo 多平台客户端。",
+    "intro": "Clash Mi 基于 mihomo 内核，界面简洁，兼容 Clash 配置，Windows 与 Android 均有官方构建。",
+    "features": [
+      "mihomo 内核",
+      "兼容 Clash 配置",
+      "Windows 与 Android",
+      "便携版 ZIP"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": false,
+    "homepage": "https://github.com/KaringX/clashmi",
+    "source": {
+      "type": "github",
+      "repo": "KaringX/clashmi",
+      "assets": [
+        {
+          "match": "_windows_x64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "_android_arm64-v8a\\.apk$",
+          "label": "Android · arm64 APK",
+          "platform": "Android",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/clash-mi.png"
+  },
+  {
+    "slug": "gui-for-singbox",
+    "name": "GUI.for.SingBox",
+    "abbr": "GSB",
+    "category": "proxy",
+    "tags": [
+      "代理",
+      "sing-box"
+    ],
+    "summary": "轻量的 sing-box 图形界面。",
+    "intro": "GUI.for.SingBox 用 Wails 构建，为 sing-box 内核提供配置编辑、订阅、规则集和插件系统，解压即用。",
+    "features": [
+      "sing-box 图形界面",
+      "可视化配置",
+      "插件与计划任务",
+      "解压即用"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": false,
+    "homepage": "https://github.com/GUI-for-Cores/GUI.for.SingBox",
+    "source": {
+      "type": "github",
+      "repo": "GUI-for-Cores/GUI.for.SingBox",
+      "assets": [
+        {
+          "match": "windows-amd64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/gui-for-singbox.png"
+  },
+  {
+    "slug": "gui-for-clash",
+    "name": "GUI.for.Clash",
+    "abbr": "GC",
+    "category": "proxy",
+    "tags": [
+      "代理",
+      "Clash",
+      "mihomo"
+    ],
+    "summary": "轻量的 mihomo / Clash 图形界面。",
+    "intro": "GUI.for.Clash 与 GUI.for.SingBox 同门，为 mihomo 内核提供可视化配置、订阅和插件，解压即用。",
+    "features": [
+      "mihomo 图形界面",
+      "可视化配置",
+      "插件与计划任务",
+      "解压即用"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": false,
+    "homepage": "https://github.com/GUI-for-Cores/GUI.for.Clash",
+    "source": {
+      "type": "github",
+      "repo": "GUI-for-Cores/GUI.for.Clash",
+      "assets": [
+        {
+          "match": "windows-amd64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/gui-for-clash.png"
+  },
+  {
+    "slug": "sparkle",
+    "name": "Sparkle",
+    "abbr": "Sp",
+    "category": "proxy",
+    "tags": [
+      "代理",
+      "mihomo"
+    ],
+    "summary": "Mihomo Party 原作者维护的 mihomo 客户端。",
+    "intro": "Sparkle 由 Mihomo Party 原作者继续开发，基于 mihomo 内核，支持订阅、覆写、TUN 和连接管理，提供便携版。",
+    "features": [
+      "mihomo 内核",
+      "配置覆写",
+      "TUN 模式",
+      "官方便携版"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": false,
+    "homepage": "https://github.com/xishang0128/sparkle",
+    "source": {
+      "type": "github",
+      "repo": "xishang0128/sparkle",
+      "assets": [
+        {
+          "match": "^sparkle-windows-[\\d.]+-x64-portable\\.7z$",
+          "label": "Windows x64 · 绿色版 7z",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "^sparkle-windows-[\\d.]+-x64-setup\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/sparkle.png"
+  },
+  {
+    "slug": "clash-nyanpasu",
+    "name": "Clash Nyanpasu",
+    "abbr": "CN",
+    "category": "proxy",
+    "tags": [
+      "代理",
+      "Clash",
+      "mihomo"
+    ],
+    "summary": "界面精致的 Clash / mihomo 图形客户端。",
+    "intro": "Clash Nyanpasu 基于 Tauri，支持 mihomo 等内核，提供订阅管理、规则、TUN 模式和 Material 风格界面。",
+    "features": [
+      "多内核支持",
+      "TUN 模式",
+      "订阅与规则",
+      "Material 界面"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": false,
+    "homepage": "https://nyanpasu.elaina.moe/",
+    "source": {
+      "type": "github",
+      "repo": "libnyanpasu/clash-nyanpasu",
+      "assets": [
+        {
+          "match": "_x64-setup\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
   }
 ]
