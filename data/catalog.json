@@ -10631,5 +10631,352 @@
       "iOS"
     ],
     "icon": "/static/icons/ios-telegram.png"
+  },
+  {
+    "slug": "shadowrocket",
+    "name": "Shadowrocket 小火箭",
+    "abbr": "SR",
+    "category": "ios",
+    "tags": [
+      "代理",
+      "规则",
+      "iOS",
+      "付费"
+    ],
+    "summary": "iOS 上最常用的规则代理工具，俗称“小火箭”。",
+    "intro": "Shadowrocket 支持 Shadowsocks、VMess、VLESS、Trojan、Hysteria 等协议，规则分流、脚本和 MitM，一次买断。",
+    "features": [
+      "多协议支持",
+      "规则分流",
+      "脚本与 MitM",
+      "一次买断"
+    ],
+    "tips": [
+      "价格为美区 App Store 标价，各地区以商店显示为准。"
+    ],
+    "license": "付费（App Store 买断）",
+    "mirror_allowed": false,
+    "homepage": "https://apps.apple.com/app/id932747118",
+    "source": {
+      "type": "appstore",
+      "app_id": 932747118
+    },
+    "download_page": "https://apps.apple.com/app/id932747118",
+    "platforms": [
+      "iOS"
+    ],
+    "price": "$2.99",
+    "icon": "/static/icons/shadowrocket.png"
+  },
+  {
+    "slug": "loon",
+    "name": "Loon",
+    "abbr": "Ln",
+    "category": "ios",
+    "tags": [
+      "代理",
+      "规则",
+      "脚本",
+      "iOS",
+      "付费"
+    ],
+    "summary": "功能强大的 iOS 规则代理与脚本工具。",
+    "intro": "Loon 支持多协议、策略组、插件、脚本和重写，社区插件丰富，一次买断。",
+    "features": [
+      "策略组与规则",
+      "插件生态",
+      "脚本与重写",
+      "一次买断"
+    ],
+    "tips": [
+      "价格为美区 App Store 标价，各地区以商店显示为准。"
+    ],
+    "license": "付费（App Store 买断）",
+    "mirror_allowed": false,
+    "homepage": "https://nsloon.app/",
+    "source": {
+      "type": "appstore",
+      "app_id": 1373567447
+    },
+    "download_page": "https://apps.apple.com/app/id1373567447",
+    "platforms": [
+      "iOS"
+    ],
+    "price": "$7.99",
+    "icon": "/static/icons/loon.png"
+  },
+  {
+    "slug": "loon-lite",
+    "name": "Loon Lite",
+    "abbr": "LL",
+    "category": "ios",
+    "tags": [
+      "代理",
+      "iOS",
+      "付费"
+    ],
+    "summary": "Loon 的精简版，价格更低。",
+    "intro": "Loon Lite 保留 Loon 的核心代理和规则功能，去掉了脚本等高级功能，适合只需要基础分流的用户。",
+    "features": [
+      "多协议支持",
+      "规则分流",
+      "简洁轻量",
+      "低价买断"
+    ],
+    "tips": [
+      "价格为美区 App Store 标价，各地区以商店显示为准。"
+    ],
+    "license": "付费（App Store 买断）",
+    "mirror_allowed": false,
+    "homepage": "https://nsloon.app/",
+    "source": {
+      "type": "appstore",
+      "app_id": 6444029612
+    },
+    "download_page": "https://apps.apple.com/app/id6444029612",
+    "platforms": [
+      "iOS"
+    ],
+    "price": "$0.99",
+    "icon": "/static/icons/loon-lite.png"
+  },
+  {
+    "slug": "quantumult-x",
+    "name": "Quantumult X",
+    "abbr": "QX",
+    "category": "ios",
+    "tags": [
+      "代理",
+      "规则",
+      "脚本",
+      "iOS",
+      "付费"
+    ],
+    "summary": "老牌 iOS 规则代理与网络调试工具。",
+    "intro": "Quantumult X 支持规则分流、重写、脚本和 MitM，常用于去广告和自动化脚本，一次买断。",
+    "features": [
+      "规则分流",
+      "重写与 MitM",
+      "JavaScript 脚本",
+      "一次买断"
+    ],
+    "tips": [
+      "价格为美区 App Store 标价，各地区以商店显示为准。"
+    ],
+    "license": "付费（App Store 买断）",
+    "mirror_allowed": false,
+    "homepage": "https://apps.apple.com/app/id1443988620",
+    "source": {
+      "type": "appstore",
+      "app_id": 1443988620
+    },
+    "download_page": "https://apps.apple.com/app/id1443988620",
+    "platforms": [
+      "iOS"
+    ],
+    "price": "$9.99",
+    "icon": "/static/icons/quantumult-x.png"
+  },
+  {
+    "slug": "stash",
+    "name": "Stash",
+    "abbr": "Sh",
+    "category": "ios",
+    "tags": [
+      "代理",
+      "Clash",
+      "iOS",
+      "付费"
+    ],
+    "summary": "兼容 Clash 配置的 iOS 规则代理工具。",
+    "intro": "Stash 兼容 Clash 配置文件与订阅，支持规则集、覆写、MitM 和脚本，一次买断。",
+    "features": [
+      "兼容 Clash 配置",
+      "规则集与覆写",
+      "MitM 与脚本",
+      "一次买断"
+    ],
+    "tips": [
+      "价格为美区 App Store 标价，各地区以商店显示为准。"
+    ],
+    "license": "付费（App Store 买断）",
+    "mirror_allowed": false,
+    "homepage": "https://stash.ws/",
+    "source": {
+      "type": "appstore",
+      "app_id": 1596063349
+    },
+    "download_page": "https://apps.apple.com/app/id1596063349",
+    "platforms": [
+      "iOS"
+    ],
+    "price": "$5.99",
+    "icon": "/static/icons/stash.png"
+  },
+  {
+    "slug": "surge",
+    "name": "Surge 5",
+    "abbr": "Sg",
+    "category": "ios",
+    "tags": [
+      "代理",
+      "网络调试",
+      "iOS",
+      "付费"
+    ],
+    "summary": "专业级网络调试与规则代理工具。",
+    "intro": "Surge 是面向进阶用户的网络工具，提供规则代理、增强模式、HTTP 抓包和模块；免费下载，核心功能需购买授权。",
+    "features": [
+      "规则代理",
+      "HTTP 抓包与调试",
+      "模块系统",
+      "需内购授权"
+    ],
+    "tips": [],
+    "license": "免费下载 + 内购",
+    "mirror_allowed": false,
+    "homepage": "https://nssurge.com/",
+    "source": {
+      "type": "appstore",
+      "app_id": 1442620678
+    },
+    "download_page": "https://apps.apple.com/app/id1442620678",
+    "platforms": [
+      "iOS"
+    ],
+    "price": "iap",
+    "icon": "/static/icons/surge.png"
+  },
+  {
+    "slug": "egern",
+    "name": "Egern",
+    "abbr": "Eg",
+    "category": "ios",
+    "tags": [
+      "代理",
+      "规则",
+      "iOS",
+      "付费"
+    ],
+    "summary": "新一代 iOS 规则代理工具。",
+    "intro": "Egern 支持多协议、规则、模块和脚本，界面现代，免费下载，高级功能需内购。",
+    "features": [
+      "多协议支持",
+      "规则与模块",
+      "脚本",
+      "高级功能内购"
+    ],
+    "tips": [],
+    "license": "免费下载 + 内购",
+    "mirror_allowed": false,
+    "homepage": "https://egernapp.com/",
+    "source": {
+      "type": "appstore",
+      "app_id": 1616105820
+    },
+    "download_page": "https://apps.apple.com/app/id1616105820",
+    "platforms": [
+      "iOS"
+    ],
+    "price": "iap",
+    "icon": "/static/icons/egern.png"
+  },
+  {
+    "slug": "pharos-pro",
+    "name": "Pharos Pro",
+    "abbr": "Ph",
+    "category": "ios",
+    "tags": [
+      "代理",
+      "iOS",
+      "付费"
+    ],
+    "summary": "简洁的 iOS 代理客户端。",
+    "intro": "Pharos Pro 支持常见代理协议和订阅导入，界面简单，一次买断。",
+    "features": [
+      "多协议支持",
+      "订阅导入",
+      "简洁界面",
+      "一次买断"
+    ],
+    "tips": [
+      "价格为美区 App Store 标价，各地区以商店显示为准。"
+    ],
+    "license": "付费（App Store 买断）",
+    "mirror_allowed": false,
+    "homepage": "https://apps.apple.com/app/id1456610173",
+    "source": {
+      "type": "appstore",
+      "app_id": 1456610173
+    },
+    "download_page": "https://apps.apple.com/app/id1456610173",
+    "platforms": [
+      "iOS"
+    ],
+    "price": "$2.99",
+    "icon": "/static/icons/pharos-pro.png"
+  },
+  {
+    "slug": "ios-happ",
+    "name": "Happ（iOS）",
+    "abbr": "Hp",
+    "category": "ios",
+    "tags": [
+      "代理",
+      "Xray",
+      "iOS"
+    ],
+    "summary": "基于 Xray 的免费 iOS 代理客户端。",
+    "intro": "Happ 支持 VLESS、VMess、Trojan 等协议和订阅导入，免费使用。",
+    "features": [
+      "Xray 内核",
+      "订阅导入",
+      "多协议",
+      "免费"
+    ],
+    "tips": [],
+    "license": "免费（App Store）",
+    "mirror_allowed": false,
+    "homepage": "https://www.happ.su/",
+    "source": {
+      "type": "appstore",
+      "app_id": 6504287215
+    },
+    "download_page": "https://apps.apple.com/app/id6504287215",
+    "platforms": [
+      "iOS"
+    ],
+    "icon": "/static/icons/ios-happ.png"
+  },
+  {
+    "slug": "ios-vproxy",
+    "name": "VX Proxy（Vproxy）",
+    "abbr": "VX",
+    "category": "ios",
+    "tags": [
+      "代理",
+      "iOS"
+    ],
+    "summary": "Vproxy 的 iOS 客户端。",
+    "intro": "Vproxy 是跨平台代理客户端，iOS 版在 App Store 名为 VX Proxy Client，免费使用。",
+    "features": [
+      "多协议",
+      "订阅导入",
+      "跨平台",
+      "免费"
+    ],
+    "tips": [],
+    "license": "免费（App Store）",
+    "mirror_allowed": false,
+    "homepage": "https://github.com/5vnetwork/vproxy",
+    "source": {
+      "type": "appstore",
+      "app_id": 6744701950
+    },
+    "download_page": "https://apps.apple.com/app/id6744701950",
+    "platforms": [
+      "iOS"
+    ],
+    "icon": "/static/icons/ios-vproxy.png"
   }
 ]

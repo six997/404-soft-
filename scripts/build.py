@@ -133,10 +133,18 @@ def layout(title, body, desc=SLOGAN, active=""):
 </html>"""
 
 
+def paid_badge(item):
+    pr = item.get("price")
+    if not pr:
+        return ""
+    return f'<span class="plat paid">{"内购" if pr == "iap" else "付费 " + e(pr)}</span>'
+
+
 def card(item, rel):
     plats = "".join(f'<span class="plat">{p}</span>' for p in item["platforms"])
     if item.get("green"):
         plats = '<span class="plat green">绿色版</span>' + plats
+    plats = paid_badge(item) + plats
     return f"""<a class="soft-card" href="{url('/software/' + item['slug'] + '/')}" data-platforms="{' '.join(item['platforms'])}{' 绿色版' if item.get('green') else ''}" data-name="{e((item['name'] + ' ' + ' '.join(item.get('tags', []))).lower())}">
   {icon(item)}
   <div class="soft-main">
@@ -233,7 +241,7 @@ def page_category(key, name, items, releases, cats):
 
 def page_detail(item, rel, items, releases, cats):
     cat = cats.get(item["category"], item["category"])
-    plats = ('<span class="plat green">绿色版</span>' if item.get("green") else "") + "".join(f'<span class="plat">{p}</span>' for p in item["platforms"])
+    plats = paid_badge(item) + ('<span class="plat green">绿色版</span>' if item.get("green") else "") + "".join(f'<span class="plat">{p}</span>' for p in item["platforms"])
     intro = "".join(f"<p>{e(p)}</p>" for p in item.get("intro", "").split("\n\n") if p.strip())
     feats = "".join(f"<li>{e(f)}</li>" for f in item.get("features", []))
     tips = "".join(f"<li>{e(t)}</li>" for t in item.get("tips", []))
