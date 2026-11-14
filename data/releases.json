@@ -4098,5 +4098,1320 @@
       }
     ],
     "mirrored": false
+  },
+  "dism-plus-plus": {
+    "version": "10.1.1002.2",
+    "released": "2023-03-26",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/Chuyu-Team/Dism-Multi-language/releases/tag/v10.1.1002.2",
+    "changelog": "## 更新日志\r\n1. 解决清理规则误杀wegane账号问题（感谢 Tsubasa）\r\n2. 添加新清理规则“NuGet包缓存”\r\n\r\n> 重要提示：此更新仅仅是在Dism++ 10.1.1002.1的基础上解决了清理规则的一些问题！！！不要太惊喜。\r\n> 由于一直在沉迷与UI库开发，Dism++暂时不会拥有重量级更新。相关新功能以及Bug修复未来计划解决。\r\n\r\n## 后记\r\n* 由于不可抗力因素 Dism++ E 群也被封，但是Dism++ B 群任然可用，群号为 469732645\r\n* 如果不希望在 QQ 群内进行讨论，也可以加入 Telegram 频道了解相关信息，链接为 https://t.me/dismplus",
+    "downloads": [
+      {
+        "label": "Windows · 绿色版 ZIP",
+        "platform": "Windows",
+        "portable": true,
+        "file": "Dism++10.1.1002.1B.zip",
+        "size": 3767974,
+        "sha256": "",
+        "official": "https://github.com/Chuyu-Team/Dism-Multi-language/releases/download/v10.1.1002.2/Dism%2B%2B10.1.1002.1B.zip",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "system-informer": {
+    "version": "4.0.26241.138",
+    "released": "2026-08-29",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/winsiderss/systeminformer/releases/tag/v4.0.26241.138",
+    "changelog": "# System Informer 4.0\r\n\r\nThe first 4.0 release: a new kernel/user transport, a Process Monitor, Hybrid Analysis integration, a JSON settings store, a rewritten installer, and a year of fixes across the app, driver, plugins, and phnt headers.\r\n\r\n## Highlights\r\n\r\n- Process Monitor (Tools menu): a driver-backed live log of process, thread, image, registry, file, handle and silo events with filtering, access-mask decoding, and configurable look-back.\r\n- Hybrid Analysis integration (OnlineChecks): System Informer can now automatically check running processes and loaded images against Hybrid Analysis, showing verdicts directly in the process and module lists via a new Hybrid Analysis column. Unknown files can optionally be submitted for analysis. Results are cached locally so repeated lookups are free, and scanning is opt-in with per-service API keys, path exclusions, and rate handling built in.\r\n- Ring-buffer informer transport in the kernel driver: large shared-memory ring instead of per-message port round-trips, with rate limiting and per-client statistics; informer callbacks run at APC/DPC level where possible.\r\n- New installer: modern wizard with dark mode, DPI scaling, uninstaller, shortcut page, and atomic staged extraction with rollback — failed updates no longer leave a half-written directory.\r\n- Updater: toast-notification flow with progress and actions; BITS, Delivery Optimization and Microsoft Store download back-ends.\r\n- Low-latency mode (experimental, Windows 11): high-resolution provider timers.\r\n- Per-monitor DPI and dark theme work throughout the app, plugins, and property sheets, including Windows 11 borders and much less resize flicker.\r\n\r\n## Application\r\n\r\n### New\r\n- Users tab (logged-on sessions); process environment editor with multi-entry split editing; WMI tab gains MI support.\r\n- Columns: Short user name, service Username, thread RPC usage, thread kernel stack, handle reference count/size, extended GDI/handle details, ALPC port state; GPU/NPU committed memory.\r\n- Process tree: independent root/child sort options, Collapse/Expand All, aggregate-aware sorting; Ctrl-drag parent fix.\r\n- Threads: Freeze/Thaw, suspended/wait-type highlighting; Modules: native/mapped highlighting and CLR metadata mapping.\r\n- Memory strings search: parallel/bulk scanning, UTF-8, progress, sortable results.\r\n- Services: multi-select start/pause with progress and retry; Run As: per-launch privilege selection and AppContainer launch.\r\n- Handle protect/inherit changes without the driver; COM permission dialogs; desktop heap detection; UDP firewall-exempt port highlighting.\r\n- System Information: reorderable sections, horizontal scrolling, per-CPU speed; overhauled tray mini-info window; energy statistics.\r\n- Options: consolidated Highlighting page, per-tab layout persistence, advanced setting editor; settings.schema.json shipped for editors.\r\n- Hold Shift at startup to launch the original Task Manager when System Informer is the replacement.\r\n\r\n### Fixed\r\n- I/O delta columns sorting by cumulative values; page/IO priority in Threads tab; protection column sort; username column not updating.\r\n- Process affinity regressions (single and multi processor groups); main window stealing foreground at startup; previous-instance restore and handle leak.\r\n- Hangs opening the security editor and AFD socket properties; crashes on CPUs without rdtscp, in snapshot handling, on \"Current Power Scheme\", and with WSL info when no distro is installed.\r\n- Settings not saving on network shares; User Notes not reloaded on restart; Windows 7 import resolution.\r\n- Numerous memory and handle leaks, out-of-bounds reads (CPU info, syscall list, AVX search), and dark-theme painting bugs.\r\n\r\n## Kernel driver (KSystemInformer)\r\n\r\n- Silo (container) informer; file informer now reports copy operations, access masks and image sizes; thread kernel-stack query; hash-result caching; dedicated system process for driver threads.\r\n- Object protection reworked with broader handle-access stripping and on-demand protection; CID table population optimized; portable mode always unloads the driver on exit.\r\n- Hardening: OBJ_DONT_REPARSE on all internal opens; message/dynamic-data validation and size math hardened; share-check/paging-file open options require MAXIMUM state; \"securely created\" state requires WinTcb/WinSystem creator; randomized minifilter altitude when load fails; rundown protection for hash/verify.\r\n- Many correctness fixes: native-load race, ring-buffer signaling, informer state leak, file-op buffer/MDL handling, EPROCESS/VPB/pool-tag issues, image-mapping leak, registry post-op strings, thread handle guarantees.\r\n\r\n## Security hardening (user mode)\r\n\r\n- Updater: the downloaded installer is now re-verified from disk and held with a deny-write handle until launched, failing closed otherwise.\r\n- phsvc: the elevated helper now pins the client image to Systchecks integrity before accepting connections.\r\n- Overflow-checked size math in ACL/security-descriptor, heap and config parsing; DbgHelpVerifyMicrosoftChain setting to verify the dbghelp/symsrv signing chain; remote environment address validation.\r\n\r\n## Hybrid Analysis & file reputation (OnlineChecks)\r\n\r\n- Automatic reputation scanning of processes and modules with Hybrid Analysis; verdicts surface in a new Hybrid Analysis column and in the file properties.\r\n- Optional automatic submission of unknown files to Hybrid Analysis for sandbox analysis.\r\n- Opt-in setup flow with a Hybrid Analysis partner prompt; perd path exclusions so sensitive directories are never hashed orsubmitted; configurable startup delay.\r\n- Batched hashing and requests with rate-limit handling, and a portable SQLite scan cache shared safely across multiple System Informer processes.\r\n\r\n## Plugins\r\n\r\n- ExtendedTools: ACPI tables, TPM boot log (WBCL), Power Grid/ and Startup Tasks dialogs; per-adapter/per-node GPU columns and GPU memory mini-info; disk rate columns; better firewall monitor.\r\n- WindowExplorer: ",
+    "downloads": [
+      {
+        "label": "Windows · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "systeminformer-4.0.26241.138-release-setup.exe",
+        "size": 30354960,
+        "sha256": "ceb46bc42cd9993a3a8e9e7002d1f1715e3d2a077d5226d72612e2b8578e51eb",
+        "official": "https://github.com/winsiderss/systeminformer/releases/download/v4.0.26241.138/systeminformer-4.0.26241.138-release-setup.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "sandboxie-plus": {
+    "version": "1.18.8",
+    "released": "2026-10-17",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/sandboxie-plus/Sandboxie/releases/tag/v1.18.8",
+    "changelog": "![0 5 5](https://user-images.githubusercontent.com/3890945/105014988-575cb680-5a41-11eb-90d5-d942d28184b2.png)\r\n\r\n### Release Notes\r\n\r\nSandboxie Plus 1.18.8 / Classic 5.73.8 brings important compatibility improvements for Firefox and other sandboxed browsers, with a particular focus on fixing video playback issues.\r\nVideo playback now works correctly in sandboxed Firefox on websites such as Disney, Amazon Prime, Netflix, TVNZ and ESPN that rely on mediaCapabilities.decodingInfo() to check media support before starting playback. This resolves an issue that could leave videos unable to start on affected sites.\r\nThe release also improves AppContainer handling used by browsers and other applications to isolate their child processes. Fixes address missing sandbox permissions and overly restrictive substitute tokens that could prevent these processes from starting or accessing required system resources. Microsoft Edge can again use the corrected substitute token without enabling UnRestrictAppContainerToken by default.\r\nA security fix addresses an out-of-bounds read in the GUI proxy’s MapWindowPoints handler that could expose service heap data to sandboxed callers. The Import Boxes workflow has also been corrected, allowing users to choose where imported sandboxes are created.\r\nFor existing sandboxes, the new fixboxdacls command in KmdUtil.exe adds missing AppContainer access permissions. Advanced configuration options provide additional control: KeepBroadGroupsInAppContainerToken=n restores the previous all-deny-only substitute token behavior, NeutralizeLowBoxToken=n allows direct NtCreateLowBoxToken calls through, and FakeAppContainerToken=n now allows sandboxed programs to create real AppContainer child processes.\r\n\r\n\r\nFor a full list of changes please review the [change log](https://github.com/sandboxie-plus/Sandboxie/blob/master/CHANGELOG.md#1188--5738---2026-10-17).\r\n\r\n\r\n#### You can support the project through donations, any help will be greatly appreciated.\r\n\r\n[<img src=\"https://www.paypalobjects.com/en_US/AT/i/btn/btn_donateCC_LG.gif\">](https://xanasoft.com/go.php?to=donate)\r\n\r\n#### If you have issues with an update installation, just uninstall the previous version keeping the sandboxie.ini and reinstall the new build.\r\n",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "Sandboxie-Plus-x64-v1.18.8.exe",
+        "size": 24930680,
+        "sha256": "f27078ff74a07906fd51476079e1a7a8f5e20c8bb75a9d2ae86169d47179ae76",
+        "official": "https://github.com/sandboxie-plus/Sandboxie/releases/download/v1.18.8/Sandboxie-Plus-x64-v1.18.8.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "explorerpatcher": {
+    "version": "26100.9711.71.1",
+    "released": "2026-10-29",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/valinet/ExplorerPatcher/releases/tag/26100.9711.71.1",
+    "changelog": "> [!CAUTION]\r\n> This GitHub repository (valinet/ExplorerPatcher) is the only official distribution channel of ExplorerPatcher. Do not download \"ExplorerPatcher\" from any other places than this releases page, as they may contain malware that can compromise your data.\r\n\r\n> [!CAUTION]\r\n> * Please verify that Smart App Control is turned off before installing this software. Otherwise there is a risk where explorer.exe would not start up on new EP versions.\r\n> * Do not install this software on machines with SentinelOne installed. We have received reports that SentinelOne can hold EP's files hostage, preventing uninstallation.\r\n\r\n> [!TIP]\r\n> Windows Defender no longer flags ExplorerPatcher. It is no longer needed to configure Defender exclusions. However, if you use 3rd party security software, you might need to add these folders into its exclusions:\r\n> <details>\r\n>\r\n> Please include the following files and folders in your antivirus' exclusion list to prevent issues due to antivirus detections:\r\n> * `C:\\Program Files\\ExplorerPatcher`\r\n> * `%APPDATA%\\ExplorerPatcher`\r\n> * `C:\\Windows\\dxgi.dll`\r\n>   ⚠️ **IMPORTANT: `explorer.exe` will not start if this file exists but is blocked from being loaded.**\r\n> * `C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy`\r\n> * `C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy`\r\n> </details>\r\n\r\nTested on OS builds 22621.4317 x64, 22631.7652 x64, 26100.8037 ARM64, 26300.9711 x64, 26340.9767 x64, 26100.33650 x64, 28000.3231 x64, 28120.3302 x64, and 29695.1001 x64.\r\n\r\n##### 1\r\n\r\n* ep_taskbar now detects the `ITrayUI` binary interface compatibility before being activated, and gracefully reverts back to stock taskbar when it is not compatible. (b7377e5)\r\n* Fixed 10 (EP) taskbar crashlooping on 29634+ x64/ARM64. (#5128)\r\n* Fixed 10 (EP) taskbar crashing when entering fullscreen on 26220.9343+ and 26xxx.9550+ x64/ARM64. (#5191)\r\n* Fixed disabling Windows 11 Explorer context menus on builds with customizable menus enabled (ID 60813048). (f646262)\r\n  * **Known issue:** Due to the method change, the Explorer left pane context menu does not turn into the legacy one on 22000, 226xx builds before 226xx.4974, and 26xxx builds before 26xxx.3323 (x64/ARM64).\r\n* Fixed Google weather script runtime failures. Thanks @davids5! (#5198) (7283621)\r\n* Pattern scan keep-ups: (9435cf9, 9045e87)\r\n  * Fixed Windows 10 taskbar jump list positioning fix on 26100.9343+, 28000.3032+, and 29683+ x64. (#5205)\r\n  * Fixed Windows 10 Alt+Tab on 26100.9606+ x64 and 28000.2630+/29634+ ARM64.\r\n  * Fixed Windows 10 taskbar Win+X menu command execution on 28000.2630+/29634+ ARM64.\r\n  * Fixed classic Microsoft IME context menus on 28000.2630+/29634+ ARM64.\r\n  * Fixed Windows 10 Start menu open/close animations on 28000.3172+ x64 and 28000.2630+/29634+ ARM64.\r\n  * Fixed Windows 10 Start menu startup crashes on 28000.2630+ ARM64.\r\n  * Fixed Windows 10 Start menu tile layout engine restoration on 28000.2630+/29634+ ARM64.\r\n  * Fixed Windows 10 Start menu \"Pin to Start\" and \"Unpin from Start\" context menu commands on 28000.2630+/29634+ ARM64.\r\n  * Fixed Windows 10 Start menu context menu crash fix on 29671+ x64.\r\n  * Fixed Windows 10 battery flyout fix on 28000.2630+ x64/ARM64, 29570+ x64, and 29634+ ARM64.\r\n  * Fixed File Explorer address bar shrinking and dropdown/refresh button sizing on 26100.9343+, 28000.3142+, and 29591+ x64.\r\n    * **Known issue:** Address bar background drawing is not yet fixed on 26100.9343+ x64. On other major versions this is fixed.\r\n  * Fixed incomplete address bar shrinking and up button sizing in File Explorer on 22000+ ARM64.\r\n  * Fixed disabling rounded window corners on 28000.2630+ and 29553+ x64/ARM64.\r\n* Fixed memory corruption when pinning/unpinning a tile via the reimplemented \"Pin to Start\" shell context menu handler. (ExplorerPatcher/ep_starttiledata@d8e0df6)\r\n* Fixed TrayThreadBSTA fix (initially introduced in 69.1) being applied to unrelated threads (c08a7d2).\r\n* Fixed buffer overrun when reading a VisiblePlaces registry value whose size is not a multiple of a GUID. (dded255)\r\n* More granular explorer.exe injection: only full-injects on explorer.exe processes that host the desktop and taskbar. (be4e412, 945fc1f)\r\n  * For example, `explorer.exe /embedding` when `explorer.exe` is not running is no longer full-injected.\r\n  * Helps reduce false repeated crash detection activations.\r\n* Localized \"Settings and Uninstall\" in Dutch. (valinet/ExplorerPatcher-L10N@f2bdf8e)\r\n\r\n**✉️ A little message from @Amrsatrio:** If you want to support my work of keeping ExplorerPatcher working with the latest Windows builds, please do so through [my GitHub sponsors page](https://github.com/sponsors/Amrsatrio). Thank you very much for the support!\r\n\r\nPlease consult the [README](https://github.com/valinet/ExplorerPatcher/blob/master/README.md) for more details.\r\nA detailed change log is available [here](https://github.com/valinet/ExplorerPatcher/blob/master/CHANGELOG.md).\r\nAn archive containing all the files generated during the build process (including `dxgi.dll` and symbol files) is available [here](https://github.com/valinet/ExplorerPatcher/actions/runs/40797647107).\r\n\r\n*This release has been published automatically from commits up to and including cc555ca in tag [26100.9711.71.1](https://github.com/valinet/ExplorerPatcher/tree/26100.9711.71.1/).*",
+    "downloads": [
+      {
+        "label": "Windows · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "ep_setup.exe",
+        "size": 12336128,
+        "sha256": "2165c7d12f10b1a137472de5b64abdc64dcdd9fc31362c7ff41d7c5b57c8e9e6",
+        "official": "https://github.com/valinet/ExplorerPatcher/releases/download/26100.9711.71.1/ep_setup.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "open-shell": {
+    "version": "4.4.198",
+    "released": "2026-05-12",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/Open-Shell/Open-Shell-Menu/releases/tag/v4.4.198",
+    "changelog": "## What's Changed\r\n* Fix search auto-selecting wrong item before programs finish loading by @nnyj in https://github.com/Open-Shell/Open-Shell-Menu/pull/2451\r\n* Update font face names in Japanese localization by @coolvitto in https://github.com/Open-Shell/Open-Shell-Menu/pull/2409\r\n* Fix open/save file dialog getting stuck after Windows 11 update by @ge0rdi in https://github.com/Open-Shell/Open-Shell-Menu/pull/2457\r\n\r\n## New Contributors\r\n* @nnyj made their first contribution in https://github.com/Open-Shell/Open-Shell-Menu/pull/2451\r\n* @coolvitto made their first contribution in https://github.com/Open-Shell/Open-Shell-Menu/pull/2409\r\n\r\n**Full Changelog**: https://github.com/Open-Shell/Open-Shell-Menu/compare/v4.4.197...v4.4.198",
+    "downloads": [
+      {
+        "label": "Windows · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "OpenShellSetup_4_4_198.exe",
+        "size": 9924608,
+        "sha256": "a4d2d4459de55b5e962ba2a14f7bb794170511649138173dfa72949837b48c3f",
+        "official": "https://github.com/Open-Shell/Open-Shell-Menu/releases/download/v4.4.198/OpenShellSetup_4_4_198.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "windhawk": {
+    "version": "1.7.3",
+    "released": "2025-12-08",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/ramensoftware/windhawk/releases/tag/v1.7.3",
+    "changelog": "* Fixed Windhawk loading and then unloading right away for sandboxed processes. This was fixed in v1.7.1, but became broken again in v1.7.2 due to the excessive CPU usage fix.",
+    "downloads": [
+      {
+        "label": "Windows · 离线安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "windhawk_setup_offline.exe",
+        "size": 148917720,
+        "sha256": "4d93016570f982326eebdfc9068e924ff21f6448534ea32672bb4c1d52a8193b",
+        "official": "https://github.com/ramensoftware/windhawk/releases/download/v1.7.3/windhawk_setup_offline.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "rainmeter": {
+    "version": "4.5.28.3936",
+    "released": "2026-10-12",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/rainmeter/rainmeter/releases/tag/v4.5.28.3936",
+    "changelog": "October 12, 2026 release of Rainmeter 4.5.28\r\n\r\nChangelog: https://www.rainmeter.net/changes-4.5/",
+    "downloads": [
+      {
+        "label": "Windows · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "Rainmeter-4.5.28.exe",
+        "size": 2634752,
+        "sha256": "de6e010f8c28882bc28dcd8f319c899f34dfddec51e1e4dd4e7a23f68ebfe14d",
+        "official": "https://github.com/rainmeter/rainmeter/releases/download/v4.5.28.3936/Rainmeter-4.5.28.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "twinkle-tray": {
+    "version": "1.17.2",
+    "released": "2025-12-25",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/xanderfrangos/twinkle-tray/releases/tag/v1.17.2",
+    "changelog": "### New in v1.17.2\r\n\r\n**Improvements:**\r\n- Added \"calibration points\" to the brightness normalization feature, so you can create a custom brightness curve for each display.\r\n- You can now replace the default brightness slider with a custom VCP code. (Thanks @marc-frank!) \r\n- SDR sliders will now display when HDR is the only supported brightness method, such as on HDR TVs. (Thanks @Kirin-0321!) \r\n- Updated localizations.\r\n- Updated dependencies.\r\n\r\n**Fixes:**\r\n- Fixed window focus tracking not working.\r\n- Fixed errors displaying on the \"DDC/CI Features\" tab.",
+    "downloads": [
+      {
+        "label": "Windows · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "Twinkle.Tray.v1.17.2.exe",
+        "size": 92407640,
+        "sha256": "04714c95945304e2dbb92e587cf062667ef653efa19f9c28db2c80225aa08136",
+        "official": "https://github.com/xanderfrangos/twinkle-tray/releases/download/v1.17.2/Twinkle.Tray.v1.17.2.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "fancontrol": {
+    "version": "285",
+    "released": "2026-11-02",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/Rem0o/FanControl.Releases/releases/tag/V285",
+    "changelog": "* Selected font applies to tray icon context menu\r\n* Fix bugs in Auto fan curve and Mix fan curve\r\n* Fix bug with File sensor\r\n* Remove LHM's built in sensor logging to reduce memory footprint\r\n* Fix memory leak with main window\r\n* Fix various service bugs\r\n* Update LibreHardwareMonitorLib",
+    "downloads": [
+      {
+        "label": "Windows · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "FanControl_285_net_10_0_Installer.exe",
+        "size": 20894624,
+        "sha256": "0ad1fca893a9e187e193c9bde4774b864116b78526c22471c0683c23d65d6081",
+        "official": "https://github.com/Rem0o/FanControl.Releases/releases/download/V285/FanControl_285_net_10_0_Installer.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "hwmonitor": {
+    "version": "1.68",
+    "released": "2026-09-14",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CPUID/HWMonitor/1.68",
+    "changelog": "",
+    "downloads": [
+      {
+        "label": "Windows · 官方安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "hwmonitor_1.68.exe",
+        "size": null,
+        "sha256": "fae15460133a648caca1a63fd809ef0b042cf82daf73c239fa5ac7b062cb2b16",
+        "official": "https://download.cpuid.com/hwmonitor/hwmonitor_1.68.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false,
+    "source": "winget"
+  },
+  "starship": {
+    "version": "1.27.0",
+    "released": "2026-10-17",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/starship/starship/releases/tag/v1.27.0",
+    "changelog": "## [1.27.0](https://github.com/starship/starship/compare/v1.26.0...v1.27.0) (2026-10-17)\r\n\r\n### Security\r\nThis release contains fixes for GHSA-x486-6jjc-phfp and GHSA-679r-jwc5-r5m3.\r\n\r\n### Features\r\n\r\n* Add `jj_bookmark` module ([#7643](https://github.com/starship/starship/issues/7643)) ([6f33dce](https://github.com/starship/starship/commit/6f33dcec91b758ccbae4ed850eaa6feabff798f9))\r\n* add `jj_change` module ([#7691](https://github.com/starship/starship/issues/7691)) ([70c705e](https://github.com/starship/starship/commit/70c705ed20c0cadfaf1ae14824ebc85f0d5cdda7))\r\n* add `jj_metrics` module ([#7720](https://github.com/starship/starship/issues/7720)) ([471858d](https://github.com/starship/starship/commit/471858d98097fff4e35c113582e52458b29a440e))\r\n* add `jj_status` module ([#7729](https://github.com/starship/starship/issues/7729)) ([3ead2a0](https://github.com/starship/starship/commit/3ead2a0cbffd31cb778b3d595027b1e5e2c50be4))\r\n* Add Jujutsu support to the `vcs` module ([#7612](https://github.com/starship/starship/issues/7612)) ([131bf95](https://github.com/starship/starship/commit/131bf9552d7e927607e155ea3a9b8c8a170a0356))\r\n* **bash:** Support right prompt in Bash via Flyline ([#7673](https://github.com/starship/starship/issues/7673)) ([85b8a61](https://github.com/starship/starship/commit/85b8a61bbbe38a2725baebfc80d9e459f5d2a94f))\r\n* **claude_model:** add effort variable ([#7614](https://github.com/starship/starship/issues/7614)) ([ea4098c](https://github.com/starship/starship/commit/ea4098cbc2ce0cdb2bd44e259aa8125496ab7839))\r\n* **git_branch:** add `ignore_remotes` option ([#7671](https://github.com/starship/starship/issues/7671)) ([0f9da35](https://github.com/starship/starship/commit/0f9da35ea379c4bb0e66c5a1b3d1ab3e8c297a9c))\r\n* **jj:** Better bookmark discovery and improving JJ output parsing ([#7761](https://github.com/starship/starship/issues/7761)) ([013bef4](https://github.com/starship/starship/commit/013bef47ef3b156b1e61471bd63321bd6b05f0c6))\r\n* **package:** detect zig package version from build.zig.zon ([#7753](https://github.com/starship/starship/issues/7753)) ([0584026](https://github.com/starship/starship/commit/0584026a5898575693cb8ef43b9879bb4248ae26))\r\n* **terraform:** detect OpenTofu's `.tofu` files ([#7783](https://github.com/starship/starship/issues/7783)) ([d77931d](https://github.com/starship/starship/commit/d77931d6e5310dcd440a4c4701fb0065e7ccaace))\r\n\r\n\r\n### Bug Fixes\r\n\r\n* **bash:** avoid duplicating PS0 preexec hook ([#7587](https://github.com/starship/starship/issues/7587)) ([8f28dfc](https://github.com/starship/starship/commit/8f28dfcb1ca3242fba00a3cf98c10ee24605c3ed))\r\n* **directory:** render symlinks pointing into a repo subdirectory ([#7715](https://github.com/starship/starship/issues/7715)) ([2bc6acf](https://github.com/starship/starship/commit/2bc6acf64085a1bf6ee54af8f8d1770bc56263f0))\r\n* **git:** avoid running sensitive git commands in untrusted environments (fixes GHSA-679r-jwc5-r5m3) ([db847dd](https://github.com/starship/starship/commit/db847dd5915bd8804eee96af30c2fd851a238ca8))\r\n* **hostname:** check SSH_CLIENT and SSH_TTY in addition to SSH_CONNECTION ([#7611](https://github.com/starship/starship/issues/7611)) ([d1f5271](https://github.com/starship/starship/commit/d1f5271d619b95f10d8c8fe335b273c3d859b745))\r\n* **jj_status:** count file changes across the whole repository ([#7780](https://github.com/starship/starship/issues/7780)) ([2d8741e](https://github.com/starship/starship/commit/2d8741e4830273ff2bec1fe45e1e7fe6aa979cf4))\r\n* **nim:** use detect_folders for folder detection ([#7757](https://github.com/starship/starship/issues/7757)) ([ba04cfb](https://github.com/starship/starship/commit/ba04cfb6a425ea42826cb32804df8e88fa06d3db))\r\n* **openstack:** resolve clouds.yaml from context current directory ([#7655](https://github.com/starship/starship/issues/7655)) ([6d88346](https://github.com/starship/starship/commit/6d883464cd06c9c5b2bafd6a47f09f738f5745d0))\r\n* **package:** support build.gradle.kts in gradle version detection ([#7627](https://github.com/starship/starship/issues/7627)) ([0461483](https://github.com/starship/starship/commit/04614837ddab699783211627a7d7929bffaed82c))\r\n* **preset:** Pad OS icon instead of username so it is not clipped when hidden ([#7598](https://github.com/starship/starship/issues/7598)) ([91086e8](https://github.com/starship/starship/commit/91086e827b7ca977aeae54deaceb4d0724e023f6))\r\n* **pulumi:** read the per-backend stack selection ([#7724](https://github.com/starship/starship/issues/7724)) ([69c1a57](https://github.com/starship/starship/commit/69c1a5714abeb0ee8acf29e95a34de6ef5a5cc27))\r\n* **sudo:** Avoid creating system error logs on every unsuccessful invocation ([#7530](https://github.com/starship/starship/issues/7530)) ([564a471](https://github.com/starship/starship/commit/564a471b5af63da3fec5f914b6d0e325f8787fad))\r\n* **sudo:** sudo module pollutes journalctl with error logs ([564a471](https://github.com/starship/starship/commit/564a471b5af63da3fec5f914b6d0e325f8787fad))\r\n* **utils:** Avoid unbounded file reads (fixes GHSA-x486-6jjc-phfp) ([187e183](https://github.com/starship/starship/commit/187e183ab6441abfb88f46349f03a504b7f64ee6))\r\n* **utils:** fix humanize_int rounding across unit boundaries ([#7770](https://github.com/starship/starship/issues/7770)) ([084cdf2](https://github.com/starship/starship/commit/084cdf2b9366adc4df8c2217cbe5f6371e882ece))\r\n\r\n\r\n### Performance Improvements\r\n\r\n* **swift:** prefer swift-frontend for version detection ([#7775](https://github.com/starship/starship/issues/7775)) ([bbde871](https://github.com/starship/starship/commit/bbde871aff4b4e42bb14f71119664e7e52369838))",
+    "downloads": [
+      {
+        "label": "Windows x64 · 绿色版 ZIP",
+        "platform": "Windows",
+        "portable": true,
+        "file": "starship-x86_64-pc-windows-msvc.zip",
+        "size": 4818893,
+        "sha256": "7764f861805376af2812dd78c84fadc16b714cf3f346baed9b597bfda8484403",
+        "official": "https://github.com/starship/starship/releases/download/v1.27.0/starship-x86_64-pc-windows-msvc.zip",
+        "mirrors": []
+      },
+      {
+        "label": "Windows x64 · 安装包 MSI",
+        "platform": "Windows",
+        "portable": false,
+        "file": "starship-x86_64-pc-windows-msvc.msi",
+        "size": 6025216,
+        "sha256": "b3b2e17e318d2d96f62d2213830d42587b6c4d35933a8e506b6e83a52151937e",
+        "official": "https://github.com/starship/starship/releases/download/v1.27.0/starship-x86_64-pc-windows-msvc.msi",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "clink": {
+    "version": "1.9.36",
+    "released": "2026-11-09",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/chrisant996/clink/releases/tag/v1.9.36",
+    "changelog": "- Fixed `console.settitle` to preserve an Administrator prefix, if present.\r\n- Fixed an edge case that could cache failed ahead/behind counts (regression introduced in v1.9.35).\r\n- Fixed [#915](https://github.com/chrisant996/clink/issues/915); 500 ms startup delay in conhost on Windows 10 (regression introduced in v1.9.35).\r\n- Reduced logging noise in the `clink.log` file:\r\n  - Suppress log entries about resetting mismatched stdout/stderr handles; it's normal and frequent, and doesn't need log entries.\r\n  - Only log history statistics when trimming to fit `history.max_lines` or when compacting history to remove lines marked for deletion.\r\n- Log beginning and end of input prompt while `debug.log_terminal` is enabled.\r\n",
+    "downloads": [
+      {
+        "label": "Windows · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "clink.1.9.36.af9152_setup.exe",
+        "size": 2868952,
+        "sha256": "4c0da99518b9d0ca22da03d65c6c2f2ba09849bb85a5967fa1ddb9595acc1e71",
+        "official": "https://github.com/chrisant996/clink/releases/download/v1.9.36/clink.1.9.36.af9152_setup.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "zed": {
+    "version": "1.28.1",
+    "released": "2026-11-11",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/zed-industries/zed/releases/tag/v1.28.1",
+    "changelog": "This week's release includes optional automatic Git fetching, a resizable Refs column in the Git Graph, dragging Git Panel files into terminals and editors, and mouse-wheel font zoom in diff views and terminals.\n\n## Features\n\n### AI\n\n- Added an `edit_predictions.button` setting to toggle the edit prediction button in the status bar. ([#66450](https://github.com/zed-industries/zed/pull/66450); thanks [z0al](https://github.com/z0al))\n- Improved compatibility with the latest Agent Client Protocol, including handling of missing sessions, plan updates, diff formats, and cancellation of permission requests. ([#66425](https://github.com/zed-industries/zed/pull/66425))\n- Improved the Agent's `read_file` tool output by truncating lines longer than 2,000 characters to prevent context window overflow. ([#65395](https://github.com/zed-industries/zed/pull/65395); thanks [Antphar](https://github.com/Antphar))\n- Improved subagent cards so that full screen opens a finished subagent run at its start. ([#66252](https://github.com/zed-industries/zed/pull/66252))\n\n### Git\n\n- Added optional automatic fetching of the current branch's upstream remote and the default branch's remote. Enable it with `git.auto_fetch.enabled`; configure the interval with `git.auto_fetch.interval_secs` (60 seconds by default). Automatic fetching is disabled by default. ([#53089](https://github.com/zed-industries/zed/pull/53089); thanks [andriygm](https://github.com/andriygm))\n- Added a resizable \"Refs\" column to the Git Graph that can be toggled on or off from the column header's context menu. ([#66260](https://github.com/zed-industries/zed/pull/66260); thanks [RemcoSmitsDev](https://github.com/RemcoSmitsDev))\n- Added support for dragging files from the Git Panel to the terminal and editor panes. ([#66423](https://github.com/zed-industries/zed/pull/66423); thanks [mmatczuk](https://github.com/mmatczuk))\n- Added support for searching by branch name in the worktree picker. ([#66384](https://github.com/zed-industries/zed/pull/66384); thanks [michelinux](https://github.com/michelinux))\n\n### Debugger\n\n- Added support for configuring the debugger panel’s default size via `debugger.default_width` and `debugger.default_height`. ([#66435](https://github.com/zed-industries/zed/pull/66435))\n\n### Languages\n\n- Improved call hierarchy readability by adding spacing between item names and details. ([#66144](https://github.com/zed-industries/zed/pull/66144); thanks [yskim308](https://github.com/yskim308))\n\n### Linux\n\n- Improved window startup time on Linux with NVIDIA GPUs. ([#66002](https://github.com/zed-industries/zed/pull/66002); thanks [runsonmypc](https://github.com/runsonmypc))\n\n### Other\n\n- Added support for mouse-wheel font zoom in diff views and terminals with `mouse_wheel_zoom` enabled: `cmd-scroll` on macOS and `ctrl-scroll` on Linux/Windows. ([#66296](https://github.com/zed-industries/zed/pull/66296); thanks [ndri](https://github.com/ndri))\n- Improved responsiveness when navigating code, loading completion details, and comparing files. ([#66487](https://github.com/zed-industries/zed/pull/66487))\n- Improved the reliability of language server and agent downloads with consistent checksum verification, rejection of failed HTTP responses, and better cleanup of partial downloads. ([#66048](https://github.com/zed-industries/zed/pull/66048))\n\n## Bug Fixes\n\n- Fixed a bug where launching Zed on Windows while it was already running prevented the previous session from being restored. ([#66364](https://github.com/zed-industries/zed/pull/66364); thanks [somtri](https://github.com/somtri))\n- Fixed Agent context compaction unnecessarily using uncached input tokens with supported providers, including OpenAI and xAI. ([#64938](https://github.com/zed-industries/zed/pull/64938); thanks [tidely](https://github.com/tidely))\n- Fixed auto-compaction only running once during a long agent turn, which could let the thread exceed the model's context window. ([#66215](https://github.com/zed-industries/zed/pull/66215))\n- Fixed compaction not reusing the prompt cache for ChatGPT subscription models. ([#66527](https://github.com/zed-industries/zed/pull/66527))\n- Fixed creating pull requests from Zed for Forgejo remotes, including Codeberg. ([#66182](https://github.com/zed-industries/zed/pull/66182); thanks [Lachstec](https://github.com/Lachstec))\n- Fixed external agents sometimes starting without MCP servers configured in user settings when the thread was created before the project folder finished loading. ([#64612](https://github.com/zed-industries/zed/pull/64612); thanks [philwinder](https://github.com/philwinder))\n- Fixed Helix mode operations overwriting the system clipboard when `vim.use_system_clipboard` was set to `\"always\"`. ([#55455](https://github.com/zed-industries/zed/pull/55455); thanks [SrGaabriel](https://github.com/SrGaabriel))\n- Fixed local files opening as empty buffers in remote workspaces. ([#65771](https://github.com/zed-industries/zed/pull/65771); thanks [Huliiiiii](https://github.com/Huliiiiii))\n- Fixed mentioning, sharing, and deleting project skills in remote workspaces. ([#66207](https://github.com/zed-industries/zed/pull/66207))\n- Fixed Project Search buttons affecting the wrong pane when clicked in an unfocused split. ([#50882](https://github.com/zed-industries/zed/pull/50882); thanks [transitoryangel](https://github.com/transitoryangel))\n- Fixed registry agents installed via npm (such as Claude Agent) failing to launch with `ERR_MODULE_NOT_FOUND` after an interrupted or concurrent install. ([#66235](https://github.com/zed-industries/zed/pull/66235))\n- Fixed remote terminals and tasks failing on Windows SSH servers whose default shell is Nushell. ([#65580](https://github.com/zed-industries/zed/pull/65580); thanks [lingyaochu](https://github.com/lingyaochu))\n- Fixed remote workspaces sharing a directory being merged into one workspace after restarting Zed. ([#66289](https://github.com/zed-industries/zed/pull/66289); thanks [buvidk1234](http",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "Zed-x86_64.exe",
+        "size": 65092416,
+        "sha256": "013ba129f675b2bb2a71f5b2fd2918915cf9ad90053eb49e2ba10b56aa2212d4",
+        "official": "https://github.com/zed-industries/zed/releases/download/v1.28.1/Zed-x86_64.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "podman-desktop": {
+    "version": "1.30.5",
+    "released": "2026-10-13",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/podman-desktop/podman-desktop/releases/tag/v1.30.5",
+    "changelog": "## What's Changed\r\n* fix(main): stop the JS exception pop-ups when main window is gone (backport #19328) by @mergify[bot] in https://github.com/podman-desktop/podman-desktop/pull/19578\r\n* fix(main): enforce directory boundary in webview file server (backport #19613) by @mergify[bot] in https://github.com/podman-desktop/podman-desktop/pull/19633\r\n* chore: Bump Podman v5 to 5.8.9, v6 to 6.1.4 (backport #19627) by @mergify[bot] in https://github.com/podman-desktop/podman-desktop/pull/19629\r\n\r\n\r\n**Full Changelog**: https://github.com/podman-desktop/podman-desktop/compare/v1.30.4...v1.30.5",
+    "downloads": [
+      {
+        "label": "Windows x64 · 绿色版 EXE",
+        "platform": "Windows",
+        "portable": true,
+        "file": "podman-desktop-1.30.5-setup-x64.exe",
+        "size": 162833128,
+        "sha256": "0689d9389853a5256c2b0ce7a09c012399948a5df4c9c4d4735c09de1bbe6928",
+        "official": "https://github.com/podman-desktop/podman-desktop/releases/download/v1.30.5/podman-desktop-1.30.5-setup-x64.exe",
+        "mirrors": []
+      },
+      {
+        "label": "Windows x64 · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "podman-desktop-1.30.5-setup-x64.exe",
+        "size": 162833128,
+        "sha256": "0689d9389853a5256c2b0ce7a09c012399948a5df4c9c4d4735c09de1bbe6928",
+        "official": "https://github.com/podman-desktop/podman-desktop/releases/download/v1.30.5/podman-desktop-1.30.5-setup-x64.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "insomnia": {
+    "version": "13.4.0",
+    "released": "2026-10-29",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/Kong/insomnia/releases/tag/core%4013.4.0",
+    "changelog": "## What's Changed\n* fix(INS-3850): revalidate a project's old organization cache when it moves parents by @yaoweiprc in https://github.com/Kong/insomnia/pull/10513\n* fix(INS-3850): re-check Konnect organization visibility before restoring it on cold start by @yaoweiprc in https://github.com/Kong/insomnia/pull/10518\n* fix: One line editor can enter new line issue by @cwangsmv in https://github.com/Kong/insomnia/pull/10514\n* fix(INS-3836): show the Konnect-moved notice only after a migration conflict is resolved by @yaoweiprc in https://github.com/Kong/insomnia/pull/10521\n* fix: Both spec and collection should allow import test suites in git sync by @cwangsmv in https://github.com/Kong/insomnia/pull/10524\n* Fix: Do not flush on blur on one-line-editor if it is read-only  by @cwangsmv in https://github.com/Kong/insomnia/pull/10534\n* fix(sidebar): don't crash the collection filter on non-string doc fields by @ZxBing0066 in https://github.com/Kong/insomnia/pull/10525\n* fix(event-stream): only read event shaped lines from the event log by @ZxBing0066 in https://github.com/Kong/insomnia/pull/10522\n* chore(sandbox): disable quick.js sandbox temporarily by @ihexxa in https://github.com/Kong/insomnia/pull/10536\n* Fix: Add loading indicator and avoid unmount editor to update tag for tag editor by @cwangsmv in https://github.com/Kong/insomnia/pull/10537\n* fix(mcp): correct Add/Delete Item for nested object params by @CurryYangxx in https://github.com/Kong/insomnia/pull/10546\n* Chore: bump vault plugin version by @cwangsmv in https://github.com/Kong/insomnia/pull/10547\n* fix(environment-editor): treat empty JSON content as invalid JSON by @ZxBing0066 in https://github.com/Kong/insomnia/pull/10540\n* fix(INS-3507): restrict git-sync and legacy-folder writes to canSync model types by @kwburns-kong in https://github.com/Kong/insomnia/pull/10531\n* Change Konnect migration wording. by @yaoweiprc in https://github.com/Kong/insomnia/pull/10550\n* feat(export): add Export OpenAPI Spec to the collection context menu by @ZxBing0066 in https://github.com/Kong/insomnia/pull/10538\n* fix(insomnia): run plugin yarn info in a controlled temp dir by @Tyagiquamar in https://github.com/Kong/insomnia/pull/10505\n* fix(script): use liquid sync method in render - INS-3789 by @ihexxa in https://github.com/Kong/insomnia/pull/10523\n* chore(ci): make the cycle check runnable on Windows and report drift honestly [INS-3904] by @yaoweiprc in https://github.com/Kong/insomnia/pull/10548\n* refactor(sidebar): own the project shell in one layout route [INS-3903] by @yaoweiprc in https://github.com/Kong/insomnia/pull/10541\n* chore: bump app version to 13.3.0 by @insomnia-infra in https://github.com/Kong/insomnia/pull/10552\n* ci(ksai): add KSAI through the public mirror by @bartsmykla in https://github.com/Kong/insomnia/pull/10551\n* fix: constrain file template tag by @kwburns-kong in https://github.com/Kong/insomnia/pull/10528\n* fix: parse quoted CSV fields in collection runner data by @ZxBing0066 in https://github.com/Kong/insomnia/pull/10557\n* fix: de-flake import deep-link cURL auto-scan smoke test by @ZxBing0066 in https://github.com/Kong/insomnia/pull/10555\n* fix(toast): stop toast animations from swallowing clicks by @ZxBing0066 in https://github.com/Kong/insomnia/pull/10553\n* fix(key-value-editor): stop ListBox typeahead from swallowing typed spaces by @ZxBing0066 in https://github.com/Kong/insomnia/pull/10563\n* feat: Add base model schema and deep strict utility by @cwangsmv in https://github.com/Kong/insomnia/pull/10515\n* feat: Unify and migrate environment model to use Zod schema and infer type by @cwangsmv in https://github.com/Kong/insomnia/pull/10516\n* chore: bump @faker-js/faker@9.7.0 to 10.6.0 by @kwburns-kong in https://github.com/Kong/insomnia/pull/10569\n* ci(ksai): start a KSAI run only for people who can write to the repository by @bartsmykla in https://github.com/Kong/insomnia/pull/10578\n* fix: Environment schema git export order issue by @cwangsmv in https://github.com/Kong/insomnia/pull/10580\n* chore: bump dependencies by @kwburns-kong in https://github.com/Kong/insomnia/pull/10444\n* fix: validate paths stay within their intended base directory by @kwburns-kong in https://github.com/Kong/insomnia/pull/10443\n* chore: bump app version to 13.3.1 by @insomnia-infra in https://github.com/Kong/insomnia/pull/10579\n* feat(import): paste a cURL with no editable focus to start the import flow by @ZxBing0066 in https://github.com/Kong/insomnia/pull/10566\n* chore(ui): remove unreachable ImportModal instances by @ZxBing0066 in https://github.com/Kong/insomnia/pull/10590\n* fix: regenerate document ids on project storage conversion by @ZxBing0066 in https://github.com/Kong/insomnia/pull/10565\n* feat: change data model to support confidential control by @CurryYangxx in https://github.com/Kong/insomnia/pull/10479\n* feat: Migrate mock-server and mock-route zod schema and type definitions by @cwangsmv in https://github.com/Kong/insomnia/pull/10520\n* test(INS-3783): cover cookie id stability across Set-Cookie responses by @yaoweiprc in https://github.com/Kong/insomnia/pull/10592\n* feat: show variable source in live preview and hover tooltip by @ZxBing0066 in https://github.com/Kong/insomnia/pull/10583\n* fix(project-modal): close modal on redirect by comparing pathname by @bobqiu-kong in https://github.com/Kong/insomnia/pull/10593\n* feat: Migrate mcp request and related model types using zod  by @cwangsmv in https://github.com/Kong/insomnia/pull/10526\n* feat: Implement UX for marking environments as confidential by @CurryYangxx in https://github.com/Kong/insomnia/pull/10480\n* fix: Warn when a Git Sync change cannot be discarded [INS-3830] by @yaoweiprc in https://github.com/Kong/insomnia/pull/10585\n* fix: script corrupt vault into plaintext by @CurryYangxx in https://github.com/Kong/insomnia/pull/10601\n* feat: Migrate collection and document workspace zod schema and type definitions- #10520 by @cwangsmv in https://github.com/Kong/insomn",
+    "downloads": [
+      {
+        "label": "Windows · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "Insomnia.Core-13.4.0.exe",
+        "size": 649769152,
+        "sha256": "346bafbf9dd49dd5b3cf3847f75258242d474dbf2579f146a9e996135cd14327",
+        "official": "https://github.com/Kong/insomnia/releases/download/core%4013.4.0/Insomnia.Core-13.4.0.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "github-desktop": {
+    "version": "3.6.11",
+    "released": "2026-11-11",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GitHub/GitHubDesktop/3.6.11",
+    "changelog": "",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "GitHubDesktopSetup-x64.exe",
+        "size": null,
+        "sha256": "c76edda67f22103b65da1468687348e9e97ddb53d977b727f16aa695680f1618",
+        "official": "https://desktop.githubusercontent.com/releases/3.6.11-0102f49a/GitHubDesktopSetup-x64.exe",
+        "mirrors": []
+      },
+      {
+        "label": "Windows x64 · 安装包 MSI",
+        "platform": "Windows",
+        "portable": false,
+        "file": "GitHubDesktopSetup-x64.msi",
+        "size": null,
+        "sha256": "30e8f88b559fd0cea5a4c3b5f50e0e6d56137405067a70f8ff1ce163d8403487",
+        "official": "https://desktop.githubusercontent.com/releases/3.6.11-0102f49a/GitHubDesktopSetup-x64.msi",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false,
+    "source": "winget"
+  },
+  "tortoisegit": {
+    "version": "2.19.1.0",
+    "released": "2026-06-27",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TortoiseGit/TortoiseGit/2.19.1.0",
+    "changelog": "",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安装包 MSI",
+        "platform": "Windows",
+        "portable": false,
+        "file": "TortoiseGit-2.19.1.0-64bit.msi",
+        "size": null,
+        "sha256": "e07ebf37063023d96dc8509a5d69ffa52d316cda8feea08beddad4b9818e7be5",
+        "official": "https://download.tortoisegit.org/tgit/2.19.0.0/TortoiseGit-2.19.1.0-64bit.msi",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false,
+    "source": "winget"
+  },
+  "godot": {
+    "version": "4.7.2-stable",
+    "released": "2026-08-18",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/godotengine/godot/releases/tag/4.7.2-stable",
+    "changelog": "**Godot 4.7.2** is a maintenance release addressing stability and usability issues, and fixing all sorts of bugs. Maintenance releases are compatible with previous releases and are recommended for adoption.\r\n\r\nReport bugs on GitHub after checking that they haven't been reported:\r\n- https://github.com/godotengine/godot/issues\r\n\r\n----\r\n\r\n- [Release notes](https://godotengine.org/article/maintenance-release-godot-4-7-2/)\r\n- [Complete changelog](https://godotengine.github.io/godot-interactive-changelog/#4.7.2)\r\n- [Curated changelog](https://github.com/godotengine/godot/blob/4.7.2-stable/CHANGELOG.md)\r\n\r\n----\r\n\r\n- **Download (GitHub):** Expand **Assets** below",
+    "downloads": [
+      {
+        "label": "Windows x64 · 绿色版 ZIP",
+        "platform": "Windows",
+        "portable": true,
+        "file": "Godot_v4.7.2-stable_win64.exe.zip",
+        "size": 86013866,
+        "sha256": "731980f9608d61333e5baf54a2ef17210acc7a538446c0cb9969f002aca1e953",
+        "official": "https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_win64.exe.zip",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "qtscrcpy": {
+    "version": "4.2.1",
+    "released": "2026-09-19",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/barry-ran/QtScrcpy/releases/tag/v4.2.1",
+    "changelog": "## What's Changed\r\n\r\n### Features\r\n\r\n- feat: introduce a new UI layout\r\n- feat: add MediaTek encoder optimization to reduce sudden screen blurring\r\n- feat: add encoder presets for faster configuration\r\n- feat: enforce a single application instance and focus the existing window on relaunch\r\n- feat: add a “quit on close” option to bypass the system tray\r\n- feat: store user configuration and keymaps outside application bundles\r\n- feat: add an advanced configuration page\r\n\r\n### Improvements\r\n\r\n- perf: expand configuration pages to use the available window space\r\n- ui: refresh UI language and translations\r\n- i18n: update Chinese, English, Japanese, and Korean translation resources\r\n\r\n### Fixes\r\n\r\n- fix: preserve the MediaTek encoder option across restarts\r\n- fix: correct the wireless-device combo box width\r\n- fix: update the Star History chart\r\n- fix: ad-hoc sign the macOS app bundle and verify its integrity before packaging\r\n\r\n### macOS\r\n\r\n- Add ad-hoc signing for Qt frameworks, plugins, helper binaries, and the application bundle.\r\n- Add a macOS DMG README with installation and quarantine-removal guidance.\r\n<img width=\"1156\" height=\"676\" alt=\"image\" src=\"https://github.com/user-attachments/assets/bce41077-00f0-4f26-940b-abc5c14da820\" />\r\n",
+    "downloads": [
+      {
+        "label": "Windows x64 · 绿色版 ZIP",
+        "platform": "Windows",
+        "portable": true,
+        "file": "QtScrcpy-win-x64-v4.2.1.zip",
+        "size": 32450642,
+        "sha256": "130f5c6f5d2dde1afb58775daf65060e9be007e7825f70c26c7121414f175c82",
+        "official": "https://github.com/barry-ran/QtScrcpy/releases/download/v4.2.1/QtScrcpy-win-x64-v4.2.1.zip",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "escrcpy": {
+    "version": "3.3.1",
+    "released": "2026-10-10",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/viarotel-org/escrcpy/releases/tag/v3.3.1",
+    "changelog": "# 🚀 Escrcpy 3.3.1 — Unlock Existing Features, Embrace a New Chapter\r\n\r\nEscrcpy 3.3.1 is a **transitional release** that bridges the gap between the existing version and the new billing and licensing system planned for Escrcpy 4.0.0 and later.\r\n\r\nTo ensure a smooth transition, **all existing features in Escrcpy 3.3.1 are available for free**, with no purchase, activation, or license verification required. This is a long-term policy for the existing version, not a limited-time promotion.\r\n\r\nThis release also improves the stability of embedded mirroring and application startup workflows.\r\n\r\n## ✨ What's New\r\n\r\n### 🔓 All Existing Features Unlocked\r\n\r\nDue to adjustments to our billing platform and subscription system, all existing features in Escrcpy 3.3.1 are now available for free.\r\n\r\nThis policy is intended to help existing users transition smoothly to the new version strategy. You can continue using all features available in Escrcpy 3.3.1 without additional payment.\r\n\r\n### 🖥️ Embedded Mirroring & Virtual Displays\r\n\r\n- Introduced preliminary support for launching applications on virtual displays and using embedded mirroring.\r\n- Improved the stability of application startup logic related to embedded mirrored virtual screens.\r\n- Fixed abnormal mirroring control parameters when launching applications through shortcuts.\r\n- Fixed an application launch issue affecting some Windows users.\r\n\r\n### 🤖 Copilot Configuration\r\n\r\nCopilot now requires users to configure a supported AI model provider, including the relevant API key, endpoint, and model settings.\r\n\r\nIf no provider is configured, the interface prompts users to complete the setup instead of automatically using the previous built-in service.\r\n\r\nPlease note that third-party AI model providers may charge for API usage according to their own pricing policies.\r\n\r\n## ⚠️ Important Upgrade Notice\r\n\r\nDue to adjustments to the billing and subscription system, users running Escrcpy 3.2.0 or earlier may encounter license verification issues or find that certain features no longer work correctly.\r\n\r\n**We recommend upgrading to Escrcpy 3.3.1 as soon as possible.** All existing features in this release are unlocked and can be used without additional payment.\r\n\r\n## 🔮 Looking Ahead: Escrcpy 4.0.0+\r\n\r\nEscrcpy 4.0.0 and later versions are planned to introduce a new billing and licensing system, along with new features and services.\r\n\r\n- **A new licensing system:** Future versions will use a separate licensing and purchasing system.\r\n- **Launch promotion:** A three-day introductory promotion with special pricing is planned. Pricing and details will be announced separately.\r\n- **Your existing version remains available:** You can continue using Escrcpy 3.3.1 and all its unlocked features without purchasing a newer version.\r\n- **Previous purchases will not automatically transfer:** Purchases made under the previous system will not automatically grant paid entitlements under the new system.\r\n\r\nEscrcpy 3.3.1 serves as a bridge between the existing version and the upcoming licensing system. You can continue using the current version or consider upgrading when the new version becomes available.\r\n\r\n## 🙏 Thank You\r\n\r\nThank you for your continued support and feedback. We hope Escrcpy 3.3.1 provides a more stable experience and helps make this transition smooth as we prepare for the next chapter of Escrcpy.\r\n",
+    "downloads": [
+      {
+        "label": "Windows x64 · 绿色版 EXE",
+        "platform": "Windows",
+        "portable": true,
+        "file": "Escrcpy-3.3.1-win-portable-x64.exe",
+        "size": 121760243,
+        "sha256": "68a9fd2c455401d6b686e766775623aed2b3b88a470f985c43d2207ce7c19bc4",
+        "official": "https://github.com/viarotel-org/escrcpy/releases/download/v3.3.1/Escrcpy-3.3.1-win-portable-x64.exe",
+        "mirrors": []
+      },
+      {
+        "label": "Windows x64 · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "Escrcpy-3.3.1-win-setup-x64.exe",
+        "size": 122102990,
+        "sha256": "ecba4ccda783431f6297ca6aad0e9e0f9c5eab50ce82a6251d9dcb4eab28f430",
+        "official": "https://github.com/viarotel-org/escrcpy/releases/download/v3.3.1/Escrcpy-3.3.1-win-setup-x64.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "keyviz": {
+    "version": "2.1.1",
+    "released": "2026-04-01",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/mulaRahul/keyviz/releases/tag/v2.1.1",
+    "changelog": "### 🩹 Bug Fixes\r\n* mouse indicator offset #421\r\n* filter numpad keys #426\r\n* remember monitor selection #401\r\n\r\n### ✨ New Contributors\r\n* @xhugoliu made their contribution in https://github.com/mulaRahul/keyviz/pull/452\r\n\r\n### ❗On macOS \"keyviz\" is damaged\r\nIf you get the above error message, visit https://github.com/mulaRahul/keyviz/issues/420.\r\n\r\n**Full Changelog**: https://github.com/mulaRahul/keyviz/compare/v2.1.0...v2.1.1",
+    "downloads": [
+      {
+        "label": "Windows · 安装包 MSI",
+        "platform": "Windows",
+        "portable": false,
+        "file": "keyviz_2.1.1_windows.msi",
+        "size": 4157440,
+        "sha256": "b58263eb3be44cbba6c5f7518a63bcf7ae31396493dfc1ff143677e7ab710b3a",
+        "official": "https://github.com/mulaRahul/keyviz/releases/download/v2.1.1/keyviz_2.1.1_windows.msi",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "rubick": {
+    "version": "4.3.8",
+    "released": "2026-01-14",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/rubickCenter/rubick/releases/tag/v4.3.8",
+    "changelog": "## BugFIx\r\n\r\n#488 \r\n\r\n## Feature\r\n\r\n#487 ",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "rubick-Setup-4.3.8-x64.exe",
+        "size": 81816969,
+        "sha256": "9c7e616fe61d897af8f30e940ed3f030d264fc66c4cca81f35bf3f9949f3d851",
+        "official": "https://github.com/rubickCenter/rubick/releases/download/v4.3.8/rubick-Setup-4.3.8-x64.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "wetype": {
+    "version": "3.0.2.44",
+    "released": "2026-11-13",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/WeType/3.0.2.44",
+    "changelog": "",
+    "downloads": [
+      {
+        "label": "Windows · 官方安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "WeTypeSetup_3.0.2.44_3.exe",
+        "size": null,
+        "sha256": "dd8d160b0ece768c5d576e08dfcf2c510e0b340cec6869c16cce89ae40178aa5",
+        "official": "https://download.z.weixin.qq.com/app/win/WeTypeSetup_3.0.2.44_3.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false,
+    "source": "winget"
+  },
+  "stability-matrix": {
+    "version": "2.16.5",
+    "released": "2026-10-21",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/LykosAI/StabilityMatrix/releases/tag/v2.16.5",
+    "changelog": "> Full technical notes for this release: [docs.lykos.ai/stability-matrix/release-notes/2.16.5](https://docs.lykos.ai/stability-matrix/release-notes/2.16.5)\r\n## Added\r\n- Added **Fizgig**, a LoRA training studio for Flux 2 Klein 9B, Krea 2, MiniMax H3 and Qwen Image 2.1 with dataset prep, training, LoRA repair and extraction in one app ([#1761](https://github.com/LykosAI/StabilityMatrix/pull/1761)) - thanks to @e-nord!\r\n- Added AMD ROCm support for **Stable Diffusion WebUI Forge - Neo** on Windows and Linux. Forge Neo's developer supports NVIDIA only, so report AMD issues with it to Stability Matrix ([#1770](https://github.com/LykosAI/StabilityMatrix/pull/1770)) - thanks to @NeuralFault!\r\n\r\n## Changed\r\n- ComfyUI now installs and updates from its current GitHub home, [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI)\r\n\r\n## Fixed\r\n- Fixed **Wan2GP** installs on Python 3.11 failing with `sageattention ... has no wheels with a matching Python version tag`. New Wan2GP installs now use Python 3.11 with PyTorch 2.10 and CUDA 13 with matching Triton, SageAttention and Flash Attention, the same setup Wan2GP's own installer uses. CUDA 13 needs NVIDIA driver 580 or newer. GTX 10XX cards stay on Python 3.10\r\n- Existing **Wan2GP** installs on Python 3.10 keep their PyTorch 2.7 setup when updated. If a newer model such as LTX 2.5 fails with a Triton error, add Wan2GP again as a new install, which now uses Python 3.11, and move your outputs across ([#1756](https://github.com/LykosAI/StabilityMatrix/issues/1756))\r\n- Fixed ComfyUI updates downgrading SageAttention post6 to post4 and reinstalling compatible wheels ([#1764](https://github.com/LykosAI/StabilityMatrix/issues/1764)).\r\n- Fixed ComfyUI installation and updates failing on Python 3.13+ because the NumPy 1.x constraint has no compatible wheel ([#1754](https://github.com/LykosAI/StabilityMatrix/issues/1754))\r\n- Fixed **AI-Toolkit** installation failing on Linux while unpacking Node.js with a \"Dangerous link path\" error ([#1767](https://github.com/LykosAI/StabilityMatrix/issues/1767))\r\n- Fixed **Windows ROCm** PyTorch installs pairing mismatched `torch` and `torchvision` versions, which broke packages at `import torchvision` ([#1769](https://github.com/LykosAI/StabilityMatrix/pull/1769)) - thanks to @NeuralFault!\r\n- ControlNet preprocessing in Inference now offers to update older tagged Inference Core Nodes installs to a version with the ControlNet import fixes and Python 3.12/3.13 support\r\n- Fixed the package uninstall confirmation counting your whole shared model library for packages using symlink sharing. Only the package's own files are counted; shared models were never deleted\r\n- Fixed logs ignoring `--home-dir`, and opening a missing folder or file showing an error dialog instead of a short notice ([#1766](https://github.com/LykosAI/StabilityMatrix/pull/1766)) - thanks to @e-nord!\r\n- Fixed shared model folder links hiding **DiffusionModels** in the Checkpoint Manager, Image Lab and Inference, including when DiffusionModels is itself a link ([#1743](https://github.com/LykosAI/StabilityMatrix/pull/1743), [#1763](https://github.com/LykosAI/StabilityMatrix/pull/1763)) - thanks to @NeuralFault and @ionite34!\r\n- Fixed the Model Browser's **Base Model** filter being lost when using **Next Model** / **Previous Model** or refreshing a model's details ([#1436](https://github.com/LykosAI/StabilityMatrix/issues/1436))\r\n- Fixed **Open on CivArchive** opening a file URL instead of the model page on Linux ([#1765](https://github.com/LykosAI/StabilityMatrix/issues/1765))\r\n- Fixed emoji showing as `��` in Image Lab messages and in CivitAI and CivArchive model descriptions\r\n- Fixed release-note text being cut off beside the scrollbar in the update dialog ([#1757](https://github.com/LykosAI/StabilityMatrix/issues/1757))\r\n- Fixed text in **Image Lab** messages and thinking blocks being cut off at the right edge. Message bubbles now fit their text, and inline code is easier to read\r\n- Fixed **Save & Regenerate** in Image Lab deleting later images and dropping the edited message's attachments. It now shows progress and can be cancelled\r\n- Fixed **Regenerate** in Image Lab removing the old response before the new one was ready. A failed or cancelled regenerate now keeps it\r\n- Fixed Image Lab pulling you back to a conversation when its generation finished while you were in another, and showing that generation's error in the one you had open\r\n- Fixed deleting one image from a multi-image message in Image Lab deleting your original file when Image Lab hadn't kept its own copy\r\n- Fixed your message in Image Lab not being editable or deletable after a failed or cancelled generation\r\n- Fixed cancelling a Gemini generation in Image Lab showing \"Generation failed\" instead of \"Cancelled\"\r\n- Fixed Image Lab not scrolling to a new message when you were already at the bottom of the conversation\r\n- Fixed a ComfyUI generation in Image Lab not stopping when ComfyUI disconnected, if you had opened a Gemini conversation in the meantime\r\n- Fixed package version lists and update checks showing an old release as the newest, because startup update checks ran into GitHub's rate limit\r\n\r\n## Supporters\r\n### 🌟 Visionaries\r\nThis patch is a good one for AMD owners: Forge Neo now runs on ROCm on both Windows and Linux, and Windows ROCm installs always get a `torch` and `torchvision` that actually match. It also adds Fizgig, a whole LoRA training studio, to the package list. Most of it arrived as community contributions, and our Visionaries are the reason we have time to review that work properly and say yes to it. Thank you **Waterclouds**, **MrMxyzptlk12836**, **bluepopsicle**, **dispenser**, **Droolguy**, **TwistedDragon**, **snotty**, **cusalapapen1481**, **moon_milky2843**, **sn3232323233350**, **CC**, **hasezou11013179**, and **Akros**. It's great to see **SnooSnooEternal** back with us and **jweg79** moving up from the Pioneers, and hello to **japublicspot78364519** and **jonny90**,",
+    "downloads": [
+      {
+        "label": "Windows x64 · 绿色版 ZIP",
+        "platform": "Windows",
+        "portable": true,
+        "file": "StabilityMatrix-win-x64.zip",
+        "size": 141170098,
+        "sha256": "37040816086102f818a448cd3f4e84ed00e7b584c9ede0f9715b3a0bea23be68",
+        "official": "https://github.com/LykosAI/StabilityMatrix/releases/download/v2.16.5/StabilityMatrix-win-x64.zip",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "gpt4all": {
+    "version": "3.10.0",
+    "released": "2025-02-25",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/nomic-ai/gpt4all/releases/tag/v3.10.0",
+    "changelog": "## What's New\r\n* **Remote Models:**\r\n  * The Add Model page now has a dedicated tab for remote model providers.\r\n  * Groq, OpenAI, and Mistral remote models are now easier to configure.\r\n* **CUDA Compatibility:** GPUs with CUDA compute capability 5.0 such as the GTX 750 are now supported by the CUDA backend.\r\n* **New Model:** The non-MoE Granite model is now supported.\r\n* **Translation Updates:**\r\n  * The Italian translation has been updated.\r\n  * The Simplified Chinese translation has been significantly improved.\r\n* **Better Chat Templates:** The default chat templates for OLMoE 7B 0924/0125 and Granite 3.1 3B/8B have been improved.\r\n* **Whitespace Fixes:** DeepSeek-R1-based models now have better whitespace behavior in their output.\r\n* **Crash Fixes:** Several issues that could potentially cause GPT4All to crash have been fixed.\r\n\r\n## Contributors\r\n* Jared Van Bortel (Nomic AI)\r\n* Adam Treat (Nomic AI)\r\n* ThiloteE (`@ThiloteE`)\r\n* Lil Bob (`@Junior2Ran`)\r\n* Riccardo Giovanetti (`@Harvester62`)\r\n\r\n**Full Changelog**: [CHANGELOG.md](https://github.com/nomic-ai/gpt4all/blob/main/gpt4all-chat/CHANGELOG.md#3100---2025-02-24)",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "gpt4all-installer-win64-arm-v3.10.0.exe",
+        "size": 318116056,
+        "sha256": "",
+        "official": "https://github.com/nomic-ai/gpt4all/releases/download/v3.10.0/gpt4all-installer-win64-arm-v3.10.0.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "lm-studio": {
+    "version": "0.4.0",
+    "released": "",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ElementLabs/LMStudio/0.4.0",
+    "changelog": "",
+    "downloads": [
+      {
+        "label": "Windows x64 · 官方安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "LM-Studio-0.4.0-18-x64.exe",
+        "size": null,
+        "sha256": "a3f83cf3a5e7e69017eb038594d8efbf2d30c1d05436acbe9b100e2bf41b0e50",
+        "official": "https://installers.lmstudio.ai/win32/x64/0.4.0-18/LM-Studio-0.4.0-18-x64.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false,
+    "source": "winget"
+  },
+  "koodo-reader": {
+    "version": "2.4.7",
+    "released": "2026-11-08",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/koodo-reader/koodo-reader/releases/tag/v2.4.7",
+    "changelog": "## New Features\r\n\r\n- Added OCR plugin functionality; go to Settings > Plugins\r\n- Added support for the following file formats: caj, djvu, xps, chm, doc, rtf, pptx, ppt, ofd, djv, oxps, and ofd\r\n- The reading page now supports an immersive title bar, which automatically hides while reading\r\n- Reading options now support grouped display\r\n- Added book collections and grouping features, allowing you to combine and manage multiple books together\r\n- Support for adjusting page spacing in double-page view; go to Reading Options on the right > Layout\r\n- Support for right-to-left page turning; go to Reading Options on the right > Layout\r\n- Support for exporting book packages: Book files, along with notes, highlights, bookmarks, and dictionary history, are bundled into a single new file for easy sharing with others or importing onto new devices\r\n- Added a prompt asking whether to clear all data upon uninstallation\r\n- Support for parsing ISBN, publication date, modification date, language, and other information from book files\r\n- Optimized for comics in EPUB, MOBI, and AZW3 formats, with support for double-page mode and continuous scrolling\r\n- Added an auto-read feature that automatically scrolls pages at a specified speed; tap the “Assisted Reading” button in the top-right corner\r\n- Added options to clear temporary cache and TTS cache; go to Settings > Data\r\n- Added a pop-up prompt before opening external links\r\n- Support for hiding the built-in background in text-only PDFs\r\n- Support for clearing all keyboard shortcuts\r\n- Optimized chapter division rules for TXT files\r\n- (Mobile) Reading settings are divided into Basic Settings and Advanced Settings; Advanced Settings now support grouped display\r\n- (Mobile) Added support for MEGA cloud storage\r\n- (Mobile) Added an option to automatically adjust reading brightness\r\n- (Mobile) The native PDF reader and comic reader now support page turning via volume keys\r\n- (Mobile) Added Data Management to Settings, which displays cache and total data sizes\r\n- (Mobile) Added support for adjusting the threshold for automatically clearing temporary cache; go to Settings > Data Management\r\n- (Mobile) Added support for clearing the TTS cache; go to Settings > Data Management\r\n- (Mobile) Added an overlay animation for page-turning\r\n- (Mobile) Sorting by book title now supports sorting by numerical order\r\n- (Mobile) Added support for djvu, xps, chm, doc, rtf, pptx, ppt, ofd, djv, oxps, and ofd file formats\r\n- (Mobile) Added book collections and grouping features, allowing you to merge and manage multiple books together\r\n- (Mobile) Added support for adjusting page spacing in two-page view. Please click the setting button in the reading page\r\n- (Mobile) Added support for right-to-left page turning. Please click the setting button in the reading page\r\n- (Mobile) Added support for parsing ISBN, publication date, modification date, language, and other information from book files\r\n- (Mobile) Optimized support for comics in EPUB, MOBI, and AZW3 formats, with support for double-page mode and continuous scrolling\r\n- (Mobile) Added support for hiding the built-in background in text-only PDFs\r\n- (Mobile) Optimized chapter division rules for TXT files\r\n\r\n## Fixes\r\n- Fixed an issue where content in some books was obscured in both single-page and two-page modes\r\n- Fixed import and rendering issues for some CBZ and CBR format books\r\n- Fixed an issue where some AI providers could not retrieve the model list\r\n- Fixed a security vulnerability in directory traversal for the Docker version of OPDS\r\n- (Mobile) Fixed an issue where audiobooks could not be played in the background for extended periods after the screen was locked (Mobile) Fixed an issue where the bookmark list in the native PDF reader and comic reader was empty\r\n- (Mobile) Fixed an issue where the scope of text rules could not be set\r\n- (Mobile) Fixed an issue where content in some books was obscured in single-page and double-page modes\r\n- (Mobile) Fixed import and rendering issues for some CBZ and CBR format books\r\n- (Mobile) Fixed an issue where some AI providers could not retrieve the model list\r\n\r\n> [!TIP]\r\n> You can also download the installation package for this version from the [our self-hosted mirror](https://dl.koodoreader.com/latest.html).\r\n\r\n## 新增\r\n\r\n- 新增 OCR 插件功能，请前往设置-插件\r\n- 新增对 caj, djvu, xps, chm, doc, rtf, pptx, ppt, ofd, djv, oxps, ofd 格式的支持\r\n- 阅读页面支持沉浸式标题栏，阅读时将自动隐藏标题栏\r\n- 阅读选项支持分组展示\r\n- 新增图书合集和分组功能，支持将多本书合并展示和管理\r\n- 支持调节双页模式下的页间距，请前往右侧阅读选项-排版\r\n- 支持从右往左翻页，请前往右侧阅读选项-排版\r\n- 支持导出图书包功能，将把图书文件及其笔记，高亮，书签，生词一同打包为一个新文件，然后方便分享给其他人和在新设备上导入\r\n- 卸载时增加询问是否清除全部数据\r\n- 支持解析图书文件中的 ISBN，出版日期，修改日期，语言等信息\r\n- 适配 EPUB, MOBI, AZW3 格式的漫画，支持双页模式和连续滚动\r\n- 新增自动阅读功能，将按照指定的速度自动滚动页面，请点击右上角的辅助阅读按钮\r\n- 新增清理临时缓存和清理TTS缓存的功能，请前往设置-数据\r\n- 打开外部链接之前增加弹窗提示\r\n- 支持隐藏文字版 PDF 的内置背景\r\n- 支持清除所有快捷键\r\n- 优化 TXT 分章规则\r\n- （移动版）阅读设置分为基础设置和高级设置，同时高级设置支持分组展示\r\n- （移动版）增加对 MEGA 网盘的支持\r\n- （移动版）新增自动调节阅读亮度的选项\r\n- （移动版）原生PDF阅读器和漫画阅读器支持音量键翻页\r\n- （移动版）设置新增数据管理，支持展示缓存和全部数据大小\r\n- （移动版）支持调节自动清理临时缓存的阈值大小，请前往设置-数据管理\r\n- （移动版）支持清理TTS缓存，请前往设置-数据管理\r\n- （移动版）翻页动画新增覆盖动画\r\n- （移动版）按照图书名排序支持按照数字的自然大小排序\r\n- （移动版）新增对 djvu, xps, chm, doc, rtf, pptx, ppt, ofd, djv, oxps, ofd 格式的支持\r\n- （移动版）新增图书合集和分组功能，支持将多本书合并展示和管理\r\n- （移动版）支持调节双页模式下的页间距，请前往右侧阅读选项-排版\r\n- （移动版）支持从右往左翻页，请前往右侧阅读选项-排版\r\n- （移动版）支持解析图书文件中的 ISBN，出版日期，修改日期，语言等信息\r\n- （移动版）适配 EPUB, MOBI, AZW3 格式的漫画，支持双页模式和连续滚动\r\n- （移动版）支持隐藏文字版 PDF 的内置背景\r\n- （移动版）优化 TXT 分章规则\r\n\r\n## 修复\r\n- 修复部分图书内容在单页模式和双页模式下被遮挡的问题\r\n- 修复部分 CBZ 和 CBR 格式图书的导入和渲染问题\r\n- 修复部分AI提供商无法获取模型列表的问题\r\n- 修复 Docker 版 OPDS的目录遍历的安全漏洞\r\n- （移动版）修复锁屏之后，无法长时间在后台听书的问题\r\n- （移动版）修复原生PDF阅读器和漫画阅读器书签列表为空的问题\r\n- （移动版）修复无法设置文字规则的适用范围的问题\r\n- （移动版）修复部分图书内容在单页模式和双页模式下被遮挡的问题\r\n- （移动版）修复部分 CBZ 和 CBR 格式图书的导入和渲染问题\r\n- （移动版）修复部分AI提供商无法获取模型列表的问题\r\n\r\n> [!TIP]\r\n> 我们还提供了高速下载镜像，您也可以从 [自托管镜像](https://dl.koodoreader.com/latest.html) 下载此版本的安装包\r\n",
+    "downloads": [
+      {
+        "label": "Windows x64 · 绿色版 EXE",
+        "platform": "Windows",
+        "portable": true,
+        "file": "Koodo-Reader-2.4.7-x64-Portable.exe",
+        "size": 117790206,
+        "sha256": "2b9727d804784c3abaa18070c9b8c5a7b97654a0d519173d0621ab2633a6f109",
+        "official": "https://github.com/koodo-reader/koodo-reader/releases/download/v2.4.7/Koodo-Reader-2.4.7-x64-Portable.exe",
+        "mirrors": []
+      },
+      {
+        "label": "Windows x64 · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "Koodo-Reader-2.4.7-x64.exe",
+        "size": 118252320,
+        "sha256": "bb6e3835cb7b00274d1d51587bd1cf1da644e65e10bb49df51dac800214c0332",
+        "official": "https://github.com/koodo-reader/koodo-reader/releases/download/v2.4.7/Koodo-Reader-2.4.7-x64.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "readest": {
+    "version": "0.12.20",
+    "released": "2026-11-05",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/readest/readest/releases/tag/v0.12.20",
+    "changelog": "## Release Highlights\r\n* Vocabulary: You can now build a vocabulary list, mark words as Learning or Mastered for Word Lens hints, and sync with Anki\r\n* Statistics: Added a reading statistics dashboard so you can see your reading habits at a glance\r\n* Reading: Added Page Flip and paper curl page turns, a page preview while dragging the progress slider, a straight-line reading ruler, and keyboard-only text selection\r\n* Styling: You can now ignore publisher fonts, make white image backgrounds transparent, and adjust dialogue highlighting\r\n* Text-to-Speech: You can now preview voices, pick a default voice per language, and sync downloaded read-aloud audio across devices\r\n* Library: You can now import pasted text and Word or RTF files, share collections as bundles, search for covers in the app\r\n* Sync: Added Grimmory, Obsidian, and CrossPoint 2.0 highlight sync, a new view of where your reading data goes, and a switch for servers with self-signed certificates\r\n* Dictionary: You can now resize the dictionary popup, customize AI context lookups, edit word hints, and choose your lookup app on Android\r\n* PDF: Text is now sharper, especially on iOS and Android, with smoother pinch zoom, panning, and gapless horizontal scrolling\r\n* More: The KOReader plugin can sign in with a QR code, iPhone Duo gets book mode on its inner display, and stylus annotation and sync are more reliable\r\n\r\n## What's Changed\r\n<details>\r\n<summary>Click to expand</summary>\r\n\r\n* feat(library): show the full book or group title on hover by @chrox in https://github.com/readest/readest/pull/6785\r\n* fix(reader): keep the footer bar off the horizontal scrollbar when zoomed by @chrox in https://github.com/readest/readest/pull/6786\r\n* fix(sync): keep imported annotations through the next sync (#6762) by @chrox in https://github.com/readest/readest/pull/6787\r\n* fix(reader): release closed reader views from the cached book document, closes #6710 by @chrox in https://github.com/readest/readest/pull/6788\r\n* fix(tts): skip bare superscript note markers when reading aloud by @chrox in https://github.com/readest/readest/pull/6791\r\n* chore(agent): maintenance loops with a Reply Desk, lessons and acceptance rules by @chrox in https://github.com/readest/readest/pull/6796\r\n* fix(reader): let the battery percentage follow a custom footer text color by @chrox in https://github.com/readest/readest/pull/6798\r\n* fix(layout): clip nowrapped lines along the line only, keeping footnote icons whole by @chrox in https://github.com/readest/readest/pull/6801\r\n* fix(sync): push a highlight made right after a notes sync by @chrox in https://github.com/readest/readest/pull/6802\r\n* chore: declare tsx for the worktree scripts and clean up merged worktrees in the triage loop by @chrox in https://github.com/readest/readest/pull/6807\r\n* chore(deps): bump the github-actions group with 8 updates by @dependabot[bot] in https://github.com/readest/readest/pull/6812\r\n* fix(deps): resolve open Dependabot alerts by @chrox in https://github.com/readest/readest/pull/6813\r\n* fix(reader): highlight long and nested quoted dialogue by @chrox in https://github.com/readest/readest/pull/6814\r\n* fix(layout): keep the indent on paragraphs with a footnote icon by @chrox in https://github.com/readest/readest/pull/6828\r\n* fix(android): tighten the e-ink device identity whitelist by @k6G52m4Dz75W in https://github.com/readest/readest/pull/6833\r\n* fix(i18n): improve Turkish translations and add missing keys by @AlBPanda in https://github.com/readest/readest/pull/6830\r\n* fix(android): force light native chrome on e-ink devices by @k6G52m4Dz75W in https://github.com/readest/readest/pull/6799\r\n* fix(bookshelves): list filter values only from books still in the library by @jadhavgaurav in https://github.com/readest/readest/pull/6835\r\n* ci: guard the e-ink identity whitelist against Rust/Kotlin drift by @k6G52m4Dz75W in https://github.com/readest/readest/pull/6834\r\n* fix(reader): leave a footnote marker out of a double-click or long-press word by @chrox in https://github.com/readest/readest/pull/6808\r\n* fix(annotator): run quick actions on a selection made in the footnote popup by @chrox in https://github.com/readest/readest/pull/6809\r\n* fix(koplugin): give the Readest Library menu KOReader's UI for CoverBrowser by @chrox in https://github.com/readest/readest/pull/6845\r\n* fix(annotations): import ReadEra backups that split documents across docs_N.json by @chrox in https://github.com/readest/readest/pull/6846\r\n* fix(tts): hold the view still while a note is being typed during Read Aloud by @chrox in https://github.com/readest/readest/pull/6849\r\n* fix(tts): keep the sentence being read across the paragraph look-ahead by @chrox in https://github.com/readest/readest/pull/6860\r\n* fix(reader): open external links with their query string by @chrox in https://github.com/readest/readest/pull/6861\r\n* fix(reader): follow a link inside a table instead of zooming the table by @chrox in https://github.com/readest/readest/pull/6862\r\n* fix(reader): don't make a table that fits scroll because of a link at its edge by @chrox in https://github.com/readest/readest/pull/6882\r\n* fix(annotator): look up the next word in the footnote popup on desktop by @chrox in https://github.com/readest/readest/pull/6886\r\n* fix(md): render $ and $$ math in Markdown books by @chrox in https://github.com/readest/readest/pull/6887\r\n* fix(reader): break the page for page breaks in inline styles by @chrox in https://github.com/readest/readest/pull/6888\r\n* fix(reader): keep book colors that only start like #000 by @chrox in https://github.com/readest/readest/pull/6883\r\n* fix(reader): let a book's own hover style underline its links by @chrox in https://github.com/readest/readest/pull/6884\r\n* fix(reader): show the toolbar on a center tap in a scrolled comic by @chrox in https://github.com/readest/readest/pull/6885\r\n* fix(tts): keep a note's focus when a navigation ends during Read Aloud by @chrox in https://github.com/readest/readest/p",
+    "downloads": [
+      {
+        "label": "Windows x64 · 绿色版 EXE",
+        "platform": "Windows",
+        "portable": true,
+        "file": "Readest_0.12.20_x64-portable.exe",
+        "size": 97063424,
+        "sha256": "aef79804bcbb629e880f3ea2b6b32c6cc033e9dfd27304423523d09999325c36",
+        "official": "https://github.com/readest/readest/releases/download/v0.12.20/Readest_0.12.20_x64-portable.exe",
+        "mirrors": []
+      },
+      {
+        "label": "Windows x64 · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "Readest_0.12.20_x64-setup.exe",
+        "size": 62213579,
+        "sha256": "34714298219311c2e7b233fe98ae98976108779b9a343d6f226b505c6387d643",
+        "official": "https://github.com/readest/readest/releases/download/v0.12.20/Readest_0.12.20_x64-setup.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "appflowy": {
+    "version": "0.15.0",
+    "released": "2026-11-02",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.15.0",
+    "changelog": "### 🚀 v0.15.0\r\n\r\n#### New Features\r\n\r\n- **Dashboards** — Added dashboards combining views from multiple databases, with movable and resizable widgets, shared filters, and personal filter changes. Local dashboards could reuse existing views; creating new widget views required a server connection.\r\n- **Charts and drill-downs** — Added Number charts for workspaces with Pro features, expanded grouping and display controls, and drill-down tables for exploring a chart's records and saving the result as a filtered view.\r\n- **Page widths** — Added full-width and custom-width formatting per document, shared with collaborators while retaining each user's default for pages without an explicit width.\r\n- **Image search results** — Showed the image and matched text behind a search result, and opened documents at the matched image when the server supplied this information.\r\n- **Native update installation** — Added user-initiated installation on macOS and Windows x64 when the server enabled it and supplied a signed update feed. Retained manual downloads when native installation was unavailable.\r\n\r\n#### Improvements\r\n\r\n- **Database exports** — Added A4, A3, Letter, and Legal paper sizes with portrait or landscape orientation. Paginated wide PDF tables at a readable size and exported the active view's visible fields and current rows, with support for complete offline caches.\r\n- **Board views** — Added sorting within columns, column calculations, and backgrounds based on group colors.\r\n- **Images** — Saved thumbnails and decoded images at their display size across documents and database cards, reducing the size of images held in memory.\r\n- **Translations** — Updated interface translations and corrected Grid header and cell alignment in right-to-left languages.\r\n\r\n#### Bug Fixes\r\n\r\n- Preserved individual heading text during multi-block conversion, kept link formatting when editing URLs, and allowed read-only toggle blocks to expand without changing the shared document.\r\n- Prevented moving subpages in the sidebar from sending them to Trash, and preserved external-link and date mentions when copying or exporting document text.\r\n- Corrected row peek navigation and calendar row opening, focused newly added Grid rows for editing, and kept hidden Board groups usable during partial schema refreshes.\r\n- Preserved document image sizes while scrolling and recovered missing or damaged media caches without losing image authentication.\r\n- Prevented duplicated database content from uploading before its page was acknowledged by the server, and preserved database layouts when reopening views.\r\n- Fixed PDF image reading with Ollama models that advertised vision support through their capabilities.\r\n\r\n#### ⚠️ Action Required\r\n\r\n- Self-hosted workspaces still require **AppFlowy Cloud v0.19.10 or later**.\r\n- Self-hosted dashboards require server support for the Dashboard layout. Before using more than twelve widgets or four widgets in one row, deploy the updated dashboard validation to every realtime server.\r\n",
+    "downloads": [
+      {
+        "label": "Windows x64 · 绿色版 ZIP",
+        "platform": "Windows",
+        "portable": true,
+        "file": "AppFlowy-0.15.0-windows-x86_64.zip",
+        "size": 136660487,
+        "sha256": "a8acbcb249c31c5b76654b9570e784730ec76e903ee49536dca1b1aa68240b48",
+        "official": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.15.0/AppFlowy-0.15.0-windows-x86_64.zip",
+        "mirrors": []
+      },
+      {
+        "label": "Windows x64 · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "AppFlowy-0.15.0-windows-x86_64.exe",
+        "size": 94306136,
+        "sha256": "fad56ccdb0532ae49f9841410d67ed18f5d88091a8743663ea9e073517d24676",
+        "official": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.15.0/AppFlowy-0.15.0-windows-x86_64.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "siyuan": {
+    "version": "3.8.10",
+    "released": "2026-11-10",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/siyuan-note/siyuan/releases/tag/v3.8.10",
+    "changelog": "## Overview\r\n\r\nThis release adds rich document titles, database sub-items and related views, workspace-level AI long-term memory, and a built-in lightweight Markdown editor.\r\n\r\nDocument trees handle large directories more efficiently, while unified document and block breadcrumbs make navigation more consistent. Other improvements include mobile bottom sheets, HTTP requests in templates, custom PDF page sizes, LAN sync address selection, and bazaar compatibility filtering.\r\n\r\n## Changelogs\r\n\r\nBelow are the detailed changes in this version.\r\n\r\n### Enhancement\r\n\r\n* [Support unified document and block breadcrumbs](https://github.com/siyuan-note/siyuan/issues/3007)\r\n* [Support rich document titles and preserve slashes in notebook names](https://github.com/siyuan-note/siyuan/issues/20837)\r\n* [Improve document tree browsing performance and access to large directories](https://github.com/siyuan-note/siyuan/issues/20884)\r\n* [Support breadcrumb button visibility and ordering in appearance profiles](https://github.com/siyuan-note/siyuan/issues/20916)\r\n* [Support converting embed blocks to regular blocks or block references](https://github.com/siyuan-note/siyuan/issues/21018)\r\n* [Support configuring an Exa API key for built-in web search](https://github.com/siyuan-note/siyuan/issues/21026)\r\n* [Support database sub-items](https://github.com/siyuan-note/siyuan/issues/21038)\r\n* [Support HTTP requests in templates](https://github.com/siyuan-note/siyuan/issues/21058)\r\n* [Support workspace-level long-term memory for AI](https://github.com/siyuan-note/siyuan/issues/21062)\r\n* [Improve mind map summary input sizing, alignment, and colors](https://github.com/siyuan-note/siyuan/issues/21063)\r\n* [Improve Android edge-to-edge navigation bar adaptation](https://github.com/siyuan-note/siyuan/issues/21067)\r\n* [Improve floating window resizing responsiveness](https://github.com/siyuan-note/siyuan/issues/21068)\r\n* [Improve keyword search for text containing apostrophes](https://github.com/siyuan-note/siyuan/issues/21071)\r\n* [Support custom PDF page sizes](https://github.com/siyuan-note/siyuan/issues/21087)\r\n* [Improve mobile undo and redo access through the More menu](https://github.com/siyuan-note/siyuan/issues/21095)\r\n* [Support configuring floating dock bar visibility](https://github.com/siyuan-note/siyuan/issues/21097)\r\n* [Support loop playback for video blocks](https://github.com/siyuan-note/siyuan/issues/21098)\r\n* [Support a built-in lightweight Markdown editor](https://github.com/siyuan-note/siyuan/issues/21115)\r\n* [Support disabling the fixed-port proxy with a command-line option](https://github.com/siyuan-note/siyuan/issues/21133)\r\n* [Improve multi-row table header creation](https://github.com/siyuan-note/siyuan/issues/21155)\r\n* [Improve mobile dialog consistency with bottom sheets](https://github.com/siyuan-note/siyuan/issues/21160)\r\n* [Improve tag deletion with optional removal of automatically collected database entries](https://github.com/siyuan-note/siyuan/issues/21169)\r\n* [Support related database views in entry details](https://github.com/siyuan-note/siyuan/issues/21172)\r\n* [Improve LAN sync address selection in multi-interface and VPN environments](https://github.com/siyuan-note/siyuan/issues/21174)\r\n* [Support bazaar package compatibility filtering and sorting by first release date](https://github.com/siyuan-note/siyuan/issues/21273)\r\n\r\n### Refactor\r\n\r\n* [Migrate the desktop Electron main process to strict TypeScript modules](https://github.com/siyuan-note/siyuan/pull/21151)\r\n\r\n### Development\r\n\r\n* [Support opening document and notebook menus via the plugin API](https://github.com/siyuan-note/siyuan/issues/21219)\r\n\r\n## Download\r\n\r\n* [B3log](https://b3log.org/siyuan/en/download.html)\r\n* [GitHub](https://github.com/siyuan-note/siyuan/releases)",
+    "downloads": [
+      {
+        "label": "Windows · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "siyuan-3.8.10-win.exe",
+        "size": 241116904,
+        "sha256": "99a51a9296fe6dfe3a4ec77206d751243ef762170bbd1799726a9a344003dc6d",
+        "official": "https://github.com/siyuan-note/siyuan/releases/download/v3.8.10/siyuan-3.8.10-win.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "anki": {
+    "version": "26.09.4",
+    "released": "2026-11-04",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/ankitects/anki/releases/tag/26.09.4",
+    "changelog": "## What's Changed\r\n\r\n**⚠️ This update contains important security fixes. Please upgrade as soon as possible**.\r\n\r\n- Shared decks could execute arbitrary code via iframes when viewed in the editor ([GHSA-j9v5-m549-cg6c](https://github.com/ankitects/anki/security/advisories/GHSA-j9v5-m549-cg6c)). Thanks to @DePierre for the report.\r\n- On macOS, shared decks could execute arbitrary commands via specially crafted image filenames when the \"Show in Folder\" editor action is used ([GHSA-gfvm-4968-jp9m](https://github.com/ankitects/anki/security/advisories/GHSA-gfvm-4968-jp9m)). Thanks to @hyperreality and @Hama1cco for the reports.\r\n- Compromised eMudhra intermediate CA certificates are now disallowed. This is in response to a [widespread security incident](https://emudhra.we-have-a-problem.com/) affecting most systems and web browsers. **Updating Anki might not be enough. Please make sure your system is fully up to date.**\r\n\r\n**Full Changelog**: https://github.com/ankitects/anki/compare/26.09.3...26.09.4",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安装包 MSI",
+        "platform": "Windows",
+        "portable": false,
+        "file": "anki-26.09.4-win-x64.msi",
+        "size": 201621504,
+        "sha256": "c35e7b90acf2929a71d70ac755a3dd0685f9fbe1a89d2f9edabb6fe7c0d91cba",
+        "official": "https://github.com/ankitects/anki/releases/download/26.09.4/anki-26.09.4-win-x64.msi",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "marktext": {
+    "version": "0.23.0",
+    "released": "2026-10-21",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/marktext/marktext/releases/tag/v0.23.0",
+    "changelog": "## ⚠️ Note for macOS users\nBuilds are unsigned (no Apple Developer ID). After dragging MarkText into Applications, clear the quarantine flag once:\n```\nxattr -d com.apple.quarantine /Applications/MarkText.app\n```\n\n## Verifying downloads\nAll artifacts are listed with their SHA-256 in `SHA256SUMS.txt`. Verify with:\n```\nsha256sum -c SHA256SUMS.txt --ignore-missing\n```\n\n\n## What's Changed\n* chore(release): v0.22.0 by @Jocs in https://github.com/marktext/marktext/pull/5779\n* chore: begin v0.23.0 development by @Jocs in https://github.com/marktext/marktext/pull/5780\n* fix(release): explicitly select the previous stable version by @Jocs in https://github.com/marktext/marktext/pull/5781\n* feat: #5695 ship Linux arm64 packages in releases by @kukirin-ui in https://github.com/marktext/marktext/pull/5778\n* fix: unify inline and block code font families by @Jocs in https://github.com/marktext/marktext/pull/5783\n* fix: #4997 give icon-only controls accessible names by @Pranav435 in https://github.com/marktext/marktext/pull/5739\n* fix: #4997 theme icon tooltips and delay hover hints by @Jocs in https://github.com/marktext/marktext/pull/5788\n* feat: foldable headings in the WYSIWYG editor (#1869) by @rkristelijn in https://github.com/marktext/marktext/pull/5276\n* feat: #3743 add an independent responsive document outline by @Jocs in https://github.com/marktext/marktext/pull/5791\n* feat: simplify sidebar navigation and search layout by @Jocs in https://github.com/marktext/marktext/pull/5792\n* feat: add localized document statistics popover by @Jocs in https://github.com/marktext/marktext/pull/5794\n* [1/5] fix(muya): validate asynchronous edit targets by @Jocs in https://github.com/marktext/marktext/pull/5799\n* [2/5] feat(muya): add accessible code copy and clipboard feedback by @Jocs in https://github.com/marktext/marktext/pull/5800\n* refactor(notification): use Element Plus Notification for global notices by @Jocs in https://github.com/marktext/marktext/pull/5798\n* fix(menu): localize recent documents and polish theme labels by @Jocs in https://github.com/marktext/marktext/pull/5803\n* fix(desktop): stabilize tab and sidebar dirty actions by @Jocs in https://github.com/marktext/marktext/pull/5804\n* [3/5] feat(muya): add read-only document mode by @Jocs in https://github.com/marktext/marktext/pull/5801\n* [4/5] feat: integrate per-tab document modes and protected saves by @Jocs in https://github.com/marktext/marktext/pull/5802\n* [5/5] feat: expose per-tab Reading Mode controls and menu eligibility by @Jocs in https://github.com/marktext/marktext/pull/5793\n* fix: #5784 declare ALSA and libgbm dependencies in Linux packages by @kukirin-ui in https://github.com/marktext/marktext/pull/5785\n* fix: prevent duplicate sidebar trash confirmations by @Jocs in https://github.com/marktext/marktext/pull/5806\n* fix: unify heading and code copy feedback by @Jocs in https://github.com/marktext/marktext/pull/5805\n* refactor(muya): type mutation sources with ChangeSource by @Jocs in https://github.com/marktext/marktext/pull/5811\n* refactor(muya): centralize read-only select-all in selection by @Jocs in https://github.com/marktext/marktext/pull/5813\n* refactor(muya): reduce Markdown state and export complexity by @Jocs in https://github.com/marktext/marktext/pull/5815\n* refactor(muya): rename read-only state getter to isReadOnly by @Jocs in https://github.com/marktext/marktext/pull/5812\n* docs(muya): remove redundant implementation and test comments by @Jocs in https://github.com/marktext/marktext/pull/5814\n* docs(desktop): remove redundant comments by @Jocs in https://github.com/marktext/marktext/pull/5816\n* chore(desktop): remove unused bindings and lint directives by @Jocs in https://github.com/marktext/marktext/pull/5817\n* refactor(desktop): remove redundant non-null assertions by @Jocs in https://github.com/marktext/marktext/pull/5818\n* fix(desktop): refine document statistics popover by @Jocs in https://github.com/marktext/marktext/pull/5819\n* feat(desktop): add preview tabs for sidebar files (#2395) by @Jocs in https://github.com/marktext/marktext/pull/5820\n* feat(desktop): add --read-only CLI option by @Jocs in https://github.com/marktext/marktext/pull/5821\n\n## New Contributors\n* @kukirin-ui made their first contribution in https://github.com/marktext/marktext/pull/5778\n* @Pranav435 made their first contribution in https://github.com/marktext/marktext/pull/5739\n\n**Full Changelog**: https://github.com/marktext/marktext/compare/v0.22.0...v0.23.0",
+    "downloads": [
+      {
+        "label": "Windows x64 · 绿色版 ZIP",
+        "platform": "Windows",
+        "portable": true,
+        "file": "marktext-win-x64-0.23.0.zip",
+        "size": 181482586,
+        "sha256": "10ff69f91303f1009e7bdb1f490a4b30d716804ebc95b9e98c12b0c84cffa16f",
+        "official": "https://github.com/marktext/marktext/releases/download/v0.23.0/marktext-win-x64-0.23.0.zip",
+        "mirrors": []
+      },
+      {
+        "label": "Windows x64 · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "marktext-win-arm64-0.23.0-setup.exe",
+        "size": 126033364,
+        "sha256": "215fe896f23498a6c4e1e1e159d825d69582ba31288feaa64067a26e4c787509",
+        "official": "https://github.com/marktext/marktext/releases/download/v0.23.0/marktext-win-arm64-0.23.0-setup.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "zettlr": {
+    "version": "4.10.0",
+    "released": "2026-11-13",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/Zettlr/Zettlr/releases/tag/v4.10.0",
+    "changelog": "**Quality of Life Improvements | Cleanup | Fixes**\r\n\r\nThis new update of Zettlr primarily fixes things that were either broken for some time, or broke in 4.9. However, it also includes a set of features and other improvements that will come in handy.\r\n\r\nAmong the most notable changes in this update are: (1) attachments specified in BibTeX or BibLaTeX libraries are properly opened via the context menu in Zettlr; (2) Mermaid diagrams will render again; (3) keywords and tags in YAML frontmatters are clickable again; (4) we fixed a bunch of shortcuts that stopped working after the custom shortcut update; (5) the LanguageTool linter now additionally checks various text-fields in your frontmatters; and (6) we have begun homogenizing Zettlr's UI across all platforms. macOS-users should not see many differences, but on Windows and Linux, the app will look considerably different. This change does not affect the placement or functionality of any UI elements, only their styling.\r\n\r\nThere's much more that has changed, so we again invite you to read the Changelog below before updating. Happy writing!\r\n\r\n> **Do you enjoy Zettlr? Then consider making a donation to help us pay for the development costs. You can donate [monthly on Patreon](https://www.patreon.com/zettlr) or [once via PayPal](https://www.paypal.me/hendrikerz). Additionally, you can directly [sponsor Hendrik Erz on GitHub](https://github.com/sponsors/nathanlesage) or [send a tip on Ko-Fi](https://ko-fi.com/hendrikerz). Thanks for your support!**\r\n\r\n# Changelog\r\n\r\n## GUI and Functionality\r\n\r\n- **Feature**: The context menus for links and images now also feature various\r\n  items that may be useful for formatting aspects of the link/image descriptions\r\n  (#6417).\r\n- **Feature**: Make the \"find next\" and \"find previous\" commands of the editor\r\n  search configurable. Previously, both `Mod-g` and `F3` would move to the next\r\n  search result, but after implementing custom shortcuts, these two commands\r\n  were left unconfigurable and hard-coded to `Mod-g`. These are now configurable\r\n  so that you can change the default keybinding of `Mod-g` to `F3` if you wish\r\n  (#6575).\r\n- **Feature**: The LanguageTool linter now also lints text-only properties in\r\n  the frontmatter, using the same language as the rest of the document. This\r\n  allows spotting issues with these metadata fields as well. Currently, the\r\n  linter includes in its detection the following properties:\r\n    - `title`\r\n    - `subtitle`\r\n    - `abstract`\r\n    - `abstract-title`\r\n    - `description`\r\n    - `shorttitle`\r\n    - `shortsubtitle`\r\n    - `thanks`\r\n- **Change**: The styles and layouts of various UI components have been\r\n  adjusted. The following components should now look mostly the same across all\r\n  operating systems:\r\n    - Toolbar\r\n    - File Tree\r\n    - Sidebar\r\n- **Change**: Removed the `.md` extension from the default new filename pattern\r\n  in the Advanced Preferences menu. This pattern is used as the filename, so the\r\n  extension is unnecessary. Previously, creating a new file with the default\r\n  pattern would result in the `.md` extension being added twice to markdown\r\n  files, or added incorrectly to non-markdown files. Existing users should\r\n  update the pattern manually by removing `.md` from it. For new installations,\r\n  the pattern will be correct. (#6638).\r\n- **Change**: The layout of the document information popover is now improved.\r\n  We have moved the bold styling over to the actually important parts, improved\r\n  legibility of the popover, and included more information -- notably,\r\n  regardless of which unit (words or characters) you select in the preferences,\r\n  the popover will now display both numbers, with your preferred one clearly\r\n  visible.\r\n- Fixed a misaligned size distribution between the file manager, editor view,\r\n  and sidebar. Now, when double-clicking the dividers between these three\r\n  components, they will resize so that both sidebars take up 20% of the window\r\n  width, as opposed to a distribution of 20% for the file manager and ca. 15%\r\n  for the sidebar. This way, both sidebars of the main window are visually\r\n  equally sized.\r\n- Fixed a bug where Zettlr would *never* load attachments from your main\r\n  database if that database was in `BibTeX` or `BibLaTeX` format, as a small\r\n  logical error made the relevant code for retrieving attachments never find the\r\n  database in memory and thus would always fall back to attempting to contact\r\n  Zotero, which would, logically, fail for JabRef users (#6619).\r\n- Library loading on boot is now asynchronous, also we register a\r\n  long-running task during database loads to visualize especially the loading of\r\n  large library files.\r\n- Fixed a bug that prevented Mermaid diagrams from rendering due to an\r\n  underlying bug in the new API (#6625).\r\n- Fixed an issue that would cause full-text searches to start even as the input\r\n  field was still composing non-latin text (#6597; #6604).\r\n- Fixed the spacing on the changelog entries to make it more pleasant to read.\r\n- Fixed an issue that could, under the right circumstances, write unusual values\r\n  for resized split views into the configuration, necessitating a configuration\r\n  modification to render Zettlr usable again (#5829).\r\n- Fixes various issues pertaining to keywords/tags which are present in YAML\r\n  frontmatters of files. Zettlr now again correctly detects these and they are\r\n  clickable, yielding a search for keywords, which also includes keywords with\r\n  spaces (#2443; #2590; #4498; see PR #6496).\r\n- Fixed a 404-link to an old documentation page in the onboarding dialog.\r\n- Fixed the LanguageTool language overrides. Previously, if you wanted to change\r\n  the language in which LanguageTool would check your document via the `lang`\r\n  property (e.g., `lang: fr` to force French instead of autodetection), you had\r\n  to reload the entire document. Now changes are detected on the fly as you\r\n  modify the `lang` property in the YAML frontmatter.\r\n- Fixed t",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "Zettlr-4.10.0-x64.exe",
+        "size": 166182008,
+        "sha256": "80fe5a7ce88ce6b47bd71a669ac7a3cb63b2c0a868daddcfcd29e052056eb423",
+        "official": "https://github.com/Zettlr/Zettlr/releases/download/v4.10.0/Zettlr-4.10.0-x64.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "thunderbird": {
+    "version": "160.0",
+    "released": "2026-11-10",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Mozilla/Thunderbird/160.0",
+    "changelog": "",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "Thunderbird Setup 160.0.exe",
+        "size": null,
+        "sha256": "27c75ecb78609505b1c89e139fa172b634c74eb1b5e823c49aefee15286111a0",
+        "official": "https://download-installer.cdn.mozilla.net/pub/thunderbird/releases/160.0/win64/en-US/Thunderbird%20Setup%20160.0.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false,
+    "source": "winget"
+  },
+  "ab-download-manager": {
+    "version": "1.11.4",
+    "released": "2026-11-03",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/amir1376/ab-download-manager/releases/tag/v1.11.4",
+    "changelog": "## 1.11.4\r\n\r\nA hotfix for [v1.11.3](https://github.com/amir1376/ab-download-manager/releases/v1.11.3)\r\n\r\n### Fixed\r\n\r\n- Fixed QR code rendering on dark themes.\r\n\r\n### Improved\r\n\r\n- Updated translations\r\n- Improved the speed of reading multiple QR codes.\r\n\r\n## 1.11.3\r\n\r\n### Added\r\n\r\n- Added a Network section to the desktop settings page\r\n\r\n### Fixed\r\n\r\n- Fixed incorrect category icon names being saved to storage. If you notice any mismatched category icons, right-click\r\n  the category and select **Reset to Defaults**\r\n\r\n### Improved\r\n\r\n- Updated translations\r\n- Improved the QR Code scanner UI/UX on Android (#1516)\r\n- Improved QR Code sharing, allowing users to share multiple download credentials across multiple QR Codes (#1520)\r\n",
+    "downloads": [
+      {
+        "label": "Windows x64 · 绿色版 ZIP",
+        "platform": "Windows",
+        "portable": true,
+        "file": "ABDownloadManager_1.11.4_windows_x64.zip",
+        "size": 93910972,
+        "sha256": "5a549b823e4846718a95883bd71b5b43e2bdd026596cbc82fdf38f0253eb6da7",
+        "official": "https://github.com/amir1376/ab-download-manager/releases/download/v1.11.4/ABDownloadManager_1.11.4_windows_x64.zip",
+        "mirrors": []
+      },
+      {
+        "label": "Windows x64 · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "ABDownloadManager_1.11.4_windows_x64.exe",
+        "size": 78610559,
+        "sha256": "36869d49d8806fab9ec349fc6624df377bf5286f453585d1475d3167a9f7ce13",
+        "official": "https://github.com/amir1376/ab-download-manager/releases/download/v1.11.4/ABDownloadManager_1.11.4_windows_x64.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "xdm": {
+    "version": "9.0.10",
+    "released": "2026-11-12",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/subhra74/xdm/releases/tag/v9.0.10",
+    "changelog": "## Downloads\n\n| Installer | Notes |\n|---|---|\n| [xdm-app-9.0.10-arm64.dmg](https://github.com/subhra74/xdm/releases/download/v9.0.10/xdm-app-9.0.10-arm64.dmg) | For Apple Silicon (M1 or later) mac |\n| [xdm-app-9.0.10-x64.dmg](https://github.com/subhra74/xdm/releases/download/v9.0.10/xdm-app-9.0.10-x64.dmg) | For Intel mac |\n| [xdm-9.0.10-arm64.msi](https://github.com/subhra74/xdm/releases/download/v9.0.10/xdm-9.0.10-arm64.msi) | For Windows ARM (Windows 10/11) |\n| [xdm-9.0.10-x64.msi](https://github.com/subhra74/xdm/releases/download/v9.0.10/xdm-9.0.10-x64.msi) | For Windows x64 (Windows 10/11) |\n| [xdmsetup-9.0.10.msi](https://github.com/subhra74/xdm/releases/download/v9.0.10/xdmsetup-9.0.10.msi) | Same as the x64 MSI; for XDM 8 (Microsoft Store) update notices |\n| [xdm-app_9.0.10_amd64.deb](https://github.com/subhra74/xdm/releases/download/v9.0.10/xdm-app_9.0.10_amd64.deb) | For Debian / Ubuntu / Linux Mint x64 |\n| [xdm-app_9.0.10_arm64.deb](https://github.com/subhra74/xdm/releases/download/v9.0.10/xdm-app_9.0.10_arm64.deb) | For Debian / Ubuntu / Linux Mint ARM |\n| [xdm-app-9.0.10-1.aarch64.rpm](https://github.com/subhra74/xdm/releases/download/v9.0.10/xdm-app-9.0.10-1.aarch64.rpm) | For Fedora / RHEL / openSUSE ARM |\n| [xdm-app-9.0.10-1.x86_64.rpm](https://github.com/subhra74/xdm/releases/download/v9.0.10/xdm-app-9.0.10-1.x86_64.rpm) | For Fedora / RHEL / openSUSE x64 |\n| [xdm-app-9.0.10-1-aarch64.pkg.tar.zst](https://github.com/subhra74/xdm/releases/download/v9.0.10/xdm-app-9.0.10-1-aarch64.pkg.tar.zst) | For Arch Linux / Manjaro ARM |\n| [xdm-app-9.0.10-1-x86_64.pkg.tar.zst](https://github.com/subhra74/xdm/releases/download/v9.0.10/xdm-app-9.0.10-1-x86_64.pkg.tar.zst) | For Arch Linux / Manjaro x64 |\n| [xdm-app-9.0.10-linux-arm64.tar.gz](https://github.com/subhra74/xdm/releases/download/v9.0.10/xdm-app-9.0.10-linux-arm64.tar.gz) | For any Linux ARM (portable, no install) |\n| [xdm-app-9.0.10-linux-x64.tar.gz](https://github.com/subhra74/xdm/releases/download/v9.0.10/xdm-app-9.0.10-linux-x64.tar.gz) | For any Linux x64 (portable, no install) |\n\n[Code signing policy](https://github.com/subhra74/xdm/blob/master/CODE_SIGNING_POLICY.md)\n\n\n## What's Changed\n\n**Full Changelog**: https://github.com/subhra74/xdm/compare/v9.0.9...v9.0.10\n\n",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安装包 MSI",
+        "platform": "Windows",
+        "portable": false,
+        "file": "xdm-9.0.10-x64.msi",
+        "size": 66217754,
+        "sha256": "86072249c4678a60e73bd197c3b475b8266e4a98222e18762464217b5b4835cb",
+        "official": "https://github.com/subhra74/xdm/releases/download/v9.0.10/xdm-9.0.10-x64.msi",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "media-downloader": {
+    "version": "5.6.8",
+    "released": "2026-11-04",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/mhogomchungu/media-downloader/releases/tag/5.6.8",
+    "changelog": "```\r\nThe signing key can be retrieved with below command:\r\n\r\n    gpg --recv-keys 0x6855E493B5B2DF96E319BB6D16E2E1ACC6F51242\r\n\r\nNote on Windows builds:\r\n\r\n   -  MediaDownloaderQt6 builds for Windows are 64 bit/Qt6 and have \r\n      minimum requirement of windows 10, version 1607.\r\n\r\n   -  MediaDownloaderQt5 builds for Windows are 32 bit/Qt5 and have \r\n      minimum requirement of windows 7.\r\n\r\n     [WINDOWS 7 AND WINDOWS 8]\r\n      - Pin quickjs-ng version to version 0.17.0 because version 0.18.0 hangs on\r\n        64 bit windows.\r\n     [FLATPAK]\r\n       - Update kde runtime to version 6.11.\r\n```",
+    "downloads": [
+      {
+        "label": "Windows · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "MediaDownloaderQt6-5.6.8.setup.exe",
+        "size": 47132763,
+        "sha256": "5e599e696ce9b9cf8286e83059640944ce6990d1b7280bfc7e1b8074a2513388",
+        "official": "https://github.com/mhogomchungu/media-downloader/releases/download/5.6.8/MediaDownloaderQt6-5.6.8.setup.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "prism-launcher": {
+    "version": "11.1.1",
+    "released": "2026-09-28",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/PrismLauncher/PrismLauncher/releases/tag/11.1.1",
+    "changelog": "We're back!\r\n\r\nThis is a hotfix release for a security vulnerability that appeared in 11.1.0.  We'll disclose more information about this in the upcoming week. Special thanks to @OpenNerdz for reporting it!\r\n\r\n# Changelog\r\n\r\nYou can find a full list of changes here: https://github.com/PrismLauncher/PrismLauncher/compare/11.1.0...11.1.1\r\n\r\n## Fixed\r\n\r\n- Prevent path traversal in CurseForge modpack overrides by [@Trial97](https://github.com/Trial97) in [#6183](https://github.com/PrismLauncher/PrismLauncher/pull/6183)",
+    "downloads": [
+      {
+        "label": "Windows x64 · 绿色版 ZIP",
+        "platform": "Windows",
+        "portable": true,
+        "file": "PrismLauncher-Windows-MSVC-Portable-11.1.1.zip",
+        "size": 20396629,
+        "sha256": "ab35a770fb06d89d2ccc098079db5db329fb4e68f42b72babd8b095efde3d2d7",
+        "official": "https://github.com/PrismLauncher/PrismLauncher/releases/download/11.1.1/PrismLauncher-Windows-MSVC-Portable-11.1.1.zip",
+        "mirrors": []
+      },
+      {
+        "label": "Windows x64 · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "PrismLauncher-Windows-MSVC-Setup-11.1.1.exe",
+        "size": 23964776,
+        "sha256": "aaf1f371a41d530785b679e3a2e1141dceec98651fc35d56dc0842b2740280ae",
+        "official": "https://github.com/PrismLauncher/PrismLauncher/releases/download/11.1.1/PrismLauncher-Windows-MSVC-Setup-11.1.1.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "hmcl": {
+    "version": "3.16.4",
+    "released": "2026-09-17",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/HMCL-dev/HMCL/releases/tag/v3.16.4",
+    "changelog": "&nbsp;**[Changelog](https://docs.hmcl.net/changelog/stable.html#HMCL-3.16.4)** (Chinese)\r\n\r\n| File | SHA-256 Checksum |\r\n| ---  | --- |\r\n| [HMCL-3.16.4.exe](https://github.com/HMCL-dev/HMCL/releases/download/v3.16.4/HMCL-3.16.4.exe) | `632c2d8873f5a11dd2ffd8418564174995c6a248de5206668c6be114e943e372` |\r\n| [HMCL-3.16.4.jar](https://github.com/HMCL-dev/HMCL/releases/download/v3.16.4/HMCL-3.16.4.jar) | `98f0123f38e86a606aa583f74d21ae74128679e921ea7ec0c43ab26303767e9e` |\r\n| [HMCL-3.16.4.sh](https://github.com/HMCL-dev/HMCL/releases/download/v3.16.4/HMCL-3.16.4.sh)   | `23b52b5f80f45efa359787055f4a6d71343c5a342b4622f2f3e5d4b3c9f23fe5` |\r\n| [HMCL-3.16.4.deb](https://github.com/HMCL-dev/HMCL/releases/download/v3.16.4/HMCL-3.16.4.deb) | `57a1b0ed4cbbdc1d013974868c03aab567961abb0ee67d95f46919f745fc1292` |\r\n",
+    "downloads": [
+      {
+        "label": "Windows · 单文件 EXE",
+        "platform": "Windows",
+        "portable": true,
+        "file": "HMCL-3.16.4.exe",
+        "size": 10907431,
+        "sha256": "632c2d8873f5a11dd2ffd8418564174995c6a248de5206668c6be114e943e372",
+        "official": "https://github.com/HMCL-dev/HMCL/releases/download/v3.16.4/HMCL-3.16.4.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "ppsspp": {
+    "version": "1.20.4",
+    "released": "2026-05-16",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/hrydgard/ppsspp/releases/tag/v1.20.4",
+    "changelog": "PPSSPP is a cross-platform PSP emulator. Visit PPSSPP [official website](https://ppsspp.org) for a [full changelog](https://ppsspp.org/index.html#news) as well as the [downloads section](https://ppsspp.org/downloads.html) for other platforms.\n",
+    "downloads": [
+      {
+        "label": "Windows x64 · 绿色版 ZIP",
+        "platform": "Windows",
+        "portable": true,
+        "file": "PPSSPP-v1.20.4-Windows-x64.zip",
+        "size": 20390334,
+        "sha256": "fbc9cd2f5131b159a92424e5c458c35ce43ba603cdded64dfc98e4bd4f17ff93",
+        "official": "https://github.com/hrydgard/ppsspp/releases/download/v1.20.4/PPSSPP-v1.20.4-Windows-x64.zip",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "retroarch": {
+    "version": "1.22.2",
+    "released": "",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/Libretro/RetroArch/1.22.2",
+    "changelog": "",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "RetroArch-Win64-setup.exe",
+        "size": null,
+        "sha256": "bb2b95329542d98d951bb381c0dd57e803d846242878895f12d374b87201c1c9",
+        "official": "https://buildbot.libretro.com/stable/1.22.2/windows/x86_64/RetroArch-Win64-setup.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false,
+    "source": "winget"
+  },
+  "freecad": {
+    "version": "1.1.4",
+    "released": "2026-09-28",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/FreeCAD/FreeCAD/releases/tag/1.1.4",
+    "changelog": "FreeCAD 1.1.4 is the last planned maintenance release in the 1.1.x series. It includes two security fixes addressing file-handling vulnerabilities that can be triggered by opening a maliciously crafted FCStd file. All previously-released versions are affected by these issues, so we strongly recommend that all users upgrade, especially anyone who opens FreeCAD files from untrusted or unknown sources.\r\n\r\n## How to download\r\nThe assets section below is automatically populated as the builds complete: if you don't see a download for your system, please be patient, the builds can take several hours to complete. Windows and macOS builds are signed by The FreeCAD project association AISBL.\r\n\r\n## What's Changed\r\n* fix COIN3D_MICRO_VERSION regex for coin 4.0.10 by @moench-tegeder in #30899 (backported by PR [#31571](https://github.com/FreeCAD/FreeCAD/pull/31571))\r\n* core: Improve performance of fps label by @ipatch in #29628 (backported by PR [#31657](https://github.com/FreeCAD/FreeCAD/pull/31657))\r\n* Gui: Fix visibility icons for link group sub-items by @maxwxyz in #31559 (backported by PR [#31684](https://github.com/FreeCAD/FreeCAD/pull/31684))\r\n* TechDraw: Projection Group jumps to origin by @WandererFan in #27094 (backported by PR [#31687](https://github.com/FreeCAD/FreeCAD/pull/31687))\r\n* [Gui] fix TinkerCAD nav style to consistently show the context menu … by @Syres916 in #31631 (backported by PR [#31706](https://github.com/FreeCAD/FreeCAD/pull/31706))\r\n* Fix regression with 3mf thumbnail by @sliptonic in #30682 (backported by PR [#31717](https://github.com/FreeCAD/FreeCAD/pull/31717))\r\n* BIM: fix site ReferenceError when creating project with default structure by @Roy-043 in #31747 (backported by PR [#31756](https://github.com/FreeCAD/FreeCAD/pull/31756))\r\n* Gui: Fix Sketcher toolbar state not persisting across workbench switches by @ayyaz20003 in #28674\r\n* Gui: fix toolbar icon size reset after stylesheet reload by @Bojan9597 in #28998 (backported by PR [#31762](https://github.com/FreeCAD/FreeCAD/pull/31762))\r\n* BIM: fix another error in #30001 by @Roy-043 in #31761 (backported by PR [#31768](https://github.com/FreeCAD/FreeCAD/pull/31768))\r\n* TechDraw: allow precise surface finish symbol placement by @WandererFan in #31635 (backported by PR [#31794](https://github.com/FreeCAD/FreeCAD/pull/31794))\r\n* Draft: fix format_object for Links by @Roy-043 in #31800 (backported by PR [#31814](https://github.com/FreeCAD/FreeCAD/pull/31814))\r\n* [Part] Fix seg fault when opening file with faulty geometry by @Syres916 in #31812 (backported by PR [#31837](https://github.com/FreeCAD/FreeCAD/pull/31837))\r\n* Gui: Hide ShowPlane with its object by @maxwxyz in #31871 (backported by PR [#31946](https://github.com/FreeCAD/FreeCAD/pull/31946))\r\n* Replace deprecated QImage::mirrored by QImage::flipped by @Lgt2x in #27563 (backported by PR [#31989](https://github.com/FreeCAD/FreeCAD/pull/31989))\r\n* [TD]expose scrubEdges to Python by @WandererFan in #29009 (backported by PR [#32013](https://github.com/FreeCAD/FreeCAD/pull/32013))\r\n* TechDraw: Avoid unnecessary approximation of bspline curve by @WandererFan in #29648 (backported by PR [#32063](https://github.com/FreeCAD/FreeCAD/pull/32063))\r\n* [TD]Line format fixes by @WandererFan in #29430 (backported by PR [#32268](https://github.com/FreeCAD/FreeCAD/pull/32268))\r\n* BIM: BimViews: fix IfcType error for WorkingPlaneProxy in Std_Group by @Roy-043 in #32055 (backported by PR [#32419](https://github.com/FreeCAD/FreeCAD/pull/32419))\r\n* Draft: flatten SVG faces (improved) by @Roy-043 in #32416 (backported by PR [#32422](https://github.com/FreeCAD/FreeCAD/pull/32422))\r\n* Gui: Fix splash screen rendering on macOS by @maxwxyz in #32598 (backported by PR [#32617](https://github.com/FreeCAD/FreeCAD/pull/32617))\r\n* Draft: fix midpoint snap for hyperbola by @Roy-043 in #32499 (backported by PR [#32503](https://github.com/FreeCAD/FreeCAD/pull/32503))\r\n* TechDraw: fix PAT hatch color and width by @WandererFan in #32791 (backported by PR [#32796](https://github.com/FreeCAD/FreeCAD/pull/32796))\r\n* BIM: Prevent flipping of v1.0.2 columns by @Roy-043 in #32244 (backported by PR [#32810](https://github.com/FreeCAD/FreeCAD/pull/32810))\r\n* Gui: fix splash screen positioning (wrong window flags) by @ElementW in #32834 (backported by PR [#32847](https://github.com/FreeCAD/FreeCAD/pull/32847))\r\n* [Sketcher] Fix `SketchObject::setConstruction` for external geometries by @AjinkyaDahale in #32891 (backported by PR [#32906](https://github.com/FreeCAD/FreeCAD/pull/32906))\r\n* TechDraw: honour Print Center Marks preference by @WandererFan in #31779 (backported by PR [#32941](https://github.com/FreeCAD/FreeCAD/pull/32941))\r\n* (cp) Gui: Set alpha value to 255 of default colors by @maxwxyz in #31729 (backported by PR [#32978](https://github.com/FreeCAD/FreeCAD/pull/32978))\r\n* FEM: Avoid ZipSlip by @chennes in #31878 (backported by PR [#32980](https://github.com/FreeCAD/FreeCAD/pull/32980))\r\n* Fem: Fix constraint symbol paths by @marioalexis84 in #32176 (backported by PR [#32981](https://github.com/FreeCAD/FreeCAD/pull/32981))\r\n* App: Avoid ZipSlip in VRML texture loading by @chennes in #33017 (backported by PR [#33019](https://github.com/FreeCAD/FreeCAD/pull/33019))\r\n\r\n**Full Changelog**: https://github.com/FreeCAD/FreeCAD/compare/1.1.3...1.1.4",
+    "downloads": [
+      {
+        "label": "Windows x64 · 绿色版 7z",
+        "platform": "Windows",
+        "portable": true,
+        "file": "FreeCAD_1.1.4-Windows-x86_64-py311.7z",
+        "size": 418088341,
+        "sha256": "4828741fc91ee37fafcdb97a1abacb18b04ba451ac4372d9ff7a7349b36f4d6d",
+        "official": "https://github.com/FreeCAD/FreeCAD/releases/download/1.1.4/FreeCAD_1.1.4-Windows-x86_64-py311.7z",
+        "mirrors": []
+      },
+      {
+        "label": "Windows x64 · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "FreeCAD_1.1.4-Windows-x86_64-py311-installer.exe",
+        "size": 519314976,
+        "sha256": "845f7101d33faf257a82a0cadc5f4f3804441f46ee493eb32b92fcf9c7147a24",
+        "official": "https://github.com/FreeCAD/FreeCAD/releases/download/1.1.4/FreeCAD_1.1.4-Windows-x86_64-py311-installer.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "darktable": {
+    "version": "5.6.2",
+    "released": "2026-10-04",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/darktable-org/darktable/releases/tag/release-5.6.2",
+    "changelog": "We're proud to announce the bug-fix release of darktable, 5.6.2!\r\n\r\nThe github release is here: [https://github.com/darktable-org/darktable/releases/tag/release-5.6.2](https://github.com/darktable-org/darktable/releases/tag/release-5.6.2).\r\n\r\nTo build from source, do not use the autogenerated tarball provided by GitHub on the release page, download our tar.xz file instead. If you're just building for yourself without creating a package for some distribution, then using source code cloning in git is an even more convenient way.\r\n\r\nThe checksums are:\r\n\r\n```\r\n$ sha256sum darktable-5.6.2.tar.xz\r\n  d2da92c670401d350b576431f21e58bee40348e1f5078201a8a1b8c270585834  darktable-5.6.2.tar.xz\r\n\r\n$ sha256sum darktable-5.6.2-x86_64.AppImage\r\n  4b0d1c737a2a18c7d8afb81aa3daaf25930bbe541dda98e6354dabd5c2e4dc36  Darktable-5.6.2-x86_64.AppImage\r\n\r\n$ sha256sum darktable-5.6.2-aarch64.AppImage\r\n  5b8015f8534453cb3bbd6e5a03e362cb7d9d9573f20d3928aadad354df18ad10  Darktable-5.6.2-aarch64.AppImage\r\n\r\n$ sha256sum darktable-5.6.2-arm64.dmg\r\n  6ff88e58a2a59cb07b0a1502fea7205e68cd783380a33a3ce7bda68ec29def0c  darktable-5.6.2-arm64.dmg\r\n\r\n$ sha256sum darktable-5.6.2-win64.exe\r\n  7f7a1eabcd0a1b548dcfacac842c8203fc85a4175697fb09f90bb891c8931edd  darktable-5.6.2-win64.exe\r\n\r\n$ sha256sum darktable-5.6.2-woa64.exe\r\n  bcb700de8275f894c29ae4ccb5f600412b269bef1a581eecce9bbed697421fcc  darktable-5.6.2-woa64.exe\r\n```\r\n\r\nWhen updating from the stable 5.4 series, please bear in mind that your edits will be preserved during this process, but the new library and configuration will no longer be usable with 5.4.\r\n\r\nYou are strongly advised to take a backup first.\r\n\r\n#### Important note: to make sure that darktable can keep on supporting the raw file format for your camera, *please* read [this post](https://discuss.pixls.us/t/raw-samples-wanted/5420?u=lebedevri) on how/what raw samples you can contribute to ensure that we have the *full* raw sample set for your camera under CC0 license!\r\n\r\nSince darktable 5.6.1:\r\n\r\n- 63 commits to darktable+rawspeed\r\n- 26 pull requests handled\r\n-  0 issues closed\r\n\r\n## The Big Ones\r\n\r\nThe following is a summary of the main features added to darktable 5.6.2. Please see the user manual for more details of the individual changes (where available).\r\n\r\n- N/A\r\n\r\n## UI/UX Improvements\r\n\r\n- N/A\r\n\r\n## Performance Improvements\r\n\r\n- N/A\r\n\r\n## Other Changes\r\n\r\n- N/A\r\n\r\n## Documentation updates\r\n\r\n- Versioning of the docs has resumed! With release of each new major version of darktable we take a snapshot of the current state of the development-docs.\r\n\r\n- The stable documentation for 5.6.2 can be found [here](https://docs.darktable.org/usermanual/5.6/en/) and now contains a version switcher at the top to switch between 5.6 and development version of the manual.\r\n\r\n- If you find room for improvement on the manual, you are welcome to open an\r\n  [issue](https://github.com/darktable-org/dtdocs/issues), post to\r\n  [pixls.us](https://discuss.pixls.us/c/software/darktable/19),\r\n  or submit a [PR](https://github.com/darktable-org/dtdocs/pulls) yourself.\r\n\r\n- Translations of the docs are maintained through [weblate](https://hosted.weblate.org/projects/darktable-documentation/).\r\n\r\n## Bug Fixes\r\n\r\n- Fixed highlights modes for 4BAYER (CYGM/RGBE) raws, only clipping mode is available for those.\r\n\r\n- Fixed darktable stealing the focus from other applications on Windows, pushing itself in front of whatever you were using and\r\n  taking the keyboard. This could happen when hovering over lighttable thumbnails, during import and export, and when log messages appeared\r\n  or expired.  While darktable was minimized it took the keyboard without becoming visible.\r\n\r\n- Fixed Alt+Tab failing to switch away from darktable on Windows when the mouse pointer was over a lighttable thumbnail.\r\n\r\n- Fixed the console windows that repeatedly appeared on Windows when darktable or a Lua script ran an external command. darktable now\r\n  keeps a single console session for its lifetime instead of creating a new console for each command.\r\n\r\n- Fixed highlights laplacian OpenCL code.\r\n\r\n- Fixed OpenCL input gamma corrected scaling for some devices.\r\n\r\n- Fixed an OpenCL error in filmicrgb leading to wrong masks.\r\n\r\n- Fixed transparent dialog title bars on macOS 27.\r\n\r\n- Fixed a crash when importing a style whose module order is empty. The malformed order is now ignored and the style keeps the default one.\r\n\r\n- Fixed a crash at the end of neural restore's raw denoise on certain sensor sizes, where blending the tile seams wrote past the edge of\r\n  the image.\r\n\r\n- Fixed small memory leaks when expanding variables, which grew with the number of images exported or imported in one run.\r\n\r\n- Fixed a small memory leak each time a history stack was pasted onto the image open in darkroom.\r\n\r\n- Fixed a crash or hang on Windows when checking a faulty custom ONNX Runtime library.\r\n\r\n- Fixed corrupted output or a crash when an AI model returns more data than darktable reserved for it, affecting object masks and Lua models.\r\n\r\n- Fixed OpenCL support for recent Intel drivers.\r\n\r\n## Lua\r\n\r\n### API Version\r\n\r\n- N/A\r\n\r\n### New Features\r\n\r\n- N/A\r\n\r\n### Bug Fixes\r\n\r\n- Stop script_manager from starting twice and causing a stack overflow.\r\n\r\n- Change to user installed scripts directory before updating.\r\n\r\n- Execute user luarc file in all cases.\r\n\r\n### New Scripts\r\n\r\n- N/A\r\n\r\n### Other Lua changes\r\n\r\n- N/A\r\n\r\n## Notes\r\n\r\n- When exporting to AVIF, EXR, JPEG XL, or XCF, selecting specific metadata (e.g. geo-tag or creator) is not currently possible. For\r\n  AVIF, EXR, JPEG XL, and XCF formats, darktable will not include any metadata fields unless the user selects all of the checkboxes in the\r\n  export module's preference options.\r\n\r\n- Starting with release 5.4, macOS versions older than 14.0 are no longer supported on Apple Silicon Macs, nor older than macOS 15 on\r\n  Intel Macs.\r\n\r\n- On Windows 11 24H2 and later, darktable no longer creates any console window. On earlier Windows vers",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "darktable-5.6.2-win64.exe",
+        "size": 138844821,
+        "sha256": "7f7a1eabcd0a1b548dcfacac842c8203fc85a4175697fb09f90bb891c8931edd",
+        "official": "https://github.com/darktable-org/darktable/releases/download/release-5.6.2/darktable-5.6.2-win64.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "rawtherapee": {
+    "version": "5.13",
+    "released": "2026-07-26",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/RawTherapee/RawTherapee/releases/tag/5.13",
+    "changelog": "To get the source code, either clone from git and `git checkout 5.13`, or use the `rawtherapee-5.13.tar.xz` tarball below. Do not use the `Source code (zip/tar.gz)` tarballs auto-generated by GitHub below, they lack some metadata.",
+    "downloads": [
+      {
+        "label": "Windows x64 · 绿色版 ZIP",
+        "platform": "Windows",
+        "portable": true,
+        "file": "RawTherapee_5.13_win64_arm64_release.zip",
+        "size": 112244806,
+        "sha256": "f62253b281443b07a6e18dc2a10a0d382deb2685d793aca816abc35f2aa5da4a",
+        "official": "https://github.com/RawTherapee/RawTherapee/releases/download/5.13/RawTherapee_5.13_win64_arm64_release.zip",
+        "mirrors": []
+      },
+      {
+        "label": "Windows x64 · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "RawTherapee_5.13_win64_arm64_release.exe",
+        "size": 40806845,
+        "sha256": "967fc854266a1ab3629e2c23ddbfcd193cb71d996ffe16fe2a542d3610701cd2",
+        "official": "https://github.com/RawTherapee/RawTherapee/releases/download/5.13/RawTherapee_5.13_win64_arm64_release.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "pinta": {
+    "version": "3.1.2",
+    "released": "2026-04-02",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/PintaProject/Pinta/releases/tag/3.1.2",
+    "changelog": "This is a bug fix release for Pinta 3.1\r\n\r\n### Fixed\r\n- Fixed issues with some icons failing to load under certain GTK versions (#2078, #1950)\r\n- Fixed crash when right-clicking on a layer in certain scenarios (#1940)\r\n- Fixed bug with the gradient tool creating unnecessary history items (#2060, #2059)\r\n- Fixed crash when setting gamma to zero in the Levels dialog (#2035, #2041)\r\n- The right click menu for layers now includes options to move the layer up or down in the layer stack (#2004, #2007)\r\n\r\n### Checksums\r\n- Fingerprint: `5BDA 30D0 C2E9 85E5 9808  9E44 4CF8 0E80 E77C 5C35`\r\n- GPG Signature: `gpg --verify pinta-3.1.2.tar.gz.asc`\r\n- Checksum: `pinta-3.1.2.tar.gz.sha512`",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "Pinta-x86_64.exe",
+        "size": 60723896,
+        "sha256": "6c5c9252716a0a6860a25b3184a171045e8d4fca7b15ff3beb635bbe48bb16f6",
+        "official": "https://github.com/PintaProject/Pinta/releases/download/3.1.2/Pinta-x86_64.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "converseen": {
+    "version": "0.15.2.9",
+    "released": "2026-10-05",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/Faster3ck/Converseen/releases/tag/v0.15.2.9",
+    "changelog": "## Changelog\r\n- Fixed potential DLL conflicts on Windows by restricting the DLL search path before initializing ImageMagick\r\n- Various Bugfixes\r\n\r\n## What's Changed\r\n* Restrict Windows DLL search directories by @MaxGruson in https://github.com/Faster3ck/Converseen/pull/265\r\n\r\n## New Contributors\r\n* @MaxGruson made their first contribution in https://github.com/Faster3ck/Converseen/pull/265\r\n\r\n**Full Changelog**: https://github.com/Faster3ck/Converseen/compare/v0.15.2.8...v0.15.2.9",
+    "downloads": [
+      {
+        "label": "Windows x64 · 绿色版 ZIP",
+        "platform": "Windows",
+        "portable": true,
+        "file": "converseen-0.15.2.9-1-win64-portable.zip",
+        "size": 42767254,
+        "sha256": "88129fb35b5ef57495731b96a2aba141d645561494b9362913067d0f5d188c62",
+        "official": "https://github.com/Faster3ck/Converseen/releases/download/v0.15.2.9/converseen-0.15.2.9-1-win64-portable.zip",
+        "mirrors": []
+      },
+      {
+        "label": "Windows x64 · 安装包 MSI",
+        "platform": "Windows",
+        "portable": false,
+        "file": "Converseen-0.15.2.9-1-win64-setup.msi",
+        "size": 35012608,
+        "sha256": "c0fd5fd4a1d6279760c8d35416dca13708a74d7fa52d9028a51d0f8e912cac47",
+        "official": "https://github.com/Faster3ck/Converseen/releases/download/v0.15.2.9/Converseen-0.15.2.9-1-win64-setup.msi",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "imagemagick": {
+    "version": "7.1.2.34",
+    "released": "2026-10-14",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ImageMagick/ImageMagick/7.1.2.34",
+    "changelog": "",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "ImageMagick-7.1.2-34-Q16-HDRI-x64-dll.exe",
+        "size": null,
+        "sha256": "eb32ded8b605795dfcb08b8cadbeef6732fe2252af933b54b38df586332e1007",
+        "official": "https://github.com/ImageMagick/ImageMagick/releases/download/7.1.2-34/ImageMagick-7.1.2-34-Q16-HDRI-x64-dll.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false,
+    "source": "winget"
+  },
+  "kdenlive": {
+    "version": "26.08.3",
+    "released": "2026-11-06",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Kdenlive/26.08.3",
+    "changelog": "",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "kdenlive-26.08.3.exe",
+        "size": null,
+        "sha256": "1f4027f287c3066887b1c112664b10c4e71a6772914fd5ea41074df429652186",
+        "official": "https://download.kde.org/stable/kdenlive/26.08/windows/kdenlive-26.08.3.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false,
+    "source": "winget"
+  },
+  "mkvtoolnix": {
+    "version": "103.0.0",
+    "released": "2026-10-18",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MoritzBunkus/MKVToolNix/103.0.0",
+    "changelog": "",
+    "downloads": [
+      {
+        "label": "Windows x64 · 绿色版 ZIP",
+        "platform": "Windows",
+        "portable": true,
+        "file": "mkvtoolnix-64-bit-103.0.zip",
+        "size": null,
+        "sha256": "c860a10c707cb1ee587d1464f6171842f2ada3bb6f031dfff55fec75542f0417",
+        "official": "https://mkvtoolnix.download/windows/releases/103.0/mkvtoolnix-64-bit-103.0.zip",
+        "mirrors": []
+      },
+      {
+        "label": "Windows x64 · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "mkvtoolnix-64-bit-103.0-setup.exe",
+        "size": null,
+        "sha256": "3bb4b6efe464c8b852a9813f6be4093fa61bb79229ea755b3a70c5fa42489421",
+        "official": "https://mkvtoolnix.download/windows/releases/103.0/mkvtoolnix-64-bit-103.0-setup.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false,
+    "source": "winget"
+  },
+  "mediainfo": {
+    "version": "26.10",
+    "released": "2026-10-06",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MediaArea/MediaInfo/GUI/26.10",
+    "changelog": "",
+    "downloads": [
+      {
+        "label": "Windows · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "MediaInfo_GUI_26.10_Windows.exe",
+        "size": null,
+        "sha256": "e84193f2c068c677804924763e4cf9c7bc3d7138482ab174939a5b66cd896d6e",
+        "official": "https://mediaarea.net/download/binary/mediainfo-gui/26.10/MediaInfo_GUI_26.10_Windows.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false,
+    "source": "winget"
+  },
+  "openshot": {
+    "version": "4.1.1",
+    "released": "2026-11-02",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/OpenShot/openshot-qt/releases/tag/v4.1.1",
+    "changelog": "Highlights & Features:\r\n===\r\n- **Updated builds:** a small maintenance release rebuilt on new runners with updated FFmpeg dependencies and stronger packaging checks.\r\n- **GPU exports:** added AMD AMF and HEVC NVENC/QSV presets, sharper GPU badges on high-DPI displays, and validated GPU alternatives before falling back to CPU encoding. Export targets and badges now follow the actual encoder.\r\n- **Reliability fixes:** improved saving on Windows and network shares, handled concurrent text-thumbnail updates, restored Qt6 event compatibility, and fixed long macOS agent socket paths.\r\n- **Packaging and credits:** corrected bundled runtime and resource handling across platforms and refreshed supporter credits.\r\n- **Library dependency:** this release uses libopenshot 1.1.1, including Mac VideoToolbox export crash fix.\r\n\r\nopenshot-qt Changelog (Version: 4.1.1)\r\n---\r\n- eead0c71d  2026-11-01 Jonathan Thomas          Prefer validated GPU export replacements and synchronize target badges HEAD, origin/release-20261101\r\n- 539fea56d  2026-11-01 Jonathan Thomas          Keep GPU badges sharp on high-DPI displays\r\n- 7d0b723d5  2026-11-01 Jonathan Thomas          Restore the Python inline-code flag in Linux package checks\r\n- 334ca14f8  2026-11-01 Jonathan Thomas          Address release packaging static analysis findings\r\n- c52fbc211  2026-11-01 Jonathan Thomas          Compare packaged resource paths by filesystem identity\r\n- 15954e7e0  2026-11-01 Jonathan Thomas          Respect macOS bundle resource paths before and after DMG packaging\r\n- e90a19748  2026-11-01 Jonathan Thomas          Include native DLL setup in isolated launcher fixtures\r\n- 19fd18595  2026-11-01 Jonathan Thomas          Add hardware export preset names to the translation template\r\n- 6a3added5  2026-11-01 Jonathan Thomas          Resolve frozen application assets beside the executable\r\n- 338b0bfcf  2026-11-01 Jonathan Thomas          Verify Linux hardware exports in the packaged runtime\r\n- 0e45eb459  2026-11-01 Jonathan Thomas          Preserve hardware FFmpeg runtimes and check frozen export presets\r\n- 101dec824  2026-11-01 Jonathan Thomas          Expose AMF and HEVC export presets and restore the Mac GPU badge\r\n- 2c3f7ae6c  2026-11-01 Jonathan Thomas          Refresh supporter credits for OpenShot 4.1.1\r\n- 866fe1d8e  2026-11-01 Jonathan Thomas          Reuse concurrently rendered text thumbnails when Windows locks them\r\n- 3953d52c0  2026-11-01 Jonathan Thomas          Allow atomic saves on shares without Unix permission support\r\n- ad7fccc60  2026-11-01 Jonathan Thomas          Retry atomic saves briefly when Windows locks the destination\r\n- 622a7210c  2026-11-01 Jonathan Thomas          Shorten agent socket names for macOS temporary paths\r\n- 6c11a5c8b  2026-11-01 Jonathan Thomas          Restore Qt6 tooltip and focus event aliases\r\n- e7a39e5f9  2026-11-01 Jonathan Thomas          Include dynamic PyOpenGL backends in frozen builds\r\n- a63466d2a  2026-11-01 Jonathan Thomas          Bump OpenShot to 4.1.1 for the runner rebuild\r\n- 60d7cd080  2026-10-31 Jonathan Thomas          Merge pull request #6228 from OpenShot/release-20261025 origin/develop\r\n- 389de9efb  2026-10-31 Jonathan Thomas          Translate OpenShot 4.1 guide and repair multilingual builds\r\n\r\n",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "OpenShot-v4.1.1-x86_64.exe",
+        "size": 248497059,
+        "sha256": "6c18abf951a798b536b07aa88f78d62eb55345903699b429b08322323c049690",
+        "official": "https://github.com/OpenShot/openshot-qt/releases/download/v4.1.1/OpenShot-v4.1.1-x86_64.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "floorp": {
+    "version": "12.21.2",
+    "released": "2026-11-13",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/Floorp-Projects/Floorp/releases/tag/v12.21.2",
+    "changelog": "## Floorp の今後の開発方針について\n\nいつも Floorp をご利用いただき、ありがとうございます。\n\n最近、Floorp のアップデート後の不具合や、既存機能との競合が複数報告されています。問題の報告や調査にご協力いただいている皆さまに、心より感謝申し上げます。\n\nFirefox の標準リリース周期は 2 週間に短縮され、Floorp もこれまで以上に頻繁に Firefox の変更に対応する必要があります。Floorp は Firefox をベースに多数の独自機能を提供しているため、Firefox 本体の変更と独自機能の組み合わせで予期しない不具合が起こることがあります。 [Mozilla のリリース周期に関する案内](https://blog.mozilla.org/sumo/2026/08/19/firefox-new-release-cadence-and-what-to-expect/)\n\n**今後数か月間、Floorp は新機能の開発・追加を原則として一時停止し、既存機能の修正と安定性の向上に開発リソースを集中します。**\n\nこの期間は、以下の改善を優先します。\n\n- 既知の不具合やクラッシュの修正\n- Firefox の更新に伴う互換性問題への対応\n- タブ、ワークスペース、サイドバーなどの既存機能の安定化\n- 自動テストと回帰テストの強化\n- 問題のある機能を安全に無効化できる仕組みの検討\n\nセキュリティアップデートや必要な修正パッチは、この期間も引き続き提供します。\n\nFloorp を毎日安心して使っていただけるよう、まずは既存の機能が確実に動作することを優先します。新機能を楽しみにしてくださっている皆さまにはお待ちいただくことになりますが、Floorp の開発は今後も続けていきます。引き続き、ご理解とご協力をよろしくお願いいたします。\n\nFloorp Projects\n\n## Floorp’s development priorities for the coming months\n\nThank you for using Floorp.\n\nWe’ve recently received several reports of bugs after Floorp updates and of conflicts affecting existing features. We’re grateful to everyone who has reported issues and helped us investigate them.\n\nFirefox has moved to a standard two-week release cycle, so Floorp needs to adapt to Firefox changes more frequently. Floorp builds on Firefox with many features of its own, and changes in Firefox can interact with those features in unexpected ways. [Mozilla’s announcement about the Firefox release cycle](https://blog.mozilla.org/sumo/2026/08/19/firefox-new-release-cadence-and-what-to-expect/)\n\n**For the next few months, we’ll generally pause development and rollout of new Floorp features and focus on fixing and improving the stability of existing features.**\n\nDuring this period, we’ll prioritize the following work.\n\n- Fixing known bugs and crashes\n- Addressing compatibility issues introduced by Firefox updates\n- Improving the stability of existing features such as tabs, workspaces, and the sidebar\n- Strengthening automated tests and regression coverage\n- Exploring ways to safely disable features that are causing problems\n\nWe’ll continue to provide security updates and necessary bug fixes throughout this period.\n\nWe want Floorp to be a browser you can rely on every day. If you’ve been looking forward to new features, thank you for your patience while we focus on making the features you already use work reliably. We’ll continue developing Floorp and appreciate your understanding and support.\n\nFloorp Projects\n\n[日本語リリースノート](https://blog.floorp.app/ja/release/12.21.2/) · [English release notes](https://blog.floorp.app/en/release/12.21.2/)\n\n---\n\nThis draft was assembled from an immutable, natively verified release manifest set.\n\n\n## What's Changed\n* ci: pause OpenBot notifications with silent successful runs by @Ryosuke-Asano in https://github.com/Floorp-Projects/Floorp/pull/3035\n* [QA3 shadow] Add fixed source-only QA and preserve attempt evidence by @Ryosuke-Asano in https://github.com/Floorp-Projects/Floorp/pull/2889\n* test: record six workspace cases in ordinary development CI by @Ryosuke-Asano in https://github.com/Floorp-Projects/Floorp/pull/2918\n* test: cover workspace preservation and native development flows by @Ryosuke-Asano in https://github.com/Floorp-Projects/Floorp/pull/2921\n* fix(dev-tool): scope stop to the current checkout by @Ryosuke-Asano in https://github.com/Floorp-Projects/Floorp/pull/3057\n* ci(qa): add Windows to final package QA in shadow mode by @Ryosuke-Asano in https://github.com/Floorp-Projects/Floorp/pull/3058\n* test: verify workspace restarts and record owned RPC failures by @Ryosuke-Asano in https://github.com/Floorp-Projects/Floorp/pull/2922\n* Preserve QA3 reviews and bounded-fix validation evidence by @Ryosuke-Asano in https://github.com/Floorp-Projects/Floorp/pull/2893\n* feat(qa3): EvidenceManifest v0 schema, converters and fixtures (2-D) by @Ryosuke-Asano in https://github.com/Floorp-Projects/Floorp/pull/3063\n* feat(qa3): Windows Job Object supervisor for the QA3 contracts (2-E) by @Ryosuke-Asano in https://github.com/Floorp-Projects/Floorp/pull/3065\n* feat(dev-ports): centralize dev/test port definitions (2-A group 1/2) by @Ryosuke-Asano in https://github.com/Floorp-Projects/Floorp/pull/3062\n* refactor(dev-ports): actor trust decisions and page-side checks use the port table (2-A group 2/2) by @Ryosuke-Asano in https://github.com/Floorp-Projects/Floorp/pull/3067\n* feat(dev-ports): --port-offset for concurrent dev/test worktrees (2-B) by @Ryosuke-Asano in https://github.com/Floorp-Projects/Floorp/pull/3068\n* feat(qa3): thin fdh CLI + Skill for the Gate 3 local loop (KAN-113) by @Ryosuke-Asano in https://github.com/Floorp-Projects/Floorp/pull/3070\n* fix(qa3): local after-mach injection + honest Gate 3 evidence (KAN-113) by @Ryosuke-Asano in https://github.com/Floorp-Projects/Floorp/pull/3071\n* docs(qa): FDH Gate 3 exit evidence (T-01 / T-02 / T-02b) by @Ryosuke-Asano in https://github.com/Floorp-Projects/Floorp/pull/3073\n* feat(fdh): local quota/assignment ledger + approval-pending resume (4-D/4-C) by @Ryosuke-Asano in https://github.com/Floorp-Projects/Floorp/pull/3074\n* feat(fdh): GUI desktop lease + secret-reference denial (4-A) by @Ryosuke-Asano in https://github.com/Floorp-Projects/Floorp/pull/3075\n* docs(qa): FDH Gate 4 exit evidence (4-A/4-B/4-C/4-D) by @Ryosuke-Asano in https://github.com/Floorp-Projects/Floorp/pull/3076\n* fdh: harden build verification, external records, setup, and D-14 review gate by @Ryosuke-Asano in https://github.com/Floorp-Projects/Floorp/pull/3077\n* fix(fdh): make the local dev loop work on Windows native by @Ryosuke-Asano in https://github.com/Floorp-Projects/Floorp/pull/3080\n* fix(fdh): close the remaining review notes from #3080 by @Ryosuke-Asano in https://github.com/Floorp-Projects/Floorp/pull/3081\n* fix(fdh): mark operator-attested source builds in evidence by @Ryosuke-Asano in https://github.com/Floorp-Projects/Floorp/pull/3082\n* fix(fdh): bind review receipts to trusted authors and gate the PR head by @Ryosuke-Asano in https://github.com/Floo",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "floorp-windows-x86_64.installer.exe",
+        "size": 118057344,
+        "sha256": "b10e3337d170feae96fe80482848d956eec0f618721673a43b3bee0cb6591737",
+        "official": "https://github.com/Floorp-Projects/Floorp/releases/download/v12.21.2/floorp-windows-x86_64.installer.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "zen-browser": {
+    "version": "1.24.2b",
+    "released": "2026-11-12",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/zen-browser/desktop/releases/tag/1.24.2b",
+    "changelog": "# Zen Stable Release\r\n\r\n\r\n## Security\r\n- https://www.mozilla.org/en-US/security/advisories/mfsa2026-125/\r\n\r\n## New Features\r\n- Updated to Firefox 160.0\r\n- Added pause context menu button for the downloads section\r\n- The urlbar now has a bit of transparency for a more modern look.\r\n- The Picture-in-Picture player now has a playback speed setting, with options ranging from 0.25x to 2.0x speed. The setting appears only when the player window is medium-sized or larger.\r\n- Pages saved as PDF now make mathematical content (MathML) accessible to assistive technology such as screen readers.\r\n- Websites that repeatedly ask to handle email (mailto:) and other links can now be blocked with a new “Never allow” button, and blocked sites can be managed in Settings.\r\n- Zen now plays Matroska (MKV) files with FLAC, MP3, or PCM audio.\r\n- WebGL content on macOS is now rendered using Apple's Metal graphics API, which can improve performance on some sites.\r\n\r\n## Fixes\r\n- Improved performance for boosts color tinting.\r\n- Fixed the first character typed into the address bar or search bar sometimes being lost when typing quickly right after clicking into it.\r\n- Fixed Zen freezing for several seconds when signing in to intranet sites that use NTLM or Kerberos (Negotiate) authentication.\r\n- Fixed double-tapping or long-pressing a word to select it, and tapping to place the cursor, not working near the cursor in text fields.\r\n- Fixed links opened in the background from other apps on macOS, such as RSS readers, bringing Zen to the foreground.\r\n- Fixed downloaded files on macOS sometimes opening in the wrong application instead of the default one set in Finder.\r\n- Fixed simultaneous downloads on macOS never finishing when Zen is set to ask where to save files. Only the first file showed a save dialog.\r\n- Restored meaningful filenames and the usual save workflow for PDFs opened in Preview from the macOS print dialog.\r\n- More bug fixes and improvements.\r\n\r\n## Changes\r\n- The address bar context menu now shows \"Paste and Search\" instead of \"Paste and Go\" when the copied text is a search term rather than a web address.\r\n",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "zen.installer.exe",
+        "size": 119895240,
+        "sha256": "bd53e63028b84fd77a4c734873d485d98b59921f4a6a6617cb654b2f9f1585bc",
+        "official": "https://github.com/zen-browser/desktop/releases/download/1.24.2b/zen.installer.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false
+  },
+  "librewolf": {
+    "version": "160.0-1",
+    "released": "2026-11-10",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LibreWolf/LibreWolf/160.0-1",
+    "changelog": "",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "librewolf-160.0-1-windows-x86_64-setup.exe",
+        "size": null,
+        "sha256": "5a4c9d7593dd7f50d616c203e5586e4e31fd99c0d54eee769c7997de2bc5df97",
+        "official": "https://dl.librewolf.net/librewolf/160.0-1/librewolf-160.0-1-windows-x86_64-setup.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false,
+    "source": "winget"
+  },
+  "wireshark": {
+    "version": "4.6.9",
+    "released": "2026-09-23",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/w/WiresharkFoundation/Wireshark/4.6.9",
+    "changelog": "",
+    "downloads": [
+      {
+        "label": "Windows x64 · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "Wireshark-4.6.9-x64.exe",
+        "size": null,
+        "sha256": "bf9b5ce8a89f244c376a9b1a946276eaa06463dde3e33069a34d7f102f5878cf",
+        "official": "https://2.na.dl.wireshark.org/win64/all-versions/Wireshark-4.6.9-x64.exe",
+        "mirrors": []
+      },
+      {
+        "label": "Windows x64 · 安装包 MSI",
+        "platform": "Windows",
+        "portable": false,
+        "file": "Wireshark-4.6.9-x64.msi",
+        "size": null,
+        "sha256": "1975dfc96581a9b674fda3f41ac1585963b4ba52ea9459f3b6d9cedfac3a7217",
+        "official": "https://2.na.dl.wireshark.org/win64/all-versions/Wireshark-4.6.9-x64.msi",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false,
+    "source": "winget"
+  },
+  "keepass": {
+    "version": "2.61.1",
+    "released": "2026-05-01",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/d/DominikReichl/KeePass/2.61.1",
+    "changelog": "",
+    "downloads": [
+      {
+        "label": "Windows · 安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "KeePass-2.61.1-Setup.exe",
+        "size": null,
+        "sha256": "9923a8b228fe3d8fbe46979991f45d7e0d63f649766596da191eb879b293d38d",
+        "official": "https://sourceforge.net/projects/keepass/files/KeePass%202.x/2.61.1/KeePass-2.61.1-Setup.exe/download",
+        "mirrors": []
+      },
+      {
+        "label": "Windows · 安装包 MSI",
+        "platform": "Windows",
+        "portable": false,
+        "file": "KeePass-2.61.1.msi",
+        "size": null,
+        "sha256": "5a1d0d573d2cb6278394f75fdbff4d05dce44eac6f522c7b43f5e637f77b46c0",
+        "official": "https://sourceforge.net/projects/keepass/files/KeePass%202.x/2.61.1/KeePass-2.61.1.msi/download",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false,
+    "source": "winget"
+  },
+  "aimp": {
+    "version": "5.10.2418",
+    "released": "",
+    "verified": "2026-11-14",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AIMP/AIMP/5.10.2418",
+    "changelog": "",
+    "downloads": [
+      {
+        "label": "Windows x64 · 官方安装包",
+        "platform": "Windows",
+        "portable": false,
+        "file": "aimp_5.10.2418_w64.exe",
+        "size": null,
+        "sha256": "beec5cd3d3e61b314c4505b79edb93c2f0ed85ca08fd70393724fe80cca70420",
+        "official": "https://aimp.ru/files/windows/builds/aimp_5.10.2418_w64.exe",
+        "mirrors": []
+      }
+    ],
+    "mirrored": false,
+    "source": "winget"
   }
 }

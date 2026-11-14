@@ -6665,5 +6665,2121 @@
       ]
     },
     "icon": "/static/icons/onlyoffice.png"
+  },
+  {
+    "slug": "dism-plus-plus",
+    "name": "Dism++",
+    "abbr": "D+",
+    "category": "system",
+    "tags": [
+      "系统维护",
+      "清理",
+      "绿色版"
+    ],
+    "summary": "国人开发的开源 Windows 维护工具，清理与系统备份一站搞定。",
+    "intro": "Dism++ 基于 DISM 接口，提供垃圾清理、启动项与驱动管理、更新管理、系统备份还原和镜像制作，免安装运行。",
+    "features": [
+      "垃圾清理",
+      "驱动与更新管理",
+      "系统备份与还原",
+      "免安装运行"
+    ],
+    "tips": [],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://github.com/Chuyu-Team/Dism-Multi-language",
+    "source": {
+      "type": "github",
+      "repo": "Chuyu-Team/Dism-Multi-language",
+      "assets": [
+        {
+          "match": "^Dism\\+\\+.*\\.zip$",
+          "label": "Windows · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/dism-plus-plus.png"
+  },
+  {
+    "slug": "system-informer",
+    "name": "System Informer",
+    "abbr": "SI",
+    "category": "system",
+    "tags": [
+      "进程",
+      "监控"
+    ],
+    "summary": "开源的高级任务管理器（原 Process Hacker）。",
+    "intro": "System Informer 可以查看进程、服务、网络连接、句柄与内存，排查卡顿和可疑程序非常方便。",
+    "features": [
+      "进程树与服务",
+      "网络连接查看",
+      "句柄与内存搜索",
+      "GPU 与磁盘监控"
+    ],
+    "tips": [],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://systeminformer.sourceforge.io/",
+    "source": {
+      "type": "github",
+      "repo": "winsiderss/systeminformer",
+      "assets": [
+        {
+          "match": "release-setup\\.exe$",
+          "label": "Windows · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/system-informer.png"
+  },
+  {
+    "slug": "sandboxie-plus",
+    "name": "Sandboxie Plus",
+    "abbr": "SB",
+    "category": "security",
+    "tags": [
+      "沙盒",
+      "隔离"
+    ],
+    "summary": "开源沙盒，把可疑程序关在隔离环境里运行。",
+    "intro": "Sandboxie Plus 让程序在沙盒中运行，对文件和注册表的修改不会影响真实系统，适合试用来路不明的软件。",
+    "features": [
+      "程序隔离运行",
+      "一键清空沙盒",
+      "多沙盒配置",
+      "浏览器隔离"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://sandboxie-plus.com/",
+    "source": {
+      "type": "github",
+      "repo": "sandboxie-plus/Sandboxie",
+      "assets": [
+        {
+          "match": "^Sandboxie-Plus-x64-.*\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/sandboxie-plus.png"
+  },
+  {
+    "slug": "explorerpatcher",
+    "name": "ExplorerPatcher",
+    "abbr": "EP",
+    "category": "system",
+    "tags": [
+      "任务栏",
+      "Win11"
+    ],
+    "summary": "找回 Windows 10 风格的任务栏和开始菜单。",
+    "intro": "ExplorerPatcher 可以在 Windows 11 上恢复经典任务栏、右键菜单和开始菜单，并提供大量界面调整选项。",
+    "features": [
+      "经典任务栏",
+      "Win10 开始菜单",
+      "经典右键菜单",
+      "可随时还原"
+    ],
+    "tips": [],
+    "license": "GPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://github.com/valinet/ExplorerPatcher",
+    "source": {
+      "type": "github",
+      "repo": "valinet/ExplorerPatcher",
+      "assets": [
+        {
+          "match": "^ep_setup\\.exe$",
+          "label": "Windows · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "open-shell",
+    "name": "Open-Shell",
+    "abbr": "OS",
+    "category": "system",
+    "tags": [
+      "开始菜单"
+    ],
+    "summary": "经典开始菜单替代（Classic Shell 继任者）。",
+    "intro": "Open-Shell 提供 Win7 / 经典风格的开始菜单，并能定制资源管理器工具栏。",
+    "features": [
+      "经典开始菜单",
+      "皮肤与样式",
+      "搜索增强",
+      "资源管理器工具栏"
+    ],
+    "tips": [],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://open-shell.github.io/Open-Shell-Menu/",
+    "source": {
+      "type": "github",
+      "repo": "Open-Shell/Open-Shell-Menu",
+      "assets": [
+        {
+          "match": "^OpenShellSetup_.*\\.exe$",
+          "label": "Windows · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/open-shell.png"
+  },
+  {
+    "slug": "windhawk",
+    "name": "Windhawk",
+    "abbr": "WH",
+    "category": "system",
+    "tags": [
+      "美化",
+      "定制"
+    ],
+    "summary": "用社区模组定制 Windows 的各个细节。",
+    "intro": "Windhawk 提供模组商店，一键安装任务栏、开始菜单、窗口行为等数百个定制模组，随时可关闭。",
+    "features": [
+      "模组商店",
+      "任务栏与开始菜单定制",
+      "即装即用可回滚",
+      "开源模组"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://windhawk.net/",
+    "source": {
+      "type": "github",
+      "repo": "ramensoftware/windhawk",
+      "assets": [
+        {
+          "match": "^windhawk_setup_offline\\.exe$",
+          "label": "Windows · 离线安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/windhawk.png"
+  },
+  {
+    "slug": "rainmeter",
+    "name": "Rainmeter",
+    "abbr": "RM",
+    "category": "system",
+    "tags": [
+      "桌面美化"
+    ],
+    "summary": "经典桌面美化与系统信息挂件。",
+    "intro": "Rainmeter 通过皮肤在桌面显示时钟、天气、CPU 占用等信息，社区皮肤非常丰富。",
+    "features": [
+      "桌面挂件",
+      "系统监控皮肤",
+      "高度自定义",
+      "低资源占用"
+    ],
+    "tips": [],
+    "license": "GPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://www.rainmeter.net/",
+    "source": {
+      "type": "github",
+      "repo": "rainmeter/rainmeter",
+      "assets": [
+        {
+          "match": "^Rainmeter-.*\\.exe$",
+          "label": "Windows · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/rainmeter.png"
+  },
+  {
+    "slug": "twinkle-tray",
+    "name": "Twinkle Tray",
+    "abbr": "TT",
+    "category": "hardware",
+    "tags": [
+      "亮度",
+      "显示器"
+    ],
+    "summary": "在托盘里调节外接显示器亮度。",
+    "intro": "Twinkle Tray 通过 DDC/CI 调节多台外接显示器的亮度，界面与 Win11 风格一致，支持快捷键和定时。",
+    "features": [
+      "多显示器亮度",
+      "快捷键调节",
+      "按时间自动调节",
+      "Win11 风格"
+    ],
+    "tips": [],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://twinkletray.com/",
+    "source": {
+      "type": "github",
+      "repo": "xanderfrangos/twinkle-tray",
+      "assets": [
+        {
+          "match": "^Twinkle\\.Tray\\.v.*\\.exe$",
+          "label": "Windows · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/twinkle-tray.png"
+  },
+  {
+    "slug": "fancontrol",
+    "name": "FanControl",
+    "abbr": "FC",
+    "category": "hardware",
+    "tags": [
+      "风扇",
+      "散热"
+    ],
+    "summary": "自定义电脑风扇转速曲线。",
+    "intro": "FanControl 可以根据 CPU、显卡温度设定风扇曲线，界面直观，适合静音与散热调校。",
+    "features": [
+      "自定义风扇曲线",
+      "混合温度源",
+      "插件扩展",
+      "托盘常驻"
+    ],
+    "tips": [],
+    "license": "免费软件（作者自定义许可）",
+    "mirror_allowed": false,
+    "homepage": "https://getfancontrol.com/",
+    "source": {
+      "type": "github",
+      "repo": "Rem0o/FanControl.Releases",
+      "assets": [
+        {
+          "match": "net_10_0_Installer\\.exe$",
+          "label": "Windows · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/fancontrol.svg"
+  },
+  {
+    "slug": "hwmonitor",
+    "name": "HWMonitor",
+    "abbr": "HM",
+    "category": "hardware",
+    "tags": [
+      "温度",
+      "监控"
+    ],
+    "summary": "CPUID 出品的硬件温度、电压监控工具。",
+    "intro": "HWMonitor 实时显示 CPU、显卡、硬盘温度，以及电压、功耗和风扇转速，最小值和最大值一目了然。",
+    "features": [
+      "温度监控",
+      "电压与功耗",
+      "风扇转速",
+      "最大最小值记录"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://www.cpuid.com/softwares/hwmonitor.html",
+    "source": {
+      "type": "winget",
+      "id": "CPUID.HWMonitor",
+      "assets": [
+        {
+          "arch": "",
+          "url": ".",
+          "label": "Windows · 官方安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "starship",
+    "name": "Starship",
+    "abbr": "SS",
+    "category": "dev",
+    "tags": [
+      "终端",
+      "命令行",
+      "绿色版"
+    ],
+    "summary": "极速、可定制的跨 Shell 命令行提示符。",
+    "intro": "Starship 用 Rust 编写，可在 PowerShell、cmd（配合 Clink）、Bash 中显示 Git 分支、语言版本等信息。",
+    "features": [
+      "跨 Shell 通用",
+      "Git 状态显示",
+      "TOML 配置",
+      "极快"
+    ],
+    "tips": [],
+    "license": "ISC",
+    "mirror_allowed": true,
+    "homepage": "https://starship.rs/",
+    "source": {
+      "type": "github",
+      "repo": "starship/starship",
+      "assets": [
+        {
+          "match": "x86_64-pc-windows-msvc\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "x86_64-pc-windows-msvc\\.msi$",
+          "label": "Windows x64 · 安装包 MSI",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/starship.png"
+  },
+  {
+    "slug": "clink",
+    "name": "Clink",
+    "abbr": "CL",
+    "category": "dev",
+    "tags": [
+      "终端",
+      "cmd"
+    ],
+    "summary": "给 cmd 加上 Bash 风格的补全与历史。",
+    "intro": "Clink 为 Windows cmd 带来 Readline 编辑、智能补全、历史搜索和 Lua 脚本扩展。",
+    "features": [
+      "Tab 智能补全",
+      "历史搜索",
+      "Lua 扩展",
+      "兼容 Starship"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://chrisant996.github.io/clink/",
+    "source": {
+      "type": "github",
+      "repo": "chrisant996/clink",
+      "assets": [
+        {
+          "match": "_setup\\.exe$",
+          "label": "Windows · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/clink.png"
+  },
+  {
+    "slug": "zed",
+    "name": "Zed",
+    "abbr": "ZD",
+    "category": "dev",
+    "tags": [
+      "编辑器",
+      "Rust"
+    ],
+    "summary": "Rust 编写的高性能代码编辑器，内置 AI 与协作。",
+    "intro": "Zed 由 Atom 原班人马打造，启动快、输入延迟低，支持多人实时协作和 AI 辅助编程。",
+    "features": [
+      "极速编辑",
+      "实时协作",
+      "AI 辅助",
+      "内置终端与 Git"
+    ],
+    "tips": [],
+    "license": "GPL-3.0 / AGPL-3.0 / Apache-2.0",
+    "mirror_allowed": false,
+    "homepage": "https://zed.dev/",
+    "source": {
+      "type": "github",
+      "repo": "zed-industries/zed",
+      "assets": [
+        {
+          "match": "^Zed-x86_64\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/zed.png"
+  },
+  {
+    "slug": "podman-desktop",
+    "name": "Podman Desktop",
+    "abbr": "PD",
+    "category": "dev",
+    "tags": [
+      "容器",
+      "Docker",
+      "绿色版"
+    ],
+    "summary": "开源的容器图形化管理工具，Docker Desktop 替代。",
+    "intro": "Podman Desktop 管理容器、镜像和 Kubernetes，兼容 Docker 命令，个人和企业都免费。",
+    "features": [
+      "容器与镜像管理",
+      "Kubernetes 支持",
+      "兼容 Docker",
+      "扩展插件"
+    ],
+    "tips": [],
+    "license": "Apache-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://podman-desktop.io/",
+    "source": {
+      "type": "github",
+      "repo": "podman-desktop/podman-desktop",
+      "assets": [
+        {
+          "match": "-x64\\.exe$",
+          "label": "Windows x64 · 绿色版 EXE",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "-setup-x64\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/podman-desktop.png"
+  },
+  {
+    "slug": "insomnia",
+    "name": "Insomnia",
+    "abbr": "IN",
+    "category": "dev",
+    "tags": [
+      "API",
+      "调试"
+    ],
+    "summary": "开源 API 调试客户端，支持 REST、GraphQL、gRPC。",
+    "intro": "Insomnia 可以发送 HTTP、GraphQL、gRPC 和 WebSocket 请求，管理环境变量，适合接口调试。",
+    "features": [
+      "REST / GraphQL / gRPC",
+      "环境变量",
+      "请求集合",
+      "插件"
+    ],
+    "tips": [],
+    "license": "Apache-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://insomnia.rest/",
+    "source": {
+      "type": "github",
+      "repo": "Kong/insomnia",
+      "assets": [
+        {
+          "match": "^Insomnia\\.Core-[\\d.]+\\.exe$",
+          "label": "Windows · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/insomnia.png"
+  },
+  {
+    "slug": "github-desktop",
+    "name": "GitHub Desktop",
+    "abbr": "GD",
+    "category": "dev",
+    "tags": [
+      "Git",
+      "GitHub"
+    ],
+    "summary": "GitHub 官方 Git 图形客户端。",
+    "intro": "GitHub Desktop 用图形界面完成克隆、提交、分支和 PR 操作，适合 Git 新手。",
+    "features": [
+      "图形化提交",
+      "分支管理",
+      "冲突提示",
+      "GitHub 集成"
+    ],
+    "tips": [],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://desktop.github.com/",
+    "source": {
+      "type": "winget",
+      "id": "GitHub.GitHubDesktop",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": "x64\\.exe",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        },
+        {
+          "arch": "x64",
+          "url": "x64\\.msi",
+          "label": "Windows x64 · 安装包 MSI",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/github-desktop.png"
+  },
+  {
+    "slug": "tortoisegit",
+    "name": "TortoiseGit",
+    "abbr": "TG",
+    "category": "dev",
+    "tags": [
+      "Git",
+      "右键菜单"
+    ],
+    "summary": "集成在资源管理器右键菜单里的 Git 客户端。",
+    "intro": "TortoiseGit 把 Git 操作放进右键菜单，图标覆盖显示文件状态，适合习惯 TortoiseSVN 的用户。",
+    "features": [
+      "右键菜单操作",
+      "状态图标覆盖",
+      "日志与对比",
+      "合并工具"
+    ],
+    "tips": [],
+    "license": "GPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://tortoisegit.org/",
+    "source": {
+      "type": "winget",
+      "id": "TortoiseGit.TortoiseGit",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows x64 · 安装包 MSI",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/tortoisegit.png"
+  },
+  {
+    "slug": "godot",
+    "name": "Godot Engine",
+    "abbr": "GE",
+    "category": "dev",
+    "tags": [
+      "游戏开发",
+      "引擎",
+      "绿色版"
+    ],
+    "summary": "开源免费的 2D / 3D 游戏引擎。",
+    "intro": "Godot 体积小巧、免安装，使用 GDScript 或 C# 开发游戏，导出到桌面、移动和网页。",
+    "features": [
+      "2D 与 3D",
+      "GDScript / C#",
+      "多平台导出",
+      "免安装"
+    ],
+    "tips": [],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://godotengine.org/",
+    "source": {
+      "type": "github",
+      "repo": "godotengine/godot",
+      "assets": [
+        {
+          "match": "^Godot_v[\\d.]+-stable_win64\\.exe\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/godot.png"
+  },
+  {
+    "slug": "qtscrcpy",
+    "name": "QtScrcpy",
+    "abbr": "QS",
+    "category": "tools",
+    "tags": [
+      "安卓",
+      "投屏",
+      "绿色版"
+    ],
+    "summary": "安卓手机投屏到电脑并用键鼠控制。",
+    "intro": "QtScrcpy 基于 scrcpy，支持多设备同时投屏、键盘映射玩手游和屏幕录制。",
+    "features": [
+      "低延迟投屏",
+      "多设备管理",
+      "键鼠映射",
+      "无需 root"
+    ],
+    "tips": [],
+    "license": "Apache-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://github.com/barry-ran/QtScrcpy",
+    "source": {
+      "type": "github",
+      "repo": "barry-ran/QtScrcpy",
+      "assets": [
+        {
+          "match": "win-x64-v.*\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/qtscrcpy.png"
+  },
+  {
+    "slug": "escrcpy",
+    "name": "Escrcpy",
+    "abbr": "ES",
+    "category": "tools",
+    "tags": [
+      "安卓",
+      "投屏",
+      "绿色版"
+    ],
+    "summary": "带图形界面的 scrcpy，安卓投屏更方便。",
+    "intro": "Escrcpy 为 scrcpy 提供中文图形界面，支持无线连接、多设备、文件管理和录屏。",
+    "features": [
+      "中文图形界面",
+      "无线连接",
+      "多设备",
+      "录屏与截图"
+    ],
+    "tips": [],
+    "license": "Apache-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://escrcpy.viarotel.eu.org/",
+    "source": {
+      "type": "github",
+      "repo": "viarotel-org/escrcpy",
+      "assets": [
+        {
+          "match": "win-portable-x64\\.exe$",
+          "label": "Windows x64 · 绿色版 EXE",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "win-setup-x64\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/escrcpy.png"
+  },
+  {
+    "slug": "keyviz",
+    "name": "Keyviz",
+    "abbr": "KV",
+    "category": "tools",
+    "tags": [
+      "按键显示",
+      "录屏"
+    ],
+    "summary": "录屏时在屏幕上显示键盘和鼠标操作。",
+    "intro": "Keyviz 实时显示你按下的快捷键和鼠标点击，适合录制教程和直播演示。",
+    "features": [
+      "按键可视化",
+      "鼠标点击显示",
+      "样式自定义",
+      "低占用"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://mularahul.github.io/keyviz/",
+    "source": {
+      "type": "github",
+      "repo": "mulaRahul/keyviz",
+      "assets": [
+        {
+          "match": "_windows\\.msi$",
+          "label": "Windows · 安装包 MSI",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/keyviz.png"
+  },
+  {
+    "slug": "rubick",
+    "name": "Rubick",
+    "abbr": "RB",
+    "category": "tools",
+    "tags": [
+      "启动器",
+      "插件"
+    ],
+    "summary": "开源插件化桌面效率工具箱（类 uTools）。",
+    "intro": "Rubick 用快捷键呼出搜索框，通过插件实现翻译、计算、剪贴板、二维码等功能。",
+    "features": [
+      "快捷启动",
+      "插件市场",
+      "剪贴板历史",
+      "内网部署"
+    ],
+    "tips": [],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://rubickcenter.github.io/rubick/",
+    "source": {
+      "type": "github",
+      "repo": "rubickCenter/rubick",
+      "assets": [
+        {
+          "match": "Setup-[\\d.]+-x64\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/rubick.png"
+  },
+  {
+    "slug": "wetype",
+    "name": "微信输入法",
+    "abbr": "微输",
+    "category": "tools",
+    "tags": [
+      "输入法",
+      "腾讯"
+    ],
+    "summary": "腾讯官方微信输入法电脑版。",
+    "intro": "微信输入法提供智能联想、语音输入和多端词库同步，界面清爽无广告。",
+    "features": [
+      "智能联想",
+      "语音输入",
+      "微信账号同步词库",
+      "无广告"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://z.weixin.qq.com/",
+    "source": {
+      "type": "winget",
+      "id": "Tencent.WeType",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows · 官方安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/wetype.png"
+  },
+  {
+    "slug": "stability-matrix",
+    "name": "Stability Matrix",
+    "abbr": "SM",
+    "category": "ai",
+    "tags": [
+      "AI 绘画",
+      "Stable Diffusion",
+      "绿色版"
+    ],
+    "summary": "一键安装和管理 Stable Diffusion 各种界面。",
+    "intro": "Stability Matrix 可以一键部署 ComfyUI、Forge、SD WebUI 等，并统一管理模型，免安装运行。",
+    "features": [
+      "一键部署 ComfyUI 等",
+      "模型统一管理",
+      "内置模型浏览器",
+      "绿色便携"
+    ],
+    "tips": [],
+    "license": "AGPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://lykos.ai/",
+    "source": {
+      "type": "github",
+      "repo": "LykosAI/StabilityMatrix",
+      "assets": [
+        {
+          "match": "^StabilityMatrix-win-x64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/stability-matrix.svg"
+  },
+  {
+    "slug": "gpt4all",
+    "name": "GPT4All",
+    "abbr": "G4",
+    "category": "ai",
+    "tags": [
+      "本地大模型"
+    ],
+    "summary": "在本机离线运行大语言模型。",
+    "intro": "GPT4All 下载即用，可在普通电脑上离线运行开源大模型，并能与本地文档对话。",
+    "features": [
+      "离线运行",
+      "本地文档问答",
+      "模型下载管理",
+      "无需显卡"
+    ],
+    "tips": [],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://www.nomic.ai/gpt4all",
+    "source": {
+      "type": "github",
+      "repo": "nomic-ai/gpt4all",
+      "assets": [
+        {
+          "match": "installer-win64.*\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/gpt4all.svg"
+  },
+  {
+    "slug": "lm-studio",
+    "name": "LM Studio",
+    "abbr": "LM",
+    "category": "ai",
+    "tags": [
+      "本地大模型"
+    ],
+    "summary": "图形化下载并运行本地大模型。",
+    "intro": "LM Studio 可以搜索下载 Hugging Face 上的模型，在本地聊天，并提供兼容 OpenAI 的本地 API。",
+    "features": [
+      "模型搜索下载",
+      "本地聊天",
+      "OpenAI 兼容 API",
+      "GPU 加速"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://lmstudio.ai/",
+    "source": {
+      "type": "winget",
+      "id": "ElementLabs.LMStudio",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows x64 · 官方安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/lm-studio.png"
+  },
+  {
+    "slug": "koodo-reader",
+    "name": "Koodo Reader",
+    "abbr": "KR",
+    "category": "office",
+    "tags": [
+      "电子书",
+      "阅读",
+      "绿色版"
+    ],
+    "summary": "开源跨平台电子书阅读器。",
+    "intro": "Koodo Reader 支持 EPUB、PDF、MOBI、AZW3 等格式，提供笔记、高亮、翻译和 WebDAV 同步。",
+    "features": [
+      "多格式电子书",
+      "笔记与高亮",
+      "WebDAV 同步",
+      "便携版"
+    ],
+    "tips": [],
+    "license": "AGPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://koodoreader.com/",
+    "source": {
+      "type": "github",
+      "repo": "koodo-reader/koodo-reader",
+      "assets": [
+        {
+          "match": "x64-Portable\\.exe$",
+          "label": "Windows x64 · 绿色版 EXE",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "x64\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/koodo-reader.png"
+  },
+  {
+    "slug": "readest",
+    "name": "Readest",
+    "abbr": "RD",
+    "category": "office",
+    "tags": [
+      "电子书",
+      "阅读",
+      "绿色版"
+    ],
+    "summary": "现代化的开源电子书阅读器。",
+    "intro": "Readest 支持 EPUB、PDF、MOBI 等格式，有并排阅读、TTS 朗读、词典和跨设备同步。",
+    "features": [
+      "多格式阅读",
+      "TTS 朗读",
+      "划词翻译",
+      "跨设备同步"
+    ],
+    "tips": [],
+    "license": "AGPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://readest.com/",
+    "source": {
+      "type": "github",
+      "repo": "readest/readest",
+      "assets": [
+        {
+          "match": "x64-portable\\.exe$",
+          "label": "Windows x64 · 绿色版 EXE",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "x64-setup\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/readest.png"
+  },
+  {
+    "slug": "appflowy",
+    "name": "AppFlowy",
+    "abbr": "AF",
+    "category": "office",
+    "tags": [
+      "笔记",
+      "Notion",
+      "绿色版"
+    ],
+    "summary": "开源的 Notion 替代品，数据可本地保存。",
+    "intro": "AppFlowy 提供文档、看板、表格和日历视图，支持离线使用与自建同步服务。",
+    "features": [
+      "文档与看板",
+      "数据库视图",
+      "离线可用",
+      "可自建同步"
+    ],
+    "tips": [],
+    "license": "AGPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://appflowy.com/",
+    "source": {
+      "type": "github",
+      "repo": "AppFlowy-IO/AppFlowy",
+      "assets": [
+        {
+          "match": "windows-x86_64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "windows-x86_64\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/appflowy.png"
+  },
+  {
+    "slug": "siyuan",
+    "name": "思源笔记",
+    "abbr": "思",
+    "category": "office",
+    "tags": [
+      "笔记",
+      "双链"
+    ],
+    "summary": "国产开源的块级双链笔记软件。",
+    "intro": "思源笔记支持块引用、双向链接、数据库和 Markdown 所见即所得编辑，数据本地存储。",
+    "features": [
+      "块引用与双链",
+      "数据库视图",
+      "所见即所得 Markdown",
+      "本地优先"
+    ],
+    "tips": [],
+    "license": "AGPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://b3log.org/siyuan/",
+    "source": {
+      "type": "github",
+      "repo": "siyuan-note/siyuan",
+      "assets": [
+        {
+          "match": "-win\\.exe$",
+          "label": "Windows · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/siyuan.png"
+  },
+  {
+    "slug": "anki",
+    "name": "Anki",
+    "abbr": "AK",
+    "category": "office",
+    "tags": [
+      "记忆卡",
+      "学习"
+    ],
+    "summary": "基于间隔重复的记忆卡片软件。",
+    "intro": "Anki 用间隔重复算法安排复习，适合背单词、考证和医学知识，卡组资源丰富。",
+    "features": [
+      "间隔重复算法",
+      "共享卡组",
+      "多媒体卡片",
+      "多端同步"
+    ],
+    "tips": [],
+    "license": "AGPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://apps.ankiweb.net/",
+    "source": {
+      "type": "github",
+      "repo": "ankitects/anki",
+      "assets": [
+        {
+          "match": "win-x64\\.msi$",
+          "label": "Windows x64 · 安装包 MSI",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/anki.svg"
+  },
+  {
+    "slug": "marktext",
+    "name": "MarkText",
+    "abbr": "MT",
+    "category": "office",
+    "tags": [
+      "Markdown",
+      "编辑器",
+      "绿色版"
+    ],
+    "summary": "简洁的开源所见即所得 Markdown 编辑器。",
+    "intro": "MarkText 提供实时预览、数学公式、流程图和多种主题，是 Typora 的免费替代。",
+    "features": [
+      "实时预览",
+      "公式与图表",
+      "专注模式",
+      "导出 PDF / HTML"
+    ],
+    "tips": [],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://www.marktext.cc/",
+    "source": {
+      "type": "github",
+      "repo": "marktext/marktext",
+      "assets": [
+        {
+          "match": "win-x64-[\\d.]+\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "setup\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/marktext.png"
+  },
+  {
+    "slug": "zettlr",
+    "name": "Zettlr",
+    "abbr": "ZT",
+    "category": "office",
+    "tags": [
+      "Markdown",
+      "写作"
+    ],
+    "summary": "面向学术写作的 Markdown 编辑器。",
+    "intro": "Zettlr 支持 Zettelkasten 笔记法、Zotero 引文、Pandoc 导出，适合论文和长文写作。",
+    "features": [
+      "Zotero 引文",
+      "Zettelkasten",
+      "Pandoc 导出",
+      "专注模式"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://www.zettlr.com/",
+    "source": {
+      "type": "github",
+      "repo": "Zettlr/Zettlr",
+      "assets": [
+        {
+          "match": "-x64\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/zettlr.png"
+  },
+  {
+    "slug": "thunderbird",
+    "name": "Thunderbird",
+    "abbr": "TB",
+    "category": "office",
+    "tags": [
+      "邮件"
+    ],
+    "summary": "Mozilla 出品的开源邮件客户端。",
+    "intro": "Thunderbird 支持多账号邮件、日历、通讯录和 RSS，插件丰富，可替代 Outlook。",
+    "features": [
+      "多账号收发",
+      "日历与通讯录",
+      "垃圾邮件过滤",
+      "插件扩展"
+    ],
+    "tips": [],
+    "license": "MPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://www.thunderbird.net/",
+    "source": {
+      "type": "winget",
+      "id": "Mozilla.Thunderbird",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/thunderbird.png"
+  },
+  {
+    "slug": "ab-download-manager",
+    "name": "AB Download Manager",
+    "abbr": "AB",
+    "category": "download",
+    "tags": [
+      "下载",
+      "多线程",
+      "绿色版"
+    ],
+    "summary": "开源多线程下载管理器，界面现代。",
+    "intro": "AB Download Manager 支持多线程加速、队列、限速和浏览器扩展接管下载。",
+    "features": [
+      "多线程加速",
+      "下载队列与计划",
+      "浏览器扩展",
+      "绿色便携"
+    ],
+    "tips": [],
+    "license": "Apache-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://abdownloadmanager.com/",
+    "source": {
+      "type": "github",
+      "repo": "amir1376/ab-download-manager",
+      "assets": [
+        {
+          "match": "windows_x64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "windows_x64\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/ab-download-manager.svg"
+  },
+  {
+    "slug": "xdm",
+    "name": "Xtreme Download Manager",
+    "abbr": "XD",
+    "category": "download",
+    "tags": [
+      "下载",
+      "视频"
+    ],
+    "summary": "开源下载加速器，可抓取网页视频。",
+    "intro": "XDM 通过浏览器扩展接管下载，多线程加速，并能识别网页中的视频流。",
+    "features": [
+      "多线程加速",
+      "视频抓取",
+      "浏览器接管",
+      "断点续传"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://xtremedownloadmanager.com/",
+    "source": {
+      "type": "github",
+      "repo": "subhra74/xdm",
+      "assets": [
+        {
+          "match": "x64\\.msi$",
+          "label": "Windows x64 · 安装包 MSI",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/xdm.png"
+  },
+  {
+    "slug": "media-downloader",
+    "name": "Media Downloader",
+    "abbr": "MD",
+    "category": "download",
+    "tags": [
+      "视频下载",
+      "yt-dlp"
+    ],
+    "summary": "yt-dlp 等下载器的图形界面。",
+    "intro": "Media Downloader 为 yt-dlp、gallery-dl、aria2 等提供统一图形界面，支持批量和播放列表下载。",
+    "features": [
+      "yt-dlp 图形界面",
+      "批量下载",
+      "播放列表",
+      "多下载引擎"
+    ],
+    "tips": [],
+    "license": "GPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://github.com/mhogomchungu/media-downloader",
+    "source": {
+      "type": "github",
+      "repo": "mhogomchungu/media-downloader",
+      "assets": [
+        {
+          "match": "Qt6-.*\\.setup\\.exe$",
+          "label": "Windows · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "prism-launcher",
+    "name": "Prism Launcher",
+    "abbr": "PL",
+    "category": "game",
+    "tags": [
+      "我的世界",
+      "启动器",
+      "绿色版"
+    ],
+    "summary": "开源 Minecraft 启动器，多实例管理。",
+    "intro": "Prism Launcher 支持多实例、模组加载器一键安装、Modrinth / CurseForge 模组下载。",
+    "features": [
+      "多实例隔离",
+      "模组一键安装",
+      "整合包导入",
+      "便携版"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://prismlauncher.org/",
+    "source": {
+      "type": "github",
+      "repo": "PrismLauncher/PrismLauncher",
+      "assets": [
+        {
+          "match": "MSVC-Portable-[\\d.]+\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "MSVC-Setup-[\\d.]+\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/prism-launcher.png"
+  },
+  {
+    "slug": "hmcl",
+    "name": "HMCL",
+    "abbr": "HM",
+    "category": "game",
+    "tags": [
+      "我的世界",
+      "启动器",
+      "绿色版"
+    ],
+    "summary": "国内流行的开源 Minecraft 启动器。",
+    "intro": "HMCL（Hello Minecraft! Launcher）支持自动安装 Forge、Fabric、OptiFine，模组与整合包管理方便。需要 Java 环境。",
+    "features": [
+      "自动安装模组加载器",
+      "整合包管理",
+      "多账户",
+      "单文件运行"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://hmcl.huangyuhui.net/",
+    "source": {
+      "type": "github",
+      "repo": "HMCL-dev/HMCL",
+      "assets": [
+        {
+          "match": "^HMCL-[\\d.]+\\.exe$",
+          "label": "Windows · 单文件 EXE",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/hmcl.png"
+  },
+  {
+    "slug": "ppsspp",
+    "name": "PPSSPP",
+    "abbr": "PP",
+    "category": "game",
+    "tags": [
+      "PSP",
+      "模拟器",
+      "绿色版"
+    ],
+    "summary": "开源 PSP 模拟器，高清运行 PSP 游戏。",
+    "intro": "PPSSPP 可以用高分辨率运行 PSP 游戏，支持存档即时保存和手柄。需自备合法游戏镜像。",
+    "features": [
+      "高清渲染",
+      "即时存档",
+      "手柄支持",
+      "免安装"
+    ],
+    "tips": [],
+    "license": "GPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://www.ppsspp.org/",
+    "source": {
+      "type": "github",
+      "repo": "hrydgard/ppsspp",
+      "assets": [
+        {
+          "match": "Windows-x64\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        }
+      ]
+    },
+    "icon": "/static/icons/ppsspp.png"
+  },
+  {
+    "slug": "retroarch",
+    "name": "RetroArch",
+    "abbr": "RA",
+    "category": "game",
+    "tags": [
+      "模拟器",
+      "前端"
+    ],
+    "summary": "多平台复古游戏模拟器前端。",
+    "intro": "RetroArch 通过核心支持几十种主机，统一界面、着色器和手柄映射。需自备合法游戏。",
+    "features": [
+      "多核心多主机",
+      "着色器滤镜",
+      "即时存档",
+      "网络联机"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://www.retroarch.com/",
+    "source": {
+      "type": "winget",
+      "id": "Libretro.RetroArch",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/retroarch.png"
+  },
+  {
+    "slug": "freecad",
+    "name": "FreeCAD",
+    "abbr": "FC",
+    "category": "graphics",
+    "tags": [
+      "CAD",
+      "3D 建模",
+      "绿色版"
+    ],
+    "summary": "开源参数化 3D CAD 建模软件。",
+    "intro": "FreeCAD 适合机械设计、产品建模和 3D 打印，支持参数化草图、装配和 BIM。",
+    "features": [
+      "参数化建模",
+      "装配与工程图",
+      "3D 打印导出",
+      "便携版"
+    ],
+    "tips": [],
+    "license": "LGPL-2.1",
+    "mirror_allowed": true,
+    "homepage": "https://www.freecad.org/",
+    "source": {
+      "type": "github",
+      "repo": "FreeCAD/FreeCAD",
+      "assets": [
+        {
+          "match": "Windows-x86_64-py\\d+\\.7z$",
+          "label": "Windows x64 · 绿色版 7z",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "installer\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/freecad.png"
+  },
+  {
+    "slug": "darktable",
+    "name": "darktable",
+    "abbr": "DT",
+    "category": "graphics",
+    "tags": [
+      "RAW",
+      "摄影"
+    ],
+    "summary": "开源 RAW 照片处理与管理软件。",
+    "intro": "darktable 是 Lightroom 的开源替代，提供非破坏性 RAW 调色、图库管理和批量导出。",
+    "features": [
+      "RAW 非破坏编辑",
+      "图库管理",
+      "蒙版与调色",
+      "批量导出"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://www.darktable.org/",
+    "source": {
+      "type": "github",
+      "repo": "darktable-org/darktable",
+      "assets": [
+        {
+          "match": "win64\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/darktable.svg"
+  },
+  {
+    "slug": "rawtherapee",
+    "name": "RawTherapee",
+    "abbr": "RT",
+    "category": "graphics",
+    "tags": [
+      "RAW",
+      "摄影",
+      "绿色版"
+    ],
+    "summary": "开源 RAW 照片冲印软件。",
+    "intro": "RawTherapee 提供高质量去马赛克、降噪和色彩调整，适合追求画质的摄影师。",
+    "features": [
+      "高质量 RAW 解码",
+      "降噪与锐化",
+      "批量处理",
+      "便携版"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://rawtherapee.com/",
+    "source": {
+      "type": "github",
+      "repo": "Beep6581/RawTherapee",
+      "assets": [
+        {
+          "match": "release\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "release\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/rawtherapee.png"
+  },
+  {
+    "slug": "pinta",
+    "name": "Pinta",
+    "abbr": "PI",
+    "category": "graphics",
+    "tags": [
+      "画图",
+      "图片编辑"
+    ],
+    "summary": "简单好用的开源画图软件，类似 Paint.NET。",
+    "intro": "Pinta 提供图层、调整和特效，比系统画图强、比 GIMP 简单。",
+    "features": [
+      "图层",
+      "调整与特效",
+      "无限撤销",
+      "轻量"
+    ],
+    "tips": [],
+    "license": "MIT",
+    "mirror_allowed": true,
+    "homepage": "https://www.pinta-project.com/",
+    "source": {
+      "type": "github",
+      "repo": "PintaProject/Pinta",
+      "assets": [
+        {
+          "match": "x86_64\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/pinta.png"
+  },
+  {
+    "slug": "converseen",
+    "name": "Converseen",
+    "abbr": "CV",
+    "category": "graphics",
+    "tags": [
+      "批量",
+      "格式转换",
+      "绿色版"
+    ],
+    "summary": "批量图片格式转换与缩放工具。",
+    "intro": "Converseen 基于 ImageMagick，可批量转换上百种图片格式，并缩放、旋转和重命名。",
+    "features": [
+      "批量转换",
+      "批量缩放",
+      "上百种格式",
+      "便携版"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://converseen.fasterland.net/",
+    "source": {
+      "type": "github",
+      "repo": "Faster3ck/Converseen",
+      "assets": [
+        {
+          "match": "win64-portable\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "match": "win64-setup\\.msi$",
+          "label": "Windows x64 · 安装包 MSI",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/converseen.png"
+  },
+  {
+    "slug": "imagemagick",
+    "name": "ImageMagick",
+    "abbr": "IM",
+    "category": "graphics",
+    "tags": [
+      "命令行",
+      "图片处理"
+    ],
+    "summary": "强大的命令行图片处理工具。",
+    "intro": "ImageMagick 能用命令行批量转换、裁剪、合成和压缩图片，常被其他软件调用。",
+    "features": [
+      "200+ 格式",
+      "批量处理",
+      "合成与特效",
+      "脚本调用"
+    ],
+    "tips": [],
+    "license": "ImageMagick License",
+    "mirror_allowed": true,
+    "homepage": "https://imagemagick.org/",
+    "source": {
+      "type": "winget",
+      "id": "ImageMagick.ImageMagick",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/imagemagick.png"
+  },
+  {
+    "slug": "kdenlive",
+    "name": "Kdenlive",
+    "abbr": "KD",
+    "category": "video",
+    "tags": [
+      "剪辑"
+    ],
+    "summary": "KDE 出品的开源非线性视频剪辑软件。",
+    "intro": "Kdenlive 支持多轨剪辑、转场特效、字幕和代理剪辑，适合 YouTube 与自媒体剪辑。",
+    "features": [
+      "多轨时间线",
+      "转场与特效",
+      "代理剪辑",
+      "字幕编辑"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://kdenlive.org/",
+    "source": {
+      "type": "winget",
+      "id": "KDE.Kdenlive",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/kdenlive.svg"
+  },
+  {
+    "slug": "mkvtoolnix",
+    "name": "MKVToolNix",
+    "abbr": "MK",
+    "category": "video",
+    "tags": [
+      "MKV",
+      "封装",
+      "绿色版"
+    ],
+    "summary": "MKV 封装、分离与编辑工具。",
+    "intro": "MKVToolNix 可以无损合并视频、音轨和字幕到 MKV，或从 MKV 中提取轨道。",
+    "features": [
+      "无损封装",
+      "轨道提取",
+      "章节编辑",
+      "便携版"
+    ],
+    "tips": [],
+    "license": "GPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://mkvtoolnix.download/",
+    "source": {
+      "type": "winget",
+      "id": "MoritzBunkus.MKVToolNix",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": "\\.zip$",
+          "label": "Windows x64 · 绿色版 ZIP",
+          "platform": "Windows",
+          "portable": true
+        },
+        {
+          "arch": "x64",
+          "url": "setup\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    }
+  },
+  {
+    "slug": "mediainfo",
+    "name": "MediaInfo",
+    "abbr": "MI",
+    "category": "video",
+    "tags": [
+      "视频信息"
+    ],
+    "summary": "查看音视频文件的编码参数。",
+    "intro": "MediaInfo 显示视频分辨率、编码、码率、音轨和字幕信息，可集成到右键菜单。",
+    "features": [
+      "编码与码率",
+      "音轨与字幕",
+      "右键菜单",
+      "导出报告"
+    ],
+    "tips": [],
+    "license": "BSD-2-Clause",
+    "mirror_allowed": true,
+    "homepage": "https://mediaarea.net/MediaInfo",
+    "source": {
+      "type": "winget",
+      "id": "MediaArea.MediaInfo.GUI",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/mediainfo.png"
+  },
+  {
+    "slug": "openshot",
+    "name": "OpenShot",
+    "abbr": "OS",
+    "category": "video",
+    "tags": [
+      "剪辑"
+    ],
+    "summary": "上手简单的开源视频剪辑软件。",
+    "intro": "OpenShot 支持拖拽剪辑、转场、关键帧动画和 3D 标题，适合新手。",
+    "features": [
+      "拖拽剪辑",
+      "关键帧动画",
+      "转场特效",
+      "3D 标题"
+    ],
+    "tips": [],
+    "license": "GPL-3.0",
+    "mirror_allowed": true,
+    "homepage": "https://www.openshot.org/",
+    "source": {
+      "type": "github",
+      "repo": "OpenShot/openshot-qt",
+      "assets": [
+        {
+          "match": "x86_64\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/openshot.png"
+  },
+  {
+    "slug": "floorp",
+    "name": "Floorp",
+    "abbr": "FP",
+    "category": "browser",
+    "tags": [
+      "浏览器",
+      "Firefox"
+    ],
+    "summary": "基于 Firefox 的高度可定制浏览器。",
+    "intro": "Floorp 在 Firefox 基础上加入侧边栏网页面板、工作区和垂直标签页，注重隐私。",
+    "features": [
+      "垂直标签页",
+      "侧边栏面板",
+      "工作区",
+      "不收集数据"
+    ],
+    "tips": [],
+    "license": "MPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://floorp.app/",
+    "source": {
+      "type": "github",
+      "repo": "Floorp-Projects/Floorp",
+      "assets": [
+        {
+          "match": "windows-x86_64\\.installer\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/floorp.svg"
+  },
+  {
+    "slug": "zen-browser",
+    "name": "Zen Browser",
+    "abbr": "ZB",
+    "category": "browser",
+    "tags": [
+      "浏览器",
+      "Firefox"
+    ],
+    "summary": "颜值很高的 Firefox 内核浏览器。",
+    "intro": "Zen Browser 以垂直标签、分屏浏览和工作区为特色，界面简洁现代。",
+    "features": [
+      "垂直标签",
+      "分屏浏览",
+      "工作区",
+      "Firefox 扩展兼容"
+    ],
+    "tips": [],
+    "license": "MPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://zen-browser.app/",
+    "source": {
+      "type": "github",
+      "repo": "zen-browser/desktop",
+      "assets": [
+        {
+          "match": "^zen\\.installer\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/zen-browser.svg"
+  },
+  {
+    "slug": "librewolf",
+    "name": "LibreWolf",
+    "abbr": "LW",
+    "category": "browser",
+    "tags": [
+      "浏览器",
+      "隐私"
+    ],
+    "summary": "注重隐私的 Firefox 分支。",
+    "intro": "LibreWolf 默认关闭遥测、内置 uBlock Origin，并强化隐私与安全设置。",
+    "features": [
+      "无遥测",
+      "内置 uBlock Origin",
+      "隐私强化",
+      "Firefox 扩展兼容"
+    ],
+    "tips": [],
+    "license": "MPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://librewolf.net/",
+    "source": {
+      "type": "winget",
+      "id": "LibreWolf.LibreWolf",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/librewolf.svg"
+  },
+  {
+    "slug": "wireshark",
+    "name": "Wireshark",
+    "abbr": "WS",
+    "category": "network",
+    "tags": [
+      "抓包",
+      "分析"
+    ],
+    "summary": "开源网络抓包与协议分析工具。",
+    "intro": "Wireshark 可以抓取并解析上千种网络协议，是网络排障与学习的标准工具。",
+    "features": [
+      "实时抓包",
+      "上千种协议解析",
+      "过滤表达式",
+      "统计图表"
+    ],
+    "tips": [],
+    "license": "GPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://www.wireshark.org/",
+    "source": {
+      "type": "winget",
+      "id": "WiresharkFoundation.Wireshark",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": "\\.exe$",
+          "label": "Windows x64 · 安装包",
+          "platform": "Windows",
+          "portable": false
+        },
+        {
+          "arch": "x64",
+          "url": "\\.msi$",
+          "label": "Windows x64 · 安装包 MSI",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/wireshark.png"
+  },
+  {
+    "slug": "keepass",
+    "name": "KeePass",
+    "abbr": "KP",
+    "category": "security",
+    "tags": [
+      "密码"
+    ],
+    "summary": "经典开源本地密码管理器。",
+    "intro": "KeePass 把密码保存在本地加密数据库中，插件丰富，可配合网盘同步。",
+    "features": [
+      "本地加密数据库",
+      "自动输入",
+      "插件扩展",
+      "密码生成"
+    ],
+    "tips": [],
+    "license": "GPL-2.0",
+    "mirror_allowed": true,
+    "homepage": "https://keepass.info/",
+    "source": {
+      "type": "winget",
+      "id": "DominikReichl.KeePass",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": "Setup\\.exe",
+          "label": "Windows · 安装包",
+          "platform": "Windows",
+          "portable": false
+        },
+        {
+          "arch": "x64",
+          "url": "\\.msi",
+          "label": "Windows · 安装包 MSI",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/keepass.png"
+  },
+  {
+    "slug": "aimp",
+    "name": "AIMP",
+    "abbr": "AM",
+    "category": "media",
+    "tags": [
+      "音乐",
+      "播放器"
+    ],
+    "summary": "轻巧好用的免费音乐播放器。",
+    "intro": "AIMP 音质出色、支持多种无损格式，内置均衡器、标签编辑和格式转换。",
+    "features": [
+      "无损格式",
+      "均衡器与音效",
+      "标签编辑",
+      "皮肤"
+    ],
+    "tips": [],
+    "license": "免费软件（闭源）",
+    "mirror_allowed": false,
+    "homepage": "https://www.aimp.ru/",
+    "source": {
+      "type": "winget",
+      "id": "AIMP.AIMP",
+      "assets": [
+        {
+          "arch": "x64",
+          "url": ".",
+          "label": "Windows x64 · 官方安装包",
+          "platform": "Windows",
+          "portable": false
+        }
+      ]
+    },
+    "icon": "/static/icons/aimp.png"
   }
 ]
