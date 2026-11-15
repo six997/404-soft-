@@ -4725,30 +4725,30 @@
     "mirrored": false
   },
   "appflowy": {
-    "version": "0.15.0",
-    "released": "2026-11-02",
+    "version": "0.15.1",
+    "released": "2026-11-15",
     "verified": "2026-11-15",
-    "release_url": "https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.15.0",
-    "changelog": "### 🚀 v0.15.0\r\n\r\n#### New Features\r\n\r\n- **Dashboards** — Added dashboards combining views from multiple databases, with movable and resizable widgets, shared filters, and personal filter changes. Local dashboards could reuse existing views; creating new widget views required a server connection.\r\n- **Charts and drill-downs** — Added Number charts for workspaces with Pro features, expanded grouping and display controls, and drill-down tables for exploring a chart's records and saving the result as a filtered view.\r\n- **Page widths** — Added full-width and custom-width formatting per document, shared with collaborators while retaining each user's default for pages without an explicit width.\r\n- **Image search results** — Showed the image and matched text behind a search result, and opened documents at the matched image when the server supplied this information.\r\n- **Native update installation** — Added user-initiated installation on macOS and Windows x64 when the server enabled it and supplied a signed update feed. Retained manual downloads when native installation was unavailable.\r\n\r\n#### Improvements\r\n\r\n- **Database exports** — Added A4, A3, Letter, and Legal paper sizes with portrait or landscape orientation. Paginated wide PDF tables at a readable size and exported the active view's visible fields and current rows, with support for complete offline caches.\r\n- **Board views** — Added sorting within columns, column calculations, and backgrounds based on group colors.\r\n- **Images** — Saved thumbnails and decoded images at their display size across documents and database cards, reducing the size of images held in memory.\r\n- **Translations** — Updated interface translations and corrected Grid header and cell alignment in right-to-left languages.\r\n\r\n#### Bug Fixes\r\n\r\n- Preserved individual heading text during multi-block conversion, kept link formatting when editing URLs, and allowed read-only toggle blocks to expand without changing the shared document.\r\n- Prevented moving subpages in the sidebar from sending them to Trash, and preserved external-link and date mentions when copying or exporting document text.\r\n- Corrected row peek navigation and calendar row opening, focused newly added Grid rows for editing, and kept hidden Board groups usable during partial schema refreshes.\r\n- Preserved document image sizes while scrolling and recovered missing or damaged media caches without losing image authentication.\r\n- Prevented duplicated database content from uploading before its page was acknowledged by the server, and preserved database layouts when reopening views.\r\n- Fixed PDF image reading with Ollama models that advertised vision support through their capabilities.\r\n\r\n#### ⚠️ Action Required\r\n\r\n- Self-hosted workspaces still require **AppFlowy Cloud v0.19.10 or later**.\r\n- Self-hosted dashboards require server support for the Dashboard layout. Before using more than twelve widgets or four widgets in one row, deploy the updated dashboard validation to every realtime server.\r\n",
+    "release_url": "https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.15.1",
+    "changelog": "### 🚀 v0.15.1\r\n\r\n#### Improvements\r\n\r\n- **Feed discussions** — Opened comment threads in a popover on the card, with replies and drafts retained when the popover was dismissed.\r\n- **Database row actions** — Enabled row creation from List and Gallery group headers, added Copy link to Gallery cards in cloud and self-hosted workspaces, and kept peek navigation in grouped List order.\r\n- **Database history** — Clarified that row counts covered the whole saved database and that row-page content had its own history. Kept preview tabs and names tied to the saved version, excluding linked views embedded elsewhere.\r\n\r\n#### Bug Fixes\r\n\r\n- Fixed missing Gallery groups, empty-group visibility, and loading additional cards within large groups. Corrected List property alignment and gaps around empty Gallery and Feed properties.\r\n- Preserved pending text, number, and rollup filter values when closing their editors, and prevented blank checklist tasks.\r\n- Corrected date-only formula comparisons to use calendar days, while retaining precise comparisons when either date included a time.\r\n- Restored reciprocal relation links when duplicating database rows.\r\n- Preserved embedded databases and linked views in row templates opened and edited across Web and Desktop.\r\n- Restored Person names in database history, row properties, and group headers.\r\n- Recovered page references from outdated access denials and kept copied subpages visible after duplication completed.\r\n- Fixed restored tabs that stayed blank after another tab was closed, and corrected row highlights and navigation between peek surfaces.\r\n- Prevented reopened database views from staying in a loading state after their rows had finished loading. Suspended repeated upload and restore checks for unavailable databases while retaining recovery data for a later retry.\r\n- Fixed stuck image-upload progress and recovery when selecting the same file again. Prevented incomplete uploads from being marked successful, waited for comment attachments to finish uploading before publishing them, and reduced repeated downloads of missing images.\r\n- Kept notification lists readable when a newer server returned an unfamiliar notification type, and prevented malformed document block data from hanging reads or producing incomplete exports.\r\n- Fixed missing PDF preview libraries in Windows packages and Windows native-updater registration. Fixed Linux shortcut errors caused by delayed key events after unregistration.\r\n\r\nThe minimum self-hosted server version remained **AppFlowy Cloud v0.19.10**.\r\n",
     "downloads": [
       {
         "label": "Windows x64 · 绿色版 ZIP",
         "platform": "Windows",
         "portable": true,
-        "file": "AppFlowy-0.15.0-windows-x86_64.zip",
-        "size": 136660487,
-        "sha256": "a8acbcb249c31c5b76654b9570e784730ec76e903ee49536dca1b1aa68240b48",
-        "official": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.15.0/AppFlowy-0.15.0-windows-x86_64.zip",
+        "file": "AppFlowy-0.15.1-windows-x86_64.zip",
+        "size": 140087644,
+        "sha256": "a039f88bdb191572a3c79053fcbda9d56b5b959873b0bc009384b20fdee11f58",
+        "official": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.15.1/AppFlowy-0.15.1-windows-x86_64.zip",
         "mirrors": []
       },
       {
         "label": "Windows x64 · 安装包",
         "platform": "Windows",
         "portable": false,
-        "file": "AppFlowy-0.15.0-windows-x86_64.exe",
-        "size": 94306136,
-        "sha256": "fad56ccdb0532ae49f9841410d67ed18f5d88091a8743663ea9e073517d24676",
-        "official": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.15.0/AppFlowy-0.15.0-windows-x86_64.exe",
+        "file": "AppFlowy-0.15.1-windows-x86_64.exe",
+        "size": 96723728,
+        "sha256": "7ca3952d876b2226b506156131ef390c5130c9372e974011649d90ac15094721",
+        "official": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.15.1/AppFlowy-0.15.1-windows-x86_64.exe",
         "mirrors": []
       }
     ],
