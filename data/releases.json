@@ -610,10 +610,10 @@
     "mirrored": false
   },
   "wechat": {
-    "version": "4.2.0.52",
+    "version": "4.2.0.1000",
     "released": "2026-11-10",
     "verified": "2026-11-16",
-    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/WeChat/Universal/4.2.0.52",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/WeChat/Universal/4.2.0.1000",
     "changelog": "",
     "downloads": [
       {
@@ -622,7 +622,7 @@
         "portable": false,
         "file": "WeChatWin_4.2.0.exe",
         "size": null,
-        "sha256": "67a53601ae597f0dff821155706e31dbfef36ee972caadb868097eb4d972c11a",
+        "sha256": "a463110fed2dad8f27a313a1e5118cfbbe8b9de2b9296db8015a496e07191052",
         "official": "https://dldir1v6.qq.com/weixin/Universal/Windows/WeChatWin_4.2.0.exe",
         "mirrors": []
       }
@@ -4371,30 +4371,30 @@
     "mirrored": false
   },
   "podman-desktop": {
-    "version": "1.30.5",
-    "released": "2026-10-13",
+    "version": "1.30.7",
+    "released": "2026-11-13",
     "verified": "2026-11-16",
-    "release_url": "https://github.com/podman-desktop/podman-desktop/releases/tag/v1.30.5",
-    "changelog": "## What's Changed\r\n* fix(main): stop the JS exception pop-ups when main window is gone (backport #19328) by @mergify[bot] in https://github.com/podman-desktop/podman-desktop/pull/19578\r\n* fix(main): enforce directory boundary in webview file server (backport #19613) by @mergify[bot] in https://github.com/podman-desktop/podman-desktop/pull/19633\r\n* chore: Bump Podman v5 to 5.8.9, v6 to 6.1.4 (backport #19627) by @mergify[bot] in https://github.com/podman-desktop/podman-desktop/pull/19629\r\n\r\n\r\n**Full Changelog**: https://github.com/podman-desktop/podman-desktop/compare/v1.30.4...v1.30.5",
+    "release_url": "https://github.com/podman-desktop/podman-desktop/releases/tag/v1.30.7",
+    "changelog": "## What's Changed\r\n* fix(podman): remove stale API socket before starting a machine on Windows (backport #20072) by @mergify[bot] in https://github.com/podman-desktop/podman-desktop/pull/20144\r\n\r\n\r\n**Full Changelog**: https://github.com/podman-desktop/podman-desktop/compare/v1.30.6...v1.30.7",
     "downloads": [
       {
         "label": "Windows x64 · 绿色版 EXE",
         "platform": "Windows",
         "portable": true,
-        "file": "podman-desktop-1.30.5-setup-x64.exe",
-        "size": 162833128,
-        "sha256": "0689d9389853a5256c2b0ce7a09c012399948a5df4c9c4d4735c09de1bbe6928",
-        "official": "https://github.com/podman-desktop/podman-desktop/releases/download/v1.30.5/podman-desktop-1.30.5-setup-x64.exe",
+        "file": "podman-desktop-1.30.7-setup-x64.exe",
+        "size": 162867968,
+        "sha256": "3c8e91013bc0f0093076d6c7cb677bdc55b2c1b9eb438e206ce06083bb7ab6ca",
+        "official": "https://github.com/podman-desktop/podman-desktop/releases/download/v1.30.7/podman-desktop-1.30.7-setup-x64.exe",
         "mirrors": []
       },
       {
         "label": "Windows x64 · 安装包",
         "platform": "Windows",
         "portable": false,
-        "file": "podman-desktop-1.30.5-setup-x64.exe",
-        "size": 162833128,
-        "sha256": "0689d9389853a5256c2b0ce7a09c012399948a5df4c9c4d4735c09de1bbe6928",
-        "official": "https://github.com/podman-desktop/podman-desktop/releases/download/v1.30.5/podman-desktop-1.30.5-setup-x64.exe",
+        "file": "podman-desktop-1.30.7-setup-x64.exe",
+        "size": 162867968,
+        "sha256": "3c8e91013bc0f0093076d6c7cb677bdc55b2c1b9eb438e206ce06083bb7ab6ca",
+        "official": "https://github.com/podman-desktop/podman-desktop/releases/download/v1.30.7/podman-desktop-1.30.7-setup-x64.exe",
         "mirrors": []
       }
     ],
