@@ -240,20 +240,20 @@
     "mirrored": false
   },
   "rufus": {
-    "version": "4.15",
-    "released": "2026-06-30",
+    "version": "4.16",
+    "released": "2026-11-17",
     "verified": "2026-11-17",
-    "release_url": "https://github.com/pbatard/rufus/releases/tag/v4.15",
-    "changelog": "* Add RISC-V 64 support to [UEFI:NTFS](https://github.com/pbatard/uefi-ntfs)\r\n* Improve the guards for using the _\"silent\"_ Windows installation option\r\n* Improve the ability to cancel during write retries\r\n* Improve progress reporting for compressed image extraction\r\n* Fix unrestricted XML entity expansion and integer overflow in ezxml parser (courtesy of @esadowski4) [GHSA-55r2-34wg-8mv9]\r\n* Fix _\"silent\"_ Windows installation failing at 75% in most cases [#2960]\r\n* Fix a crash during boot when using [UEFI:NTFS](https://github.com/pbatard/uefi-ntfs) on Snapdragon X based ARM64 platforms [#2934]\r\n* Fix first WUE option always being checked by default [#2965]\r\n* Fix an infinite loop when using Windows ISOs that contain multiple WIMs\r\n* Fix _\"Enable runtime UEFI media validation\"_ checkbox not always being properly enabled\r\n* Other WUE improvements/fixes for OneDrive removal and username validation (with thanks to @christian8641) [#2984, #2991]",
+    "release_url": "https://github.com/pbatard/rufus/releases/tag/v4.16",
+    "changelog": "* Finally work around that [stupid AMI NTFS driver bug](https://github.com/pbatard/AmiNtfsBug), so that runtime UEFI media validation can work on the millions of PCs that AMI screwed up\r\n* Finally report USB 3.2+ devices (USB 3.2 = 20 Gbps, USB 4.0 = 40 Gpbs, USB 4.1 = 80 Gbps &mdash; See, USB Forum, it's really NOT that hard!)\r\n* Fix the CA 2023 updated files not being taken into account during runtime UEFI media validation\r\n* Fix the \"Silent\" installation option being potentially applied even when all dependencies aren't met (#3008)\r\n* Fix a regression where \"Write as ESP\" used the whole drive, instead of the expected 1 GB partition\r\n* Fix WUE timezone duplication for non English locales (#3070, #2499) and reinstate the use of dots in local usernames (#3057)\r\n* Add classic right click context menu restoration to the QoL improvements option (courtesy of @Fredolx , #3007)\r\n* Drop the ever problematic use of Group Policies when disabling the _\"Do you want to format this drive?\"_ prompt (#3042)\r\n* Improve raw image partition (re)mount (courtesy of @jaredhagel2, #3002)\r\n* Update embedded [GRUB](https://gitlab.com/gnu_grub/grub) to version 2.16\r\n* Update [libcdio](https://github.com/libcdio/libcdio-C) to latest\r\n* Update the official UEFI DBX URLs, since they were changed by Microsoft\r\n* Address multiple vulnerabilities, courtesy of @indep-arg, @andife, Adam Korczynski, @SilentSobs and @kasparovabi: \r\n  - GHSA-hhx4-pjqh-499x, GHSA-hrxr-p5wv-qxm2, GHSA-6xgr-6q48-jwxr, GHSA-xh22-8phc-hw8j, GHSA-877g-r8h5-fq8p, GHSA-hcpc-vq8c-923h, GHSA-w4w7-p3x2-3p83, GHSA-j6fh-hww6-74mw, GHSA-xx6m-qq8h-8882\r\n  - #3033, #3022\r\n  - ANT-2026-QQV5VRY4, ANT-2026-A0JKMSB0, ANT-2026-85N3B2M9, ANT-2026-3CMBZ6X6, ANT-2026-1FCTXF5S, ANT-2026-0J6W5VHP\r\n  - It should be noted that **all** the vulnerabilities above either require an already compromised system (for local to elevated exploitation), or a malicious ISO, or a MITM/domain/GitHub compromise, in which case you are most likely already p0wned, as an attacker should avail of **much** better paths of exploitation than a Rufus exploit.",
     "downloads": [
       {
         "label": "Windows · 便携版 EXE",
         "platform": "Windows",
         "portable": true,
-        "file": "rufus-4.15p.exe",
-        "size": 1989992,
-        "sha256": "84c8a437f8af89257524478489e5c85f1edf25f761d299e2bcde46ac0afbe106",
-        "official": "https://github.com/pbatard/rufus/releases/download/v4.15/rufus-4.15p.exe",
+        "file": "rufus-4.16p.exe",
+        "size": 1985016,
+        "sha256": "8351a56c134aa6dd26a930d702cc3fd57f11ef90b17e55a8de960d5a73d46cfc",
+        "official": "https://github.com/pbatard/rufus/releases/download/v4.16/rufus-4.16p.exe",
         "mirrors": []
       }
     ],
@@ -610,10 +610,10 @@
     "mirrored": false
   },
   "wechat": {
-    "version": "4.2.0.1000",
-    "released": "2026-11-10",
+    "version": "4.2.0.53",
+    "released": "2026-11-16",
     "verified": "2026-11-17",
-    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/WeChat/Universal/4.2.0.1000",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/WeChat/Universal/4.2.0.53",
     "changelog": "",
     "downloads": [
       {
@@ -850,30 +850,30 @@
     "mirrored": false
   },
   "motrix": {
-    "version": "2.4.2",
-    "released": "2026-11-15",
+    "version": "2.4.3",
+    "released": "2026-11-17",
     "verified": "2026-11-17",
-    "release_url": "https://github.com/agalwood/Motrix/releases/tag/v2.4.2",
-    "changelog": "# Motrix 2.4.2\n\nEnglish | [简体中文](https://github.com/agalwood/Motrix/blob/main/docs/release-notes/2.4.2.zh-CN.md)\n\n## Changes since 2.4.1\n\n- Cancel unfinished file finalization recovery in the same database transaction that deletes a task. Retire orphaned recovery records from older versions at startup so deleted tasks are not processed again.\n- Update the desktop runtime to **Electron 45.3.2** and the database dependency to **better-sqlite3 13.2.0**.\n- Update **ws to 8.23.0**, fixing memory exhaustion caused by a malicious peer flooding Ping frames.\n- Refresh translation, form, proxy and icon dependencies, together with build, test and offline packaging tools.\n\n## Upgrade compatibility\n\n**Back up your profile and download files before upgrading.** The bundled engine\nuses SQLite **schema 6**. When upgrading an older engine database, retain its\ncomplete pre-upgrade backup; older engines cannot open schema 6. Stop all engines\nbefore restoring a verified backup to a separate path for a downgrade. Do not\nreset or delete the upgraded database as a substitute for recovery.\n\nUsers migrating from Motrix v1 should follow the\n[migration guide](https://github.com/agalwood/Motrix/blob/v2.4.2/docs/legacy-migration.md)\nand retain the original profile and engine database backups.\n\n## Downloads and updates\n\nDesktop packages support macOS 13 or later, Windows 10 or later, and Linux, with\nnative x64 and ARM64 builds. No 32-bit desktop packages are provided. Official\nmacOS packages require signing and notarization. Windows NSIS installers and ZIP\narchives are unsigned and may trigger SmartScreen; use official Release downloads.\n\nStable publication updates both `latest*.yml` and `beta*.yml` feeds to 2.4.2.\nFlatpak bundles and Native Host companions remain separate downloads. Snap\navailability requires verified Store publication to edge and promotion of the\nsame amd64/arm64 revisions through candidate to stable.\n\nServer images use `docker.io/motrixapp/motrix-server:2.4.2` and\n`ghcr.io/agalwood/motrix-server:2.4.2`. After public multi-platform runtime\nverification, `2.4`, `2`, `stable`, and `latest` advance to the same verified digest.\nSee the [Docker Server guide](https://github.com/agalwood/Motrix/blob/v2.4.2/docs/docker-server.md).\n\n[Full changelog](https://github.com/agalwood/Motrix/compare/v2.4.1...v2.4.2)\n\n\n## What's Changed\n* fix(session): cancel finalize recovery when tasks are deleted by @agalwood in https://github.com/agalwood/Motrix/pull/2524\n* chore(release): refresh dependencies and prepare 2.4.2 by @agalwood in https://github.com/agalwood/Motrix/pull/2526\n\n\n**Full Changelog**: https://github.com/agalwood/Motrix/compare/v2.4.1...v2.4.2",
+    "release_url": "https://github.com/agalwood/Motrix/releases/tag/v2.4.3",
+    "changelog": "# Motrix 2.4.3\n\nEnglish | [简体中文](https://github.com/agalwood/Motrix/blob/main/docs/release-notes/2.4.3.zh-CN.md)\n\n## Changes since 2.4.2\n\n- Support custom Server access passwords while retaining the existing generated-password and CLI management flow.\n- Keep Server shutdown handlers active while pending writes and other cleanup drain, preventing an atomic file write from interrupting graceful shutdown.\n- Add an option to keep download statistics visible while task details are open.\n- Display download progress with one decimal place, refresh active progress more frequently, and coalesce duplicate pause requests across controls.\n- Adapt fnOS integration to SDK **0.6.0**, including standalone browser directory authorization, cancellation and popup handling, clearer unsupported file-action messages, and live host theme synchronization. Native iframe and mobile hosts retain direct file capabilities.\n- Update **Electron to 45.3.3**, **i18next to 27.1.3**, and **react-i18next to 18.0.2**. These updates include language-code handling fixes and translation resource subscription fixes.\n- Upgrade the plugin call graph to **React Flow 13.0.1**, preserving node selection and dragging, application themes, and the existing view spacing.\n- Refresh Biome and user-event test tooling. Keep **vscode-jsonrpc 9.0.3** unchanged.\n\n## Upgrade compatibility\n\n**Back up your profile and download files before upgrading.** The bundled engine\nuses SQLite **schema 6**. When upgrading an older engine database, retain its\ncomplete pre-upgrade backup; older engines cannot open schema 6. Stop all engines\nbefore restoring a verified backup to a separate path for a downgrade. Do not\nreset or delete the upgraded database as a substitute for recovery.\n\nUsers migrating from Motrix v1 should follow the\n[migration guide](https://github.com/agalwood/Motrix/blob/v2.4.3/docs/legacy-migration.md)\nand retain the original profile and engine database backups.\n\n## Downloads and updates\n\nDesktop packages support macOS 13 or later, Windows 10 or later, and Linux, with\nnative x64 and ARM64 builds. No 32-bit desktop packages are provided. Official\nmacOS packages require signing and notarization. Windows NSIS installers and ZIP\narchives are unsigned and may trigger SmartScreen; use official Release downloads.\n\nStable publication updates both `latest*.yml` and `beta*.yml` feeds to 2.4.3.\nFlatpak bundles and Native Host companions remain separate downloads. Snap\navailability requires verified Store publication to edge and promotion of the\nsame amd64/arm64 revisions through candidate to stable.\n\nServer images use `docker.io/motrixapp/motrix-server:2.4.3` and\n`ghcr.io/agalwood/motrix-server:2.4.3`. After public multi-platform runtime\nverification, `2.4`, `2`, `stable`, and `latest` advance to the same verified digest.\nSee the [Docker Server guide](https://github.com/agalwood/Motrix/blob/v2.4.3/docs/docker-server.md).\n\n[Full changelog](https://github.com/agalwood/Motrix/compare/v2.4.2...v2.4.3)\n\n\n## What's Changed\n* fix(downloads): refine progress and prevent duplicate pause requests by @agalwood in https://github.com/agalwood/Motrix/pull/2525\n* feat(downloads): keep statistics visible with task details by @agalwood in https://github.com/agalwood/Motrix/pull/2527\n* feat(server): support custom access passwords by @agalwood in https://github.com/agalwood/Motrix/pull/2529\n* fix(fnos): adapt sdk 0.6 authorization and host events by @agalwood in https://github.com/agalwood/Motrix/pull/2530\n* chore(release): prepare 2.4.3 with dependency updates by @agalwood in https://github.com/agalwood/Motrix/pull/2533\n\n\n**Full Changelog**: https://github.com/agalwood/Motrix/compare/v2.4.2...v2.4.3",
     "downloads": [
       {
         "label": "Windows x64 · 绿色版 ZIP",
         "platform": "Windows",
         "portable": true,
-        "file": "Motrix-2.4.2-x64.zip",
-        "size": 141241936,
-        "sha256": "98be4672a77b9e90ec574a0983230b7860eb3485ea4684742b947588c7d684e5",
-        "official": "https://github.com/agalwood/Motrix/releases/download/v2.4.2/Motrix-2.4.2-x64.zip",
+        "file": "Motrix-2.4.3-x64.zip",
+        "size": 141298303,
+        "sha256": "727b1873d4d5862a8fe1b90f0824670a558e14a15796a78e3b49b7b0ffb1ac68",
+        "official": "https://github.com/agalwood/Motrix/releases/download/v2.4.3/Motrix-2.4.3-x64.zip",
         "mirrors": []
       },
       {
         "label": "Windows · 安装包",
         "platform": "Windows",
         "portable": false,
-        "file": "Motrix-Setup-2.4.2-arm64.exe",
-        "size": 127377723,
-        "sha256": "2f00334cadfd889235436e72f39aa50476cf7f854606e1f7b171f0abad6990a7",
-        "official": "https://github.com/agalwood/Motrix/releases/download/v2.4.2/Motrix-Setup-2.4.2-arm64.exe",
+        "file": "Motrix-Setup-2.4.3-arm64.exe",
+        "size": 127416808,
+        "sha256": "cf5f14943cfeee3b9fb9dde7b65524f231a9f1b7e46d275cc0a9f7567062f468",
+        "official": "https://github.com/agalwood/Motrix/releases/download/v2.4.3/Motrix-Setup-2.4.3-arm64.exe",
         "mirrors": []
       }
     ],
@@ -1282,20 +1282,20 @@
     "source": "winget"
   },
   "wiztree": {
-    "version": "4.33",
-    "released": "2026-09-16",
+    "version": "4.34",
+    "released": "2026-11-17",
     "verified": "2026-11-17",
-    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AntibodySoftware/WizTree/4.33",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/AntibodySoftware/WizTree/4.34",
     "changelog": "",
     "downloads": [
       {
         "label": "Windows · 官方安装包",
         "platform": "Windows",
         "portable": false,
-        "file": "wiztree_4_33_setup.exe",
+        "file": "wiztree_4_34_setup.exe",
         "size": null,
-        "sha256": "3c56dfc08f06c58b9a9133a137c8559e016749e1605cf81e1b1d6b1deead2ff1",
-        "official": "https://diskanalyzer.com/files/wiztree_4_33_setup.exe",
+        "sha256": "77e75b83b59673a49dc88ba60471776df3646baee30a82453db01ff6ad83ef2c",
+        "official": "https://diskanalyzer.com/files/wiztree_4_34_setup.exe",
         "mirrors": []
       }
     ],
@@ -4260,20 +4260,20 @@
     "mirrored": false
   },
   "fancontrol": {
-    "version": "285",
-    "released": "2026-11-02",
+    "version": "286",
+    "released": "2026-11-17",
     "verified": "2026-11-17",
-    "release_url": "https://github.com/Rem0o/FanControl.Releases/releases/tag/V285",
-    "changelog": "* Selected font applies to tray icon context menu\r\n* Fix bugs in Auto fan curve and Mix fan curve\r\n* Fix bug with File sensor\r\n* Remove LHM's built in sensor logging to reduce memory footprint\r\n* Fix memory leak with main window\r\n* Fix various service bugs\r\n* Update LibreHardwareMonitorLib",
+    "release_url": "https://github.com/Rem0o/FanControl.Releases/releases/tag/V286",
+    "changelog": "* Add maximum % control setting\r\n* Fahrenheit temperature for service tray icon",
     "downloads": [
       {
         "label": "Windows · 安装包",
         "platform": "Windows",
         "portable": false,
-        "file": "FanControl_285_net_10_0_Installer.exe",
-        "size": 20894624,
-        "sha256": "0ad1fca893a9e187e193c9bde4774b864116b78526c22471c0683c23d65d6081",
-        "official": "https://github.com/Rem0o/FanControl.Releases/releases/download/V285/FanControl_285_net_10_0_Installer.exe",
+        "file": "FanControl_286_net_10_0_Installer.exe",
+        "size": 21074016,
+        "sha256": "162121ae8c176e90f3447c6ae3f60df7af7c51d3ae5be0cd6fa36e01de0fe88c",
+        "official": "https://github.com/Rem0o/FanControl.Releases/releases/download/V286/FanControl_286_net_10_0_Installer.exe",
         "mirrors": []
       }
     ],
@@ -6302,50 +6302,50 @@
     "mirrored": false
   },
   "karing": {
-    "version": "1.2.26.2932",
-    "released": "2026-11-16",
+    "version": "1.2.26.2933",
+    "released": "2026-11-17",
     "verified": "2026-11-17",
-    "release_url": "https://github.com/KaringX/karing/releases/tag/v1.2.26.2932",
-    "changelog": "1. Core: Log improvements #2103\r\n2. Windows: Crash information is no longer collected for `KaringService` when launched by third-party applications.\r\n3. Recompiled the core to address potential false-positive detections by certain antivirus software #2109 #2100\r\n4. Fixed an issue where editing WireGuard (WG) configurations could trigger an exception. #2101\r\n5. Windows: Added a new system environment variable, `ENABLE_IMPELLER`, to enable the Flutter Impeller engine (set `ENABLE_IMPELLER` to 1). Users experiencing a black screen on Windows may try adding this environment variable #2099 #2106\r\n\r\niOS/tvOS AppStore: (Search Keywords: karing vpn) https://apps.apple.com/us/app/karing/id6472431552",
+    "release_url": "https://github.com/KaringX/karing/releases/tag/v1.2.26.2933",
+    "changelog": "1. Windows: Fixed an issue where the third-party dependency `permission_handler` caused problems when retrieving the current location #2114\r\n2. Windows: Improved the addition of firewall rules (rules are now added only when running with administrator privileges)\r\n3. Linux: Fixed an issue where the tray menu would not appear #2082\r\n4. Android: Fixed an exception in `WidgetsAppState._onUnknownRoute`\r\n5. Added compatibility for `extra=null` in VLESS #2115\r\n\r\niOS/tvOS AppStore: (Search Keywords: karing vpn) https://apps.apple.com/us/app/karing/id6472431552",
     "downloads": [
       {
         "label": "Windows x64 · 绿色版 ZIP",
         "platform": "Windows",
         "portable": true,
-        "file": "karing_1.2.26.2932_windows_x64.zip",
-        "size": 75000978,
-        "sha256": "0751d5a187089c4e56c406b2c2ba59b61044aaae82de3b60be2e7e984be32faa",
-        "official": "https://github.com/KaringX/karing/releases/download/v1.2.26.2932/karing_1.2.26.2932_windows_x64.zip",
+        "file": "karing_1.2.26.2933_windows_x64.zip",
+        "size": 74998934,
+        "sha256": "01048622e8ba84cdd797604b44422ecdec96b14966b577cb671be36ebf488e96",
+        "official": "https://github.com/KaringX/karing/releases/download/v1.2.26.2933/karing_1.2.26.2933_windows_x64.zip",
         "mirrors": []
       },
       {
         "label": "Windows x64 · 安装包",
         "platform": "Windows",
         "portable": false,
-        "file": "karing_1.2.26.2932_windows_x64.exe",
-        "size": 52031011,
-        "sha256": "f12353710427e2922ab03146c30afd55a0afee7b019dc9475a272489ac4d56c0",
-        "official": "https://github.com/KaringX/karing/releases/download/v1.2.26.2932/karing_1.2.26.2932_windows_x64.exe",
+        "file": "karing_1.2.26.2933_windows_x64.exe",
+        "size": 52022018,
+        "sha256": "e9a8d5d1fb47ffada376fd83326ab51fa3cf24d2855d1fe5159b8e4454ae91cd",
+        "official": "https://github.com/KaringX/karing/releases/download/v1.2.26.2933/karing_1.2.26.2933_windows_x64.exe",
         "mirrors": []
       },
       {
         "label": "Android · arm64 APK",
         "platform": "Android",
         "portable": false,
-        "file": "karing_1.2.26.2932_android_arm64-v8a.apk",
-        "size": 60195512,
-        "sha256": "81da2284206899eda8453fd505f6bc09b72f98acaba64e8cad06440e27764a38",
-        "official": "https://github.com/KaringX/karing/releases/download/v1.2.26.2932/karing_1.2.26.2932_android_arm64-v8a.apk",
+        "file": "karing_1.2.26.2933_android_arm64-v8a.apk",
+        "size": 60856968,
+        "sha256": "cb512e3cc03f0eb9b8bc5cdf07c4b874a5381926755133432b996aa9cd5538f8",
+        "official": "https://github.com/KaringX/karing/releases/download/v1.2.26.2933/karing_1.2.26.2933_android_arm64-v8a.apk",
         "mirrors": []
       },
       {
         "label": "macOS · 通用 DMG",
         "platform": "macOS",
         "portable": false,
-        "file": "karing_1.2.26.2932_macos_universal.dmg",
-        "size": 116879271,
-        "sha256": "3631628da559b802aebb8435431f2f0aa01da132cb2a87985abc636fcb4369fc",
-        "official": "https://github.com/KaringX/karing/releases/download/v1.2.26.2932/karing_1.2.26.2932_macos_universal.dmg",
+        "file": "karing_1.2.26.2933_macos_universal.dmg",
+        "size": 116858838,
+        "sha256": "a8b7872a0059ec2c860b1dd2b8d4b606406a0c26bf3f28ddbe01a62a89c6aa6d",
+        "official": "https://github.com/KaringX/karing/releases/download/v1.2.26.2933/karing_1.2.26.2933_macos_universal.dmg",
         "mirrors": []
       }
     ],
