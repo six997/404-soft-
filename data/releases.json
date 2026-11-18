@@ -4010,20 +4010,20 @@
     "source": "winget"
   },
   "aria2-next": {
-    "version": "3.1.0",
-    "released": "2026-11-08",
+    "version": "3.1.1",
+    "released": "2026-11-18",
     "verified": "2026-11-18",
-    "release_url": "https://github.com/AnInsomniacy/aria2-next/releases/tag/v3.1.0",
-    "changelog": "## Summary\n\nAria2 Next 3.1.0 changes how failed downloads survive a restart and how redirected downloads are named. A download that failed before the session was saved comes back as failed instead of being started again on every launch. Windows executables now carry version information and an application manifest. Release assets cover the same seven platforms.\n\n### Changed\n\n- Failed downloads are saved to the session with their error code and message and restored as failed results. Previously every launch retried them, so dead links failed again within seconds and produced a burst of errors. Retrying one is still a user action ([rayburst#802](https://github.com/AnInsomniacy/rayburst/issues/802)).\n- Without a Content-Disposition filename or a caller hint, a download that was redirected is named after the URL it landed on, as browsers do. A link such as `…/download/3.28` that redirects to `…/setup.exe` is now saved as `setup.exe` ([rayburst#801](https://github.com/AnInsomniacy/rayburst/issues/801)).\n\n### Added\n\n- The Windows executable embeds version information and a manifest that declares Windows 10/11 support and long path awareness. Paths beyond `MAX_PATH` work where the system enables long paths ([#86](https://github.com/AnInsomniacy/aria2-next/issues/86)).\n\n### Downloads\n\n| Platform | Download |\n| --- | --- |\n| Linux x86_64 | `aria2-next-3.1.0-linux-x86_64` |\n| Linux ARM64 | `aria2-next-3.1.0-linux-aarch64` |\n| macOS Apple Silicon | `aria2-next-3.1.0-macos-arm64` |\n| macOS Intel | `aria2-next-3.1.0-macos-x86_64` |\n| Windows x86_64 | `aria2-next-3.1.0-windows-x86_64.exe` |\n| Windows ARM64 | `aria2-next-3.1.0-windows-arm64.exe` |\n| Android ARM64 | `aria2-next-3.1.0-android-arm64` |\n| Checksums | `aria2-next-3.1.0-checksums.sha256` |\n",
+    "release_url": "https://github.com/AnInsomniacy/aria2-next/releases/tag/v3.1.1",
+    "changelog": "## Summary\n\nAria2 Next 3.1.1 fixes a crash when moving a paused torrent, makes the shutdown methods answer before the daemon exits, and lets removed downloads resume correctly when they are added again. It also fixes BitTorrent with a relative `--dir` on Windows, refills the queue when a download starts seeding under `--detach-share-only`, and numbers media outputs that would collide. Release assets cover the same seven platforms.\n\n### Fixed\n\n- `aria2.moveDownload` no longer crashes the daemon on a paused multi-file torrent whose files have not been read or written in this session ([#92](https://github.com/AnInsomniacy/aria2-next/issues/92)).\n- `aria2.shutdown` and `aria2.forceShutdown` return their `\"OK\"` over HTTP and WebSocket before the daemon exits. The server stops accepting connections, then waits up to two seconds for replies to requests it has already read ([#93](https://github.com/AnInsomniacy/aria2-next/issues/93)).\n- BitTorrent downloads work with a relative directory such as the default `--dir=.` on Windows. Save paths are now absolute and normalized, because Windows extended-length paths take a `.` component literally ([#91](https://github.com/AnInsomniacy/aria2-next/issues/91)).\n- With `--detach-share-only`, a download that finishes and starts seeding frees its place in `--max-concurrent-downloads` at once, so the next queued download starts ([#89](https://github.com/AnInsomniacy/aria2-next/issues/89)).\n- Removing an unfinished HTTP download keeps its resume record while the file stays on disk. Adding the same file again with `--continue` resumes from the bytes actually written, instead of treating a preallocated multi-connection file as complete. On startup, records whose files were deleted are discarded; records on directories that are not present, such as an unmounted drive, are kept ([#90](https://github.com/AnInsomniacy/aria2-next/issues/90)).\n- A media download whose output name is already being written by another task gets the next numbered name, so two streams with the same name download side by side ([rayburst#819](https://github.com/AnInsomniacy/rayburst/issues/819)).\n\n### Changed\n\n- The `--http-accept-gzip` description states when decoding applies: single-stream downloads decode gzip and deflate bodies, while ranged requests ask for identity encoding, as browsers do ([#88](https://github.com/AnInsomniacy/aria2-next/issues/88)).\n\n### Downloads\n\n| Platform | Download |\n| --- | --- |\n| Linux x86_64 | `aria2-next-3.1.1-linux-x86_64` |\n| Linux ARM64 | `aria2-next-3.1.1-linux-aarch64` |\n| macOS Apple Silicon | `aria2-next-3.1.1-macos-arm64` |\n| macOS Intel | `aria2-next-3.1.1-macos-x86_64` |\n| Windows x86_64 | `aria2-next-3.1.1-windows-x86_64.exe` |\n| Windows ARM64 | `aria2-next-3.1.1-windows-arm64.exe` |\n| Android ARM64 | `aria2-next-3.1.1-android-arm64` |\n| Checksums | `aria2-next-3.1.1-checksums.sha256` |\n",
     "downloads": [
       {
         "label": "Windows x64 · 单文件 EXE",
         "platform": "Windows",
         "portable": true,
-        "file": "aria2-next-3.1.0-windows-x86_64.exe",
-        "size": 18322432,
-        "sha256": "12bbd48dfd2c86f55419bf92b196dd3aedd6983116b5ce10c85d27a5a76c2baa",
-        "official": "https://github.com/AnInsomniacy/aria2-next/releases/download/v3.1.0/aria2-next-3.1.0-windows-x86_64.exe",
+        "file": "aria2-next-3.1.1-windows-x86_64.exe",
+        "size": 18334208,
+        "sha256": "33f13b297ebe219b99f098b1b21c9ec34eff90e20ed106cf3c86b210a7567351",
+        "official": "https://github.com/AnInsomniacy/aria2-next/releases/download/v3.1.1/aria2-next-3.1.1-windows-x86_64.exe",
         "mirrors": []
       }
     ],
@@ -6612,20 +6612,20 @@
     "mirrored": false
   },
   "clashmac": {
-    "version": "27.1.8",
-    "released": "2026-09-29",
+    "version": "27.1.9",
+    "released": "2026-11-18",
     "verified": "2026-11-18",
-    "release_url": "https://github.com/666OS/ClashMac/releases/tag/27.1.8",
-    "changelog": "### 新增特性\n- 配置页面新增内置 YAML 编辑器，带行号、语法高亮等功能，可以对配置文件进行编辑、保存。\n- 修正了一些错误、提升了性能、喝了太多的咖啡。\n\n### 体验与性能优化\n- 修复菜单开关按钮即时刷新显示问题\n\n#### 反馈\n\n* **功能手册**：查阅 [正式版发布日志](https://github.com/666OS/ClashMac/releases/latest) 或 [用户手册](https://clashmac.app/guide/) 了解核心功能\n* **问题反馈**：如遇运行异常，请提交至 [GitHub Issues](https://github.com/666OS/ClashMac/issues) 或关注 [Telegram 频道](https://t.me/Pinched666)",
+    "release_url": "https://github.com/666OS/ClashMac/releases/tag/27.1.9",
+    "changelog": "### 体验与性能优化\n- **界面全面焕新**：优化概览、策略、配置与指纹浏览器卡片视觉，改善深色模式观感。\n- **全新点阵流量地图**：采用点阵世界地图与流动光点效果，支持全球地区显示，悬停即可查看实时详情。\n- **核心配置列表更好用**：修复设置项多行显示不全的问题，支持一键删除与粘贴多行自动拆分。\n- **重构特权 Helper**：解决 XPC 错误。\n\n#### 反馈\n\n* **功能手册**：查阅 [正式版发布日志](https://github.com/666OS/ClashMac/releases/latest) 或 [用户手册](https://clashmac.app/guide/) 了解核心功能\n* **问题反馈**：如遇运行异常，请提交至 [GitHub Issues](https://github.com/666OS/ClashMac/issues) 或关注 [Telegram 频道](https://t.me/Pinched666)",
     "downloads": [
       {
         "label": "macOS · DMG",
         "platform": "macOS",
         "portable": false,
-        "file": "ClashMac-27.1.8.dmg",
-        "size": 8482344,
-        "sha256": "d48a0bcac1fe97e2cb06bf99541fba71e0f6e0060d954fbee8898ad268c508f9",
-        "official": "https://github.com/666OS/ClashMac/releases/download/27.1.8/ClashMac-27.1.8.dmg",
+        "file": "ClashMac-27.1.9.dmg",
+        "size": 8908105,
+        "sha256": "cc91a280cada2dded0045d2aedef86cd21320b462351fa2a06abbe83a822ff14",
+        "official": "https://github.com/666OS/ClashMac/releases/download/27.1.9/ClashMac-27.1.9.dmg",
         "mirrors": []
       }
     ],
