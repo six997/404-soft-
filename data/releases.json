@@ -850,30 +850,30 @@
     "mirrored": false
   },
   "motrix": {
-    "version": "2.4.3",
-    "released": "2026-11-17",
+    "version": "2.4.5",
+    "released": "2026-11-20",
     "verified": "2026-11-20",
-    "release_url": "https://github.com/agalwood/Motrix/releases/tag/v2.4.3",
-    "changelog": "# Motrix 2.4.3\n\nEnglish | [简体中文](https://github.com/agalwood/Motrix/blob/main/docs/release-notes/2.4.3.zh-CN.md)\n\n## Changes since 2.4.2\n\n- Support custom Server access passwords while retaining the existing generated-password and CLI management flow.\n- Keep Server shutdown handlers active while pending writes and other cleanup drain, preventing an atomic file write from interrupting graceful shutdown.\n- Add an option to keep download statistics visible while task details are open.\n- Display download progress with one decimal place, refresh active progress more frequently, and coalesce duplicate pause requests across controls.\n- Adapt fnOS integration to SDK **0.6.0**, including standalone browser directory authorization, cancellation and popup handling, clearer unsupported file-action messages, and live host theme synchronization. Native iframe and mobile hosts retain direct file capabilities.\n- Update **Electron to 45.3.3**, **i18next to 27.1.3**, and **react-i18next to 18.0.2**. These updates include language-code handling fixes and translation resource subscription fixes.\n- Upgrade the plugin call graph to **React Flow 13.0.1**, preserving node selection and dragging, application themes, and the existing view spacing.\n- Refresh Biome and user-event test tooling. Keep **vscode-jsonrpc 9.0.3** unchanged.\n\n## Upgrade compatibility\n\n**Back up your profile and download files before upgrading.** The bundled engine\nuses SQLite **schema 6**. When upgrading an older engine database, retain its\ncomplete pre-upgrade backup; older engines cannot open schema 6. Stop all engines\nbefore restoring a verified backup to a separate path for a downgrade. Do not\nreset or delete the upgraded database as a substitute for recovery.\n\nUsers migrating from Motrix v1 should follow the\n[migration guide](https://github.com/agalwood/Motrix/blob/v2.4.3/docs/legacy-migration.md)\nand retain the original profile and engine database backups.\n\n## Downloads and updates\n\nDesktop packages support macOS 13 or later, Windows 10 or later, and Linux, with\nnative x64 and ARM64 builds. No 32-bit desktop packages are provided. Official\nmacOS packages require signing and notarization. Windows NSIS installers and ZIP\narchives are unsigned and may trigger SmartScreen; use official Release downloads.\n\nStable publication updates both `latest*.yml` and `beta*.yml` feeds to 2.4.3.\nFlatpak bundles and Native Host companions remain separate downloads. Snap\navailability requires verified Store publication to edge and promotion of the\nsame amd64/arm64 revisions through candidate to stable.\n\nServer images use `docker.io/motrixapp/motrix-server:2.4.3` and\n`ghcr.io/agalwood/motrix-server:2.4.3`. After public multi-platform runtime\nverification, `2.4`, `2`, `stable`, and `latest` advance to the same verified digest.\nSee the [Docker Server guide](https://github.com/agalwood/Motrix/blob/v2.4.3/docs/docker-server.md).\n\n[Full changelog](https://github.com/agalwood/Motrix/compare/v2.4.2...v2.4.3)\n\n\n## What's Changed\n* fix(downloads): refine progress and prevent duplicate pause requests by @agalwood in https://github.com/agalwood/Motrix/pull/2525\n* feat(downloads): keep statistics visible with task details by @agalwood in https://github.com/agalwood/Motrix/pull/2527\n* feat(server): support custom access passwords by @agalwood in https://github.com/agalwood/Motrix/pull/2529\n* fix(fnos): adapt sdk 0.6 authorization and host events by @agalwood in https://github.com/agalwood/Motrix/pull/2530\n* chore(release): prepare 2.4.3 with dependency updates by @agalwood in https://github.com/agalwood/Motrix/pull/2533\n\n\n**Full Changelog**: https://github.com/agalwood/Motrix/compare/v2.4.2...v2.4.3",
+    "release_url": "https://github.com/agalwood/Motrix/releases/tag/v2.4.5",
+    "changelog": "# Motrix 2.4.5\n\nEnglish | [简体中文](https://github.com/agalwood/Motrix/blob/main/docs/release-notes/2.4.5.zh-CN.md)\n\n## Changes since 2.4.4\n\n- Desktop now accepts recoverable handoffs from paired browser extensions by default. Browser Extension **0.1.25** negotiates this capability for eligible paused downloads. If the connection drops after submission, the extension can recover the existing task ID.\n- Existing extensions and older hosts continue to support the original download submission method. To stop accepting new handoffs on Desktop, launch with `MOTRIX_DOWNLOAD_HANDOFF=0`; previously prepared operations can still finish.\n\n## Upgrade compatibility\n\n**Back up your profile and download files before upgrading.** The bundled engine\nuses SQLite **schema 6**. When upgrading an older engine database, retain its\ncomplete pre-upgrade backup; older engines cannot open schema 6. Stop all engines\nbefore restoring a verified backup to a separate path for a downgrade. Do not\nreset or delete the upgraded database as a substitute for recovery.\n\nUsers migrating from Motrix v1 should follow the\n[migration guide](https://github.com/agalwood/Motrix/blob/v2.4.5/docs/legacy-migration.md)\nand retain the original profile and engine database backups.\n\n## Downloads and updates\n\nDesktop packages support macOS 13 or later, Windows 10 or later, and Linux, with\nnative x64 and ARM64 builds. No 32-bit desktop packages are provided. Official\nmacOS packages require signing and notarization. Windows NSIS installers and ZIP\narchives are unsigned and may trigger SmartScreen; use official Release downloads.\n\nStable publication updates both `latest*.yml` and `beta*.yml` feeds to 2.4.5.\nFlatpak bundles and Native Host companions remain separate downloads. Snap\navailability requires verified Store publication to edge and promotion of the\nsame amd64/arm64 revisions through candidate to stable.\n\nServer images use `docker.io/motrixapp/motrix-server:2.4.5` and\n`ghcr.io/agalwood/motrix-server:2.4.5`. After public multi-platform runtime\nverification, `2.4`, `2`, `stable`, and `latest` advance to the same verified digest.\nSee the [Docker Server guide](https://github.com/agalwood/Motrix/blob/v2.4.5/docs/docker-server.md).\n\n[Full changelog](https://github.com/agalwood/Motrix/compare/v2.4.4...v2.4.5)\n\n\n## What's Changed\n* feat(release): enable paired desktop handoff by default in 2.4.5 by @agalwood in https://github.com/agalwood/Motrix/pull/2539\n\n\n**Full Changelog**: https://github.com/agalwood/Motrix/compare/v2.4.4...v2.4.5",
     "downloads": [
       {
         "label": "Windows x64 · 绿色版 ZIP",
         "platform": "Windows",
         "portable": true,
-        "file": "Motrix-2.4.3-x64.zip",
-        "size": 141298303,
-        "sha256": "727b1873d4d5862a8fe1b90f0824670a558e14a15796a78e3b49b7b0ffb1ac68",
-        "official": "https://github.com/agalwood/Motrix/releases/download/v2.4.3/Motrix-2.4.3-x64.zip",
+        "file": "Motrix-2.4.5-x64.zip",
+        "size": 141315120,
+        "sha256": "07f3e4294513383767034fef4ac66eefcc95f9709c9b25a8946060df1fc5f49f",
+        "official": "https://github.com/agalwood/Motrix/releases/download/v2.4.5/Motrix-2.4.5-x64.zip",
         "mirrors": []
       },
       {
         "label": "Windows · 安装包",
         "platform": "Windows",
         "portable": false,
-        "file": "Motrix-Setup-2.4.3-arm64.exe",
-        "size": 127416808,
-        "sha256": "cf5f14943cfeee3b9fb9dde7b65524f231a9f1b7e46d275cc0a9f7567062f468",
-        "official": "https://github.com/agalwood/Motrix/releases/download/v2.4.3/Motrix-Setup-2.4.3-arm64.exe",
+        "file": "Motrix-Setup-2.4.5-arm64.exe",
+        "size": 127443216,
+        "sha256": "86e655d4490b3ffca03d465e205a39ba44f74617698fd52ae6b69285a276d9d1",
+        "official": "https://github.com/agalwood/Motrix/releases/download/v2.4.5/Motrix-Setup-2.4.5-arm64.exe",
         "mirrors": []
       }
     ],
@@ -982,20 +982,20 @@
     "mirrored": false
   },
   "baidu-netdisk": {
-    "version": "8.10.3",
-    "released": "2026-11-11",
+    "version": "8.10.5",
+    "released": "2026-11-20",
     "verified": "2026-11-20",
-    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Baidu/BaiduNetdisk/8.10.3",
-    "changelog": "1. 百度网盘全新升级\n2. 百度网盘优化了一些已知的体验问题，欢迎升级体验～",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Baidu/BaiduNetdisk/8.10.5",
+    "changelog": "1. 百度网盘全新升级\n2. 「团队空间」优化视频播放体验～",
     "downloads": [
       {
         "label": "Windows · 官方安装包",
         "platform": "Windows",
         "portable": false,
-        "file": "BaiduNetdisk_8.10.3.102.exe",
+        "file": "BaiduNetdisk_8.10.5.101.exe",
         "size": null,
-        "sha256": "509864c8da5ed3aedb34db456565d7850f1fd8b34596243a51bc2c43fce1b4c9",
-        "official": "https://issuepcdn.baidupcs.com/issue/netdisk/yunguanjia/BaiduNetdisk_8.10.3.102.exe",
+        "sha256": "81602fb16a168fcfb7304135981b2d8f4dd64f27dd8ff92c67ee022803044133",
+        "official": "https://issuepcdn.baidupcs.com/issue/netdisk/yunguanjia/BaiduNetdisk_8.10.5.101.exe",
         "mirrors": []
       }
     ],
@@ -1528,20 +1528,20 @@
     "mirrored": false
   },
   "bitwarden": {
-    "version": "2026.10.4",
-    "released": "2026-11-05",
+    "version": "2026.11.0",
+    "released": "2026-11-19",
     "verified": "2026-11-20",
-    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bitwarden/Bitwarden/2026.10.4",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/Bitwarden/Bitwarden/2026.11.0",
     "changelog": "",
     "downloads": [
       {
         "label": "Windows · 便携版 EXE",
         "platform": "Windows",
         "portable": true,
-        "file": "Bitwarden-Portable-2026.10.4.exe",
+        "file": "bit-Bitwarden-Portable-2026.11.0.exe",
         "size": null,
-        "sha256": "ebd32ccd6bf0a0131bc9ad791fdcd6cc5f0052762cc7c905f240186aafa7126d",
-        "official": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.4/Bitwarden-Portable-2026.10.4.exe",
+        "sha256": "33c1e3e348065a68ac8d123b4878248d09b431b75f3034d7246bcd09e8e45dde",
+        "official": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.11.0/bit-Bitwarden-Portable-2026.11.0.exe",
         "mirrors": []
       }
     ],
@@ -2977,20 +2977,20 @@
     "mirrored": false
   },
   "neovide": {
-    "version": "0.17.2",
-    "released": "2026-11-04",
+    "version": "0.17.3",
+    "released": "2026-11-20",
     "verified": "2026-11-20",
-    "release_url": "https://github.com/neovide/neovide/releases/tag/0.17.2",
-    "changelog": "Note that `neovide_fill_bottom_background` is [opt-in](https://neovide.dev/configuration.html#bottom-background-fill-available-since-0172) by default from now since it is an experimental option.\r\n\r\n## What's Changed\r\n* feat: add bottom background filling toggle by @falcucci in https://github.com/neovide/neovide/pull/3626\r\n* fix: address CVE-2026-25541 by @falcucci in https://github.com/neovide/neovide/pull/3622\r\n* fix: address GHSA-3PV8-6F4R-FFG2 by @falcucci in https://github.com/neovide/neovide/pull/3623\r\n* fix: address GHSA-CQ8V-F236-94QC by @falcucci in https://github.com/neovide/neovide/pull/3625\r\n* fix: constrain bottom background filling to the main grid by @falcucci in https://github.com/neovide/neovide/pull/3629\r\n* fix: support macOS proxy icon state on neovim nightly (0.13+) by @falcucci in https://github.com/neovide/neovide/pull/3630\r\n* fix: turn bottom background filling opt-in by default by @falcucci in https://github.com/neovide/neovide/pull/3631\r\n\r\n\r\n**Full Changelog**: https://github.com/neovide/neovide/compare/0.17.1...0.17.2",
+    "release_url": "https://github.com/neovide/neovide/releases/tag/0.17.3",
+    "changelog": "<h2 align=\"center\">What's Changed</h2>\r\n\r\n<h3 align=\"center\">Screenshot of Neovide using the new system tabs UI on macOS</h3>\r\n\r\n<img width=\"1280\" height=\"830\" alt=\"photo_2026-11-20 04 05 03\" src=\"https://github.com/user-attachments/assets/ba9aa50d-e6bc-428e-89b7-b2819b144f71\" />\r\n\r\n* chore: raise minimum supported macOS version to 12 by @falcucci in https://github.com/neovide/neovide/pull/3633\r\n* bump nvim-rs 0.10 by @falcucci in https://github.com/neovide/neovide/pull/3637\r\n* feat: update support for macOS inline system tabs by @falcucci in https://github.com/neovide/neovide/pull/3639\r\n* system-tabs: make it eligible for transparent/full frames only by @falcucci in https://github.com/neovide/neovide/pull/3642\r\n* fix: finish detached UI sessions without waiting for EOF by @falcucci in https://github.com/neovide/neovide/pull/3643\r\n\r\nNeovide will always be free and open-source.\r\n\r\n[Sponsorship](https://github.com/sponsors/neovide) is highly appreciated.\r\n\r\n\r\n**Full Changelog**: https://github.com/neovide/neovide/compare/0.17.2...0.17.3",
     "downloads": [
       {
         "label": "Windows x64 · 绿色版 ZIP",
         "platform": "Windows",
         "portable": true,
         "file": "neovide-windows-x86_64.zip",
-        "size": 12705653,
-        "sha256": "53fbc5bbcd41adb73badab7ae42103846a1358ef1cfa98dce8b98fae63aa4c68",
-        "official": "https://github.com/neovide/neovide/releases/download/0.17.2/neovide-windows-x86_64.zip",
+        "size": 12727116,
+        "sha256": "3139f27989ed6e8ee7b41b1908be60397a73f91f77d209b6a2bc2cb010123b43",
+        "official": "https://github.com/neovide/neovide/releases/download/0.17.3/neovide-windows-x86_64.zip",
         "mirrors": []
       }
     ],
@@ -4160,20 +4160,20 @@
     "mirrored": false
   },
   "explorerpatcher": {
-    "version": "26100.9711.71.1",
-    "released": "2026-10-29",
+    "version": "26100.9711.71.3",
+    "released": "2026-11-20",
     "verified": "2026-11-20",
-    "release_url": "https://github.com/valinet/ExplorerPatcher/releases/tag/26100.9711.71.1",
-    "changelog": "> [!CAUTION]\r\n> This GitHub repository (valinet/ExplorerPatcher) is the only official distribution channel of ExplorerPatcher. Do not download \"ExplorerPatcher\" from any other places than this releases page, as they may contain malware that can compromise your data.\r\n\r\n> [!CAUTION]\r\n> * Please verify that Smart App Control is turned off before installing this software. Otherwise there is a risk where explorer.exe would not start up on new EP versions.\r\n> * Do not install this software on machines with SentinelOne installed. We have received reports that SentinelOne can hold EP's files hostage, preventing uninstallation.\r\n\r\n> [!TIP]\r\n> Windows Defender no longer flags ExplorerPatcher. It is no longer needed to configure Defender exclusions. However, if you use 3rd party security software, you might need to add these folders into its exclusions:\r\n> <details>\r\n>\r\n> Please include the following files and folders in your antivirus' exclusion list to prevent issues due to antivirus detections:\r\n> * `C:\\Program Files\\ExplorerPatcher`\r\n> * `%APPDATA%\\ExplorerPatcher`\r\n> * `C:\\Windows\\dxgi.dll`\r\n>   ⚠️ **IMPORTANT: `explorer.exe` will not start if this file exists but is blocked from being loaded.**\r\n> * `C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy`\r\n> * `C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy`\r\n> </details>\r\n\r\nTested on OS builds 22621.4317 x64, 22631.7652 x64, 26100.8037 ARM64, 26300.9711 x64, 26340.9767 x64, 26100.33650 x64, 28000.3231 x64, 28120.3302 x64, and 29695.1001 x64.\r\n\r\n##### 1\r\n\r\n* ep_taskbar now detects the `ITrayUI` binary interface compatibility before being activated, and gracefully reverts back to stock taskbar when it is not compatible. (b7377e5)\r\n* Fixed 10 (EP) taskbar crashlooping on 29634+ x64/ARM64. (#5128)\r\n* Fixed 10 (EP) taskbar crashing when entering fullscreen on 26220.9343+ and 26xxx.9550+ x64/ARM64. (#5191)\r\n* Fixed disabling Windows 11 Explorer context menus on builds with customizable menus enabled (ID 60813048). (f646262)\r\n  * **Known issue:** Due to the method change, the Explorer left pane context menu does not turn into the legacy one on 22000, 226xx builds before 226xx.4974, and 26xxx builds before 26xxx.3323 (x64/ARM64).\r\n* Fixed Google weather script runtime failures. Thanks @davids5! (#5198) (7283621)\r\n* Pattern scan keep-ups: (9435cf9, 9045e87)\r\n  * Fixed Windows 10 taskbar jump list positioning fix on 26100.9343+, 28000.3032+, and 29683+ x64. (#5205)\r\n  * Fixed Windows 10 Alt+Tab on 26100.9606+ x64 and 28000.2630+/29634+ ARM64.\r\n  * Fixed Windows 10 taskbar Win+X menu command execution on 28000.2630+/29634+ ARM64.\r\n  * Fixed classic Microsoft IME context menus on 28000.2630+/29634+ ARM64.\r\n  * Fixed Windows 10 Start menu open/close animations on 28000.3172+ x64 and 28000.2630+/29634+ ARM64.\r\n  * Fixed Windows 10 Start menu startup crashes on 28000.2630+ ARM64.\r\n  * Fixed Windows 10 Start menu tile layout engine restoration on 28000.2630+/29634+ ARM64.\r\n  * Fixed Windows 10 Start menu \"Pin to Start\" and \"Unpin from Start\" context menu commands on 28000.2630+/29634+ ARM64.\r\n  * Fixed Windows 10 Start menu context menu crash fix on 29671+ x64.\r\n  * Fixed Windows 10 battery flyout fix on 28000.2630+ x64/ARM64, 29570+ x64, and 29634+ ARM64.\r\n  * Fixed File Explorer address bar shrinking and dropdown/refresh button sizing on 26100.9343+, 28000.3142+, and 29591+ x64.\r\n    * **Known issue:** Address bar background drawing is not yet fixed on 26100.9343+ x64. On other major versions this is fixed.\r\n  * Fixed incomplete address bar shrinking and up button sizing in File Explorer on 22000+ ARM64.\r\n  * Fixed disabling rounded window corners on 28000.2630+ and 29553+ x64/ARM64.\r\n* Fixed memory corruption when pinning/unpinning a tile via the reimplemented \"Pin to Start\" shell context menu handler. (ExplorerPatcher/ep_starttiledata@d8e0df6)\r\n* Fixed TrayThreadBSTA fix (initially introduced in 69.1) being applied to unrelated threads (c08a7d2).\r\n* Fixed buffer overrun when reading a VisiblePlaces registry value whose size is not a multiple of a GUID. (dded255)\r\n* More granular explorer.exe injection: only full-injects on explorer.exe processes that host the desktop and taskbar. (be4e412, 945fc1f)\r\n  * For example, `explorer.exe /embedding` when `explorer.exe` is not running is no longer full-injected.\r\n  * Helps reduce false repeated crash detection activations.\r\n* Localized \"Settings and Uninstall\" in Dutch. (valinet/ExplorerPatcher-L10N@f2bdf8e)\r\n\r\n**✉️ A little message from @Amrsatrio:** If you want to support my work of keeping ExplorerPatcher working with the latest Windows builds, please do so through [my GitHub sponsors page](https://github.com/sponsors/Amrsatrio). Thank you very much for the support!\r\n\r\nPlease consult the [README](https://github.com/valinet/ExplorerPatcher/blob/master/README.md) for more details.\r\nA detailed change log is available [here](https://github.com/valinet/ExplorerPatcher/blob/master/CHANGELOG.md).\r\nAn archive containing all the files generated during the build process (including `dxgi.dll` and symbol files) is available [here](https://github.com/valinet/ExplorerPatcher/actions/runs/40797647107).\r\n\r\n*This release has been published automatically from commits up to and including cc555ca in tag [26100.9711.71.1](https://github.com/valinet/ExplorerPatcher/tree/26100.9711.71.1/).*",
+    "release_url": "https://github.com/valinet/ExplorerPatcher/releases/tag/26100.9711.71.3",
+    "changelog": "> [!CAUTION]\r\n> This GitHub repository (valinet/ExplorerPatcher) is the only official distribution channel of ExplorerPatcher. Do not download \"ExplorerPatcher\" from any other places than this releases page, as they may contain malware that can compromise your data.\r\n\r\n> [!CAUTION]\r\n> * Please verify that Smart App Control is turned off before installing this software. Otherwise there is a risk where explorer.exe would not start up on new EP versions.\r\n> * Do not install this software on machines with SentinelOne installed. We have received reports that SentinelOne can hold EP's files hostage, preventing uninstallation.\r\n\r\n> [!TIP]\r\n> Windows Defender no longer flags ExplorerPatcher. It is no longer needed to configure Defender exclusions. However, if you use 3rd party security software, you might need to add these folders into its exclusions:\r\n> <details>\r\n>\r\n> Please include the following files and folders in your antivirus' exclusion list to prevent issues due to antivirus detections:\r\n> * `C:\\Program Files\\ExplorerPatcher`\r\n> * `%APPDATA%\\ExplorerPatcher`\r\n> * `C:\\Windows\\dxgi.dll`\r\n>   ⚠️ **IMPORTANT: `explorer.exe` will not start if this file exists but is blocked from being loaded.**\r\n> * `C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy`\r\n> * `C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy`\r\n> </details>\r\n\r\nTested on OS builds 22621.4317 x64, 22631.7652 x64, 26100.8037 ARM64, 26300.9711 x64, 26340.9767 x64, 26100.33650 x64, 28000.3231 x64, 28120.3302 x64, 29695.1001 x64, and 29698.1000 x64.\r\n\r\n##### 1\r\n\r\n* ep_taskbar now detects the `ITrayUI` binary interface compatibility before being activated, and gracefully reverts back to stock taskbar when it is not compatible. (b7377e5)\r\n* Fixed 10 (EP) taskbar crashlooping on 29634+ x64/ARM64. (#5128)\r\n* Fixed 10 (EP) taskbar crashing when entering fullscreen on 26220.9343+ and 26xxx.9550+ x64/ARM64. (#5191)\r\n* Fixed disabling Windows 11 Explorer context menus on builds with customizable menus enabled (ID 60813048). (f646262)\r\n* Fixed Google weather script runtime failures. Thanks @davids5! (#5198) (7283621)\r\n* Pattern scan keep-ups: (9435cf9, 9045e87)\r\n  * Fixed Windows 10 taskbar jump list positioning fix on 26100.9343+, 28000.3032+, and 29683+ x64. (#5205)\r\n  * Fixed Windows 10 Alt+Tab on 26100.9606+ x64 and 28000.2630+/29634+ ARM64.\r\n  * Fixed Windows 10 taskbar Win+X menu command execution on 28000.2630+/29634+ ARM64.\r\n  * Fixed classic Microsoft IME context menus on 28000.2630+/29634+ ARM64.\r\n  * Fixed Windows 10 Start menu open/close animations on 28000.3172+ x64 and 28000.2630+/29634+ ARM64.\r\n  * Fixed Windows 10 Start menu startup crashes on 28000.2630+ ARM64.\r\n  * Fixed Windows 10 Start menu tile layout engine restoration on 28000.2630+/29634+ ARM64.\r\n  * Fixed Windows 10 Start menu \"Pin to Start\" and \"Unpin from Start\" context menu commands on 28000.2630+/29634+ ARM64.\r\n  * Fixed Windows 10 Start menu context menu crash fix on 29671+ x64.\r\n  * Fixed Windows 10 battery flyout fix on 28000.2630+ x64/ARM64, 29570+ x64, and 29634+ ARM64.\r\n  * Fixed File Explorer address bar shrinking and dropdown/refresh button sizing on 26100.9343+, 28000.3142+, and 29591+ x64.\r\n  * Fixed incomplete address bar shrinking and up button sizing in File Explorer on 22000+ ARM64.\r\n  * Fixed disabling rounded window corners on 28000.2630+ and 29553+ x64/ARM64.\r\n* Fixed memory corruption when pinning/unpinning a tile via the reimplemented \"Pin to Start\" shell context menu handler. (ExplorerPatcher/ep_starttiledata@d8e0df6)\r\n* Fixed TrayThreadBSTA fix (initially introduced in 69.1) being applied to unrelated threads (c08a7d2).\r\n* Fixed buffer overrun when reading a VisiblePlaces registry value whose size is not a multiple of a GUID. (dded255)\r\n* More granular explorer.exe injection: only full-injects on explorer.exe processes that host the desktop and taskbar. (be4e412, 945fc1f)\r\n  * For example, `explorer.exe /embedding` when `explorer.exe` is not running is no longer full-injected.\r\n  * Helps reduce false repeated crash detection activations.\r\n* Localized \"Settings and Uninstall\" in Dutch. (valinet/ExplorerPatcher-L10N@f2bdf8e)\r\n\r\n##### 2\r\n\r\n* Fixed ep_taskbar's display safe area publisher crashing Explorer on builds 26220.9757/26340.9767/28220.9836/26340.9843 due to an under the hood change by Microsoft. (#5209)\r\n* Fixed ep_taskbar's system tray crashing Explorer when attempting to show the tooltip of invalid tray icons.\r\n* Fixed Explorer crashing when opening a network's web sign-in page with the Windows 10 taskbar. (e1a0450) (#5235)\r\n* Fixed Explorer exiting unexpectedly while reading symbols when the user-folder path contains non-ASCII characters. Thanks @HosisoraLing! (valinet/libvalinet@797404f) (#2186)\r\n* Fixed disabling Windows 11 context menus in Explorer's navigation pane on 22000, 22621 builds before 22621.4974, 22631 builds before 22631.4974, and 26100 builds before 26100.3323 (x64/ARM64). (2e7f744)\r\n* Fixed Windows 10 Start menu closing animations not activating on some systems. (79d4c2f) (#5229)\r\n* Pattern scan keep-ups:\r\n  * Fixed Windows 10 Start menu alignment with top or side taskbars on ARM64 builds with movable taskbar code but with that feature disabled, such as 28000.3231. (e45df36) (#5240)\r\n  * Fixed Windows 10 taskbar Win+X power commands on 26220.9757+ and 26340.9767+ ARM64. (98f4497)\r\n  * Fixed Explorer address bar shrinking causing crashes on 29695+ x64. (98f4497)\r\n  * Fixed Explorer and taskbar menu skinning/unskinning on 28000.2630+ and 29634+ ARM64. (98f4497)\r\n\r\n##### 3\r\n\r\n* Fixed leaked registry handles in UBR retrieval code. (b5c7609, valinet/libvalinet@a44465d, valinet/sws@e18b076) (#5245)\r\n\r\n**✉️ A little message from @Amrsatrio:** If you want to support my work of keeping ExplorerPatcher working with the latest Windows builds, please do so through [my GitHub sponsors page](https://github.com/sponsors/Amrsatrio). Thank you very much for the support!\r\n\r\nPlease consult the [README](ht",
     "downloads": [
       {
         "label": "Windows · 安装包",
         "platform": "Windows",
         "portable": false,
         "file": "ep_setup.exe",
-        "size": 12336128,
-        "sha256": "2165c7d12f10b1a137472de5b64abdc64dcdd9fc31362c7ff41d7c5b57c8e9e6",
-        "official": "https://github.com/valinet/ExplorerPatcher/releases/download/26100.9711.71.1/ep_setup.exe",
+        "size": 12328448,
+        "sha256": "25de01dfb87fb98f7b41ed64e079db9d5e827f57032a307375182bbc5c6e03cc",
+        "official": "https://github.com/valinet/ExplorerPatcher/releases/download/26100.9711.71.3/ep_setup.exe",
         "mirrors": []
       }
     ],
@@ -4421,10 +4421,10 @@
     "mirrored": false
   },
   "github-desktop": {
-    "version": "3.6.11",
-    "released": "2026-11-11",
+    "version": "3.7.0",
+    "released": "2026-11-19",
     "verified": "2026-11-20",
-    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GitHub/GitHubDesktop/3.6.11",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/GitHub/GitHubDesktop/3.7.0",
     "changelog": "",
     "downloads": [
       {
@@ -4433,8 +4433,8 @@
         "portable": false,
         "file": "GitHubDesktopSetup-x64.exe",
         "size": null,
-        "sha256": "c76edda67f22103b65da1468687348e9e97ddb53d977b727f16aa695680f1618",
-        "official": "https://desktop.githubusercontent.com/releases/3.6.11-0102f49a/GitHubDesktopSetup-x64.exe",
+        "sha256": "2e49e219c6f6e06fedeb2a7a14d357bf43b701efe29ad6963e84cf326b1c9fca",
+        "official": "https://desktop.githubusercontent.com/releases/3.7.0-f13859b6/GitHubDesktopSetup-x64.exe",
         "mirrors": []
       },
       {
@@ -4443,8 +4443,8 @@
         "portable": false,
         "file": "GitHubDesktopSetup-x64.msi",
         "size": null,
-        "sha256": "30e8f88b559fd0cea5a4c3b5f50e0e6d56137405067a70f8ff1ce163d8403487",
-        "official": "https://desktop.githubusercontent.com/releases/3.6.11-0102f49a/GitHubDesktopSetup-x64.msi",
+        "sha256": "a8fa288473c618fba1049e89d220a6a12b444b4bd388d86b35a6da261ef4577c",
+        "official": "https://desktop.githubusercontent.com/releases/3.7.0-f13859b6/GitHubDesktopSetup-x64.msi",
         "mirrors": []
       }
     ],
@@ -4966,20 +4966,20 @@
     "mirrored": false
   },
   "hmcl": {
-    "version": "3.16.4",
-    "released": "2026-09-17",
+    "version": "3.17.2",
+    "released": "2026-11-19",
     "verified": "2026-11-20",
-    "release_url": "https://github.com/HMCL-dev/HMCL/releases/tag/v3.16.4",
-    "changelog": "&nbsp;**[Changelog](https://docs.hmcl.net/changelog/stable.html#HMCL-3.16.4)** (Chinese)\r\n\r\n| File | SHA-256 Checksum |\r\n| ---  | --- |\r\n| [HMCL-3.16.4.exe](https://github.com/HMCL-dev/HMCL/releases/download/v3.16.4/HMCL-3.16.4.exe) | `632c2d8873f5a11dd2ffd8418564174995c6a248de5206668c6be114e943e372` |\r\n| [HMCL-3.16.4.jar](https://github.com/HMCL-dev/HMCL/releases/download/v3.16.4/HMCL-3.16.4.jar) | `98f0123f38e86a606aa583f74d21ae74128679e921ea7ec0c43ab26303767e9e` |\r\n| [HMCL-3.16.4.sh](https://github.com/HMCL-dev/HMCL/releases/download/v3.16.4/HMCL-3.16.4.sh)   | `23b52b5f80f45efa359787055f4a6d71343c5a342b4622f2f3e5d4b3c9f23fe5` |\r\n| [HMCL-3.16.4.deb](https://github.com/HMCL-dev/HMCL/releases/download/v3.16.4/HMCL-3.16.4.deb) | `57a1b0ed4cbbdc1d013974868c03aab567961abb0ee67d95f46919f745fc1292` |\r\n",
+    "release_url": "https://github.com/HMCL-dev/HMCL/releases/tag/v3.17.2",
+    "changelog": "&nbsp;**[Changelog](https://docs.hmcl.net/changelog/stable.html#HMCL-3.17.2)** (Chinese)\r\n\r\n| File | SHA-256 Checksum |\r\n| ---  | --- |\r\n| [HMCL-3.17.2.exe](https://github.com/HMCL-dev/HMCL/releases/download/v3.17.2/HMCL-3.17.2.exe) | `43ad42f37519243b117c7430f3f4a193eacab84d4cb266090ca425a7a3c09847` |\r\n| [HMCL-3.17.2.jar](https://github.com/HMCL-dev/HMCL/releases/download/v3.17.2/HMCL-3.17.2.jar) | `00f7a2d59ca06079c0afb44cbb46b49775d9ce255fa21f9a1e6ea3bde7301e29` |\r\n| [HMCL-3.17.2.sh](https://github.com/HMCL-dev/HMCL/releases/download/v3.17.2/HMCL-3.17.2.sh)   | `111b438b85b6652e2707810fdc37ea222318d28823e54dd63f18b5f347a1e8ab` |\r\n| [HMCL-3.17.2.deb](https://github.com/HMCL-dev/HMCL/releases/download/v3.17.2/HMCL-3.17.2.deb) | `395dbbdee65941bf54f991b1083e9f4664ecf73be750a3e4f63061cc0e6076c7` |\r\n",
     "downloads": [
       {
         "label": "Windows · 单文件 EXE",
         "platform": "Windows",
         "portable": true,
-        "file": "HMCL-3.16.4.exe",
-        "size": 10907431,
-        "sha256": "632c2d8873f5a11dd2ffd8418564174995c6a248de5206668c6be114e943e372",
-        "official": "https://github.com/HMCL-dev/HMCL/releases/download/v3.16.4/HMCL-3.16.4.exe",
+        "file": "HMCL-3.17.2.exe",
+        "size": 12103610,
+        "sha256": "43ad42f37519243b117c7430f3f4a193eacab84d4cb266090ca425a7a3c09847",
+        "official": "https://github.com/HMCL-dev/HMCL/releases/download/v3.17.2/HMCL-3.17.2.exe",
         "mirrors": []
       }
     ],
@@ -6053,50 +6053,50 @@
     "mirrored": false
   },
   "clash-party": {
-    "version": "2.0.4",
-    "released": "2026-10-18",
+    "version": "2.0.5",
+    "released": "2026-11-20",
     "verified": "2026-11-20",
-    "release_url": "https://github.com/mihomo-party-org/clash-party/releases/tag/v2.0.4",
-    "changelog": "# 2.0.4\n\n## 新功能\n\n- 新增简易模式，可视化编辑订阅、代理组、规则、规则集、DNS 及域名嗅探配置\n- 简易模式支持本地节点管理、节点链接导入及订阅代理集合高级设置\n- 支持从连接详情快速添加简易模式规则，内联规则集支持列表编辑\n- 新增切换节点时仅关闭当前代理组连接的选项\n- 新增 DNS 覆写保护开关、日志等级筛选及 macOS 流量文字颜色设置\n- 侧边栏折叠后支持悬停展开\n\n## 性能优化\n\n- 优化历史流量统计迁移，减少磁盘写入并增加迁移提示\n- 优化跨平台连接应用识别及图标处理，改进 Linux 应用图标匹配\n\n## 修复\n\n- 修复系统唤醒后 TUN 重建时配置不完整，以及修改 TUN 设置后未重启内核的问题\n- 修复启动时未等待初始代理集合就绪及代理组选择状态未刷新的问题\n- 修复不含节点的远程订阅模板无法使用，以及订阅自动更新间隔字段不一致的问题\n- 修复配置模式切换同步、代理组编辑模式及首次使用引导的本地化问题\n- 修复 Windows 7 窗口初始化兼容问题，切换系统标题栏时增加重启确认\n- 修复拓扑图平移与卡片排序冲突、DNS 卡片切换时尺寸变化的问题\n- 修复 YAML 编辑器最大化后尺寸未更新、窄页面标题换行及内核版本名称过长的问题\n- 修复代理显示设置菜单选择后自动关闭、Smart 内核设置分隔线及内核认证提示问题\n\n## 其他\n\n- 更新依赖\n\n### 下载地址：\n\n#### Windows10/11：\n\n- 安装版：[64位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-windows-2.0.4-x64-setup.exe) | [32位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-windows-2.0.4-ia32-setup.exe) | [ARM64](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-windows-2.0.4-arm64-setup.exe)\n\n- 便携版：[64位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-windows-2.0.4-x64-portable.7z) | [32位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-windows-2.0.4-ia32-portable.7z) | [ARM64](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-windows-2.0.4-arm64-portable.7z)\n\n\n#### Windows7/8：\n\n- 安装版：[64位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-win7-2.0.4-x64-setup.exe) | [32位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-win7-2.0.4-ia32-setup.exe)\n\n- 便携版：[64位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-win7-2.0.4-x64-portable.7z) | [32位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-win7-2.0.4-ia32-portable.7z)\n\n\n#### macOS 11+：\n\n- PKG：[Intel](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-macos-2.0.4-x64.pkg) | [Apple Silicon](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-macos-2.0.4-arm64.pkg)\n\n\n#### macOS 10.15+：\n\n- PKG：[Intel](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-catalina-2.0.4-x64.pkg) | [Apple Silicon](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-catalina-2.0.4-arm64.pkg)\n\n\n#### Linux：\n\n- DEB：[64位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-linux-2.0.4-amd64.deb) | [ARM64](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-linux-2.0.4-arm64.deb)\n\n- RPM：[64位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-linux-2.0.4-x86_64.rpm) | [ARM64](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-linux-2.0.4-aarch64.rpm)\n\n- PACMAN：[64位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-linux-2.0.4-x64.pkg.tar.zst) | [ARM64](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-linux-2.0.4-aarch64.pkg.tar.zst)\n\n### 机场推荐：\n- 高性能海外机场，稳定首选：[https://狗狗加速.com](https://party.dginv.click/#/register?code=ARdo0mXx)",
+    "release_url": "https://github.com/mihomo-party-org/clash-party/releases/tag/v2.0.5",
+    "changelog": "# 2.0.5\n\n## 新功能\n\n- 简易模式合并到本地配置，支持直接以 Mihomo YAML 保存配置，并新增本地配置重新加载按钮\n- 新增 MCP 服务，支持配置端口及访问令牌\n- 订阅支持自定义主页，导入时自动填充订阅信息，并支持选择代理组\n- 新增 Tailscale 节点认证通知，可点击通知打开认证链接\n- 新增 InternetData 网络 IP 信息查询源\n- 支持配置可信订阅的 YAML 别名解析上限\n- 新增 Linux 便携 tarball 压缩包\n\n## 优化\n\n- 切换到本地配置时增加 DNS 覆写确认提示\n- 订阅到期日期跟随系统区域格式显示\n- 调整应用会话缓存位置，统一存放到缓存目录\n- 点击标题栏时自动收起已打开的菜单\n\n## 修复\n\n- 修复本地配置未正确继承受控设置、受控设置优先级及出站模式保留问题\n- 修复标准资源中代理集合缺失，以及更新代理集合后代理组未刷新的问题\n- 修复关闭 use-hosts 后仍保留 hosts 覆写的问题\n- 修复未加引号的 REALITY short-id 被错误解析为数字的问题\n- 修复 macOS 启动时 DNS 保护未刷新，以及内核已有权限时重复授权失败的问题\n- 修复 Windows 管理员重启时授权提示异常及取消授权后应用退出的问题\n- 修复 Windows 管理员权限检测超时后错误缓存结果的问题\n- 修复 Windows 内核清理可能影响其他程序或其他用户会话中内核进程的问题\n- 修复旧版 Windows 开机启动任务提示文件不存在的问题\n- 修复 Windows 轻量模式下关机后系统代理未关闭的问题\n- 修复 Windows 绝对资源路径识别及准备脚本路径包含空格时的问题\n\n## 安全\n\n- 限制外部链接可打开的协议\n- 避免原始错误日志泄露订阅令牌\n\n## 其他\n\n- 更新依赖\n\n### 下载地址：\n\n#### Windows10/11：\n\n- 安装版：[64位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.5/clash-party-windows-2.0.5-x64-setup.exe) | [32位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.5/clash-party-windows-2.0.5-ia32-setup.exe) | [ARM64](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.5/clash-party-windows-2.0.5-arm64-setup.exe)\n\n- 便携版：[64位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.5/clash-party-windows-2.0.5-x64-portable.7z) | [32位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.5/clash-party-windows-2.0.5-ia32-portable.7z) | [ARM64](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.5/clash-party-windows-2.0.5-arm64-portable.7z)\n\n\n#### Windows7/8：\n\n- 安装版：[64位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.5/clash-party-win7-2.0.5-x64-setup.exe) | [32位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.5/clash-party-win7-2.0.5-ia32-setup.exe)\n\n- 便携版：[64位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.5/clash-party-win7-2.0.5-x64-portable.7z) | [32位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.5/clash-party-win7-2.0.5-ia32-portable.7z)\n\n\n#### macOS 11+：\n\n- PKG：[Intel](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.5/clash-party-macos-2.0.5-x64.pkg) | [Apple Silicon](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.5/clash-party-macos-2.0.5-arm64.pkg)\n\n\n#### macOS 10.15+：\n\n- PKG：[Intel](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.5/clash-party-catalina-2.0.5-x64.pkg) | [Apple Silicon](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.5/clash-party-catalina-2.0.5-arm64.pkg)\n\n\n#### Linux：\n\n- DEB：[64位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.5/clash-party-linux-2.0.5-amd64.deb) | [ARM64](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.5/clash-party-linux-2.0.5-arm64.deb)\n\n- RPM：[64位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.5/clash-party-linux-2.0.5-x86_64.rpm) | [ARM64](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.5/clash-party-linux-2.0.5-aarch64.rpm)\n\n- PACMAN：[64位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.5/clash-party-linux-2.0.5-x64.pkg.tar.zst) | [ARM64](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.5/clash-party-linux-2.0.5-aarch64.pkg.tar.zst)\n\n- TAR.GZ：[64位](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.5/clash-party-linux-2.0.5-x64.tar.gz) | [ARM64](https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.5/clash-party-linux-2.0.5-arm64.tar.gz)\n\n### 机场推荐：\n- 高性能海外机场，稳定首选：[https://狗狗加速.com](https://party.dginv.click/#/register?code=ARdo0mXx)",
     "downloads": [
       {
         "label": "Windows x64 · 绿色版 7z",
         "platform": "Windows",
         "portable": true,
-        "file": "clash-party-windows-2.0.4-x64-portable.7z",
-        "size": 175672213,
-        "sha256": "182063a60b9a06535d176742d627f8b8c95a99aae85fc8752c880efee7da5157",
-        "official": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-windows-2.0.4-x64-portable.7z",
+        "file": "clash-party-windows-2.0.5-x64-portable.7z",
+        "size": 177057188,
+        "sha256": "1d06b90dcf7bfd0e75dd97392629e68fc96b3096f1213b4c37cc943d82e666f2",
+        "official": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.5/clash-party-windows-2.0.5-x64-portable.7z",
         "mirrors": []
       },
       {
         "label": "Windows x64 · 安装包",
         "platform": "Windows",
         "portable": false,
-        "file": "clash-party-windows-2.0.4-x64-setup.exe",
-        "size": 208304471,
-        "sha256": "f7cac1e588851197833c456a827cb611b6145e76be53dfd0f4df56e214c764d3",
-        "official": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-windows-2.0.4-x64-setup.exe",
+        "file": "clash-party-windows-2.0.5-x64-setup.exe",
+        "size": 209864254,
+        "sha256": "f496eb22f3af1f65e99b447b25d287d3e95d31e7838c4d6e3c3475b41f79c48c",
+        "official": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.5/clash-party-windows-2.0.5-x64-setup.exe",
         "mirrors": []
       },
       {
         "label": "macOS Apple 芯片 · PKG",
         "platform": "macOS",
         "portable": false,
-        "file": "clash-party-macos-2.0.4-arm64.pkg",
-        "size": 243393267,
-        "sha256": "174b4b19b02151b2ef84517da0b192e834e43fb4c0ca7fe8700363162cabf7e1",
-        "official": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-macos-2.0.4-arm64.pkg",
+        "file": "clash-party-macos-2.0.5-arm64.pkg",
+        "size": 246082466,
+        "sha256": "3c2c595d7ac7c3df295da6c32ab6b970d31d2aa9c746b489daabc2851114d080",
+        "official": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.5/clash-party-macos-2.0.5-arm64.pkg",
         "mirrors": []
       },
       {
         "label": "macOS Intel · PKG",
         "platform": "macOS",
         "portable": false,
-        "file": "clash-party-macos-2.0.4-x64.pkg",
-        "size": 261748060,
-        "sha256": "b93a845ecc0eb95da80184e8d3ebb2b94f5d2b9024df7065f9cdf1f23c868432",
-        "official": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.4/clash-party-macos-2.0.4-x64.pkg",
+        "file": "clash-party-macos-2.0.5-x64.pkg",
+        "size": 264392791,
+        "sha256": "c12c59b82191a151df9e16248c2d3033a3c54b188da96b4aa1ba24c16008f2ca",
+        "official": "https://github.com/mihomo-party-org/clash-party/releases/download/v2.0.5/clash-party-macos-2.0.5-x64.pkg",
         "mirrors": []
       }
     ],
