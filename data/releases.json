@@ -30,60 +30,60 @@
     "mirrored": false
   },
   "obs-studio": {
-    "version": "33.0.1",
-    "released": "2026-10-29",
+    "version": "33.0.2",
+    "released": "2026-11-20",
     "verified": "2026-11-20",
-    "release_url": "https://github.com/obsproject/obs-studio/releases/tag/33.0.1",
-    "changelog": "33.0.1 Hotfix Changes\r\n---------------------\r\n\r\n* Fixed a crash on startup when logged into a service integration [WizardCM] ([#554](https://github.com/obsproject/obs-browser/pull/554))\r\n* Fixed a crash when logging into the Twitch integration [WizardCM] ([#14072](https://github.com/obsproject/obs-studio/pull/14072))\r\n* Fixed a deadlock when logging into the YouTube integration [WizardCM] ([#556](https://github.com/obsproject/obs-browser/pull/556))\r\n* Fixed a race condition where browser panels could end up with incorrectly sized content [WizardCM] ([#558](https://github.com/obsproject/obs-browser/pull/558))\r\n* Fixed a memory leak when using the image slideshow source [prgmitchell] ([#14078](https://github.com/obsproject/obs-studio/pull/14078))\r\n* Fixed plugins failing to load on Flatpak [FiniteSingularity] ([#14103](https://github.com/obsproject/obs-studio/pull/14103))\r\n* Fixed Plugin Manager not prompting for save after a change until the dialog is re-opened [Warchamp7] ([#14112](https://github.com/obsproject/obs-studio/pull/14112))\r\n\r\n33.0 New Features\r\n-----------------\r\n\r\n* Updated CEF from 127/6533 to 150/7871 [WizardCM] ([#13900](https://github.com/obsproject/obs-studio/pull/13900))\r\n  + This is a massive update to the underlying framework used for browser sources and docks from the July 2024 release to September 2026\r\n  + All of this work is on the backend and should be invisible to users. Please be sure to report any new weirdness or problems you run into with browser sources!\r\n* Complete overhaul to plugin loading [FiniteSingularity/PatTheMav] ([#13594](https://github.com/obsproject/obs-studio/pull/13594))\r\n  + First-party plugins are now in a new folder named core\r\n  + Third-party plugins have an updated installation location and folder structure\r\n  + Existing third-party plugins will continue to load from the legacy locations until OBS Studio 34.0\r\n  + More information is available in our [knowledge base article](https://obsproject.com/kb/legacy-plugin-locations)\r\n* Improved how source snapping works in the preview [Warchamp7] ([#12298](https://github.com/obsproject/obs-studio/pull/12298))\r\n  + New visual indicator added\r\n  + Sources now snap along the entire axis instead of only when directly touching\r\n  + Sources no longer snap to hidden sources\r\n* Improved behavior of spinboxes for number values [Warchamp7] ([#12337](https://github.com/obsproject/obs-studio/pull/12337))\r\n  + Typing is no longer mysteriously blocked in some situations\r\n  + Numbers are no longer cut off in some situations\r\n  + Values now update only after pressing Enter and Enter does not close the window\r\n  + Holding Shift + Up/Down now advances multiple steps at a time\r\n  + Dragging the cursor inside the input but outside the text itself now works properly\r\n* Enabled NVENC on Arm64 [RytoEX] ([#13827](https://github.com/obsproject/obs-studio/pull/13827))\r\n\r\n33.0 Changes\r\n------------\r\n\r\n* Added a check for encoders being missing when loading a profile [derrod] ([#11340](https://github.com/obsproject/obs-studio/pull/11340))\r\n* Added support for newest NVIDIA Broadcast SDKs for NVIDIA Audio Effects and Video Effects [pkviet] ([#13838](https://github.com/obsproject/obs-studio/pull/13838))\r\n* Added hotkeys for controlling audio monitoring of a source [Warchamp7] ([#13599](https://github.com/obsproject/obs-studio/pull/13599))\r\n* Changed Safe Mode to not start WebSocket Server [FiniteSingularity/RytoEX] ([#13984](https://github.com/obsproject/obs-studio/pull/13984))\r\n* Fixed issues with groups in Studio Mode [Warchamp7] ([#11092](https://github.com/obsproject/obs-studio/pull/11092))\r\n  + Fixed moving sources inside a group causing them to glitch out in Program\r\n  + Fixed moving sources inside a group showing up live in Program\r\n* Adjusted naming of Window Capture methods on Windows [Penwy] ([#12047](https://github.com/obsproject/obs-studio/pull/12047))\r\n* Improved detection of fullscreen games for Game Capture [Kira-NT] ([#10880](https://github.com/obsproject/obs-studio/pull/10880))\r\n* Improved transparency handling for macOS Screen Capture [jcm93] ([#13030](https://github.com/obsproject/obs-studio/pull/13030))\r\n* Scaled simple output recording audio bitrate by channel count [nickvonkaenel] ([#13311](https://github.com/obsproject/obs-studio/pull/13311))\r\n* Removed support for Ubuntu 24.04 \r\n\r\n33.0 Bug Fixes\r\n--------------\r\n\r\n* Added a startup error if obs-transitions failed to load [notr1ch] ([#13321](https://github.com/obsproject/obs-studio/pull/13321))\r\n* Improved file splitting for Hybrid MP4/MOV [derrod] ([#13386](https://github.com/obsproject/obs-studio/pull/13386))\r\n* Fixed outputs getting stuck running when a bad rescale output resolution is set [suogesi] ([#13375](https://github.com/obsproject/obs-studio/pull/13375))\r\n* Fixed monitoring icon state getting desynced when using third-party tools or websockets [prgmitchell] ([#13822](https://github.com/obsproject/obs-studio/pull/13822))\r\n* Fixed a crash on macOS 27.2 when starting OBS Studio [RytoEX] ([#14070](https://github.com/obsproject/obs-studio/pull/14070))\r\n* Fixed potential crash when shader cache file is invalid [notr1ch] ([#13538](https://github.com/obsproject/obs-studio/pull/13538))\r\n* Fixed a potential crash on Linux when USB mic is removed [R0te/RytoEX] ([#13922](https://github.com/obsproject/obs-studio/pull/13922))\r\n* Fixed a potential crash when renaming a source with the Add Source window open [Warchamp7] ([#13800](https://github.com/obsproject/obs-studio/pull/13800))\r\n* Fixed a potential deadlock during video/audio tasks [exeldro] ([#13579](https://github.com/obsproject/obs-studio/pull/13579))\r\n* Fixed an issue with B-frame offset calculation in AMF that could cause streams to disconnect [lexano-ivs] ([#13762](https://github.com/obsproject/obs-studio/pull/13762))\r\n* Fixed PipeWire screencast sources being duplicated in studio mode [tytan652] ([#13673](https://github.com/obsproject/obs-studio/pull/13673))\r\n* Fixed a potential crash when switc",
+    "release_url": "https://github.com/obsproject/obs-studio/releases/tag/33.0.2",
+    "changelog": "33.0.2 Hotfix Changes\r\n---------------------\r\n\r\n* Fixed macOS Screen Capture not working on Intel-based systems [jcm93] (#14124)\r\n* Fixed Hybrid MP4 not splitting by time [Johnsoac671] (#14052)\r\n* Fixed frequent audio dropouts on Decklink output [CyBeRoni] (#11398)\r\n* Fixed a potential crash when right-clicking a spinbox in certain places [Warchamp7] (#14159)\r\n* Fixed a crash during shutdown when a native device dialog is still open [prgmitchell] (#13841)\r\n* Fixed YouTube AutoStop being mistakenly set to the AutoStart value [fcolona] (#14167)\r\n* Fixed a crash when source properties change while a subdialog such as Font selection is open [prgmitchell] (#14157)\r\n* Fixed a crash related to browser source memory allocation on Linux [tytan652/WizardCM] (#14181)\r\n* Fixed a bug where controller inputs in browser sources no longer worked when OBS lost focus on Windows & macOS [WizardCM] (#14181)\r\n* Fixed a crash on macOS when a browser source would request Bluetooth access [tytan652/WizardCM] (#14181)\r\n* Fixed a potential crash when a browser source would request a Passkey [tytan652/WizardCM] (#14181)\r\n* Enable WebGPU support on Windows for browser sources [WizardCM] (#13910)\r\n* Fixed a potential crash when initializing the virtual cam [notr1ch] (#13728)\r\n* Fixed a potential crash when unloading the virtual cam [notr1ch]  (#13731)\r\n* Fixed a potential crash related to vertex buffers [notr1ch] (#13732)\r\n* Fixed repeated log entries sometimes not being truncated [exeldro] (#11706)\r\n* Fixed a browser-related startup crash on Windows [prgmitchell] (#562)\r\n* Fixed a bug where OBS Helper for browser sources would appear in the dock on macOS [WizardCM] (#560)\r\n* Fixed a bug where duplicated groups would be missing a name [Warchamp7] (#14149)\r\n\r\n33.0.1 Hotfix Changes\r\n---------------------\r\n\r\n* Fixed a crash on startup when logged into a service integration [WizardCM] ([#554](https://github.com/obsproject/obs-browser/pull/554))\r\n* Fixed a crash when logging into the Twitch integration [WizardCM] ([#14072](https://github.com/obsproject/obs-studio/pull/14072))\r\n* Fixed a deadlock when logging into the YouTube integration [WizardCM] ([#556](https://github.com/obsproject/obs-browser/pull/556))\r\n* Fixed a race condition where browser panels could end up with incorrectly sized content [WizardCM] ([#558](https://github.com/obsproject/obs-browser/pull/558))\r\n* Fixed a memory leak when using the image slideshow source [prgmitchell] ([#14078](https://github.com/obsproject/obs-studio/pull/14078))\r\n* Fixed plugins failing to load on Flatpak [FiniteSingularity] ([#14103](https://github.com/obsproject/obs-studio/pull/14103))\r\n* Fixed Plugin Manager not prompting for save after a change until the dialog is re-opened [Warchamp7] ([#14112](https://github.com/obsproject/obs-studio/pull/14112))\r\n\r\n33.0 New Features\r\n-----------------\r\n\r\n* Updated CEF from 127/6533 to 150/7871 [WizardCM] ([#13900](https://github.com/obsproject/obs-studio/pull/13900))\r\n  + This is a massive update to the underlying framework used for browser sources and docks from the July 2024 release to September 2026\r\n  + All of this work is on the backend and should be invisible to users. Please be sure to report any new weirdness or problems you run into with browser sources!\r\n* Complete overhaul to plugin loading [FiniteSingularity/PatTheMav] ([#13594](https://github.com/obsproject/obs-studio/pull/13594))\r\n  + First-party plugins are now in a new folder named core\r\n  + Third-party plugins have an updated installation location and folder structure\r\n  + Existing third-party plugins will continue to load from the legacy locations until OBS Studio 34.0\r\n  + More information is available in our [knowledge base article](https://obsproject.com/kb/legacy-plugin-locations)\r\n* Improved how source snapping works in the preview [Warchamp7] ([#12298](https://github.com/obsproject/obs-studio/pull/12298))\r\n  + New visual indicator added\r\n  + Sources now snap along the entire axis instead of only when directly touching\r\n  + Sources no longer snap to hidden sources\r\n* Improved behavior of spinboxes for number values [Warchamp7] ([#12337](https://github.com/obsproject/obs-studio/pull/12337))\r\n  + Typing is no longer mysteriously blocked in some situations\r\n  + Numbers are no longer cut off in some situations\r\n  + Values now update only after pressing Enter and Enter does not close the window\r\n  + Holding Shift + Up/Down now advances multiple steps at a time\r\n  + Dragging the cursor inside the input but outside the text itself now works properly\r\n* Enabled NVENC on Arm64 [RytoEX] ([#13827](https://github.com/obsproject/obs-studio/pull/13827))\r\n\r\n33.0 Changes\r\n------------\r\n\r\n* Added a check for encoders being missing when loading a profile [derrod] ([#11340](https://github.com/obsproject/obs-studio/pull/11340))\r\n* Added support for newest NVIDIA Broadcast SDKs for NVIDIA Audio Effects and Video Effects [pkviet] ([#13838](https://github.com/obsproject/obs-studio/pull/13838))\r\n* Added hotkeys for controlling audio monitoring of a source [Warchamp7] ([#13599](https://github.com/obsproject/obs-studio/pull/13599))\r\n* Changed Safe Mode to not start WebSocket Server [FiniteSingularity/RytoEX] ([#13984](https://github.com/obsproject/obs-studio/pull/13984))\r\n* Fixed issues with groups in Studio Mode [Warchamp7] ([#11092](https://github.com/obsproject/obs-studio/pull/11092))\r\n  + Fixed moving sources inside a group causing them to glitch out in Program\r\n  + Fixed moving sources inside a group showing up live in Program\r\n* Adjusted naming of Window Capture methods on Windows [Penwy] ([#12047](https://github.com/obsproject/obs-studio/pull/12047))\r\n* Improved detection of fullscreen games for Game Capture [Kira-NT] ([#10880](https://github.com/obsproject/obs-studio/pull/10880))\r\n* Improved transparency handling for macOS Screen Capture [jcm93] ([#13030](https://github.com/obsproject/obs-studio/pull/13030))\r\n* Scaled simple output recording audio bitrate by channel count [nickvonkaen",
     "downloads": [
       {
         "label": "Windows x64 · 安装程序",
         "platform": "Windows",
         "portable": false,
-        "file": "OBS-Studio-33.0.1-Windows-x64-Installer.exe",
-        "size": 186662440,
-        "sha256": "37ecde4d9a28e8aeeb07623c8469b5d558eb264e02ccf435bb859891c401758b",
-        "official": "https://github.com/obsproject/obs-studio/releases/download/33.0.1/OBS-Studio-33.0.1-Windows-x64-Installer.exe",
+        "file": "OBS-Studio-33.0.2-Windows-x64-Installer.exe",
+        "size": 194122376,
+        "sha256": "45bdacae241b3773bbf546cea11ebab219deb8c58f8b0ccd5b9fdae2e35966bc",
+        "official": "https://github.com/obsproject/obs-studio/releases/download/33.0.2/OBS-Studio-33.0.2-Windows-x64-Installer.exe",
         "mirrors": []
       },
       {
         "label": "Windows x64 · 便携 ZIP",
         "platform": "Windows",
         "portable": true,
-        "file": "OBS-Studio-33.0.1-Windows-x64.zip",
-        "size": 223786669,
-        "sha256": "0d9436451c2d772b33428e3fdae9776f071895c335de17283176306fb72651d3",
-        "official": "https://github.com/obsproject/obs-studio/releases/download/33.0.1/OBS-Studio-33.0.1-Windows-x64.zip",
+        "file": "OBS-Studio-33.0.2-Windows-x64.zip",
+        "size": 236160842,
+        "sha256": "fcfdb3e4568e45c519ac2171905f76edd0ce9777aea9d0b09dc33a1fc76948c5",
+        "official": "https://github.com/obsproject/obs-studio/releases/download/33.0.2/OBS-Studio-33.0.2-Windows-x64.zip",
         "mirrors": []
       },
       {
         "label": "macOS · Apple 芯片",
         "platform": "macOS",
         "portable": false,
-        "file": "OBS-Studio-33.0.1-macOS-Apple.dmg",
-        "size": 209628971,
-        "sha256": "3d6b2eedeb56416602af635adaba32327fdf11ff9d2806a4ce7d5b608de73238",
-        "official": "https://github.com/obsproject/obs-studio/releases/download/33.0.1/OBS-Studio-33.0.1-macOS-Apple.dmg",
+        "file": "OBS-Studio-33.0.2-macOS-Apple.dmg",
+        "size": 209592273,
+        "sha256": "f9cd96511c5efdd3ffd9a0068e3bbc276c61fc451d1004e3eea5658a9cb70488",
+        "official": "https://github.com/obsproject/obs-studio/releases/download/33.0.2/OBS-Studio-33.0.2-macOS-Apple.dmg",
         "mirrors": []
       },
       {
         "label": "macOS · Intel",
         "platform": "macOS",
         "portable": false,
-        "file": "OBS-Studio-33.0.1-macOS-Intel.dmg",
-        "size": 221903179,
-        "sha256": "745257d65e06eb0f784af229659223a863ad50d036464bb2b52f8a2d9278c2b1",
-        "official": "https://github.com/obsproject/obs-studio/releases/download/33.0.1/OBS-Studio-33.0.1-macOS-Intel.dmg",
+        "file": "OBS-Studio-33.0.2-macOS-Intel.dmg",
+        "size": 221815559,
+        "sha256": "84eb584a89cdef83f3385655e348496dbb0715459be249afa1c6787d60d2cc33",
+        "official": "https://github.com/obsproject/obs-studio/releases/download/33.0.2/OBS-Studio-33.0.2-macOS-Intel.dmg",
         "mirrors": []
       },
       {
         "label": "Linux · Ubuntu DEB",
         "platform": "Linux",
         "portable": false,
-        "file": "OBS-Studio-33.0.1-Ubuntu-26.04-x86_64.deb",
-        "size": 159354224,
-        "sha256": "a9f062057576074439e6467f2716e3bbed6a0edab6ebf2c2f9595a3d2f1dc57f",
-        "official": "https://github.com/obsproject/obs-studio/releases/download/33.0.1/OBS-Studio-33.0.1-Ubuntu-26.04-x86_64.deb",
+        "file": "OBS-Studio-33.0.2-Ubuntu-26.04-x86_64.deb",
+        "size": 159285590,
+        "sha256": "ba2269e16c46c004eda8276bc7334f64fd462f29126dc2fd995f079e86093259",
+        "official": "https://github.com/obsproject/obs-studio/releases/download/33.0.2/OBS-Studio-33.0.2-Ubuntu-26.04-x86_64.deb",
         "mirrors": []
       }
     ],
@@ -4351,20 +4351,20 @@
     "mirrored": false
   },
   "zed": {
-    "version": "1.29.2",
-    "released": "2026-11-18",
+    "version": "1.29.3",
+    "released": "2026-11-20",
     "verified": "2026-11-20",
-    "release_url": "https://github.com/zed-industries/zed/releases/tag/v1.29.2",
-    "changelog": "- Added an official Snap package for Linux ([#67164](https://github.com/zed-industries/zed/pull/67164))\n\n",
+    "release_url": "https://github.com/zed-industries/zed/releases/tag/v1.29.3",
+    "changelog": "- Fixed prompt caching for reusable OpenAI system instructions on GPT-6.2 and later. ([#67252](https://github.com/zed-industries/zed/pull/67252))\r\n- Fixed Text Finder showing results from the previous query when a search found no matches. ([#67189](https://github.com/zed-industries/zed/pull/67189))\r\n\r\n",
     "downloads": [
       {
         "label": "Windows x64 · 安装包",
         "platform": "Windows",
         "portable": false,
         "file": "Zed-x86_64.exe",
-        "size": 65378040,
-        "sha256": "30cd0aef8a8d451f54613b3ee8d8321c06acb2ef2110b4debaa7931f245c8399",
-        "official": "https://github.com/zed-industries/zed/releases/download/v1.29.2/Zed-x86_64.exe",
+        "size": 65418432,
+        "sha256": "f857495c6cdc4d74fb9bcda9ff5a23aebe1cc88e7aa10af13cfde5f45232b554",
+        "official": "https://github.com/zed-industries/zed/releases/download/v1.29.3/Zed-x86_64.exe",
         "mirrors": []
       }
     ],
