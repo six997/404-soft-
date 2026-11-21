@@ -1168,20 +1168,20 @@
     "source": "winget"
   },
   "hwinfo": {
-    "version": "8.54",
-    "released": "2026-09-30",
+    "version": "8.60",
+    "released": "2026-11-10",
     "verified": "2026-11-21",
-    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/REALiX/HWiNFO/8.54",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/r/REALiX/HWiNFO/8.60",
     "changelog": "",
     "downloads": [
       {
         "label": "Windows x64 · 官方安装包",
         "platform": "Windows",
         "portable": false,
-        "file": "hwi64_854.exe",
+        "file": "hwi_860x.exe",
         "size": null,
-        "sha256": "16281ec83a69a720beac8e2a1dad606fb2eaf4757bb02c7752b72ee2c26ee243",
-        "official": "https://www.hwinfo.com/files/hwi64_854.exe",
+        "sha256": "a91126cf6bdba645da00b95be7ca54157666391798042bb2037bc23bffe791f9",
+        "official": "https://www.sac.sk/download/utildiag/hwi_860x.exe",
         "mirrors": []
       }
     ],
@@ -2065,20 +2065,20 @@
     "source": "winget"
   },
   "calibre": {
-    "version": "9.18.0",
-    "released": "2026-11-06",
+    "version": "9.19.0",
+    "released": "2026-11-21",
     "verified": "2026-11-21",
-    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/calibre/calibre/9.18.0",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/calibre/calibre/9.19.0",
     "changelog": "",
     "downloads": [
       {
         "label": "Windows x64 · 安装包 MSI",
         "platform": "Windows",
         "portable": false,
-        "file": "calibre-64bit-9.18.0.msi",
+        "file": "calibre-64bit-9.19.0.msi",
         "size": null,
-        "sha256": "05c0f2223866f8082e05b2d4bc9c57b31a833de8355a1191fd79c260c2636d38",
-        "official": "https://download.calibre-ebook.com/9.18.0/calibre-64bit-9.18.0.msi",
+        "sha256": "241193d5045bdcbc3e7ec000c22ede0b5da1fd2e91e83fa0b17f0e1f67174480",
+        "official": "https://download.calibre-ebook.com/9.19.0/calibre-64bit-9.19.0.msi",
         "mirrors": []
       }
     ],
@@ -5157,20 +5157,20 @@
     "mirrored": false
   },
   "imagemagick": {
-    "version": "7.1.2.35",
-    "released": "2026-10-31",
+    "version": "7.1.2.36",
+    "released": "2026-11-16",
     "verified": "2026-11-21",
-    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ImageMagick/ImageMagick/7.1.2.35",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/i/ImageMagick/ImageMagick/7.1.2.36",
     "changelog": "",
     "downloads": [
       {
         "label": "Windows x64 · 安装包",
         "platform": "Windows",
         "portable": false,
-        "file": "ImageMagick-7.1.2-35-Q16-HDRI-x64-dll.exe",
+        "file": "ImageMagick-7.1.2-36-Q16-HDRI-x64-dll.exe",
         "size": null,
-        "sha256": "32cc21fe23f7d7b7d9133905a2dc5aac94f574a07740911d948eb88b09a0b432",
-        "official": "https://github.com/ImageMagick/ImageMagick/releases/download/7.1.2-35/ImageMagick-7.1.2-35-Q16-HDRI-x64-dll.exe",
+        "sha256": "cf116682e4af5634781f8418bbe304e4399a3303d8bd0322e56bbb2025501cea",
+        "official": "https://github.com/ImageMagick/ImageMagick/releases/download/7.1.2-36/ImageMagick-7.1.2-36-Q16-HDRI-x64-dll.exe",
         "mirrors": []
       }
     ],
