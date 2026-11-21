@@ -1426,10 +1426,10 @@
     "source": "winget"
   },
   "process-explorer": {
-    "version": "17.2",
-    "released": "2026-10-15",
+    "version": "17.21",
+    "released": "2026-11-05",
     "verified": "2026-11-21",
-    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/ProcessExplorer/17.2",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/Sysinternals/ProcessExplorer/17.21",
     "changelog": "",
     "downloads": [
       {
@@ -1438,7 +1438,7 @@
         "portable": true,
         "file": "ProcessExplorer.zip",
         "size": null,
-        "sha256": "dab147316264b89ae46ae2ad7d8a94116848ef0b703bcac8de9ff22689ce9d51",
+        "sha256": "22551d0181dde6cb6af1bc134a190d867d883673f9c35c33039e4e8f9ac75df1",
         "official": "https://download.sysinternals.com/files/ProcessExplorer.zip",
         "mirrors": []
       }
@@ -3827,20 +3827,20 @@
     "mirrored": false
   },
   "croc": {
-    "version": "11.6.5",
-    "released": "2026-11-07",
+    "version": "11.6.6",
+    "released": "2026-11-21",
     "verified": "2026-11-21",
-    "release_url": "https://github.com/schollz/croc/releases/tag/v11.6.5",
-    "changelog": "## What's Changed\r\n* chore: update dependencies by @schollz in https://github.com/schollz/croc/pull/1429\r\n\r\n\r\n**Full Changelog**: https://github.com/schollz/croc/compare/v11.6.4...v11.6.5",
+    "release_url": "https://github.com/schollz/croc/releases/tag/v11.6.6",
+    "changelog": "## What's Changed\r\n* fix: add CROC_WEB_URL Fixes #1428 by @schollz in https://github.com/schollz/croc/pull/1431\r\n* fix: shell-quote relay, password and code in the receive command by @Kernel-Hunter in https://github.com/schollz/croc/pull/1434\r\n* fix: return an error for a bad --throttleUpload and apply large limits exactly by @Kernel-Hunter in https://github.com/schollz/croc/pull/1435\r\n* build(deps): bump docker/login-action from 4.6.0 to 4.8.0 by @dependabot[bot] in https://github.com/schollz/croc/pull/1433\r\n* fix: include the digit 9 in GenerateRandomPin by @Kernel-Hunter in https://github.com/schollz/croc/pull/1438\r\n* fix: match --git ignore patterns against relative paths by @b84330808 in https://github.com/schollz/croc/pull/1437\r\n* chore: update deps by @schollz in https://github.com/schollz/croc/pull/1439\r\n* docs: add CrocApp to the community desktop apps by @bakirgdev in https://github.com/schollz/croc/pull/1440\r\n* ci: setup-go with go-version-file by @zdiff in https://github.com/schollz/croc/pull/1442\r\n* fix: preserve received empty file permissions by @pcbeingused333 in https://github.com/schollz/croc/pull/1444\r\n* feat: count received bundle bytes in TotalSent by @bakirgdev in https://github.com/schollz/croc/pull/1427\r\n* feat: add Prompt option for library users by @bakirgdev in https://github.com/schollz/croc/pull/1449\r\n* fix: skip NTFS junctions when sending a folder by @b84330808 in https://github.com/schollz/croc/pull/1450\r\n* fix: align web tests with send files label by @schollz in https://github.com/schollz/croc/pull/1451\r\n\r\n## New Contributors\r\n* @Kernel-Hunter made their first contribution in https://github.com/schollz/croc/pull/1434\r\n* @b84330808 made their first contribution in https://github.com/schollz/croc/pull/1437\r\n* @bakirgdev made their first contribution in https://github.com/schollz/croc/pull/1440\r\n* @pcbeingused333 made their first contribution in https://github.com/schollz/croc/pull/1444\r\n\r\n**Full Changelog**: https://github.com/schollz/croc/compare/v11.6.5...v11.6.6",
     "downloads": [
       {
         "label": "Windows x64 · 绿色版 ZIP",
         "platform": "Windows",
         "portable": true,
-        "file": "croc_v11.6.5_Windows-64bit.zip",
-        "size": 12982028,
-        "sha256": "ae5b9d249099ff159f6a4b91824a2bf7d2b32f0dd77342aef51b34154aa4fffb",
-        "official": "https://github.com/schollz/croc/releases/download/v11.6.5/croc_v11.6.5_Windows-64bit.zip",
+        "file": "croc_v11.6.6_Windows-64bit.zip",
+        "size": 13011316,
+        "sha256": "e84910ec971b81f34c9722dc20128d23f3b962cbdbe16437b5c289f757f88016",
+        "official": "https://github.com/schollz/croc/releases/download/v11.6.6/croc_v11.6.6_Windows-64bit.zip",
         "mirrors": []
       }
     ],
@@ -4140,20 +4140,20 @@
     "mirrored": false
   },
   "sandboxie-plus": {
-    "version": "1.18.8",
-    "released": "2026-10-17",
+    "version": "1.19.1",
+    "released": "2026-11-21",
     "verified": "2026-11-21",
-    "release_url": "https://github.com/sandboxie-plus/Sandboxie/releases/tag/v1.18.8",
-    "changelog": "![0 5 5](https://user-images.githubusercontent.com/3890945/105014988-575cb680-5a41-11eb-90d5-d942d28184b2.png)\r\n\r\n### Release Notes\r\n\r\nSandboxie Plus 1.18.8 / Classic 5.73.8 brings important compatibility improvements for Firefox and other sandboxed browsers, with a particular focus on fixing video playback issues.\r\nVideo playback now works correctly in sandboxed Firefox on websites such as Disney, Amazon Prime, Netflix, TVNZ and ESPN that rely on mediaCapabilities.decodingInfo() to check media support before starting playback. This resolves an issue that could leave videos unable to start on affected sites.\r\nThe release also improves AppContainer handling used by browsers and other applications to isolate their child processes. Fixes address missing sandbox permissions and overly restrictive substitute tokens that could prevent these processes from starting or accessing required system resources. Microsoft Edge can again use the corrected substitute token without enabling UnRestrictAppContainerToken by default.\r\nA security fix addresses an out-of-bounds read in the GUI proxy’s MapWindowPoints handler that could expose service heap data to sandboxed callers. The Import Boxes workflow has also been corrected, allowing users to choose where imported sandboxes are created.\r\nFor existing sandboxes, the new fixboxdacls command in KmdUtil.exe adds missing AppContainer access permissions. Advanced configuration options provide additional control: KeepBroadGroupsInAppContainerToken=n restores the previous all-deny-only substitute token behavior, NeutralizeLowBoxToken=n allows direct NtCreateLowBoxToken calls through, and FakeAppContainerToken=n now allows sandboxed programs to create real AppContainer child processes.\r\n\r\n\r\nFor a full list of changes please review the [change log](https://github.com/sandboxie-plus/Sandboxie/blob/master/CHANGELOG.md#1188--5738---2026-10-17).\r\n\r\n\r\n#### You can support the project through donations, any help will be greatly appreciated.\r\n\r\n[<img src=\"https://www.paypalobjects.com/en_US/AT/i/btn/btn_donateCC_LG.gif\">](https://xanasoft.com/go.php?to=donate)\r\n\r\n#### If you have issues with an update installation, just uninstall the previous version keeping the sandboxie.ini and reinstall the new build.\r\n",
+    "release_url": "https://github.com/sandboxie-plus/Sandboxie/releases/tag/v1.19.1",
+    "changelog": "![0 5 5](https://user-images.githubusercontent.com/3890945/105014988-575cb680-5a41-11eb-90d5-d942d28184b2.png)\r\n\r\n### Release Notes\r\n\r\nSandboxie-Plus 1.19.1 introduces AI-assisted troubleshooting in SandMan. The new “Troubleshoot with an AI Agent” toolbar button lets you connect an MCP-compatible AI client to investigate a sandbox issue. The feature is off by default and uses a local named pipe with a one-time pairing code. SandMan shows you the exact configuration changes or commands the agent proposes and asks for approval each time. You can review the session history and choose whether to submit an issue report with the agent’s findings and a log of the actions taken.\r\n\r\nThis release fixes two performance problems. Sandboxed applications that frequently look up localized strings or resources could suffer severe slowdowns, including frame rate drops in games. Those lookups now benefit from Windows’ cached language settings again. Sandboxie also removes a configuration locking bottleneck that forced concurrent process launches to wait on one another.\r\n\r\nSandbox border labels can now appear on any of the four window edges. A dedicated Box Border tab lets you choose the font, position and text orientation. The built-in INI editors gain optional line numbers and Ctrl+G navigation, and the new CustomProcessCommandLine setting lets you conditionally add, remove or replace arguments when launching a sandboxed process.\r\n\r\nVersion 1.19.1 also restores Windows 7 compatibility after a regression in 1.19.0 and fixes a hang when elevating sandboxed programs with Windows Administrator Protection enabled. Several SandMan crashes during startup, sandbox creation and shutdown have been fixed. The message log now has a size limit to prevent memory exhaustion during long sessions.\r\n\r\nFor a full list of changes please review the [change log](https://github.com/sandboxie-plus/Sandboxie/blob/master/CHANGELOG.md#1191--5741---2026-10-21).\r\n\r\n\r\n#### You can support the project through donations, any help will be greatly appreciated.\r\n\r\n[<img src=\"https://www.paypalobjects.com/en_US/AT/i/btn/btn_donateCC_LG.gif\">](https://xanasoft.com/go.php?to=donate)\r\n\r\n#### If you have issues with an update installation, just uninstall the previous version keeping the sandboxie.ini and reinstall the new build.\r\n",
     "downloads": [
       {
         "label": "Windows x64 · 安装包",
         "platform": "Windows",
         "portable": false,
-        "file": "Sandboxie-Plus-x64-v1.18.8.exe",
-        "size": 24930680,
-        "sha256": "f27078ff74a07906fd51476079e1a7a8f5e20c8bb75a9d2ae86169d47179ae76",
-        "official": "https://github.com/sandboxie-plus/Sandboxie/releases/download/v1.18.8/Sandboxie-Plus-x64-v1.18.8.exe",
+        "file": "Sandboxie-Plus-x64-v1.19.1.exe",
+        "size": 25500688,
+        "sha256": "443b528766f4e6448632fd94afa7df5d9e1c52e13940db79139d4070da3aa384",
+        "official": "https://github.com/sandboxie-plus/Sandboxie/releases/download/v1.19.1/Sandboxie-Plus-x64-v1.19.1.exe",
         "mirrors": []
       }
     ],
@@ -5843,20 +5843,20 @@
     "mirrored": false
   },
   "fossify-gallery": {
-    "version": "1.14.2",
-    "released": "2026-11-07",
+    "version": "1.14.3",
+    "released": "2026-11-21",
     "verified": "2026-11-21",
-    "release_url": "https://github.com/FossifyOrg/Gallery/releases/tag/1.14.2",
-    "changelog": "### Changed\n\n- Updated translations\n\n**Full Changelog:** https://github.com/FossifyOrg/Gallery/compare/1.14.1...1.14.2\n\n",
+    "release_url": "https://github.com/FossifyOrg/Gallery/releases/tag/1.14.3",
+    "changelog": "### Changed\n\n- Updated translations\n\n**Full Changelog:** https://github.com/FossifyOrg/Gallery/compare/1.14.2...1.14.3\n\n",
     "downloads": [
       {
         "label": "Android · APK",
         "platform": "Android",
         "portable": false,
-        "file": "gallery-40-foss-release.apk",
-        "size": 38538751,
-        "sha256": "ff3e6122ccf1873620e9e8e374b9c9dec4d7eb3a8f42559135bd82562c65f41f",
-        "official": "https://github.com/FossifyOrg/Gallery/releases/download/1.14.2/gallery-40-foss-release.apk",
+        "file": "gallery-50-foss-release.apk",
+        "size": 38543199,
+        "sha256": "2d330eda61579d2ae499bc2accab6e4d6bb77de96d2877ff90e481fac96e1b76",
+        "official": "https://github.com/FossifyOrg/Gallery/releases/download/1.14.3/gallery-50-foss-release.apk",
         "mirrors": []
       }
     ],
