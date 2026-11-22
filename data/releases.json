@@ -2997,20 +2997,20 @@
     "mirrored": false
   },
   "xpipe": {
-    "version": "24.12",
-    "released": "2026-11-15",
+    "version": "24.13",
+    "released": "2026-11-22",
     "verified": "2026-11-22",
-    "release_url": "https://github.com/xpipe-io/xpipe/releases/tag/24.12",
-    "changelog": "- Fix slow terminal and CLI startup since v24.0 due to inefficient initialization\n\n\n## Downloads\n\nYou can find all downloadable artifacts below attached to this release. For installation instructions, see the [installation guide](https://docs.xpipe.io/guide/installation).\n\nAll artifacts are signed by [Christopher Schnick (BBDA 885A DD3E 0AD0)](https://xpipe.io/signatures/0xDD3E0AD0.asc)\n",
+    "release_url": "https://github.com/xpipe-io/xpipe/releases/tag/24.13",
+    "changelog": "- Fix the webtop deployment generator dialog using the PTB image instead of the stable one\n- Fix generating the public key of a passphrase-protected private key failing\n- Fix Konsole sessions not starting in the home directory\n- Fix the XPIPE_API_SERVER environment variable for the webtop not being respected\n- Fix Homebrew installations not being detected on Intel Macs\n- Fix the AUR desktop entry not being associated with the app window and icons being broken\n\n\n## Downloads\n\nYou can find all downloadable artifacts below attached to this release. For installation instructions, see the [installation guide](https://docs.xpipe.io/guide/installation).\n\nAll artifacts are signed by [Christopher Schnick (BBDA 885A DD3E 0AD0)](https://xpipe.io/signatures/0xDD3E0AD0.asc)\n",
     "downloads": [
       {
         "label": "Windows x64 · 绿色版 ZIP",
         "platform": "Windows",
         "portable": true,
         "file": "xpipe-portable-windows-x86_64.zip",
-        "size": 161021872,
-        "sha256": "6b1725de09985bb63d6bd9240a5547698353dca2fed7862636f5c738a79561e0",
-        "official": "https://github.com/xpipe-io/xpipe/releases/download/24.12/xpipe-portable-windows-x86_64.zip",
+        "size": 161082189,
+        "sha256": "5681b4d39abc31fa3333ba361e402b9f6c29a21bf0e3b2975c078993f801f92a",
+        "official": "https://github.com/xpipe-io/xpipe/releases/download/24.13/xpipe-portable-windows-x86_64.zip",
         "mirrors": []
       },
       {
@@ -3018,9 +3018,9 @@
         "platform": "Windows",
         "portable": false,
         "file": "xpipe-installer-windows-arm64.msi",
-        "size": 104079360,
-        "sha256": "e361f50d23e3f698a60bd5e2e774b3299d8903e328b31e85a0cfa18afaf8cfff",
-        "official": "https://github.com/xpipe-io/xpipe/releases/download/24.12/xpipe-installer-windows-arm64.msi",
+        "size": 104173568,
+        "sha256": "7870f8b945c36bfb19879ede84599b553e65699f498543bcb6debfa3c286d782",
+        "official": "https://github.com/xpipe-io/xpipe/releases/download/24.13/xpipe-installer-windows-arm64.msi",
         "mirrors": []
       }
     ],
@@ -4896,20 +4896,20 @@
     "mirrored": false
   },
   "xdm": {
-    "version": "9.0.11",
-    "released": "2026-11-15",
+    "version": "9.0.12",
+    "released": "2026-11-22",
     "verified": "2026-11-22",
-    "release_url": "https://github.com/subhra74/xdm/releases/tag/9.0.11",
-    "changelog": "## Downloads\n\n| Installer | Notes |\n|---|---|\n| [xdm-app-9.0.11-arm64.dmg](https://github.com/subhra74/xdm/releases/download/9.0.11/xdm-app-9.0.11-arm64.dmg) | For Apple Silicon (M1 or later) mac |\n| [xdm-app-9.0.11-x64.dmg](https://github.com/subhra74/xdm/releases/download/9.0.11/xdm-app-9.0.11-x64.dmg) | For Intel mac |\n| [xdm-9.0.11-arm64.msi](https://github.com/subhra74/xdm/releases/download/9.0.11/xdm-9.0.11-arm64.msi) | For Windows ARM (Windows 10/11) |\n| [xdm-9.0.11-x64.msi](https://github.com/subhra74/xdm/releases/download/9.0.11/xdm-9.0.11-x64.msi) | For Windows x64 (Windows 10/11) |\n| [xdmsetup-9.0.11.msi](https://github.com/subhra74/xdm/releases/download/9.0.11/xdmsetup-9.0.11.msi) | Same as the x64 MSI; for XDM 8 (Microsoft Store) update notices |\n| [xdm-app_9.0.11_amd64.deb](https://github.com/subhra74/xdm/releases/download/9.0.11/xdm-app_9.0.11_amd64.deb) | For Debian / Ubuntu / Linux Mint x64 |\n| [xdm-app_9.0.11_arm64.deb](https://github.com/subhra74/xdm/releases/download/9.0.11/xdm-app_9.0.11_arm64.deb) | For Debian / Ubuntu / Linux Mint ARM |\n| [xdm-app-9.0.11-1.aarch64.rpm](https://github.com/subhra74/xdm/releases/download/9.0.11/xdm-app-9.0.11-1.aarch64.rpm) | For Fedora / RHEL / openSUSE ARM |\n| [xdm-app-9.0.11-1.x86_64.rpm](https://github.com/subhra74/xdm/releases/download/9.0.11/xdm-app-9.0.11-1.x86_64.rpm) | For Fedora / RHEL / openSUSE x64 |\n| [xdm-app-9.0.11-1-aarch64.pkg.tar.zst](https://github.com/subhra74/xdm/releases/download/9.0.11/xdm-app-9.0.11-1-aarch64.pkg.tar.zst) | For Arch Linux / Manjaro ARM |\n| [xdm-app-9.0.11-1-x86_64.pkg.tar.zst](https://github.com/subhra74/xdm/releases/download/9.0.11/xdm-app-9.0.11-1-x86_64.pkg.tar.zst) | For Arch Linux / Manjaro x64 |\n| [xdm-app-9.0.11-linux-arm64.tar.gz](https://github.com/subhra74/xdm/releases/download/9.0.11/xdm-app-9.0.11-linux-arm64.tar.gz) | For any Linux ARM (portable, no install) |\n| [xdm-app-9.0.11-linux-x64.tar.gz](https://github.com/subhra74/xdm/releases/download/9.0.11/xdm-app-9.0.11-linux-x64.tar.gz) | For any Linux x64 (portable, no install) |\n\n[Code signing policy](https://github.com/subhra74/xdm/blob/master/CODE_SIGNING_POLICY.md)\n\n## What's Changed\n\n### Video downloads (HLS / DASH)\n- New **\"Save as MP4 where possible\"** option in the video download dialog (on by default, remembered). Turn it off to keep an HLS stream as `.ts`, joined with its audio track as-is.\n- Better quality picks for HLS videos on sites whose playlist links work only once: the browser extension now passes the playlist it already loaded, so all resolutions show up.\n- Opus-only audio is now saved as a real `.opus` file instead of `.webm`.\n- Many fixes in the built-in muxer, checked against ffmpeg's output: videos no longer start with broken frames, correct timing for streams with missing or reordered timestamps (fixes frames shown one picture late and decode errors on some Apple-packaged streams), HEVC saved as `hvc1`, better playback in Windows/macOS system players, correct colour and aspect-ratio info, AV1-in-TS detection, AC-3/E-AC-3 fixes, 33-bit timestamp wrap handling, and no more silent audio track when a stream declares audio it never carries.\n- Fixed using an external ffmpeg for muxing when the file path contains spaces, quotes or backslashes.\n- The video download dialog's \"Check for updates\" now shows progress and a clearer result.\n\n### Download progress\n- The progress window now shows one row per connection that stays in place for the whole download, with total bytes per connection.\n- Segments show **Downloading** as soon as they connect instead of staying on \"Connecting\".\n\n### Torrents\n- Add-torrent dialog: search box and Expand all / Collapse all for the file list, plus file-selection fixes.\n\n### Browser extensions\n- Chrome extension 3.6, Firefox extension 1.2 (HLS playlist capture as above).\n- Firefox extension now leaves YouTube alone, as the Chrome one does.\n- Fixed media preview in the extension popup, and a current extension no longer shows as outdated.\n\n### Other\n- New bug report form on GitHub; logs are flushed before the log folder opens.\n\n**Full Changelog**: https://github.com/subhra74/xdm/compare/v9.0.10...9.0.11\n\n",
+    "release_url": "https://github.com/subhra74/xdm/releases/tag/9.0.12",
+    "changelog": "## Downloads\n\n| Installer | Notes |\n|---|---|\n| [xdm-9.0.12-x64.msi](https://github.com/subhra74/xdm/releases/download/9.0.12/xdm-9.0.12-x64.msi) | For Windows x64 (Windows 10/11) |\n| [xdm-9.0.12-arm64.msi](https://github.com/subhra74/xdm/releases/download/9.0.12/xdm-9.0.12-arm64.msi) | For Windows ARM (Windows 10/11) |\n| [xdmsetup-9.0.12.msi](https://github.com/subhra74/xdm/releases/download/9.0.12/xdmsetup-9.0.12.msi) | Same as the x64 MSI; for XDM 8 (Microsoft Store) update notices |\n| [xdm-app-9.0.12-linux-x64.flatpak](https://github.com/subhra74/xdm/releases/download/9.0.12/xdm-app-9.0.12-linux-x64.flatpak) | For any Linux x64 (Flatpak bundle; runtime installs from Flathub) |\n| [xdm-app-9.0.12-linux-arm64.flatpak](https://github.com/subhra74/xdm/releases/download/9.0.12/xdm-app-9.0.12-linux-arm64.flatpak) | For any Linux ARM (Flatpak bundle; runtime installs from Flathub) |\n| [xdm-app_9.0.12_amd64.deb](https://github.com/subhra74/xdm/releases/download/9.0.12/xdm-app_9.0.12_amd64.deb) | For Debian / Ubuntu / Linux Mint x64 |\n| [xdm-app_9.0.12_arm64.deb](https://github.com/subhra74/xdm/releases/download/9.0.12/xdm-app_9.0.12_arm64.deb) | For Debian / Ubuntu / Linux Mint ARM |\n| [xdm-app-9.0.12-1.x86_64.rpm](https://github.com/subhra74/xdm/releases/download/9.0.12/xdm-app-9.0.12-1.x86_64.rpm) | For Fedora / RHEL / openSUSE x64 |\n| [xdm-app-9.0.12-1.aarch64.rpm](https://github.com/subhra74/xdm/releases/download/9.0.12/xdm-app-9.0.12-1.aarch64.rpm) | For Fedora / RHEL / openSUSE ARM |\n| [xdm-app-9.0.12-1-x86_64.pkg.tar.zst](https://github.com/subhra74/xdm/releases/download/9.0.12/xdm-app-9.0.12-1-x86_64.pkg.tar.zst) | For Arch Linux / Manjaro x64 |\n| [xdm-app-9.0.12-1-aarch64.pkg.tar.zst](https://github.com/subhra74/xdm/releases/download/9.0.12/xdm-app-9.0.12-1-aarch64.pkg.tar.zst) | For Arch Linux / Manjaro ARM |\n| [xdm-app-9.0.12-linux-x64.tar.gz](https://github.com/subhra74/xdm/releases/download/9.0.12/xdm-app-9.0.12-linux-x64.tar.gz) | For any Linux x64 (portable, no install) |\n| [xdm-app-9.0.12-linux-arm64.tar.gz](https://github.com/subhra74/xdm/releases/download/9.0.12/xdm-app-9.0.12-linux-arm64.tar.gz) | For any Linux ARM (portable, no install) |\n| [xdm-app-9.0.12-arm64.dmg](https://github.com/subhra74/xdm/releases/download/9.0.12/xdm-app-9.0.12-arm64.dmg) | For Apple Silicon (M1 or later) mac |\n| [xdm-app-9.0.12-x64.dmg](https://github.com/subhra74/xdm/releases/download/9.0.12/xdm-app-9.0.12-x64.dmg) | For Intel mac |\n\n[Code signing policy](https://github.com/subhra74/xdm/blob/master/CODE_SIGNING_POLICY.md)\n\n## What's Changed\n\n### Downloads\n- Better handling of busy servers: a download keeps going while a server limits or refuses its extra connections, and waits as long as the server asks (`Retry-After`, up to 5 minutes). When every connection is waiting, the list and progress window show **\"Server busy, retrying at …\"**. After 5 minutes with no data it stops with \"The server is busy. Try again later.\"\n- HLS videos from sites whose playlist link works only once now download: XDM uses the playlist the browser already loaded instead of fetching it again.\n- Fixed a CDN refusing every request (HTTP 410) because of the order and case of request headers.\n- **\"Start downloads immediately\"** now covers captured videos too: they start with the video dialog's usual choices (category and folder rules, segment count, default subtitle, Save as SRT) instead of always showing the dialog (#1426).\n- Changing the default download folder now offers to move category folders that sit inside the old one. Files already downloaded stay where they are.\n- Refresh link: the window now shows the page address with a copy button, so you can open it in the browser that has the XDM extension.\n\n### Linux\n- New **Flatpak** bundle for x64 and ARM. Double-click it to install in GNOME Software or KDE Discover, or run `flatpak install --user <file>`. The first install also downloads the Flatpak runtime from Flathub; XDM updates still come from this page.\n- \"Keep the computer awake\" now uses the desktop's sleep-inhibit portal on every Linux install, with `systemd-inhibit` as the fallback.\n- \"Shut down when downloads finish\" also tries logind, so it works on more desktops.\n\n### Windows\n- Fixed **\"Failed to launch JVM\"** at startup when the Java Access Bridge (screen reader support) is enabled (#1456).\n- Installer: clearer wording on the Windows Firewall page.\n\n### Look and feel\n- Brighter selection in the sidebar and Classic list in both themes, with subtitle and count colours that meet the 4.5:1 contrast ratio.\n- Dark theme improvements, including white button text and a dimmer disabled button.\n\n### Bundled Java runtime\n- Windows and macOS: updated to Liberica JDK 25.0.5.1, which fixes CVE-2026-114938 (a JIT Base64 bug on x86-64 CPUs with AVX-512 VBMI). Linux keeps JBR 25.0.4.1 with the affected JIT code turned off until a fixed JBR is released.\n\n**Full Changelog**: https://github.com/subhra74/xdm/compare/9.0.11...9.0.12\n",
     "downloads": [
       {
         "label": "Windows x64 · 安装包 MSI",
         "platform": "Windows",
         "portable": false,
-        "file": "xdm-9.0.11-x64.msi",
-        "size": 66311962,
-        "sha256": "25d30ca560a854080c3841659fd3e30a06a28981bcf9fc4085a3a564fb893e0b",
-        "official": "https://github.com/subhra74/xdm/releases/download/9.0.11/xdm-9.0.11-x64.msi",
+        "file": "xdm-9.0.12-x64.msi",
+        "size": 66898479,
+        "sha256": "6e536338bd3ace9880b5343d7a5b7c88f9bfeddf3e124bce13ea2e2c26cee284",
+        "official": "https://github.com/subhra74/xdm/releases/download/9.0.12/xdm-9.0.12-x64.msi",
         "mirrors": []
       }
     ],
@@ -5592,20 +5592,20 @@
     "mirrored": false
   },
   "rime-frost": {
-    "version": "1.0.4",
-    "released": "2026-05-08",
+    "version": "1.0.5",
+    "released": "2026-11-22",
     "verified": "2026-11-22",
-    "release_url": "https://github.com/gaboolic/rime-frost/releases/tag/1.0.4",
-    "changelog": "支持墨奇输入法安卓版\r\n修复一些bug",
+    "release_url": "https://github.com/gaboolic/rime-frost/releases/tag/1.0.5",
+    "changelog": "",
     "downloads": [
       {
         "label": "配置方案 ZIP",
         "platform": "Windows",
         "portable": true,
         "file": "rime-frost-schemas.zip",
-        "size": 44008360,
-        "sha256": "4f4998ae83f63d757c0a4ace192f69d48265bddfabe231642b73e3739ed0f2f5",
-        "official": "https://github.com/gaboolic/rime-frost/releases/download/1.0.4/rime-frost-schemas.zip",
+        "size": 44256397,
+        "sha256": "7fa617d6e718def0963ed1cf0421d5ea662db2e72e7bcf4309f4095597c5c74b",
+        "official": "https://github.com/gaboolic/rime-frost/releases/download/1.0.5/rime-frost-schemas.zip",
         "mirrors": []
       }
     ],
@@ -6353,40 +6353,40 @@
     "mirrored": false
   },
   "clash-mi": {
-    "version": "1.0.32.1803",
-    "released": "2026-11-03",
+    "version": "1.0.33.1905",
+    "released": "2026-11-22",
     "verified": "2026-11-22",
-    "release_url": "https://github.com/KaringX/clashmi/releases/tag/v1.0.32.1803",
-    "changelog": "1. Windows: Added UWP tools under 'Help' #613\r\n2. PC: Window position persistence\r\n3. Profiles now support individual configuration of latency test URLs and timeout durations\r\n4. Linux: Reverted tray_manager. The package has been re-uploaded. If you have already installed version 2928, please download the package again and reinstall it.\r\n\r\nios appstore: https://apps.apple.com/us/app/clash-mi/id6744321968",
+    "release_url": "https://github.com/KaringX/clashmi/releases/tag/v1.0.33.1905",
+    "changelog": "1. Remove concatenated subscription addresses from the profile file #633\r\n\r\nios appstore: https://apps.apple.com/us/app/clash-mi/id6744321968",
     "downloads": [
       {
         "label": "Windows x64 · 绿色版 ZIP",
         "platform": "Windows",
         "portable": true,
-        "file": "clashmi_1.0.32.1803_windows_x64.zip",
-        "size": 66998010,
-        "sha256": "2e2ab2ce0b90ef627ecf7232cf7b71fb482a716ac8378f91d6d22fa926d73351",
-        "official": "https://github.com/KaringX/clashmi/releases/download/v1.0.32.1803/clashmi_1.0.32.1803_windows_x64.zip",
+        "file": "clashmi_1.0.33.1905_windows_x64.zip",
+        "size": 67218011,
+        "sha256": "3fca0fcf05d0b9f82fcc383c577f3dd47de5c1fd5862dfc1a00ef7618ca312b1",
+        "official": "https://github.com/KaringX/clashmi/releases/download/v1.0.33.1905/clashmi_1.0.33.1905_windows_x64.zip",
         "mirrors": []
       },
       {
         "label": "Android · arm64 APK",
         "platform": "Android",
         "portable": false,
-        "file": "clashmi_1.0.32.1803_android_arm64-v8a.apk",
-        "size": 52610081,
-        "sha256": "6cedd17107d0b95774430a4a63a73cffeb115e1a62b1a37d8811aba9ec03510d",
-        "official": "https://github.com/KaringX/clashmi/releases/download/v1.0.32.1803/clashmi_1.0.32.1803_android_arm64-v8a.apk",
+        "file": "clashmi_1.0.33.1905_android_arm64-v8a.apk",
+        "size": 53433001,
+        "sha256": "c9e32085d5fd1f920ffa17c6f98f1a2ba438f7910a5ef9ec2683fe8a2f266abf",
+        "official": "https://github.com/KaringX/clashmi/releases/download/v1.0.33.1905/clashmi_1.0.33.1905_android_arm64-v8a.apk",
         "mirrors": []
       },
       {
         "label": "macOS · 通用 DMG",
         "platform": "macOS",
         "portable": false,
-        "file": "clashmi_1.0.32.1803_macos_universal.dmg",
-        "size": 97071257,
-        "sha256": "fd0382f8d996f97ed65eadf634967e9c1eed4909ec181cd2a53d81b6280e5c17",
-        "official": "https://github.com/KaringX/clashmi/releases/download/v1.0.32.1803/clashmi_1.0.32.1803_macos_universal.dmg",
+        "file": "clashmi_1.0.33.1905_macos_universal.dmg",
+        "size": 95764960,
+        "sha256": "ce582b557fc954e51e4c9e8612f0075b0fb13dcd250c5c63cc30fef2ca3525f7",
+        "official": "https://github.com/KaringX/clashmi/releases/download/v1.0.33.1905/clashmi_1.0.33.1905_macos_universal.dmg",
         "mirrors": []
       }
     ],
