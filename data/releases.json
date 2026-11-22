@@ -3187,30 +3187,30 @@
     "mirrored": false
   },
   "ungoogled-chromium": {
-    "version": "157.0.8103.78-1.1",
-    "released": "2026-11-15",
+    "version": "158.0.8127.36-1.1",
+    "released": "2026-11-22",
     "verified": "2026-11-22",
-    "release_url": "https://github.com/ungoogled-software/ungoogled-chromium-windows/releases/tag/157.0.8103.78-1.1",
+    "release_url": "https://github.com/ungoogled-software/ungoogled-chromium-windows/releases/tag/158.0.8127.36-1.1",
     "changelog": "",
     "downloads": [
       {
         "label": "Windows x64 · 绿色版 ZIP",
         "platform": "Windows",
         "portable": true,
-        "file": "ungoogled-chromium_157.0.8103.78-1.1_windows_x64.zip",
-        "size": 202853365,
-        "sha256": "2b1d113b055f827b573cd1fa2bc46511691c0aa427802397cfc05e52350ef212",
-        "official": "https://github.com/ungoogled-software/ungoogled-chromium-windows/releases/download/157.0.8103.78-1.1/ungoogled-chromium_157.0.8103.78-1.1_windows_x64.zip",
+        "file": "ungoogled-chromium_158.0.8127.36-1.1_windows_x64.zip",
+        "size": 204306715,
+        "sha256": "bc78b9590881f8ca99aca29288d1b347ffdd689ca8a57384bb0bc113ef687b6b",
+        "official": "https://github.com/ungoogled-software/ungoogled-chromium-windows/releases/download/158.0.8127.36-1.1/ungoogled-chromium_158.0.8127.36-1.1_windows_x64.zip",
         "mirrors": []
       },
       {
         "label": "Windows x64 · 安装包",
         "platform": "Windows",
         "portable": false,
-        "file": "ungoogled-chromium_157.0.8103.78-1.1_installer_x64.exe",
-        "size": 131060224,
-        "sha256": "835a6f337dc8ef199d2297110a2d7568df77b7bf1bc1282083770c1ea5ccb610",
-        "official": "https://github.com/ungoogled-software/ungoogled-chromium-windows/releases/download/157.0.8103.78-1.1/ungoogled-chromium_157.0.8103.78-1.1_installer_x64.exe",
+        "file": "ungoogled-chromium_158.0.8127.36-1.1_installer_x64.exe",
+        "size": 132453376,
+        "sha256": "2485b37c68564c3c535358864d0526fc469f86309a58ff1a0a10dc1bec65932c",
+        "official": "https://github.com/ungoogled-software/ungoogled-chromium-windows/releases/download/158.0.8127.36-1.1/ungoogled-chromium_158.0.8127.36-1.1_installer_x64.exe",
         "mirrors": []
       }
     ],
@@ -5903,30 +5903,30 @@
     "mirrored": false
   },
   "exclave": {
-    "version": "0.17.68",
-    "released": "2026-11-10",
+    "version": "0.17.69",
+    "released": "2026-11-22",
     "verified": "2026-11-22",
-    "release_url": "https://github.com/ExclaveNetwork/Exclave/releases/tag/0.17.68",
-    "changelog": "- Update Go to 1.27.4 and ML-DSA is no longer advertised in `signature_algorithm_cert` in TLS Client Hello. Exclave's non-uTLS REALITY implementation also no longer advertises ML-DSA in `signature_algorithm_cert` to match the behavior of Go TLS.\r\n- Update uTLS to latest commit and fingerprint \"Chrome\" now matches Chrome 155. uTLS latest commit requires Go 1.27, so Go 1.26 support is dropped and compiling Exclave now requires at least Go 1.27.\r\n- For Snell protocol, domain address is no longer resolved to IP when sending UDP packets.\r\n- Update Mozilla CA certificate store and 6 CA certificates are removed.\r\n- The memory usage of rule matcher is reduced (maybe).",
+    "release_url": "https://github.com/ExclaveNetwork/Exclave/releases/tag/0.17.69",
+    "changelog": "- Improve file verification of the route asset updater (by [@lingyicute](https://github.com/lingyicute)). Before replacing the old files, for preset route asset providers, SHA-256 checksum is verified; for all files, the basic file structure is validated.\r\n- Publish shortcuts dynamically to better work with some automation tools (#516, by [@lingyicute](https://github.com/lingyicute)).\r\n- Many fixes for share link import and export (by [@lingyicute](https://github.com/lingyicute)).\r\n- Fix connection failure caused by clearing the cache of the app.\r\n- Fix some REALITY fingerprint values in UI not matching with the actual values.",
     "downloads": [
       {
         "label": "Android · arm64 APK",
         "platform": "Android",
         "portable": false,
-        "file": "Exclave-0.17.68-arm64-v8a.apk",
-        "size": 25392052,
-        "sha256": "1703ff23debd436223e3f1502d294b52705b451f323dd0ec500e223aa0248c1e",
-        "official": "https://github.com/ExclaveNetwork/Exclave/releases/download/0.17.68/Exclave-0.17.68-arm64-v8a.apk",
+        "file": "Exclave-0.17.69-arm64-v8a.apk",
+        "size": 25464512,
+        "sha256": "45a6cda7e71d0145df6625d351b6c8978bac6ba71d3d9f3b00e03b4be669a734",
+        "official": "https://github.com/ExclaveNetwork/Exclave/releases/download/0.17.69/Exclave-0.17.69-arm64-v8a.apk",
         "mirrors": []
       },
       {
         "label": "Android · armv7 APK",
         "platform": "Android",
         "portable": false,
-        "file": "Exclave-0.17.68-armeabi-v7a.apk",
-        "size": 26055702,
-        "sha256": "442c17453d70a4eff600f8729c0e981b174c828fb9c76aad9aed1e4a9e61ae9f",
-        "official": "https://github.com/ExclaveNetwork/Exclave/releases/download/0.17.68/Exclave-0.17.68-armeabi-v7a.apk",
+        "file": "Exclave-0.17.69-armeabi-v7a.apk",
+        "size": 26137754,
+        "sha256": "664d9b8196ff34b73222b3ba620f53f186a8d65742d5fe7f44fbb356c076db8b",
+        "official": "https://github.com/ExclaveNetwork/Exclave/releases/download/0.17.69/Exclave-0.17.69-armeabi-v7a.apk",
         "mirrors": []
       }
     ],
@@ -6153,20 +6153,20 @@
     "mirrored": false
   },
   "hiddify": {
-    "version": "5.5.5",
-    "released": "2026-11-04",
+    "version": "5.9.15",
+    "released": "2026-11-19",
     "verified": "2026-11-22",
-    "release_url": "https://github.com/hiddify/hiddify-app/releases/tag/v5.5.5",
-    "changelog": "**Download based on your OS:**\r\n\r\n**بر اساس سیستم عامل خود دانلود کنید:**\r\n\r\n## Downloads\r\n\r\n<!-- ASSETS:BEGIN -->\r\n<table>\r\n<thead><tr><th>OS</th><th>Download</th><th>Downloads</th><th>VirusTotal</th></tr></thead>\r\n<tbody>\r\n<tr>\r\n  <td rowspan=\"4\">Android</td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Android-universal.apk\">APK Universal</a></td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Android-universal.apk\"><img src=\"https://img.shields.io/github/downloads/hiddify/hiddify-app/v5.5.5/Hiddify-Android-universal.apk?displayAssetName=false&label=%20&color=green&v=17938308871725\" alt=\"downloads\"></a></td>\r\n  <td><a href=\"https://www.virustotal.com/gui/file/d22cea2205863248c813d3a620dd1211d98ae2cb6e448f86deb5c191e9c6a992/detection\"><img src=\"https://img.shields.io/badge/0%2F67-brightgreen\" alt=\"VirusTotal\"></a></td>\r\n</tr>\r\n<tr>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Android-arm64.apk\">APK ARMv8</a></td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Android-arm64.apk\"><img src=\"https://img.shields.io/github/downloads/hiddify/hiddify-app/v5.5.5/Hiddify-Android-arm64.apk?displayAssetName=false&label=%20&color=green&v=17938308871725\" alt=\"downloads\"></a></td>\r\n  <td><a href=\"https://www.virustotal.com/gui/file/d607fcbbb3566bc79dd8070979e74e5afed25f59c0643da950aae430a4260c0d/detection\"><img src=\"https://img.shields.io/badge/0%2F67-brightgreen\" alt=\"VirusTotal\"></a></td>\r\n</tr>\r\n<tr>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Android-arm7.apk\">APK ARMv7</a></td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Android-arm7.apk\"><img src=\"https://img.shields.io/github/downloads/hiddify/hiddify-app/v5.5.5/Hiddify-Android-arm7.apk?displayAssetName=false&label=%20&color=green&v=17938308871725\" alt=\"downloads\"></a></td>\r\n  <td><a href=\"https://www.virustotal.com/gui/file/6106f9a83b87bc39b17e01702d2f46cc17fd551109ef73793f08447527f481e2/detection\"><img src=\"https://img.shields.io/badge/0%2F67-brightgreen\" alt=\"VirusTotal\"></a></td>\r\n</tr>\r\n<tr>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Android-x86_64.apk\">APK x64</a></td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Android-x86_64.apk\"><img src=\"https://img.shields.io/github/downloads/hiddify/hiddify-app/v5.5.5/Hiddify-Android-x86_64.apk?displayAssetName=false&label=%20&color=green&v=17938308871725\" alt=\"downloads\"></a></td>\r\n  <td><a href=\"https://www.virustotal.com/gui/file/7145da5aac6387db9c9a7c626f7ef362b19191985d942b43b928f7876a4466fb/detection\"><img src=\"https://img.shields.io/badge/0%2F67-brightgreen\" alt=\"VirusTotal\"></a></td>\r\n</tr>\r\n<tr>\r\n  <td rowspan=\"3\">Windows</td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Windows-Setup-x64.Msix\">MSIX x64</a></td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Windows-Setup-x64.Msix\"><img src=\"https://img.shields.io/github/downloads/hiddify/hiddify-app/v5.5.5/Hiddify-Windows-Setup-x64.Msix?displayAssetName=false&label=%20&color=green&v=17938308871725\" alt=\"downloads\"></a></td>\r\n  <td><a href=\"https://www.virustotal.com/gui/file/0823ded85d1039b6f808c5238a3507c5c7dc9382623e2bcc7b5f6f598c04bb98/detection\"><img src=\"https://img.shields.io/badge/0%2F66-brightgreen\" alt=\"VirusTotal\"></a></td>\r\n</tr>\r\n<tr>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Windows-Setup-x64.exe\">Setup x64</a></td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Windows-Setup-x64.exe\"><img src=\"https://img.shields.io/github/downloads/hiddify/hiddify-app/v5.5.5/Hiddify-Windows-Setup-x64.exe?displayAssetName=false&label=%20&color=green&v=17938308871725\" alt=\"downloads\"></a></td>\r\n  <td><a href=\"https://www.virustotal.com/gui/file/7c71bca78a8307b5961ed2f1121d23fa94db6fed2c866af9eb5be375c0b43873/detection\"><img src=\"https://img.shields.io/badge/0%2F69-brightgreen\" alt=\"VirusTotal\"></a></td>\r\n</tr>\r\n<tr>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Windows-Portable-x64.zip\">Portable x64</a></td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Windows-Portable-x64.zip\"><img src=\"https://img.shields.io/github/downloads/hiddify/hiddify-app/v5.5.5/Hiddify-Windows-Portable-x64.zip?displayAssetName=false&label=%20&color=green&v=17938308871725\" alt=\"downloads\"></a></td>\r\n  <td><a href=\"https://www.virustotal.com/gui/file/b4579d6a9a7b0bb0dedfd2e462ab4cfefc53ec25b56f287cca5edb435f01f627/detection\"><img src=\"https://img.shields.io/badge/0%2F66-brightgreen\" alt=\"VirusTotal\"></a></td>\r\n</tr>\r\n<tr>\r\n  <td rowspan=\"2\">macOS (v10.15+)</td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-MacOS.dmg\">DMG Universal</a></td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-MacOS.dmg\"><img src=\"https://img.shields.io/github/downloads/hiddify/hiddify-app/v5.5.5/Hiddify-MacOS.dmg?displayAssetName=false&label=%20&color=green&v=17938308871725\" alt=\"downloads\"></a></td>\r\n  <td><a href=\"https://www.virustotal.com/gui/file/3e8c1d1448f861e5594910e168f11dc39e52ecfb68c03d445f9fb1721032992e/detection\"><img src=\"https://img.shields.io/badge/0%2F61-brightgreen\" alt=\"VirusTotal\"></a></td>\r\n</tr>\r\n<tr>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-MacOS-Installer.pkg\">PKG Universal</a></td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-MacOS-Installer.pkg\"><img src=\"https://img.shields.io/github/downloads/hiddify/hiddify-app/v5.5.5/Hiddify-MacOS-Installer.pkg?displayAssetName=false&label=%20&color=green&v=1793830887172",
+    "release_url": "https://github.com/hiddify/hiddify-app/releases/tag/v5.9.15",
+    "changelog": "# Highlights\r\n- **A smarter Keep top.** Only the fastest proxies run and the others are parked. A kept proxy\r\n  that stops answering is replaced, and the parked ones are checked again every hour. Client\r\n  endpoints, WARP included, take part too.\r\n- **21 new languages.** Nine more translations are now complete.\r\n- **Lighter on CPU and battery.** Animations stop when nobody can see them. The connect button's\r\n  light costs much less to draw. The core uses only as many processors as its load needs and\r\n  paces the reads of busy connections.\r\n- **OpenVPN profiles.** The app reads `.ovpn` files and `ovpn://` links.\r\n- **Psiphon gets through more often.** As the first hop, Psiphon scans CDN edges with Chrome's\r\n  TLS handshake and connects through the ones that answer. You can change its country from the\r\n  home page.\r\n- **WARP keeps searching, and can search deeper.** WARP searches for up to 3 minutes and learns\r\n  which noise and tunnel work on each network. When a WARP or Psiphon search finds nothing, the\r\n  app offers a deep search.\r\n- **Proxies that are not secure are marked.** A proxy that anyone on the way can read gets a red\r\n  *Not secure* mark that explains why. The list shows each proxy's transport and security, such\r\n  as `VLESS · XHTTP · REALITY`.\r\n- **Subscriptions download on hard networks.** The core downloads them with Chrome's TLS\r\n  handshake. When a download fails, the app says why and what to try.\r\n- **The desktop core runs in a process of its own.** The app's core is a library in the app, and\r\n  only the proxies run in the engine. If the engine crashes, the app stays open, shows why it\r\n  crashed and recovers.\r\n- **VPN mode by default on desktop.** When VPN mode needs administrator permission, the app asks\r\n  with a clear choice. On Linux it works without pkexec, and it also works in the AppImage.\r\n- **Router mode on Linux.** A transparent proxy for a whole network.\r\n- **Linux arm64, RPM and one install script.** There are deb, rpm and AppImage builds for x64 and\r\n  arm64. A single `install.sh` for macOS and Linux verifies what it downloads.\r\n- **Report a problem from the app.** A report carries every log and the crash. It can first turn\r\n  on 10 minutes of detailed logging. The core encrypts the report, and you send it by Telegram\r\n  or email, or keep it on your device.\r\n- **A beta channel.** GitHub pre-releases go only to users who join the beta channel. The update\r\n  dialog shows the change log, and every download is checked against its SHA-256 before it is\r\n  installed.\r\n- **A newer core.** xray-core v26.11.9, a Chrome 155 fingerprint, and ECH that works with every\r\n  fingerprint. Fake IPs survive a restart of the core. Many crash and hang fixes for XHTTP, WARP,\r\n  Psiphon, AmneziaWG and WireGuard.\r\n- **Steadier on every platform.** When the core stops by itself, Android, iOS and macOS take the\r\n  VPN down cleanly and say why, and a desktop VPN service that hangs has its engine stopped.\r\n  Android gives the core a quarter of\r\n  the device's RAM, so connections no longer lag. The Quick toggle and always-on VPN start the\r\n  core properly.\r\n\r\n## Downloads\r\n\r\n**Download based on your OS:**\r\n\r\n**بر اساس سیستم عامل خود دانلود کنید:**\r\n\r\n<!-- ASSETS:BEGIN -->\r\n<table>\r\n<thead><tr><th>OS</th><th>Download</th><th>Downloads</th><th>VirusTotal</th></tr></thead>\r\n<tbody>\r\n<tr>\r\n  <td rowspan=\"3\">Windows</td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.9.15/Hiddify-Windows-Setup-x64.Msix\"><img src=\"https://img.shields.io/badge/MSIX-x64-0078d7?logo=windows\" alt=\"MSIX x64\"></a></td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.9.15/Hiddify-Windows-Setup-x64.Msix\"><img src=\"https://img.shields.io/github/downloads/hiddify/hiddify-app/v5.9.15/Hiddify-Windows-Setup-x64.Msix?displayAssetName=false&label=%20&color=green&v=17951779828099\" alt=\"downloads\"></a></td>\r\n  <td><a href=\"https://www.virustotal.com/gui/file/9a406fd860c1d491d6ea5d6a2acff71b6263a1b7e8db64f874a86340d9ca8902/detection\"><img src=\"https://img.shields.io/badge/%E2%9C%85%20Safe%3A%200%2F63-brightgreen\" alt=\"VirusTotal\"></a></td>\r\n</tr>\r\n<tr>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.9.15/Hiddify-Windows-Setup-x64.exe\"><img src=\"https://img.shields.io/badge/Setup-x64-2d7d9a?logo=windows\" alt=\"Setup x64\"></a></td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.9.15/Hiddify-Windows-Setup-x64.exe\"><img src=\"https://img.shields.io/github/downloads/hiddify/hiddify-app/v5.9.15/Hiddify-Windows-Setup-x64.exe?displayAssetName=false&label=%20&color=green&v=17951779828099\" alt=\"downloads\"></a></td>\r\n  <td><a href=\"https://www.virustotal.com/gui/file/817bf87f2d0c268f4b5c1169784ac19c5acd60d59a006e928a8c44b685997164/detection\"><img src=\"https://img.shields.io/badge/%E2%9C%85%20Safe%3A%200%2F69-brightgreen\" alt=\"VirusTotal\"></a></td>\r\n</tr>\r\n<tr>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.9.15/Hiddify-Windows-Portable-x64.zip\"><img src=\"https://img.shields.io/badge/Portable-x64-67b7d1?logo=windows\" alt=\"Portable x64\"></a></td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.9.15/Hiddify-Windows-Portable-x64.zip\"><img src=\"https://img.shields.io/github/downloads/hiddify/hiddify-app/v5.9.15/Hiddify-Windows-Portable-x64.zip?displayAssetName=false&label=%20&color=green&v=17951779828099\" alt=\"downloads\"></a></td>\r\n  <td><a href=\"https://www.virustotal.com/gui/file/3b1b15ba141dfc6103a6f0b11c11c845bcb3aad6fb0644376433006a31c9bcef/detection\"><img src=\"https://img.shields.io/badge/%E2%9C%85%20Safe%3A%200%2F65-brightgreen\" alt=\"VirusTotal\"></a></td>\r\n</tr>\r\n<tr>\r\n  <td rowspan=\"4\">Android</td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/releases/download/v5.9.15/Hiddify-Android-universal.apk\"><img src=\"https://img.shields.io/badge/APK-Universal-044d29?logo=android\" alt=\"APK Universal\"></a></td>\r\n  <td><a href=\"https://github.com/hiddify/hiddify-app/rele",
     "downloads": [
       {
         "label": "Windows x64 · 绿色版 ZIP",
         "platform": "Windows",
         "portable": true,
         "file": "Hiddify-Windows-Portable-x64.zip",
-        "size": 66721622,
-        "sha256": "b4579d6a9a7b0bb0dedfd2e462ab4cfefc53ec25b56f287cca5edb435f01f627",
-        "official": "https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Windows-Portable-x64.zip",
+        "size": 70480719,
+        "sha256": "3b1b15ba141dfc6103a6f0b11c11c845bcb3aad6fb0644376433006a31c9bcef",
+        "official": "https://github.com/hiddify/hiddify-app/releases/download/v5.9.15/Hiddify-Windows-Portable-x64.zip",
         "mirrors": []
       },
       {
@@ -6174,9 +6174,9 @@
         "platform": "Windows",
         "portable": false,
         "file": "Hiddify-Windows-Setup-x64.exe",
-        "size": 48917072,
-        "sha256": "7c71bca78a8307b5961ed2f1121d23fa94db6fed2c866af9eb5be375c0b43873",
-        "official": "https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Windows-Setup-x64.exe",
+        "size": 51208848,
+        "sha256": "817bf87f2d0c268f4b5c1169784ac19c5acd60d59a006e928a8c44b685997164",
+        "official": "https://github.com/hiddify/hiddify-app/releases/download/v5.9.15/Hiddify-Windows-Setup-x64.exe",
         "mirrors": []
       },
       {
@@ -6184,9 +6184,9 @@
         "platform": "Android",
         "portable": false,
         "file": "Hiddify-Android-universal.apk",
-        "size": 178026791,
-        "sha256": "d22cea2205863248c813d3a620dd1211d98ae2cb6e448f86deb5c191e9c6a992",
-        "official": "https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Android-universal.apk",
+        "size": 187973042,
+        "sha256": "860f0855a46b218eb5d4c2b940dc2a067ab49857dfa145a6210fc205e063c259",
+        "official": "https://github.com/hiddify/hiddify-app/releases/download/v5.9.15/Hiddify-Android-universal.apk",
         "mirrors": []
       },
       {
@@ -6194,9 +6194,9 @@
         "platform": "macOS",
         "portable": false,
         "file": "Hiddify-MacOS.dmg",
-        "size": 116685795,
-        "sha256": "3e8c1d1448f861e5594910e168f11dc39e52ecfb68c03d445f9fb1721032992e",
-        "official": "https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-MacOS.dmg",
+        "size": 125188029,
+        "sha256": "5d095a63af1130535f3f2dc50342242df2c2ea5bc153151c8ef79923cc6cbd3f",
+        "official": "https://github.com/hiddify/hiddify-app/releases/download/v5.9.15/Hiddify-MacOS.dmg",
         "mirrors": []
       }
     ],
