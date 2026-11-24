@@ -150,60 +150,60 @@
     "mirrored": false
   },
   "localsend": {
-    "version": "1.18.2",
-    "released": "2026-08-21",
+    "version": "1.19.0",
+    "released": "2026-11-24",
     "verified": "2026-11-24",
-    "release_url": "https://github.com/localsend/localsend/releases/tag/v1.18.2",
-    "changelog": "This release fixes compatibility issues with 1.17.0 and earlier.\r\nNote: The Windows binaries have been updated to include a signature.\r\n\r\n- feat: drag and drop files into the \"Receive via link\" browser page\r\n- feat(desktop): allow customizing the web share pages by placing HTML files in a `web` folder next to the executable\r\n- feat(cli): add version info to the Windows executable\r\n- feat(linux): set actual version in the AppImage\r\n- security: do not follow HTTP redirects sent by peers\r\n- fix: restore compatibility with 1.17.0 and earlier versions on missing multicast networks\r\n- fix: devices running 1.17.0 and earlier could not add 1.18.0+ device as favorite\r\n- fix: ignore proxies, fixes \"TLS info not found\" when a system proxy (e.g. Shadowrocket) is enabled\r\n- fix: automatically restart the HTTP / multicast server when it dies or when the app resumes\r\n- fix: drag and drop with a mix of folders and files\r\n- fix: during transfer, add bottom padding when Advanced is open (@Chethan616)\r\n- fix: do not crash at startup when the executable path cannot be resolved (@Shlomo116)\r\n- fix(android): ignore unknown or invalid file modification times when reading files\r\n- i18n: add Armenian",
+    "release_url": "https://github.com/localsend/localsend/releases/tag/v1.19.0",
+    "changelog": "This release also added the rpm package for the first time (e.g. for Fedora users).\r\nPlease note a breaking change in the CLI API when sending files.\r\n\r\n- feat: make sending checksums opt-in (@Tienisto)\r\n- feat: format timestamps using system date and time settings (@ShlomoCode)\r\n- feat: add keyboard shortcuts to accept or decline incoming transfers (@Tienisto)\r\n- feat: restore hashtag codes for connecting to devices (@Tienisto)\r\n- feat: show an HTTPS badge in the device list tile when encryption is enabled (@Tienisto)\r\n- feat: show inbound/outbound reachability per device to help diagnose firewall issues (@Tienisto)\r\n- feat: add a copy button to the log screens (@ShlomoCode)\r\n- feat: add a Cancel button to the device name dialog (@ShlomoCode)\r\n- feat: group the changelog by release and type, and show what's new after an update (@ShlomoCode)\r\n- feat(cli): send text using --text, including input from stdin (@Tienisto)\r\n- feat(cli)!: replace `--file` with the `send` command for sending files and directories (@otanim)\r\n- feat(cli): add builds for Alpine Linux (@julianxhokaxhiu)\r\n- feat(desktop): add an option to keep the LocalSend window above other windows (@ShlomoCode)\r\n- feat(macos): use native window restoration to keep partially off-screen windows near their saved position (@ShlomoCode)\r\n- feat(linux): support delta updates for the AppImage (@ShlomoCode)\r\n- feat(linux): add x86_64 rpm package to release workflow (@basil)\r\n- feat(linux): add software rendering toggle with automatic fallback after a rendering crash (@Tienisto)\r\n- security: limit simultaneous incoming connections to prevent resource exhaustion (@Tienisto)\r\n- security: prevent senders without a client certificate from impersonating favorite devices while sharing via link (@Tienisto)\r\n- security(cli): sanitize remote text before displaying it in the terminal (@Tienisto)\r\n- perf: reduce memory use during file transfers (@luojiyin1987)\r\n- fix: strip request URLs from HTTP client errors so the PIN is not exposed (@Tienisto)\r\n- fix: prevent a startup crash with legacy Quick Save settings (@ShlomoCode)\r\n- fix: show the real error when a file cannot be read while sending, instead of transferring it as an empty file (@leopalmieri-spec)\r\n- fix: bound inline text previews to prevent large-message freezes (@kneeyard126)\r\n- fix: rank link-local IPv6 channels after IPv4 when choosing an address to dial (@Tienisto)\r\n- fix: limit connection setup for pinned HTTP clients to 5 seconds (@Tienisto)\r\n- fix: let cancellation interrupt reading prepare-upload and upload responses (@Tienisto)\r\n- fix: stop a send session that was cancelled while prepare-upload was answering (@Tienisto)\r\n- fix: avoid directory name collisions when receiving files (@ShlomoCode)\r\n- fix: accept PINs containing special characters (@ShlomoCode)\r\n- fix: release wakelock when a transfer fails (@bunnysayzz)\r\n- fix: normalize filenames to NFC so Korean jamo display correctly on Windows (@GhagSagar23)\r\n- fix: show the actual save location path for receiving files (@ShlomoCode)\r\n- fix: allow scrolling in the edit favorites dialog (@samdelong)\r\n- fix: validate the port when adding or editing a favorite device (@ShlomoCode)\r\n- fix: show an error when web share translations fail to load (@ShlomoCode)\r\n- fix: keep device name unchanged when cancelling the dialog (@ShlomoCode)\r\n- fix: close favorite editor after confirming changes (@ShlomoCode)\r\n- fix: pressing Enter now confirms file renaming (@ShlomoCode)\r\n- fix: avoid adding a trailing dot when renaming files without an extension (@ShlomoCode)\r\n- fix: hide unsupported troubleshooting options (@ShlomoCode)\r\n- fix: apply zero-padding when numbering renamed files (@A-M-D-R-3-W)\r\n- fix: avoid division by zero on the progress page when a file fails in the millisecond the session starts (@Tienisto)\r\n- fix: keep the message input dialog usable with large text and an open keyboard (@ArtemChikolaev)\r\n- fix: preserve the extension case and leading dot when numbering duplicate file names (@lingyicute)\r\n- fix(cli): cancel pending web shortcuts when pressing non-character keys (@ShlomoCode)\r\n- fix(desktop): respect custom error-403.html even when web sharing is disabled (@Tienisto)\r\n- fix(mobile): prevent incomplete cache cleanup (@ShlomoCode)\r\n- fix(android): allow receiving files with the same name after moving them to Trash (@ShlomoCode)\r\n- fix(android): preserve file modification times when saving media to the gallery (@ShlomoCode)\r\n- fix(android): keep file names when saving to a custom folder (@Tienisto)\r\n- fix(android): can't open files with unrecognized extensions (@ShlomoCode)\r\n- fix(android): avoid display flashes when opening or closing the app on some Android TVs (@ShlomoCode)\r\n- fix(android): use the phone's configured name or model when selecting \"Use system name\" in settings (@ShlomoCode)\r\n- fix(android): show an error when loading the installed apps list fails (@ShlomoCode)\r\n- fix(ios): show LocalSend in the share menu on iOS 14 and 15 (@ShlomoCode)\r\n- fix(ios): send shared links as text instead of two TXT files (@ShlomoCode)\r\n- fix(macos): prevent intermittent MissingPluginException during startup (@ShlomoCode)\r\n- fix(macos): file sharing via Share Extension doesn't work in DMG builds (@ShlomoCode, @vdmkotai)\r\n- fix(macos): make Command+W close the window reliably (@ShlomoCode)\r\n- fix(windows): fix LocalSend not opening after installation via WinGet (@ShlomoCode)\r\n- fix(windows): correct the MSIX helper architecture in ARM64 builds (@Tienisto)\r\n- fix(windows): sign the embedded uninstaller as well as the installer (@Tienisto)\r\n- fix(windows): close the running app and remove autostart, the Send to shortcut and firewall rules on uninstall (@Tienisto)\r\n- fix(windows): show the LocalSend icon in the Share Sheet and \"Share with\" menu (@ShlomoCode)\r\n- fix(linux): prevent .deb startup failure when legacy AppIndicator is installed (@Tienisto)\r\n- fix(linux): load bundled Rust library relative to the executable (@ShlomoCode)\r\n- fix(",
     "downloads": [
       {
         "label": "Windows x64 · 安装程序",
         "platform": "Windows",
         "portable": false,
-        "file": "LocalSend-1.18.2-windows-x86-64.exe",
-        "size": 19901144,
-        "sha256": "122783e6abb4b0a1f1603d896f46a03aeda3004479ebd3175cab4ddac6b60919",
-        "official": "https://github.com/localsend/localsend/releases/download/v1.18.2/LocalSend-1.18.2-windows-x86-64.exe",
+        "file": "LocalSend-1.19.0-windows-x86-64.exe",
+        "size": 19907936,
+        "sha256": "0df76352124634c8d998867b813cb5ae96613f4a3b6e52d8d3e497dba63c01e0",
+        "official": "https://github.com/localsend/localsend/releases/download/v1.19.0/LocalSend-1.19.0-windows-x86-64.exe",
         "mirrors": []
       },
       {
         "label": "Windows x64 · 便携 ZIP",
         "platform": "Windows",
         "portable": true,
-        "file": "LocalSend-1.18.2-windows-x86-64.zip",
-        "size": 26113764,
-        "sha256": "737aab1829d901e1d798cddd1e5fdc06ba9dfcc9ea50cfe3805e047005d5e71a",
-        "official": "https://github.com/localsend/localsend/releases/download/v1.18.2/LocalSend-1.18.2-windows-x86-64.zip",
+        "file": "LocalSend-1.19.0-windows-x86-64.zip",
+        "size": 26092132,
+        "sha256": "1b131a225e30bb46c7b4ffee23577716b2d0605108aded27899375033ff69abc",
+        "official": "https://github.com/localsend/localsend/releases/download/v1.19.0/LocalSend-1.19.0-windows-x86-64.zip",
         "mirrors": []
       },
       {
         "label": "macOS · 通用",
         "platform": "macOS",
         "portable": false,
-        "file": "LocalSend-1.18.2.dmg",
-        "size": 52700247,
-        "sha256": "126860d56f6f49b11845f601aac51de27a49b16d2b48102415da91e0e37e5155",
-        "official": "https://github.com/localsend/localsend/releases/download/v1.18.2/LocalSend-1.18.2.dmg",
+        "file": "LocalSend-1.19.0.dmg",
+        "size": 52878051,
+        "sha256": "5645789cc976298b893267c025f0945d8673baed3bb302a201eb8b96991e43d4",
+        "official": "https://github.com/localsend/localsend/releases/download/v1.19.0/LocalSend-1.19.0.dmg",
         "mirrors": []
       },
       {
         "label": "Linux · AppImage",
         "platform": "Linux",
         "portable": true,
-        "file": "LocalSend-1.18.2-linux-x86-64.AppImage",
-        "size": 66471104,
-        "sha256": "19f21613d1834f6caa69517113670461a3f10b80a2a315f86548c0663d9c0aaf",
-        "official": "https://github.com/localsend/localsend/releases/download/v1.18.2/LocalSend-1.18.2-linux-x86-64.AppImage",
+        "file": "LocalSend-1.19.0-linux-x86-64.AppImage",
+        "size": 61752512,
+        "sha256": "e72ce88383a32beec9701583c22e298037f7683f9590cea7b3a281f58c2ec2b3",
+        "official": "https://github.com/localsend/localsend/releases/download/v1.19.0/LocalSend-1.19.0-linux-x86-64.AppImage",
         "mirrors": []
       },
       {
         "label": "Android · arm64 APK",
         "platform": "Android",
         "portable": false,
-        "file": "LocalSend-1.18.2-android-arm64v8.apk",
-        "size": 46558706,
-        "sha256": "82ec3568fba2aa5295b9aae8b76f701d7a4703d86b9f8bad749472038fbaeab3",
-        "official": "https://github.com/localsend/localsend/releases/download/v1.18.2/LocalSend-1.18.2-android-arm64v8.apk",
+        "file": "LocalSend-1.19.0-android-arm64v8.apk",
+        "size": 46760593,
+        "sha256": "bdc69f794ef493dbcf437f2ba8d959ece1712eff50f3f6274970f11c5bdb1bce",
+        "official": "https://github.com/localsend/localsend/releases/download/v1.19.0/LocalSend-1.19.0-android-arm64v8.apk",
         "mirrors": []
       }
     ],
@@ -610,20 +610,20 @@
     "mirrored": false
   },
   "wechat": {
-    "version": "4.2.0.53",
-    "released": "2026-11-16",
+    "version": "4.2.1.9",
+    "released": "2026-11-24",
     "verified": "2026-11-24",
-    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/WeChat/Universal/4.2.0.53",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/WeChat/Universal/4.2.1.9",
     "changelog": "",
     "downloads": [
       {
         "label": "Windows x64 · 官方安装包",
         "platform": "Windows",
         "portable": false,
-        "file": "WeChatWin_4.2.0.exe",
+        "file": "WeChatWin_4.2.1.exe",
         "size": null,
-        "sha256": "a463110fed2dad8f27a313a1e5118cfbbe8b9de2b9296db8015a496e07191052",
-        "official": "https://dldir1v6.qq.com/weixin/Universal/Windows/WeChatWin_4.2.0.exe",
+        "sha256": "3e9fc1c0f90a9fb964ba47496f0f52a3ba0c4b839f496912e2a1776421417761",
+        "official": "https://dldir1v6.qq.com/weixin/Universal/Windows/WeChatWin_4.2.1.exe",
         "mirrors": []
       }
     ],
@@ -704,20 +704,20 @@
     "source": "winget"
   },
   "feishu": {
-    "version": "8.6.13",
-    "released": "2026-11-12",
+    "version": "8.7.16",
+    "released": "2026-11-23",
     "verified": "2026-11-24",
-    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/Feishu/8.6.13",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/b/ByteDance/Feishu/8.7.16",
     "changelog": "",
     "downloads": [
       {
         "label": "Windows x64 · 官方安装包",
         "platform": "Windows",
         "portable": false,
-        "file": "Feishu-win32_x64-8.6.13-signed.exe",
+        "file": "Feishu-win32_x64-8.7.16-signed.exe",
         "size": null,
-        "sha256": "f2433c086d981486cf043c62d29e7b350697a011a12dac517b8721cd2301320e",
-        "official": "https://sf3-cn.feishucdn.com/obj/ee-appcenter/66bd5227/Feishu-win32_x64-8.6.13-signed.exe",
+        "sha256": "c0e7c58643b7242833afacb4d3d5a66987a124bc34ab72b77bc347a564bd5545",
+        "official": "https://sf3-cn.feishucdn.com/obj/ee-appcenter/cbb969d9/Feishu-win32_x64-8.7.16-signed.exe",
         "mirrors": []
       }
     ],
@@ -746,10 +746,10 @@
     "source": "winget"
   },
   "chrome": {
-    "version": "158.0.8127.37",
-    "released": "2026-11-11",
+    "version": "158.0.8127.89",
+    "released": "2026-11-23",
     "verified": "2026-11-24",
-    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/Chrome/158.0.8127.37",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/Chrome/158.0.8127.89",
     "changelog": "",
     "downloads": [
       {
@@ -758,7 +758,7 @@
         "portable": false,
         "file": "googlechromestandaloneenterprise64.msi",
         "size": null,
-        "sha256": "3a6e02f372f35dd9f97b4109440c5622e02db4c42406a7fd99d08145a5276ba0",
+        "sha256": "aa958c31c82a744eba52e1354bf2d97ae3b413d5ecd14125bdf7db1b1f44c99b",
         "official": "https://dl.google.com/dl/chrome/install/googlechromestandaloneenterprise64.msi",
         "mirrors": []
       }
@@ -900,20 +900,20 @@
     "mirrored": false
   },
   "qbittorrent": {
-    "version": "5.3.0",
-    "released": "2026-10-20",
+    "version": "5.3.1",
+    "released": "2026-11-24",
     "verified": "2026-11-24",
-    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/qBittorrent/qBittorrent/5.3.0",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/q/qBittorrent/qBittorrent/5.3.1",
     "changelog": "",
     "downloads": [
       {
         "label": "Windows x64 · 安装包",
         "platform": "Windows",
         "portable": false,
-        "file": "qbittorrent_5.3.0_x64_setup.exe",
+        "file": "qbittorrent_5.3.1_x64_setup.exe",
         "size": null,
-        "sha256": "aff5b3bdc00d6e5773d6099ba30f9696dd3dfd1669ab0f64ce5c4e7168486436",
-        "official": "https://sourceforge.net/projects/qbittorrent/files/qbittorrent-win32/qbittorrent-5.3.0/qbittorrent_5.3.0_x64_setup.exe/download",
+        "sha256": "836d0f415fdf195cb861a3bc88ac603d2bf4480f78a334d512ad0e458e7c8db5",
+        "official": "https://sourceforge.net/projects/qbittorrent/files/qbittorrent-win32/qbittorrent-5.3.1/qbittorrent_5.3.1_x64_setup.exe/download",
         "mirrors": []
       }
     ],
@@ -1488,20 +1488,20 @@
     "mirrored": false
   },
   "optimizer": {
-    "version": "17.0",
-    "released": "2026-11-12",
+    "version": "17.1",
+    "released": "2026-11-24",
     "verified": "2026-11-24",
-    "release_url": "https://github.com/hellzerg/optimizer/releases/tag/17.0",
-    "changelog": "## [17.0] - 2026-11-12\r\n- New: Complete visual redesign with a modern Fluent look\r\n- New: Theme engine with dark and light modes and accent color support\r\n- New: Modern typography\r\n- New: Startup items redesigned as cards with search, filtering\r\n- New: Startup items now show and toggle their Task Manager enabled/disabled state\r\n- New: Modern Apps are now listed and removed via the WinRT PackageManager API\r\n- New: Disk Activity tool\r\n- Improved: Apps feed links updated, discontinued apps removed\r\n- Improved: Newtonsoft.Json updated to 13.0.4\r\n- Removed: Safe-mode Defender disable/enable scripts (`/disabledefender`, `/restart=disabledefender`, `/restart=enabledefender`, \"Restart & Disable Defender\" button and `DisableDefender`/`EnableDefender` template restart types), because they caused issues with Windows Security\r\n\r\n## Verify your app using SHA256\r\nEEB367F0B8C651C10934D985BFA53A94CA56F7C6BFF39A44D9BD944514A6DAFB",
+    "release_url": "https://github.com/hellzerg/optimizer/releases/tag/17.1",
+    "changelog": "## [17.1] - 2026-11-24\r\n- Improved: Various bug fixes and reliability improvements\r\n- Removed: Completely removed the ability to disable Defender and Security on all Windows versions",
     "downloads": [
       {
         "label": "Windows · 单文件 EXE",
         "platform": "Windows",
         "portable": true,
-        "file": "Optimizer-17.0.exe",
-        "size": 2927616,
-        "sha256": "eeb367f0b8c651c10934d985bfa53a94ca56f7c6bff39a44d9bd944514a6dafb",
-        "official": "https://github.com/hellzerg/optimizer/releases/download/17.0/Optimizer-17.0.exe",
+        "file": "Optimizer-17.1.exe",
+        "size": 2954752,
+        "sha256": "0d003dcab6d347ec5cf1b90e8b37796e83452d49354594fe3e11d74c259b4ab7",
+        "official": "https://github.com/hellzerg/optimizer/releases/download/17.1/Optimizer-17.1.exe",
         "mirrors": []
       }
     ],
@@ -2199,20 +2199,20 @@
     "source": "winget"
   },
   "dbeaver": {
-    "version": "26.2.5",
-    "released": "2026-11-15",
+    "version": "26.2.5.2",
+    "released": "2026-11-24",
     "verified": "2026-11-24",
-    "release_url": "https://github.com/dbeaver/dbeaver/releases/tag/26.2.5",
-    "changelog": "                - AI Assistant:\r\n                    - Added Ollama support for running local AI models\r\n                    - Selecting an AI profile in chat now saves it as the user's default for new conversations\r\n                    - Canceled responses now retain reported token usage and show N/A when usage is unavailable instead of zero counts\r\n                    - Fixed AI Chat remaining blank or waiting indefinitely when chat history initialization fails\r\n                    - Fixed conversation timestamps shifting after restarting DBeaver\r\n                    - Clearing Temperature now uses the AI provider's server default instead of sending a numeric value\r\n                    - Fixed AI Chat remaining on \"Waiting for response...\" after a tool or follow-up request fails\r\n                    - Generated AI metadata now filters out objects and relationships outside the configured context scope\r\n                    - Added per-connection AI metadata consent and scope settings\r\n                    - Added a connection picker to AI Chat, including disconnected connections without chat history\r\n                - SQL Editor:\r\n                    - Added syntax analysis, autocomplete, and symbol information for supported procedure, function, trigger, and anonymous-block definitions\r\n                    - Added explicit panel placement choices to tab context menus and the Panels menu\r\n                    - Fixed empty detached result tabs when a statement returns multiple result sets (thanks to @fizzbeom)\r\n                    - Restored foreign-key join conditions and column suggestions after an empty JOIN ON clause followed by WHERE, GROUP BY, or another JOIN\r\n                    - Fixed autocomplete requests being lost while background parsing is still running\r\n                    - Fixed text zoom in block selection mode (thanks to @Antoine2oo5)\r\n                    - Reduced memory use when processing SQL scripts with positional parameters and dollar-quoted strings (thanks to @cypherbits)\r\n                    - Fixed an intermittent error when selecting autocomplete suggestions after their information popup closes\r\n                - Data Editor:\r\n                    - Calculation panel results now follow Data Formats settings instead of always rounding to three decimal places (thanks to @yuki-nakano-520)\r\n                    - Restoring a cell's original value before saving now clears its pending change (thanks to @yuki-nakano-520)\r\n                    - Fixed expanded arrays being truncated in multi-record mode when selected rows contain arrays of different lengths\r\n                - Diagram:\r\n                    - Corrected Crow's Foot notation to show 0..n on the many side of non-unique foreign-key relationships (thanks to @adi567sin-beep)\r\n                - Data transfer:\r\n                    - Added independent CSV header quoting options: always, when necessary, and never\r\n                    - Improved target-table mapping performance for schemas containing many objects\r\n                - Connectivity:\r\n                    - Connection names can now be edited directly on the main connection settings page\r\n                    - Fixed an error when selecting a CData driver without an internet connection on Windows\r\n                    - Fixed a secondary error hiding the original failure when connection settings cannot be initialized\r\n                    - Aligned connection wizard sections and moved network configuration hints inside their corresponding sections\r\n                    - Fixed the first character of connection names being clipped in the Windows dark theme\r\n                - Task Management:\r\n                    - Added project-reference remapping for additional task types when importing a project under a different name\r\n                - Navigator:\r\n                    - Database object search now connects to a data source only when its node is expanded, avoiding connection and driver-download prompts while browsing the list\r\n                - Security:\r\n                    - Added an optional, remembered \"Sanitize logs\" setting when collecting diagnostic information, without changing the original logs\r\n                    - AI account tokens now use OS-native secure storage when an available provider can be selected\r\n                    - Hardened driver and launcher archive extraction against files being written outside their intended directories (CWE-22)\r\n                    - Fixed selection of native secure storage providers on Windows and Linux\r\n                - Product configuration:\r\n                    - Added Product Configuration to Preferences, with access to settings for hidden optional features\r\n                - Miscellaneous:\r\n                    - Replaced low-resolution overlay icons with scalable vector icons\r\n                    - Fixed first-launch workspace initialization when the application's working directory is not writable\r\n                    - Fixed tree headers and scrollbar areas retaining the previous theme's colors on Windows\r\n                    - Added background cleanup of installation caches from previous versions that have not been modified for more than a week\r\n                    - Fixed clipped text in the Tip of the Day dialog on macOS\r\n                    - Updated remaining Eclipse-provided menu and view icons to use DBeaver icons\r\n                    - Fixed vertical dialog tab backgrounds in the light theme\r\n                    - The splash screen now displays startup progress details\r\n                    - Applied the configured desktop font consistently across additional controls and prevented packed table and tree headers from being truncated\r\n                - New drivers:\r\n                    - Added Cloudflare D1 support\r\n                - Databases:\r\n                    - ClickHouse:\r\n                        - Added support for editing nested Map, Tuple, and Array values\r\n                        - Restored val",
+    "release_url": "https://github.com/dbeaver/dbeaver/releases/tag/26.2.5.2",
+    "changelog": "\n                      Updated Java runtime to 25.0.5.1 to address the Java4Shell vulnerability (CVE-2026-114938)\n                    ",
     "downloads": [
       {
         "label": "Windows x64 · 绿色版 ZIP",
         "platform": "Windows",
         "portable": true,
-        "file": "dbeaver-ce-26.2.5-windows-x86_64.zip",
-        "size": 126280946,
-        "sha256": "6d137b716061ddd9d1b160ef47a23ab4755d0d393d427809e9a352a351abde4a",
-        "official": "https://github.com/dbeaver/dbeaver/releases/download/26.2.5/dbeaver-ce-26.2.5-windows-x86_64.zip",
+        "file": "dbeaver-ce-26.2.5.2-windows-x86_64.zip",
+        "size": 126292719,
+        "sha256": "c18ce1f6b7bde503a4532eb7a4c5120a41d8546776d45303d7bd1dce806667ea",
+        "official": "https://github.com/dbeaver/dbeaver/releases/download/26.2.5.2/dbeaver-ce-26.2.5.2-windows-x86_64.zip",
         "mirrors": []
       }
     ],
@@ -2383,20 +2383,20 @@
     "source": "winget"
   },
   "ollama": {
-    "version": "0.40.17",
-    "released": "2026-11-10",
+    "version": "0.40.18",
+    "released": "2026-11-24",
     "verified": "2026-11-24",
-    "release_url": "https://github.com/ollama/ollama/releases/tag/v0.40.17",
-    "changelog": "## Inkling 2 Mini\r\n[Inkling 2 Mini](https://ollama.com/library/inkling-2-mini) from Thinking Machines is a 26B parameter model with 5.4B active.\r\n\r\nIts looped layers give it more computation per token than its size suggests, and it still fits on a Mac at about 20GB. It handles text and images, tool calls, and thinking, and scores 79.2% on SWE-Bench Verified).\r\n\r\n```\r\n  ollama run inkling-2-mini\r\n```\r\n\r\nNote: inkling-2-mini is supported on Apple silicon only in this release.  PC support will follow in an upcoming release.\r\n\r\n ## What's Changed\r\n- `ollama launch claude` supports Claude Code's deferred tool loading, so MCP tools are loaded when needed instead of all at\r\nonce\r\n- Ollama on Apple silicon now serves multiple requests at once.\r\n- `ollama launch opencode` sets thinking options from the model's metadata\r\n- `ollama launch pi` refreshes Pi's model list after sign-in and passes along prompt arguments\r\n- `ollama launch chatgpt --restore` asks before switching an active profile and preserves existing settings and chat history;\r\n quitting ChatGPT yourself now lets it exit through its own quit prompt\r\n- Running `ollama` with no arguments in a non-interactive shell prints help instead of erroring\r\n- Ctrl+C or Ctrl+G while in a multiline `\"\"\"` block leaves multiline mode instead of swallowing the next line\r\n- Changing the context shift setting no longer reloads the model\r\n- Vulkan now uses mmap for integrated GPUs, fixing `Failed to allocate pinned memory` load failures on shared-memory GPUs\r\n- On Windows iGPUs, partially offloaded models no longer fail to allocate the KV cache\r\n- Tool definitions passed through the API keep JSON schema keywords Ollama doesn't model instead of dropping them\r\n- Disabling thinking now maps to the model's lowest supported reasoning level rather than being ignored\r\n- Source builds can use prebuilt MLX-C and XGrammar binaries\r\n\r\n    **Full Changelog**: https://github.com/ollama/ollama/compare/v0.40.16...v0.40.17-rc3",
+    "release_url": "https://github.com/ollama/ollama/releases/tag/v0.40.18",
+    "changelog": "## What's Changed\r\n* mlx: fuse Inkling residual mixing on Metal by @dhiltgen in https://github.com/ollama/ollama/pull/19808\r\n* mlxrunner: share tensor helpers and model setup across architectures by @jaingaurav in https://github.com/ollama/ollama/pull/19805\r\n* llama.cpp: version bump b12651 + remove jetpack5 support by @pdevine in https://github.com/ollama/ollama/pull/19865\r\n* inkling2: faster Metal decode, prefill and draft rounds by @dhiltgen in https://github.com/ollama/ollama/pull/19843\r\n\r\n\r\n**Full Changelog**: https://github.com/ollama/ollama/compare/v0.40.17...v0.40.18-rc0",
     "downloads": [
       {
         "label": "Windows · 安装包",
         "platform": "Windows",
         "portable": false,
         "file": "OllamaSetup.exe",
-        "size": 1857946272,
-        "sha256": "2eeb9ff7ef83902b5d48562dbaf0af5489829c3d52435fb8067ddad23cb33c65",
-        "official": "https://github.com/ollama/ollama/releases/download/v0.40.17/OllamaSetup.exe",
+        "size": 1953587080,
+        "sha256": "ad2bb47aa969b21cf8dd81b2d9f9a6d5030270ed242ef55087118c37c510acc2",
+        "official": "https://github.com/ollama/ollama/releases/download/v0.40.18/OllamaSetup.exe",
         "mirrors": []
       },
       {
@@ -2404,9 +2404,9 @@
         "platform": "Windows",
         "portable": true,
         "file": "ollama-windows-amd64.zip",
-        "size": 1618522644,
-        "sha256": "3dd80f6e3a9699f2eadf4ac418f00529cee594df9557541806eda1f1f3f5588a",
-        "official": "https://github.com/ollama/ollama/releases/download/v0.40.17/ollama-windows-amd64.zip",
+        "size": 1717307988,
+        "sha256": "ca97292ac1e9acc77fcf473bb2741fa6acd12e3798f261b419680068b7cc4c16",
+        "official": "https://github.com/ollama/ollama/releases/download/v0.40.18/ollama-windows-amd64.zip",
         "mirrors": []
       }
     ],
@@ -2977,20 +2977,20 @@
     "mirrored": false
   },
   "neovide": {
-    "version": "0.17.3",
-    "released": "2026-11-20",
+    "version": "0.17.4",
+    "released": "2026-11-24",
     "verified": "2026-11-24",
-    "release_url": "https://github.com/neovide/neovide/releases/tag/0.17.3",
-    "changelog": "<h2 align=\"center\">What's Changed</h2>\r\n\r\n<h3 align=\"center\">Screenshot of Neovide using the new system tabs UI on macOS</h3>\r\n\r\n<img width=\"1280\" height=\"830\" alt=\"photo_2026-11-20 04 05 03\" src=\"https://github.com/user-attachments/assets/ba9aa50d-e6bc-428e-89b7-b2819b144f71\" />\r\n\r\n* chore: raise minimum supported macOS version to 12 by @falcucci in https://github.com/neovide/neovide/pull/3633\r\n* bump nvim-rs 0.10 by @falcucci in https://github.com/neovide/neovide/pull/3637\r\n* feat: update support for macOS inline system tabs by @falcucci in https://github.com/neovide/neovide/pull/3639\r\n* system-tabs: make it eligible for transparent/full frames only by @falcucci in https://github.com/neovide/neovide/pull/3642\r\n* fix: finish detached UI sessions without waiting for EOF by @falcucci in https://github.com/neovide/neovide/pull/3643\r\n\r\nNeovide will always be free and open-source.\r\n\r\n[Sponsorship](https://github.com/sponsors/neovide) is highly appreciated.\r\n\r\n\r\n**Full Changelog**: https://github.com/neovide/neovide/compare/0.17.2...0.17.3",
+    "release_url": "https://github.com/neovide/neovide/releases/tag/0.17.4",
+    "changelog": "<h2 align=\"center\">What's Changed</h2>\r\n\r\n<p align=\"center\">At this release we have improved the macOS transparency/blur for system tabs and the native scrollbar.</p>\r\n\r\n\r\n<div align=\"center\">\r\n    <video src=\"https://github.com/user-attachments/assets/ee396524-0e88-4217-a78d-b76b9e26c064\" width=\"600\" controls></video>\r\n</div>\r\n\r\n\r\n\r\n* fix: soften system tab glass in macOS by @falcucci in https://github.com/neovide/neovide/pull/3649\r\n* fix: let macOS scrollbars follow the rendered background alpha by @falcucci in https://github.com/neovide/neovide/pull/3650\r\n\r\n\r\nNeovide will always be free and open-source.\r\n\r\n[Sponsorship](https://github.com/sponsors/neovide) is highly appreciated.\r\n\r\n\r\n\r\n**Full Changelog**: https://github.com/neovide/neovide/compare/0.17.3...0.17.4",
     "downloads": [
       {
         "label": "Windows x64 · 绿色版 ZIP",
         "platform": "Windows",
         "portable": true,
         "file": "neovide-windows-x86_64.zip",
-        "size": 12727116,
-        "sha256": "3139f27989ed6e8ee7b41b1908be60397a73f91f77d209b6a2bc2cb010123b43",
-        "official": "https://github.com/neovide/neovide/releases/download/0.17.3/neovide-windows-x86_64.zip",
+        "size": 12728719,
+        "sha256": "4916d5988a9dfc93636f35d421faaf945083d33accb40f3e39ce9ff8182c6012",
+        "official": "https://github.com/neovide/neovide/releases/download/0.17.4/neovide-windows-x86_64.zip",
         "mirrors": []
       }
     ],
@@ -4350,30 +4350,30 @@
     "mirrored": false
   },
   "podman-desktop": {
-    "version": "1.30.7",
-    "released": "2026-11-13",
+    "version": "1.31.0",
+    "released": "2026-11-18",
     "verified": "2026-11-24",
-    "release_url": "https://github.com/podman-desktop/podman-desktop/releases/tag/v1.30.7",
-    "changelog": "## What's Changed\r\n* fix(podman): remove stale API socket before starting a machine on Windows (backport #20072) by @mergify[bot] in https://github.com/podman-desktop/podman-desktop/pull/20144\r\n\r\n\r\n**Full Changelog**: https://github.com/podman-desktop/podman-desktop/compare/v1.30.6...v1.30.7",
+    "release_url": "https://github.com/podman-desktop/podman-desktop/releases/tag/v1.31.0",
+    "changelog": "## What's Changed\r\n* refactor(renderer): store VolumeInfoUI instead of VolumeListInfo by @vzhukovs in https://github.com/podman-desktop/podman-desktop/pull/19317\r\n* chore(ui): fix capitalization of bundled extensions by @cdrage in https://github.com/podman-desktop/podman-desktop/pull/19347\r\n* chore: 📢 Bump version to 1.31.0 by @podman-desktop-bot in https://github.com/podman-desktop/podman-desktop/pull/19348\r\n* chore(test): ssh connection broken after svelte 5 migration by @cbr7 in https://github.com/podman-desktop/podman-desktop/pull/19350\r\n* chore(test): increase some timeouts to help with system lag by @cbr7 in https://github.com/podman-desktop/podman-desktop/pull/19343\r\n* chore: use ButtonRow in containers components, dashboard, dialog, feedback, kube, and network by @SoniaSandler in https://github.com/podman-desktop/podman-desktop/pull/19272\r\n* chore: use ButtonRow in image components by @SoniaSandler in https://github.com/podman-desktop/podman-desktop/pull/19274\r\n* chore(deps-dev): bump typedoc-plugin-markdown from 4.13.0 to 4.13.1 in the typedoc group by @dependabot[bot] in https://github.com/podman-desktop/podman-desktop/pull/19354\r\n* chore(deps-dev): bump svelte from 5.57.0 to 5.57.1 by @dependabot[bot] in https://github.com/podman-desktop/podman-desktop/pull/19357\r\n* chore(deps): bump electron from 44.4.2 to 44.4.3  by @dependabot[bot] in https://github.com/podman-desktop/podman-desktop/pull/19355\r\n* chore(deps): bump eslint from 10.10.0 to 10.11.0 in the eslint group across 1 directory  by @dependabot[bot] in https://github.com/podman-desktop/podman-desktop/pull/19353\r\n* chore(deps-dev): bump @types/node from 24.13.5 to 24.13.6 by @dependabot[bot] in https://github.com/podman-desktop/podman-desktop/pull/19356\r\n* chore(test): fix broken component migration to svelte 5 by @cbr7 in https://github.com/podman-desktop/podman-desktop/pull/19358\r\n* fix(release): include pnpm 12 registry metadata cache in Flatpak store tarball by @simonrey1 in https://github.com/podman-desktop/podman-desktop/pull/19360\r\n* chore(test): skip some tests when running with CDP by @cbr7 in https://github.com/podman-desktop/podman-desktop/pull/19361\r\n* fix(release): add pnpm 12 metadata move to publish-flathub workflow by @simonrey1 in https://github.com/podman-desktop/podman-desktop/pull/19363\r\n* chore(website): update website downloads page by @SoniaSandler in https://github.com/podman-desktop/podman-desktop/pull/19005\r\n* refactor(ProviderInstalled): added user toggle variable by @gastoner in https://github.com/podman-desktop/podman-desktop/pull/19209\r\n* refactor(renderer): update container actions to modify store directly by @gastoner in https://github.com/podman-desktop/podman-desktop/pull/19188\r\n* feat(Preferences): added option to register additional button action to provider by @gastoner in https://github.com/podman-desktop/podman-desktop/pull/19232\r\n* chore: use ButtonRow in the rest of the renderer components by @SoniaSandler in https://github.com/podman-desktop/podman-desktop/pull/19275\r\n* chore(deps-dev): bump the commitlint group with 2 updates by @dependabot[bot] in https://github.com/podman-desktop/podman-desktop/pull/19369\r\n* fix(storybook): hot-reload ui package changes in storybook:dev by @vancura in https://github.com/podman-desktop/podman-desktop/pull/19352\r\n* chore(deps): bump stream-json from 3.6.0 to 3.7.0 by @dependabot[bot] in https://github.com/podman-desktop/podman-desktop/pull/19370\r\n* feat(ci): publish @podman-desktop/api-mocks-vitest to npmjs by @sAchin-680 in https://github.com/podman-desktop/podman-desktop/pull/19365\r\n* feat(RunImage): added option to select and bind pre-created volume to container by @gastoner in https://github.com/podman-desktop/podman-desktop/pull/19373\r\n* chore(deps-dev): bump eslint-plugin-unicorn from 75.0.0 to 76.0.0 by @dependabot[bot] in https://github.com/podman-desktop/podman-desktop/pull/19371\r\n* chore(flatpak): upgrade runtime and SDK to 26.08 by @benoitf in https://github.com/podman-desktop/podman-desktop/pull/19094\r\n* chore(deps-dev): bump vite-plugin-dts from 5.1.0 to 5.1.1 by @dependabot[bot] in https://github.com/podman-desktop/podman-desktop/pull/19387\r\n* chore(deps): bump electron-context-menu from 5.0.0 to 5.1.0 by @dependabot[bot] in https://github.com/podman-desktop/podman-desktop/pull/19388\r\n* chore(deps-dev): bump tsx from 4.23.13 to 4.23.15 by @dependabot[bot] in https://github.com/podman-desktop/podman-desktop/pull/19390\r\n* chore(deps-dev): bump unplugin-dts from 1.1.0 to 1.1.1 by @dependabot[bot] in https://github.com/podman-desktop/podman-desktop/pull/19386\r\n* chore(deps-dev): bump markdownlint-cli2 from 0.23.2 to 0.23.3 by @dependabot[bot] in https://github.com/podman-desktop/podman-desktop/pull/19389\r\n* refactor(Container): migrated ContainerActions to svelte5 by @gastoner in https://github.com/podman-desktop/podman-desktop/pull/18785\r\n* refactor(Preferences): migrated PreferencesKubernetesConnectionDetailsSummary component to svelte5 by @gastoner in https://github.com/podman-desktop/podman-desktop/pull/18647\r\n* refactor(Compose): migrated ComposeDetails to svelte5 by @gastoner in https://github.com/podman-desktop/podman-desktop/pull/18784\r\n* test(e2e): update serial declaration - part 12 by @danivilla9 in https://github.com/podman-desktop/podman-desktop/pull/19378\r\n* test(e2e): update serial declaration - part 13 by @danivilla9 in https://github.com/podman-desktop/podman-desktop/pull/19393\r\n* test(e2e): update serial declaration - part 14 by @danivilla9 in https://github.com/podman-desktop/podman-desktop/pull/19394\r\n* chore(deps-dev): bump jsdom from 30.1.0 to 30.1.1 by @dependabot[bot] in https://github.com/podman-desktop/podman-desktop/pull/19413\r\n* feat(ui): added support for key shortcuts in SettingsNavItem component by @gastoner in https://github.com/podman-desktop/podman-desktop/pull/19204\r\n* feat: added support for F key modifiers to keyboard utils by @gastoner in https://github.com/podman-desktop/podman-desktop/pull/19395\r",
     "downloads": [
       {
         "label": "Windows x64 · 绿色版 EXE",
         "platform": "Windows",
         "portable": true,
-        "file": "podman-desktop-1.30.7-setup-x64.exe",
-        "size": 162867968,
-        "sha256": "3c8e91013bc0f0093076d6c7cb677bdc55b2c1b9eb438e206ce06083bb7ab6ca",
-        "official": "https://github.com/podman-desktop/podman-desktop/releases/download/v1.30.7/podman-desktop-1.30.7-setup-x64.exe",
+        "file": "podman-desktop-1.31.0-setup-x64.exe",
+        "size": 166615536,
+        "sha256": "ede10a7e779c166bc7332ca790c82e17e2a74a249c40dedee145700d547254b1",
+        "official": "https://github.com/podman-desktop/podman-desktop/releases/download/v1.31.0/podman-desktop-1.31.0-setup-x64.exe",
         "mirrors": []
       },
       {
         "label": "Windows x64 · 安装包",
         "platform": "Windows",
         "portable": false,
-        "file": "podman-desktop-1.30.7-setup-x64.exe",
-        "size": 162867968,
-        "sha256": "3c8e91013bc0f0093076d6c7cb677bdc55b2c1b9eb438e206ce06083bb7ab6ca",
-        "official": "https://github.com/podman-desktop/podman-desktop/releases/download/v1.30.7/podman-desktop-1.30.7-setup-x64.exe",
+        "file": "podman-desktop-1.31.0-setup-x64.exe",
+        "size": 166615536,
+        "sha256": "ede10a7e779c166bc7332ca790c82e17e2a74a249c40dedee145700d547254b1",
+        "official": "https://github.com/podman-desktop/podman-desktop/releases/download/v1.31.0/podman-desktop-1.31.0-setup-x64.exe",
         "mirrors": []
       }
     ],
@@ -4522,20 +4522,20 @@
     "mirrored": false
   },
   "keyviz": {
-    "version": "2.1.1",
-    "released": "2026-04-01",
+    "version": "2.1.2",
+    "released": "2026-11-24",
     "verified": "2026-11-24",
-    "release_url": "https://github.com/mulaRahul/keyviz/releases/tag/v2.1.1",
-    "changelog": "### 🩹 Bug Fixes\r\n* mouse indicator offset #421\r\n* filter numpad keys #426\r\n* remember monitor selection #401\r\n\r\n### ✨ New Contributors\r\n* @xhugoliu made their contribution in https://github.com/mulaRahul/keyviz/pull/452\r\n\r\n### ❗On macOS \"keyviz\" is damaged\r\nIf you get the above error message, visit https://github.com/mulaRahul/keyviz/issues/420.\r\n\r\n**Full Changelog**: https://github.com/mulaRahul/keyviz/compare/v2.1.0...v2.1.1",
+    "release_url": "https://github.com/mulaRahul/keyviz/releases/tag/v2.1.2",
+    "changelog": "### 🚀 What’s New?\r\n- **Localization**: Set UI language to English, Chinese, Spanish or French.\r\n- **Mouse Events Toggle**: Disable mouse events alongside key visualizations altogether.\r\n\r\n### 🩹 Bug Fixes\r\n* Mouse4/5 buttons cause crash #474 \r\n* Releasing a key does not restart its linger timeout #517 \r\n* Mouse custom filter #481\r\n* Left click required before key shown on screen #443\r\n\r\n### ✨ New Contributors\r\n* @xhugoliu made their contribution in https://github.com/mulaRahul/keyviz/pull/475\r\n* @AdamAdamsMusic made their contribution in https://github.com/mulaRahul/keyviz/pull/513\r\n* @somratdutta made their contribution in https://github.com/mulaRahul/keyviz/pull/496\r\n* @Desmos666-xh  made their contribution in https://github.com/mulaRahul/keyviz/pull/510\r\n\r\n**Full Changelog**: https://github.com/mulaRahul/keyviz/compare/v2.1.1...v2.1.2",
     "downloads": [
       {
         "label": "Windows · 安装包 MSI",
         "platform": "Windows",
         "portable": false,
-        "file": "keyviz_2.1.1_windows.msi",
-        "size": 4157440,
-        "sha256": "b58263eb3be44cbba6c5f7518a63bcf7ae31396493dfc1ff143677e7ab710b3a",
-        "official": "https://github.com/mulaRahul/keyviz/releases/download/v2.1.1/keyviz_2.1.1_windows.msi",
+        "file": "keyviz_2.1.2_windows.msi",
+        "size": 4526080,
+        "sha256": "b7f811e7b354d5be6830eba2130d95207ff2638fa4848b7606afd308a6144973",
+        "official": "https://github.com/mulaRahul/keyviz/releases/download/v2.1.2/keyviz_2.1.2_windows.msi",
         "mirrors": []
       }
     ],
@@ -4734,20 +4734,20 @@
     "mirrored": false
   },
   "siyuan": {
-    "version": "3.8.11",
-    "released": "2026-11-19",
+    "version": "3.8.12",
+    "released": "2026-11-24",
     "verified": "2026-11-24",
-    "release_url": "https://github.com/siyuan-note/siyuan/releases/tag/v3.8.11",
-    "changelog": "## Upgrade notice\r\n\r\n### Database formats\r\n\r\n- **Primary-key rich text (formats 15 and 16).** Inline rich text saved in format 15 by earlier preview builds remains readable. Saving new block rich text in a primary key, including text with images, upgrades the database to at least format 16. [Primary-key compatibility](https://github.com/siyuan-note/siyuan/issues/21136)\r\n- **Inline images in ordinary text fields (format 17).** Saving the first inline image in an ordinary text field upgrades that database to format 17. [Text field compatibility](https://github.com/siyuan-note/siyuan/issues/21527)\r\n\r\nSimply opening a database does not trigger these upgrades. Version 3.8.10 supports database formats up to 14. A client can only open databases in formats it supports. Update every device that syncs or accesses the same data before using the new formats. Back up your workspace beforehand. To roll back, restore a complete pre-upgrade snapshot.\r\n\r\n### Other compatibility changes\r\n\r\n- **AI long-term memory.** Restoring a workspace snapshot now rolls back both memory records and their revocation state. Restoring a snapshot from before a memory was forgotten can make it available again if it still passes the usual validity checks. [Long-term memory](https://github.com/siyuan-note/siyuan/blob/64fe75eb55fc783a345ea00fb4db8b60268dd65c/docs/LONG-TERM-MEMORY.md)\r\n- **Kernel API.** JSON requests handled by API contracts have a 32 MiB body limit, with a 64 KiB limit for `loginAuth`. Requests exceeding these limits return code `-1`. [API contracts](https://github.com/siyuan-note/siyuan/blob/64fe75eb55fc783a345ea00fb4db8b60268dd65c/docs/API-CONTRACTS.md)\r\n\r\n## Overview\r\n\r\nThis release adds rich text and block editing in database primary keys, a built-in date picker, unified color editing, and plugin snapshot browsing and restoration.\r\n\r\nMind maps support custom node and connector styles and freeform connections between nodes. The standalone Markdown editor adds find and replace, while macOS gains offline Markdown Quick Look previews.\r\n\r\nWatch the release overview: [YouTube](https://youtu.be/PLbCKqtZw_M)\r\n\r\n## Changelogs\r\n\r\nBelow are the detailed changes in this version.\r\n\r\n### Enhancement\r\n\r\n* [Support a built-in date picker and improve date and time editing](https://github.com/siyuan-note/siyuan/issues/21127)\r\n* [Support unified color editing with HEX, RGB, and a native picker](https://github.com/siyuan-note/siyuan/issues/21134)\r\n* [Support rich text and block editing in database primary keys](https://github.com/siyuan-note/siyuan/issues/21136)\r\n* [Support offline Markdown Quick Look previews on macOS](https://github.com/siyuan-note/siyuan/issues/21139)\r\n* [Support choosing whether to restore document reading positions](https://github.com/siyuan-note/siyuan/issues/21320)\r\n* [Support browsing and restoring plugin snapshots](https://github.com/siyuan-note/siyuan/issues/21350)\r\n* [Improve kernel process icon display on Linux](https://github.com/siyuan-note/siyuan/issues/21364)\r\n* [Support separate entry icon controls for database primary keys and relation/rollup fields](https://github.com/siyuan-note/siyuan/issues/21366)\r\n* [Support KDE system proxy detection on Linux](https://github.com/siyuan-note/siyuan/pull/21367)\r\n* [Support per-node connector styles and shapes in mind maps](https://github.com/siyuan-note/siyuan/issues/21368)\r\n* [Reduce document tree indentation to improve readability](https://github.com/siyuan-note/siyuan/issues/21381)\r\n* [Support freeform mind map relationships with configurable paths and line patterns](https://github.com/siyuan-note/siyuan/issues/21384)\r\n* [Support ignore rules for unused asset cleanup](https://github.com/siyuan-note/siyuan/issues/21398)\r\n* [Preserve document context when following references to visible blocks](https://github.com/siyuan-note/siyuan/issues/21400)\r\n* [Improve mobile bottom sheet dragging](https://github.com/siyuan-note/siyuan/issues/21403)\r\n* [Support find and replace in the standalone Markdown editor](https://github.com/siyuan-note/siyuan/issues/21417)\r\n* [Support expanding or collapsing grouped search results by default](https://github.com/siyuan-note/siyuan/issues/21446)\r\n\r\n### Bugfix\r\n\r\n* [Automatic block collection continues after the database block is deleted](https://github.com/siyuan-note/siyuan/issues/21361)\r\n* [Embedded local HTML attachments open in an external browser on iOS](https://github.com/siyuan-note/siyuan/issues/21389)\r\n\r\n## Download\r\n\r\n* [B3log](https://b3log.org/siyuan/en/download.html)\r\n* [GitHub](https://github.com/siyuan-note/siyuan/releases)",
+    "release_url": "https://github.com/siyuan-note/siyuan/releases/tag/v3.8.12",
+    "changelog": "## Upgrade notice\n\nPlugins that rely on the desktop main menu’s previous identifier, `barWorkspace`, should use `barMainMenu` for the button ID and menu events. [Details](https://github.com/siyuan-note/siyuan/issues/21544)\n\n## Overview\n\nThis release adds manual ordering for sibling tags and sorting by most recent addition in the tag panel. Mobile image preview gestures and controls are improved, and asset files can now be shared from mobile.\n\nThe desktop Markdown editor supports relative document links, and database cell editors are better aligned. This release also adds a Vietnamese interface and a built-in Russian user guide, and introduces the official SiYuan connector for WorkBuddy.\n\nWatch the release overview: [YouTube](https://youtu.be/aiTfeTa8Tlk)\n\n## Changelogs\n\nBelow are the detailed changes in this version.\n\n### Enhancement\n\n* [Support manual sorting of sibling tags in the tag panel](https://github.com/siyuan-note/siyuan/issues/21508)\n* [Support sorting the tag panel by most recent addition](https://github.com/siyuan-note/siyuan/issues/21509)\n* [Improve sync reliability when putFile writes overlap snapshot indexing](https://github.com/siyuan-note/siyuan/issues/21510)\n* [Support relative document links in the desktop Markdown editor](https://github.com/siyuan-note/siyuan/issues/21542)\n* [Improve database cell editor alignment](https://github.com/siyuan-note/siyuan/issues/21546)\n* [Support Vietnamese interface language](https://github.com/siyuan-note/siyuan/issues/21548)\n* [Support in-process OCR in dynamically linked Linux builds](https://github.com/siyuan-note/siyuan/issues/21555)\n* [Improve mobile image preview gestures and controls](https://github.com/siyuan-note/siyuan/issues/21557)\n* [Add official SiYuan connector for WorkBuddy](https://github.com/siyuan-note/siyuan/issues/21574)\n* [Support sharing asset files on mobile](https://github.com/siyuan-note/siyuan/issues/21590)\n* [Support AI provenance in block attributes](https://github.com/siyuan-note/siyuan/issues/21630)\n\n### Bugfix\n\n* [SiYuan may exit during startup on iOS](https://github.com/siyuan-note/siyuan/issues/21556)\n\n### Document\n\n* [Add a built-in Russian user guide](https://github.com/siyuan-note/siyuan/pull/21585)\n\n### Refactor\n\n* [Upgrade to Electron v44.11.5](https://github.com/siyuan-note/siyuan/issues/21607)\n\n### Development\n\n* [Improve naming consistency for the desktop main menu](https://github.com/siyuan-note/siyuan/issues/21544)\n\n## Download\n\n* [B3log](https://b3log.org/siyuan/en/download.html)\n* [GitHub](https://github.com/siyuan-note/siyuan/releases)\n",
     "downloads": [
       {
         "label": "Windows · 安装包",
         "platform": "Windows",
         "portable": false,
-        "file": "siyuan-3.8.11-win.exe",
-        "size": 241481424,
-        "sha256": "a48aa7e0fae9a8d4e41a02b18f7503b0367d5425bab5529db9bbc637d39db61d",
-        "official": "https://github.com/siyuan-note/siyuan/releases/download/v3.8.11/siyuan-3.8.11-win.exe",
+        "file": "siyuan-3.8.12-win.exe",
+        "size": 243737040,
+        "sha256": "1cc059f6543cb5ea52b84545fe01736b60408a647c8d0c440b6a1997bc5e598a",
+        "official": "https://github.com/siyuan-note/siyuan/releases/download/v3.8.12/siyuan-3.8.12-win.exe",
         "mirrors": []
       }
     ],
