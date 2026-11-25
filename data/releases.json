@@ -1828,20 +1828,20 @@
     "source": "winget"
   },
   "krita": {
-    "version": "5.3.4.1",
-    "released": "2026-10-01",
+    "version": "5.3.5.0",
+    "released": "2026-11-18",
     "verified": "2026-11-25",
-    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Krita/5.3.4.1",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Krita/5.3.5.0",
     "changelog": "",
     "downloads": [
       {
         "label": "Windows x64 · 安装包",
         "platform": "Windows",
         "portable": false,
-        "file": "krita-x64-5.3.4.1-setup.exe",
+        "file": "krita-x64-5.3.5-setup.exe",
         "size": null,
-        "sha256": "025523cf1751ff209faf7ecfe1cff851f2cdab64acb8c555b307b349ad56ce8f",
-        "official": "https://download.kde.org/stable/krita/5.3.4.1/krita-x64-5.3.4.1-setup.exe",
+        "sha256": "c21930c3d409519a873d3de9793068df954c21a4209c3ac42ef7732f82beaf27",
+        "official": "https://download.kde.org/stable/krita/5.3.5/krita-x64-5.3.5-setup.exe",
         "mirrors": []
       }
     ],
@@ -2534,20 +2534,20 @@
     "mirrored": false
   },
   "tencent-video": {
-    "version": "11.191.9669.0",
-    "released": "2026-11-18",
+    "version": "11.192.1201.0",
+    "released": "2026-11-25",
     "verified": "2026-11-25",
-    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/TencentVideo/11.191.9669.0",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/TencentVideo/11.192.1201.0",
     "changelog": "",
     "downloads": [
       {
         "label": "Windows · 官方安装包",
         "platform": "Windows",
         "portable": false,
-        "file": "TencentVideo11.191.9669.0.exe",
+        "file": "TencentVideo11.192.1201.0.exe",
         "size": null,
-        "sha256": "4f2190be087752d44871cc4716078757877f9731a984d1dc905ac63b3a26739b",
-        "official": "https://dldir1v6.qq.com/qqtv/TencentVideo11.191.9669.0.exe?support_redirect=1",
+        "sha256": "d78749bb2c6902970ad5e4aa590c00dc466abe59c8108228627ad7096cb8794d",
+        "official": "https://dldir1v6.qq.com/qqtv/TencentVideo11.192.1201.0.exe?support_redirect=1",
         "mirrors": []
       }
     ],
@@ -4380,20 +4380,20 @@
     "mirrored": false
   },
   "insomnia": {
-    "version": "13.4.0",
-    "released": "2026-10-29",
+    "version": "13.5.0",
+    "released": "2026-11-25",
     "verified": "2026-11-25",
-    "release_url": "https://github.com/Kong/insomnia/releases/tag/core%4013.4.0",
-    "changelog": "## What's Changed\n* fix(INS-3850): revalidate a project's old organization cache when it moves parents by @yaoweiprc in https://github.com/Kong/insomnia/pull/10513\n* fix(INS-3850): re-check Konnect organization visibility before restoring it on cold start by @yaoweiprc in https://github.com/Kong/insomnia/pull/10518\n* fix: One line editor can enter new line issue by @cwangsmv in https://github.com/Kong/insomnia/pull/10514\n* fix(INS-3836): show the Konnect-moved notice only after a migration conflict is resolved by @yaoweiprc in https://github.com/Kong/insomnia/pull/10521\n* fix: Both spec and collection should allow import test suites in git sync by @cwangsmv in https://github.com/Kong/insomnia/pull/10524\n* Fix: Do not flush on blur on one-line-editor if it is read-only  by @cwangsmv in https://github.com/Kong/insomnia/pull/10534\n* fix(sidebar): don't crash the collection filter on non-string doc fields by @ZxBing0066 in https://github.com/Kong/insomnia/pull/10525\n* fix(event-stream): only read event shaped lines from the event log by @ZxBing0066 in https://github.com/Kong/insomnia/pull/10522\n* chore(sandbox): disable quick.js sandbox temporarily by @ihexxa in https://github.com/Kong/insomnia/pull/10536\n* Fix: Add loading indicator and avoid unmount editor to update tag for tag editor by @cwangsmv in https://github.com/Kong/insomnia/pull/10537\n* fix(mcp): correct Add/Delete Item for nested object params by @CurryYangxx in https://github.com/Kong/insomnia/pull/10546\n* Chore: bump vault plugin version by @cwangsmv in https://github.com/Kong/insomnia/pull/10547\n* fix(environment-editor): treat empty JSON content as invalid JSON by @ZxBing0066 in https://github.com/Kong/insomnia/pull/10540\n* fix(INS-3507): restrict git-sync and legacy-folder writes to canSync model types by @kwburns-kong in https://github.com/Kong/insomnia/pull/10531\n* Change Konnect migration wording. by @yaoweiprc in https://github.com/Kong/insomnia/pull/10550\n* feat(export): add Export OpenAPI Spec to the collection context menu by @ZxBing0066 in https://github.com/Kong/insomnia/pull/10538\n* fix(insomnia): run plugin yarn info in a controlled temp dir by @Tyagiquamar in https://github.com/Kong/insomnia/pull/10505\n* fix(script): use liquid sync method in render - INS-3789 by @ihexxa in https://github.com/Kong/insomnia/pull/10523\n* chore(ci): make the cycle check runnable on Windows and report drift honestly [INS-3904] by @yaoweiprc in https://github.com/Kong/insomnia/pull/10548\n* refactor(sidebar): own the project shell in one layout route [INS-3903] by @yaoweiprc in https://github.com/Kong/insomnia/pull/10541\n* chore: bump app version to 13.3.0 by @insomnia-infra in https://github.com/Kong/insomnia/pull/10552\n* ci(ksai): add KSAI through the public mirror by @bartsmykla in https://github.com/Kong/insomnia/pull/10551\n* fix: constrain file template tag by @kwburns-kong in https://github.com/Kong/insomnia/pull/10528\n* fix: parse quoted CSV fields in collection runner data by @ZxBing0066 in https://github.com/Kong/insomnia/pull/10557\n* fix: de-flake import deep-link cURL auto-scan smoke test by @ZxBing0066 in https://github.com/Kong/insomnia/pull/10555\n* fix(toast): stop toast animations from swallowing clicks by @ZxBing0066 in https://github.com/Kong/insomnia/pull/10553\n* fix(key-value-editor): stop ListBox typeahead from swallowing typed spaces by @ZxBing0066 in https://github.com/Kong/insomnia/pull/10563\n* feat: Add base model schema and deep strict utility by @cwangsmv in https://github.com/Kong/insomnia/pull/10515\n* feat: Unify and migrate environment model to use Zod schema and infer type by @cwangsmv in https://github.com/Kong/insomnia/pull/10516\n* chore: bump @faker-js/faker@9.7.0 to 10.6.0 by @kwburns-kong in https://github.com/Kong/insomnia/pull/10569\n* ci(ksai): start a KSAI run only for people who can write to the repository by @bartsmykla in https://github.com/Kong/insomnia/pull/10578\n* fix: Environment schema git export order issue by @cwangsmv in https://github.com/Kong/insomnia/pull/10580\n* chore: bump dependencies by @kwburns-kong in https://github.com/Kong/insomnia/pull/10444\n* fix: validate paths stay within their intended base directory by @kwburns-kong in https://github.com/Kong/insomnia/pull/10443\n* chore: bump app version to 13.3.1 by @insomnia-infra in https://github.com/Kong/insomnia/pull/10579\n* feat(import): paste a cURL with no editable focus to start the import flow by @ZxBing0066 in https://github.com/Kong/insomnia/pull/10566\n* chore(ui): remove unreachable ImportModal instances by @ZxBing0066 in https://github.com/Kong/insomnia/pull/10590\n* fix: regenerate document ids on project storage conversion by @ZxBing0066 in https://github.com/Kong/insomnia/pull/10565\n* feat: change data model to support confidential control by @CurryYangxx in https://github.com/Kong/insomnia/pull/10479\n* feat: Migrate mock-server and mock-route zod schema and type definitions by @cwangsmv in https://github.com/Kong/insomnia/pull/10520\n* test(INS-3783): cover cookie id stability across Set-Cookie responses by @yaoweiprc in https://github.com/Kong/insomnia/pull/10592\n* feat: show variable source in live preview and hover tooltip by @ZxBing0066 in https://github.com/Kong/insomnia/pull/10583\n* fix(project-modal): close modal on redirect by comparing pathname by @bobqiu-kong in https://github.com/Kong/insomnia/pull/10593\n* feat: Migrate mcp request and related model types using zod  by @cwangsmv in https://github.com/Kong/insomnia/pull/10526\n* feat: Implement UX for marking environments as confidential by @CurryYangxx in https://github.com/Kong/insomnia/pull/10480\n* fix: Warn when a Git Sync change cannot be discarded [INS-3830] by @yaoweiprc in https://github.com/Kong/insomnia/pull/10585\n* fix: script corrupt vault into plaintext by @CurryYangxx in https://github.com/Kong/insomnia/pull/10601\n* feat: Migrate collection and document workspace zod schema and type definitions- #10520 by @cwangsmv in https://github.com/Kong/insomn",
+    "release_url": "https://github.com/Kong/insomnia/releases/tag/core%4013.5.0",
+    "changelog": "## What's Changed\n* fix: Request name is applied to request list css  by @cwangsmv in https://github.com/Kong/insomnia/pull/10659\n* fix(ci): apply macOS stapling workaround before packaging app by @notjaywu in https://github.com/Kong/insomnia/pull/10661\n* fix: handle invalid vault tag when there is no args set by @cwangsmv in https://github.com/Kong/insomnia/pull/10663\n* fix: upgrade node-forge to 1.4.2 for CVE-2026-85393 by @yaoweiprc in https://github.com/Kong/insomnia/pull/10669\n* fix(sync): INS-3700 by @kwburns-kong in https://github.com/Kong/insomnia/pull/10560\n* fix: clear stale sync flags after a project leaves cloud sync by @ZxBing0066 in https://github.com/Kong/insomnia/pull/10668\n* chore: update dompurify by @CurryYangxx in https://github.com/Kong/insomnia/pull/10667\n* fix(Git Diff): clarify invalid file message in visual diff view by @yaoweiprc in https://github.com/Kong/insomnia/pull/10677\n* refactor: inject curl executor into scripting environment by @ZxBing0066 in https://github.com/Kong/insomnia/pull/10483\n* refactor: improve scratchpad tutorial panel snooze time by @ihexxa in https://github.com/Kong/insomnia/pull/10672\n* refactor: extract useRootLoaderData out of root.tsx (break 55 circular imports) by @ZxBing0066 in https://github.com/Kong/insomnia/pull/10494\n* fix(smoke-test): drop test title from trace file names by @ZxBing0066 in https://github.com/Kong/insomnia/pull/10696\n* fix(tests): keep autofocus and route sync from clobbering tab state by @ZxBing0066 in https://github.com/Kong/insomnia/pull/10690\n* feat: add stable test ids to UI for the E2E framework by @bobqiu-kong in https://github.com/Kong/insomnia/pull/10695\n* fix: cycle iteration data rows in order by @ZxBing0066 in https://github.com/Kong/insomnia/pull/10712\n* refactor: easy way to use IPC by @xiaodemen in https://github.com/Kong/insomnia/pull/10451\n* test(e2e): add insomnia-test Playwright framework and CI workflow [1/6] by @bobqiu-kong in https://github.com/Kong/insomnia/pull/10594\n* refactor: move shared tab types into insomnia-tab-context (break 6 circular imports) by @ZxBing0066 in https://github.com/Kong/insomnia/pull/10495\n* refactor: move RequestRow to common/runner-feedback (break 3 runner cycles) by @ZxBing0066 in https://github.com/Kong/insomnia/pull/10496\n* feat: delete .git description by @CurryYangxx in https://github.com/Kong/insomnia/pull/10735\n* fix(Environment Picker): preserve list scroll and show the full environment name by @ZxBing0066 in https://github.com/Kong/insomnia/pull/10700\n* fix: switch JSON item to secret vault by @CurryYangxx in https://github.com/Kong/insomnia/pull/10725\n* fix: delete unsupport vault autocomplete  by @CurryYangxx in https://github.com/Kong/insomnia/pull/10746\n* feat: support collection-level headers, scripts and authentication by @cwangsmv in https://github.com/Kong/insomnia/pull/10727\n* feat: Add collection level script execution support by @cwangsmv in https://github.com/Kong/insomnia/pull/10728\n* feat(konnect): show plugin info for synced requests by @ZxBing0066 in https://github.com/Kong/insomnia/pull/10720\n* test(smoke): reset the mock team projects after every test by @yaoweiprc in https://github.com/Kong/insomnia/pull/10761\n* chore: use @scalar/openapi-parser replace @apidevtools/swagger-parser by @CurryYangxx in https://github.com/Kong/insomnia/pull/10697\n* chore: update spectral by @CurryYangxx in https://github.com/Kong/insomnia/pull/10698\n* feat(git): implement git credential approval and rejection callbacks in NativeProvider by @CurryYangxx in https://github.com/Kong/insomnia/pull/10738\n* feat: Debugger session integration P1 —— debug session api integration by @cwangsmv in https://github.com/Kong/insomnia/pull/10703\n* ci(ksai): upgrade KSAI to v5.0.3 by @kong-ksai[bot] in https://github.com/Kong/insomnia/pull/10765\n* feat(git): interactive sign-in UX for native credentials by @CurryYangxx in https://github.com/Kong/insomnia/pull/10739\n* feat: Debugger session integration P2 —— data query layer and fetch trace hooks by @cwangsmv in https://github.com/Kong/insomnia/pull/10704\n* feat(git): report actionable errors for system git credentials by @CurryYangxx in https://github.com/Kong/insomnia/pull/10741\n* feat: Add collection level header combination logic  by @cwangsmv in https://github.com/Kong/insomnia/pull/10733\n* feat: Add collection level auth inherit logic  by @cwangsmv in https://github.com/Kong/insomnia/pull/10734\n* fix(deps): override httpsnippet's form-data to 4.0.6 [INS-4178] by @yaoweiprc in https://github.com/Kong/insomnia/pull/10778\n* feat: Debugger session integration P3 —— Debugger Pane and Trace Detail View by @cwangsmv in https://github.com/Kong/insomnia/pull/10715\n* ci(release): save DigiCert tokens on Windows builds by @notjaywu in https://github.com/Kong/insomnia/pull/10726\n* feat: Right click individual request to view spec by @cwangsmv in https://github.com/Kong/insomnia/pull/10764\n* feat(konnect): add product telemetry for request plugins tab by @ZxBing0066 in https://github.com/Kong/insomnia/pull/10782\n* docs(insomnia-data): add the field encryption design [INS-2368] [1/11] by @yaoweiprc in https://github.com/Kong/insomnia/pull/10749\n* feat(insomnia-data): add the field encryption core [INS-2368] [2/11] by @yaoweiprc in https://github.com/Kong/insomnia/pull/10750\n* feat(insomnia-data): mark the encrypted fields of the models [INS-2368] [3/11] by @yaoweiprc in https://github.com/Kong/insomnia/pull/10751\n* feat(insomnia-data): encrypt the marked fields in the NeDB datastores [INS-2368] [4/11] by @yaoweiprc in https://github.com/Kong/insomnia/pull/10752\n* feat(insomnia): add durable writes and strict reads to ElectronStorage [INS-2368] [5/11] by @yaoweiprc in https://github.com/Kong/insomnia/pull/10753\n* feat(insomnia): create, protect and load the local encryption key [INS-2368] [6/11] by @yaoweiprc in https://github.com/Kong/insomnia/pull/10754\n* test(e2e): fix flaky spec outline locators in SpecPage by @bobqiu-kong in htt",
     "downloads": [
       {
         "label": "Windows · 安装包",
         "platform": "Windows",
         "portable": false,
-        "file": "Insomnia.Core-13.4.0.exe",
-        "size": 649769152,
-        "sha256": "346bafbf9dd49dd5b3cf3847f75258242d474dbf2579f146a9e996135cd14327",
-        "official": "https://github.com/Kong/insomnia/releases/download/core%4013.4.0/Insomnia.Core-13.4.0.exe",
+        "file": "Insomnia.Core-13.5.0.exe",
+        "size": 675316416,
+        "sha256": "492ea782ead45767fdfa33dba02f23ba5dd9f57ccf241eeafa019a49adcd2388",
+        "official": "https://github.com/Kong/insomnia/releases/download/core%4013.5.0/Insomnia.Core-13.5.0.exe",
         "mirrors": []
       }
     ],
@@ -5290,20 +5290,20 @@
     "mirrored": false
   },
   "librewolf": {
-    "version": "160.0.1-1",
-    "released": "2026-11-18",
+    "version": "161.0-1",
+    "released": "2026-11-25",
     "verified": "2026-11-25",
-    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LibreWolf/LibreWolf/160.0.1-1",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LibreWolf/LibreWolf/161.0-1",
     "changelog": "",
     "downloads": [
       {
         "label": "Windows x64 · 安装包",
         "platform": "Windows",
         "portable": false,
-        "file": "librewolf-160.0.1-1-windows-x86_64-setup.exe",
+        "file": "librewolf-161.0-1-windows-x86_64-setup.exe",
         "size": null,
-        "sha256": "fc7aa0c905c67697aeb16ee3d57037b6d93b01f4f73dddc45dd4d24d04801e24",
-        "official": "https://dl.librewolf.net/librewolf/160.0.1-1/librewolf-160.0.1-1-windows-x86_64-setup.exe",
+        "sha256": "7507bffc68cbcc05fb66f46c8d6f9913193ee6bc7b871333cce6432742400df1",
+        "official": "https://dl.librewolf.net/librewolf/161.0-1/librewolf-161.0-1-windows-x86_64-setup.exe",
         "mirrors": []
       }
     ],
