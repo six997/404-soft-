@@ -725,20 +725,20 @@
     "source": "winget"
   },
   "tencent-meeting": {
-    "version": "3.48.0.443",
-    "released": "2026-11-05",
+    "version": "3.49.1.410",
+    "released": "2026-11-24",
     "verified": "2026-11-26",
-    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/TencentMeeting/3.48.0.443",
-    "changelog": "【录制纪要新增图文总结】\n录制纪要新增图文总结能力，还支持智能拉取会中共享截图作为纪要插图，图文并茂，一看就懂。\n【美颜功能更新】\n新增自定义美颜能力，支持画质调整与更多美颜特效，让视频形象更自然，会议呈现更专业。",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/Tencent/TencentMeeting/3.49.1.410",
+    "changelog": "",
     "downloads": [
       {
         "label": "Windows x64 · 官方安装包",
         "platform": "Windows",
         "portable": false,
-        "file": "TencentMeeting_0300000000_3.48.0.443_x86_64.publish.exe",
+        "file": "TencentMeeting_0300000000_3.49.1.410_x86_64.publish.exe",
         "size": null,
-        "sha256": "d365c3102dd4330e92cf8675f8694985d64d3b108b698b7efe92d18c128fbeb4",
-        "official": "https://updatecdn.meeting.qq.com/cos/03001aa87c1fdfe02774f25175603db9/TencentMeeting_0300000000_3.48.0.443_x86_64.publish.exe",
+        "sha256": "651742b45ae2baf9ec570e1c9991738b396b041d6c90fa53532ea1913dee554a",
+        "official": "https://updatecdn.meeting.qq.com/cos/b23c1f5388a251ca939d93afe30bf946/TencentMeeting_0300000000_3.49.1.410_x86_64.publish.exe",
         "mirrors": []
       }
     ],
@@ -850,30 +850,30 @@
     "mirrored": false
   },
   "motrix": {
-    "version": "2.4.5",
-    "released": "2026-11-20",
+    "version": "2.4.7",
+    "released": "2026-11-26",
     "verified": "2026-11-26",
-    "release_url": "https://github.com/agalwood/Motrix/releases/tag/v2.4.5",
-    "changelog": "# Motrix 2.4.5\n\nEnglish | [简体中文](https://github.com/agalwood/Motrix/blob/main/docs/release-notes/2.4.5.zh-CN.md)\n\n## Changes since 2.4.4\n\n- Desktop now accepts recoverable handoffs from paired browser extensions by default. Browser Extension **0.1.25** negotiates this capability for eligible paused downloads. If the connection drops after submission, the extension can recover the existing task ID.\n- Existing extensions and older hosts continue to support the original download submission method. To stop accepting new handoffs on Desktop, launch with `MOTRIX_DOWNLOAD_HANDOFF=0`; previously prepared operations can still finish.\n\n## Upgrade compatibility\n\n**Back up your profile and download files before upgrading.** The bundled engine\nuses SQLite **schema 6**. When upgrading an older engine database, retain its\ncomplete pre-upgrade backup; older engines cannot open schema 6. Stop all engines\nbefore restoring a verified backup to a separate path for a downgrade. Do not\nreset or delete the upgraded database as a substitute for recovery.\n\nUsers migrating from Motrix v1 should follow the\n[migration guide](https://github.com/agalwood/Motrix/blob/v2.4.5/docs/legacy-migration.md)\nand retain the original profile and engine database backups.\n\n## Downloads and updates\n\nDesktop packages support macOS 13 or later, Windows 10 or later, and Linux, with\nnative x64 and ARM64 builds. No 32-bit desktop packages are provided. Official\nmacOS packages require signing and notarization. Windows NSIS installers and ZIP\narchives are unsigned and may trigger SmartScreen; use official Release downloads.\n\nStable publication updates both `latest*.yml` and `beta*.yml` feeds to 2.4.5.\nFlatpak bundles and Native Host companions remain separate downloads. Snap\navailability requires verified Store publication to edge and promotion of the\nsame amd64/arm64 revisions through candidate to stable.\n\nServer images use `docker.io/motrixapp/motrix-server:2.4.5` and\n`ghcr.io/agalwood/motrix-server:2.4.5`. After public multi-platform runtime\nverification, `2.4`, `2`, `stable`, and `latest` advance to the same verified digest.\nSee the [Docker Server guide](https://github.com/agalwood/Motrix/blob/v2.4.5/docs/docker-server.md).\n\n[Full changelog](https://github.com/agalwood/Motrix/compare/v2.4.4...v2.4.5)\n\n\n## What's Changed\n* feat(release): enable paired desktop handoff by default in 2.4.5 by @agalwood in https://github.com/agalwood/Motrix/pull/2539\n\n\n**Full Changelog**: https://github.com/agalwood/Motrix/compare/v2.4.4...v2.4.5",
+    "release_url": "https://github.com/agalwood/Motrix/releases/tag/v2.4.7",
+    "changelog": "# Motrix 2.4.7\n\nEnglish | [简体中文](https://github.com/agalwood/Motrix/blob/main/docs/release-notes/2.4.7.zh-CN.md)\n\n## Changes since 2.4.5\n\n- **Runtime and dependency updates (#2566)**: Update **Electron to 45.5.0**, **pnpm to 12.23.0**, `@trimjs/web-app` to `0.7.0` (hardening top-level Web pages against extension-host file-action stubs), and core UI/runtime dependencies (`i18next`, `react-i18next`, `react-router`, `recharts`, `lucide-react`, `undici`, `@xyflow/react`, `elkjs`, `@tanstack/react-virtual`, `@fastify/static`, etc.).\n- **Bundled aria2 1.37.0-motrix.26 (#2551, #2556)**: Allow dynamic CDN/mirror redirect targets when resuming or splitting HTTP downloads with matching source identity, output path, total length, and validator (`ETag` / `Last-Modified`) without HTTPS downgrade, restoring full multi-connection download speeds.\n- **Reliable HTTP content length & resume (#2540, #2554)**: Disable `http-accept-gzip` globally and align metadata probes to `identity` encoding so large files preserve `Content-Length`, progress percentages, multi-segment splitting, and resumability.\n- **macOS SMB share finalization (#2549, #2555)**: Support macOS `smbfs` mounts by falling back from `F_FULLFSYNC` to `fsync` (`remote_acknowledged`) and tolerating synthetic `st_ino` changes across `renameat` on reserved outputs.\n- **Direct magnet save directory (#2552, #2553)**: Keep direct magnet downloads in the selected `saveDir` instead of an extra `infoHash` subfolder and reconcile `followedBy` metadata transitions cleanly.\n- **BitTorrent listening port migration (#2462, #2558)**: Migrate legacy default BT/DHT listening ports off `6881` to `21301` / `26701` once while preserving custom ports, and surface explicit `BtPortBindFailed` diagnostics when port binding fails.\n- **Resilient aria2 startup probing (#2517, #2559)**: Retry transient OS lock/permission/timeout errors (`EBUSY`, `EACCES`, `ETIMEDOUT`, etc.) with bounded backoff during `aria2c --version` probing so brief antivirus scans on Windows do not falsely report a missing engine binary.\n- **Signed redirect resume verification (#2426, #2488, #2560)**: Ignore transient signed-URL and expiring-token query parameters (such as GitHub Releases / Azure SAS, AWS S3 / R2, GCS, Aliyun OSS, and Tencent COS tokens) when verifying cross-origin redirect targets for resume, while still rejecting origin, path, or content-parameter changes.\n- **Bounded log & temp disk usage (#2532, #2561)**: Rotate `motrix.log` automatically at runtime (capped at 5 MiB with one `.1` backup) and clean stale `motrix-media-*` temporary directories on startup.\n- **Configurable opening downloads view (#2543)**: Allow remembering the last opened downloads view or choosing a fixed startup view.\n\n## Upgrade compatibility\n\n**Back up your profile and download files before upgrading.** The bundled engine\nuses SQLite **schema 6**. When upgrading an older engine database, retain its\ncomplete pre-upgrade backup; older engines cannot open schema 6. Stop all engines\nbefore restoring a verified backup to a separate path for a downgrade. Do not\nreset or delete the upgraded database as a substitute for recovery.\n\nUsers migrating from Motrix v1 should follow the\n[migration guide](https://github.com/agalwood/Motrix/blob/v2.4.7/docs/legacy-migration.md)\nand retain the original profile and engine database backups.\n\n## Downloads and updates\n\nDesktop packages support macOS 13 or later, Windows 10 or later, and Linux, with\nnative x64 and ARM64 builds. No 32-bit desktop packages are provided. Official\nmacOS packages require signing and notarization. Windows NSIS installers and ZIP\narchives are unsigned and may trigger SmartScreen; use official Release downloads.\n\nStable publication updates both `latest*.yml` and `beta*.yml` feeds to 2.4.7.\nFlatpak bundles and Native Host companions remain separate downloads. Snap\navailability requires verified Store publication to edge and promotion of the\nsame amd64/arm64 revisions through candidate to stable.\n\nServer images use `docker.io/motrixapp/motrix-server:2.4.7` and\n`ghcr.io/agalwood/motrix-server:2.4.7`. After public multi-platform runtime\nverification, `2.4`, `2`, `stable`, and `latest` advance to the same verified digest.\nSee the [Docker Server guide](https://github.com/agalwood/Motrix/blob/v2.4.7/docs/docker-server.md).\n\n[Full changelog](https://github.com/agalwood/Motrix/compare/v2.4.5...v2.4.7)\n\n\n## What's Changed\n* chore(deps): upgrade dependencies, electron 45.5.0, and pnpm 12.23.0 by @agalwood in https://github.com/agalwood/Motrix/pull/2566\n* chore(release): prepare 2.4.7 by @agalwood in https://github.com/agalwood/Motrix/pull/2567\n\n\n**Full Changelog**: https://github.com/agalwood/Motrix/compare/v2.4.6...v2.4.7",
     "downloads": [
       {
         "label": "Windows x64 · 绿色版 ZIP",
         "platform": "Windows",
         "portable": true,
-        "file": "Motrix-2.4.5-x64.zip",
-        "size": 141315120,
-        "sha256": "07f3e4294513383767034fef4ac66eefcc95f9709c9b25a8946060df1fc5f49f",
-        "official": "https://github.com/agalwood/Motrix/releases/download/v2.4.5/Motrix-2.4.5-x64.zip",
+        "file": "Motrix-2.4.7-x64.zip",
+        "size": 141240651,
+        "sha256": "11b51400a23bf268d538498ce7fb13f8938f1779796f7b2d7c8cc40b3c98dee5",
+        "official": "https://github.com/agalwood/Motrix/releases/download/v2.4.7/Motrix-2.4.7-x64.zip",
         "mirrors": []
       },
       {
         "label": "Windows · 安装包",
         "platform": "Windows",
         "portable": false,
-        "file": "Motrix-Setup-2.4.5-arm64.exe",
-        "size": 127443216,
-        "sha256": "86e655d4490b3ffca03d465e205a39ba44f74617698fd52ae6b69285a276d9d1",
-        "official": "https://github.com/agalwood/Motrix/releases/download/v2.4.5/Motrix-Setup-2.4.5-arm64.exe",
+        "file": "Motrix-Setup-2.4.7-arm64.exe",
+        "size": 127463701,
+        "sha256": "00e10fe024f494d835d75b9af0fb401cbfffd26ac508fb48fa90b943d98a9be9",
+        "official": "https://github.com/agalwood/Motrix/releases/download/v2.4.7/Motrix-Setup-2.4.7-arm64.exe",
         "mirrors": []
       }
     ],
@@ -2136,20 +2136,20 @@
     "mirrored": false
   },
   "vscode": {
-    "version": "1.146.0",
-    "released": "2026-11-11",
+    "version": "1.148.0",
+    "released": "2026-11-24",
     "verified": "2026-11-26",
-    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudioCode/1.146.0",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/VisualStudioCode/1.148.0",
     "changelog": "",
     "downloads": [
       {
         "label": "Windows x64 · 用户安装包",
         "platform": "Windows",
         "portable": false,
-        "file": "VSCodeUserSetup-x64-1.146.0.exe",
+        "file": "VSCodeUserSetup-x64-1.148.0.exe",
         "size": null,
-        "sha256": "da5aad5fd88244ffc35d5f6c86c5214f9ceed6520888e4c5ccf3e8678e5bbf0a",
-        "official": "https://vscode.download.prss.microsoft.com/dbazure/download/stable/69047191fc427f2f92828279aae1d90d8eeda7ab/VSCodeUserSetup-x64-1.146.0.exe",
+        "sha256": "45eaa6c8e032d0899ae0df14f65803287f682db3c306e0d9e8f66663a5d549b6",
+        "official": "https://vscode.download.prss.microsoft.com/dbazure/download/stable/661626d0e72f97806550790a98fb87116c9db825/VSCodeUserSetup-x64-1.148.0.exe",
         "mirrors": []
       }
     ],
@@ -2596,20 +2596,20 @@
     "mirrored": false
   },
   "sogou-input": {
-    "version": "16.10.0.5858",
-    "released": "2026-10-30",
+    "version": "16.11.0.6387",
+    "released": "2026-11-26",
     "verified": "2026-11-26",
-    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sogou/SogouInput/16.10.0.5858",
-    "changelog": "1. Windows 与安卓设备支持免登录跨设备复制粘贴，操作更便捷。\n2. 修复若干安全性问题。",
+    "release_url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Sogou/SogouInput/16.11.0.6387",
+    "changelog": "",
     "downloads": [
       {
         "label": "Windows · 官方安装包",
         "platform": "Windows",
         "portable": false,
-        "file": "_sogou_pinyin_16.10.0.5858_0.exe",
+        "file": "_sogou_pinyin_16.11.0.6387_0.exe",
         "size": null,
-        "sha256": "3821ed439cb924563adfc7706d55c49f6255a9ec2db8ced466889af36d3cbe6e",
-        "official": "https://ime.gtimg.com/pc/build/_sogou_pinyin_16.10.0.5858_0.exe",
+        "sha256": "5005766151d4173afd7ffb54a43c76601c2d4afa788d56a088aca21aae1c30a4",
+        "official": "https://ime.gtimg.com/pc/build/_sogou_pinyin_16.11.0.6387_0.exe",
         "mirrors": []
       }
     ],
@@ -6082,50 +6082,40 @@
     "mirrored": false
   },
   "flclash": {
-    "version": "0.9.4",
-    "released": "2026-11-19",
+    "version": "0.9.5",
+    "released": "2026-11-26",
     "verified": "2026-11-26",
-    "release_url": "https://github.com/chen08209/FlClash/releases/tag/v0.9.4",
-    "changelog": "<!-- flclash:changelog:begin -->\n### Features\n- **dashboard** One status button gathers core, update and resource states, with counts, download progress and new card icons\n- **rules** Added rules can go to named custom exits; a profile's script and added rules run together and open from the extend page\n- **proxy** PAC mode for the desktop system proxy; new Windows installs bypass <local>; GTK apps on KDE Plasma follow the proxy\n- **dns** respect-rules, hosts and cache-algorithm in the DNS overrides; macOS system DNS through tun.dns-mode native\n- **logs** Open a log on a phone to select and copy it\n- **resources** Geo resources update automatically by default\n- **desktop** Impeller on Windows and Intel Macs; the Apple Silicon download no longer carries Intel code\n- Update the core to mihomo v1.19.34, with editor completion for its new keys\n\n### Bug Fixes\n- **core** A start that fails or a lost Core says why; a mixed port of 0 is replaced; the mixed port opens without a profile\n- **config** Process rules match by default; picked override keys are written as set, empty included\n- **android** WireGuard, Hysteria2 and TUIC reconnect after a network change; core sockets opened before the VPN are protected\n- **dashboard** Service and exit IP checks no longer fail while the proxy starts, stops or changes network\n- **core** HTTPUpgrade share links no longer import as WebSocket\n- **connections** App icons show whenever the app is known and keep their place while loading\n- **desktop** macOS tray windows stay on the current Space; windows use the target display's scale; AppImage without a bundled libstdc++; cleaner deb removal; the Windows installer only stops its own processes\n- **ui** Pages open at the top and on the selected profile; sheets open from sheets as pages; the editor shows its spinner and grows its sheet; calmer success and warning colors; remote icons hold their size\n\n### Performance\n- **connections** Connections rank and sort off the UI thread; proxy and group icons use less memory\n\n<!-- flclash:changelog:end -->\n\n<!-- flclash:changelog:json\n{\"schemaVersion\":2,\"versions\":[{\"version\":\"0.9.4\",\"tag\":\"v0.9.4\",\"date\":\"2026-11-19\",\"prerelease\":false,\"groups\":[{\"type\":\"feat\",\"entries\":[{\"id\":\"a89b339\",\"scope\":\"dashboard\",\"text\":\"One status button gathers core, update and resource states, with counts, download progress and new card icons\",\"merges\":[\"c6d1b4d\",\"aacc062\"]},{\"id\":\"c8b34f2\",\"scope\":\"rules\",\"text\":\"Added rules can go to named custom exits; a profile's script and added rules run together and open from the extend page\",\"merges\":[\"79a6f91\",\"e409406\"]},{\"id\":\"7633c3c\",\"scope\":\"proxy\",\"text\":\"PAC mode for the desktop system proxy; new Windows installs bypass <local\\u003e; GTK apps on KDE Plasma follow the proxy\",\"merges\":[\"ea458b5\"]},{\"id\":\"ca2693a\",\"scope\":\"dns\",\"text\":\"respect-rules, hosts and cache-algorithm in the DNS overrides; macOS system DNS through tun.dns-mode native\",\"merges\":[\"695bd9e\"]},{\"id\":\"c85bf3a\",\"scope\":\"logs\",\"text\":\"Open a log on a phone to select and copy it\"},{\"id\":\"1b2ea11\",\"scope\":\"resources\",\"text\":\"Geo resources update automatically by default\"},{\"id\":\"848583d\",\"scope\":\"desktop\",\"text\":\"Impeller on Windows and Intel Macs; the Apple Silicon download no longer carries Intel code\"},{\"id\":\"e57e5ac\",\"text\":\"Update the core to mihomo v1.19.34, with editor completion for its new keys\"}]},{\"type\":\"fix\",\"entries\":[{\"id\":\"8298573\",\"scope\":\"core\",\"text\":\"A start that fails or a lost Core says why; a mixed port of 0 is replaced; the mixed port opens without a profile\",\"merges\":[\"65de33a\",\"153a04b\",\"396f2b5\",\"609dfc3\",\"26747be\"]},{\"id\":\"044f5b5\",\"scope\":\"config\",\"text\":\"Process rules match by default; picked override keys are written as set, empty included\",\"merges\":[\"e1669a6\"]},{\"id\":\"b13cf52\",\"scope\":\"android\",\"text\":\"WireGuard, Hysteria2 and TUIC reconnect after a network change; core sockets opened before the VPN are protected\",\"merges\":[\"43a7af8\"]},{\"id\":\"408aaa9\",\"scope\":\"dashboard\",\"text\":\"Service and exit IP checks no longer fail while the proxy starts, stops or changes network\"},{\"id\":\"47824d4\",\"scope\":\"core\",\"text\":\"HTTPUpgrade share links no longer import as WebSocket\"},{\"id\":\"5c5964f\",\"scope\":\"connections\",\"text\":\"App icons show whenever the app is known and keep their place while loading\",\"merges\":[\"474920c\"]},{\"id\":\"c620dc9\",\"scope\":\"desktop\",\"text\":\"macOS tray windows stay on the current Space; windows use the target display's scale; AppImage without a bundled libstdc++; cleaner deb removal; the Windows installer only stops its own processes\",\"merges\":[\"fad47df\",\"39a54ac\",\"99bc411\",\"fc3e8bb\"]},{\"id\":\"b08bcd9\",\"scope\":\"ui\",\"text\":\"Pages open at the top and on the selected profile; sheets open from sheets as pages; the editor shows its spinner and grows its sheet; calmer success and warning colors; remote icons hold their size\",\"merges\":[\"1a0ab61\",\"e750293\",\"49becb3\",\"fa5663f\",\"e56d779\",\"cafc288\",\"4f4bff8\",\"6be6fde\",\"0fdd955\",\"f124cf6\",\"c1c9332\"]}]},{\"type\":\"perf\",\"entries\":[{\"id\":\"19fb1b0\",\"scope\":\"connections\",\"text\":\"Connections rank and sort off the UI thread; proxy and group icons use less memory\",\"merges\":[\"df8b684\"]}]}],\"omit\":[\"f3df1b6\",\"016dc8b\",\"7140e37\",\"7801976\",\"f29013b\",\"f1623e1\",\"0a55a31\",\"2d31f10\",\"3d05b37\",\"96b405f\",\"57b9b6c\",\"a0eda19\",\"036f462\",\"3ddcdf6\",\"5766b05\",\"2f3a2ca\",\"fe7ef13\",\"bc1ac73\",\"bc58d86\"]}]}\n-->\n<div align=center>\n\n[![Release Downloads](https://img.shields.io/github/downloads/chen08209/FlClash/v0.9.4/total?style=flat-square&logo=github)](https://img.shields.io/github/downloads/chen08209/FlClash/v0.9.4/)\n\n</div>\n\n**Download based on your OS:**\n\n<div align=left>\n<table>\n    <thead align=left>\n        <tr>\n            <th>OS</th>\n            <th>Download</th>\n        </tr>\n    </thead>\n    <tbody align=left>\n        <tr>\n        <td>Android</td>\n            <td>\n                <a href=\"https://github.com/chen08209/FlClash/releases/download/v0.9.4/FlClash-dev-0.9.4-android-arm64.apk\"><img src=\"https://img.shields.io/badge/APK-A",
+    "release_url": "https://github.com/chen08209/FlClash/releases/tag/v0.9.5",
+    "changelog": "<!-- flclash:changelog:begin -->\n### Features\n- **about** Icons and even spacing for the update settings on the About page\n- **window** Pause live updates on desktop while the screen is asleep or locked\n- **update** Install macOS updates from inside the app\n- **proxies** Proxy groups unfold smoothly as one block\n- **connection** Connection, request, DNS, outbound IP and log details use smaller text with more room\n- **prism_ui** List rows follow a smaller text size, as they already did a larger one\n- **prism_ui** The phone tab bar spaces five tabs and sets out icons and labels as iOS does\n- **about** The automatic update check and the update channel moved from General settings to the About page\n- **logs** Filter logs from a button beside search\n- **logs** Set the log level from the Logs page\n- **requests** Connections become Requests: connections by minute with All, Active and Failed counts, conditions on app, exit, rule or protocol, a timeline for each connection, DNS queries, segments that keep their place, and new rows held under a desktop pointer\n- **update** Choose between stable and prerelease updates in the settings; the prerelease check finds the newest release and names the installed prerelease\n- **ui** Lists and cards share one set of margins, so rows line up across pages\n- **dashboard** The dashboard's outbound mode card is titled Outbound, leaving its mode buttons more room\n- **ui** Grouped lists match iOS 27: row heights, margins, corners and section spacing\n- **logs** On desktop, Logs moves from the sidebar into Tools\n- **connections** Connections on macOS, Windows and Linux show the icon of the app that made them\n- **navigation** Requests sits right after Proxies in the desktop sidebar\n- **connections** Connections that failed to connect now show in the requests list, with the reason\n- **update** When an update has no file to download, the app opens the release page to download it by hand\n\n### Bug Fixes\n- **proxies** A rounder, larger delay test icon on proxy cards\n- **prism_ui** Navigation bar tabs fit their titles, and a tap near a tab's edge selects it\n- **dashboard** Live connections on the dashboard open on the active ones\n- **rules** The rule type picker and rule lists show rule types as profiles write them, such as DOMAIN-KEYWORD, and rule search finds a rule by that name\n- **core** A stop whose answer is lost with the connection to the core no longer turns the proxy back on when the core comes back\n- **setup** Restarting the core with TUN on no longer hangs when it has to ask for authorization again\n- **core** On desktop, a restart asked for while the core is still starting, such as after installing the helper, now restarts it, and the core can start again after a start whose local connection setup hung\n- **core** On Android, stopping while the core is still starting no longer leaves it running, and a start that failed while sending settings to the core no longer blocks the next start\n- **probes** Recheck watched service failures with backoff\n- **probes** Service checks recover automatically when a chain switches to a working front proxy\n- **setup** Dashboard checks wait for startup to finish when you tap Start as the app opens\n- **l10n** Shorter descriptions in network, DNS and general settings\n- **segmented-control** Segmented controls follow the system's reduce motion setting\n- **connected-button** Screen readers can now switch the dashboard's outbound mode\n- **scaffold** On wider phones the top bar buttons line up with the list cards below them\n- **scaffold** Opening search puts the cursor in its field even when something else on the page has the focus\n- **android** App icons in access control and connections load from the cache instead of being redrawn every day\n- **core** On macOS, connections show the app that opened them again\n- **window** A hidden window no longer takes the foreground from a full-screen game on Windows\n- **linux** The Linux window is no longer drawn shifted toward the bottom left on NVIDIA and other drivers without glBlitFramebuffer\n- **tray** When the menu bar or tray icon cannot be shown, the log says why\n- **macos** Intel Macs render with Skia again, fixing the hang at launch on older GPUs\n- **dashboard** Service checks show the address Claude and ChatGPT actually saw, not only the node's exit address\n- **core** Gemini check no longer reports Hong Kong and Macau nodes as unsupported\n- **core** macOS no longer collects defunct dscacheutil processes each time TUN is turned on or off\n- **config** The default bypass list no longer skips the proxy for public 172.2* addresses, and the default fake-ip filter names Windows' real connectivity check hosts\n- **ui** Pages open and close again after the display sleeps or changes\n\n### Performance\n- **code_forge** Large files open in the editor without a pause\n- **db** Profiles with many rules, groups or proxies open and update without stalling the screen\n- **route** Pages that load their data open at once with a spinner instead of pausing before they slide in\n- **android** Use less battery on Android in the background\n- **ui** Open list editors and pages over others more smoothly\n- **dashboard** Smoother dashboard and tab switches, with one redraw a second while connected\n- **proxies** Smoother proxy pages when switching groups, sorting and scrolling\n- **prism_ui** Swiping back on phones drops fewer frames\n\n<!-- flclash:changelog:end -->\n\n<!-- flclash:changelog:json\n{\"schemaVersion\":2,\"versions\":[{\"version\":\"0.9.5\",\"tag\":\"v0.9.5\",\"date\":\"2026-11-26\",\"prerelease\":false,\"groups\":[{\"type\":\"feat\",\"entries\":[{\"id\":\"1951468\",\"scope\":\"about\",\"text\":\"Icons and even spacing for the update settings on the About page\"},{\"id\":\"0981835\",\"scope\":\"window\",\"text\":\"Pause live updates on desktop while the screen is asleep or locked\"},{\"id\":\"73a0182\",\"scope\":\"update\",\"text\":\"Install macOS updates from inside the app\"},{\"id\":\"94288d7\",\"scope\":\"proxies\",\"text\":\"Proxy groups unfold smoothly as one block\"},{\"id\":\"a27fab5\",\"",
     "downloads": [
       {
         "label": "Windows x64 · 安装包",
         "platform": "Windows",
         "portable": false,
-        "file": "FlClash-0.9.4-windows-amd64-setup.exe",
-        "size": 43132829,
-        "sha256": "77f84fdf24ccb1499e6c0275b713c3a81031f157496e1c5305366184da1ac68a",
-        "official": "https://github.com/chen08209/FlClash/releases/download/v0.9.4/FlClash-0.9.4-windows-amd64-setup.exe",
-        "mirrors": []
-      },
-      {
-        "label": "Android · arm64 APK",
-        "platform": "Android",
-        "portable": false,
-        "file": "FlClash-0.9.4-android-arm64-v8a.apk",
-        "size": 60863675,
-        "sha256": "86fb6f66b5f4d36a3423adeadca625b147da0e782400b6af69aafe58c603a947",
-        "official": "https://github.com/chen08209/FlClash/releases/download/v0.9.4/FlClash-0.9.4-android-arm64-v8a.apk",
+        "file": "FlClash-0.9.5-windows-amd64-setup.exe",
+        "size": 43310941,
+        "sha256": "ca4b2f19edba609bf961d01db17661eae710ff5ffec4beaa8dc5e685a9622a63",
+        "official": "https://github.com/chen08209/FlClash/releases/download/v0.9.5/FlClash-0.9.5-windows-amd64-setup.exe",
         "mirrors": []
       },
       {
         "label": "macOS Apple 芯片 · DMG",
         "platform": "macOS",
         "portable": false,
-        "file": "FlClash-dev-0.9.4-macos-arm64.dmg",
-        "size": 55625224,
-        "sha256": "db0784e7e5a69fc93da85accf4d8d80812e7e014f2082609da395ba6124195c5",
-        "official": "https://github.com/chen08209/FlClash/releases/download/v0.9.4/FlClash-dev-0.9.4-macos-arm64.dmg",
+        "file": "FlClash-0.9.5-macos-arm64.dmg",
+        "size": 55895604,
+        "sha256": "0a350209c2a1ef8d181a3d0dd563ae8f86aece161f5a4e8554683caf5020bd82",
+        "official": "https://github.com/chen08209/FlClash/releases/download/v0.9.5/FlClash-0.9.5-macos-arm64.dmg",
         "mirrors": []
       },
       {
         "label": "macOS Intel · DMG",
         "platform": "macOS",
         "portable": false,
-        "file": "FlClash-dev-0.9.4-macos-amd64.dmg",
-        "size": 59502497,
-        "sha256": "481f742112572a6488a5ec40ddd071283dc59eb4d91da1e399be25acaf79e8eb",
-        "official": "https://github.com/chen08209/FlClash/releases/download/v0.9.4/FlClash-dev-0.9.4-macos-amd64.dmg",
+        "file": "FlClash-0.9.5-macos-amd64.dmg",
+        "size": 59803256,
+        "sha256": "69d68de2c4da721e554d03f9529521afb4b75334d87306be8906416e6af6fab8",
+        "official": "https://github.com/chen08209/FlClash/releases/download/v0.9.5/FlClash-0.9.5-macos-amd64.dmg",
         "mirrors": []
       }
     ],
